@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.7
+# TV Morph · Public Preview 0.8.8
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -86,3 +86,7 @@ Modern TV Morph branding/icon, persistent Arabic/English switch, scrollable app 
 Samsung now packages the same IPTV library, details screen and radio UI used on Android TV, with Samsung AVPlay for playback. IPTV and Radio are pinned as default Home apps once; they can subsequently be rearranged or removed. The hero uses separate crest, centered text and artwork columns in Arabic and English. Returning focus to the header restores the full hero.
 
 Fixes include explicit fullscreen bounds for older Tizen engines, player cleanup, and restoration of IPTV form details from the phone encrypted vault. A locally generated video reached AVPlay PLAYING with advancing time on a physical Tizen 5 TV. Subscription-provider playback, audible radio output and the final fullscreen regression still need user confirmation; not certified across all TV models. LG and VIDAA distribution limitations remain unchanged.
+
+## Preview 0.8.8
+
+New television installations default to English; saved user language choices are retained. Selecting a different theme clears the previous theme custom text, logo, artwork and color overrides. Restore defaults now sends explicit empty image fields so old TV artwork is removed. Samsung setup displays the live phone IP beside Apps → 12345 → Developer Mode ON → Host PC IP.

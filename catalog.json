@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.7",
+  "latest": "0.8.8",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.7",
+      "version": "0.8.8",
       "download": "/download/phone",
       "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
       "noteEn": "Phone companion for design and pairing. Android 8 or later."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.7",
+      "version": "0.8.8",
       "download": "/download/android",
       "noteAr": "نسخة الشاشة المستقلة. Android 8 أو أحدث. وافق على التثبيت من الشاشة؛ التوافق مع كل موديل غير مؤكد.",
       "noteEn": "Separate TV receiver. Android 8+. Approve installation on the TV. Not certified for every model."
@@ -50,6 +50,12 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.8",
+      "file": "TV-Morph-Phone-0.8.8.apk",
+      "bytes": 7231444,
+      "sha256": "f8c494f99f04e21ccc998c16d23e4da999e832eed5ea425145c0c5b0772436a6"
+    },
     {
       "name": "TV-Morph-Phone-0.8.7",
       "file": "TV-Morph-Phone-0.8.7.apk",
@@ -97,6 +103,12 @@
       "file": "TV-Morph-Phone-0.8.0.apk",
       "bytes": 5400259,
       "sha256": "fd68524c1bbc44267041b8daf6f0a198fb312c7be9ea0abaa6bd7c56102f056e"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.8",
+      "file": "TV-Morph-Android-TV-0.8.8.apk",
+      "bytes": 3103551,
+      "sha256": "14dbd9549eafdc3587b398999e774f8edf453251348ec293b110daf04857920e"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.7",

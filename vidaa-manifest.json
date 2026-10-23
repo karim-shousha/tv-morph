@@ -1,11 +1,11 @@
 {
   "name": "TV Morph",
-  "version": "0.1.0-vidaa-preview",
+  "version": "0.1.1-vidaa-preview",
   "platform": "VIDAA web application",
   "appUrl": "https://tvmorph.zainbot.com/vidaa.html",
   "iconUrl": "https://tvmorph.zainbot.com/tvmorph.png",
   "resolution": 1080,
-  "sha256": "194ce5c1ca2c5d20f280bab7e78619231f21568eeb613b15f05182554db0331c",
+  "sha256": "c1c4b953358077c56a5ce1238d5a039c85806ac75f0dc4393402cd2191dad0ea",
   "physicalDeviceVerified": false,
   "capabilities": [
     "themes",
