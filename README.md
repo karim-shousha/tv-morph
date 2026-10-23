@@ -172,3 +172,6 @@ Deployment keeps only the two current APKs in the Git tree and Docker context. O
 Android/Fire OS TV Settings → Launch when TV starts. Opt-in full boot launch, separate from Home/launcher selection. Some firmware needs manually granted Display over other apps permission; unsupported firmware may block startup. Standby wake is not a full boot.
 
 0.8.23 fixes phone-to-TV update delivery for receiver APKs larger than 16 MiB. Update the phone companion first.
+
+## 0.8.24 compatibility and performance
+Read-only capability checks distinguish receiver discovery, code pairing, self-update and reachable network ADB. Reachability is not authorization. Guided Android/Fire OS installation supports classic ADB port 5555 and validates Android 8+ before sending the bundled signed receiver; pairing-code wireless ADB is not implemented. TV Settings adds Automatic / Light / Full performance modes. Automatic uses Android low-RAM/total-memory signals when available; Light disables blur, animations and background slideshow while retaining theme colors and focus visibility. Physical device coverage remains limited.
