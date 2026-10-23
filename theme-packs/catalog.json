@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "baseURL": "https://tvmorph.zainbot.com/theme-packs/",
+  "packs": [
+    {
+      "id": "egypt",
+      "version": 1,
+      "themes": [
+        "ahly",
+        "zamalek",
+        "egypt"
+      ],
+      "files": [
+        {
+          "name": "al-ahly-duel.png",
+          "file": "egypt-v1-al-ahly-duel.webp",
+          "bytes": 242718,
+          "sha256": "1d6ce2f31caca1a0ac3f9b2673e333fbda32e256b23877c4f6bf284c6f347687"
+        },
+        {
+          "name": "al-ahly.png",
+          "file": "egypt-v1-al-ahly.webp",
+          "bytes": 77374,
+          "sha256": "63f09887289b0dddd777a9cf26444a21d7cd2fc448f9cde36e5d32bbc40f14e2"
+        },
+        {
+          "name": "egypt.png",
+          "file": "egypt-v1-egypt.webp",
+          "bytes": 15486,
+          "sha256": "f55eac869bb400da532f9e06034a593193d256ed42ca477848d321aa6c09514d"
+        },
+        {
+          "name": "zamalek-team.png",
+          "file": "egypt-v1-zamalek-team.webp",
+          "bytes": 334156,
+          "sha256": "6f9603bc712ff02353aa21473e470215f1c0450aa29f0c723d1df4cfe3308d45"
+        },
+        {
+          "name": "zamalek.png",
+          "file": "egypt-v1-zamalek.webp",
+          "bytes": 33230,
+          "sha256": "aff3eb08daa1e5dc84727dd5f51a7f02a9a7060414f7722d487ccfcde7d077e0"
+        }
+      ],
+      "bytes": 702964
+    },
+    {
+      "id": "europe",
+      "version": 1,
+      "themes": [
+        "madrid",
+        "barcelona"
+      ],
+      "files": [
+        {
+          "name": "barcelona-team.png",
+          "file": "europe-v1-barcelona-team.webp",
+          "bytes": 348456,
+          "sha256": "3cd7b32cefa17a39361efb653a4927f1c820b2d539f5d587aef74fe9d3048a3f"
+        },
+        {
+          "name": "barcelona.png",
+          "file": "europe-v1-barcelona.webp",
+          "bytes": 10268,
+          "sha256": "45c97661d8825c90a50200346a787d4c7a58ef3b6228b073d87cc810835fe34d"
+        },
+        {
+          "name": "madrid-team.png",
+          "file": "europe-v1-madrid-team.webp",
+          "bytes": 285212,
+          "sha256": "8aff0b57988ce2feac1655cd598f24b4224cd46b801987d284e23cf9f7b43932"
+        },
+        {
+          "name": "madrid.png",
+          "file": "europe-v1-madrid.webp",
+          "bytes": 32476,
+          "sha256": "90677a0d7d6af67afd699d6845eb2ece627c02edb292467393a33709fd9f03a6"
+        }
+      ],
+      "bytes": 676412
+    },
+    {
+      "id": "hockey",
+      "version": 1,
+      "themes": [
+        "montreal",
+        "toronto"
+      ],
+      "files": [
+        {
+          "name": "montreal-team.png",
+          "file": "hockey-v1-montreal-team.webp",
+          "bytes": 281008,
+          "sha256": "18144ec8d85848a215e9101afde077b60f96970ac0d0a3f37645e2300e4a2470"
+        },
+        {
+          "name": "toronto-team.png",
+          "file": "hockey-v1-toronto-team.webp",
+          "bytes": 389746,
+          "sha256": "5cbd81423ed74bf79680fd7de9eb4fcac3734c732c70c0cc954f67b500ce7c2c"
+        }
+      ],
+      "bytes": 670754
+    },
+    {
+      "id": "sports",
+      "version": 1,
+      "themes": [
+        "basketball",
+        "baseball"
+      ],
+      "files": [
+        {
+          "name": "baseball-team.png",
+          "file": "sports-v1-baseball-team.webp",
+          "bytes": 242910,
+          "sha256": "446d2d490741a6257fb72fa6bc85e9dd25220256795873694b97da586dacaf1c"
+        },
+        {
+          "name": "basketball-team.png",
+          "file": "sports-v1-basketball-team.webp",
+          "bytes": 251454,
+          "sha256": "d3edc02f355108d9ceb0c40fe15878172b115ab23fa464324b72a0bf2c1e33e7"
+        }
+      ],
+      "bytes": 494364
+    },
+    {
+      "id": "national",
+      "version": 1,
+      "themes": [
+        "argentina",
+        "portugal"
+      ],
+      "files": [
+        {
+          "name": "argentina-team.jpg",
+          "file": "national-v1-argentina-team.webp",
+          "bytes": 35282,
+          "sha256": "afe4267a34e06b0f7af50cc898b7f27081f2548a4b347abfce197f4460bf7c75"
+        },
+        {
+          "name": "portugal-team.png",
+          "file": "national-v1-portugal-team.webp",
+          "bytes": 267524,
+          "sha256": "a72e926ebb50f001f7f09c08755c9cfa2d7be8e1119b0cfd7ab29872e1e26624"
+        }
+      ],
+      "bytes": 302806
+    }
+  ]
+}
