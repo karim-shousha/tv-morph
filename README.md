@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.13
+# TV Morph · Public Preview 0.8.14
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -116,3 +116,10 @@ Phone Personal touch controls independently adjust hero title/subtitle (70–120
 Android/Fire TV Settings → TV home & startup offers the OS Home picker plus an optional accessibility Home override. The service is disabled until the user enables it in system Accessibility settings after the in-app explanation. It receives window-state changes filtered to the resolved Home package and matches the exact Home activity, leaving settings screens in the same package alone. It cannot retrieve window content and requests no key filtering or gesture capability. Competing rapid launcher returns pause the override. Turn off Projectivy’s own Override current launcher before testing TV Morph. Boot fallback must also be enabled for the service-connect startup attempt. No actual wake/boot verification on a physical TV has been completed for this version.
 
 Android/Fire TV Settings → App locks · PIN sets a 4–8 digit PIN and selects apps locked when launched through TV Morph, including its IPTV/radio buttons and paired-phone open/play requests. Changing/removing the PIN requires verification. A random-salt PBKDF2-HMAC-SHA256 verifier is stored privately on the TV, with a 30-second wait after five wrong PIN attempts. No PIN is sent to the phone. This does not lock apps opened from another launcher or system shortcuts; it is not an operating-system app lock. These native features are not implemented on Samsung Tizen or VIDAA.
+
+
+## 0.8.14 · Cinematic home and IPTV settings
+
+Full-screen fading background, up to five custom slideshow images, theme glass colors, reflection and opacity controls, independent artwork/text/logo positioning, header weather and sidebar navigation. TVM-IPTV and TVM-RADIO are default apps. IPTV adds a section dashboard, library preferences and Xtream account entry directly on TV.
+
+Browser fixture checks cover Android/Fire and Samsung bundles; native playback, performance and provider connectivity still require testing on the physical TV.

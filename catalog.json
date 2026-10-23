@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.13",
+  "latest": "0.8.14",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.13",
+      "version": "0.8.14",
       "download": "/download/phone",
       "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
       "noteEn": "Phone companion for design and pairing. Android 8 or later."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.13",
+      "version": "0.8.14",
       "download": "/download/android",
       "noteAr": "Android 8 أو أحدث. يضيف قفل PIN داخل TV Morph ومسار Home اختياريًا بإذن تسهيلات الاستخدام يدويًا. تشغيل الإقلاع والسكون يحتاج تجربة على جهازك.",
       "noteEn": "Android 8+. Adds app PIN inside TV Morph and optional Home navigation with manually enabled accessibility permission. Boot/wake behavior needs device testing."
@@ -25,7 +25,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.13",
+      "version": "0.8.14",
       "download": "/download/firetv",
       "noteAr": "Fire OS المبني على Android 8+، وليس Vega OS. إرسال ADB من الموبايل يحتاج موافقة التلفزيون. قفل PIN ومسار Home الجديدان يحتاجان تجربة فعلية على الجهاز.",
       "noteEn": "Android 8+ based Fire OS, not Vega OS. Phone ADB installation requires TV approval. New app PIN and optional Home navigation require physical device testing."
@@ -37,7 +37,7 @@
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.13"
+      "version": "0.8.14"
     },
     {
       "id": "lg",
@@ -109,6 +109,12 @@
       "sha256": "6a787d417829fab337a6288bfe958325a467370ebe201382edcc51d9fe6f67fe"
     },
     {
+      "name": "TV-Morph-Phone-0.8.14",
+      "file": "TV-Morph-Phone-0.8.14.apk",
+      "bytes": 8775708,
+      "sha256": "710c057983f883f62a736e3b928b8ddc0de2fdb6b29faf44d1a4cb6eae0f6f89"
+    },
+    {
       "name": "TV-Morph-Phone-0.8.13",
       "file": "TV-Morph-Phone-0.8.13.apk",
       "bytes": 8759324,
@@ -173,6 +179,12 @@
       "file": "TV-Morph-Android-TV-0.8.2.apk",
       "bytes": 3103551,
       "sha256": "545f26ae4f19d7b00510281a3d84e0e1588224bba98cbfb18884735bc5495fea"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.14",
+      "file": "TV-Morph-Android-TV-0.8.14.apk",
+      "bytes": 3148753,
+      "sha256": "d4a9aa10e38f5310158f0579d3a82f9cc1727704f70283a49fdae1f5f55a5fcc"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.13",
