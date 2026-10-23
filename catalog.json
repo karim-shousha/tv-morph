@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.30",
+  "latest": "0.8.31",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.30",
+      "version": "0.8.31",
       "download": "/download/phone",
-      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
-      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
+      "noteAr": "مشغل أصغر، مشاركة طلبات تفاصيل IPTV وتخزينها مؤقتًا، زوم واضح للكروت، وخيار إظهار مواقيت الصلاة واستراحة اختيارية 10 دقائق مغلقة افتراضيًا. صورة منتخب مصر الجديدة في حزمة المنتخبات إصدار 3. حدّث الموبايل والتلفزيون والحزمة.",
+      "noteEn": "Compact player, cached and shared IPTV metadata requests, clear card focus zoom, prayer visibility switch and optional ten-minute prayer break off by default. New Egypt artwork in national pack v3. Update phone, TV and pack."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.30",
+      "version": "0.8.31",
       "download": "/download/android",
-      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
-      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
+      "noteAr": "مشغل أصغر، مشاركة طلبات تفاصيل IPTV وتخزينها مؤقتًا، زوم واضح للكروت، وخيار إظهار مواقيت الصلاة واستراحة اختيارية 10 دقائق مغلقة افتراضيًا. صورة منتخب مصر الجديدة في حزمة المنتخبات إصدار 3. حدّث الموبايل والتلفزيون والحزمة.",
+      "noteEn": "Compact player, cached and shared IPTV metadata requests, clear card focus zoom, prayer visibility switch and optional ten-minute prayer break off by default. New Egypt artwork in national pack v3. Update phone, TV and pack."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.30",
+      "version": "0.8.31",
       "download": "/download/firetv",
-      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
-      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
+      "noteAr": "مشغل أصغر، مشاركة طلبات تفاصيل IPTV وتخزينها مؤقتًا، زوم واضح للكروت، وخيار إظهار مواقيت الصلاة واستراحة اختيارية 10 دقائق مغلقة افتراضيًا. صورة منتخب مصر الجديدة في حزمة المنتخبات إصدار 3. حدّث الموبايل والتلفزيون والحزمة.",
+      "noteEn": "Compact player, cached and shared IPTV metadata requests, clear card focus zoom, prayer visibility switch and optional ten-minute prayer break off by default. New Egypt artwork in national pack v3. Update phone, TV and pack."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
-      "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
+      "noteAr": "مشغل أصغر، مشاركة طلبات تفاصيل IPTV وتخزينها مؤقتًا، زوم واضح للكروت، وخيار إظهار مواقيت الصلاة واستراحة اختيارية 10 دقائق مغلقة افتراضيًا. صورة منتخب مصر الجديدة في حزمة المنتخبات إصدار 3. حدّث الموبايل والتلفزيون والحزمة.",
+      "noteEn": "Compact player, cached and shared IPTV metadata requests, clear card focus zoom, prayer visibility switch and optional ten-minute prayer break off by default. New Egypt artwork in national pack v3. Update phone, TV and pack.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.30"
+      "version": "0.8.31"
     },
     {
       "id": "lg",
@@ -95,6 +95,12 @@
       "file": "TV-Morph-Phone-0.8.4.apk",
       "bytes": 6813652,
       "sha256": "f2ec35a406c15653cef045c5cd10bad6ebfc97aa61af8791c953c2f9aaa18b3d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.31",
+      "file": "TV-Morph-Phone-0.8.31.apk",
+      "bytes": 8469027,
+      "sha256": "707ddee9c5d436fb09393226c351db9cdf53860da8524907c58369972b147518"
     },
     {
       "name": "TV-Morph-Phone-0.8.30",
@@ -269,6 +275,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.31",
+      "file": "TV-Morph-Android-TV-0.8.31.apk",
+      "bytes": 3866811,
+      "sha256": "6f4fe1bddad08376c7368e7205efdd0b49660527ccfb1e2bfc7025db5431e7ba"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.30",
@@ -472,6 +484,8 @@
     "TV-Morph-Phone-0.8.28.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/2ee33fc14a3fce83b7da5cf55ea9a57f67a31398/TV-Morph-Phone-0.8.28.apk",
     "TV-Morph-Android-TV-0.8.28.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/2ee33fc14a3fce83b7da5cf55ea9a57f67a31398/TV-Morph-Android-TV-0.8.28.apk",
     "TV-Morph-Phone-0.8.29.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/15ed1dc3056183a79ce7ca32be69684887b50aa2/TV-Morph-Phone-0.8.29.apk",
-    "TV-Morph-Android-TV-0.8.29.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/15ed1dc3056183a79ce7ca32be69684887b50aa2/TV-Morph-Android-TV-0.8.29.apk"
+    "TV-Morph-Android-TV-0.8.29.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/15ed1dc3056183a79ce7ca32be69684887b50aa2/TV-Morph-Android-TV-0.8.29.apk",
+    "TV-Morph-Phone-0.8.30.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8ad2a5071fffca0bbf2f0e7c2881d1a374b3d0cf/TV-Morph-Phone-0.8.30.apk",
+    "TV-Morph-Android-TV-0.8.30.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8ad2a5071fffca0bbf2f0e7c2881d1a374b3d0cf/TV-Morph-Android-TV-0.8.30.apk"
   }
 }
