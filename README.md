@@ -154,3 +154,9 @@ Search all live channels, movies and series by title inside TVM-IPTV. The first 
 EPG uses the provider's get_short_epg endpoint for a selected live channel, showing current/upcoming listings in TV local time. Missing or failed data is reported; no synthetic schedules, recording or catch-up functionality are implied.
 
 Native Java tests cover progress isolation/clear and actual EPG HTTP parsing against a local fixture provider. Browser tests cover both TV bundles, phone profile selection, search, EPG and regressions. Samsung AVPlay/provider transport is mocked; physical playback and live provider data still require user testing. Also improves Fire TV identification from advertised device metadata.
+
+## 0.8.20
+Seven ready sports themes: Real Madrid, FC Barcelona, Zamalek, Basketball, Baseball, Montreal Canadiens and Toronto Maple Leafs. Generated fan artwork (not official roster photos), alpha PNG assets are bundled offline. Theme colors carry into IPTV/radio. Size and movement controls remain available. Android/Samsung shared UI, phone preview, family profiles and layout tests passed; not yet physically tested.
+Signed APKs include the complete offline artwork library. The phone package contains the matching TV APK and Samsung bundle. SHA256SUMS verifies each complete package.
+
+Includes a new generated Al Ahly team cutout. Mobile interface translations now include 857 bundled entries in Arabic, English, French, Simplified Chinese and Japanese; install guides, dynamic native error fragments, placeholders and download notifications are included. UI language/RTL tests passed on all five languages. Translations do not require a network service at runtime.
