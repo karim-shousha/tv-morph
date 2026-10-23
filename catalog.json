@@ -26,21 +26,24 @@
       "name": "Samsung · Tizen",
       "available": false,
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
-      "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download."
+      "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
+      "webPreview": "/web-tv.html"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
       "noteAr": "اكتشاف فقط حاليًا. نسخة TV Morph ومسار تثبيتها على webOS لم يكتملوا.",
-      "noteEn": "Discovery only today. A TV Morph webOS receiver and installation path are not implemented."
+      "noteEn": "Discovery only today. A TV Morph webOS receiver and installation path are not implemented.",
+      "webPreview": "/web-tv.html"
     },
     {
       "id": "vidaa",
       "name": "Hisense · VIDAA",
       "available": false,
       "noteAr": "نسخة VIDAA لم تكتمل بعد. ملف Android APK لا يعمل على هذا النظام.",
-      "noteEn": "A VIDAA receiver is not implemented yet. Android APK files cannot run on VIDAA."
+      "noteEn": "A VIDAA receiver is not implemented yet. Android APK files cannot run on VIDAA.",
+      "webPreview": "/web-tv.html"
     }
   ],
   "releases": [

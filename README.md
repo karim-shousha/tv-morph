@@ -52,3 +52,7 @@ The app includes a light/dark Arabic/English UI and theme library previews. Barc
 Credentials are not bundled. Users supply their own IPTV account in the app; no subscription or channel access is provided. Pairing uses an authenticated local HTTP API, intended for a trusted LAN. Never enter account passwords in chat.
 
 Club names, crests and user-supplied photographs remain the property of their respective owners. No affiliation or commercial logo license is claimed. Review rights before commercial theme distribution.
+
+## Browser theme preview
+
+https://tvmorph.zainbot.com/web-tv.html is a browser-only theme preview, with no installed-app enumeration, native TV controls, IPTV or receiver pairing. It passed desktop browser checks but still needs physical VIDAA/LG/Samsung browser tests. It is not an installed app or a verified universal compatibility path.
