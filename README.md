@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.17
+# TV Morph · Public Preview 0.8.18
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -138,3 +138,8 @@ Both crossfade layers update their scale when artwork controls change. Applying 
 ## 0.8.17 · Reconnect guidance and phone controls
 
 Phone checks saved TV connectivity at startup, foreground resume and remote entry. Failed remote sends disable controls and show a reconnect action. The five-minute pairing-code lifetime is distinct from the persistent paired token. Remote buttons/touchpad have separate modes and a compact visual layout. Background upload UI adds clear image collection controls and language-aware labels. Position sliders explicitly use LTR controls so right increases X even in Arabic. Android Internet action resolves a browser intent and reports missing browser; Samsung resolves a browser app or reports absence. Physical browser launch and reconnect behavior require device verification.
+
+
+## 0.8.18 · Gentle app focus motion
+
+Focused app cards lift slightly and scale 4.5%, with a 9% icon zoom and theme glow. Rails reserve vertical room for focus outlines. Reduce Motion and system reduced-motion preferences suppress transforms. New/reset glass opacity defaults to 18%; existing chosen opacity remains saved. Both TV bundles passed geometry, motion and app-reorder fixtures. Physical TV performance remains to be verified.
