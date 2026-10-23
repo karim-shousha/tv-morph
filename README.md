@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.4
+# TV Morph · Public Preview 0.8.5
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -70,3 +70,8 @@ Locks pinch/double-tap zoom in the Android WebView, keeps the logo/name on the p
 ## Hero layout update 0.8.4
 
 Phone and Android TV builds are now 0.8.4. The shared theme UI uses separate crest, text and artwork columns, fixed physically left-to-right in Arabic and English. Removes the duplicate custom artwork overlay. Tested all ten palettes in both languages. Samsung developer-install bundles include the same shared correction; physical Samsung installation is not certified across all models.
+
+
+## Samsung phone hotfix 0.8.5
+
+Fixes the certificate sign-in redirect by using the reference loopback callback http://localhost:4794/signin/callback, instead of an ephemeral port and random callback path that Samsung rejected. Port conflicts now fail clearly instead of falling back to an unregistered URL. Android TV receiver remains 0.8.4. Local callback checks pass; user sign-in, certificate issuance and TV installation still require end-to-end verification.
