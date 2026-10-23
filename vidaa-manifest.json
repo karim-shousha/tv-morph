@@ -5,7 +5,7 @@
   "appUrl": "https://tvmorph.zainbot.com/vidaa.html",
   "iconUrl": "https://tvmorph.zainbot.com/tvmorph.png",
   "resolution": 1080,
-  "sha256": "b8f41d61d5e9230e1384c2555f3429271f4261f889f750a31f574cbe7fdd36d0",
+  "sha256": "194ce5c1ca2c5d20f280bab7e78619231f21568eeb613b15f05182554db0331c",
   "physicalDeviceVerified": false,
   "capabilities": [
     "themes",

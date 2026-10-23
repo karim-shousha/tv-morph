@@ -24,7 +24,7 @@ Install updates over the existing application; do not uninstall if you want to r
 | Android / Google TV 8+ | Separate APK, pairing, themes, app favorites, internal remote, radio and experimental user-supplied IPTV |
 | Samsung Tizen | Discovery and experimental remote/developer installation path; requires Developer Mode and a certificate for the user's TV. **The Android TV APK does not install on Samsung.** No Samsung IPTV/radio receiver is included. |
 | LG webOS | Discovery only; TV installation and remote not implemented |
-| Hisense VIDAA | Discovery identification when network services are advertised; installation and remote not implemented. **VIDAA is not Android.** |
+| Hisense VIDAA | VIDAA 0.1 hosted development web build with themes and direct media. Developer-page installation depends on firmware and remains unverified on a physical TV. Phone pairing is not implemented. **VIDAA is not Android.** |
 | Roku / other systems | Installation unsupported |
 
 Physical installation and playback were reported working on one Hisense Android 12 device. This does not establish compatibility with every model. Updated radio audio, the TV installer confirmation and other TV systems still need physical testing. Browser/native fixture checks are not universal device certification.
@@ -60,3 +60,8 @@ https://tvmorph.zainbot.com/web-tv.html is a browser-only theme preview, with no
 ## Phone update 0.8.3
 
 Locks pinch/double-tap zoom in the Android WebView, keeps the logo/name on the physical left and TV IP on the right in both languages, and gives dark appearance a high-contrast twilight-blue palette. Android TV receiver remains 0.8.2.
+
+
+## VIDAA development build 0.1.0
+
+[Application](https://tvmorph.zainbot.com/vidaa.html) · [step-by-step install guide](https://tvmorph.zainbot.com/vidaa-install.html). A hosted web app, not an APK. Includes themes, Arabic/English, remote navigation, direct HTTPS video/audio library, favorites, playback resume and picture size. Browser checks passed using generated local media; no physical VIDAA certification yet. Developer-page installation requires firmware support. No phone pairing, native app launch, HDMI or Xtream imports. The ZIP is a deployment archive, not a USB installer.
