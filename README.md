@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.18
+# TV Morph · Public Preview 0.8.19
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -143,3 +143,14 @@ Phone checks saved TV connectivity at startup, foreground resume and remote entr
 ## 0.8.18 · Gentle app focus motion
 
 Focused app cards lift slightly and scale 4.5%, with a 9% icon zoom and theme glow. Rails reserve vertical room for focus outlines. Reduce Motion and system reduced-motion preferences suppress transforms. New/reset glass opacity defaults to 18%; existing chosen opacity remains saved. Both TV bundles passed geometry, motion and app-reorder fixtures. Physical TV performance remains to be verified.
+
+
+## 0.8.19 · Family profiles, unified IPTV search and channel EPG
+
+Up to six local family profiles share the provider account but isolate home theme, pinned apps, IPTV/radio favorites and playback progress. The default profile retains existing data. Select profiles from the TV header or the phone family panel while the TV is on Home. Profiles are local to each TV, with no cloud sync or child-lock promise.
+
+Search all live channels, movies and series by title inside TVM-IPTV. The first 20 matches from each enabled section are shown; choose a section for the full paginated results. Failed sections are identified while other results remain available. The first search may need to fetch provider catalogs.
+
+EPG uses the provider's get_short_epg endpoint for a selected live channel, showing current/upcoming listings in TV local time. Missing or failed data is reported; no synthetic schedules, recording or catch-up functionality are implied.
+
+Native Java tests cover progress isolation/clear and actual EPG HTTP parsing against a local fixture provider. Browser tests cover both TV bundles, phone profile selection, search, EPG and regressions. Samsung AVPlay/provider transport is mocked; physical playback and live provider data still require user testing. Also improves Fire TV identification from advertised device metadata.
