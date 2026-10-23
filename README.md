@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.14
+# TV Morph · Public Preview 0.8.15
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -123,3 +123,8 @@ Android/Fire TV Settings → App locks · PIN sets a 4–8 digit PIN and selects
 Full-screen fading background, up to five custom slideshow images, theme glass colors, reflection and opacity controls, independent artwork/text/logo positioning, header weather and sidebar navigation. TVM-IPTV and TVM-RADIO are default apps. IPTV adds a section dashboard, library preferences and Xtream account entry directly on TV.
 
 Browser fixture checks cover Android/Fire and Samsung bundles; native playback, performance and provider connectivity still require testing on the physical TV.
+
+
+## 0.8.15 · Media theme and connection recovery
+
+IPTV and radio inherit the selected TV palette. Home app rails calculate whole-card widths. Read-only phone requests retry a failed connection once with a longer connection deadline; mutating actions are not replayed. TV retries starting its LAN listener on resume after an initial bind failure. A reachability check found the reported TV responding on the original address; the earlier interruption cause remains unconfirmed.
