@@ -1,0 +1,23 @@
+{
+  "name": "TV Morph",
+  "version": "0.1.0-vidaa-preview",
+  "platform": "VIDAA web application",
+  "appUrl": "https://tvmorph.zainbot.com/vidaa.html",
+  "iconUrl": "https://tvmorph.zainbot.com/tvmorph.png",
+  "resolution": 1080,
+  "sha256": "b8f41d61d5e9230e1384c2555f3429271f4261f889f750a31f574cbe7fdd36d0",
+  "physicalDeviceVerified": false,
+  "capabilities": [
+    "themes",
+    "ar-en",
+    "remote-navigation",
+    "direct-media-player",
+    "local-favorites",
+    "local-resume"
+  ],
+  "limitations": [
+    "No phone pairing or system app/HDMI control",
+    "Installation requires firmware debug support or approved VIDAA distribution",
+    "Playback depends on device codecs and stream access"
+  ]
+}

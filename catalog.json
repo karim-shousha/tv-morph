@@ -41,9 +41,12 @@
       "id": "vidaa",
       "name": "Hisense · VIDAA",
       "available": false,
-      "noteAr": "نسخة VIDAA لم تكتمل بعد. ملف Android APK لا يعمل على هذا النظام.",
-      "noteEn": "A VIDAA receiver is not implemented yet. Android APK files cannot run on VIDAA.",
-      "webPreview": "/web-tv.html"
+      "noteAr": "نسخة ويب تجريبية VIDAA 0.1 جاهزة لاختبار التشغيل. التثبيت يحتاج صفحة التطوير على شاشة متوافقة؛ لم يتم التحقق على جهاز فعلي بعد. الربط بالموبايل غير مضاف.",
+      "noteEn": "VIDAA 0.1 hosted web build ready for runtime testing. Installation requires a compatible development page; physical TV verification is pending. No phone pairing yet.",
+      "webPreview": "/vidaa.html",
+      "installGuide": "/vidaa-install.html",
+      "runtimeAvailable": true,
+      "physicalDeviceVerified": false
     }
   ],
   "releases": [
