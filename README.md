@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.16
+# TV Morph · Public Preview 0.8.17
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -133,3 +133,8 @@ IPTV and radio inherit the selected TV palette. Home app rails calculate whole-c
 ## 0.8.16 · Artwork controls across themes
 
 Both crossfade layers update their scale when artwork controls change. Applying layout updates no longer resets a running slideshow image. The phone preview shows the first selected slideshow image on every palette. Tests cover single image and slideshow X/Y movement and size on all ten themes in Android and Samsung bundles. Physical TV verification remains pending.
+
+
+## 0.8.17 · Reconnect guidance and phone controls
+
+Phone checks saved TV connectivity at startup, foreground resume and remote entry. Failed remote sends disable controls and show a reconnect action. The five-minute pairing-code lifetime is distinct from the persistent paired token. Remote buttons/touchpad have separate modes and a compact visual layout. Background upload UI adds clear image collection controls and language-aware labels. Position sliders explicitly use LTR controls so right increases X even in Arabic. Android Internet action resolves a browser intent and reports missing browser; Samsung resolves a browser app or reports absence. Physical browser launch and reconnect behavior require device verification.
