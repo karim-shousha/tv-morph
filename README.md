@@ -100,3 +100,5 @@ The same ADB transport installed and launched the receiver on a physical Hisense
 ## 0.8.10 · Persistent Move mode
 
 Hold OK until Move appears, then release OK and use Left/Right. A new OK press saves; Back exits Move. Held-key repeats and the release click do not close Move. Shared by the Android/Fire TV and Samsung bundles.
+
+The core interface offers Arabic, English, French, Simplified Chinese and Japanese. Pairing dialogs support all five. Additional languages are an initial translation preview: untranslated technical instructions use English.
