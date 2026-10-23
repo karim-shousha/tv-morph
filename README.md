@@ -161,12 +161,14 @@ Signed APKs include the complete offline artwork library. The phone package cont
 
 Includes a new generated Al Ahly team cutout. Mobile interface translations now include 857 bundled entries in Arabic, English, French, Simplified Chinese and Japanese; install guides, dynamic native error fragments, placeholders and download notifications are included. UI language/RTL tests passed on all five languages. Translations do not require a network service at runtime.
 
-## 0.8.22
+## 0.8.23
 Prayer times: themed TV dashboard, current/upcoming prayer and countdown, Gregorian/Hijri dates, manual city selection, Egyptian/Umm Al-Qura/ISNA/MWL methods and standard/Hanafi Asr. Today/tomorrow AlAdhan schedules are cached by exact date, coordinates, timezone and method; no invented offline times. Egyptian and Makkah recordings copied byte-for-byte from the user-authorized HER assets (egypt.mp3 and makka.mp3). Audio is opt-in and foreground-only; not during other apps or standby. DST and duplicate/missed-trigger guards have fixture coverage. No physical sound test has been performed.
 Al Ahly artwork reverted to the original al-ahly-duel.png at user request; the generated alternative is excluded from bundles. Other ready sports themes and complete mobile UI language coverage remain.
 
 Prayer time responses now request ISO timestamps with provider UTC offsets. The clock/date use bundled Moment 2.31.0 and Moment Timezone 0.6.5 (MIT, IANA data) so old TV timezone databases cannot omit Egypt DST.
 Deployment keeps only the two current APKs in the Git tree and Docker context. Older binaries remain in immutable Git snapshots; exact nginx archive routes preserve their original public URLs and checksums. Local distribution archives are retained. prepare.py records archive sources before each release.
 
-## Startup option 0.8.22
+## Startup option 0.8.23
 Android/Fire OS TV Settings → Launch when TV starts. Opt-in full boot launch, separate from Home/launcher selection. Some firmware needs manually granted Display over other apps permission; unsupported firmware may block startup. Standby wake is not a full boot.
+
+0.8.23 fixes phone-to-TV update delivery for receiver APKs larger than 16 MiB. Update the phone companion first.
