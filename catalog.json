@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "latest": "0.8.21",
+  "latest": "0.8.22",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.21",
+      "version": "0.8.22",
       "download": "/download/phone",
-      "noteAr": "تطبيق الموبايل لإدارة التصميم والربط واختيار بروفايلات العيلة. Android 8 أو أحدث. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph.",
-      "noteEn": "Phone companion for design, pairing and family profile selection. Android 8 or later. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible."
+      "noteAr": "تطبيق الموبايل لإدارة التصميم والربط واختيار بروفايلات العيلة. Android 8 أو أحدث. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph. خيار مستقل للتشغيل بعد إقلاع التلفزيون على الأنظمة التي تسمح به، دون تغيير اللانشر.",
+      "noteEn": "Phone companion for design, pairing and family profile selection. Android 8 or later. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible. Independent opt-in launch after TV boot, where firmware permits, without changing the launcher."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.21",
+      "version": "0.8.22",
       "download": "/download/android",
-      "noteAr": "Android 8 أو أحدث. بروفايلات عائلية وبحث IPTV موحّد ودليل برامج EPG عند دعم المزوّد. التثبيت يحتاج موافقة التلفزيون. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph.",
-      "noteEn": "Android 8+. Family profiles, unified IPTV title search and provider-supported EPG. Installation needs TV confirmation. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible."
+      "noteAr": "Android 8 أو أحدث. بروفايلات عائلية وبحث IPTV موحّد ودليل برامج EPG عند دعم المزوّد. التثبيت يحتاج موافقة التلفزيون. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph. خيار مستقل للتشغيل بعد إقلاع التلفزيون على الأنظمة التي تسمح به، دون تغيير اللانشر.",
+      "noteEn": "Android 8+. Family profiles, unified IPTV title search and provider-supported EPG. Installation needs TV confirmation. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible. Independent opt-in launch after TV boot, where firmware permits, without changing the launcher."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.21",
+      "version": "0.8.22",
       "download": "/download/firetv",
-      "noteAr": "Fire OS المبني على Android 8+، وليس Vega OS. بروفايلات عائلية وبحث IPTV موحّد وEPG حسب المزوّد. إرسال ADB يحتاج موافقة الشاشة. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph.",
-      "noteEn": "Android 8+ based Fire OS, not Vega OS. Family profiles, unified IPTV search and provider-supported EPG. ADB delivery requires TV approval. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible."
+      "noteAr": "Fire OS المبني على Android 8+، وليس Vega OS. بروفايلات عائلية وبحث IPTV موحّد وEPG حسب المزوّد. إرسال ADB يحتاج موافقة الشاشة. ثيمات رياضية جاهزة بصور PNG وتحسين اللغات الخمس. مواقيت الصلاة بألوان الثيم وأذان مصر ومكة أثناء ظهور TV Morph. خيار مستقل للتشغيل بعد إقلاع التلفزيون على الأنظمة التي تسمح به، دون تغيير اللانشر.",
+      "noteEn": "Android 8+ based Fire OS, not Vega OS. Family profiles, unified IPTV search and provider-supported EPG. ADB delivery requires TV approval. Ready sports themes with built-in PNG artwork and improved five-language mobile UI. Themed prayer dashboard with Egyptian/Makkah Adhan while TV Morph is visible. Independent opt-in launch after TV boot, where firmware permits, without changing the launcher."
     },
     {
       "id": "samsung",
@@ -37,7 +37,7 @@
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.21"
+      "version": "0.8.22"
     },
     {
       "id": "lg",
@@ -101,6 +101,12 @@
       "file": "TV-Morph-Phone-0.8.3.apk",
       "bytes": 6813652,
       "sha256": "c2c664e80f668815eecae26297fd5ce07f2ff89f0f44562acd99d6a66758924f"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.22",
+      "file": "TV-Morph-Phone-0.8.22.apk",
+      "bytes": 66943925,
+      "sha256": "47e1e04702708edc96d416871075222e24c0283744e53108d9e1b1a75fb82be6"
     },
     {
       "name": "TV-Morph-Phone-0.8.21",
@@ -215,6 +221,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.22",
+      "file": "TV-Morph-Android-TV-0.8.22.apk",
+      "bytes": 23470614,
+      "sha256": "b557bc1fa9249d44a07a97fb22bb8195ba7049495b60d5db44c060e8a8fa87c8"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.21",
@@ -346,6 +358,8 @@
     "TV-Morph-Android-TV-0.8.11.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.11.apk",
     "TV-Morph-Android-TV-0.8.10.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.10.apk",
     "TV-Morph-Android-TV-0.8.1.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.1.apk",
-    "TV-Morph-Android-TV-0.8.0.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.0.apk"
+    "TV-Morph-Android-TV-0.8.0.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.0.apk",
+    "TV-Morph-Phone-0.8.21.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/740e55773cd5d96296c41e56d3560085c34ac846/TV-Morph-Phone-0.8.21.apk",
+    "TV-Morph-Android-TV-0.8.21.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/740e55773cd5d96296c41e56d3560085c34ac846/TV-Morph-Android-TV-0.8.21.apk"
   }
 }
