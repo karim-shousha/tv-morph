@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "latest": "0.8.26",
+  "latest": "0.8.27",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.26",
+      "version": "0.8.27",
       "download": "/download/phone",
-      "noteAr": "نسخة خفيفة: الثيمات الهادئة مدمجة، وحزم مصر وأوروبا والهوكي والرياضة والمنتخبات اختيارية للتحميل مع حفظها أوفلاين. Android 8 أو أحدث. حدّث الموبايل والتلفزيون معًا.",
-      "noteEn": "Lightweight preview: calm themes included; optional Egypt, Europe, hockey, sports and national-team packs cached offline after download. Android 8+. Update both phone and TV."
+      "noteAr": "نسخة خفيفة بحزم ثيمات اختيارية. إصلاح تكرار عنوان الهوم، الطقس بجوار الساعة، توافق قوائم Samsung، وألوان حدود الكروت مع كل ثيم. Twilight Blue افتراضيًا. حدّث الموبايل والتلفزيون معًا.",
+      "noteEn": "Lightweight apps with optional theme packs. Fixes duplicate Home text, header weather placement, Samsung menu compatibility, and card borders following all themes. Twilight Blue default. Update both phone and TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.26",
+      "version": "0.8.27",
       "download": "/download/android",
-      "noteAr": "نسخة خفيفة: الثيمات الهادئة مدمجة، وحزم مصر وأوروبا والهوكي والرياضة والمنتخبات اختيارية للتحميل مع حفظها أوفلاين. Android 8 أو أحدث. حدّث الموبايل والتلفزيون معًا.",
-      "noteEn": "Lightweight preview: calm themes included; optional Egypt, Europe, hockey, sports and national-team packs cached offline after download. Android 8+. Update both phone and TV."
+      "noteAr": "نسخة خفيفة بحزم ثيمات اختيارية. إصلاح تكرار عنوان الهوم، الطقس بجوار الساعة، توافق قوائم Samsung، وألوان حدود الكروت مع كل ثيم. Twilight Blue افتراضيًا. حدّث الموبايل والتلفزيون معًا.",
+      "noteEn": "Lightweight apps with optional theme packs. Fixes duplicate Home text, header weather placement, Samsung menu compatibility, and card borders following all themes. Twilight Blue default. Update both phone and TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.26",
+      "version": "0.8.27",
       "download": "/download/firetv",
-      "noteAr": "نسخة خفيفة: الثيمات الهادئة مدمجة، وحزم مصر وأوروبا والهوكي والرياضة والمنتخبات اختيارية للتحميل مع حفظها أوفلاين. Android 8 أو أحدث. حدّث الموبايل والتلفزيون معًا.",
-      "noteEn": "Lightweight preview: calm themes included; optional Egypt, Europe, hockey, sports and national-team packs cached offline after download. Android 8+. Update both phone and TV."
+      "noteAr": "نسخة خفيفة بحزم ثيمات اختيارية. إصلاح تكرار عنوان الهوم، الطقس بجوار الساعة، توافق قوائم Samsung، وألوان حدود الكروت مع كل ثيم. Twilight Blue افتراضيًا. حدّث الموبايل والتلفزيون معًا.",
+      "noteEn": "Lightweight apps with optional theme packs. Fixes duplicate Home text, header weather placement, Samsung menu compatibility, and card borders following all themes. Twilight Blue default. Update both phone and TV."
     },
     {
       "id": "samsung",
@@ -37,7 +37,7 @@
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.26"
+      "version": "0.8.27"
     },
     {
       "id": "lg",
@@ -101,6 +101,12 @@
       "file": "TV-Morph-Phone-0.8.3.apk",
       "bytes": 6813652,
       "sha256": "c2c664e80f668815eecae26297fd5ce07f2ff89f0f44562acd99d6a66758924f"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.27",
+      "file": "TV-Morph-Phone-0.8.27.apk",
+      "bytes": 8051149,
+      "sha256": "aee31e84fa7acfa040e48312bfa166259ebd7aa3444cd2438c3c52880ee85979"
     },
     {
       "name": "TV-Morph-Phone-0.8.26",
@@ -245,6 +251,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.27",
+      "file": "TV-Morph-Android-TV-0.8.27.apk",
+      "bytes": 3747934,
+      "sha256": "00af2bda439a5454767d1ade5b9d0e64e39794ab0b5fb6956b9814a8739c667a"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.26",
@@ -416,6 +428,8 @@
     "TV-Morph-Phone-0.8.24.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/379a16f5e3a32df356db1a5d8a0ce8062e129d6b/TV-Morph-Phone-0.8.24.apk",
     "TV-Morph-Android-TV-0.8.24.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/379a16f5e3a32df356db1a5d8a0ce8062e129d6b/TV-Morph-Android-TV-0.8.24.apk",
     "TV-Morph-Phone-0.8.25.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/236032614debf4d3aa309a7740189931ab870089/TV-Morph-Phone-0.8.25.apk",
-    "TV-Morph-Android-TV-0.8.25.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/236032614debf4d3aa309a7740189931ab870089/TV-Morph-Android-TV-0.8.25.apk"
+    "TV-Morph-Android-TV-0.8.25.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/236032614debf4d3aa309a7740189931ab870089/TV-Morph-Android-TV-0.8.25.apk",
+    "TV-Morph-Phone-0.8.26.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3ca905efdcb5829db7473b5a837aaa37d3e383dc/TV-Morph-Phone-0.8.26.apk",
+    "TV-Morph-Android-TV-0.8.26.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3ca905efdcb5829db7473b5a837aaa37d3e383dc/TV-Morph-Android-TV-0.8.26.apk"
   }
 }
