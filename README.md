@@ -6,12 +6,12 @@
 
 ## Download / التحميل
 
-[TV Morph download center · مركز تنزيل الإصدارات](https://tvmorph.84.247.140.2.sslip.io/)
+[TV Morph download center · مركز تنزيل الإصدارات](https://tvmorph.zainbot.com/)
 
 The downloads are hosted on our Coolify server. This repository supplies the deployment build context.
 
-- [Android phone app · تطبيق الموبايل](https://tvmorph.84.247.140.2.sslip.io/download/phone)
-- [Android / Google TV receiver · نسخة شاشة Android فقط](https://tvmorph.84.247.140.2.sslip.io/download/android)
+- [Android phone app · تطبيق الموبايل](https://tvmorph.zainbot.com/download/phone)
+- [Android / Google TV receiver · نسخة شاشة Android فقط](https://tvmorph.zainbot.com/download/android)
 - [SHA-256 checksums](SHA256SUMS.txt)
 
 Install updates over the existing application; do not uninstall if you want to retain pairing, account and favorites. The shared phone APK has WebView debugging disabled.
