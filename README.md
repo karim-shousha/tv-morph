@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.0
+# TV Morph · Public Preview 0.8.1
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -6,8 +6,8 @@
 
 ## Download / التحميل
 
-- [Android phone app · تطبيق الموبايل](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Phone-0.8.0.apk)
-- [Android / Google TV receiver · نسخة شاشة Android فقط](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Android-TV-0.8.0.apk)
+- [Android phone app · تطبيق الموبايل](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Phone-0.8.1.apk)
+- [Android / Google TV receiver · نسخة شاشة Android فقط](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Android-TV-0.8.1.apk)
 - [SHA-256 checksums](SHA256SUMS.txt)
 
 Install updates over the existing application; do not uninstall if you want to retain pairing, account and favorites. The shared phone APK has WebView debugging disabled.
@@ -37,9 +37,13 @@ Each phone bundles the TV APK and can start a ten-minute local download session.
 
 VIDAA troubleshooting: keep devices on the same network and enable Content Sharing when available. See [official VIDAA guidance](https://www.vidaa.com/customer_support/what-should-i-do-if-the-vidaa-app-media-function-isnt-working/). Some devices do not advertise a service that this preview can detect.
 
+## What changed in 0.8.1
+
+Updated TV Morph logo and launcher icon, persistent light/dark appearance, collapsible personal customization and clearer pricing text. Billing remains disabled.
+
 ## Preview status
 
-The app includes a light Arabic/English UI and theme library previews. Barcelona, Real Madrid and Egypt have crest/palette/detail previews. Future sport collections are marked coming soon. **Payments, paid activation and three-day trial expiry are disabled.** The intended future model is one-time theme purchases through Google Play, not subscriptions. This APK is not yet a Google Play production submission.
+The app includes a light/dark Arabic/English UI and theme library previews. Barcelona, Real Madrid and Egypt have crest/palette/detail previews. Future sport collections are marked coming soon. **Payments, paid activation and three-day trial expiry are disabled.** The intended future model is one-time theme purchases through Google Play, not subscriptions. This APK is not yet a Google Play production submission.
 
 Credentials are not bundled. Users supply their own IPTV account in the app; no subscription or channel access is provided. Pairing uses an authenticated local HTTP API, intended for a trusted LAN. Never enter account passwords in chat.
 
