@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.3
+# TV Morph · Public Preview 0.8.4
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -65,3 +65,8 @@ Locks pinch/double-tap zoom in the Android WebView, keeps the logo/name on the p
 ## VIDAA development build 0.1.0
 
 [Application](https://tvmorph.zainbot.com/vidaa.html) · [step-by-step install guide](https://tvmorph.zainbot.com/vidaa-install.html). A hosted web app, not an APK. Includes themes, Arabic/English, remote navigation, direct HTTPS video/audio library, favorites, playback resume and picture size. Browser checks passed using generated local media; no physical VIDAA certification yet. Developer-page installation requires firmware support. No phone pairing, native app launch, HDMI or Xtream imports. The ZIP is a deployment archive, not a USB installer.
+
+
+## Hero layout update 0.8.4
+
+Phone and Android TV builds are now 0.8.4. The shared theme UI uses separate crest, text and artwork columns, fixed physically left-to-right in Arabic and English. Removes the duplicate custom artwork overlay. Tested all ten palettes in both languages. Samsung developer-install bundles include the same shared correction; physical Samsung installation is not certified across all models.
