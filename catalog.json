@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.12",
+  "latest": "0.8.13",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.12",
+      "version": "0.8.13",
       "download": "/download/phone",
       "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
       "noteEn": "Phone companion for design and pairing. Android 8 or later."
@@ -16,19 +16,19 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.12",
+      "version": "0.8.13",
       "download": "/download/android",
-      "noteAr": "نسخة الشاشة المستقلة. Android 8 أو أحدث. وافق على التثبيت من الشاشة؛ التوافق مع كل موديل غير مؤكد.",
-      "noteEn": "Separate TV receiver. Android 8+. Approve installation on the TV. Not certified for every model."
+      "noteAr": "Android 8 أو أحدث. يضيف قفل PIN داخل TV Morph ومسار Home اختياريًا بإذن تسهيلات الاستخدام يدويًا. تشغيل الإقلاع والسكون يحتاج تجربة على جهازك.",
+      "noteEn": "Android 8+. Adds app PIN inside TV Morph and optional Home navigation with manually enabled accessibility permission. Boot/wake behavior needs device testing."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.12",
+      "version": "0.8.13",
       "download": "/download/firetv",
-      "noteAr": "نسخة APK التجريبية لـFire OS المبني على Android 8 أو أحدث، وليست Vega OS. تطبيق الموبايل 0.8.9 يضيف إرسال ADB بعد موافقتك على الشاشة. التثبيت اختُبر على Hisense 43A4NF من الكمبيوتر؛ الإرسال من الموبايل يحتاج تجربة.",
-      "noteEn": "Experimental APK for Android 8+ based Fire OS, not Vega OS. Phone 0.8.9 adds ADB installation with TV approval. PC installation tested on Hisense 43A4NF; phone delivery still needs device testing."
+      "noteAr": "Fire OS المبني على Android 8+، وليس Vega OS. إرسال ADB من الموبايل يحتاج موافقة التلفزيون. قفل PIN ومسار Home الجديدان يحتاجان تجربة فعلية على الجهاز.",
+      "noteEn": "Android 8+ based Fire OS, not Vega OS. Phone ADB installation requires TV approval. New app PIN and optional Home navigation require physical device testing."
     },
     {
       "id": "samsung",
@@ -37,7 +37,7 @@
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.12"
+      "version": "0.8.13"
     },
     {
       "id": "lg",
@@ -109,6 +109,12 @@
       "sha256": "6a787d417829fab337a6288bfe958325a467370ebe201382edcc51d9fe6f67fe"
     },
     {
+      "name": "TV-Morph-Phone-0.8.13",
+      "file": "TV-Morph-Phone-0.8.13.apk",
+      "bytes": 8759324,
+      "sha256": "6db3b535da52c1e573a75f5172d7a6a11741bb4fb3365099dfaa2c260e138e1d"
+    },
+    {
       "name": "TV-Morph-Phone-0.8.12",
       "file": "TV-Morph-Phone-0.8.12.apk",
       "bytes": 8747036,
@@ -167,6 +173,12 @@
       "file": "TV-Morph-Android-TV-0.8.2.apk",
       "bytes": 3103551,
       "sha256": "545f26ae4f19d7b00510281a3d84e0e1588224bba98cbfb18884735bc5495fea"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.13",
+      "file": "TV-Morph-Android-TV-0.8.13.apk",
+      "bytes": 3140486,
+      "sha256": "ca5dc9a06ad330af70899237751bc0c4986b1c3833af83f82f60cd0809300fcd"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.12",
