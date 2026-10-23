@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.5",
+  "latest": "0.8.6",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.5",
+      "version": "0.8.6",
       "download": "/download/phone",
       "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
       "noteEn": "Phone companion for design and pairing. Android 8 or later."
@@ -50,6 +50,12 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.6",
+      "file": "TV-Morph-Phone-0.8.6.apk",
+      "bytes": 7194580,
+      "sha256": "45ed597c88c961544123c3969d82852aa1d3009e7114aa929a955ce22bdb7915"
+    },
     {
       "name": "TV-Morph-Phone-0.8.5",
       "file": "TV-Morph-Phone-0.8.5.apk",

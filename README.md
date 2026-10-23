@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.5
+# TV Morph · Public Preview 0.8.6
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -75,3 +75,8 @@ Phone and Android TV builds are now 0.8.4. The shared theme UI uses separate cre
 ## Samsung phone hotfix 0.8.5
 
 Fixes the certificate sign-in redirect by using the reference loopback callback http://localhost:4794/signin/callback, instead of an ephemeral port and random callback path that Samsung rejected. Port conflicts now fail clearly instead of falling back to an unregistered URL. Android TV receiver remains 0.8.4. Local callback checks pass; user sign-in, certificate issuance and TV installation still require end-to-end verification.
+
+
+## Samsung update 0.8.6
+
+Modern TV Morph branding/icon, persistent Arabic/English switch, scrollable app shelves and fixed home tools in the Samsung developer package. Reuses a verified inspector endpoint instead of restarting a debug session for every theme change. Debug launch detects the returned port without waiting for shell EOF; a stale endpoint gives bounded recovery instructions. Tested on the connected Samsung: install/launch, 14 installed-app cards and five sequential phone-to-TV theme changes (77–355 ms each). Android TV receiver stays 0.8.4. Samsung IPTV/radio playback is not included.
