@@ -127,26 +127,26 @@
     },
     {
       "id": "national",
-      "version": 1,
+      "version": 2,
       "themes": [
         "argentina",
         "portugal"
       ],
       "files": [
         {
-          "name": "argentina-team.jpg",
-          "file": "national-v1-argentina-team.webp",
-          "bytes": 35282,
-          "sha256": "afe4267a34e06b0f7af50cc898b7f27081f2548a4b347abfce197f4460bf7c75"
+          "name": "argentina-2022-team.jpg",
+          "file": "national-v2-argentina-2022-team.webp",
+          "bytes": 136986,
+          "sha256": "d20bfc523df189f68afcdf27d86769735ed1d7bc392fc98e8120fc2e3ca0c4f9"
         },
         {
           "name": "portugal-team.png",
-          "file": "national-v1-portugal-team.webp",
+          "file": "national-v2-portugal-team.webp",
           "bytes": 267524,
           "sha256": "a72e926ebb50f001f7f09c08755c9cfa2d7be8e1119b0cfd7ab29872e1e26624"
         }
       ],
-      "bytes": 302806
+      "bytes": 404510
     }
   ]
 }

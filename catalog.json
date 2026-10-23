@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "latest": "0.8.29",
+  "latest": "0.8.30",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.29",
+      "version": "0.8.30",
       "download": "/download/phone",
-      "noteAr": "فتح التطبيق على أول الصفحة مع الاحتفاظ بالثيم المختار، بحث بالاسم في مكتبة الثيمات، ومنتخب مصر ضمن المنتخبات فقط. خلفية Twilight Blue الجديدة وحزم ثيمات اختيارية.",
-      "noteEn": "Opens at the top while preserving your selected theme. Search themes by name, with Egypt in national teams only. Cinematic Twilight Blue wallpaper and optional theme packs."
+      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
+      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.29",
+      "version": "0.8.30",
       "download": "/download/android",
-      "noteAr": "خلفية Twilight Blue سينمائية جديدة بدمج شخصيات تعبّر عن الأفلام والرياضة والموسيقى. مسافات أزرار القائمة متساوية، والصلاة القادمة بدون كارت وبوقت أكبر. نسخة خفيفة بحزم ثيمات اختيارية. حدّث الموبايل والتلفزيون معًا.",
-      "noteEn": "New cinematic Twilight Blue artwork combining cinema, sports and music. Even sidebar spacing and a larger prayer countdown without a card background. Lightweight apps with optional theme packs. Update both phone and TV."
+      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
+      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.29",
+      "version": "0.8.30",
       "download": "/download/firetv",
-      "noteAr": "خلفية Twilight Blue سينمائية جديدة بدمج شخصيات تعبّر عن الأفلام والرياضة والموسيقى. مسافات أزرار القائمة متساوية، والصلاة القادمة بدون كارت وبوقت أكبر. نسخة خفيفة بحزم ثيمات اختيارية. حدّث الموبايل والتلفزيون معًا.",
-      "noteEn": "New cinematic Twilight Blue artwork combining cinema, sports and music. Even sidebar spacing and a larger prayer countdown without a card background. Lightweight apps with optional theme packs. Update both phone and TV."
+      "noteAr": "إصلاح توافق JavaScript في حزمة Samsung، والطقس مثبت بجوار الساعة والخلفية الافتراضية جاهزة قبل السكربتات. Twilight Blue بدمج رجالي، وصورة حقيقية لمنتخب الأرجنتين في مونديال 2022 ضمن حزمة المنتخبات إصدار 2. حدّث الموبايل والتلفزيون وحزمة المنتخبات.",
+      "noteEn": "Samsung JavaScript compatibility fix, static header weather and default wallpaper. All-male Twilight Blue artwork and a real Argentina 2022 World Cup team photo in national pack v2. Update phone, TV and the national-team pack."
     },
     {
       "id": "samsung",
@@ -37,7 +37,7 @@
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.29"
+      "version": "0.8.30"
     },
     {
       "id": "lg",
@@ -95,6 +95,12 @@
       "file": "TV-Morph-Phone-0.8.4.apk",
       "bytes": 6813652,
       "sha256": "f2ec35a406c15653cef045c5cd10bad6ebfc97aa61af8791c953c2f9aaa18b3d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.30",
+      "file": "TV-Morph-Phone-0.8.30.apk",
+      "bytes": 8460835,
+      "sha256": "95dbdce746104a6cfd2d33351b626681b437fea2d7cd4424fa46a6390e15ba6a"
     },
     {
       "name": "TV-Morph-Phone-0.8.3",
@@ -263,6 +269,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.30",
+      "file": "TV-Morph-Android-TV-0.8.30.apk",
+      "bytes": 3862715,
+      "sha256": "8d31f5f17f490d46cfc20f63aa3ac60766d66b28876f3f1c285bba272bc8f960"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.29",
@@ -458,6 +470,8 @@
     "TV-Morph-Phone-0.8.27.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/78b5cb963866eb64167038114629d0b4b4aeed4a/TV-Morph-Phone-0.8.27.apk",
     "TV-Morph-Android-TV-0.8.27.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/78b5cb963866eb64167038114629d0b4b4aeed4a/TV-Morph-Android-TV-0.8.27.apk",
     "TV-Morph-Phone-0.8.28.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/2ee33fc14a3fce83b7da5cf55ea9a57f67a31398/TV-Morph-Phone-0.8.28.apk",
-    "TV-Morph-Android-TV-0.8.28.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/2ee33fc14a3fce83b7da5cf55ea9a57f67a31398/TV-Morph-Android-TV-0.8.28.apk"
+    "TV-Morph-Android-TV-0.8.28.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/2ee33fc14a3fce83b7da5cf55ea9a57f67a31398/TV-Morph-Android-TV-0.8.28.apk",
+    "TV-Morph-Phone-0.8.29.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/15ed1dc3056183a79ce7ca32be69684887b50aa2/TV-Morph-Phone-0.8.29.apk",
+    "TV-Morph-Android-TV-0.8.29.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/15ed1dc3056183a79ce7ca32be69684887b50aa2/TV-Morph-Android-TV-0.8.29.apk"
   }
 }
