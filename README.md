@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.2
+# TV Morph · Public Preview 0.8.3
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -56,3 +56,7 @@ Club names, crests and user-supplied photographs remain the property of their re
 ## Browser theme preview
 
 https://tvmorph.zainbot.com/web-tv.html is a browser-only theme preview, with no installed-app enumeration, native TV controls, IPTV or receiver pairing. It passed desktop browser checks but still needs physical VIDAA/LG/Samsung browser tests. It is not an installed app or a verified universal compatibility path.
+
+## Phone update 0.8.3
+
+Locks pinch/double-tap zoom in the Android WebView, keeps the logo/name on the physical left and TV IP on the right in both languages, and gives dark appearance a high-contrast twilight-blue palette. Android TV receiver remains 0.8.2.
