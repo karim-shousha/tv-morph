@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "latest": "0.8.2",
+  "channel": "preview",
+  "platforms": [
+    {
+      "id": "phone",
+      "name": "Android Phone",
+      "available": true,
+      "version": "0.8.2",
+      "download": "/download/phone",
+      "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
+      "noteEn": "Phone companion for design and pairing. Android 8 or later."
+    },
+    {
+      "id": "android",
+      "name": "Android TV / Google TV",
+      "available": true,
+      "version": "0.8.2",
+      "download": "/download/android",
+      "noteAr": "نسخة الشاشة المستقلة. Android 8 أو أحدث. وافق على التثبيت من الشاشة؛ التوافق مع كل موديل غير مؤكد.",
+      "noteEn": "Separate TV receiver. Android 8+. Approve installation on the TV. Not certified for every model."
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung · Tizen",
+      "available": false,
+      "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
+      "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download."
+    },
+    {
+      "id": "lg",
+      "name": "LG · webOS",
+      "available": false,
+      "noteAr": "اكتشاف فقط حاليًا. نسخة TV Morph ومسار تثبيتها على webOS لم يكتملوا.",
+      "noteEn": "Discovery only today. A TV Morph webOS receiver and installation path are not implemented."
+    },
+    {
+      "id": "vidaa",
+      "name": "Hisense · VIDAA",
+      "available": false,
+      "noteAr": "نسخة VIDAA لم تكتمل بعد. ملف Android APK لا يعمل على هذا النظام.",
+      "noteEn": "A VIDAA receiver is not implemented yet. Android APK files cannot run on VIDAA."
+    }
+  ],
+  "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.2",
+      "file": "TV-Morph-Phone-0.8.2.apk",
+      "bytes": 6813652,
+      "sha256": "5aaf99e17d97765237bd33090e45364ab8945b10bdba40a7f0fe2bb65ad9fa8d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.1",
+      "file": "TV-Morph-Phone-0.8.1.apk",
+      "bytes": 6580113,
+      "sha256": "7282c912577cf33132ea9d92a627f70d64f25021835ebee711648a0a452939f8"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.0",
+      "file": "TV-Morph-Phone-0.8.0.apk",
+      "bytes": 5400259,
+      "sha256": "fd68524c1bbc44267041b8daf6f0a198fb312c7be9ea0abaa6bd7c56102f056e"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.2",
+      "file": "TV-Morph-Android-TV-0.8.2.apk",
+      "bytes": 3103551,
+      "sha256": "19e2dba1a452554e0f74c373bf34a0123ed7fa0d333efdec0f73cf1a2b9bc1f5"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.1",
+      "file": "TV-Morph-Android-TV-0.8.1.apk",
+      "bytes": 3025653,
+      "sha256": "94592af624ba83bd0dccc15e5b6b02f8f3e9100b6963aa982a9159cbd9781f5d"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.0",
+      "file": "TV-Morph-Android-TV-0.8.0.apk",
+      "bytes": 2435762,
+      "sha256": "1bc0c655a0a6a4f8c2c5ff00db6580c52f6c35131b1c2b8bbad4aa75ed9b8bfb"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.1
+# TV Morph · Public Preview 0.8.2
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -6,8 +6,12 @@
 
 ## Download / التحميل
 
-- [Android phone app · تطبيق الموبايل](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Phone-0.8.1.apk)
-- [Android / Google TV receiver · نسخة شاشة Android فقط](https://github.com/karim-shousha/tv-morph/raw/refs/heads/main/TV-Morph-Android-TV-0.8.1.apk)
+[TV Morph download center · مركز تنزيل الإصدارات](https://tvmorph.84.247.140.2.sslip.io/)
+
+The downloads are hosted on our Coolify server. This repository supplies the deployment build context.
+
+- [Android phone app · تطبيق الموبايل](https://tvmorph.84.247.140.2.sslip.io/download/phone)
+- [Android / Google TV receiver · نسخة شاشة Android فقط](https://tvmorph.84.247.140.2.sslip.io/download/android)
 - [SHA-256 checksums](SHA256SUMS.txt)
 
 Install updates over the existing application; do not uninstall if you want to retain pairing, account and favorites. The shared phone APK has WebView debugging disabled.
@@ -37,9 +41,9 @@ Each phone bundles the TV APK and can start a ten-minute local download session.
 
 VIDAA troubleshooting: keep devices on the same network and enable Content Sharing when available. See [official VIDAA guidance](https://www.vidaa.com/customer_support/what-should-i-do-if-the-vidaa-app-media-function-isnt-working/). Some devices do not advertise a service that this preview can detect.
 
-## What changed in 0.8.1
+## What changed in 0.8.2
 
-Updated TV Morph logo and launcher icon, persistent light/dark appearance, collapsible personal customization and clearer pricing text. Billing remains disabled.
+Complete poster artwork, a pre-play detail page with resume/restart, a picture-size control accessible with Up/Menu during playback, blue first-run theme with bilingual TV Morph copy, Zamalek crest and club text, stronger daylight contrast, explicit network OS/firmware discovery, and hosted version downloads. Billing remains disabled.
 
 ## Preview status
 
