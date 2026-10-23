@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.15
+# TV Morph · Public Preview 0.8.16
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -128,3 +128,8 @@ Browser fixture checks cover Android/Fire and Samsung bundles; native playback, 
 ## 0.8.15 · Media theme and connection recovery
 
 IPTV and radio inherit the selected TV palette. Home app rails calculate whole-card widths. Read-only phone requests retry a failed connection once with a longer connection deadline; mutating actions are not replayed. TV retries starting its LAN listener on resume after an initial bind failure. A reachability check found the reported TV responding on the original address; the earlier interruption cause remains unconfirmed.
+
+
+## 0.8.16 · Artwork controls across themes
+
+Both crossfade layers update their scale when artwork controls change. Applying layout updates no longer resets a running slideshow image. The phone preview shows the first selected slideshow image on every palette. Tests cover single image and slideshow X/Y movement and size on all ten themes in Android and Samsung bundles. Physical TV verification remains pending.
