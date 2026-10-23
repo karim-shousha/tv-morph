@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.6
+# TV Morph · Public Preview 0.8.7
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -80,3 +80,9 @@ Fixes the certificate sign-in redirect by using the reference loopback callback 
 ## Samsung update 0.8.6
 
 Modern TV Morph branding/icon, persistent Arabic/English switch, scrollable app shelves and fixed home tools in the Samsung developer package. Reuses a verified inspector endpoint instead of restarting a debug session for every theme change. Debug launch detects the returned port without waiting for shell EOF; a stale endpoint gives bounded recovery instructions. Tested on the connected Samsung: install/launch, 14 installed-app cards and five sequential phone-to-TV theme changes (77–355 ms each). Android TV receiver stays 0.8.4. Samsung IPTV/radio playback is not included.
+
+## Preview 0.8.7
+
+Samsung now packages the same IPTV library, details screen and radio UI used on Android TV, with Samsung AVPlay for playback. IPTV and Radio are pinned as default Home apps once; they can subsequently be rearranged or removed. The hero uses separate crest, centered text and artwork columns in Arabic and English. Returning focus to the header restores the full hero.
+
+Fixes include explicit fullscreen bounds for older Tizen engines, player cleanup, and restoration of IPTV form details from the phone encrypted vault. A locally generated video reached AVPlay PLAYING with advancing time on a physical Tizen 5 TV. Subscription-provider playback, audible radio output and the final fullscreen regression still need user confirmation; not certified across all TV models. LG and VIDAA distribution limitations remain unchanged.
