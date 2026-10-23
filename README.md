@@ -1,4 +1,4 @@
-# TV Morph · Public Preview 0.8.9
+# TV Morph · Public Preview 0.8.10
 
 **Developed by Karim Aboushousha & Hassan Shehata**
 
@@ -91,8 +91,12 @@ Fixes include explicit fullscreen bounds for older Tizen engines, player cleanup
 
 New television installations default to English; saved user language choices are retained. Selecting a different theme clears the previous theme custom text, logo, artwork and color overrides. Restore defaults now sends explicit empty image fields so old TV artwork is removed. Samsung setup displays the live phone IP beside Apps → 12345 → Developer Mode ON → Host PC IP.
 
-## Preview 0.8.9 · Fire TV
+## Preview 0.8.10 · Fire TV
 
 The phone adds an experimental Fire OS installation path: enable ADB debugging, enter the TV IP, approve the device prompt, then send the bundled signed Android TV 0.8.8 APK. It checks the Android SDK before installation, confirms Package Manager Success, and opens TV Morph for code pairing. The RSA identity is stored in the encrypted phone vault. Vega OS is excluded. After code pairing, existing phone theme, remote and update features are reused.
 
 The same ADB transport installed and launched the receiver on a physical Hisense 43A4NF running Fire OS 8.1.8.0 (Android SDK 30, reported build model AFTHU71990), using the PC test harness. The phone installer integration still needs a physical phone test. Amazon setup guide: https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html
+
+## 0.8.10 · Persistent Move mode
+
+Hold OK until Move appears, then release OK and use Left/Right. A new OK press saves; Back exits Move. Held-key repeats and the release click do not close Move. Shared by the Android/Fire TV and Samsung bundles.
