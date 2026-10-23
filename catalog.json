@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.8",
+  "latest": "0.8.9",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.8",
+      "version": "0.8.9",
       "download": "/download/phone",
       "noteAr": "تطبيق الموبايل لإدارة التصميم والربط. Android 8 أو أحدث.",
       "noteEn": "Phone companion for design and pairing. Android 8 or later."
@@ -16,10 +16,19 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.8",
+      "version": "0.8.9",
       "download": "/download/android",
       "noteAr": "نسخة الشاشة المستقلة. Android 8 أو أحدث. وافق على التثبيت من الشاشة؛ التوافق مع كل موديل غير مؤكد.",
       "noteEn": "Separate TV receiver. Android 8+. Approve installation on the TV. Not certified for every model."
+    },
+    {
+      "id": "firetv",
+      "name": "Amazon Fire TV · Fire OS",
+      "available": true,
+      "version": "0.8.9",
+      "download": "/download/firetv",
+      "noteAr": "نسخة APK التجريبية لـFire OS المبني على Android 8 أو أحدث، وليست Vega OS. تطبيق الموبايل 0.8.9 يضيف إرسال ADB بعد موافقتك على الشاشة. التثبيت اختُبر على Hisense 43A4NF من الكمبيوتر؛ الإرسال من الموبايل يحتاج تجربة.",
+      "noteEn": "Experimental APK for Android 8+ based Fire OS, not Vega OS. Phone 0.8.9 adds ADB installation with TV approval. PC installation tested on Hisense 43A4NF; phone delivery still needs device testing."
     },
     {
       "id": "samsung",
@@ -27,7 +36,8 @@
       "available": false,
       "noteAr": "التثبيت التجريبي من تطبيق الموبايل يحتاج Developer Mode وشهادة لجهازك. لا يوجد ملف عام صالح لكل أجهزة Samsung.",
       "noteEn": "Experimental installation from the phone requires Developer Mode and a per-device certificate. No universal Samsung download.",
-      "webPreview": "/web-tv.html"
+      "webPreview": "/web-tv.html",
+      "version": "0.8.9"
     },
     {
       "id": "lg",
@@ -50,6 +60,12 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.9",
+      "file": "TV-Morph-Phone-0.8.9.apk",
+      "bytes": 7239636,
+      "sha256": "ea81dd0f1aa533341b0c754c727ddc34bf5e4dc0dce3d19817fc85f4381770c3"
+    },
     {
       "name": "TV-Morph-Phone-0.8.8",
       "file": "TV-Morph-Phone-0.8.8.apk",
@@ -103,6 +119,12 @@
       "file": "TV-Morph-Phone-0.8.0.apk",
       "bytes": 5400259,
       "sha256": "fd68524c1bbc44267041b8daf6f0a198fb312c7be9ea0abaa6bd7c56102f056e"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.9",
+      "file": "TV-Morph-Android-TV-0.8.9.apk",
+      "bytes": 3107647,
+      "sha256": "e8a6ac076cc67983d36e0bfae583b09f0c194a7d082d7a74543d6a9178da14be"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.8",
