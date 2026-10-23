@@ -105,8 +105,8 @@
     {
       "name": "TV-Morph-Phone-0.8.21",
       "file": "TV-Morph-Phone-0.8.21.apk",
-      "bytes": 66874293,
-      "sha256": "77077c71aa40dfe6d11fded74d5bdb86bf0b3d366f9f51691c214619b66183ba"
+      "bytes": 66939829,
+      "sha256": "63a573b6ead706689bf589ae32db8ee1f6600aadb293119ceb157c2cb32c9aa2"
     },
     {
       "name": "TV-Morph-Phone-0.8.20",
@@ -219,8 +219,8 @@
     {
       "name": "TV-Morph-Android-TV-0.8.21",
       "file": "TV-Morph-Android-TV-0.8.21.apk",
-      "bytes": 23433515,
-      "sha256": "132e5fd86a16f71913869fb0519ab092a075d4f52d908e07d0b481d9b5c88d0f"
+      "bytes": 23466518,
+      "sha256": "afe15f45396f8ca5bbc3107ff3febeccce464d7713e2640e2b71d9779e7e0051"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.20",
@@ -306,5 +306,46 @@
       "bytes": 2435762,
       "sha256": "1bc0c655a0a6a4f8c2c5ff00db6580c52f6c35131b1c2b8bbad4aa75ed9b8bfb"
     }
-  ]
+  ],
+  "archiveSources": {
+    "TV-Morph-Phone-0.8.9.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.9.apk",
+    "TV-Morph-Phone-0.8.8.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.8.apk",
+    "TV-Morph-Phone-0.8.7.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.7.apk",
+    "TV-Morph-Phone-0.8.6.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.6.apk",
+    "TV-Morph-Phone-0.8.5.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.5.apk",
+    "TV-Morph-Phone-0.8.4.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.4.apk",
+    "TV-Morph-Phone-0.8.3.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.3.apk",
+    "TV-Morph-Phone-0.8.20.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.20.apk",
+    "TV-Morph-Phone-0.8.2.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.2.apk",
+    "TV-Morph-Phone-0.8.19.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.19.apk",
+    "TV-Morph-Phone-0.8.18.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.18.apk",
+    "TV-Morph-Phone-0.8.17.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.17.apk",
+    "TV-Morph-Phone-0.8.16.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.16.apk",
+    "TV-Morph-Phone-0.8.15.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.15.apk",
+    "TV-Morph-Phone-0.8.14.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.14.apk",
+    "TV-Morph-Phone-0.8.13.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.13.apk",
+    "TV-Morph-Phone-0.8.12.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.12.apk",
+    "TV-Morph-Phone-0.8.11.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.11.apk",
+    "TV-Morph-Phone-0.8.10.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.10.apk",
+    "TV-Morph-Phone-0.8.1.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.1.apk",
+    "TV-Morph-Phone-0.8.0.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Phone-0.8.0.apk",
+    "TV-Morph-Android-TV-0.8.9.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.9.apk",
+    "TV-Morph-Android-TV-0.8.8.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.8.apk",
+    "TV-Morph-Android-TV-0.8.7.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.7.apk",
+    "TV-Morph-Android-TV-0.8.4.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.4.apk",
+    "TV-Morph-Android-TV-0.8.20.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.20.apk",
+    "TV-Morph-Android-TV-0.8.2.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.2.apk",
+    "TV-Morph-Android-TV-0.8.19.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.19.apk",
+    "TV-Morph-Android-TV-0.8.18.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.18.apk",
+    "TV-Morph-Android-TV-0.8.17.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.17.apk",
+    "TV-Morph-Android-TV-0.8.16.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.16.apk",
+    "TV-Morph-Android-TV-0.8.15.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.15.apk",
+    "TV-Morph-Android-TV-0.8.14.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.14.apk",
+    "TV-Morph-Android-TV-0.8.13.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.13.apk",
+    "TV-Morph-Android-TV-0.8.12.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.12.apk",
+    "TV-Morph-Android-TV-0.8.11.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.11.apk",
+    "TV-Morph-Android-TV-0.8.10.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.10.apk",
+    "TV-Morph-Android-TV-0.8.1.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.1.apk",
+    "TV-Morph-Android-TV-0.8.0.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e5cca85ac38ad98bab1e9c93a1a8baa0712ad475/TV-Morph-Android-TV-0.8.0.apk"
+  }
 }

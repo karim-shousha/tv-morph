@@ -1,0 +1,14 @@
+*
+!Dockerfile
+!nginx.conf
+!index.html
+!web-tv.html
+!catalog.json
+!tvmorph.png
+!SHA256SUMS.txt
+!vidaa.html
+!vidaa-install.html
+!vidaa-manifest.json
+!TV-Morph-VIDAA-*.zip
+!TV-Morph-Android-TV-0.8.21.apk
+!TV-Morph-Phone-0.8.21.apk
