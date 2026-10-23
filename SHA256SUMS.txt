@@ -1,0 +1,2 @@
+fd68524c1bbc44267041b8daf6f0a198fb312c7be9ea0abaa6bd7c56102f056e  TV-Morph-Phone-0.8.0.apk
+1bc0c655a0a6a4f8c2c5ff00db6580c52f6c35131b1c2b8bbad4aa75ed9b8bfb  TV-Morph-Android-TV-0.8.0.apk
