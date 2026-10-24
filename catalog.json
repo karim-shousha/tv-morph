@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.33",
+  "latest": "0.8.34",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.33",
+      "version": "0.8.34",
       "download": "/download/phone",
-      "noteAr": "قسم مستقل لإعدادات الصلاة في أول الإعدادات: الإظهار والمدينة والحساب والمذهب وصوت الأذان والتجربة والإيقاف ومستوى الصوت واستراحة الصلاة في مكان واحد. حدّث الموبايل ثم التلفزيون.",
-      "noteEn": "A dedicated prayer section at the top of Settings brings visibility, city, calculation method, Asr method, Adhan voice and playback, volume and prayer break together. Update phone and TV."
+      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.33",
+      "version": "0.8.34",
       "download": "/download/android",
-      "noteAr": "قسم مستقل لإعدادات الصلاة في أول الإعدادات: الإظهار والمدينة والحساب والمذهب وصوت الأذان والتجربة والإيقاف ومستوى الصوت واستراحة الصلاة في مكان واحد. حدّث الموبايل ثم التلفزيون.",
-      "noteEn": "A dedicated prayer section at the top of Settings brings visibility, city, calculation method, Asr method, Adhan voice and playback, volume and prayer break together. Update phone and TV."
+      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.33",
+      "version": "0.8.34",
       "download": "/download/firetv",
-      "noteAr": "قسم مستقل لإعدادات الصلاة في أول الإعدادات: الإظهار والمدينة والحساب والمذهب وصوت الأذان والتجربة والإيقاف ومستوى الصوت واستراحة الصلاة في مكان واحد. حدّث الموبايل ثم التلفزيون.",
-      "noteEn": "A dedicated prayer section at the top of Settings brings visibility, city, calculation method, Asr method, Adhan voice and playback, volume and prayer break together. Update phone and TV."
+      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قسم مستقل لإعدادات الصلاة في أول الإعدادات: الإظهار والمدينة والحساب والمذهب وصوت الأذان والتجربة والإيقاف ومستوى الصوت واستراحة الصلاة في مكان واحد. حدّث الموبايل ثم التلفزيون.",
-      "noteEn": "A dedicated prayer section at the top of Settings brings visibility, city, calculation method, Asr method, Adhan voice and playback, volume and prayer break together. Update phone and TV.",
+      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.33"
+      "version": "0.8.34"
     },
     {
       "id": "lg",
@@ -95,6 +95,12 @@
       "file": "TV-Morph-Phone-0.8.4.apk",
       "bytes": 6813652,
       "sha256": "f2ec35a406c15653cef045c5cd10bad6ebfc97aa61af8791c953c2f9aaa18b3d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.34",
+      "file": "TV-Morph-Phone-0.8.34.apk",
+      "bytes": 8481452,
+      "sha256": "c7dfb2b54d6ee47cbe32f043af01c8b5d7280b96985fa60ef2e814b5da1de221"
     },
     {
       "name": "TV-Morph-Phone-0.8.33",
@@ -287,6 +293,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.34",
+      "file": "TV-Morph-Android-TV-0.8.34.apk",
+      "bytes": 3871185,
+      "sha256": "0500cdf517254284a3b1b15e4962af6526a3b2388416c27b77154cfae62b05bd"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.33",
@@ -514,6 +526,8 @@
     "TV-Morph-Phone-0.8.31.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/dba26358435b7441ef8758c3c0dc1bedb45bdfce/TV-Morph-Phone-0.8.31.apk",
     "TV-Morph-Android-TV-0.8.31.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/dba26358435b7441ef8758c3c0dc1bedb45bdfce/TV-Morph-Android-TV-0.8.31.apk",
     "TV-Morph-Phone-0.8.32.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/286aa06ee9be4c1b70e05b0d53826cbe02486f15/TV-Morph-Phone-0.8.32.apk",
-    "TV-Morph-Android-TV-0.8.32.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/286aa06ee9be4c1b70e05b0d53826cbe02486f15/TV-Morph-Android-TV-0.8.32.apk"
+    "TV-Morph-Android-TV-0.8.32.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/286aa06ee9be4c1b70e05b0d53826cbe02486f15/TV-Morph-Android-TV-0.8.32.apk",
+    "TV-Morph-Phone-0.8.33.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bbf49a84a8d58f7a879590e36e8b86d99efc4cc5/TV-Morph-Phone-0.8.33.apk",
+    "TV-Morph-Android-TV-0.8.33.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bbf49a84a8d58f7a879590e36e8b86d99efc4cc5/TV-Morph-Android-TV-0.8.33.apk"
   }
 }
