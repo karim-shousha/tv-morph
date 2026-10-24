@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.34",
+  "latest": "0.8.35",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.34",
+      "version": "0.8.35",
       "download": "/download/phone",
-      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
+      "noteAr": "إعدادات بثلاث فئات: الصلاة والعامة والطقس والوقت. آخر مصدر HDMI وأيقونة HDMI / Live TV ملونة وواضحة في الهوم، ومستخدمة مؤخرًا أصغر. تحسين النص العربي وفتح الثيم المحفوظ مباشرة. دليل تشغيل آخر تطبيق على سامسونج حسب دعم الشاشة. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Three settings categories, prominent colorful HDMI / Live TV shortcut, last HDMI input and smaller recent apps. Improved Arabic hero layout and saved theme startup. Samsung last-app autorun setup guide, subject to TV support. Update phone and TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.34",
+      "version": "0.8.35",
       "download": "/download/android",
-      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
+      "noteAr": "إعدادات بثلاث فئات: الصلاة والعامة والطقس والوقت. آخر مصدر HDMI وأيقونة HDMI / Live TV ملونة وواضحة في الهوم، ومستخدمة مؤخرًا أصغر. تحسين النص العربي وفتح الثيم المحفوظ مباشرة. دليل تشغيل آخر تطبيق على سامسونج حسب دعم الشاشة. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Three settings categories, prominent colorful HDMI / Live TV shortcut, last HDMI input and smaller recent apps. Improved Arabic hero layout and saved theme startup. Samsung last-app autorun setup guide, subject to TV support. Update phone and TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.34",
+      "version": "0.8.35",
       "download": "/download/firetv",
-      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV."
+      "noteAr": "إعدادات بثلاث فئات: الصلاة والعامة والطقس والوقت. آخر مصدر HDMI وأيقونة HDMI / Live TV ملونة وواضحة في الهوم، ومستخدمة مؤخرًا أصغر. تحسين النص العربي وفتح الثيم المحفوظ مباشرة. دليل تشغيل آخر تطبيق على سامسونج حسب دعم الشاشة. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Three settings categories, prominent colorful HDMI / Live TV shortcut, last HDMI input and smaller recent apps. Improved Arabic hero layout and saved theme startup. Samsung last-app autorun setup guide, subject to TV support. Update phone and TV."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "Dock سفلي بأيقونات ملونة أكبر، وتكبير ورفع للأيقونة المحددة مع حركة خفيفة لجيرانها. صف المستخدمة مؤخرًا فوقه من سجل فتح التطبيقات، وكل التطبيقات من زرها. أيقونتان مستقلتان لـIPTV والراديو. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Bottom app dock with larger colorful icons, a smooth focus lift and neighboring icon motion. Real recent app history appears above, with All apps still accessible. Distinct IPTV and radio icons. Update phone and TV.",
+      "noteAr": "إعدادات بثلاث فئات: الصلاة والعامة والطقس والوقت. آخر مصدر HDMI وأيقونة HDMI / Live TV ملونة وواضحة في الهوم، ومستخدمة مؤخرًا أصغر. تحسين النص العربي وفتح الثيم المحفوظ مباشرة. دليل تشغيل آخر تطبيق على سامسونج حسب دعم الشاشة. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Three settings categories, prominent colorful HDMI / Live TV shortcut, last HDMI input and smaller recent apps. Improved Arabic hero layout and saved theme startup. Samsung last-app autorun setup guide, subject to TV support. Update phone and TV.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.34"
+      "version": "0.8.35"
     },
     {
       "id": "lg",
@@ -95,6 +95,12 @@
       "file": "TV-Morph-Phone-0.8.4.apk",
       "bytes": 6813652,
       "sha256": "f2ec35a406c15653cef045c5cd10bad6ebfc97aa61af8791c953c2f9aaa18b3d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.35",
+      "file": "TV-Morph-Phone-0.8.35.apk",
+      "bytes": 8497904,
+      "sha256": "77b67a7b8342f28567b382040a44505b055aac3923d5a11ceb4b8bf4a63af1cc"
     },
     {
       "name": "TV-Morph-Phone-0.8.34",
@@ -293,6 +299,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.35",
+      "file": "TV-Morph-Android-TV-0.8.35.apk",
+      "bytes": 3879664,
+      "sha256": "bcb30f9e8dc7e7d0fc3baceca0126f53a464d27e6af346422be09e9f7e9f7b4a"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.34",
@@ -528,6 +540,8 @@
     "TV-Morph-Phone-0.8.32.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/286aa06ee9be4c1b70e05b0d53826cbe02486f15/TV-Morph-Phone-0.8.32.apk",
     "TV-Morph-Android-TV-0.8.32.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/286aa06ee9be4c1b70e05b0d53826cbe02486f15/TV-Morph-Android-TV-0.8.32.apk",
     "TV-Morph-Phone-0.8.33.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bbf49a84a8d58f7a879590e36e8b86d99efc4cc5/TV-Morph-Phone-0.8.33.apk",
-    "TV-Morph-Android-TV-0.8.33.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bbf49a84a8d58f7a879590e36e8b86d99efc4cc5/TV-Morph-Android-TV-0.8.33.apk"
+    "TV-Morph-Android-TV-0.8.33.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bbf49a84a8d58f7a879590e36e8b86d99efc4cc5/TV-Morph-Android-TV-0.8.33.apk",
+    "TV-Morph-Phone-0.8.34.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8b976fce07752ea141c917dfc337f68ac0abc3aa/TV-Morph-Phone-0.8.34.apk",
+    "TV-Morph-Android-TV-0.8.34.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8b976fce07752ea141c917dfc337f68ac0abc3aa/TV-Morph-Android-TV-0.8.34.apk"
   }
 }
