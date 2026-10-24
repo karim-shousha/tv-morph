@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.49",
+  "latest": "0.8.50",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.49",
+      "version": "0.8.50",
       "download": "/download/phone",
-      "noteAr": "زر الرجوع يغلق نافذة الإعدادات المفتوحة أولًا دون تغيير الصفحة خلفها. يشمل حركة أيقونات أسرع وصف قرآن مستقل فوق FM، مع توضيح شرط Android 8.0 أو أحدث بالموقع.",
-      "noteEn": "Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website."
+      "noteAr": "تحسين أداء التنقل: ترجمة الأجزاء المتغيرة فقط بدل فحص الصفحة كاملة مع كل تحديث نص، حصر البحث عن الأزرار في الصفحة الظاهرة، وتجميع تحديث مقاسات الصفوف. تخفيف تمويه أزرار القائمة الجانبية مع الحفاظ على ألوان الثيم.",
+      "noteEn": "Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.49",
+      "version": "0.8.50",
       "download": "/download/android",
-      "noteAr": "زر الرجوع يغلق نافذة الإعدادات المفتوحة أولًا دون تغيير الصفحة خلفها. يشمل حركة أيقونات أسرع وصف قرآن مستقل فوق FM، مع توضيح شرط Android 8.0 أو أحدث بالموقع.",
-      "noteEn": "Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website."
+      "noteAr": "تحسين أداء التنقل: ترجمة الأجزاء المتغيرة فقط بدل فحص الصفحة كاملة مع كل تحديث نص، حصر البحث عن الأزرار في الصفحة الظاهرة، وتجميع تحديث مقاسات الصفوف. تخفيف تمويه أزرار القائمة الجانبية مع الحفاظ على ألوان الثيم.",
+      "noteEn": "Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.49",
+      "version": "0.8.50",
       "download": "/download/firetv",
-      "noteAr": "زر الرجوع يغلق نافذة الإعدادات المفتوحة أولًا دون تغيير الصفحة خلفها. يشمل حركة أيقونات أسرع وصف قرآن مستقل فوق FM، مع توضيح شرط Android 8.0 أو أحدث بالموقع.",
-      "noteEn": "Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website."
+      "noteAr": "تحسين أداء التنقل: ترجمة الأجزاء المتغيرة فقط بدل فحص الصفحة كاملة مع كل تحديث نص، حصر البحث عن الأزرار في الصفحة الظاهرة، وتجميع تحديث مقاسات الصفوف. تخفيف تمويه أزرار القائمة الجانبية مع الحفاظ على ألوان الثيم.",
+      "noteEn": "Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "زر الرجوع يغلق نافذة الإعدادات المفتوحة أولًا دون تغيير الصفحة خلفها. يشمل حركة أيقونات أسرع وصف قرآن مستقل فوق FM، مع توضيح شرط Android 8.0 أو أحدث بالموقع.",
-      "noteEn": "Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website.",
+      "noteAr": "تحسين أداء التنقل: ترجمة الأجزاء المتغيرة فقط بدل فحص الصفحة كاملة مع كل تحديث نص، حصر البحث عن الأزرار في الصفحة الظاهرة، وتجميع تحديث مقاسات الصفوف. تخفيف تمويه أزرار القائمة الجانبية مع الحفاظ على ألوان الثيم.",
+      "noteEn": "Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.49"
+      "version": "0.8.50"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.50",
+      "file": "TV-Morph-Android-TV-0.8.50.apk",
+      "bytes": 3901235,
+      "sha256": "e0cd3f6f37d9979e81f8b575fdd3fc01f2e47a90d10bed4821bc83633e0baa3f"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.50",
+      "file": "TV-Morph-Phone-0.8.50.apk",
+      "bytes": 8556087,
+      "sha256": "c667fa94ce51c48801cf4947ffef2c38ced6539e76f64bd0dc04b8d26eab17c0"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.49",
       "file": "TV-Morph-Android-TV-0.8.49.apk",
@@ -724,6 +736,8 @@
     "TV-Morph-Phone-0.8.47.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/eb669644a5980a23421896872f8d79454c517cd5/TV-Morph-Phone-0.8.47.apk",
     "TV-Morph-Android-TV-0.8.47.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/eb669644a5980a23421896872f8d79454c517cd5/TV-Morph-Android-TV-0.8.47.apk",
     "TV-Morph-Phone-0.8.48.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cb44dbfc74d48a17302963b27b639b58ac91d2c8/TV-Morph-Phone-0.8.48.apk",
-    "TV-Morph-Android-TV-0.8.48.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cb44dbfc74d48a17302963b27b639b58ac91d2c8/TV-Morph-Android-TV-0.8.48.apk"
+    "TV-Morph-Android-TV-0.8.48.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cb44dbfc74d48a17302963b27b639b58ac91d2c8/TV-Morph-Android-TV-0.8.48.apk",
+    "TV-Morph-Phone-0.8.49.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e0efd2659e9616c0495cf8185c2d2d2276095745/TV-Morph-Phone-0.8.49.apk",
+    "TV-Morph-Android-TV-0.8.49.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e0efd2659e9616c0495cf8185c2d2d2276095745/TV-Morph-Android-TV-0.8.49.apk"
   }
 }

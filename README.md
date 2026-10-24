@@ -228,3 +228,8 @@ Faster home icon animation and direct ordered dock navigation, without moving th
 ## 0.8.49
 
 Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.50
+
+Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
