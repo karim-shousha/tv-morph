@@ -253,3 +253,8 @@ Persistent long-press app menu with lock state and remaining allowance; held OK 
 ## 0.8.54
 
 Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.55
+
+Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

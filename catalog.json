@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.54",
+  "latest": "0.8.55",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.54",
+      "version": "0.8.55",
       "download": "/download/phone",
-      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
-      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
+      "noteAr": "عرض صفحات المكتبة المحفوظة فورًا وتحديثها في الخلفية مع فصل الاشتراكات والملفات الشخصية. تقديم وترجيع بخطوات ١٠ ثوانٍ دون تسارع. تحسين رئيسية IPTV: كارت متناسق وأيقونات أكبر وبحث أعلى اليمين دون تكرار الأقسام. رجوع يحفظ الأيقونة المختارة في اللانشر وIPTV، وتنقل رأسي من المستخدمة مؤخرًا إلى الأيقونات دون القفز للقائمة الجانبية.",
+      "noteEn": "Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.54",
+      "version": "0.8.55",
       "download": "/download/android",
-      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
-      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
+      "noteAr": "عرض صفحات المكتبة المحفوظة فورًا وتحديثها في الخلفية مع فصل الاشتراكات والملفات الشخصية. تقديم وترجيع بخطوات ١٠ ثوانٍ دون تسارع. تحسين رئيسية IPTV: كارت متناسق وأيقونات أكبر وبحث أعلى اليمين دون تكرار الأقسام. رجوع يحفظ الأيقونة المختارة في اللانشر وIPTV، وتنقل رأسي من المستخدمة مؤخرًا إلى الأيقونات دون القفز للقائمة الجانبية.",
+      "noteEn": "Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.54",
+      "version": "0.8.55",
       "download": "/download/firetv",
-      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
-      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
+      "noteAr": "عرض صفحات المكتبة المحفوظة فورًا وتحديثها في الخلفية مع فصل الاشتراكات والملفات الشخصية. تقديم وترجيع بخطوات ١٠ ثوانٍ دون تسارع. تحسين رئيسية IPTV: كارت متناسق وأيقونات أكبر وبحث أعلى اليمين دون تكرار الأقسام. رجوع يحفظ الأيقونة المختارة في اللانشر وIPTV، وتنقل رأسي من المستخدمة مؤخرًا إلى الأيقونات دون القفز للقائمة الجانبية.",
+      "noteEn": "Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
-      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section.",
+      "noteAr": "عرض صفحات المكتبة المحفوظة فورًا وتحديثها في الخلفية مع فصل الاشتراكات والملفات الشخصية. تقديم وترجيع بخطوات ١٠ ثوانٍ دون تسارع. تحسين رئيسية IPTV: كارت متناسق وأيقونات أكبر وبحث أعلى اليمين دون تكرار الأقسام. رجوع يحفظ الأيقونة المختارة في اللانشر وIPTV، وتنقل رأسي من المستخدمة مؤخرًا إلى الأيقونات دون القفز للقائمة الجانبية.",
+      "noteEn": "Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.54"
+      "version": "0.8.55"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.55",
+      "file": "TV-Morph-Android-TV-0.8.55.apk",
+      "bytes": 4032748,
+      "sha256": "16958d20e76783446e059cdec170b2961d91291cdbe2a9bbd090387da3340616"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.55",
+      "file": "TV-Morph-Phone-0.8.55.apk",
+      "bytes": 8924803,
+      "sha256": "32fb49b8684bcddacba9234b9270fd372c25cf938b3467470b8451831f7940aa"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.54",
       "file": "TV-Morph-Android-TV-0.8.54.apk",
@@ -794,6 +806,8 @@
     "TV-Morph-Phone-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Phone-0.8.52.apk",
     "TV-Morph-Android-TV-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Android-TV-0.8.52.apk",
     "TV-Morph-Phone-0.8.53.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/53eb629fb0287699fc6be42375c00a3963c921cc/TV-Morph-Phone-0.8.53.apk",
-    "TV-Morph-Android-TV-0.8.53.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/53eb629fb0287699fc6be42375c00a3963c921cc/TV-Morph-Android-TV-0.8.53.apk"
+    "TV-Morph-Android-TV-0.8.53.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/53eb629fb0287699fc6be42375c00a3963c921cc/TV-Morph-Android-TV-0.8.53.apk",
+    "TV-Morph-Phone-0.8.54.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/b73d0201115435549d98c558e4bdbe0dc922b8a1/TV-Morph-Phone-0.8.54.apk",
+    "TV-Morph-Android-TV-0.8.54.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/b73d0201115435549d98c558e4bdbe0dc922b8a1/TV-Morph-Android-TV-0.8.54.apk"
   }
 }
