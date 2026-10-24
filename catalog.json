@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.59",
+  "latest": "0.8.60",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.59",
+      "version": "0.8.60",
       "download": "/download/phone",
-      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
-      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
+      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
+      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.59",
+      "version": "0.8.60",
       "download": "/download/android",
-      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
-      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
+      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
+      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.59",
+      "version": "0.8.60",
       "download": "/download/firetv",
-      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
-      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
+      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
+      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
-      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps.",
+      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
+      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.59"
+      "version": "0.8.60"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.60",
+      "file": "TV-Morph-Android-TV-0.8.60.apk",
+      "bytes": 3930392,
+      "sha256": "d669723c203ef285512f810dccb1de224b5e880878cff8b6b0a263f0e316273d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.60",
+      "file": "TV-Morph-Phone-0.8.60.apk",
+      "bytes": 8827337,
+      "sha256": "0e8a74f8011844116c36b10cf347c42c3da34cda17213d1e106ddf50c430cc42"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.59",
       "file": "TV-Morph-Android-TV-0.8.59.apk",
@@ -864,6 +876,8 @@
     "TV-Morph-Phone-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Phone-0.8.57.apk",
     "TV-Morph-Android-TV-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Android-TV-0.8.57.apk",
     "TV-Morph-Phone-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Phone-0.8.58.apk",
-    "TV-Morph-Android-TV-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Android-TV-0.8.58.apk"
+    "TV-Morph-Android-TV-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Android-TV-0.8.58.apk",
+    "TV-Morph-Phone-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Phone-0.8.59.apk",
+    "TV-Morph-Android-TV-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Android-TV-0.8.59.apk"
   }
 }

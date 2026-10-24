@@ -278,3 +278,8 @@ Transparent Argentina WebP artwork and refreshed national-team pack without rese
 ## 0.8.59
 
 Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.60
+
+Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
