@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.53",
+  "latest": "0.8.54",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.53",
+      "version": "0.8.54",
       "download": "/download/phone",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي، وأقسام بأيقونات ملوّنة عائمة بدل الكروت العريضة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space, plus compact colourful floating section icons instead of wide cards."
+      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
+      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.53",
+      "version": "0.8.54",
       "download": "/download/android",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي، وأقسام بأيقونات ملوّنة عائمة بدل الكروت العريضة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space, plus compact colourful floating section icons instead of wide cards."
+      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
+      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.53",
+      "version": "0.8.54",
       "download": "/download/firetv",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي، وأقسام بأيقونات ملوّنة عائمة بدل الكروت العريضة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space, plus compact colourful floating section icons instead of wide cards."
+      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
+      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي، وأقسام بأيقونات ملوّنة عائمة بدل الكروت العريضة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space, plus compact colourful floating section icons instead of wide cards.",
+      "noteAr": "تحسين رئيسية IPTV: كارت آخر مشاهدة أصغر ومتناسق، أيقونات أقسام أكبر، بحث ثابت أعلى اليمين، وإزالة الأقسام المكررة من الشريط العلوي. تنقل مباشر بالسهم من الأقسام إلى زر الاستكمال والرجوع لنفس القسم.",
+      "noteEn": "Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.53"
+      "version": "0.8.54"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.54",
+      "file": "TV-Morph-Android-TV-0.8.54.apk",
+      "bytes": 4032748,
+      "sha256": "3d635f9b88516bfc1fbe69a14daec551979c886628c6b8ab43c0bde07a22fa84"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.54",
+      "file": "TV-Morph-Phone-0.8.54.apk",
+      "bytes": 8924803,
+      "sha256": "e57f590c762bbce6cc1816e4466cccd0d060ce207025c2d45e71a48f3a1c2683"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.53",
       "file": "TV-Morph-Android-TV-0.8.53.apk",
@@ -780,6 +792,8 @@
     "TV-Morph-Phone-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Phone-0.8.51.apk",
     "TV-Morph-Android-TV-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Android-TV-0.8.51.apk",
     "TV-Morph-Phone-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Phone-0.8.52.apk",
-    "TV-Morph-Android-TV-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Android-TV-0.8.52.apk"
+    "TV-Morph-Android-TV-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Android-TV-0.8.52.apk",
+    "TV-Morph-Phone-0.8.53.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/53eb629fb0287699fc6be42375c00a3963c921cc/TV-Morph-Phone-0.8.53.apk",
+    "TV-Morph-Android-TV-0.8.53.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/53eb629fb0287699fc6be42375c00a3963c921cc/TV-Morph-Android-TV-0.8.53.apk"
   }
 }

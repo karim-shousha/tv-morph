@@ -248,3 +248,8 @@ Persistent long-press app menu with lock state and remaining allowance; held OK 
 ## 0.8.53
 
 Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space, plus compact colourful floating section icons instead of wide cards. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.54
+
+Refined IPTV home: a compact last-watched card, larger section icons, persistent top-right search and no duplicate header sections. Explicit remote navigation connects every section to Continue watching and back to the same section. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
