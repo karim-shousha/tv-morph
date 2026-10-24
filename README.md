@@ -298,3 +298,8 @@ More room in phone IPTV: removed last-watch cards, duplicate search and the pagi
 ## 0.8.64
 
 One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.65
+
+New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

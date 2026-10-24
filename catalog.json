@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.64",
+  "latest": "0.8.65",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.64",
+      "version": "0.8.65",
       "download": "/download/phone",
-      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
-      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
+      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
+      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.64",
+      "version": "0.8.65",
       "download": "/download/android",
-      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
-      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
+      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
+      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.64",
+      "version": "0.8.65",
       "download": "/download/firetv",
-      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
-      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
+      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
+      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
-      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series.",
+      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
+      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.64"
+      "version": "0.8.65"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.65",
+      "file": "TV-Morph-Android-TV-0.8.65.apk",
+      "bytes": 3541435,
+      "sha256": "fc489d2b345d3326863582e2fdae2e98c211ca8a8a0a55252a954d86bd6f0ee6"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.65",
+      "file": "TV-Morph-Phone-0.8.65.apk",
+      "bytes": 7910200,
+      "sha256": "be7404e67d6516ec2afc0c35e653b25f9c8f00cfbef8d5441d2f70adaccaad4b"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.64",
       "file": "TV-Morph-Android-TV-0.8.64.apk",
@@ -934,6 +946,8 @@
     "TV-Morph-Phone-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Phone-0.8.62.apk",
     "TV-Morph-Android-TV-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Android-TV-0.8.62.apk",
     "TV-Morph-Phone-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Phone-0.8.63.apk",
-    "TV-Morph-Android-TV-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Android-TV-0.8.63.apk"
+    "TV-Morph-Android-TV-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Android-TV-0.8.63.apk",
+    "TV-Morph-Phone-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Phone-0.8.64.apk",
+    "TV-Morph-Android-TV-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Android-TV-0.8.64.apk"
   }
 }
