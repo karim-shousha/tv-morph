@@ -288,3 +288,8 @@ Standalone phone IPTV playback with the complete player, live/movie/series libra
 ## 0.8.62
 
 Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.63
+
+More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

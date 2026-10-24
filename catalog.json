@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.62",
+  "latest": "0.8.63",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.62",
+      "version": "0.8.63",
       "download": "/download/phone",
-      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
-      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
+      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
+      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.62",
+      "version": "0.8.63",
       "download": "/download/android",
-      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
-      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
+      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
+      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.62",
+      "version": "0.8.63",
       "download": "/download/firetv",
-      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
-      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
+      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
+      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
-      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages.",
+      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
+      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.62"
+      "version": "0.8.63"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.63",
+      "file": "TV-Morph-Android-TV-0.8.63.apk",
+      "bytes": 3930392,
+      "sha256": "3e34f596a654064db8fab478f04ff5d6a9a19fafb5c3cbc67deeb66c6472d706"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.63",
+      "file": "TV-Morph-Phone-0.8.63.apk",
+      "bytes": 8839923,
+      "sha256": "d9a30c09bc83fb0a0b6c3d73ed8f34ef9ec99129d5863671adc6fbcdcedd6b02"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.62",
       "file": "TV-Morph-Android-TV-0.8.62.apk",
@@ -906,6 +918,8 @@
     "TV-Morph-Phone-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Phone-0.8.60.apk",
     "TV-Morph-Android-TV-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Android-TV-0.8.60.apk",
     "TV-Morph-Phone-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Phone-0.8.61.apk",
-    "TV-Morph-Android-TV-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Android-TV-0.8.61.apk"
+    "TV-Morph-Android-TV-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Android-TV-0.8.61.apk",
+    "TV-Morph-Phone-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Phone-0.8.62.apk",
+    "TV-Morph-Android-TV-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Android-TV-0.8.62.apk"
   }
 }
