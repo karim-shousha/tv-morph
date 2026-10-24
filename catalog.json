@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.41",
+  "latest": "0.8.42",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.41",
+      "version": "0.8.42",
       "download": "/download/phone",
-      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
-      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
+      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
+      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.41",
+      "version": "0.8.42",
       "download": "/download/android",
-      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
-      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
+      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
+      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.41",
+      "version": "0.8.42",
       "download": "/download/firetv",
-      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
-      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
+      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
+      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
-      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device.",
+      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
+      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.41"
+      "version": "0.8.42"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.42",
+      "file": "TV-Morph-Android-TV-0.8.42.apk",
+      "bytes": 3888589,
+      "sha256": "be3f6ae2feb0530e5b0f787a41ac234b7c347a8c55091b457200731b9b197fbc"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.42",
+      "file": "TV-Morph-Phone-0.8.42.apk",
+      "bytes": 8531440,
+      "sha256": "cc72cbceebb73fdb90d1f5b325fd7abf8ed6316d118f7d4cc4f2bcebd7a606f1"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.41",
       "file": "TV-Morph-Android-TV-0.8.41.apk",
@@ -612,6 +624,8 @@
     "TV-Morph-Phone-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Phone-0.8.38.apk",
     "TV-Morph-Android-TV-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Android-TV-0.8.38.apk",
     "TV-Morph-Phone-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Phone-0.8.40.apk",
-    "TV-Morph-Android-TV-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Android-TV-0.8.40.apk"
+    "TV-Morph-Android-TV-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Android-TV-0.8.40.apk",
+    "TV-Morph-Phone-0.8.41.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/30a9973ba7dca6d2d8951276ecc23aeba5f935c2/TV-Morph-Phone-0.8.41.apk",
+    "TV-Morph-Android-TV-0.8.41.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/30a9973ba7dca6d2d8951276ecc23aeba5f935c2/TV-Morph-Android-TV-0.8.41.apk"
   }
 }
