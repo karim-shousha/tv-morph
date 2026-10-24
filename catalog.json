@@ -9,8 +9,8 @@
       "available": true,
       "version": "0.8.67",
       "download": "/download/phone",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
     },
     {
       "id": "android",
@@ -18,8 +18,8 @@
       "available": true,
       "version": "0.8.67",
       "download": "/download/android",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
     },
     {
       "id": "firetv",
@@ -27,15 +27,15 @@
       "available": true,
       "version": "0.8.67",
       "download": "/download/firetv",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed.",
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background.",
       "webPreview": "/web-tv.html",
       "version": "0.8.67"
     },
@@ -64,13 +64,13 @@
       "name": "TV-Morph-Android-TV-0.8.67",
       "file": "TV-Morph-Android-TV-0.8.67.apk",
       "bytes": 3652110,
-      "sha256": "17df27b2d2a6528cadc06da3cdff8eaf39e7654a18ec0ecce5ed0ec595af62f3"
+      "sha256": "2cc624977eb5dfc888e438ccffcaa978e08e3c7cb864c15a3ea2b978fb298d64"
     },
     {
       "name": "TV-Morph-Phone-0.8.67",
       "file": "TV-Morph-Phone-0.8.67.apk",
       "bytes": 8250316,
-      "sha256": "5d421717f3ff9de72f4cccdbc44f41e34a91c6384e23b8a7203682bdb07b9df9"
+      "sha256": "a37fa6602f679fd50ddcf6ad34518235d68e6e3f95b0a90bcc475b1d33ed9825"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.66",

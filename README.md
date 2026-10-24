@@ -318,3 +318,8 @@ Five-language Home/startup guide on the phone TV page and website, with separate
 ## 0.8.67
 
 Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.67
+
+Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
