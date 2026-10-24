@@ -273,3 +273,8 @@ Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi
 ## 0.8.58
 
 Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.59
+
+Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

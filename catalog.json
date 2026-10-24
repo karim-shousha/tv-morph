@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.58",
+  "latest": "0.8.59",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.58",
+      "version": "0.8.59",
       "download": "/download/phone",
-      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
-      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
+      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
+      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.58",
+      "version": "0.8.59",
       "download": "/download/android",
-      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
-      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
+      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
+      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.58",
+      "version": "0.8.59",
       "download": "/download/firetv",
-      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
-      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
+      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
+      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
-      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified.",
+      "noteAr": "زر الرقابة الأبوية في صفحة التصميم. إيقاف الآن يطلب عرض شاشة انتهاء الوقت مباشرة على Android TV المرتبط؛ منح مدة جديدة يحتاج رقم الأهل على التلفزيون. تغيير اسم تبويب تشغيل إلى IPTV في اللغات الخمس. يلزم تحديث الجهازين وتفعيل خدمة TV Morph للتطبيقات الخارجية.",
+      "noteEn": "Parental controls shortcut on the Design page. Stop now immediately requests the time-up screen on the paired Android TV; granting a new allowance still requires parent PIN approval on TV. The Play tab is now labelled IPTV in all five languages. Update both devices and enable the TV Morph Accessibility service for external apps.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.58"
+      "version": "0.8.59"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.59",
+      "file": "TV-Morph-Android-TV-0.8.59.apk",
+      "bytes": 3926296,
+      "sha256": "7c7327c3bb1ee601b73576388a89b41e0bbe7fb777bc31ff928c94c4229c88ca"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.59",
+      "file": "TV-Morph-Phone-0.8.59.apk",
+      "bytes": 8605306,
+      "sha256": "835268c03bc18bdf6975274558cc893146215d6100bd134aacc7d93f175d347e"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.58",
       "file": "TV-Morph-Android-TV-0.8.58.apk",
@@ -850,6 +862,8 @@
     "TV-Morph-Phone-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Phone-0.8.56.apk",
     "TV-Morph-Android-TV-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Android-TV-0.8.56.apk",
     "TV-Morph-Phone-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Phone-0.8.57.apk",
-    "TV-Morph-Android-TV-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Android-TV-0.8.57.apk"
+    "TV-Morph-Android-TV-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Android-TV-0.8.57.apk",
+    "TV-Morph-Phone-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Phone-0.8.58.apk",
+    "TV-Morph-Android-TV-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Android-TV-0.8.58.apk"
   }
 }
