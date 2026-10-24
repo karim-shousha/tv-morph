@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.45",
+  "latest": "0.8.46",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.45",
+      "version": "0.8.46",
       "download": "/download/phone",
-      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
+      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
+      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.45",
+      "version": "0.8.46",
       "download": "/download/android",
-      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
+      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
+      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.45",
+      "version": "0.8.46",
       "download": "/download/firetv",
-      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
+      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
+      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV.",
+      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
+      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.45"
+      "version": "0.8.46"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.46",
+      "file": "TV-Morph-Android-TV-0.8.46.apk",
+      "bytes": 3892895,
+      "sha256": "0efd27db0d4abd68b2f57990e261db5b0c93955fd5a8079c61a41ad49b71023a"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.46",
+      "file": "TV-Morph-Phone-0.8.46.apk",
+      "bytes": 8543799,
+      "sha256": "d328152741dc240ff7f4b231d4aa394b27101811a7b4d226c131162e6078e8a2"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.45",
       "file": "TV-Morph-Android-TV-0.8.45.apk",
@@ -668,6 +680,8 @@
     "TV-Morph-Phone-0.8.43.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/001a177c0cead5c997f3e3f5ff2e5487b83da32f/TV-Morph-Phone-0.8.43.apk",
     "TV-Morph-Android-TV-0.8.43.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/001a177c0cead5c997f3e3f5ff2e5487b83da32f/TV-Morph-Android-TV-0.8.43.apk",
     "TV-Morph-Phone-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Phone-0.8.44.apk",
-    "TV-Morph-Android-TV-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Android-TV-0.8.44.apk"
+    "TV-Morph-Android-TV-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Android-TV-0.8.44.apk",
+    "TV-Morph-Phone-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Phone-0.8.45.apk",
+    "TV-Morph-Android-TV-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Android-TV-0.8.45.apk"
   }
 }

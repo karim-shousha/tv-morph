@@ -208,3 +208,8 @@ Android TV external apps, Live TV and HDMI now launch without flags that force a
 ## 0.8.45
 
 Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.46
+
+Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
