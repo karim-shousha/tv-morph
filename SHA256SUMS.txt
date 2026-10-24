@@ -1,3 +1,5 @@
+c6eda4520bc44650f3a8d565dc89469381a96cb41f1cbb578737d0973000dba7  TV-Morph-Android-TV-0.8.52.apk
+ca57d280e29f0a6f9553d0da55a0f29c3bc550606e4dc92a0b1ddb798ff83a86  TV-Morph-Phone-0.8.52.apk
 e9fa9c709249b3ac33f1dba0587fe72932a2f6658a93e8c55dbb0d4d3853ae73  TV-Morph-Android-TV-0.8.51.apk
 8ad8e8aa448fc9227a85530537e9ad05bf76d85d503a6d1f50405c4cb66c71ed  TV-Morph-Phone-0.8.51.apk
 e0cd3f6f37d9979e81f8b575fdd3fc01f2e47a90d10bed4821bc83633e0baa3f  TV-Morph-Android-TV-0.8.50.apk

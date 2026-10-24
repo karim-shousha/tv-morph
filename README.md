@@ -238,3 +238,8 @@ Navigation performance: translate changed subtrees instead of rescanning the doc
 ## 0.8.51
 
 Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.52
+
+Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

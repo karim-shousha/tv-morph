@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.51",
+  "latest": "0.8.52",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.51",
+      "version": "0.8.52",
       "download": "/download/phone",
-      "noteAr": "خلفية دينية لصفحة الصلاة وشاشة استراحة كاملة بعدّ تنازلي. رقابة أبوية من الضغط المطوّل: قفل مستقل ورقم خاص لكل تطبيق، ورصيد وقت محفوظ دون تجديد يومي. مؤقتات التطبيقات الخارجية على أندرويد تحتاج خدمة التنقل؛ سامسونج يدعم المؤقت داخل IPTV والراديو فقط.",
-      "noteEn": "Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.51",
+      "version": "0.8.52",
       "download": "/download/android",
-      "noteAr": "خلفية دينية لصفحة الصلاة وشاشة استراحة كاملة بعدّ تنازلي. رقابة أبوية من الضغط المطوّل: قفل مستقل ورقم خاص لكل تطبيق، ورصيد وقت محفوظ دون تجديد يومي. مؤقتات التطبيقات الخارجية على أندرويد تحتاج خدمة التنقل؛ سامسونج يدعم المؤقت داخل IPTV والراديو فقط.",
-      "noteEn": "Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.51",
+      "version": "0.8.52",
       "download": "/download/firetv",
-      "noteAr": "خلفية دينية لصفحة الصلاة وشاشة استراحة كاملة بعدّ تنازلي. رقابة أبوية من الضغط المطوّل: قفل مستقل ورقم خاص لكل تطبيق، ورصيد وقت محفوظ دون تجديد يومي. مؤقتات التطبيقات الخارجية على أندرويد تحتاج خدمة التنقل؛ سامسونج يدعم المؤقت داخل IPTV والراديو فقط.",
-      "noteEn": "Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "خلفية دينية لصفحة الصلاة وشاشة استراحة كاملة بعدّ تنازلي. رقابة أبوية من الضغط المطوّل: قفل مستقل ورقم خاص لكل تطبيق، ورصيد وقت محفوظ دون تجديد يومي. مؤقتات التطبيقات الخارجية على أندرويد تحتاج خدمة التنقل؛ سامسونج يدعم المؤقت داخل IPTV والراديو فقط.",
-      "noteEn": "Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only.",
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.51"
+      "version": "0.8.52"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.52",
+      "file": "TV-Morph-Android-TV-0.8.52.apk",
+      "bytes": 4028576,
+      "sha256": "c6eda4520bc44650f3a8d565dc89469381a96cb41f1cbb578737d0973000dba7"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.52",
+      "file": "TV-Morph-Phone-0.8.52.apk",
+      "bytes": 8920707,
+      "sha256": "ca57d280e29f0a6f9553d0da55a0f29c3bc550606e4dc92a0b1ddb798ff83a86"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.51",
       "file": "TV-Morph-Android-TV-0.8.51.apk",
@@ -752,6 +764,8 @@
     "TV-Morph-Phone-0.8.49.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e0efd2659e9616c0495cf8185c2d2d2276095745/TV-Morph-Phone-0.8.49.apk",
     "TV-Morph-Android-TV-0.8.49.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e0efd2659e9616c0495cf8185c2d2d2276095745/TV-Morph-Android-TV-0.8.49.apk",
     "TV-Morph-Phone-0.8.50.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/18e3168b0e9a6be30a6d03cef4caef0a99760cfb/TV-Morph-Phone-0.8.50.apk",
-    "TV-Morph-Android-TV-0.8.50.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/18e3168b0e9a6be30a6d03cef4caef0a99760cfb/TV-Morph-Android-TV-0.8.50.apk"
+    "TV-Morph-Android-TV-0.8.50.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/18e3168b0e9a6be30a6d03cef4caef0a99760cfb/TV-Morph-Android-TV-0.8.50.apk",
+    "TV-Morph-Phone-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Phone-0.8.51.apk",
+    "TV-Morph-Android-TV-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Android-TV-0.8.51.apk"
   }
 }
