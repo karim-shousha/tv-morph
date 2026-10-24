@@ -323,3 +323,8 @@ Restore religious artwork in Prayer times and Prayer pause. The image is now bun
 ## 0.8.67
 
 Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.68
+
+Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

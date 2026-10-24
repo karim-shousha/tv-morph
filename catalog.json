@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.67",
+  "latest": "0.8.68",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.67",
+      "version": "0.8.68",
       "download": "/download/phone",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
+      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
+      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.67",
+      "version": "0.8.68",
       "download": "/download/android",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
+      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
+      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.67",
+      "version": "0.8.68",
       "download": "/download/firetv",
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background."
+      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
+      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت، مع طبقة غامقة أخف وكروت أكثر شفافية لإظهار الخلفية.",
-      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Lighter shading and more transparent cards reveal the background.",
+      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
+      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.67"
+      "version": "0.8.68"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.68",
+      "file": "TV-Morph-Android-TV-0.8.68.apk",
+      "bytes": 3660447,
+      "sha256": "df1755c78c8d9be8be833e509d5e2ae5ca996e067c5908b612dce3a60eb9ced8"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.68",
+      "file": "TV-Morph-Phone-0.8.68.apk",
+      "bytes": 8262604,
+      "sha256": "7aeeaebd2c1f61259e5907be519a3ffca0a75bae8a01b482faded5fd4825ef3a"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.67",
       "file": "TV-Morph-Android-TV-0.8.67.apk",
@@ -976,6 +988,8 @@
     "TV-Morph-Phone-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Phone-0.8.65.apk",
     "TV-Morph-Android-TV-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Android-TV-0.8.65.apk",
     "TV-Morph-Phone-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Phone-0.8.66.apk",
-    "TV-Morph-Android-TV-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Android-TV-0.8.66.apk"
+    "TV-Morph-Android-TV-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Android-TV-0.8.66.apk",
+    "TV-Morph-Phone-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Phone-0.8.67.apk",
+    "TV-Morph-Android-TV-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Android-TV-0.8.67.apk"
   }
 }
