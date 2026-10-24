@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.60",
+  "latest": "0.8.61",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.60",
+      "version": "0.8.61",
       "download": "/download/phone",
-      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
-      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
+      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
+      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.60",
+      "version": "0.8.61",
       "download": "/download/android",
-      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
-      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
+      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
+      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.60",
+      "version": "0.8.61",
       "download": "/download/firetv",
-      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
-      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved."
+      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
+      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "مشاهدة IPTV مستقلة على الموبايل ببلاير كامل ومكتبة القنوات والأفلام والمسلسلات وآخر مشاهدة. التحكم في التلفزيون داخل قائمة قابلة للطي بجوار زر المشاهدة على الموبايل. تقديم وترجيع سلس داخل مشغّل IPTV على أندرويد وسامسونج: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل يحرّك المؤشر باستمرار مع تسارع تدريجي. الانتقال في الفيديو ينفّذ مرة واحدة عند ترك الزر لتقليل إعادة التحميل. حفظ حالة التشغيل أو الإيقاف وحدود بداية ونهاية الفيديو.",
-      "noteEn": "Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved.",
+      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
+      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.60"
+      "version": "0.8.61"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.61",
+      "file": "TV-Morph-Android-TV-0.8.61.apk",
+      "bytes": 3930392,
+      "sha256": "d109d6cebee3300fb1078f45e6fc945fe146c12b726dd5f83d7b545451ae6bea"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.61",
+      "file": "TV-Morph-Phone-0.8.61.apk",
+      "bytes": 8831433,
+      "sha256": "b24cfd8b11f27017c5da2c637ad29cdfb8a69bc7e4c62a64fade16a9b4fd40bf"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.60",
       "file": "TV-Morph-Android-TV-0.8.60.apk",
@@ -878,6 +890,8 @@
     "TV-Morph-Phone-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Phone-0.8.58.apk",
     "TV-Morph-Android-TV-0.8.58.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f3f41024af7269980e0b80fd731e76154cb854f1/TV-Morph-Android-TV-0.8.58.apk",
     "TV-Morph-Phone-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Phone-0.8.59.apk",
-    "TV-Morph-Android-TV-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Android-TV-0.8.59.apk"
+    "TV-Morph-Android-TV-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Android-TV-0.8.59.apk",
+    "TV-Morph-Phone-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Phone-0.8.60.apk",
+    "TV-Morph-Android-TV-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Android-TV-0.8.60.apk"
   }
 }

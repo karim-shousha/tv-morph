@@ -283,3 +283,8 @@ Parental controls shortcut on the Design page. Stop now immediately requests the
 ## 0.8.60
 
 Standalone phone IPTV playback with the complete player, live/movie/series library and local viewing progress. TV controls collapse beside the Watch on phone button. Smooth IPTV scrubbing on Android and Samsung: a single tap moves ten seconds, while holding an arrow continuously previews the timeline with gradual acceleration. Playback seeks once on release, reducing repeated buffering. Previous playing/paused state and video boundaries are preserved. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.61
+
+Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
