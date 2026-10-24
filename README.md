@@ -178,3 +178,8 @@ Read-only capability checks distinguish receiver discovery, code pairing, self-u
 
 ## 0.8.25 player, layout and prayer update
 New native Android/Fire OS player controls with poster/title, timeline, transport, sizing and device-supported track selection. Samsung AVPlay controls gain poster/timing/theme styling. Shared home rails use whole-card stops; prayer volume navigation no longer traps Up/Down; Home displays the next prayer and countdown. Appearance focuses the active theme. Argentina/Portugal themes included. Portugal is generated fan artwork. Argentina uses a modest-resolution licensed celebration photograph (Sebas, CC BY 3.0), not the requested generated Messi cutout; credits are in About. Native playback still needs physical device testing.
+
+
+## 0.8.40
+
+Four-step phone setup, an app icon library with search and favourite ordering, real download rings, and Android/Fire TV app and storage management. App removal uses the system confirmation; system apps have no uninstall action in TV Morph. Native storage screens need physical device testing. Stable package IDs, signing keys and preference keys remain compatible with existing installations.

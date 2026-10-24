@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.38",
+  "latest": "0.8.40",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.38",
+      "version": "0.8.40",
       "download": "/download/phone",
-      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
+      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
+      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.38",
+      "version": "0.8.40",
       "download": "/download/android",
-      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
+      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
+      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.38",
+      "version": "0.8.40",
       "download": "/download/firetv",
-      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
+      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
+      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV.",
+      "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
+      "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.38"
+      "version": "0.8.40"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.40",
+      "file": "TV-Morph-Android-TV-0.8.40.apk",
+      "bytes": 3888805,
+      "sha256": "69aa51fc9bbd873ba72541ada96ebcdf6e300ae2f22042e2596f74f95f2a05ca"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.40",
+      "file": "TV-Morph-Phone-0.8.40.apk",
+      "bytes": 8527344,
+      "sha256": "f835f273caf448fe981d61a0da20722d44ba9f3ab7a6feb2e3f0f3c8c132e8fd"
+    },
     {
       "name": "TV-Morph-Phone-0.8.9",
       "file": "TV-Morph-Phone-0.8.9.apk",
@@ -584,6 +596,8 @@
     "TV-Morph-Phone-0.8.36.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bd3b727c19304fb66205042fa5b4bae9b643f753/TV-Morph-Phone-0.8.36.apk",
     "TV-Morph-Android-TV-0.8.36.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bd3b727c19304fb66205042fa5b4bae9b643f753/TV-Morph-Android-TV-0.8.36.apk",
     "TV-Morph-Phone-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Phone-0.8.37.apk",
-    "TV-Morph-Android-TV-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Android-TV-0.8.37.apk"
+    "TV-Morph-Android-TV-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Android-TV-0.8.37.apk",
+    "TV-Morph-Phone-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Phone-0.8.38.apk",
+    "TV-Morph-Android-TV-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Android-TV-0.8.38.apk"
   }
 }
