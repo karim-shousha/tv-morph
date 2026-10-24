@@ -313,3 +313,8 @@ Five-language Home/startup guide on the phone TV page and website, with separate
 ## 0.8.66
 
 Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.67
+
+Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

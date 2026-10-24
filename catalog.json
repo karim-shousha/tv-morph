@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.66",
+  "latest": "0.8.67",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.66",
+      "version": "0.8.67",
       "download": "/download/phone",
-      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
-      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.66",
+      "version": "0.8.67",
       "download": "/download/android",
-      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
-      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.66",
+      "version": "0.8.67",
       "download": "/download/firetv",
-      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
-      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
-      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included.",
+      "noteAr": "إصلاح اختفاء الصورة الدينية في صفحة مواقيت الصلاة وشاشة استراحة الصلاة: الصورة الآن ملف أساسي داخل نسخ Android TV وFire TV وحزمة Samsung وتطبيق الموبايل، وليست ضمن الصور الاختيارية المستبعدة. لا تحتاج تحميلًا من الإنترنت.",
+      "noteEn": "Restore religious artwork in Prayer times and Prayer pause. The image is now bundled as essential UI in Android/Fire TV, Samsung payload and phone packages, rather than excluded as an optional theme asset. No online image download is needed.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.66"
+      "version": "0.8.67"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.67",
+      "file": "TV-Morph-Android-TV-0.8.67.apk",
+      "bytes": 3652110,
+      "sha256": "17df27b2d2a6528cadc06da3cdff8eaf39e7654a18ec0ecce5ed0ec595af62f3"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.67",
+      "file": "TV-Morph-Phone-0.8.67.apk",
+      "bytes": 8250316,
+      "sha256": "5d421717f3ff9de72f4cccdbc44f41e34a91c6384e23b8a7203682bdb07b9df9"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.66",
       "file": "TV-Morph-Android-TV-0.8.66.apk",
@@ -962,6 +974,8 @@
     "TV-Morph-Phone-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Phone-0.8.64.apk",
     "TV-Morph-Android-TV-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Android-TV-0.8.64.apk",
     "TV-Morph-Phone-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Phone-0.8.65.apk",
-    "TV-Morph-Android-TV-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Android-TV-0.8.65.apk"
+    "TV-Morph-Android-TV-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Android-TV-0.8.65.apk",
+    "TV-Morph-Phone-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Phone-0.8.66.apk",
+    "TV-Morph-Android-TV-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Android-TV-0.8.66.apk"
   }
 }
