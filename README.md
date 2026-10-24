@@ -233,3 +233,8 @@ Back closes the open settings dialog first, preserving the page behind it. Inclu
 ## 0.8.50
 
 Navigation performance: translate changed subtrees instead of rescanning the document for every text update, scope focus discovery to the visible page, batch rail sizing, and remove expensive sidebar blur while keeping theme colours. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.51
+
+Devotional prayer backdrop and full-screen prayer pause with countdown. Long-press parental controls: individual app PINs and persistent parent-granted time allowances without daily resets. External Android app timers require the optional navigation service; Samsung timers cover built-in IPTV and radio only. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
