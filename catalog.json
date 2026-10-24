@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.46",
+  "latest": "0.8.47",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.46",
+      "version": "0.8.47",
       "download": "/download/phone",
-      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
-      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
+      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
+      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.46",
+      "version": "0.8.47",
       "download": "/download/android",
-      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
-      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
+      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
+      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.46",
+      "version": "0.8.47",
       "download": "/download/firetv",
-      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
-      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it."
+      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
+      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح تنقل الريموت في الإعدادات العامة والطقس والوقت: السهمان فوق وتحت يمران على الخيارات بالترتيب، وإدارة التطبيقات والمساحة داخل القائمة بدون قفز أو تخطي.",
-      "noteEn": "Fix TV remote navigation in General and Weather & time settings: Up/Down follow option order, with Apps & storage inside the settings list instead of skipping directly to it.",
+      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
+      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.46"
+      "version": "0.8.47"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.47",
+      "file": "TV-Morph-Android-TV-0.8.47.apk",
+      "bytes": 3897139,
+      "sha256": "a0fec4545075284b413a1cc7897224891970467a17d2fb24315b78298336d9f9"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.47",
+      "file": "TV-Morph-Phone-0.8.47.apk",
+      "bytes": 8551991,
+      "sha256": "8702eb57ebcc1f75a3a81a33a1c379cf74841db4fd3e24505c3c19e7d3296b16"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.46",
       "file": "TV-Morph-Android-TV-0.8.46.apk",
@@ -682,6 +694,8 @@
     "TV-Morph-Phone-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Phone-0.8.44.apk",
     "TV-Morph-Android-TV-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Android-TV-0.8.44.apk",
     "TV-Morph-Phone-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Phone-0.8.45.apk",
-    "TV-Morph-Android-TV-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Android-TV-0.8.45.apk"
+    "TV-Morph-Android-TV-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Android-TV-0.8.45.apk",
+    "TV-Morph-Phone-0.8.46.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ba2b80c8eb4cacbe2e9048b197279f1140fb08c4/TV-Morph-Phone-0.8.46.apk",
+    "TV-Morph-Android-TV-0.8.46.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ba2b80c8eb4cacbe2e9048b197279f1140fb08c4/TV-Morph-Android-TV-0.8.46.apk"
   }
 }
