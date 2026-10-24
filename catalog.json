@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.65",
+  "latest": "0.8.66",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.65",
+      "version": "0.8.66",
       "download": "/download/phone",
-      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
-      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
+      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
+      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.65",
+      "version": "0.8.66",
       "download": "/download/android",
-      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
-      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
+      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
+      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.65",
+      "version": "0.8.66",
       "download": "/download/firetv",
-      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
-      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup."
+      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
+      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "أيقونة TVMorph الجديدة من الشعار المرسل على الموبايل والتلفزيون، بصيغة WebP مع بانر تلفزيون مناسب. الاحتفاظ بنفس هوية الحزمة والتوقيع والإعدادات. خدمة Home الاختيارية تم اختبارها للرجوع من YouTube على Fire OS 8.1.8.0؛ يلزم تفعيلها لكل جهاز.",
-      "noteEn": "New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup.",
+      "noteAr": "دليل Home والتشغيل التلقائي بخطوات منفصلة لـ Fire TV وAndroid TV وSamsung باللغات الخمس، داخل صفحة التلفزيون وعلى الموقع. تجهيز إذن خدمة Home أو إيقافها من الموبايل عبر ADB المصرح به، مع استكمال الإعداد والاختبار على التلفزيون. اللوجو الجديد بصيغة WebP.",
+      "noteEn": "Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.65"
+      "version": "0.8.66"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.66",
+      "file": "TV-Morph-Android-TV-0.8.66.apk",
+      "bytes": 3541435,
+      "sha256": "3fb020a8b320c5db5529ff068b824e53e6423650b5a55011f1cabd21c307721a"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.66",
+      "file": "TV-Morph-Phone-0.8.66.apk",
+      "bytes": 7914368,
+      "sha256": "fb09254004aac3588f29d74537eb0757a3cedcc9eb62d3fcad79deaa59773a04"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.65",
       "file": "TV-Morph-Android-TV-0.8.65.apk",
@@ -948,6 +960,8 @@
     "TV-Morph-Phone-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Phone-0.8.63.apk",
     "TV-Morph-Android-TV-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Android-TV-0.8.63.apk",
     "TV-Morph-Phone-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Phone-0.8.64.apk",
-    "TV-Morph-Android-TV-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Android-TV-0.8.64.apk"
+    "TV-Morph-Android-TV-0.8.64.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/43d58da9deaaf16a8e56cc0cecc85afb4bb116d6/TV-Morph-Android-TV-0.8.64.apk",
+    "TV-Morph-Phone-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Phone-0.8.65.apk",
+    "TV-Morph-Android-TV-0.8.65.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/855af0ab1cd0435dcfd0895211c37776d0d993ba/TV-Morph-Android-TV-0.8.65.apk"
   }
 }

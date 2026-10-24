@@ -303,3 +303,8 @@ One global IPTV search on TV and phone. Android TV remote OK opens native text e
 ## 0.8.65
 
 New supplied TVMorph logo on phone and TV, using WebP icons and a TV banner. Existing package IDs, signing and settings are preserved. Optional Home navigation was verified returning from YouTube on Fire OS 8.1.8.0; each device requires its own service setup. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.66
+
+Five-language Home/startup guide on the phone TV page and website, with separate Fire TV, Android TV and Samsung instructions. Prepare or disable TVMorph Home Accessibility through authorized phone ADB, then finish setup and test on the TV. New WebP logo included. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
