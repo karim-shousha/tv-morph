@@ -243,3 +243,8 @@ Devotional prayer backdrop and full-screen prayer pause with countdown. Long-pre
 ## 0.8.52
 
 Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.53
+
+Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.52",
+  "latest": "0.8.53",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.52",
+      "version": "0.8.53",
       "download": "/download/phone",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.52",
+      "version": "0.8.53",
       "download": "/download/android",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.52",
+      "version": "0.8.53",
       "download": "/download/firetv",
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop."
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة، والاستكمال، وخلفية سينمائية عند غياب سجل المشاهدة.",
-      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode, resume details and a cinematic empty-history backdrop.",
+      "noteAr": "قائمة ثابتة بالضغط المطوّل لعرض حالة قفل التطبيق والوقت المتبقي، مع منع الاختيار التلقائي أثناء استمرار الضغط وتحسين تأكيد لوحة أرقام أندرويد. واجهة IPTV بصورة وعنوان آخر فيلم أو حلقة وزر الاستكمال، مع تثبيت الأقسام والبحث والأدوات أسفل الشاشة وتمدد مساحة الصورة فوقها دون فراغ سفلي.",
+      "noteEn": "Persistent long-press app menu with lock state and remaining allowance; held OK no longer activates a menu action, and Android PIN keyboard Done submits correctly. IPTV home features the last-watched movie or episode and resume details, with browsing controls anchored at the bottom and hero artwork filling the available upper space.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.52"
+      "version": "0.8.53"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.53",
+      "file": "TV-Morph-Android-TV-0.8.53.apk",
+      "bytes": 4028576,
+      "sha256": "e300a7527c83ee546786f568ef0e866a8b28a0a61f7833fdb1d3623a64b0ea84"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.53",
+      "file": "TV-Morph-Phone-0.8.53.apk",
+      "bytes": 8920707,
+      "sha256": "8c5f345fd72c03a1d30a15f7aca4dbc4b30cc6f48bd843109b9309920756c419"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.52",
       "file": "TV-Morph-Android-TV-0.8.52.apk",
@@ -766,6 +778,8 @@
     "TV-Morph-Phone-0.8.50.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/18e3168b0e9a6be30a6d03cef4caef0a99760cfb/TV-Morph-Phone-0.8.50.apk",
     "TV-Morph-Android-TV-0.8.50.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/18e3168b0e9a6be30a6d03cef4caef0a99760cfb/TV-Morph-Android-TV-0.8.50.apk",
     "TV-Morph-Phone-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Phone-0.8.51.apk",
-    "TV-Morph-Android-TV-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Android-TV-0.8.51.apk"
+    "TV-Morph-Android-TV-0.8.51.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/9195b4e8033031bc92afbf64b989c3751d404c73/TV-Morph-Android-TV-0.8.51.apk",
+    "TV-Morph-Phone-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Phone-0.8.52.apk",
+    "TV-Morph-Android-TV-0.8.52.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/184e1fd261d3fee2f1d995df4254aad3e5ad56ea/TV-Morph-Android-TV-0.8.52.apk"
   }
 }
