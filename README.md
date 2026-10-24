@@ -183,3 +183,8 @@ New native Android/Fire OS player controls with poster/title, timeline, transpor
 ## 0.8.40
 
 Four-step phone setup, an app icon library with search and favourite ordering, real download rings, and Android/Fire TV app and storage management. App removal uses the system confirmation; system apps have no uninstall action in TV Morph. Native storage screens need physical device testing. Stable package IDs, signing keys and preference keys remain compatible with existing installations.
+
+
+## 0.8.41
+
+Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

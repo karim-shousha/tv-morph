@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.40",
+  "latest": "0.8.41",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.40",
+      "version": "0.8.41",
       "download": "/download/phone",
       "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
       "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.40",
+      "version": "0.8.41",
       "download": "/download/android",
       "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
       "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
@@ -25,7 +25,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.40",
+      "version": "0.8.41",
       "download": "/download/firetv",
       "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
       "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device."
@@ -37,7 +37,7 @@
       "noteAr": "صفحة اتصال بأربع خطوات واضحة وIP الموبايل داخل تجهيز Samsung. مكتبة تطبيقات بأيقونات وبحث ومفضلة وترتيب، ودائرة تقدّم تنزيل فعلية. إدارة التطبيقات والمساحة على Android/Fire TV تفتح تفاصيل التطبيق أو طلب الحذف بتأكيد على التلفزيون؛ لا يوجد حذف تلقائي لتطبيقات النظام. تنظيف النصوص الظاهرة من الاسم القديم. حدّث الموبايل والتلفزيون. إدارة المساحة تحتاج تجربة فعلية على جهازك.",
       "noteEn": "Four-step connection setup with the phone IP inside Samsung preparation. App icon library with search, favourites and ordering; real download progress rings. Android/Fire TV app and storage management opens system app details or a user-confirmed uninstall request; no automatic system-app removal. Visible legacy branding cleaned. Update phone and TV. Storage management needs physical testing on your device.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.40"
+      "version": "0.8.41"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.41",
+      "file": "TV-Morph-Android-TV-0.8.41.apk",
+      "bytes": 3888805,
+      "sha256": "1da6e9877d02eccb06e54b4a2f241bea839ea2ec52d509cf956698e4fca2b019"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.41",
+      "file": "TV-Morph-Phone-0.8.41.apk",
+      "bytes": 8527344,
+      "sha256": "85a78d15bb90abaf13323906dd94f6f3abe755c86481bf35ec4d8ccfc8838a92"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.40",
       "file": "TV-Morph-Android-TV-0.8.40.apk",
@@ -598,6 +610,8 @@
     "TV-Morph-Phone-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Phone-0.8.37.apk",
     "TV-Morph-Android-TV-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Android-TV-0.8.37.apk",
     "TV-Morph-Phone-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Phone-0.8.38.apk",
-    "TV-Morph-Android-TV-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Android-TV-0.8.38.apk"
+    "TV-Morph-Android-TV-0.8.38.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/94bdd4db186030e6a4d706f002c1dd0dc78251b0/TV-Morph-Android-TV-0.8.38.apk",
+    "TV-Morph-Phone-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Phone-0.8.40.apk",
+    "TV-Morph-Android-TV-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Android-TV-0.8.40.apk"
   }
 }
