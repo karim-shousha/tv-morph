@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.47",
+  "latest": "0.8.48",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.47",
+      "version": "0.8.48",
       "download": "/download/phone",
-      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
-      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
+      "noteAr": "حركة أيقونات الهوم أسرع وتنقل مباشر بالترتيب، مع بقاء الشريط ثابتًا. محطات القرآن في صف مستقل أولًا، ومحطات FM تحتها. متطلبات Android 8.0 أو أحدث موضحة في مركز التنزيل.",
+      "noteEn": "Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.47",
+      "version": "0.8.48",
       "download": "/download/android",
-      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
-      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
+      "noteAr": "حركة أيقونات الهوم أسرع وتنقل مباشر بالترتيب، مع بقاء الشريط ثابتًا. محطات القرآن في صف مستقل أولًا، ومحطات FM تحتها. متطلبات Android 8.0 أو أحدث موضحة في مركز التنزيل.",
+      "noteEn": "Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.47",
+      "version": "0.8.48",
       "download": "/download/firetv",
-      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
-      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support."
+      "noteAr": "حركة أيقونات الهوم أسرع وتنقل مباشر بالترتيب، مع بقاء الشريط ثابتًا. محطات القرآن في صف مستقل أولًا، ومحطات FM تحتها. متطلبات Android 8.0 أو أحدث موضحة في مركز التنزيل.",
+      "noteEn": "Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تصميم جديد لمكتبة الراديو: تصنيفات جانبية، بحث عن المحطات، أيقونات كبيرة بألوان مميزة، وشريط تشغيل مستقل لا يغطي آخر الصفوف. يدعم القرآن وFM والمفضلة مع الضغط المطول على OK.",
-      "noteEn": "Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support.",
+      "noteAr": "حركة أيقونات الهوم أسرع وتنقل مباشر بالترتيب، مع بقاء الشريط ثابتًا. محطات القرآن في صف مستقل أولًا، ومحطات FM تحتها. متطلبات Android 8.0 أو أحدث موضحة في مركز التنزيل.",
+      "noteEn": "Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.47"
+      "version": "0.8.48"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.48",
+      "file": "TV-Morph-Android-TV-0.8.48.apk",
+      "bytes": 3897139,
+      "sha256": "37d54dec31817831aa9a3c70f761c54a6c6bc6859313633bc822bddc79821aeb"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.48",
+      "file": "TV-Morph-Phone-0.8.48.apk",
+      "bytes": 8551991,
+      "sha256": "44f25342d88507ed42909c06e431d40759236db91e84ff0d5307183999455daa"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.47",
       "file": "TV-Morph-Android-TV-0.8.47.apk",
@@ -696,6 +708,8 @@
     "TV-Morph-Phone-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Phone-0.8.45.apk",
     "TV-Morph-Android-TV-0.8.45.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/231a624800f8c14c5ac7ba003b7c6628d4b6daaf/TV-Morph-Android-TV-0.8.45.apk",
     "TV-Morph-Phone-0.8.46.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ba2b80c8eb4cacbe2e9048b197279f1140fb08c4/TV-Morph-Phone-0.8.46.apk",
-    "TV-Morph-Android-TV-0.8.46.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ba2b80c8eb4cacbe2e9048b197279f1140fb08c4/TV-Morph-Android-TV-0.8.46.apk"
+    "TV-Morph-Android-TV-0.8.46.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ba2b80c8eb4cacbe2e9048b197279f1140fb08c4/TV-Morph-Android-TV-0.8.46.apk",
+    "TV-Morph-Phone-0.8.47.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/eb669644a5980a23421896872f8d79454c517cd5/TV-Morph-Phone-0.8.47.apk",
+    "TV-Morph-Android-TV-0.8.47.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/eb669644a5980a23421896872f8d79454c517cd5/TV-Morph-Android-TV-0.8.47.apk"
   }
 }

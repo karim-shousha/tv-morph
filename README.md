@@ -218,3 +218,8 @@ Fix TV remote navigation in General and Weather & time settings: Up/Down follow 
 ## 0.8.47
 
 Redesigned radio library with sidebar categories, station search, larger colourful icons, and a dedicated player row that never overlays the catalog. Quran, FM and favourites retain long-press OK support. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.48
+
+Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
