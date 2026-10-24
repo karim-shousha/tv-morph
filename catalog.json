@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.56",
+  "latest": "0.8.57",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.56",
+      "version": "0.8.57",
       "download": "/download/phone",
-      "noteAr": "تحكم أسرع في المشغل: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل على شريط الوقت يتكرر ويتسارع تدريجيًا إلى ٢٠ ثم ٣٠ ثانية للخطوة. يتوقف التكرار عند رفع الزر أو مغادرة المشغل، وتبدأ كل ضغطة جديدة بخطوة ١٠ ثوانٍ.",
-      "noteEn": "Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds."
+      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
+      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.56",
+      "version": "0.8.57",
       "download": "/download/android",
-      "noteAr": "تحكم أسرع في المشغل: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل على شريط الوقت يتكرر ويتسارع تدريجيًا إلى ٢٠ ثم ٣٠ ثانية للخطوة. يتوقف التكرار عند رفع الزر أو مغادرة المشغل، وتبدأ كل ضغطة جديدة بخطوة ١٠ ثوانٍ.",
-      "noteEn": "Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds."
+      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
+      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.56",
+      "version": "0.8.57",
       "download": "/download/firetv",
-      "noteAr": "تحكم أسرع في المشغل: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل على شريط الوقت يتكرر ويتسارع تدريجيًا إلى ٢٠ ثم ٣٠ ثانية للخطوة. يتوقف التكرار عند رفع الزر أو مغادرة المشغل، وتبدأ كل ضغطة جديدة بخطوة ١٠ ثوانٍ.",
-      "noteEn": "Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds."
+      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
+      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحكم أسرع في المشغل: الضغطة الواحدة ١٠ ثوانٍ، والضغط المطوّل على شريط الوقت يتكرر ويتسارع تدريجيًا إلى ٢٠ ثم ٣٠ ثانية للخطوة. يتوقف التكرار عند رفع الزر أو مغادرة المشغل، وتبدأ كل ضغطة جديدة بخطوة ١٠ ثوانٍ.",
-      "noteEn": "Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds.",
+      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
+      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.56"
+      "version": "0.8.57"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.57",
+      "file": "TV-Morph-Android-TV-0.8.57.apk",
+      "bytes": 4036971,
+      "sha256": "27f574f4a50dbbfb902ac0d84d842627b6487e643d5caa8ccc8803b4bc4d0c98"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.57",
+      "file": "TV-Morph-Phone-0.8.57.apk",
+      "bytes": 8932995,
+      "sha256": "092883609d2732ee5c46ed9f3d64a26b74a1dcaab1f311fb05b26916c0c607f4"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.56",
       "file": "TV-Morph-Android-TV-0.8.56.apk",
@@ -822,6 +834,8 @@
     "TV-Morph-Phone-0.8.54.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/b73d0201115435549d98c558e4bdbe0dc922b8a1/TV-Morph-Phone-0.8.54.apk",
     "TV-Morph-Android-TV-0.8.54.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/b73d0201115435549d98c558e4bdbe0dc922b8a1/TV-Morph-Android-TV-0.8.54.apk",
     "TV-Morph-Phone-0.8.55.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/48733fcb3161edf6c0e8530736c42e977c0855cc/TV-Morph-Phone-0.8.55.apk",
-    "TV-Morph-Android-TV-0.8.55.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/48733fcb3161edf6c0e8530736c42e977c0855cc/TV-Morph-Android-TV-0.8.55.apk"
+    "TV-Morph-Android-TV-0.8.55.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/48733fcb3161edf6c0e8530736c42e977c0855cc/TV-Morph-Android-TV-0.8.55.apk",
+    "TV-Morph-Phone-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Phone-0.8.56.apk",
+    "TV-Morph-Android-TV-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Android-TV-0.8.56.apk"
   }
 }

@@ -263,3 +263,8 @@ Saved library pages appear immediately and refresh in the background, scoped by 
 ## 0.8.56
 
 Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.57
+
+Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
