@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.57",
+  "latest": "0.8.58",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.57",
+      "version": "0.8.58",
       "download": "/download/phone",
-      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
-      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
+      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
+      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.57",
+      "version": "0.8.58",
       "download": "/download/android",
-      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
-      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
+      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
+      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.57",
+      "version": "0.8.58",
       "download": "/download/firetv",
-      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
-      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages."
+      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
+      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "زر Wi-Fi ملوّن بجوار الإعدادات أعلى الشاشة. يفتح إعدادات الواي فاي على أندرويد مع بديل لإعدادات الشبكة أو النظام. سامسونج يجرب اختصار Tizen وإعدادات الجهاز المتاحة، ويعرض المسار اليدوي إذا لم يدعم الموديل الفتح المباشر. الواجهة باللغات الخمس.",
-      "noteEn": "Colourful Wi-Fi shortcut beside Settings in the top navigation. Android opens Wi-Fi with network/system settings fallbacks. Samsung attempts the Tizen Wi-Fi operation and available Settings app, with a manual guide when direct opening is unsupported. Available in all five languages.",
+      "noteAr": "صورة الأرجنتين مفرّغة بصيغة WebP مع تحديث حزمة المنتخبات دون إعادة الثيم الأساسي. تحسين مؤقّت التطبيقات على أندرويد وإضافة طلب إيقاف التطبيق الحالي أو تحديد مدته من ريموت الموبايل، بموافقة رقم الأهل على التلفزيون. يلزم تفعيل خدمة TV Morph من تسهيلات الاستخدام للتطبيقات الخارجية؛ اختبار هايسنس الفعلي لم يُؤكد بعد.",
+      "noteEn": "Transparent Argentina WebP artwork and refreshed national-team pack without resetting the selected theme. Android timer fixes and phone remote requests to stop the current app or set its allowance, approved with the parent PIN on TV. External apps require the opt-in TV Morph Accessibility service. Physical Hisense enforcement remains unverified.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.57"
+      "version": "0.8.58"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.58",
+      "file": "TV-Morph-Android-TV-0.8.58.apk",
+      "bytes": 3926296,
+      "sha256": "fd519806604d3b035c37ed944c3d9b6541ca6a9196ad480b7aff015c7438d84b"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.58",
+      "file": "TV-Morph-Phone-0.8.58.apk",
+      "bytes": 8601210,
+      "sha256": "e0ae5be2735be8944af6b9b603e02710aeb2763cb9b9e654e3cf63b52be437fe"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.57",
       "file": "TV-Morph-Android-TV-0.8.57.apk",
@@ -836,6 +848,8 @@
     "TV-Morph-Phone-0.8.55.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/48733fcb3161edf6c0e8530736c42e977c0855cc/TV-Morph-Phone-0.8.55.apk",
     "TV-Morph-Android-TV-0.8.55.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/48733fcb3161edf6c0e8530736c42e977c0855cc/TV-Morph-Android-TV-0.8.55.apk",
     "TV-Morph-Phone-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Phone-0.8.56.apk",
-    "TV-Morph-Android-TV-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Android-TV-0.8.56.apk"
+    "TV-Morph-Android-TV-0.8.56.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/3d2629b1fed5db1c9faefa50b43e4c47c735430a/TV-Morph-Android-TV-0.8.56.apk",
+    "TV-Morph-Phone-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Phone-0.8.57.apk",
+    "TV-Morph-Android-TV-0.8.57.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ec981f96b7d77fe07fa192c745e012be19d84085/TV-Morph-Android-TV-0.8.57.apk"
   }
 }

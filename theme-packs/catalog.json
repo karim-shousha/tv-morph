@@ -120,7 +120,7 @@
     },
     {
       "id": "national",
-      "version": 3,
+      "version": 4,
       "themes": [
         "egypt",
         "argentina",
@@ -128,31 +128,31 @@
       ],
       "files": [
         {
-          "name": "argentina-2022-team.jpg",
-          "file": "national-v3-argentina-2022-team.webp",
-          "bytes": 136986,
-          "sha256": "d20bfc523df189f68afcdf27d86769735ed1d7bc392fc98e8120fc2e3ca0c4f9"
+          "name": "argentina-champions-hq.webp",
+          "file": "national-v4-argentina-champions-hq.webp",
+          "bytes": 1502604,
+          "sha256": "d77a9c06c5aeb13ff995e5dd048c18135eacbcd408cb0733605562457a84db71"
         },
         {
           "name": "egypt-national-team-v1.png",
-          "file": "national-v3-egypt-national-team-v1.webp",
+          "file": "national-v4-egypt-national-team-v1.webp",
           "bytes": 303690,
           "sha256": "d8415d53a93ce8228252ea9a9ca4a14eb551259e24b6628632cb47f14b7f0918"
         },
         {
           "name": "egypt.png",
-          "file": "national-v3-egypt.webp",
+          "file": "national-v4-egypt.webp",
           "bytes": 15486,
           "sha256": "f55eac869bb400da532f9e06034a593193d256ed42ca477848d321aa6c09514d"
         },
         {
           "name": "portugal-team.png",
-          "file": "national-v3-portugal-team.webp",
+          "file": "national-v4-portugal-team.webp",
           "bytes": 267524,
           "sha256": "a72e926ebb50f001f7f09c08755c9cfa2d7be8e1119b0cfd7ab29872e1e26624"
         }
       ],
-      "bytes": 723686
+      "bytes": 2089304
     }
   ]
 }
