@@ -223,3 +223,8 @@ Redesigned radio library with sidebar categories, station search, larger colourf
 ## 0.8.48
 
 Faster home icon animation and direct ordered dock navigation, without moving the rail. Quran stations share the first row, with FM stations grouped below. Download center now clearly states Android 8.0 minimum. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.49
+
+Back closes the open settings dialog first, preserving the page behind it. Includes faster dock navigation, Quran grouped above FM, and prominent Android 8.0 minimum requirements on the website. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
