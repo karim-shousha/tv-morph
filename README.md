@@ -293,3 +293,8 @@ Phone IPTV categories now open in a large searchable drawer with full names and 
 ## 0.8.63
 
 More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.64
+
+One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

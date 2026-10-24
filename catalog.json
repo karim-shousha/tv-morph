@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.63",
+  "latest": "0.8.64",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.63",
+      "version": "0.8.64",
       "download": "/download/phone",
-      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
-      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
+      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
+      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.63",
+      "version": "0.8.64",
       "download": "/download/android",
-      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
-      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
+      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
+      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.63",
+      "version": "0.8.64",
       "download": "/download/firetv",
-      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
-      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination."
+      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
+      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "واجهة IPTV أوسع للموبايل: إزالة كروت آخر مشاهدة والبحث المكرر وشريط الصفحات. بحث موحد واحد وتحميل بقية المحتوى بالتمرير مع حفظ مكانك. واجهة التلفزيون تحتفظ بكروتها وتنقلها المعتاد.",
-      "noteEn": "More room in phone IPTV: removed last-watch cards, duplicate search and the pagination bar. One global search and scrolling to load the remaining titles while preserving your position. TV keeps its existing cards and pagination.",
+      "noteAr": "بحث IPTV موحد واحد على التلفزيون والموبايل. إصلاح فتح لوحة الكتابة عند الضغط بالريموت على أندرويد TV، والسماح للوحة Samsung الأصلية بالفتح بدلاً من إرسال بحث فارغ. البحث يشمل القنوات والأفلام والمسلسلات.",
+      "noteEn": "One global IPTV search on TV and phone. Android TV remote OK opens native text entry; Samsung input OK preserves the native IME action instead of submitting an empty search. Search covers live channels, movies and series.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.63"
+      "version": "0.8.64"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.64",
+      "file": "TV-Morph-Android-TV-0.8.64.apk",
+      "bytes": 3930392,
+      "sha256": "5aaf46b8b2ac7725cb460d0d737c476f466a45e8c63e58aed71a7a97f4aad3ef"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.64",
+      "file": "TV-Morph-Phone-0.8.64.apk",
+      "bytes": 8844019,
+      "sha256": "9cf89fc7e3716b8661def32c7622d9d6afb3b4f8a3abc4345a192d3c0ca5bb04"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.63",
       "file": "TV-Morph-Android-TV-0.8.63.apk",
@@ -920,6 +932,8 @@
     "TV-Morph-Phone-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Phone-0.8.61.apk",
     "TV-Morph-Android-TV-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Android-TV-0.8.61.apk",
     "TV-Morph-Phone-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Phone-0.8.62.apk",
-    "TV-Morph-Android-TV-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Android-TV-0.8.62.apk"
+    "TV-Morph-Android-TV-0.8.62.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6e1f6b9e4ed2935ac9f9f75ff3ae76c069e3012/TV-Morph-Android-TV-0.8.62.apk",
+    "TV-Morph-Phone-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Phone-0.8.63.apk",
+    "TV-Morph-Android-TV-0.8.63.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/4b9579912c5b816d0df469530ab4269223bb0339/TV-Morph-Android-TV-0.8.63.apk"
   }
 }
