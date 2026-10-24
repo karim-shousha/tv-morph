@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.37",
+  "latest": "0.8.38",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.37",
+      "version": "0.8.38",
       "download": "/download/phone",
-      "noteAr": "أيقونات جانبية ملونة برسومات مستقلة للصلاة وHDMI والمتجر والإنترنت والمظهر والمساعدة، بنفس أسلوب أيقونات الشريط السفلي. الألوان ثابتة والحدود تتبع الثيم مع حركة التركيز. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Distinct colorful sidebar artwork for Prayer, HDMI, Store, Internet, Appearance and Help, matching the bottom dock style. Icon colors stay consistent while card borders follow the theme and focus animation. Update phone and TV."
+      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.37",
+      "version": "0.8.38",
       "download": "/download/android",
-      "noteAr": "أيقونات جانبية ملونة برسومات مستقلة للصلاة وHDMI والمتجر والإنترنت والمظهر والمساعدة، بنفس أسلوب أيقونات الشريط السفلي. الألوان ثابتة والحدود تتبع الثيم مع حركة التركيز. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Distinct colorful sidebar artwork for Prayer, HDMI, Store, Internet, Appearance and Help, matching the bottom dock style. Icon colors stay consistent while card borders follow the theme and focus animation. Update phone and TV."
+      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.37",
+      "version": "0.8.38",
       "download": "/download/firetv",
-      "noteAr": "أيقونات جانبية ملونة برسومات مستقلة للصلاة وHDMI والمتجر والإنترنت والمظهر والمساعدة، بنفس أسلوب أيقونات الشريط السفلي. الألوان ثابتة والحدود تتبع الثيم مع حركة التركيز. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Distinct colorful sidebar artwork for Prayer, HDMI, Store, Internet, Appearance and Help, matching the bottom dock style. Icon colors stay consistent while card borders follow the theme and focus animation. Update phone and TV."
+      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "أيقونات جانبية ملونة برسومات مستقلة للصلاة وHDMI والمتجر والإنترنت والمظهر والمساعدة، بنفس أسلوب أيقونات الشريط السفلي. الألوان ثابتة والحدود تتبع الثيم مع حركة التركيز. حدّث الموبايل والتلفزيون.",
-      "noteEn": "Distinct colorful sidebar artwork for Prayer, HDMI, Store, Internet, Appearance and Help, matching the bottom dock style. Icon colors stay consistent while card borders follow the theme and focus animation. Update phone and TV.",
+      "noteAr": "عرض مصدر القنوات وHDMI على سامسونج في الطبقة الأمامية داخل التطبيق بدل اختفائه خلف الهوم. الرجوع يغلق الفيديو ويعيد المداخل، مع منع تفعيل أزرار الهوم المخفية أثناء المشاهدة. زر HDMI في الشريط السفلي فقط. التشغيل التلقائي على سامسونج لم يتغير ولا نؤكد دعمه لهذا التطبيق. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Samsung broadcast and HDMI video now uses the native FRONT plane rather than appearing behind Home. Back returns to inputs; hidden Home controls cannot activate during viewing. HDMI shortcut stays in the bottom dock only. Samsung autorun behavior is unchanged and is not confirmed for this app. Update phone and TV.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.37"
+      "version": "0.8.38"
     },
     {
       "id": "lg",
@@ -95,6 +95,12 @@
       "file": "TV-Morph-Phone-0.8.4.apk",
       "bytes": 6813652,
       "sha256": "f2ec35a406c15653cef045c5cd10bad6ebfc97aa61af8791c953c2f9aaa18b3d"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.38",
+      "file": "TV-Morph-Phone-0.8.38.apk",
+      "bytes": 8510545,
+      "sha256": "4e0267776cc0c5a61abfd98a2a77414324472601d6d8c758569205039faa9b2f"
     },
     {
       "name": "TV-Morph-Phone-0.8.37",
@@ -311,6 +317,12 @@
       "file": "TV-Morph-Android-TV-0.8.4.apk",
       "bytes": 3103551,
       "sha256": "5c6bc79c32866b7eff8fa585d8694864ffc5cd2793613ddc182c5deaead81c04"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.38",
+      "file": "TV-Morph-Android-TV-0.8.38.apk",
+      "bytes": 3884435,
+      "sha256": "9e9a9e826b7354e25ea07166ed72d028b97e18de1f07a7ea3b0f86f9e8e95370"
     },
     {
       "name": "TV-Morph-Android-TV-0.8.37",
@@ -570,6 +582,8 @@
     "TV-Morph-Phone-0.8.35.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ea092c719304c0922ef1c665e35ffe49095f2d72/TV-Morph-Phone-0.8.35.apk",
     "TV-Morph-Android-TV-0.8.35.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/ea092c719304c0922ef1c665e35ffe49095f2d72/TV-Morph-Android-TV-0.8.35.apk",
     "TV-Morph-Phone-0.8.36.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bd3b727c19304fb66205042fa5b4bae9b643f753/TV-Morph-Phone-0.8.36.apk",
-    "TV-Morph-Android-TV-0.8.36.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bd3b727c19304fb66205042fa5b4bae9b643f753/TV-Morph-Android-TV-0.8.36.apk"
+    "TV-Morph-Android-TV-0.8.36.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/bd3b727c19304fb66205042fa5b4bae9b643f753/TV-Morph-Android-TV-0.8.36.apk",
+    "TV-Morph-Phone-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Phone-0.8.37.apk",
+    "TV-Morph-Android-TV-0.8.37.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/96e36c1c39c899e9605c13e8f158fc5844e73e62/TV-Morph-Android-TV-0.8.37.apk"
   }
 }
