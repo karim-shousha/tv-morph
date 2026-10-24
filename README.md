@@ -258,3 +258,8 @@ Refined IPTV home: a compact last-watched card, larger section icons, persistent
 ## 0.8.55
 
 Saved library pages appear immediately and refresh in the background, scoped by account and viewer. Fixed 10-second seeking without repeat acceleration. IPTV home has a compact card, larger icons and top-right search without duplicate sections. Back restores the selected launcher/IPTV icon, and vertical navigation from recent apps stays in the content instead of jumping to the sidebar. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.56
+
+Player seeking distinguishes taps and holds: one tap moves 10 seconds; holding on the timeline repeats and gradually accelerates to 20- and 30-second steps. Releasing the key or leaving the player stops repetition, and every new press starts at 10 seconds. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
