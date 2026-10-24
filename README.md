@@ -193,3 +193,8 @@ Four-step connection setup with the phone IP inside Samsung preparation. App ico
 ## 0.8.42
 
 IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.43
+
+Floating dock icons, larger text-only next prayer aligned closer to the right, and fitted TV canvas with bounded settings and input layouts. Optional startup update alerts on phone and TV; install this version first to receive future alerts. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

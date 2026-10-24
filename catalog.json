@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.42",
+  "latest": "0.8.43",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.42",
+      "version": "0.8.43",
       "download": "/download/phone",
-      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
-      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
+      "noteAr": "أيقونات الشريط السفلي عائمة بدون خلفية، صلاة قادمة أكبر وأقرب لليمين بدون هلال منفصل، وملاءمة صفحات التلفزيون لمقاسات العرض. تنبيه اختياري عند فتح التطبيق بوجود إصدار أحدث على الموبايل والتلفزيون؛ يحتاج تثبيت هذا الإصدار أولًا.",
+      "noteEn": "Floating dock icons, larger text-only next prayer aligned closer to the right, and fitted TV canvas with bounded settings and input layouts. Optional startup update alerts on phone and TV; install this version first to receive future alerts."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.42",
+      "version": "0.8.43",
       "download": "/download/android",
-      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
-      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
+      "noteAr": "أيقونات الشريط السفلي عائمة بدون خلفية، صلاة قادمة أكبر وأقرب لليمين بدون هلال منفصل، وملاءمة صفحات التلفزيون لمقاسات العرض. تنبيه اختياري عند فتح التطبيق بوجود إصدار أحدث على الموبايل والتلفزيون؛ يحتاج تثبيت هذا الإصدار أولًا.",
+      "noteEn": "Floating dock icons, larger text-only next prayer aligned closer to the right, and fitted TV canvas with bounded settings and input layouts. Optional startup update alerts on phone and TV; install this version first to receive future alerts."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.42",
+      "version": "0.8.43",
       "download": "/download/firetv",
-      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
-      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription."
+      "noteAr": "أيقونات الشريط السفلي عائمة بدون خلفية، صلاة قادمة أكبر وأقرب لليمين بدون هلال منفصل، وملاءمة صفحات التلفزيون لمقاسات العرض. تنبيه اختياري عند فتح التطبيق بوجود إصدار أحدث على الموبايل والتلفزيون؛ يحتاج تثبيت هذا الإصدار أولًا.",
+      "noteEn": "Floating dock icons, larger text-only next prayer aligned closer to the right, and fitted TV canvas with bounded settings and input layouts. Optional startup update alerts on phone and TV; install this version first to receive future alerts."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "مكتبة IPTV بقائمة جانبية لاستكمال المشاهدة والمفضلة والمضاف حديثًا، وبوسترات كاملة وصفوف داخل مساحة الشاشة. البحث يشمل كل تصنيفات القسم؛ البحث الموحّد للقنوات والأفلام والمسلسلات متاح من الزر الكبير. أول تطبيق في الشريط السفلي يتحدد ويتوسّط عند فتح TV Morph. حدّث الموبايل والتلفزيون. بيانات البوسترات والتفاصيل والمواعيد من المزوّد؛ التشغيل الفعلي يحتاج تجربة على جهازك.",
-      "noteEn": "IPTV sidebar with continue watching, favourites and recently added; full posters and a viewport-safe library. Section search spans all categories, with a prominent unified search for channels, movies and series. The first dock app is focused and centered at startup. Update phone and TV. Provider metadata and physical playback depend on your device and subscription.",
+      "noteAr": "أيقونات الشريط السفلي عائمة بدون خلفية، صلاة قادمة أكبر وأقرب لليمين بدون هلال منفصل، وملاءمة صفحات التلفزيون لمقاسات العرض. تنبيه اختياري عند فتح التطبيق بوجود إصدار أحدث على الموبايل والتلفزيون؛ يحتاج تثبيت هذا الإصدار أولًا.",
+      "noteEn": "Floating dock icons, larger text-only next prayer aligned closer to the right, and fitted TV canvas with bounded settings and input layouts. Optional startup update alerts on phone and TV; install this version first to receive future alerts.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.42"
+      "version": "0.8.43"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.43",
+      "file": "TV-Morph-Android-TV-0.8.43.apk",
+      "bytes": 3888799,
+      "sha256": "97f3552ace8f96d64bf678cf32672fee4222a2ce8355e63e0d186f358882bedb"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.43",
+      "file": "TV-Morph-Phone-0.8.43.apk",
+      "bytes": 8539703,
+      "sha256": "caf6ca758c249b172b4b25767832ac29e9b8e0d723a3ff8eecca6aa74a0726ef"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.42",
       "file": "TV-Morph-Android-TV-0.8.42.apk",
@@ -626,6 +638,8 @@
     "TV-Morph-Phone-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Phone-0.8.40.apk",
     "TV-Morph-Android-TV-0.8.40.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/cc6e6c56256274d06d9b6507552aeb186de517b7/TV-Morph-Android-TV-0.8.40.apk",
     "TV-Morph-Phone-0.8.41.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/30a9973ba7dca6d2d8951276ecc23aeba5f935c2/TV-Morph-Phone-0.8.41.apk",
-    "TV-Morph-Android-TV-0.8.41.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/30a9973ba7dca6d2d8951276ecc23aeba5f935c2/TV-Morph-Android-TV-0.8.41.apk"
+    "TV-Morph-Android-TV-0.8.41.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/30a9973ba7dca6d2d8951276ecc23aeba5f935c2/TV-Morph-Android-TV-0.8.41.apk",
+    "TV-Morph-Phone-0.8.42.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7151b94b06079709c1c663a192f458e10168436e/TV-Morph-Phone-0.8.42.apk",
+    "TV-Morph-Android-TV-0.8.42.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7151b94b06079709c1c663a192f458e10168436e/TV-Morph-Android-TV-0.8.42.apk"
   }
 }
