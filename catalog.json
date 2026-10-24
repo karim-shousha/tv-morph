@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.61",
+  "latest": "0.8.62",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.61",
+      "version": "0.8.62",
       "download": "/download/phone",
-      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
-      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
+      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
+      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.61",
+      "version": "0.8.62",
       "download": "/download/android",
-      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
-      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
+      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
+      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.61",
+      "version": "0.8.62",
       "download": "/download/firetv",
-      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
-      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages."
+      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
+      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ثلاثة كروت مستقلة بدل آخر مشاهدة الكبير: آخر قناة وآخر فيلم وآخر مسلسل، مع الصورة والاسم وزر فتح أو استكمال مباشر. حفظ سجل القنوات دون فقد آخر فيلم أو مسلسل، وتنقّل بالأسهم بين الكروت وأقسامها. متاح على التلفزيون والموبايل باللغات الخمس.",
-      "noteEn": "Three independent last-watched cards replace the large banner: latest channel, movie and series, with artwork, title and direct play/resume. Channel history preserves the latest movie and episode during channel surfing. Arrow navigation connects each card to its section. Available on TV and phone in all five languages.",
+      "noteAr": "قائمة أقسام وقنوات أكبر على الموبايل، ببحث وأسماء كاملة وتمرير بطول الشاشة. اختيار القسم يغلق القائمة ويظهر اسمه فوق المحتوى، وزر الرجوع يغلقها أولاً. القنوات تستفيد من عرض الصفحة بالكامل. باللغات الخمس.",
+      "noteEn": "Phone IPTV categories now open in a large searchable drawer with full names and full-height scrolling. Selecting a category closes the drawer and displays its name above the content; Back closes the drawer first. The library uses the full page width. Available in all five languages.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.61"
+      "version": "0.8.62"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.62",
+      "file": "TV-Morph-Android-TV-0.8.62.apk",
+      "bytes": 3930392,
+      "sha256": "6eb851d4c4c18cd2522e72b481175fd56d3a3d9bcae3b411eb0dc683907307f2"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.62",
+      "file": "TV-Morph-Phone-0.8.62.apk",
+      "bytes": 8839923,
+      "sha256": "f4a0a54ef93bb6b7fc036e47657c527a0dfd543b4480bc85f9d465fd577f62e0"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.61",
       "file": "TV-Morph-Android-TV-0.8.61.apk",
@@ -892,6 +904,8 @@
     "TV-Morph-Phone-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Phone-0.8.59.apk",
     "TV-Morph-Android-TV-0.8.59.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e2dc18365f0cb945d5adc4402e7981a86e1125cc/TV-Morph-Android-TV-0.8.59.apk",
     "TV-Morph-Phone-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Phone-0.8.60.apk",
-    "TV-Morph-Android-TV-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Android-TV-0.8.60.apk"
+    "TV-Morph-Android-TV-0.8.60.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/d7415fa85f40b9bc110982168d75db0385a000aa/TV-Morph-Android-TV-0.8.60.apk",
+    "TV-Morph-Phone-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Phone-0.8.61.apk",
+    "TV-Morph-Android-TV-0.8.61.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/f757a39ca8901101506960c06e4a1b5d539de0d7/TV-Morph-Android-TV-0.8.61.apk"
   }
 }
