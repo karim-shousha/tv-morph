@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.44",
+  "latest": "0.8.45",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.44",
+      "version": "0.8.45",
       "download": "/download/phone",
-      "noteAr": "تعديل مسار فتح التطبيقات الخارجية وLive TV وHDMI على Android TV للحفاظ على الرجوع إلى TV Morph عند الخروج. اختبارات البناء ومسار الفتح نجحت؛ سلوك Netflix وتطبيق قنوات الجهاز يحتاج تجربة فعلية ويعتمد أيضًا على النظام.",
-      "noteEn": "Android TV external apps, Live TV and HDMI now launch without flags that force a separate or reset task, preserving the caller return path. Build and launch-policy tests pass; Netflix and OEM TV Back behavior still require physical-device verification."
+      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.44",
+      "version": "0.8.45",
       "download": "/download/android",
-      "noteAr": "تعديل مسار فتح التطبيقات الخارجية وLive TV وHDMI على Android TV للحفاظ على الرجوع إلى TV Morph عند الخروج. اختبارات البناء ومسار الفتح نجحت؛ سلوك Netflix وتطبيق قنوات الجهاز يحتاج تجربة فعلية ويعتمد أيضًا على النظام.",
-      "noteEn": "Android TV external apps, Live TV and HDMI now launch without flags that force a separate or reset task, preserving the caller return path. Build and launch-policy tests pass; Netflix and OEM TV Back behavior still require physical-device verification."
+      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.44",
+      "version": "0.8.45",
       "download": "/download/firetv",
-      "noteAr": "تعديل مسار فتح التطبيقات الخارجية وLive TV وHDMI على Android TV للحفاظ على الرجوع إلى TV Morph عند الخروج. اختبارات البناء ومسار الفتح نجحت؛ سلوك Netflix وتطبيق قنوات الجهاز يحتاج تجربة فعلية ويعتمد أيضًا على النظام.",
-      "noteEn": "Android TV external apps, Live TV and HDMI now launch without flags that force a separate or reset task, preserving the caller return path. Build and launch-policy tests pass; Netflix and OEM TV Back behavior still require physical-device verification."
+      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تعديل مسار فتح التطبيقات الخارجية وLive TV وHDMI على Android TV للحفاظ على الرجوع إلى TV Morph عند الخروج. اختبارات البناء ومسار الفتح نجحت؛ سلوك Netflix وتطبيق قنوات الجهاز يحتاج تجربة فعلية ويعتمد أيضًا على النظام.",
-      "noteEn": "Android TV external apps, Live TV and HDMI now launch without flags that force a separate or reset task, preserving the caller return path. Build and launch-policy tests pass; Netflix and OEM TV Back behavior still require physical-device verification.",
+      "noteAr": "تثبيت مجموعة أيقونات الهوم أثناء التنقل: تكبير الأيقونة المحددة بدون إعادة توسيط الشريط مع كل ضغطة. يتحرك الشريط فقط لإظهار تطبيق خارج الجزء الظاهر. خيار Android TV للرجوع بضغطتين من التطبيقات الخارجية، يحتاج تفعيل خدمة التنقل يدويًا. حدّث الموبايل والتلفزيون.",
+      "noteEn": "Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.44"
+      "version": "0.8.45"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.45",
+      "file": "TV-Morph-Android-TV-0.8.45.apk",
+      "bytes": 3892895,
+      "sha256": "856e5d05c86de086f3b2f74a0a107f54b4c8804ae7aa747a370cd704bcb11342"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.45",
+      "file": "TV-Morph-Phone-0.8.45.apk",
+      "bytes": 8543799,
+      "sha256": "12150666609f7adf6bf6c14838faa64a838ec09282b0af3f92f0e2b4028548ff"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.44",
       "file": "TV-Morph-Android-TV-0.8.44.apk",
@@ -654,6 +666,8 @@
     "TV-Morph-Phone-0.8.42.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7151b94b06079709c1c663a192f458e10168436e/TV-Morph-Phone-0.8.42.apk",
     "TV-Morph-Android-TV-0.8.42.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7151b94b06079709c1c663a192f458e10168436e/TV-Morph-Android-TV-0.8.42.apk",
     "TV-Morph-Phone-0.8.43.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/001a177c0cead5c997f3e3f5ff2e5487b83da32f/TV-Morph-Phone-0.8.43.apk",
-    "TV-Morph-Android-TV-0.8.43.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/001a177c0cead5c997f3e3f5ff2e5487b83da32f/TV-Morph-Android-TV-0.8.43.apk"
+    "TV-Morph-Android-TV-0.8.43.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/001a177c0cead5c997f3e3f5ff2e5487b83da32f/TV-Morph-Android-TV-0.8.43.apk",
+    "TV-Morph-Phone-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Phone-0.8.44.apk",
+    "TV-Morph-Android-TV-0.8.44.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7ab38d32c32a6ae1fe63d39324f29930696b2429/TV-Morph-Android-TV-0.8.44.apk"
   }
 }

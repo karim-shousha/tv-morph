@@ -203,3 +203,8 @@ Floating dock icons, larger text-only next prayer aligned closer to the right, a
 ## 0.8.44
 
 Android TV external apps, Live TV and HDMI now launch without flags that force a separate or reset task, preserving the caller return path. Build and launch-policy tests pass; Netflix and OEM TV Back behavior still require physical-device verification. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.45
+
+Stable home dock: focus magnifies icons without recentering the whole rail on every move. Overflow scrolls only to reveal an offscreen icon. Optional Double Back return from external Android TV apps; enable navigation accessibility manually. Update phone and TV. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
