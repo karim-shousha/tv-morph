@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.76",
+  "latest": "0.8.77",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.76",
+      "version": "0.8.77",
       "download": "/download/phone",
-      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
-      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
+      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
+      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.76",
+      "version": "0.8.77",
       "download": "/download/android",
-      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
-      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
+      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
+      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.76",
+      "version": "0.8.77",
       "download": "/download/firetv",
-      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
-      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
+      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
+      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
-      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load.",
+      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
+      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.76"
+      "version": "0.8.77"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.77",
+      "file": "TV-Morph-Phone-0.8.77.apk",
+      "bytes": 9213374,
+      "sha256": "4334e1e0e7d2084d1954005f3b58c25a51975a13f4ca405c214cf58cb3b35dd3"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.77",
+      "file": "TV-Morph-Android-TV-0.8.77.apk",
+      "bytes": 4120384,
+      "sha256": "8dc78cc7f38732b5f4b201aa7d92a85bf8671dd95494f666f398626da416bab0"
+    },
     {
       "name": "TV-Morph-Phone-0.8.76",
       "file": "TV-Morph-Phone-0.8.76.apk",
@@ -1102,6 +1114,8 @@
     "TV-Morph-Phone-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Phone-0.8.74.apk",
     "TV-Morph-Android-TV-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Android-TV-0.8.74.apk",
     "TV-Morph-Phone-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Phone-0.8.75.apk",
-    "TV-Morph-Android-TV-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Android-TV-0.8.75.apk"
+    "TV-Morph-Android-TV-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Android-TV-0.8.75.apk",
+    "TV-Morph-Phone-0.8.76.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/625078103bbf15c000a105d461881e2edde6646c/TV-Morph-Phone-0.8.76.apk",
+    "TV-Morph-Android-TV-0.8.76.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/625078103bbf15c000a105d461881e2edde6646c/TV-Morph-Android-TV-0.8.76.apk"
   }
 }

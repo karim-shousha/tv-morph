@@ -371,3 +371,9 @@ Existing package identities, signing keys and saved settings are retained. Local
 
 Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.77
+
+Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
