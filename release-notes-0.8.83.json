@@ -1,0 +1,62 @@
+{
+  "version": "0.8.83",
+  "channel": "preview",
+  "identities": [
+    {
+      "package": "local.cleartv.mobile",
+      "version": "0.8.83",
+      "versionCode": 95,
+      "signingIdentityUnchanged": true
+    },
+    {
+      "package": "local.tvmorph.tv",
+      "version": "0.8.83",
+      "versionCode": 86,
+      "signingIdentityUnchanged": true
+    }
+  ],
+  "validation": {
+    "buildAndSignature": "PASS",
+    "embeddedTVArtifactsMatch": "PASS",
+    "lgPhoneTransportAndUI": "PASS (mocked TV)",
+    "radioPageExitAndStop": "PASS (mocked Android audio, Samsung AVPlay and LG HTML5 audio)",
+    "sportsEndpoints": "HTTP 200 audio samples: talkSPORT, talkSPORT 2, RMC",
+    "currentPhysicalTVs": "NOT TESTED",
+    "iptvFavoritesAndSearch": "PASS: mocked Android/Samsung/LG, AR/EN, 1080p/720p, add and persist, list and grid, no playback during selection",
+    "landing": "PASS: bright palette, AR/EN, 390/1440px layout, 8 WebP slides, manual/autoplay, first-screen CTAs"
+  },
+  "limits": [
+    "ON Sport FM currently unavailable; listed with an unavailable notice and no playback request.",
+    "LG checks a limited catalog of known app IDs; device permission determines external launch. No enumerate-all claim.",
+    "Android/Fire TV store search opens the official store; the user completes installation.",
+    "Samsung/LG are Developer Mode previews, not general app-store releases.",
+    "Background radio is for navigation within Morph TV; video, Adhan, app exit and supported foreground-loss signals stop audio.",
+    "No Samsung/LG default Home replacement or remote-wake support is introduced."
+  ],
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.83",
+      "file": "Morph-TV-Phone-0.8.83.apk",
+      "bytes": 12449854,
+      "sha256": "73a008bacf0a248a8bd6796a1e655b8a71fbb43686ac8be50dfc1564d35f8e8b"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.83",
+      "file": "Morph-TV-Android-TV-0.8.83.apk",
+      "bytes": 3879168,
+      "sha256": "69173a181d59cc4e4821f3ab669f6da36a9830517ad81d3a0cd79c0a98b4e96b"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.2",
+      "file": "Morph-TV-LG-Preview-0.1.2.ipk",
+      "bytes": 3683360,
+      "sha256": "db80bb5038156c41060578d178ed93c03f78d3cbb6d0abba8e744fa591b550ec"
+    }
+  ],
+  "changes": [
+    "Live-channel favorite star is a separate D-pad/OK control in grid and list views; persistent profile favorites.",
+    "Up from first row goes straight to visible global search; Down returns to channels.",
+    "Bright landing palette, high-contrast copy, first-screen download/setup controls and installation ahead of feature catalogue.",
+    "Phone native update check from 0.8.82 preserved; TV prompts remain disabled."
+  ]
+}

@@ -22,3 +22,5 @@ Release hashes: /SHA256SUMS.txt. Validation and limitations: /release-notes-0.8.
 Install updates over the existing app to retain its identity and settings. Existing diagnostic packages and evidence are not changed. To stop radio, use Stop. To disable LG phone access, use Forget LG; remove LG Preview separately from the TV if desired.
 
 Phone 0.8.82 fixes update detection using native HTTPS and checks again when the app resumes. Manual checks remain available. TV receivers remain 0.8.81 and LG Preview remains 0.1.1; automatic TV update prompts stay disabled. Older phone builds need this patch installed manually once.
+
+Current release: phone/Android/Fire/Samsung 0.8.83; LG Preview 0.1.2. Adds visible live favorites and direct first-row search navigation. Bright landing and prioritized installation. Physical TV confirmation pending.
