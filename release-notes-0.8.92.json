@@ -1,0 +1,51 @@
+{
+  "version": "0.8.92",
+  "channel": "preview",
+  "signingIdentityPreserved": true,
+  "embeddedArtifactsMatch": true,
+  "change": "Plus-only personal touch, fixed IP layout and remote theme scrolling, support and purchases in TV settings, removable packs, Saudi artwork and premium asset CORS fix",
+  "newThemes": [
+    "ismaily",
+    "king-salman",
+    "crown-prince",
+    "nassr",
+    "hilal",
+    "ittihad",
+    "ahli-saudi"
+  ],
+  "freeThemes": [
+    "blue",
+    "ahly",
+    "zamalek",
+    "ismaily",
+    "king-salman",
+    "crown-prince"
+  ],
+  "plusPurchases": "DISABLED: payment integration not live-tested",
+  "localValidation": "PASS: UI, license fixtures, concurrency, transfer, nginx, community regression",
+  "physicalTVValidation": "NOT TESTED for this release",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.92",
+      "file": "Morph-TV-Phone-0.8.92.apk",
+      "bytes": 12941800,
+      "sha256": "d81cef821c9c93060cdfcad32a4e9b0188bff9b49d2889dac0e811b9e3c19ce0"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.92",
+      "file": "Morph-TV-Android-TV-0.8.92.apk",
+      "bytes": 4006581,
+      "sha256": "77d0b92a5fe51649428deff10c9a8dcff18c865b62c5c514b995594877554a0b"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.11",
+      "file": "Morph-TV-LG-Preview-0.1.11.ipk",
+      "bytes": 3817096,
+      "sha256": "377856f8aed2291396ee7ed80e01c43bdc70f1a95e1618d15186e0974022f582"
+    }
+  ],
+  "royalArtwork": {
+    "crownPrince": "transparent WebP, Vision 2030 and national emblem",
+    "kingSalman": "requested slogan and national emblem, original portrait retained; cutout blocked by image tool"
+  }
+}
