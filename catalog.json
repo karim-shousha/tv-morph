@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.94",
+  "latest": "0.8.95",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.94",
+      "version": "0.8.95",
       "download": "/download/phone",
-      "noteAr": "صور نجوم الأندية السعودية مفرّغة بصيغة WebP. الحزم المدفوعة تحتاج تفعيل Plus على التلفزيون نفسه.",
-      "noteEn": "Transparent WebP Saudi club star artwork. Premium themes require Plus activation on the TV itself."
+      "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
+      "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.94",
+      "version": "0.8.95",
       "download": "/download/android",
-      "noteAr": "صور نجوم الأندية السعودية مفرّغة بصيغة WebP. الحزم المدفوعة تحتاج تفعيل Plus على التلفزيون نفسه.",
-      "noteEn": "Transparent WebP Saudi club star artwork. Premium themes require Plus activation on the TV itself."
+      "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
+      "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.94",
+      "version": "0.8.95",
       "download": "/download/firetv",
-      "noteAr": "صور نجوم الأندية السعودية مفرّغة بصيغة WebP. الحزم المدفوعة تحتاج تفعيل Plus على التلفزيون نفسه.",
-      "noteEn": "Transparent WebP Saudi club star artwork. Premium themes require Plus activation on the TV itself."
+      "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
+      "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "صور نجوم الأندية السعودية مفرّغة بصيغة WebP. الحزم المدفوعة تحتاج تفعيل Plus على التلفزيون نفسه.",
-      "noteEn": "Transparent WebP Saudi club star artwork. Premium themes require Plus activation on the TV itself.",
+      "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
+      "noteEn": "Complete recent-watch artwork and distinct IPTV category colors.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.94"
+      "version": "0.8.95"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "صور نجوم الأندية السعودية مفرّغة بصيغة WebP. الحزم المدفوعة تحتاج تفعيل Plus على التلفزيون نفسه.",
-      "noteEn": "Transparent WebP Saudi club star artwork. Premium themes require Plus activation on the TV itself.",
-      "version": "0.8.94",
+      "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
+      "noteEn": "Complete recent-watch artwork and distinct IPTV category colors.",
+      "version": "0.8.95",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.94",
-      "file": "Morph-TV-Phone-0.8.94.apk",
-      "bytes": 12941800,
-      "sha256": "4dc66418a76320da3967b2dd9981bebf4b85c82e5a157b1c42b8c2116bb1cbec"
+      "name": "Morph-TV-Phone-0.8.95",
+      "file": "Morph-TV-Phone-0.8.95.apk",
+      "bytes": 12945896,
+      "sha256": "82e900ada593983d257dbb6d6bd73488a870aa48be6930a8dddcf8f39aae1ccf"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.94",
-      "file": "Morph-TV-Android-TV-0.8.94.apk",
+      "name": "Morph-TV-Android-TV-0.8.95",
+      "file": "Morph-TV-Android-TV-0.8.95.apk",
       "bytes": 4006581,
-      "sha256": "d3473b7274e269f84d6d3eadb85e187948d252fb39e564e33af6dd5e00decaeb"
+      "sha256": "12b29c1fcbd4dcba677a5c411de08cf57ffd62064db0363126e39192b77bda1e"
     },
     {
-      "name": "Morph-TV-LG-0.8.94",
-      "file": "Morph-TV-LG-0.8.94.ipk",
-      "bytes": 3817382,
-      "sha256": "a4c0549baabe6586f6d07f34584b8ace13c9e62f77b9f13690a697cb17112c40"
+      "name": "Morph-TV-LG-0.8.95",
+      "file": "Morph-TV-LG-0.8.95.ipk",
+      "bytes": 3817724,
+      "sha256": "067ba20357eb6bc569008868a0f4d0ead6c6d0c1d35c0709cccb8c3c0e40b5aa"
     }
   ]
 }

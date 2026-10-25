@@ -1,0 +1,30 @@
+{
+  "version": "0.8.95",
+  "changes": [
+    "Whole bright recent-watch artwork separate from metadata",
+    "Distinct live, movie, series, favorite and music colors",
+    "Paid activation code save warning; email deferred by owner"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.95",
+      "file": "Morph-TV-Phone-0.8.95.apk",
+      "bytes": 12945896,
+      "sha256": "82e900ada593983d257dbb6d6bd73488a870aa48be6930a8dddcf8f39aae1ccf"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.95",
+      "file": "Morph-TV-Android-TV-0.8.95.apk",
+      "bytes": 4006581,
+      "sha256": "12b29c1fcbd4dcba677a5c411de08cf57ffd62064db0363126e39192b77bda1e"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.95",
+      "file": "Morph-TV-LG-0.8.95.ipk",
+      "bytes": 3817724,
+      "sha256": "067ba20357eb6bc569008868a0f4d0ead6c6d0c1d35c0709cccb8c3c0e40b5aa"
+    }
+  ]
+}
