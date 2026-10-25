@@ -1,0 +1,27 @@
+{
+  "version": "0.8.87",
+  "change": "Home prayer background opacity .72 to .45, blur 12px to 8px",
+  "embeddedArtifactsMatch": true,
+  "signingIdentityPreserved": true,
+  "physicalTVTest": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.87",
+      "file": "Morph-TV-Phone-0.8.87.apk",
+      "bytes": 12953662,
+      "sha256": "9026cf24db4cd10696e27f2ce1e032c6c5403bf8fd69579302ae2692aa87d3e9"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.87",
+      "file": "Morph-TV-Android-TV-0.8.87.apk",
+      "bytes": 4014336,
+      "sha256": "6131fad0ff644ae9abb206197ce015ad41f859c6bd568e421a39eca878d936ff"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.6",
+      "file": "Morph-TV-LG-Preview-0.1.6.ipk",
+      "bytes": 3808494,
+      "sha256": "5eea2b38223ae4245cf4d7fba9aeebe6338923ed95cc6f0e40d2bba2438f4f04"
+    }
+  ]
+}

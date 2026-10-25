@@ -1,3 +1,3 @@
-e23fa168ddac0d2b4ddf0b440511ad0fda812ea4639434fb99b1ce4754ce4167  Morph-TV-Phone-0.8.86.apk
-9cfac5b4699d28038a7f13741a7135eefbd865b49bce1a58bde66cd40463fbef  Morph-TV-Android-TV-0.8.86.apk
-e89562ee2c7a1591cc69230923ad19a17e5ac961a32ef6b7bbf2ae3987d2958a  Morph-TV-LG-Preview-0.1.5.ipk
+9026cf24db4cd10696e27f2ce1e032c6c5403bf8fd69579302ae2692aa87d3e9  Morph-TV-Phone-0.8.87.apk
+6131fad0ff644ae9abb206197ce015ad41f859c6bd568e421a39eca878d936ff  Morph-TV-Android-TV-0.8.87.apk
+5eea2b38223ae4245cf4d7fba9aeebe6338923ed95cc6f0e40d2bba2438f4f04  Morph-TV-LG-Preview-0.1.6.ipk

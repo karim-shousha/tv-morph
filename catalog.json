@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.86",
+  "latest": "0.8.87",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.86",
+      "version": "0.8.87",
       "download": "/download/phone",
-      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
-      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
+      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
+      "noteEn": "Lighter translucent Home prayer card background."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.86",
+      "version": "0.8.87",
       "download": "/download/android",
-      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
-      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
+      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
+      "noteEn": "Lighter translucent Home prayer card background."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.86",
+      "version": "0.8.87",
       "download": "/download/firetv",
-      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
-      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
+      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
+      "noteEn": "Lighter translucent Home prayer card background."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
-      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained.",
+      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
+      "noteEn": "Lighter translucent Home prayer card background.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.86"
+      "version": "0.8.87"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
-      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
-      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained.",
-      "version": "0.1.5",
+      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
+      "noteEn": "Lighter translucent Home prayer card background.",
+      "version": "0.1.6",
       "installGuide": "/lg-install.html",
       "testDownload": "/download/lg-preview",
       "physicalDeviceVerified": false
@@ -64,22 +64,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.86",
-      "file": "Morph-TV-Phone-0.8.86.apk",
+      "name": "Morph-TV-Phone-0.8.87",
+      "file": "Morph-TV-Phone-0.8.87.apk",
       "bytes": 12953662,
-      "sha256": "e23fa168ddac0d2b4ddf0b440511ad0fda812ea4639434fb99b1ce4754ce4167"
+      "sha256": "9026cf24db4cd10696e27f2ce1e032c6c5403bf8fd69579302ae2692aa87d3e9"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.86",
-      "file": "Morph-TV-Android-TV-0.8.86.apk",
+      "name": "Morph-TV-Android-TV-0.8.87",
+      "file": "Morph-TV-Android-TV-0.8.87.apk",
       "bytes": 4014336,
-      "sha256": "9cfac5b4699d28038a7f13741a7135eefbd865b49bce1a58bde66cd40463fbef"
+      "sha256": "6131fad0ff644ae9abb206197ce015ad41f859c6bd568e421a39eca878d936ff"
     },
     {
-      "name": "Morph-TV-LG-Preview-0.1.5",
-      "file": "Morph-TV-LG-Preview-0.1.5.ipk",
-      "bytes": 3808488,
-      "sha256": "e89562ee2c7a1591cc69230923ad19a17e5ac961a32ef6b7bbf2ae3987d2958a"
+      "name": "Morph-TV-LG-Preview-0.1.6",
+      "file": "Morph-TV-LG-Preview-0.1.6.ipk",
+      "bytes": 3808494,
+      "sha256": "5eea2b38223ae4245cf4d7fba9aeebe6338923ed95cc6f0e40d2bba2438f4f04"
     }
   ]
 }

@@ -1,14 +1,9 @@
 {
   "package": "com.zainbot.morphtv.preview",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "physicalTVVerified": false,
   "target": "webOS 5.0+ initial candidate; older versions unverified",
-  "sha256": "e89562ee2c7a1591cc69230923ad19a17e5ac961a32ef6b7bbf2ae3987d2958a",
-  "bytes": 3808488,
-  "productionFilesUnchanged": true,
-  "uiChecks": "PASS: 1080p/720p, AR/EN, Home D-pad, IPTV account flow, radio and prayer; mocked provider",
-  "phoneTransport": "PASS: encrypted pairing, pinned SSH, package readback checksum, install/version verification; mocked LG",
-  "externalApps": "PASS: known installed-app filtering, Shahid pin/launch callbacks, missing-app and permission rejection; mocked API",
-  "currentPhysicalTest": "NOT TESTED",
-  "previousUserReport": "User confirmed LG Preview 0.1.0 UI on 55UR801C0LJ / webOS 25"
+  "sha256": "5eea2b38223ae4245cf4d7fba9aeebe6338923ed95cc6f0e40d2bba2438f4f04",
+  "bytes": 3808494,
+  "productionFilesUnchanged": true
 }
