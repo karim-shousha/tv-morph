@@ -359,3 +359,9 @@ New shared TV IPTV layout: clear category rail, channel list and selected-channe
 
 Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.75
+
+Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.

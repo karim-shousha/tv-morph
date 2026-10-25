@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.74",
+  "latest": "0.8.75",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.74",
+      "version": "0.8.75",
       "download": "/download/phone",
-      "noteAr": "تصميم سينمائي جديد للصفحة الرئيسية مع انعكاس الأيقونات ولمعة زجاجية. واجهة IPTV بخلفية الثيم وصور مستقلة للأقسام، وشبكة قنوات مع خيار القائمة ومكتبة أفلام ومسلسلات محسّنة. لسامسونج وهيسنس أندرويد وفاير TV؛ إصدار سامسونج مضمّن في مُثبّت الموبايل.",
-      "noteEn": "Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer."
+      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
+      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.74",
+      "version": "0.8.75",
       "download": "/download/android",
-      "noteAr": "تصميم سينمائي جديد للصفحة الرئيسية مع انعكاس الأيقونات ولمعة زجاجية. واجهة IPTV بخلفية الثيم وصور مستقلة للأقسام، وشبكة قنوات مع خيار القائمة ومكتبة أفلام ومسلسلات محسّنة. لسامسونج وهيسنس أندرويد وفاير TV؛ إصدار سامسونج مضمّن في مُثبّت الموبايل.",
-      "noteEn": "Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer."
+      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
+      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.74",
+      "version": "0.8.75",
       "download": "/download/firetv",
-      "noteAr": "تصميم سينمائي جديد للصفحة الرئيسية مع انعكاس الأيقونات ولمعة زجاجية. واجهة IPTV بخلفية الثيم وصور مستقلة للأقسام، وشبكة قنوات مع خيار القائمة ومكتبة أفلام ومسلسلات محسّنة. لسامسونج وهيسنس أندرويد وفاير TV؛ إصدار سامسونج مضمّن في مُثبّت الموبايل.",
-      "noteEn": "Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer."
+      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
+      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تصميم سينمائي جديد للصفحة الرئيسية مع انعكاس الأيقونات ولمعة زجاجية. واجهة IPTV بخلفية الثيم وصور مستقلة للأقسام، وشبكة قنوات مع خيار القائمة ومكتبة أفلام ومسلسلات محسّنة. لسامسونج وهيسنس أندرويد وفاير TV؛ إصدار سامسونج مضمّن في مُثبّت الموبايل.",
-      "noteEn": "Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer.",
+      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
+      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.74"
+      "version": "0.8.75"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.75",
+      "file": "TV-Morph-Phone-0.8.75.apk",
+      "bytes": 9200948,
+      "sha256": "3466aeb85fea61151139f4f81bf506fbf1253fade15b2928be3d3e23a329c6e7"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.75",
+      "file": "TV-Morph-Android-TV-0.8.75.apk",
+      "bytes": 4120317,
+      "sha256": "33aeceb4ca58259045006655bcc47e202cc58bb5424bfff54d9a388c8d1ed9ff"
+    },
     {
       "name": "TV-Morph-Phone-0.8.74",
       "file": "TV-Morph-Phone-0.8.74.apk",
@@ -1074,6 +1086,8 @@
     "TV-Morph-Phone-0.8.72.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/672431ff5d8b414b09f88f460c1fea91862ad18b/TV-Morph-Phone-0.8.72.apk",
     "TV-Morph-Android-TV-0.8.72.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/672431ff5d8b414b09f88f460c1fea91862ad18b/TV-Morph-Android-TV-0.8.72.apk",
     "TV-Morph-Phone-0.8.73.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e37dbaf2714becf0c62a966424a89f7699b4ba44/TV-Morph-Phone-0.8.73.apk",
-    "TV-Morph-Android-TV-0.8.73.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e37dbaf2714becf0c62a966424a89f7699b4ba44/TV-Morph-Android-TV-0.8.73.apk"
+    "TV-Morph-Android-TV-0.8.73.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e37dbaf2714becf0c62a966424a89f7699b4ba44/TV-Morph-Android-TV-0.8.73.apk",
+    "TV-Morph-Phone-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Phone-0.8.74.apk",
+    "TV-Morph-Android-TV-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Android-TV-0.8.74.apk"
   }
 }
