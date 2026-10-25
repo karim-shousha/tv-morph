@@ -5,6 +5,7 @@ import base64, contextlib, hashlib, hmac, json, os, re, secrets, sqlite3, time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
+from urllib.error import URLError
 
 PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}}
 GRANT_PLANS = dict(PLANS, owner={'devices': None})
@@ -113,7 +114,11 @@ class Plus:
         with self.db() as db:
             if db.execute('SELECT 1 FROM events WHERE id=?',(eid,)).fetchone():return
         obj=event['data']['object'];kind=event['type']
-        if kind in ['checkout.session.completed','checkout.session.async_payment_succeeded']:self.fulfill(obj['id'])
+        if kind in ['checkout.session.completed','checkout.session.async_payment_succeeded']:
+            # The Stripe account can also sell unrelated products. Acknowledge
+            # those events without creating a Morph license or repeated failures.
+            with self.db() as db:owned=db.execute("SELECT 1 FROM orders WHERE session=? AND source='stripe'",(obj.get('id'),)).fetchone()
+            if owned:self.fulfill(obj['id'])
         elif kind in ['charge.refunded','charge.dispute.created']:
             payment=obj.get('payment_intent')
             if not payment and obj.get('charge'):payment=self.stripe('charges/'+obj['charge']).get('payment_intent')
@@ -249,4 +254,5 @@ class Plus:
                 else:handler.send_json(404,{'error':'not_found'});return True
             handler.send_json(200,result)
         except (ValueError,KeyError,TypeError):handler.send_json(400,{'error':'invalid_or_unavailable_request'})
+        except (URLError,TimeoutError):handler.send_json(503,{'error':'payment_service_unavailable'})
         return True
