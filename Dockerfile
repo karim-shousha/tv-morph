@@ -9,7 +9,7 @@ COPY lg-install.html lg-preview-validation.json release-notes-0.8.81.json releas
 COPY site-assets /usr/share/nginx/html/site-assets/
 COPY theme-packs /usr/share/nginx/html/theme-packs/
 COPY plus.html plus-purchase.js community.js community-admin.html community-admin.js /usr/share/nginx/html/
-COPY plus-admin.html plus-admin.js plus-admin.css /usr/share/nginx/html/
+COPY robots.txt sitemap.xml plus-admin.html plus-admin.js plus-admin.css /usr/share/nginx/html/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
