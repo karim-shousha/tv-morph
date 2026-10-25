@@ -9,7 +9,7 @@ from urllib.error import URLError
 
 PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}}
 GRANT_PLANS = dict(PLANS, owner={'devices': None})
-FREE = ['blue', 'ahly', 'zamalek', 'ismaily', 'king-salman', 'crown-prince']
+FREE = ['blue', 'emerald', 'violet', 'ahly', 'zamalek', 'ismaily', 'king-salman', 'crown-prince']
 
 class Plus:
     def __init__(self, data, secret, origin):

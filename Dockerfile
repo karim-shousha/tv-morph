@@ -5,7 +5,7 @@ RUN chmod 755 /opt/morph-community/start.sh
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY launcher-guide.html launcher-help.js index.html landing.css landing.js gallery.js web-tv.html catalog.json tvmorph.png SHA256SUMS.txt /usr/share/nginx/html/
 COPY Morph-TV-*.apk /usr/share/nginx/html/
-COPY lg-install.html lg-preview-validation.json release-notes-0.8.81.json release-notes-0.8.82.json release-notes-0.8.83.json release-notes-0.8.84.json release-notes-0.8.85.json release-notes-0.8.92.json release-notes-0.8.93.json release-notes-0.8.94.json release-notes-0.8.95.json release-notes-0.8.96.json release-notes-0.8.97.json release-notes-0.8.98.json support-links.json Morph-TV-LG-0.8.98.ipk /usr/share/nginx/html/
+COPY lg-install.html lg-preview-validation.json release-notes-0.8.81.json release-notes-0.8.82.json release-notes-0.8.83.json release-notes-0.8.84.json release-notes-0.8.85.json release-notes-0.8.92.json release-notes-0.8.93.json release-notes-0.8.94.json release-notes-0.8.95.json release-notes-0.8.96.json release-notes-0.8.97.json release-notes-0.8.98.json release-notes-0.8.99.json support-links.json Morph-TV-LG-0.8.99.ipk /usr/share/nginx/html/
 COPY site-assets /usr/share/nginx/html/site-assets/
 COPY theme-packs /usr/share/nginx/html/theme-packs/
 COPY plus.html plus-purchase.js community.js community-admin.html community-admin.js /usr/share/nginx/html/
