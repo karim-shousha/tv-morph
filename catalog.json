@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.68",
+  "latest": "0.8.69",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.68",
+      "version": "0.8.69",
       "download": "/download/phone",
-      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
-      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
+      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
+      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.68",
+      "version": "0.8.69",
       "download": "/download/android",
-      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
-      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
+      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
+      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.68",
+      "version": "0.8.69",
       "download": "/download/firetv",
-      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
-      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay."
+      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
+      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "أدعية وأذكار متغيرة داخل صفحة الصلاة: صباح ومساء وبعد موعد الصلاة وبين الصلوات وخلال اليوم، حسب توقيت المدينة. ١١ نصًا مع المصادر ومعانيها باللغات الخمس، بدون إنترنت. إعدادات للإيقاف وتغيير النص كل ٣٠ أو ٦٠ أو ١٢٠ ثانية وتحديد تأخير التذكير بعد موعد الصلاة.",
-      "noteEn": "Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay.",
+      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
+      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.68"
+      "version": "0.8.69"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.69",
+      "file": "TV-Morph-Android-TV-0.8.69.apk",
+      "bytes": 3660447,
+      "sha256": "e786e6e60e76a074e1ce728b4bae101cdc70d9957b0c46e612fbb651c6a72386"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.69",
+      "file": "TV-Morph-Phone-0.8.69.apk",
+      "bytes": 8266700,
+      "sha256": "fc764d8e0faa72a7fcf8ea0e238bedc46a0e7b9fd8ba843cbe69b7fc279db6e3"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.68",
       "file": "TV-Morph-Android-TV-0.8.68.apk",
@@ -990,6 +1002,8 @@
     "TV-Morph-Phone-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Phone-0.8.66.apk",
     "TV-Morph-Android-TV-0.8.66.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/02cbf3aac7eb6804544b56e176743163fa31a94c/TV-Morph-Android-TV-0.8.66.apk",
     "TV-Morph-Phone-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Phone-0.8.67.apk",
-    "TV-Morph-Android-TV-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Android-TV-0.8.67.apk"
+    "TV-Morph-Android-TV-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Android-TV-0.8.67.apk",
+    "TV-Morph-Phone-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Phone-0.8.68.apk",
+    "TV-Morph-Android-TV-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Android-TV-0.8.68.apk"
   }
 }

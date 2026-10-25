@@ -328,3 +328,8 @@ Restore religious artwork in Prayer times and Prayer pause. The image is now bun
 ## 0.8.68
 
 Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, between prayers and throughout the day. Eleven sourced Arabic texts with meanings in five languages, stored offline. Controls for disabling, 30/60/120-second rotation and the after-prayer reminder delay. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.69
+
+Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
