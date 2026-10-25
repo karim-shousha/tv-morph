@@ -1,0 +1,35 @@
+{
+  "version": "0.8.98",
+  "changes": [
+    "Whole bright recent-watch artwork separate from metadata",
+    "Distinct live, movie, series, favorite and music colors",
+    "Paid activation code save warning; email deferred by owner",
+    "Simple Arabic and English LG installation and update instructions in phone and website",
+    "Ismaily Dervishes title and stronger yellow and blue palette",
+    "Owner-supplied transparent King Salman photo in Saudi royal pack v3"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "plusSales": "LIVE; both Stripe Checkout plans verified without making a charge",
+  "kingSalmanCutout": "OWNER-SUPPLIED transparent RGBA asset preserved byte-for-byte; Saudi royal pack v3; old pack files preserved",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.98",
+      "file": "Morph-TV-Phone-0.8.98.apk",
+      "bytes": 12945896,
+      "sha256": "09b5f62e6eccff32b6e7142db650bc83a9e1169db409b6a830bb9cf9a061a31a"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.98",
+      "file": "Morph-TV-Android-TV-0.8.98.apk",
+      "bytes": 4006581,
+      "sha256": "2af973d0dacc9935af23563a79ec951cd4a82f805ac0e6d340a958c59e16d40e"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.98",
+      "file": "Morph-TV-LG-0.8.98.ipk",
+      "bytes": 3818104,
+      "sha256": "c413d3cf0bee54b757f93b39526f3fc29abd9797e85b75f920b2725b07e46d34"
+    }
+  ]
+}

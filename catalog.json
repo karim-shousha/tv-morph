@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.97",
+  "latest": "0.8.98",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.97",
+      "version": "0.8.98",
       "download": "/download/phone",
       "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
       "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.97",
+      "version": "0.8.98",
       "download": "/download/android",
       "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
       "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
@@ -25,7 +25,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.97",
+      "version": "0.8.98",
       "download": "/download/firetv",
       "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
       "noteEn": "Complete recent-watch artwork and distinct IPTV category colors."
@@ -37,7 +37,7 @@
       "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
       "noteEn": "Complete recent-watch artwork and distinct IPTV category colors.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.97"
+      "version": "0.8.98"
     },
     {
       "id": "lg",
@@ -45,7 +45,7 @@
       "available": true,
       "noteAr": "صور آخر المشاهدات كاملة وواضحة، وألوان مميزة لأقسام IPTV.",
       "noteEn": "Complete recent-watch artwork and distinct IPTV category colors.",
-      "version": "0.8.97",
+      "version": "0.8.98",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.97",
-      "file": "Morph-TV-Phone-0.8.97.apk",
+      "name": "Morph-TV-Phone-0.8.98",
+      "file": "Morph-TV-Phone-0.8.98.apk",
       "bytes": 12945896,
-      "sha256": "6abba9c0a159b6fefb08ae5c62722d0cb041324c3531eba096a4ca7da14be7a5"
+      "sha256": "09b5f62e6eccff32b6e7142db650bc83a9e1169db409b6a830bb9cf9a061a31a"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.97",
-      "file": "Morph-TV-Android-TV-0.8.97.apk",
+      "name": "Morph-TV-Android-TV-0.8.98",
+      "file": "Morph-TV-Android-TV-0.8.98.apk",
       "bytes": 4006581,
-      "sha256": "971a32810552f45902b54e75301d4ae28c8e4dab19af077d47d37eb96a46cd15"
+      "sha256": "2af973d0dacc9935af23563a79ec951cd4a82f805ac0e6d340a958c59e16d40e"
     },
     {
-      "name": "Morph-TV-LG-0.8.97",
-      "file": "Morph-TV-LG-0.8.97.ipk",
-      "bytes": 3817708,
-      "sha256": "b2977fe933e963777e5a3c60d2dc541980083d9e3d175a806828ec5107b9c7c0"
+      "name": "Morph-TV-LG-0.8.98",
+      "file": "Morph-TV-LG-0.8.98.ipk",
+      "bytes": 3818104,
+      "sha256": "c413d3cf0bee54b757f93b39526f3fc29abd9797e85b75f920b2725b07e46d34"
     }
   ]
 }
