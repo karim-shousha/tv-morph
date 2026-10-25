@@ -1,10 +1,10 @@
 {
   "package": "com.zainbot.morphtv.preview",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "physicalTVVerified": false,
   "target": "webOS 5.0+ initial candidate; older versions unverified",
-  "sha256": "57173b2cac7f494703ab54f8ff896308fc8cacb5958b53a4f35fa970e95d76cf",
-  "bytes": 3808456,
+  "sha256": "e89562ee2c7a1591cc69230923ad19a17e5ac961a32ef6b7bbf2ae3987d2958a",
+  "bytes": 3808488,
   "productionFilesUnchanged": true,
   "uiChecks": "PASS: 1080p/720p, AR/EN, Home D-pad, IPTV account flow, radio and prayer; mocked provider",
   "phoneTransport": "PASS: encrypted pairing, pinned SSH, package readback checksum, install/version verification; mocked LG",

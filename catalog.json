@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.85",
+  "latest": "0.8.86",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.85",
+      "version": "0.8.86",
       "download": "/download/phone",
-      "noteAr": "الشعار الأبيض المعتمد Morph TV، مع الحفاظ على باقي المزايا.",
-      "noteEn": "Approved white Morph TV logo; existing functionality preserved."
+      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
+      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.85",
+      "version": "0.8.86",
       "download": "/download/android",
-      "noteAr": "الشعار الأبيض المعتمد Morph TV، مع الحفاظ على باقي المزايا.",
-      "noteEn": "Approved white Morph TV logo; existing functionality preserved."
+      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
+      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.85",
+      "version": "0.8.86",
       "download": "/download/firetv",
-      "noteAr": "الشعار الأبيض المعتمد Morph TV، مع الحفاظ على باقي المزايا.",
-      "noteEn": "Approved white Morph TV logo; existing functionality preserved."
+      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
+      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "الشعار الأبيض المعتمد Morph TV، مع الحفاظ على باقي المزايا.",
-      "noteEn": "Approved white Morph TV logo; existing functionality preserved.",
+      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
+      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.85"
+      "version": "0.8.86"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
-      "noteAr": "الشعار الأبيض المعتمد Morph TV، مع الحفاظ على باقي المزايا.",
-      "noteEn": "Approved white Morph TV logo; existing functionality preserved.",
-      "version": "0.1.4",
+      "noteAr": "إصلاح شعار الأهلي، ورفع كارت الصلاة مع خلفية شفافة، والأيقونة المعتمدة Morph TV.",
+      "noteEn": "Fix Ahly crest and move prayer card upward with a translucent background; approved Morph TV icon retained.",
+      "version": "0.1.5",
       "installGuide": "/lg-install.html",
       "testDownload": "/download/lg-preview",
       "physicalDeviceVerified": false
@@ -64,22 +64,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.85",
-      "file": "Morph-TV-Phone-0.8.85.apk",
+      "name": "Morph-TV-Phone-0.8.86",
+      "file": "Morph-TV-Phone-0.8.86.apk",
       "bytes": 12953662,
-      "sha256": "6a998ab7f6c75f271a997b8ed61ad6d6b611c60cd41e55f1552971c62c1dd973"
+      "sha256": "e23fa168ddac0d2b4ddf0b440511ad0fda812ea4639434fb99b1ce4754ce4167"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.85",
-      "file": "Morph-TV-Android-TV-0.8.85.apk",
+      "name": "Morph-TV-Android-TV-0.8.86",
+      "file": "Morph-TV-Android-TV-0.8.86.apk",
       "bytes": 4014336,
-      "sha256": "d6a797c2fef283687653ce60d29c4ac2a44b72f366572bc1cae2a58f01b3d523"
+      "sha256": "9cfac5b4699d28038a7f13741a7135eefbd865b49bce1a58bde66cd40463fbef"
     },
     {
-      "name": "Morph-TV-LG-Preview-0.1.4",
-      "file": "Morph-TV-LG-Preview-0.1.4.ipk",
-      "bytes": 3808456,
-      "sha256": "57173b2cac7f494703ab54f8ff896308fc8cacb5958b53a4f35fa970e95d76cf"
+      "name": "Morph-TV-LG-Preview-0.1.5",
+      "file": "Morph-TV-LG-Preview-0.1.5.ipk",
+      "bytes": 3808488,
+      "sha256": "e89562ee2c7a1591cc69230923ad19a17e5ac961a32ef6b7bbf2ae3987d2958a"
     }
   ]
 }
