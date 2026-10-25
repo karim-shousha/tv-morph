@@ -1,0 +1,39 @@
+Morph TV community service
+
+Public section: https://morphtv.zainbot.com/#community
+Private moderation login: https://morphtv.zainbot.com/community-admin
+The owner password is supplied privately outside this repository. No admin credentials are embedded in the website, image or JavaScript.
+
+Storage and deployment
+- Coolify persistent Docker volume mounted at /data. Keep this mount on all later deployments.
+- Runtime-only MORPH_ADMIN_PASSWORD_HASH (literal value, no interpolation, not a build argument).
+- SQLite /data/community.sqlite3, with WAL and a new connection per request.
+- /data/site-secret signs visitor and admin sessions. Preserve it with the database.
+- Daily SQLite backups in /data/backups, retaining seven dates. They are on the same volume, not an off-server disaster backup.
+- Counter/review API binds only 127.0.0.1:8081. Only nginx port 80 is exposed.
+
+Meaning of the numbers
+- Starts from zero when enabled; no historic downloads are inferred.
+- Downloads are accepted file requests, not installations, unique users or guaranteed completed transfers.
+- HEAD and known bot agents are excluded; Range/repeated file requests from the same pseudonymous IP/browser fingerprint within ten minutes count once.
+- Temporary deduplication entries expire after 24 hours; request limits expire automatically. Raw IPs and passwords are not stored in the database.
+- A signed essential visitor cookie maintains one editable rating per browser, not a verified identity. Clearing it can create another rating; the count is not fraud-proof.
+
+Moderation
+- A star rating enters the average immediately.
+- A comment/display name is public only after Approve.
+- Reject hides only the comment. Spam hides both comment and rating. Restore rating reverses the rating exclusion.
+- Editing a published comment makes it pending again. It cannot change live text without review.
+- Everything is rendered as text, not HTML.
+- Public review and login endpoints enforce origin, size and rate restrictions. Admin sessions expire after eight hours.
+
+Rollback
+- Redeploy the preceding static release if necessary, keeping the /data mount. This hides the community UI/API but preserves the database for restoration.
+- If the API fails, nginx still serves app downloads using the catalog-backed static fallback. No download is blocked just because the counter cannot run.
+- Never delete the Coolify volume to roll back code.
+
+Validation
+- Local isolated API tests: ratings/moderation/auth/CSRF/body limits/download deduplication/restart persistence.
+- Local browser tests: real API, AR/EN, mobile/desktop, no pending comment leakage, escaped comment rendering, admin actions.
+- Official nginx local validation: real file delivery, HEAD/Range, correct filename and bytes, blocked internal paths, API-outage download fallback.
+- No synthetic public reviews or download counts are seeded.

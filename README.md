@@ -24,3 +24,5 @@ Install updates over the existing app to retain its identity and settings. Exist
 Phone 0.8.82 fixes update detection using native HTTPS and checks again when the app resumes. Manual checks remain available. TV receivers remain 0.8.81 and LG Preview remains 0.1.1; automatic TV update prompts stay disabled. Older phone builds need this patch installed manually once.
 
 Current release: phone/Android/Fire/Samsung 0.8.83; LG Preview 0.1.2. Adds visible live favorites and direct first-row search navigation. Bright landing and prioritized installation. Physical TV confirmation pending.
+
+Website community service: immediate visitor star ratings, moderated comments and accepted-download request counts. Persistent Coolify /data volume required; runtime-only owner password hash is configured privately. See COMMUNITY-OPERATIONS.txt. App packages remain 0.8.86 / LG Preview 0.1.5.

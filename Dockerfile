@@ -1,8 +1,16 @@
 FROM nginx:stable-alpine
+RUN apk add --no-cache python3
+COPY community/server.py community/start.sh /opt/morph-community/
+RUN chmod 755 /opt/morph-community/start.sh
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY launcher-guide.html launcher-help.js index.html landing.css landing.js gallery.js web-tv.html catalog.json tvmorph.png SHA256SUMS.txt /usr/share/nginx/html/
 COPY Morph-TV-*.apk /usr/share/nginx/html/
 COPY lg-install.html lg-preview-validation.json release-notes-0.8.81.json release-notes-0.8.82.json release-notes-0.8.83.json release-notes-0.8.84.json release-notes-0.8.85.json release-notes-0.8.86.json support-links.json Morph-TV-LG-Preview-0.1.5.ipk /usr/share/nginx/html/
 COPY site-assets /usr/share/nginx/html/site-assets/
 COPY theme-packs /usr/share/nginx/html/theme-packs/
+COPY community.js community-admin.html community-admin.js /usr/share/nginx/html/
+RUN nginx -t
+VOLUME /data
+HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
 EXPOSE 80
+CMD ["/opt/morph-community/start.sh"]

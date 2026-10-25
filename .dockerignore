@@ -43,3 +43,9 @@
 
 !release-notes-0.8.86.json
 !support-links.json
+
+!community/
+!community/**
+!community.js
+!community-admin.html
+!community-admin.js
