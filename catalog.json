@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.79",
+  "latest": "0.8.80",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.79",
+      "version": "0.8.80",
       "download": "/download/phone",
       "noteAr": "Morph TV: الاسم والشعار الجديدان، مع صفحة تعريف وتنزيلات جديدة. يحتفظ التحديث ببيانات التطبيق ومفاتيح التوقيع.",
       "noteEn": "Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.79",
+      "version": "0.8.80",
       "download": "/download/android",
       "noteAr": "Morph TV: الاسم والشعار الجديدان، مع صفحة تعريف وتنزيلات جديدة. يحتفظ التحديث ببيانات التطبيق ومفاتيح التوقيع.",
       "noteEn": "Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained."
@@ -25,7 +25,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.79",
+      "version": "0.8.80",
       "download": "/download/firetv",
       "noteAr": "Morph TV: الاسم والشعار الجديدان، مع صفحة تعريف وتنزيلات جديدة. يحتفظ التحديث ببيانات التطبيق ومفاتيح التوقيع.",
       "noteEn": "Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained."
@@ -37,7 +37,7 @@
       "noteAr": "Morph TV: الاسم والشعار الجديدان، مع صفحة تعريف وتنزيلات جديدة. يحتفظ التحديث ببيانات التطبيق ومفاتيح التوقيع.",
       "noteEn": "Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.79"
+      "version": "0.8.80"
     },
     {
       "id": "lg",
@@ -61,16 +61,16 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.79",
-      "file": "Morph-TV-Phone-0.8.79.apk",
+      "name": "Morph-TV-Phone-0.8.80",
+      "file": "Morph-TV-Phone-0.8.80.apk",
       "bytes": 8496574,
-      "sha256": "bcf1c7ca77be48f18723bbe15908cb16b42b9b30715817ea461250592e0f67ba"
+      "sha256": "451555b3c47b372dcc34f893a96d19635ab9164d1f0da53f919f7a114b50d607"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.79",
-      "file": "Morph-TV-Android-TV-0.8.79.apk",
+      "name": "Morph-TV-Android-TV-0.8.80",
+      "file": "Morph-TV-Android-TV-0.8.80.apk",
       "bytes": 3870528,
-      "sha256": "36e426eb4d5dee086e3c909d9a218226dbdf577c7dd290c3c58e2b4a86d671d7"
+      "sha256": "52ac12efbed88e15e1f497b90767368c92850d5af417acf069870b0f6f0bea88"
     }
   ]
 }

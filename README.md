@@ -389,3 +389,9 @@ Existing package identities, signing keys and saved settings are retained. Local
 
 Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.80
+
+Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
