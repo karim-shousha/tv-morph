@@ -333,3 +333,8 @@ Time-aware duas in Prayer times: morning, evening, after scheduled prayer time, 
 ## 0.8.69
 
 Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.70
+
+Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.

@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.69",
+  "latest": "0.8.70",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.69",
+      "version": "0.8.70",
       "download": "/download/phone",
-      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
-      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
+      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
+      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.69",
+      "version": "0.8.70",
       "download": "/download/android",
-      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
-      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
+      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
+      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.69",
+      "version": "0.8.70",
       "download": "/download/firetv",
-      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
-      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled."
+      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
+      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تصحيح ترقيم مداخل HDMI على Android TV والهايسنز حسب اسم المنفذ الحقيقي بدل ترتيب النظام، وتحديث آخر مدخل محفوظ. تحسين دعم صور WebP الشخصية عالية الجودة دون تضمين أي صور خاصة.",
-      "noteEn": "Fix Android TV HDMI numbering using physical input labels instead of system enumeration order, including remembered inputs. Improve high-quality personal WebP artwork support. No private artwork is bundled.",
+      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
+      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.69"
+      "version": "0.8.70"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.70",
+      "file": "TV-Morph-Android-TV-0.8.70.apk",
+      "bytes": 3664543,
+      "sha256": "ede2d70d8c923e022b449156898692f97bd1cc75878c7912fe65e3f35646509a"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.70",
+      "file": "TV-Morph-Phone-0.8.70.apk",
+      "bytes": 8274892,
+      "sha256": "9ecb4a928709b8b696bc1c81aa0855a1803bb49e3bcf0d2939afb4d7e9807fa9"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.69",
       "file": "TV-Morph-Android-TV-0.8.69.apk",
@@ -1004,6 +1016,8 @@
     "TV-Morph-Phone-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Phone-0.8.67.apk",
     "TV-Morph-Android-TV-0.8.67.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/88556d6d82d5b0ccafe0ee3bc31fe3b47d7cb2b5/TV-Morph-Android-TV-0.8.67.apk",
     "TV-Morph-Phone-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Phone-0.8.68.apk",
-    "TV-Morph-Android-TV-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Android-TV-0.8.68.apk"
+    "TV-Morph-Android-TV-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Android-TV-0.8.68.apk",
+    "TV-Morph-Phone-0.8.69.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/29d5e96461d57927364b0414d36f84844e70565a/TV-Morph-Phone-0.8.69.apk",
+    "TV-Morph-Android-TV-0.8.69.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/29d5e96461d57927364b0414d36f84844e70565a/TV-Morph-Android-TV-0.8.69.apk"
   }
 }
