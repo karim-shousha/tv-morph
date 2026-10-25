@@ -353,3 +353,9 @@ Fix repeated update alerts on phone and TV by comparing the published release wi
 ## 0.8.73
 
 New shared TV IPTV layout: clear category rail, channel list and selected-channel information, larger posters with provider ratings, and series details with seasons and episodes. One search and remote navigation. Samsung, Android TV, Hisense Android and Fire TV. The channel information pane shows artwork; explicit OK opens the existing full-screen player. Existing app identities, signing keys and storage are preserved. Samsung Auto Start and private test packages are not part of this public release.
+
+
+## 0.8.74
+
+Cinematic Home with real icon reflections and glass lighting. IPTV uses theme artwork, five new category images, channel grid/list switching and refreshed movie, series and radio libraries. Shared Samsung, Hisense Android and Fire TV UI; Samsung receiver is bundled in the phone installer.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
