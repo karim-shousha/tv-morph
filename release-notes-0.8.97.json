@@ -1,0 +1,31 @@
+{
+  "version": "0.8.97",
+  "changes": [
+    "Whole bright recent-watch artwork separate from metadata",
+    "Distinct live, movie, series, favorite and music colors",
+    "Paid activation code save warning; email deferred by owner",
+    "Simple Arabic and English LG installation and update instructions in phone and website"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.97",
+      "file": "Morph-TV-Phone-0.8.97.apk",
+      "bytes": 12945896,
+      "sha256": "6abba9c0a159b6fefb08ae5c62722d0cb041324c3531eba096a4ca7da14be7a5"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.97",
+      "file": "Morph-TV-Android-TV-0.8.97.apk",
+      "bytes": 4006581,
+      "sha256": "971a32810552f45902b54e75301d4ae28c8e4dab19af077d47d37eb96a46cd15"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.97",
+      "file": "Morph-TV-LG-0.8.97.ipk",
+      "bytes": 3817708,
+      "sha256": "b2977fe933e963777e5a3c60d2dc541980083d9e3d175a806828ec5107b9c7c0"
+    }
+  ]
+}
