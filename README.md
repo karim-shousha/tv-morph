@@ -343,3 +343,8 @@ Passive Samsung phone connection checks no longer launch TVMorph over external a
 ## 0.8.71
 
 Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.72
+
+Fix repeated update alerts on phone and TV by comparing the published release with the actual installed build version instead of a stale constant. Preview suffixes are normalized; unknown versions never trigger a false update prompt. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
