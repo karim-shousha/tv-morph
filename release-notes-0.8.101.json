@@ -1,0 +1,35 @@
+{
+  "version": "0.8.101",
+  "changes": [
+    "IPTV background follows the same calm Home and radio backdrop",
+    "Hero artwork, channel logos, posters, cards and playback unchanged"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.101",
+      "file": "Morph-TV-Phone-0.8.101.apk",
+      "bytes": 12962280,
+      "sha256": "8e410d1eed825563baa8dd934329aa57051a147eba0bae6ffdfd08c97ee31f91"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.101",
+      "file": "Morph-TV-Android-TV-0.8.101.apk",
+      "bytes": 4014773,
+      "sha256": "6cf3c3415146554f4646bbbbac037010e3aa359281973f4c7192b45afb0fc175"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.101",
+      "file": "Morph-TV-LG-0.8.101.ipk",
+      "bytes": 3820896,
+      "sha256": "1b9c464ad91884bd8940a3984f0de8ff8940985d372580766851995d81004132"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}
