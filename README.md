@@ -365,3 +365,9 @@ Existing package identities, signing keys and saved settings are retained. Local
 
 Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.76
+
+Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.

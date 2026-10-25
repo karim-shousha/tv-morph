@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.75",
+  "latest": "0.8.76",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.75",
+      "version": "0.8.76",
       "download": "/download/phone",
-      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
-      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
+      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
+      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.75",
+      "version": "0.8.76",
       "download": "/download/android",
-      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
-      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
+      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
+      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.75",
+      "version": "0.8.76",
       "download": "/download/firetv",
-      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
-      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog."
+      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
+      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "صور هيرو IPTV تتغير مع تحديد الأقسام، وحركة للكروت بالريموت. إصلاح شريط خلفية الهوم وتجميع إعدادات IPTV وتحسين البحث المباشر على أندرويد.",
-      "noteEn": "Category-focused IPTV hero artwork and remote card animations. Fix Home background seam, consolidate IPTV settings and use inline Android TV search without a dialog.",
+      "noteAr": "شاشة تحميل واضحة باسم TVMorph بدل الشاشة الزرقاء، وبدء تجهيز الهوم عند اكتمال عناصر الصفحة بدل انتظار تحميل الصفحة كلها.",
+      "noteEn": "Branded loading feedback replaces the blank startup screen. Home preparation starts at DOM ready instead of waiting for the whole page load.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.75"
+      "version": "0.8.76"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.76",
+      "file": "TV-Morph-Phone-0.8.76.apk",
+      "bytes": 9205044,
+      "sha256": "8a719fe533fc0d334d34300769e2042dd3d4ae3c1e240dc235bb59e019302448"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.76",
+      "file": "TV-Morph-Android-TV-0.8.76.apk",
+      "bytes": 4120384,
+      "sha256": "94dcdee44c4cc4123338bbcabc91a738d458d83c8b29677e6a29df58e5d16023"
+    },
     {
       "name": "TV-Morph-Phone-0.8.75",
       "file": "TV-Morph-Phone-0.8.75.apk",
@@ -1088,6 +1100,8 @@
     "TV-Morph-Phone-0.8.73.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e37dbaf2714becf0c62a966424a89f7699b4ba44/TV-Morph-Phone-0.8.73.apk",
     "TV-Morph-Android-TV-0.8.73.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/e37dbaf2714becf0c62a966424a89f7699b4ba44/TV-Morph-Android-TV-0.8.73.apk",
     "TV-Morph-Phone-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Phone-0.8.74.apk",
-    "TV-Morph-Android-TV-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Android-TV-0.8.74.apk"
+    "TV-Morph-Android-TV-0.8.74.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/16bca9464cf230ca536f1fbf4a86bded1ceccf0a/TV-Morph-Android-TV-0.8.74.apk",
+    "TV-Morph-Phone-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Phone-0.8.75.apk",
+    "TV-Morph-Android-TV-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Android-TV-0.8.75.apk"
   }
 }
