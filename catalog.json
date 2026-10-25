@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.92",
+  "latest": "0.8.93",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.92",
+      "version": "0.8.93",
       "download": "/download/phone",
       "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
       "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
@@ -42,13 +42,14 @@
     {
       "id": "lg",
       "name": "LG · webOS",
-      "available": false,
-      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
-      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available.",
-      "version": "0.1.11",
+      "available": true,
+      "noteAr": "حزمة LG IPK جاهزة للتنزيل. التثبيت من موبايل Android عبر Developer Mode وKey Server؛ لا تُثبّت من متصفح التلفزيون ولا من USB.",
+      "noteEn": "Downloadable LG IPK. Install from an Android phone using Developer Mode and Key Server; not a TV-browser or USB installer.",
+      "version": "0.8.93",
       "installGuide": "/lg-install.html",
-      "testDownload": "/download/lg-preview",
-      "physicalDeviceVerified": false
+      "physicalDeviceVerified": false,
+      "download": "/download/lg",
+      "installMode": "developer-mode"
     },
     {
       "id": "vidaa",
@@ -64,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.92",
-      "file": "Morph-TV-Phone-0.8.92.apk",
-      "bytes": 12941800,
-      "sha256": "d81cef821c9c93060cdfcad32a4e9b0188bff9b49d2889dac0e811b9e3c19ce0"
-    },
-    {
       "name": "Morph-TV-Android-TV-0.8.92",
       "file": "Morph-TV-Android-TV-0.8.92.apk",
       "bytes": 4006581,
       "sha256": "77d0b92a5fe51649428deff10c9a8dcff18c865b62c5c514b995594877554a0b"
     },
     {
-      "name": "Morph-TV-LG-Preview-0.1.11",
-      "file": "Morph-TV-LG-Preview-0.1.11.ipk",
-      "bytes": 3817096,
-      "sha256": "377856f8aed2291396ee7ed80e01c43bdc70f1a95e1618d15186e0974022f582"
+      "name": "Morph-TV-Phone-0.8.93",
+      "file": "Morph-TV-Phone-0.8.93.apk",
+      "bytes": 12941800,
+      "sha256": "060334133345f7e18528d395e9e1e7a4b7e35267f6539385ada6517fa1179c0e"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.93",
+      "file": "Morph-TV-LG-0.8.93.ipk",
+      "bytes": 3817052,
+      "sha256": "c2c1399b8fa5f0af53537c3825f7ab685faa764a55b506a7a2f02b5373f7d40c"
     }
   ]
 }

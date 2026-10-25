@@ -1,0 +1,14 @@
+{
+  "release": "0.8.93",
+  "phoneVersion": "0.8.93",
+  "LGVersion": "0.8.93",
+  "otherTVVersions": "0.8.92 unchanged",
+  "LGTitle": "Morph TV",
+  "applicationIdentityPreserved": true,
+  "embeddedLGMatchesPublicIPK": true,
+  "phoneSigningIdentityPreserved": true,
+  "installation": "Developer Mode + Key Server; phone installer or LG CLI; not browser-click installation",
+  "localTransportTests": "PASS: correct install, wrong passphrase rejected, untrusted host rejected, corrupt bytes rejected, installed version verified",
+  "physicalDeviceValidation": "NOT TESTED for this release; previous release user-confirmed on 55UR801C0LJ/webOS25",
+  "plusSales": "disabled; existing owner activation works"
+}
