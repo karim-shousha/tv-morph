@@ -1,0 +1,36 @@
+{
+  "version": "0.8.104",
+  "changes": [
+    "Live channel favorites use long press; remove focusable star buttons and navigate directly between channels",
+    "ON Sport distinct live route and radio station focus fixes",
+    "Loading background matches default Home"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.104",
+      "file": "Morph-TV-Phone-0.8.104.apk",
+      "bytes": 12966376,
+      "sha256": "af0c534413ee6eea7911cb93d9b164361d0c404285342a1441b5db055a087a53"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.104",
+      "file": "Morph-TV-Android-TV-0.8.104.apk",
+      "bytes": 4014773,
+      "sha256": "de2736bc333e3311a88696594663d132119f0f3559fb97284e6ccf1a3d71dcec"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.104",
+      "file": "Morph-TV-LG-0.8.104.ipk",
+      "bytes": 3822216,
+      "sha256": "6d70eb07a9fa0f9187a7f2b8750095ba986480ca1e6734437d7e963eb7fc4a70"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}

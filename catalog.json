@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.103",
+  "latest": "0.8.104",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.103",
+      "version": "0.8.104",
       "download": "/download/phone",
-      "noteAr": "إصلاح أون سبورت وتثبيت تحديد المحطات وخلفية شاشة التحميل.",
-      "noteEn": "ON Sport station route, stable station focus and matching startup background."
+      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
+      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.103",
+      "version": "0.8.104",
       "download": "/download/android",
-      "noteAr": "إصلاح أون سبورت وتثبيت تحديد المحطات وخلفية شاشة التحميل.",
-      "noteEn": "ON Sport station route, stable station focus and matching startup background."
+      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
+      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.103",
+      "version": "0.8.104",
       "download": "/download/firetv",
-      "noteAr": "إصلاح أون سبورت وتثبيت تحديد المحطات وخلفية شاشة التحميل.",
-      "noteEn": "ON Sport station route, stable station focus and matching startup background."
+      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
+      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح أون سبورت وتثبيت تحديد المحطات وخلفية شاشة التحميل.",
-      "noteEn": "ON Sport station route, stable station focus and matching startup background.",
+      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
+      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.103"
+      "version": "0.8.104"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح أون سبورت وتثبيت تحديد المحطات وخلفية شاشة التحميل.",
-      "noteEn": "ON Sport station route, stable station focus and matching startup background.",
-      "version": "0.8.103",
+      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
+      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup.",
+      "version": "0.8.104",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.103",
-      "file": "Morph-TV-Phone-0.8.103.apk",
+      "name": "Morph-TV-Phone-0.8.104",
+      "file": "Morph-TV-Phone-0.8.104.apk",
       "bytes": 12966376,
-      "sha256": "35fc951b0c712899af3671e979457503d95dad544d49187269d54f9ff79f92bb"
+      "sha256": "af0c534413ee6eea7911cb93d9b164361d0c404285342a1441b5db055a087a53"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.103",
-      "file": "Morph-TV-Android-TV-0.8.103.apk",
+      "name": "Morph-TV-Android-TV-0.8.104",
+      "file": "Morph-TV-Android-TV-0.8.104.apk",
       "bytes": 4014773,
-      "sha256": "0d7a93fe6681346a01a10207542a56be63ef8ffa85010db8104ba9bb9f16bd42"
+      "sha256": "de2736bc333e3311a88696594663d132119f0f3559fb97284e6ccf1a3d71dcec"
     },
     {
-      "name": "Morph-TV-LG-0.8.103",
-      "file": "Morph-TV-LG-0.8.103.ipk",
-      "bytes": 3822444,
-      "sha256": "5cea28335d86dcf62bf12cd94a655b43920a5087c775a1f6d290f1ee49441352"
+      "name": "Morph-TV-LG-0.8.104",
+      "file": "Morph-TV-LG-0.8.104.ipk",
+      "bytes": 3822216,
+      "sha256": "6d70eb07a9fa0f9187a7f2b8750095ba986480ca1e6734437d7e963eb7fc4a70"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
