@@ -348,3 +348,8 @@ Device settings shortcut in General settings opens the TV/projector system setti
 ## 0.8.72
 
 Fix repeated update alerts on phone and TV by comparing the published release with the actual installed build version instead of a stale constant. Preview suffixes are normalized; unknown versions never trigger a false update prompt. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.73
+
+New shared TV IPTV layout: clear category rail, channel list and selected-channel information, larger posters with provider ratings, and series details with seasons and episodes. One search and remote navigation. Samsung, Android TV, Hisense Android and Fire TV. The channel information pane shows artwork; explicit OK opens the existing full-screen player. Existing app identities, signing keys and storage are preserved. Samsung Auto Start and private test packages are not part of this public release.
