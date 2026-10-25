@@ -1,0 +1,46 @@
+{
+  "version": "0.8.88",
+  "channel": "preview",
+  "signingIdentityPreserved": true,
+  "embeddedArtifactsMatch": true,
+  "newThemes": [
+    "ismaily",
+    "king-salman",
+    "crown-prince",
+    "nassr",
+    "hilal",
+    "ittihad",
+    "ahli-saudi"
+  ],
+  "freeThemes": [
+    "blue",
+    "ahly",
+    "zamalek",
+    "ismaily",
+    "king-salman",
+    "crown-prince"
+  ],
+  "plusPurchases": "DISABLED: payment integration not live-tested",
+  "localValidation": "PASS: UI, license fixtures, concurrency, transfer, nginx, community regression",
+  "physicalTVValidation": "NOT TESTED for this release",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.88",
+      "file": "Morph-TV-Phone-0.8.88.apk",
+      "bytes": 12929288,
+      "sha256": "f1eb757bacba505a0e4d9d07bf080e85274709787cd7db856ee170f5b67b60f0"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.88",
+      "file": "Morph-TV-Android-TV-0.8.88.apk",
+      "bytes": 4002240,
+      "sha256": "c83229032306726e3e90dc804595db2f3b97df7cb21cea9cefe4c8fdebba1a19"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.7",
+      "file": "Morph-TV-LG-Preview-0.1.7.ipk",
+      "bytes": 3815052,
+      "sha256": "464b9c49254f6c91f9e99e20f68ad782765805ce544c0fd3ed62d05d278bbfc6"
+    }
+  ]
+}

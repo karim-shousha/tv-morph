@@ -35,7 +35,8 @@
           "sha256": "aff3eb08daa1e5dc84727dd5f51a7f02a9a7060414f7722d487ccfcde7d077e0"
         }
       ],
-      "bytes": 687478
+      "bytes": 687478,
+      "tier": "free"
     },
     {
       "id": "europe",
@@ -70,7 +71,8 @@
           "sha256": "90677a0d7d6af67afd699d6845eb2ece627c02edb292467393a33709fd9f03a6"
         }
       ],
-      "bytes": 676412
+      "bytes": 676412,
+      "tier": "plus"
     },
     {
       "id": "hockey",
@@ -93,7 +95,8 @@
           "sha256": "5cbd81423ed74bf79680fd7de9eb4fcac3734c732c70c0cc954f67b500ce7c2c"
         }
       ],
-      "bytes": 670754
+      "bytes": 670754,
+      "tier": "plus"
     },
     {
       "id": "sports",
@@ -116,7 +119,8 @@
           "sha256": "d3edc02f355108d9ceb0c40fe15878172b115ab23fa464324b72a0bf2c1e33e7"
         }
       ],
-      "bytes": 494364
+      "bytes": 494364,
+      "tier": "plus"
     },
     {
       "id": "national",
@@ -152,7 +156,123 @@
           "sha256": "a72e926ebb50f001f7f09c08755c9cfa2d7be8e1119b0cfd7ab29872e1e26624"
         }
       ],
-      "bytes": 2089304
+      "bytes": 2089304,
+      "tier": "plus"
+    },
+    {
+      "id": "egypt-extra",
+      "version": 1,
+      "themes": [
+        "ismaily"
+      ],
+      "files": [
+        {
+          "name": "ismaily-crest-v1.webp",
+          "file": "egypt-extra-v1-ismaily-crest-v1.webp",
+          "bytes": 40212,
+          "sha256": "2e156c987983dba89aa204bff02eb024258ee4f1e5538dc5f26e8516408da285"
+        },
+        {
+          "name": "ismaily-team-v1.webp",
+          "file": "egypt-extra-v1-ismaily-team-v1.webp",
+          "bytes": 66778,
+          "sha256": "aae264990f16925f26851474c944f723adceb03fbc342423e7671c3237e42998"
+        }
+      ],
+      "bytes": 106990,
+      "tier": "free",
+      "titleAr": "\u0627\u0644\u0625\u0633\u0645\u0627\u0639\u064a\u0644\u064a",
+      "titleEn": "Ismaily"
+    },
+    {
+      "id": "saudi-royal",
+      "version": 1,
+      "themes": [
+        "king-salman",
+        "crown-prince"
+      ],
+      "files": [
+        {
+          "name": "crown-prince-portrait-v1.webp",
+          "file": "saudi-royal-v1-crown-prince-portrait-v1.webp",
+          "bytes": 172112,
+          "sha256": "daf016344bc0c2e5c41dca228d1fc75e2cd96acc98c0918a973377b9c4d8a477"
+        },
+        {
+          "name": "king-salman-portrait-v1.webp",
+          "file": "saudi-royal-v1-king-salman-portrait-v1.webp",
+          "bytes": 82750,
+          "sha256": "e7709b479603469ea460f7e30881ecee60e94021bc249bc95acd6e5c31c196ee"
+        }
+      ],
+      "bytes": 254862,
+      "tier": "free",
+      "titleAr": "\u0634\u062e\u0635\u064a\u0627\u062a \u0627\u0644\u0645\u0645\u0644\u0643\u0629",
+      "titleEn": "Saudi portraits"
+    },
+    {
+      "id": "saudi-clubs",
+      "version": 1,
+      "themes": [
+        "nassr",
+        "hilal",
+        "ittihad",
+        "ahli-saudi"
+      ],
+      "files": [
+        {
+          "name": "ahli-saudi-crest-v1.webp",
+          "file": "saudi-clubs-v1-ahli-saudi-crest-v1.webp",
+          "bytes": 26134,
+          "sha256": "05a1edf4ba840cb9bfb6d32663f162d148235310a5f84e968d8565c475f503b8"
+        },
+        {
+          "name": "ahli-saudi-team-v1.webp",
+          "file": "saudi-clubs-v1-ahli-saudi-team-v1.webp",
+          "bytes": 234098,
+          "sha256": "83610b834032513a638f3197a207d2272ecc7237ff24d93f5ff0b54b31affd96"
+        },
+        {
+          "name": "hilal-crest-v1.webp",
+          "file": "saudi-clubs-v1-hilal-crest-v1.webp",
+          "bytes": 8284,
+          "sha256": "acd529f9b229ee0c3c7817fb1cac7fba0e6db7443de8ca75eb303cfc0ea7820e"
+        },
+        {
+          "name": "hilal-team-v1.webp",
+          "file": "saudi-clubs-v1-hilal-team-v1.webp",
+          "bytes": 601626,
+          "sha256": "a663f764f4f6f3210e15169d7519c63ad84f00ca230a009ccc58c3d1849946bd"
+        },
+        {
+          "name": "ittihad-crest-v1.webp",
+          "file": "saudi-clubs-v1-ittihad-crest-v1.webp",
+          "bytes": 18778,
+          "sha256": "b90510f9cd757beb9a7776b103978c3a0e9cb5293cc49bf13b21a255a7362ed2"
+        },
+        {
+          "name": "ittihad-team-v1.webp",
+          "file": "saudi-clubs-v1-ittihad-team-v1.webp",
+          "bytes": 306846,
+          "sha256": "7cdb1723cfa8b6414ed76463959a0c8dd03af244b589d583c330e1a49aec5ebe"
+        },
+        {
+          "name": "nassr-crest-v1.webp",
+          "file": "saudi-clubs-v1-nassr-crest-v1.webp",
+          "bytes": 32934,
+          "sha256": "df36e0969e04f546064d066c73bf5cb25d1a3c37e5e0af48c0b5dd4f4351450a"
+        },
+        {
+          "name": "nassr-team-v1.webp",
+          "file": "saudi-clubs-v1-nassr-team-v1.webp",
+          "bytes": 143112,
+          "sha256": "5a86bd73680930348b20984290f47b3b78807f59ae8dc3310309b53a45197b77"
+        }
+      ],
+      "bytes": 1371812,
+      "tier": "plus",
+      "titleAr": "\u0627\u0644\u0623\u0646\u062f\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
+      "titleEn": "Saudi clubs"
     }
   ]
 }

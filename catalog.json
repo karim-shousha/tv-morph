@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.87",
+  "latest": "0.8.88",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.87",
+      "version": "0.8.88",
       "download": "/download/phone",
-      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
-      "noteEn": "Lighter translucent Home prayer card background."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.87",
+      "version": "0.8.88",
       "download": "/download/android",
-      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
-      "noteEn": "Lighter translucent Home prayer card background."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.87",
+      "version": "0.8.88",
       "download": "/download/firetv",
-      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
-      "noteEn": "Lighter translucent Home prayer card background."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
-      "noteEn": "Lighter translucent Home prayer card background.",
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.87"
+      "version": "0.8.88"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
-      "noteAr": "تخفيف خلفية كارت الصلاة لإظهار صورة الثيم بوضوح أكبر.",
-      "noteEn": "Lighter translucent Home prayer card background.",
-      "version": "0.1.6",
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available.",
+      "version": "0.1.7",
       "installGuide": "/lg-install.html",
       "testDownload": "/download/lg-preview",
       "physicalDeviceVerified": false
@@ -64,22 +64,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.87",
-      "file": "Morph-TV-Phone-0.8.87.apk",
-      "bytes": 12953662,
-      "sha256": "9026cf24db4cd10696e27f2ce1e032c6c5403bf8fd69579302ae2692aa87d3e9"
+      "name": "Morph-TV-Phone-0.8.88",
+      "file": "Morph-TV-Phone-0.8.88.apk",
+      "bytes": 12929288,
+      "sha256": "f1eb757bacba505a0e4d9d07bf080e85274709787cd7db856ee170f5b67b60f0"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.87",
-      "file": "Morph-TV-Android-TV-0.8.87.apk",
-      "bytes": 4014336,
-      "sha256": "6131fad0ff644ae9abb206197ce015ad41f859c6bd568e421a39eca878d936ff"
+      "name": "Morph-TV-Android-TV-0.8.88",
+      "file": "Morph-TV-Android-TV-0.8.88.apk",
+      "bytes": 4002240,
+      "sha256": "c83229032306726e3e90dc804595db2f3b97df7cb21cea9cefe4c8fdebba1a19"
     },
     {
-      "name": "Morph-TV-LG-Preview-0.1.6",
-      "file": "Morph-TV-LG-Preview-0.1.6.ipk",
-      "bytes": 3808494,
-      "sha256": "5eea2b38223ae4245cf4d7fba9aeebe6338923ed95cc6f0e40d2bba2438f4f04"
+      "name": "Morph-TV-LG-Preview-0.1.7",
+      "file": "Morph-TV-LG-Preview-0.1.7.ipk",
+      "bytes": 3815052,
+      "sha256": "464b9c49254f6c91f9e99e20f68ad782765805ce544c0fd3ed62d05d278bbfc6"
     }
   ]
 }

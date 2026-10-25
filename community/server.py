@@ -32,6 +32,8 @@ SECRET = secret_path.read_bytes()
 if len(SECRET) != 32:
     raise RuntimeError('Invalid persistent site secret')
 DB = DATA / 'community.sqlite3'
+from plus import Plus
+PLUS = Plus(DATA, SECRET, ORIGIN)
 
 
 @contextlib.contextmanager
@@ -104,12 +106,33 @@ def backup_loop():
                 temporary.replace(target)
                 for old in sorted(directory.glob('*.sqlite3'))[:-7]:
                     old.unlink()
+            plus_directory = directory / 'plus'
+            plus_directory.mkdir(mode=0o700, exist_ok=True)
+            plus_target = plus_directory / (time.strftime('%Y-%m-%d', time.gmtime()) + '.sqlite3')
+            if not plus_target.exists():
+                temporary = plus_target.with_suffix('.tmp')
+                with PLUS.db() as source, contextlib.closing(sqlite3.connect(temporary)) as out:
+                    source.backup(out)
+                os.chmod(temporary, 0o600)
+                temporary.replace(plus_target)
+                for old in sorted(plus_directory.glob('*.sqlite3'))[:-7]:
+                    old.unlink()
         except Exception:
             print('Community backup unavailable', flush=True)
         time.sleep(3600)
 
 
 class Handler(BaseHTTPRequestHandler):
+    def end_headers(self):
+        if self.path.startswith('/api/plus/'):
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.send_header('Vary', 'Origin')
+        super().end_headers()
+
+    def do_OPTIONS(self):
+        if not PLUS.handle(self, urlsplit(self.path).path):
+            self.send_json(405, {'error': 'method_not_allowed'})
+
     server_version = 'MorphCommunity'
 
     def log_message(self, *_):
@@ -180,6 +203,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         try:
+            if PLUS.handle(self, urlsplit(self.path).path):
+                return
             self.get()
         except (BrokenPipeError, ConnectionResetError):
             pass
@@ -267,6 +292,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         try:
+            if PLUS.handle(self, urlsplit(self.path).path):
+                return
             self.post()
         except (BrokenPipeError, ConnectionResetError):
             pass
