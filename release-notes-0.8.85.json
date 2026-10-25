@@ -1,0 +1,60 @@
+{
+  "version": "0.8.85",
+  "channel": "preview",
+  "identities": [
+    {
+      "package": "local.cleartv.mobile",
+      "version": "0.8.85",
+      "versionCode": 97,
+      "signingIdentityUnchanged": true
+    },
+    {
+      "package": "local.tvmorph.tv",
+      "version": "0.8.85",
+      "versionCode": 88,
+      "signingIdentityUnchanged": true
+    }
+  ],
+  "validation": {
+    "buildAndSignature": "PASS",
+    "embeddedTVArtifactsMatch": "PASS",
+    "lgPhoneTransportAndUI": "PASS (mocked TV)",
+    "radioPageExitAndStop": "PASS (mocked Android audio, Samsung AVPlay and LG HTML5 audio)",
+    "sportsEndpoints": "HTTP 200 audio samples: talkSPORT, talkSPORT 2, RMC",
+    "currentPhysicalTVs": "NOT TESTED",
+    "icons": "PASS: exact embedded APK/Samsung icon bytes, LG build, signatures and embedded receiver hashes"
+  },
+  "limits": [
+    "ON Sport FM currently unavailable; listed with an unavailable notice and no playback request.",
+    "LG checks a limited catalog of known app IDs; device permission determines external launch. No enumerate-all claim.",
+    "Android/Fire TV store search opens the official store; the user completes installation.",
+    "Samsung/LG are Developer Mode previews, not general app-store releases.",
+    "Background radio is for navigation within Morph TV; video, Adhan, app exit and supported foreground-loss signals stop audio.",
+    "No Samsung/LG default Home replacement or remote-wake support is introduced."
+  ],
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.85",
+      "file": "Morph-TV-Phone-0.8.85.apk",
+      "bytes": 12953662,
+      "sha256": "6a998ab7f6c75f271a997b8ed61ad6d6b611c60cd41e55f1552971c62c1dd973"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.85",
+      "file": "Morph-TV-Android-TV-0.8.85.apk",
+      "bytes": 4014336,
+      "sha256": "d6a797c2fef283687653ce60d29c4ac2a44b72f366572bc1cae2a58f01b3d523"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.4",
+      "file": "Morph-TV-LG-Preview-0.1.4.ipk",
+      "bytes": 3808456,
+      "sha256": "57173b2cac7f494703ab54f8ff896308fc8cacb5958b53a4f35fa970e95d76cf"
+    }
+  ],
+  "changes": [
+    "Use the exact newly supplied white logo bearing Morph TV, replacing the previous TVMorph wording.",
+    "Phone/Android/Fire/Samsung/LG app icons, TV banner, in-app brand and website mark updated.",
+    "Existing functionality, package identities, signing identity and user storage preserved."
+  ]
+}
