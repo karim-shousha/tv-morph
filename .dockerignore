@@ -18,3 +18,7 @@
 !site-assets/**
 !theme-packs/
 !theme-packs/**
+
+!lg-install.html
+!lg-preview-validation.json
+!Morph-TV-LG-Preview-0.1.0.ipk

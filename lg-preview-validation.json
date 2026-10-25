@@ -1,0 +1,12 @@
+{
+  "package": "com.zainbot.morphtv.preview",
+  "version": "0.1.0",
+  "physicalTVVerified": false,
+  "target": "webOS 5.0+ initial candidate; older versions unverified",
+  "sha256": "69c315cd117eaf1d345d01d1d772a51e376556fa4bf2d735cb029a080a9e3523",
+  "bytes": 3675228,
+  "productionFilesUnchanged": true,
+  "uiChecks": "PASS: local packaged-file UI with mocked provider at 1920x1080 and 1280x720; D-pad, Arabic/English, account form, radio and prayer",
+  "physicalInstallation": "NOT TESTED",
+  "physicalPlayback": "NOT TESTED"
+}

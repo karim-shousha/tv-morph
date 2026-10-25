@@ -43,9 +43,12 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
-      "noteAr": "اكتشاف فقط حاليًا. نسخة Morph TV ومسار تثبيتها على webOS لم يكتملوا.",
-      "noteEn": "Discovery only today. A Morph TV webOS receiver and installation path are not implemented.",
-      "webPreview": "/web-tv.html"
+      "noteAr": "حزمة LG Preview منفصلة للتجربة بوضع المطور؛ التثبيت والتشغيل على جهاز فعلي لم يُختبرا بعد.",
+      "noteEn": "Separate LG Developer Mode preview; physical installation and playback are not yet tested.",
+      "version": "0.1.0",
+      "installGuide": "/lg-install.html",
+      "testDownload": "/download/lg-preview",
+      "physicalDeviceVerified": false
     },
     {
       "id": "vidaa",
