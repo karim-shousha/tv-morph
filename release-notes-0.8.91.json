@@ -1,0 +1,47 @@
+{
+  "version": "0.8.91",
+  "channel": "preview",
+  "signingIdentityPreserved": true,
+  "embeddedArtifactsMatch": true,
+  "change": "Collapsible phone theme library and packs, spaced family and parental tool cards, simpler donation copy",
+  "newThemes": [
+    "ismaily",
+    "king-salman",
+    "crown-prince",
+    "nassr",
+    "hilal",
+    "ittihad",
+    "ahli-saudi"
+  ],
+  "freeThemes": [
+    "blue",
+    "ahly",
+    "zamalek",
+    "ismaily",
+    "king-salman",
+    "crown-prince"
+  ],
+  "plusPurchases": "DISABLED: payment integration not live-tested",
+  "localValidation": "PASS: UI, license fixtures, concurrency, transfer, nginx, community regression",
+  "physicalTVValidation": "NOT TESTED for this release",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.91",
+      "file": "Morph-TV-Phone-0.8.91.apk",
+      "bytes": 12929288,
+      "sha256": "f602365bbe76f1c06f24fc788ba047558c5267bd23a4d446296dbc320e15e747"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.91",
+      "file": "Morph-TV-Android-TV-0.8.91.apk",
+      "bytes": 4002240,
+      "sha256": "cd09c2e0b1b725126c6372d8a34d56d5ed367c6c4132a7ead33dc03218f09c97"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.10",
+      "file": "Morph-TV-LG-Preview-0.1.10.ipk",
+      "bytes": 3815082,
+      "sha256": "ce60a1dd0724189fb4084203953edfb0d48c187fccbcfe428ab510cefbd0d256"
+    }
+  ]
+}

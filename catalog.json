@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.90",
+  "latest": "0.8.91",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.90",
+      "version": "0.8.91",
       "download": "/download/phone",
-      "noteAr": "روابط Morph TV الصحيحة على morphtv.herroshetta.com؛ لوحة Plus الخاصة وزر الدعم في أول الموقع. الشراء غير مفعّل بعد.",
-      "noteEn": "Correct Morph TV subdomain: morphtv.herroshetta.com. Private Plus administration and prominent top support link. Checkout remains disabled."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.90",
+      "version": "0.8.91",
       "download": "/download/android",
-      "noteAr": "روابط Morph TV الصحيحة على morphtv.herroshetta.com؛ لوحة Plus الخاصة وزر الدعم في أول الموقع. الشراء غير مفعّل بعد.",
-      "noteEn": "Correct Morph TV subdomain: morphtv.herroshetta.com. Private Plus administration and prominent top support link. Checkout remains disabled."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.90",
+      "version": "0.8.91",
       "download": "/download/firetv",
-      "noteAr": "روابط Morph TV الصحيحة على morphtv.herroshetta.com؛ لوحة Plus الخاصة وزر الدعم في أول الموقع. الشراء غير مفعّل بعد.",
-      "noteEn": "Correct Morph TV subdomain: morphtv.herroshetta.com. Private Plus administration and prominent top support link. Checkout remains disabled."
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "روابط Morph TV الصحيحة على morphtv.herroshetta.com؛ لوحة Plus الخاصة وزر الدعم في أول الموقع. الشراء غير مفعّل بعد.",
-      "noteEn": "Correct Morph TV subdomain: morphtv.herroshetta.com. Private Plus administration and prominent top support link. Checkout remains disabled.",
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.90"
+      "version": "0.8.91"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": false,
-      "noteAr": "روابط Morph TV الصحيحة على morphtv.herroshetta.com؛ لوحة Plus الخاصة وزر الدعم في أول الموقع. الشراء غير مفعّل بعد.",
-      "noteEn": "Correct Morph TV subdomain: morphtv.herroshetta.com. Private Plus administration and prominent top support link. Checkout remains disabled.",
-      "version": "0.1.9",
+      "noteAr": "ثيمات الإسماعيلي والملك سلمان والأمير محمد بن سلمان مجانًا، ومعاينة حزم Plus. شراء Plus غير متاح بعد.",
+      "noteEn": "Free Ismaily and Saudi royal themes, plus locked Plus packs. Plus purchases are not yet available.",
+      "version": "0.1.10",
       "installGuide": "/lg-install.html",
       "testDownload": "/download/lg-preview",
       "physicalDeviceVerified": false
@@ -64,22 +64,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.90",
-      "file": "Morph-TV-Phone-0.8.90.apk",
+      "name": "Morph-TV-Phone-0.8.91",
+      "file": "Morph-TV-Phone-0.8.91.apk",
       "bytes": 12929288,
-      "sha256": "acd51c05cf8c71b0c1b93b218931e43247499590250c7677cd55cc570e855bb5"
+      "sha256": "f602365bbe76f1c06f24fc788ba047558c5267bd23a4d446296dbc320e15e747"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.90",
-      "file": "Morph-TV-Android-TV-0.8.90.apk",
+      "name": "Morph-TV-Android-TV-0.8.91",
+      "file": "Morph-TV-Android-TV-0.8.91.apk",
       "bytes": 4002240,
-      "sha256": "0c40b6db643855912fc285530b201f214a4a6b3fdf20229493921807fb675d42"
+      "sha256": "cd09c2e0b1b725126c6372d8a34d56d5ed367c6c4132a7ead33dc03218f09c97"
     },
     {
-      "name": "Morph-TV-LG-Preview-0.1.9",
-      "file": "Morph-TV-LG-Preview-0.1.9.ipk",
-      "bytes": 3815036,
-      "sha256": "4012541728d27f488df6e5f36c371abc93f28bb6fd233e31d217852cb369f8cf"
+      "name": "Morph-TV-LG-Preview-0.1.10",
+      "file": "Morph-TV-LG-Preview-0.1.10.ipk",
+      "bytes": 3815082,
+      "sha256": "ce60a1dd0724189fb4084203953edfb0d48c187fccbcfe428ab510cefbd0d256"
     }
   ]
 }

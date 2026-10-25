@@ -30,6 +30,8 @@ class Plus:
             ''')
             if 'source' not in [r['name'] for r in db.execute('PRAGMA table_info(orders)')]:
                 db.execute("ALTER TABLE orders ADD COLUMN source TEXT NOT NULL DEFAULT 'stripe'")
+            if 'mode' not in [r['name'] for r in db.execute('PRAGMA table_info(orders)')]:
+                db.execute("ALTER TABLE orders ADD COLUMN mode TEXT NOT NULL DEFAULT 'live'")
         os.chmod(self.path, 0o600)
 
     @contextlib.contextmanager
@@ -52,24 +54,24 @@ class Plus:
         return mode in ['test','live'] and key.startswith(prefix) and os.environ.get('MORPH_PLUS_ENABLED')=='true' and all(os.environ.get(x) for x in ['MORPH_STRIPE_SECRET','MORPH_STRIPE_WEBHOOK_SECRET','MORPH_STRIPE_SINGLE_PRICE','MORPH_STRIPE_FAMILY_PRICE'])
 
     def stripe(self, path, values=None, key=None):
-        headers={'Authorization':'Bearer '+os.environ['MORPH_STRIPE_SECRET']}
+        headers={'Authorization':'Bearer '+os.environ['MORPH_STRIPE_SECRET'],'Stripe-Version':'2025-06-30.basil'}
         if key: headers['Idempotency-Key']=key
         body=urlencode(values).encode() if values is not None else None
         with urlopen(Request('https://api.stripe.com/v1/'+path, data=body, headers=headers),timeout=15) as f:return json.load(f)
 
-    def limit(self, client):
-        now=int(time.time());key=self.digest('rate:'+client)
+    def limit(self, client, category='write'):
+        now=int(time.time());key=self.digest('rate:'+category+':'+client)
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE');db.execute('DELETE FROM rate WHERE expires < ?', (now,))
             row=db.execute('SELECT hits FROM rate WHERE key=?',(key,)).fetchone()
-            if row and row['hits']>=40:raise ValueError('rate_limited')
+            if row and row['hits']>=(240 if category=='read' else 40):raise ValueError('rate_limited')
             db.execute('INSERT INTO rate VALUES (?,1,?) ON CONFLICT(key) DO UPDATE SET hits=hits+1',(key,now+600))
 
     def checkout(self, plan):
         if not self.enabled():raise ValueError('sales_not_enabled')
         if plan not in PLANS:raise ValueError('unknown_plan')
         oid=secrets.token_urlsafe(24);proof=secrets.token_urlsafe(32)
-        with self.db() as db:db.execute('INSERT INTO orders(id,proof,plan,license_hash,created) VALUES (?,?,?,?,?)',(oid,self.digest(proof),plan,self.digest(self.code(oid)),int(time.time())))
+        with self.db() as db:db.execute('INSERT INTO orders(id,proof,plan,license_hash,created,mode) VALUES (?,?,?,?,?,?)',(oid,self.digest(proof),plan,self.digest(self.code(oid)),int(time.time()),os.environ.get('MORPH_PLUS_MODE','test')))
         price=os.environ['MORPH_STRIPE_'+plan.upper()+'_PRICE']
         info=self.stripe('prices/'+price)
         if info.get('unit_amount')!=PLANS[plan]['usd'] or info.get('currency')!='usd' or info.get('type')!='one_time' or not info.get('active'):raise ValueError('price_configuration_mismatch')
@@ -86,11 +88,12 @@ class Plus:
         oid=session.get('client_reference_id')
         with self.db() as db:
             row=db.execute('SELECT * FROM orders WHERE id=?',(oid,)).fetchone()
-            if not row or row['session']!=session_id:raise ValueError('order_mismatch')
+            if not row or row['session']!=session_id or row['source']!='stripe':raise ValueError('order_mismatch')
             plan=PLANS[row['plan']];items=session.get('line_items',{}).get('data',[])
             if session.get('payment_status')!='paid':return
             if session.get('mode')!='payment' or session.get('currency')!='usd' or session.get('amount_total')!=plan['usd'] or len(items)!=1 or items[0].get('quantity')!=1 or items[0].get('price',{}).get('id')!=os.environ['MORPH_STRIPE_'+row['plan'].upper()+'_PRICE']:raise ValueError('payment_mismatch')
             if session.get('livemode') != (os.environ.get('MORPH_PLUS_MODE','test')=='live'):raise ValueError('payment_mode_mismatch')
+            if row['mode'] != os.environ.get('MORPH_PLUS_MODE','test'):raise ValueError('payment_mode_mismatch')
             db.execute('UPDATE orders SET paid=1,payment=? WHERE id=?',(session['payment_intent'],oid))
 
     def webhook(self, body, header):
@@ -115,7 +118,7 @@ class Plus:
     def lookup(self, db, code):
         if not re.fullmatch(r'MORPH-[A-Z2-7]{32}',str(code)):raise ValueError('invalid_license')
         # Paid orders only. The code is derived, never stored in plaintext.
-        row=db.execute("SELECT * FROM orders WHERE license_hash=? AND (paid=1 OR source='complimentary') AND revoked=0",(self.digest(code),)).fetchone()
+        row=db.execute("SELECT * FROM orders WHERE license_hash=? AND ((paid=1 AND mode=?) OR source='complimentary') AND revoked=0",(self.digest(code),os.environ.get('MORPH_PLUS_MODE','test'))).fetchone()
         if row:return row
         raise ValueError('invalid_license')
 
@@ -139,8 +142,8 @@ class Plus:
 
     def check(self, token):
         with self.db() as db:
-            row=db.execute("SELECT o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND (o.paid=1 OR o.source='complimentary') AND o.revoked=0",(self.digest(token),)).fetchone()
-            if not row:row=db.execute("SELECT o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND (o.paid=1 OR o.source='complimentary') AND o.revoked=0",(self.digest(token),)).fetchone()
+            row=db.execute("SELECT o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0",(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'))).fetchone()
+            if not row:row=db.execute("SELECT o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0",(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'))).fetchone()
         return {'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
 
     @staticmethod
@@ -219,12 +222,12 @@ class Plus:
             else:
                 origin=handler.headers.get('Origin','')
                 if origin not in ['', 'null',self.origin] and not origin.startswith('http://localhost'):raise ValueError('origin_rejected')
-                self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]));data=json.loads(body)
+                self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
                 if path=='/api/plus/checkout':result=self.checkout(data.get('plan'))
                 elif path=='/api/plus/order':
                     with self.db() as db:row=db.execute('SELECT * FROM orders WHERE id=? AND proof=?',(data.get('order'),self.digest(str(data.get('proof',''))))).fetchone()
                     if not row:raise ValueError('unknown_order')
-                    result={'paid':bool(row['paid'] and not row['revoked'])}
+                    result={'paid':bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))}
                     if result['paid']:result.update(code=self.code(row['id']),plan=row['plan'],maxDevices=PLANS[row['plan']]['devices'])
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
