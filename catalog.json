@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.105",
+  "latest": "0.8.106",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.105",
+      "version": "0.8.106",
       "download": "/download/phone",
-      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
-      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
+      "noteAr": "تحديث صورة فريق الإسماعيلي، ثيم إنتر ميامي، وصور WebP المحدثة.",
+      "noteEn": "Updated owner supplied Ismaily team image, Inter Miami theme and WebP artwork."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.105",
+      "version": "0.8.106",
       "download": "/download/android",
-      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
-      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
+      "noteAr": "تحديث صورة فريق الإسماعيلي، ثيم إنتر ميامي، وصور WebP المحدثة.",
+      "noteEn": "Updated owner supplied Ismaily team image, Inter Miami theme and WebP artwork."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.105",
+      "version": "0.8.106",
       "download": "/download/firetv",
-      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
-      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
+      "noteAr": "تحديث صورة فريق الإسماعيلي، ثيم إنتر ميامي، وصور WebP المحدثة.",
+      "noteEn": "Updated owner supplied Ismaily team image, Inter Miami theme and WebP artwork."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
-      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup.",
+      "noteAr": "تحديث صورة فريق الإسماعيلي، ثيم إنتر ميامي، وصور WebP المحدثة.",
+      "noteEn": "Updated owner supplied Ismaily team image, Inter Miami theme and WebP artwork.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.105"
+      "version": "0.8.106"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
-      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup.",
-      "version": "0.8.105",
+      "noteAr": "تحديث صورة فريق الإسماعيلي، ثيم إنتر ميامي، وصور WebP المحدثة.",
+      "noteEn": "Updated owner supplied Ismaily team image, Inter Miami theme and WebP artwork.",
+      "version": "0.8.106",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.105",
-      "file": "Morph-TV-Phone-0.8.105.apk",
+      "name": "Morph-TV-Phone-0.8.106",
+      "file": "Morph-TV-Phone-0.8.106.apk",
       "bytes": 12265519,
-      "sha256": "85adab323790ad79ce01daaf13c57d5c0597c8271876331dfe711def2f579d49"
+      "sha256": "105855a74defc869e92c35680e428b1ff4973e56bd450b3fb2c665356ef90bea"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.105",
-      "file": "Morph-TV-Android-TV-0.8.105.apk",
+      "name": "Morph-TV-Android-TV-0.8.106",
+      "file": "Morph-TV-Android-TV-0.8.106.apk",
       "bytes": 3838485,
-      "sha256": "a2981ed2d6aa0e3012dc92a327dff05aa21c053f48ebd02864c68ada727ebeeb"
+      "sha256": "2eec744339d118e6d87d8a16afde9bf8da73a66e038a62ef4fa1adfb6bf8ba8c"
     },
     {
-      "name": "Morph-TV-LG-0.8.105",
-      "file": "Morph-TV-LG-0.8.105.ipk",
-      "bytes": 3692892,
-      "sha256": "d4bc7fd06e3225e65a0f06678d4da79fdf8f83e25e10734cc7ec8cbc66501590"
+      "name": "Morph-TV-LG-0.8.106",
+      "file": "Morph-TV-LG-0.8.106.ipk",
+      "bytes": 3693006,
+      "sha256": "29d685679e9ae78ff91a2c4e52a38d0625f794f8b28cb32da4ab197f0ac58ee1"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",

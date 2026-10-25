@@ -161,25 +161,25 @@
     },
     {
       "id": "egypt-extra",
-      "version": 1,
+      "version": 2,
       "themes": [
         "ismaily"
       ],
       "files": [
         {
           "name": "ismaily-crest-v1.webp",
-          "file": "egypt-extra-v1-ismaily-crest-v1.webp",
+          "file": "egypt-extra-v2-ismaily-crest-v1.webp",
           "bytes": 40212,
           "sha256": "2e156c987983dba89aa204bff02eb024258ee4f1e5538dc5f26e8516408da285"
         },
         {
           "name": "ismaily-team-v1.webp",
-          "file": "egypt-extra-v1-ismaily-team-v1.webp",
-          "bytes": 66778,
-          "sha256": "aae264990f16925f26851474c944f723adceb03fbc342423e7671c3237e42998"
+          "file": "egypt-extra-v2-ismaily-team-v1.webp",
+          "bytes": 406718,
+          "sha256": "bd77c523fe3fbb435df06ddeaade72a1e39e00da8477a7f69bdb958b59188066"
         }
       ],
-      "bytes": 106990,
+      "bytes": 446930,
       "tier": "free",
       "titleAr": "\u0627\u0644\u0625\u0633\u0645\u0627\u0639\u064a\u0644\u064a",
       "titleEn": "Ismaily"
@@ -544,6 +544,18 @@
       "file": "saudi-clubs-v2-nassr-stars-cutout-v2.webp",
       "bytes": 320374,
       "sha256": "eb8391bc573c709c75ab95c2069438594f7b967ebaecf57c558a5013dd152c54"
+    },
+    {
+      "name": "ismaily-crest-v1.webp",
+      "file": "egypt-extra-v1-ismaily-crest-v1.webp",
+      "bytes": 40212,
+      "sha256": "2e156c987983dba89aa204bff02eb024258ee4f1e5538dc5f26e8516408da285"
+    },
+    {
+      "name": "ismaily-team-v1.webp",
+      "file": "egypt-extra-v1-ismaily-team-v1.webp",
+      "bytes": 66778,
+      "sha256": "aae264990f16925f26851474c944f723adceb03fbc342423e7671c3237e42998"
     }
   ]
 }
