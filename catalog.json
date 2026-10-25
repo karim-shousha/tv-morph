@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.70",
+  "latest": "0.8.71",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.70",
+      "version": "0.8.71",
       "download": "/download/phone",
-      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
-      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
+      "noteAr": "زر إعدادات الجهاز داخل الإعدادات العامة لفتح إعدادات التلفزيون أو البروجيكتور. يستخدم صفحات النظام المتاحة على أندرويد، ويحاول فتح تطبيق إعدادات سامسونج إن كان متاحًا، مع إرشادات بديلة عند عدم الدعم. متاح باللغات الخمس.",
+      "noteEn": "Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.70",
+      "version": "0.8.71",
       "download": "/download/android",
-      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
-      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
+      "noteAr": "زر إعدادات الجهاز داخل الإعدادات العامة لفتح إعدادات التلفزيون أو البروجيكتور. يستخدم صفحات النظام المتاحة على أندرويد، ويحاول فتح تطبيق إعدادات سامسونج إن كان متاحًا، مع إرشادات بديلة عند عدم الدعم. متاح باللغات الخمس.",
+      "noteEn": "Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.70",
+      "version": "0.8.71",
       "download": "/download/firetv",
-      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
-      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware."
+      "noteAr": "زر إعدادات الجهاز داخل الإعدادات العامة لفتح إعدادات التلفزيون أو البروجيكتور. يستخدم صفحات النظام المتاحة على أندرويد، ويحاول فتح تطبيق إعدادات سامسونج إن كان متاحًا، مع إرشادات بديلة عند عدم الدعم. متاح باللغات الخمس.",
+      "noteEn": "Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "منع فحص اتصال الموبايل من إعادة فتح TVMorph فوق التطبيقات على سامسونج. تهدئة تجاوز Home على أندرويد، وتحسين تحميل الثيمات، ومنع تكرار الأذان وتحرير الصوت بعد انتهائه. أدوات إعدادات أندرويد المخفية ودليل استخدامها باللغات الخمس؛ التوافق يعتمد على الجهاز.",
-      "noteEn": "Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware.",
+      "noteAr": "زر إعدادات الجهاز داخل الإعدادات العامة لفتح إعدادات التلفزيون أو البروجيكتور. يستخدم صفحات النظام المتاحة على أندرويد، ويحاول فتح تطبيق إعدادات سامسونج إن كان متاحًا، مع إرشادات بديلة عند عدم الدعم. متاح باللغات الخمس.",
+      "noteEn": "Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.70"
+      "version": "0.8.71"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Android-TV-0.8.71",
+      "file": "TV-Morph-Android-TV-0.8.71.apk",
+      "bytes": 3664617,
+      "sha256": "2cb825486ed4915b7efcdae2ccac5bddd33754d4cd956de09fe7a205e7885e80"
+    },
+    {
+      "name": "TV-Morph-Phone-0.8.71",
+      "file": "TV-Morph-Phone-0.8.71.apk",
+      "bytes": 8278988,
+      "sha256": "7c9aed4f6945709bfb5794bc431702c12de7d5f28e40087a52f62b8acd83ad6a"
+    },
     {
       "name": "TV-Morph-Android-TV-0.8.70",
       "file": "TV-Morph-Android-TV-0.8.70.apk",
@@ -1018,6 +1030,8 @@
     "TV-Morph-Phone-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Phone-0.8.68.apk",
     "TV-Morph-Android-TV-0.8.68.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/8c313e23d16ed3832ec30491a9b2b65d66dcc491/TV-Morph-Android-TV-0.8.68.apk",
     "TV-Morph-Phone-0.8.69.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/29d5e96461d57927364b0414d36f84844e70565a/TV-Morph-Phone-0.8.69.apk",
-    "TV-Morph-Android-TV-0.8.69.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/29d5e96461d57927364b0414d36f84844e70565a/TV-Morph-Android-TV-0.8.69.apk"
+    "TV-Morph-Android-TV-0.8.69.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/29d5e96461d57927364b0414d36f84844e70565a/TV-Morph-Android-TV-0.8.69.apk",
+    "TV-Morph-Phone-0.8.70.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/c01bbf97389a419ef08659a038562c3098996e88/TV-Morph-Phone-0.8.70.apk",
+    "TV-Morph-Android-TV-0.8.70.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/c01bbf97389a419ef08659a038562c3098996e88/TV-Morph-Android-TV-0.8.70.apk"
   }
 }

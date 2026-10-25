@@ -338,3 +338,8 @@ Fix Android TV HDMI numbering using physical input labels instead of system enum
 ## 0.8.70
 
 Passive Samsung phone connection checks no longer launch TVMorph over external apps. Android Home override ignores service reconnections and transient Home windows. Cooperative theme verification improves startup responsiveness. One-shot Adhan playback with proper media cleanup and duplicate protection. Android system-settings tools and five-language instructions; availability depends on firmware. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
+
+
+## 0.8.71
+
+Device settings shortcut in General settings opens the TV/projector system settings. Android uses available exported system screens; Samsung opens an available Settings app, with clear fallback guidance when unsupported. Available in five languages. Stable Android/Samsung package IDs, signing keys and existing storage keys are retained for update compatibility.
