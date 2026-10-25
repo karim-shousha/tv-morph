@@ -215,7 +215,7 @@ class Plus:
             if not self.check(token)['active']:handler.send_json(403,{'error':'plus_required'});return True
             filename=path.removeprefix('/api/plus/assets/')
             manifest=json.loads((Path(os.environ.get('MORPH_SITE_ROOT','/usr/share/nginx/html'))/'theme-packs/catalog.json').read_text(encoding='utf-8'))
-            if not any(f['file']==filename for p in manifest['packs'] for f in p['files']):handler.send_json(404,{'error':'not_found'});return True
+            if not any(f['file']==filename for p in manifest['packs'] for f in p['files']) and not any(f['file']==filename for f in manifest.get('legacyFiles',[])):handler.send_json(404,{'error':'not_found'});return True
             handler.send_response(200);handler.send_header('Content-Type','image/webp');handler.send_header('Cache-Control','no-store');handler.send_header('X-Accel-Redirect','/_artifacts/theme-packs/'+filename);handler.end_headers();return True
         if handler.command=='GET' and path=='/api/plus/plans':
             handler.send_json(200,{'enabled':self.enabled(),'plans':PLANS,'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test')});return True

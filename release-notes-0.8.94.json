@@ -1,0 +1,35 @@
+{
+  "version": "0.8.94",
+  "changes": [
+    "Four transparent generated Saudi club star montages in WebP",
+    "Saudi clubs pack v2; old v1 files remain authorized for old clients",
+    "Actionable television activation errors and no false theme-application success"
+  ],
+  "signaturesAndIdentities": "PRESERVED",
+  "embeddedPackages": "MATCH PUBLIC FILES",
+  "imagePrompts": "output/saudi-stars-prompts.json (local source record)",
+  "physicalTVValidation": "NOT TESTED latest build",
+  "localValidation": "PASS: UI application, delete/redownload, secure pack downloads and legacy asset compatibility",
+  "kingSalmanCutout": "Not changed: image tool rejected previous request; original preserved",
+  "plusSales": "DISABLED pending live Stripe setup",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.94",
+      "file": "Morph-TV-Phone-0.8.94.apk",
+      "bytes": 12941800,
+      "sha256": "4dc66418a76320da3967b2dd9981bebf4b85c82e5a157b1c42b8c2116bb1cbec"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.94",
+      "file": "Morph-TV-Android-TV-0.8.94.apk",
+      "bytes": 4006581,
+      "sha256": "d3473b7274e269f84d6d3eadb85e187948d252fb39e564e33af6dd5e00decaeb"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.94",
+      "file": "Morph-TV-LG-0.8.94.ipk",
+      "bytes": 3817382,
+      "sha256": "a4c0549baabe6586f6d07f34584b8ace13c9e62f77b9f13690a697cb17112c40"
+    }
+  ]
+}
