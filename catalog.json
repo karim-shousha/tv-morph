@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "latest": "0.8.81",
+  "latest": "0.8.82",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.81",
+      "version": "0.8.82",
       "download": "/download/phone",
-      "noteAr": "تحديث 0.8.81: دعم LG من الموبايل، تصحيح الهوية، إزالة تنبيه التحديث من التلفزيون، واستمرار الراديو داخل التطبيق مع محطات رياضية. توفر الميزات يختلف حسب النظام.",
-      "noteEn": "0.8.81: LG phone setup, corrected branding, no automatic TV update prompt, in-app background radio and sports stations. Features depend on the platform."
+      "noteAr": "إصلاح فحص تحديث الموبايل: فحص HTTPS من التطبيق نفسه، والتحقق عند الرجوع للتطبيق، مع زر فحص يدوي. تنبيه التلفزيون يظل ملغيًا.",
+      "noteEn": "Phone update-check fix: native HTTPS checks on app return and a manual check button. TV update prompts remain disabled."
     },
     {
       "id": "android",
@@ -64,10 +64,10 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.81",
-      "file": "Morph-TV-Phone-0.8.81.apk",
+      "name": "Morph-TV-Phone-0.8.82",
+      "file": "Morph-TV-Phone-0.8.82.apk",
       "bytes": 12449854,
-      "sha256": "3a416b7a8f369f3ab81ab3fbc6b9d6b4521100fe715c31985dcd6dfb22ffdec1"
+      "sha256": "d1fca75532d3634f197eaac24feb5950d105c02a5d2664c0ca198a8d4c259510"
     },
     {
       "name": "Morph-TV-Android-TV-0.8.81",

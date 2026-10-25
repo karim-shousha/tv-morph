@@ -1,0 +1,22 @@
+{
+  "phoneVersion": "0.8.82",
+  "phoneVersionCode": 94,
+  "androidTVVersion": "0.8.81",
+  "samsungReceiverVersion": "0.8.81",
+  "lgPreviewVersion": "0.1.1",
+  "fixes": [
+    "Native HTTPS update check does not depend on file-origin WebView network access.",
+    "Checks again when the phone app returns to the foreground.",
+    "Uses the actual installed package version.",
+    "Honors the alert preference; explicit manual check is available.",
+    "Never installs automatically; opens the official phone download on request."
+  ],
+  "validation": "PASS: build/signature, preserved signing identity and embedded receivers, mocked blocked-web-network/native bridge, equal/older/offline/disabled states, return-to-app check and download action. Physical phone test pending.",
+  "migration": "Install the phone update manually once. TV update alerts remain disabled.",
+  "download": {
+    "name": "Morph-TV-Phone-0.8.82",
+    "file": "Morph-TV-Phone-0.8.82.apk",
+    "bytes": 12449854,
+    "sha256": "d1fca75532d3634f197eaac24feb5950d105c02a5d2664c0ca198a8d4c259510"
+  }
+}
