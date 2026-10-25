@@ -1,0 +1,54 @@
+{
+  "version": "0.8.81",
+  "channel": "preview",
+  "identities": [
+    {
+      "package": "local.cleartv.mobile",
+      "version": "0.8.81",
+      "versionCode": 93,
+      "signingIdentityUnchanged": true
+    },
+    {
+      "package": "local.tvmorph.tv",
+      "version": "0.8.81",
+      "versionCode": 85,
+      "signingIdentityUnchanged": true
+    }
+  ],
+  "validation": {
+    "buildAndSignature": "PASS",
+    "embeddedTVArtifactsMatch": "PASS",
+    "lgPhoneTransportAndUI": "PASS (mocked TV)",
+    "radioPageExitAndStop": "PASS (mocked Android audio, Samsung AVPlay and LG HTML5 audio)",
+    "sportsEndpoints": "HTTP 200 audio samples: talkSPORT, talkSPORT 2, RMC",
+    "currentPhysicalTVs": "NOT TESTED"
+  },
+  "limits": [
+    "ON Sport FM currently unavailable; listed with an unavailable notice and no playback request.",
+    "LG checks a limited catalog of known app IDs; device permission determines external launch. No enumerate-all claim.",
+    "Android/Fire TV store search opens the official store; the user completes installation.",
+    "Samsung/LG are Developer Mode previews, not general app-store releases.",
+    "Background radio is for navigation within Morph TV; video, Adhan, app exit and supported foreground-loss signals stop audio.",
+    "No Samsung/LG default Home replacement or remote-wake support is introduced."
+  ],
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.81",
+      "file": "Morph-TV-Phone-0.8.81.apk",
+      "bytes": 12449854,
+      "sha256": "3a416b7a8f369f3ab81ab3fbc6b9d6b4521100fe715c31985dcd6dfb22ffdec1"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.81",
+      "file": "Morph-TV-Android-TV-0.8.81.apk",
+      "bytes": 3879168,
+      "sha256": "2709274f7b129737761571a3322d4b03f6542c38b62d3915f50c2a1756dc587b"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.1",
+      "file": "Morph-TV-LG-Preview-0.1.1.ipk",
+      "bytes": 3682704,
+      "sha256": "6d57b001ad8f7b032bff7e221a8a782d0e8ad5c2cc211e8af6c88305f5779bb2"
+    }
+  ]
+}

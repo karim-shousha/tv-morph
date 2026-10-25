@@ -1,0 +1,6 @@
+{
+  "stripe": "https://donate.stripe.com/9B66oI2xb4yCdar0VB6EU03",
+  "currency": "CAD",
+  "mode": "one-time-customer-chooses",
+  "paypal": "https://www.paypal.com/donate/?business=lynkomentor%40gmail.com&currency_code=CAD"
+}
