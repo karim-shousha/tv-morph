@@ -383,3 +383,9 @@ Existing package identities, signing keys and saved settings are retained. Local
 
 Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.79
+
+Morph TV: new display name and brand, with a new landing page and direct downloads. Existing application identities, signing keys and settings are retained.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
