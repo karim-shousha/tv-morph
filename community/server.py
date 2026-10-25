@@ -16,7 +16,7 @@ from urllib.parse import urlsplit, parse_qs
 
 DATA = Path(os.environ.get('MORPH_DATA_DIR', '/data'))
 ROOT = Path(os.environ.get('MORPH_SITE_ROOT', '/usr/share/nginx/html'))
-ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://morphtv.zainbot.com').rstrip('/')
+ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://herroshetta.com').rstrip('/')
 SECURE = ORIGIN.startswith('https://')
 DATA.mkdir(parents=True, exist_ok=True)
 os.chmod(DATA, 0o700)
