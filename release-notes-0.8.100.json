@@ -1,0 +1,36 @@
+{
+  "version": "0.8.100",
+  "changes": [
+    "Radio follows Home background and selected theme; no default entertainment photograph",
+    "Unified responsive station grid, readable two-line titles and separate playback bar",
+    "Visible remote focus and Arabic/English layout"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.100",
+      "file": "Morph-TV-Phone-0.8.100.apk",
+      "bytes": 12962280,
+      "sha256": "be5314b43d823c102f9a454029821ff1b7da545149d9e7db1e698405e99fb776"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.100",
+      "file": "Morph-TV-Android-TV-0.8.100.apk",
+      "bytes": 4014773,
+      "sha256": "d69c0efd1b20524d983de08c14fefac3c0cf43aa406c8371b25d25513aad3e8d"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.100",
+      "file": "Morph-TV-LG-0.8.100.ipk",
+      "bytes": 3820348,
+      "sha256": "1518d3170a80bc0def679e67e5d6e0fad21d5ff9f5eb3825de3ad8935f66b769"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}

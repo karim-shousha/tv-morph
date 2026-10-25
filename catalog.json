@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.99",
+  "latest": "0.8.100",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.99",
+      "version": "0.8.100",
       "download": "/download/phone",
-      "noteAr": "إصلاح الأذان أثناء IPTV، والخلفية الزرقاء الهادئة، وثلاثة ثيمات بسيطة مجانية.",
-      "noteEn": "Adhan during IPTV, calm blue default background and three free simple themes."
+      "noteAr": "الراديو بنفس خلفية التطبيق، وشبكة محطات أوضح وشريط تشغيل منسّق.",
+      "noteEn": "Radio follows the app background, with a clearer station grid and playback bar."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.99",
+      "version": "0.8.100",
       "download": "/download/android",
-      "noteAr": "إصلاح الأذان أثناء IPTV، والخلفية الزرقاء الهادئة، وثلاثة ثيمات بسيطة مجانية.",
-      "noteEn": "Adhan during IPTV, calm blue default background and three free simple themes."
+      "noteAr": "الراديو بنفس خلفية التطبيق، وشبكة محطات أوضح وشريط تشغيل منسّق.",
+      "noteEn": "Radio follows the app background, with a clearer station grid and playback bar."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.99",
+      "version": "0.8.100",
       "download": "/download/firetv",
-      "noteAr": "إصلاح الأذان أثناء IPTV، والخلفية الزرقاء الهادئة، وثلاثة ثيمات بسيطة مجانية.",
-      "noteEn": "Adhan during IPTV, calm blue default background and three free simple themes."
+      "noteAr": "الراديو بنفس خلفية التطبيق، وشبكة محطات أوضح وشريط تشغيل منسّق.",
+      "noteEn": "Radio follows the app background, with a clearer station grid and playback bar."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح الأذان أثناء IPTV، والخلفية الزرقاء الهادئة، وثلاثة ثيمات بسيطة مجانية.",
-      "noteEn": "Adhan during IPTV, calm blue default background and three free simple themes.",
+      "noteAr": "الراديو بنفس خلفية التطبيق، وشبكة محطات أوضح وشريط تشغيل منسّق.",
+      "noteEn": "Radio follows the app background, with a clearer station grid and playback bar.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.99"
+      "version": "0.8.100"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح الأذان أثناء IPTV، والخلفية الزرقاء الهادئة، وثلاثة ثيمات بسيطة مجانية.",
-      "noteEn": "Adhan during IPTV, calm blue default background and three free simple themes.",
-      "version": "0.8.99",
+      "noteAr": "الراديو بنفس خلفية التطبيق، وشبكة محطات أوضح وشريط تشغيل منسّق.",
+      "noteEn": "Radio follows the app background, with a clearer station grid and playback bar.",
+      "version": "0.8.100",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.99",
-      "file": "Morph-TV-Phone-0.8.99.apk",
-      "bytes": 12954088,
-      "sha256": "8a22f222b13dc09f597a96dbf82c3f5139daac48b5b8164a2a50551bbdafa592"
+      "name": "Morph-TV-Phone-0.8.100",
+      "file": "Morph-TV-Phone-0.8.100.apk",
+      "bytes": 12962280,
+      "sha256": "be5314b43d823c102f9a454029821ff1b7da545149d9e7db1e698405e99fb776"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.99",
-      "file": "Morph-TV-Android-TV-0.8.99.apk",
-      "bytes": 4010677,
-      "sha256": "477d8c84805ddd5a21aeb4013f20e14c6fea9d473d04a286d2b5d6be58ec576a"
+      "name": "Morph-TV-Android-TV-0.8.100",
+      "file": "Morph-TV-Android-TV-0.8.100.apk",
+      "bytes": 4014773,
+      "sha256": "d69c0efd1b20524d983de08c14fefac3c0cf43aa406c8371b25d25513aad3e8d"
     },
     {
-      "name": "Morph-TV-LG-0.8.99",
-      "file": "Morph-TV-LG-0.8.99.ipk",
-      "bytes": 3818666,
-      "sha256": "e340b104dc82044e904d8541af524af405cc2e4f54a0767502f2eaa1ea2419c9"
+      "name": "Morph-TV-LG-0.8.100",
+      "file": "Morph-TV-LG-0.8.100.ipk",
+      "bytes": 3820348,
+      "sha256": "1518d3170a80bc0def679e67e5d6e0fad21d5ff9f5eb3825de3ad8935f66b769"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
