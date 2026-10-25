@@ -1,0 +1,47 @@
+{
+  "version": "0.8.90",
+  "channel": "preview",
+  "signingIdentityPreserved": true,
+  "embeddedArtifactsMatch": true,
+  "change": "Correct Morph TV to morphtv.herroshetta.com subdomain, preserve original apex site, prominent top support banner",
+  "newThemes": [
+    "ismaily",
+    "king-salman",
+    "crown-prince",
+    "nassr",
+    "hilal",
+    "ittihad",
+    "ahli-saudi"
+  ],
+  "freeThemes": [
+    "blue",
+    "ahly",
+    "zamalek",
+    "ismaily",
+    "king-salman",
+    "crown-prince"
+  ],
+  "plusPurchases": "DISABLED: payment integration not live-tested",
+  "localValidation": "PASS: UI, license fixtures, concurrency, transfer, nginx, community regression",
+  "physicalTVValidation": "NOT TESTED for this release",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.90",
+      "file": "Morph-TV-Phone-0.8.90.apk",
+      "bytes": 12929288,
+      "sha256": "acd51c05cf8c71b0c1b93b218931e43247499590250c7677cd55cc570e855bb5"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.90",
+      "file": "Morph-TV-Android-TV-0.8.90.apk",
+      "bytes": 4002240,
+      "sha256": "0c40b6db643855912fc285530b201f214a4a6b3fdf20229493921807fb675d42"
+    },
+    {
+      "name": "Morph-TV-LG-Preview-0.1.9",
+      "file": "Morph-TV-LG-Preview-0.1.9.ipk",
+      "bytes": 3815036,
+      "sha256": "4012541728d27f488df6e5f36c371abc93f28bb6fd233e31d217852cb369f8cf"
+    }
+  ]
+}

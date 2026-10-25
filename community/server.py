@@ -16,7 +16,7 @@ from urllib.parse import urlsplit, parse_qs
 
 DATA = Path(os.environ.get('MORPH_DATA_DIR', '/data'))
 ROOT = Path(os.environ.get('MORPH_SITE_ROOT', '/usr/share/nginx/html'))
-ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://herroshetta.com').rstrip('/')
+ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://morphtv.herroshetta.com').rstrip('/')
 SECURE = ORIGIN.startswith('https://')
 DATA.mkdir(parents=True, exist_ok=True)
 os.chmod(DATA, 0o700)
@@ -64,6 +64,11 @@ with database() as db:
         CREATE TABLE IF NOT EXISTS moderation (id INTEGER PRIMARY KEY, review_id INTEGER, action TEXT, created INTEGER);
     ''')
     db.execute("INSERT OR IGNORE INTO meta VALUES ('started', ?)", (str(int(time.time())),))
+    # Retire sessions issued on the accidentally assigned apex domain. Keep the
+    # password, licenses, community data and subsequent subdomain sessions intact.
+    if not db.execute("SELECT 1 FROM meta WHERE key='admin-subdomain-reset-v1'").fetchone():
+        db.execute('DELETE FROM admin_sessions')
+        db.execute("INSERT INTO meta VALUES ('admin-subdomain-reset-v1', ?)", (str(int(time.time())),))
 os.chmod(DB, 0o600)
 
 
