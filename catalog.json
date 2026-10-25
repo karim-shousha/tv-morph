@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.104",
+  "latest": "0.8.105",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.104",
+      "version": "0.8.105",
       "download": "/download/phone",
-      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
-      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
+      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
+      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.104",
+      "version": "0.8.105",
       "download": "/download/android",
-      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
-      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
+      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
+      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.104",
+      "version": "0.8.105",
       "download": "/download/firetv",
-      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
-      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup."
+      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
+      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
-      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup.",
+      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
+      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.104"
+      "version": "0.8.105"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "مفضلة القنوات بالضغط المطوّل، وإصلاح أون سبورت والتحديد وخلفية التحميل.",
-      "noteEn": "Long-press live favorites, ON Sport route, stable radio focus and themed startup.",
-      "version": "0.8.104",
+      "noteAr": "ثيم إنتر ميامي بالوردي والأسود، تحديث صور مصر والسعودية والاتحاد، وتنظيف الصور القديمة.",
+      "noteEn": "Pink and black Inter Miami theme, updated Egypt, Saudi and Ittihad artwork, and unused image cleanup.",
+      "version": "0.8.105",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.104",
-      "file": "Morph-TV-Phone-0.8.104.apk",
-      "bytes": 12966376,
-      "sha256": "af0c534413ee6eea7911cb93d9b164361d0c404285342a1441b5db055a087a53"
+      "name": "Morph-TV-Phone-0.8.105",
+      "file": "Morph-TV-Phone-0.8.105.apk",
+      "bytes": 12265519,
+      "sha256": "85adab323790ad79ce01daaf13c57d5c0597c8271876331dfe711def2f579d49"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.104",
-      "file": "Morph-TV-Android-TV-0.8.104.apk",
-      "bytes": 4014773,
-      "sha256": "de2736bc333e3311a88696594663d132119f0f3559fb97284e6ccf1a3d71dcec"
+      "name": "Morph-TV-Android-TV-0.8.105",
+      "file": "Morph-TV-Android-TV-0.8.105.apk",
+      "bytes": 3838485,
+      "sha256": "a2981ed2d6aa0e3012dc92a327dff05aa21c053f48ebd02864c68ada727ebeeb"
     },
     {
-      "name": "Morph-TV-LG-0.8.104",
-      "file": "Morph-TV-LG-0.8.104.ipk",
-      "bytes": 3822216,
-      "sha256": "6d70eb07a9fa0f9187a7f2b8750095ba986480ca1e6734437d7e963eb7fc4a70"
+      "name": "Morph-TV-LG-0.8.105",
+      "file": "Morph-TV-LG-0.8.105.ipk",
+      "bytes": 3692892,
+      "sha256": "d4bc7fd06e3225e65a0f06678d4da79fdf8f83e25e10734cc7ec8cbc66501590"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
