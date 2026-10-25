@@ -271,7 +271,7 @@ class Handler(BaseHTTPRequestHandler):
     def download(self, path):
         catalog = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
         route = path.removeprefix('/download/') if path.startswith('/download/') else ''
-        platform = {'phone': 'Phone', 'android': 'Android-TV', 'firetv': 'Android-TV', 'lg': 'LG', 'lg-preview': 'LG'}.get(route)
+        platform = {'phone': 'Phone', 'android': 'Android-TV', 'firetv': 'Android-TV', 'lg': 'LG', 'lg-preview': 'LG', 'legacy': 'Legacy'}.get(route)
         entry = next((row for row in catalog['releases'] if (platform and row['name'].startswith('Morph-TV-' + platform + '-')) or ('/' + row['file'] == path)), None)
         if not entry or not re.fullmatch(r'Morph-TV-[A-Za-z0-9.\-]+\.(apk|ipk)', entry['file']):
             return self.send_json(404, {'error': 'not_found'})

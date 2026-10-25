@@ -81,6 +81,21 @@
       "file": "Morph-TV-LG-0.8.98.ipk",
       "bytes": 3818104,
       "sha256": "c413d3cf0bee54b757f93b39526f3fc29abd9797e85b75f920b2725b07e46d34"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
     }
-  ]
+  ],
+  "legacy": {
+    "available": true,
+    "version": "0.1.0",
+    "minAndroid": "4.4",
+    "minSdk": 19,
+    "channel": "experimental",
+    "download": "/download/legacy",
+    "physicalDeviceVerified": false
+  }
 }
