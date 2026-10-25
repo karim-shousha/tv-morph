@@ -23,7 +23,13 @@ class Plus:
              CREATE TABLE IF NOT EXISTS studios(token TEXT PRIMARY KEY, license TEXT NOT NULL, device TEXT NOT NULL,
               created INTEGER NOT NULL, UNIQUE(license,device));
              CREATE TABLE IF NOT EXISTS rate(key TEXT PRIMARY KEY, hits INTEGER NOT NULL, expires INTEGER NOT NULL);
+             CREATE TABLE IF NOT EXISTS grants(email TEXT PRIMARY KEY, license TEXT UNIQUE NOT NULL REFERENCES orders(id),
+              name TEXT NOT NULL DEFAULT '', created INTEGER NOT NULL, updated INTEGER NOT NULL);
+             CREATE TABLE IF NOT EXISTS grant_audit(id INTEGER PRIMARY KEY, license TEXT NOT NULL, action TEXT NOT NULL,
+              actor TEXT NOT NULL, created INTEGER NOT NULL);
             ''')
+            if 'source' not in [r['name'] for r in db.execute('PRAGMA table_info(orders)')]:
+                db.execute("ALTER TABLE orders ADD COLUMN source TEXT NOT NULL DEFAULT 'stripe'")
         os.chmod(self.path, 0o600)
 
     @contextlib.contextmanager
@@ -109,7 +115,7 @@ class Plus:
     def lookup(self, db, code):
         if not re.fullmatch(r'MORPH-[A-Z2-7]{32}',str(code)):raise ValueError('invalid_license')
         # Paid orders only. The code is derived, never stored in plaintext.
-        row=db.execute('SELECT * FROM orders WHERE license_hash=? AND paid=1 AND revoked=0',(self.digest(code),)).fetchone()
+        row=db.execute("SELECT * FROM orders WHERE license_hash=? AND (paid=1 OR source='complimentary') AND revoked=0",(self.digest(code),)).fetchone()
         if row:return row
         raise ValueError('invalid_license')
 
@@ -133,9 +139,63 @@ class Plus:
 
     def check(self, token):
         with self.db() as db:
-            row=db.execute("SELECT o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND o.paid=1 AND o.revoked=0",(self.digest(token),)).fetchone()
-            if not row:row=db.execute("SELECT o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND o.paid=1 AND o.revoked=0",(self.digest(token),)).fetchone()
+            row=db.execute("SELECT o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND (o.paid=1 OR o.source='complimentary') AND o.revoked=0",(self.digest(token),)).fetchone()
+            if not row:row=db.execute("SELECT o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND (o.paid=1 OR o.source='complimentary') AND o.revoked=0",(self.digest(token),)).fetchone()
         return {'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
+
+    @staticmethod
+    def email(value):
+        if not isinstance(value,str) or len(value)>254:raise ValueError('invalid_email')
+        value=value.strip().lower()
+        if not re.fullmatch(r"[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+",value):raise ValueError('invalid_email')
+        if len(value.split('@')[0])>64:raise ValueError('invalid_email')
+        return value
+
+    def grants(self):
+        with self.db() as db:
+            rows=db.execute("SELECT g.email,g.name,g.created,g.updated,o.id,o.plan,o.revoked,(SELECT COUNT(*) FROM devices d WHERE d.license=o.id) AS used FROM grants g JOIN orders o ON o.id=g.license WHERE o.source='complimentary' ORDER BY g.updated DESC,g.email LIMIT 1001").fetchall()
+        return {'grants':[dict(r,maxDevices=PLANS[r['plan']]['devices']) for r in rows[:1000]],'truncated':len(rows)>1000}
+
+    def grant_action(self, data, actor):
+        action=data.get('action');now=int(time.time())
+        with self.db() as db:
+            db.execute('BEGIN IMMEDIATE')
+            if action=='save':
+                email=self.email(data.get('email'));plan=data.get('plan');name=data.get('name','')
+                if plan not in PLANS or not isinstance(name,str) or len(name)>80 or any(ord(c)<32 for c in name):raise ValueError('invalid_grant')
+                row=db.execute('SELECT o.* FROM grants g JOIN orders o ON o.id=g.license WHERE g.email=?',(email,)).fetchone()
+                if row:
+                    oid=row['id']
+                    if db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>PLANS[plan]['devices']:raise ValueError('remove_devices_first')
+                    # Editing a disabled grant never silently re-enables it.
+                    db.execute('UPDATE orders SET plan=? WHERE id=?',(plan,oid))
+                    db.execute('UPDATE grants SET name=?,updated=? WHERE email=?',(name.strip(),now,email))
+                else:
+                    oid='gift_'+secrets.token_urlsafe(24)
+                    db.execute("INSERT INTO orders(id,proof,plan,license_hash,paid,source,created) VALUES (?,?,?,?,0,'complimentary',?)",(oid,self.digest(secrets.token_urlsafe(32)),plan,self.digest(self.code(oid)),now))
+                    db.execute('INSERT INTO grants VALUES (?,?,?,?,?)',(email,oid,name.strip(),now,now))
+            elif action in ['code','devices','revoke','restore','remove-device']:
+                oid=data.get('id')
+                row=db.execute("SELECT o.* FROM orders o JOIN grants g ON g.license=o.id WHERE o.id=? AND o.source='complimentary'",(oid,)).fetchone()
+                if not row:raise ValueError('unknown_grant')
+                if action=='code':
+                    if row['revoked']:raise ValueError('grant_disabled')
+                    result={'code':self.code(oid)}
+                elif action=='devices':
+                    result={'devices':[dict(r) for r in db.execute('SELECT device,name,created FROM devices WHERE license=? ORDER BY created',(oid,))]}
+                elif action in ['revoke','restore']:
+                    db.execute('UPDATE orders SET revoked=? WHERE id=?',(1 if action=='revoke' else 0,oid))
+                    if action=='revoke':
+                        # Re-enabling requires entering the code again; old tokens remain dead.
+                        db.execute('DELETE FROM devices WHERE license=?',(oid,));db.execute('DELETE FROM studios WHERE license=?',(oid,))
+                    db.execute('UPDATE grants SET updated=? WHERE license=?',(now,oid))
+                else:
+                    device=data.get('device')
+                    if not isinstance(device,str):raise ValueError('invalid_device')
+                    db.execute('DELETE FROM devices WHERE license=? AND device=?',(oid,device))
+            else:raise ValueError('invalid_action')
+            db.execute('INSERT INTO grant_audit(license,action,actor,created) VALUES (?,?,?,?)',(oid,action,actor,now))
+        return result if action in ['code','devices'] else {'ok':True,'id':oid}
 
     def handle(self, handler, path):
         if not path.startswith('/api/plus/'):return False

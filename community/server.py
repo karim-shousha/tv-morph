@@ -254,6 +254,13 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json(200, {'reviews': [dict(row) for row in rows[:50]], 'stats': stats,
                                        'pending': pending, 'next': rows[49]['id'] if len(rows) > 50 else None,
                                        'csrf': digest('admin-csrf:' + token)})
+        if path == '/api/admin/plus':
+            token = self.admin()
+            if not token:
+                return self.send_json(401, {'error': 'authentication_required'})
+            result = PLUS.grants()
+            result['csrf'] = digest('admin-csrf:' + token)
+            return self.send_json(200, result)
         return self.send_json(404, {'error': 'not_found'})
 
     def download(self, path):
@@ -314,6 +321,16 @@ class Handler(BaseHTTPRequestHandler):
         if not isinstance(data, dict):
             return self.send_json(400, {'error': 'invalid_request'})
         path = urlsplit(self.path).path
+        if path == '/api/admin/plus':
+            token = self.admin()
+            if not token or not hmac.compare_digest(str(data.get('csrf', '')), digest('admin-csrf:' + token)):
+                return self.send_json(403, {'error': 'authentication_required'})
+            if limited('plus-admin:' + self.client_key(), 120, 600):
+                return self.send_json(429, {'error': 'too_many_requests'})
+            try:
+                return self.send_json(200, PLUS.grant_action(data, digest('grant-actor:' + token)))
+            except ValueError as error:
+                return self.send_json(400, {'error': str(error)})
         if path == '/api/community/review':
             uid = self.visitor()
             if not self.valid_csrf(uid, data.get('csrf', '')):
