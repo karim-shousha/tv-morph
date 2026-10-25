@@ -1,43 +1,43 @@
 {
   "schema": 1,
-  "latest": "0.8.77",
+  "latest": "0.8.78",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.77",
+      "version": "0.8.78",
       "download": "/download/phone",
-      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
-      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
+      "noteAr": "استبدال اختصار IPTV المكرر في أعلى الموبايل باختصار Cast. تثبيت صف أيقونات التلفزيون في المنتصف أثناء التحديد، مع الاحتفاظ بالتكبير واللمعة الزجاجية.",
+      "noteEn": "Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.77",
+      "version": "0.8.78",
       "download": "/download/android",
-      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
-      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
+      "noteAr": "استبدال اختصار IPTV المكرر في أعلى الموبايل باختصار Cast. تثبيت صف أيقونات التلفزيون في المنتصف أثناء التحديد، مع الاحتفاظ بالتكبير واللمعة الزجاجية.",
+      "noteEn": "Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.77",
+      "version": "0.8.78",
       "download": "/download/firetv",
-      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
-      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified."
+      "noteAr": "استبدال اختصار IPTV المكرر في أعلى الموبايل باختصار Cast. تثبيت صف أيقونات التلفزيون في المنتصف أثناء التحديد، مع الاحتفاظ بالتكبير واللمعة الزجاجية.",
+      "noteEn": "Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قسم Cast Screen في الموبايل مع اكتشاف أجهزة DLNA وإرسال روابط الفيديو والصوت والتحكم بالتشغيل. أيقونات هوم زجاجية تكبر مع التحديد، وبدء الفوكس على IPTV في المنتصف. توافق DLNA مع الأجهزة الفعلية يحتاج تجربة.",
-      "noteEn": "Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified.",
+      "noteAr": "استبدال اختصار IPTV المكرر في أعلى الموبايل باختصار Cast. تثبيت صف أيقونات التلفزيون في المنتصف أثناء التحديد، مع الاحتفاظ بالتكبير واللمعة الزجاجية.",
+      "noteEn": "Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.77"
+      "version": "0.8.78"
     },
     {
       "id": "lg",
@@ -60,6 +60,18 @@
     }
   ],
   "releases": [
+    {
+      "name": "TV-Morph-Phone-0.8.78",
+      "file": "TV-Morph-Phone-0.8.78.apk",
+      "bytes": 9213374,
+      "sha256": "b541d75b8204e9767167631473d297cdfd52d9e90a1675cfa1f3298f3321da69"
+    },
+    {
+      "name": "TV-Morph-Android-TV-0.8.78",
+      "file": "TV-Morph-Android-TV-0.8.78.apk",
+      "bytes": 4120384,
+      "sha256": "03027714a784e336921cb05e7fe2297f39caef57e13aea57d3333c221fac9545"
+    },
     {
       "name": "TV-Morph-Phone-0.8.77",
       "file": "TV-Morph-Phone-0.8.77.apk",
@@ -1116,6 +1128,8 @@
     "TV-Morph-Phone-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Phone-0.8.75.apk",
     "TV-Morph-Android-TV-0.8.75.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/7e21943932e1e32890ce9b109c054bbb09c579e7/TV-Morph-Android-TV-0.8.75.apk",
     "TV-Morph-Phone-0.8.76.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/625078103bbf15c000a105d461881e2edde6646c/TV-Morph-Phone-0.8.76.apk",
-    "TV-Morph-Android-TV-0.8.76.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/625078103bbf15c000a105d461881e2edde6646c/TV-Morph-Android-TV-0.8.76.apk"
+    "TV-Morph-Android-TV-0.8.76.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/625078103bbf15c000a105d461881e2edde6646c/TV-Morph-Android-TV-0.8.76.apk",
+    "TV-Morph-Phone-0.8.77.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6c40193950c5f8e42c12f6a27eb5c2b75f5a557/TV-Morph-Phone-0.8.77.apk",
+    "TV-Morph-Android-TV-0.8.77.apk": "https://raw.githubusercontent.com/karim-shousha/tv-morph/a6c40193950c5f8e42c12f6a27eb5c2b75f5a557/TV-Morph-Android-TV-0.8.77.apk"
   }
 }

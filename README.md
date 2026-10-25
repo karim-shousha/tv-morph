@@ -377,3 +377,9 @@ Existing package identities, signing keys and saved settings are retained. Local
 
 Phone Cast Screen with DLNA renderer discovery, direct video/audio URL casting and playback controls. Glass Home icons magnify on focus; IPTV starts focused in the center. Physical DLNA receiver compatibility remains unverified.
 Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
+
+
+## 0.8.78
+
+Remove the duplicate phone Home IPTV shortcut and keep Cast in the four shortcuts. Keep the TV dock centered and stable during selection while retaining magnification and glass highlights.
+Existing package identities, signing keys and saved settings are retained. Local Chromium UI tests passed at 1080p/720p in Arabic/English; physical device validation is separate.
