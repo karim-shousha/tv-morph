@@ -7,6 +7,7 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 
 PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}}
+GRANT_PLANS = dict(PLANS, owner={'devices': None})
 FREE = ['blue', 'ahly', 'zamalek', 'ismaily', 'king-salman', 'crown-prince']
 
 class Plus:
@@ -66,6 +67,11 @@ class Plus:
             row=db.execute('SELECT hits FROM rate WHERE key=?',(key,)).fetchone()
             if row and row['hits']>=(240 if category=='read' else 40):raise ValueError('rate_limited')
             db.execute('INSERT INTO rate VALUES (?,1,?) ON CONFLICT(key) DO UPDATE SET hits=hits+1',(key,now+600))
+
+    @staticmethod
+    def capacity(row):
+        if row['plan']=='owner' and row['source']=='complimentary': return None
+        return PLANS[row['plan']]['devices']
 
     def checkout(self, plan):
         if not self.enabled():raise ValueError('sales_not_enabled')
@@ -128,9 +134,9 @@ class Plus:
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE');row=self.lookup(db,code);oid=row['id']
             old=db.execute('SELECT 1 FROM devices WHERE license=? AND device=?',(oid,device)).fetchone()
-            if not old and db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>=PLANS[row['plan']]['devices']:raise ValueError('device_limit')
+            if not old and self.capacity(row) is not None and db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>=self.capacity(row):raise ValueError('device_limit')
             db.execute('INSERT INTO devices VALUES (?,?,?,?,?) ON CONFLICT(license,device) DO UPDATE SET token=excluded.token,name=excluded.name',(oid,device,str(name)[:60],self.digest(token),int(time.time())))
-        return {'token':token,'active':True,'scope':'tv','plan':row['plan'],'maxDevices':PLANS[row['plan']]['devices']}
+        return {'token':token,'active':True,'scope':'tv','plan':row['plan'],'maxDevices':self.capacity(row)}
 
     def studio(self, code, device):
         if not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',str(device)):raise ValueError('invalid_device')
@@ -156,8 +162,8 @@ class Plus:
 
     def grants(self):
         with self.db() as db:
-            rows=db.execute("SELECT g.email,g.name,g.created,g.updated,o.id,o.plan,o.revoked,(SELECT COUNT(*) FROM devices d WHERE d.license=o.id) AS used FROM grants g JOIN orders o ON o.id=g.license WHERE o.source='complimentary' ORDER BY g.updated DESC,g.email LIMIT 1001").fetchall()
-        return {'grants':[dict(r,maxDevices=PLANS[r['plan']]['devices']) for r in rows[:1000]],'truncated':len(rows)>1000}
+            rows=db.execute("SELECT g.email,g.name,g.created,g.updated,o.id,o.plan,o.source,o.revoked,(SELECT COUNT(*) FROM devices d WHERE d.license=o.id) AS used FROM grants g JOIN orders o ON o.id=g.license WHERE o.source='complimentary' ORDER BY g.updated DESC,g.email LIMIT 1001").fetchall()
+        return {'grants':[dict(r,maxDevices=self.capacity(r)) for r in rows[:1000]],'truncated':len(rows)>1000}
 
     def grant_action(self, data, actor):
         action=data.get('action');now=int(time.time())
@@ -165,11 +171,11 @@ class Plus:
             db.execute('BEGIN IMMEDIATE')
             if action=='save':
                 email=self.email(data.get('email'));plan=data.get('plan');name=data.get('name','')
-                if plan not in PLANS or not isinstance(name,str) or len(name)>80 or any(ord(c)<32 for c in name):raise ValueError('invalid_grant')
+                if plan not in GRANT_PLANS or not isinstance(name,str) or len(name)>80 or any(ord(c)<32 for c in name):raise ValueError('invalid_grant')
                 row=db.execute('SELECT o.* FROM grants g JOIN orders o ON o.id=g.license WHERE g.email=?',(email,)).fetchone()
                 if row:
                     oid=row['id']
-                    if db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>PLANS[plan]['devices']:raise ValueError('remove_devices_first')
+                    if GRANT_PLANS[plan]['devices'] is not None and db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>GRANT_PLANS[plan]['devices']:raise ValueError('remove_devices_first')
                     # Editing a disabled grant never silently re-enables it.
                     db.execute('UPDATE orders SET plan=? WHERE id=?',(plan,oid))
                     db.execute('UPDATE grants SET name=?,updated=? WHERE email=?',(name.strip(),now,email))
@@ -228,14 +234,14 @@ class Plus:
                     with self.db() as db:row=db.execute('SELECT * FROM orders WHERE id=? AND proof=?',(data.get('order'),self.digest(str(data.get('proof',''))))).fetchone()
                     if not row:raise ValueError('unknown_order')
                     result={'paid':bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))}
-                    if result['paid']:result.update(code=self.code(row['id']),plan=row['plan'],maxDevices=PLANS[row['plan']]['devices'])
+                    if result['paid']:result.update(code=self.code(row['id']),plan=row['plan'],maxDevices=self.capacity(row))
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
                 elif path=='/api/plus/devices':
                     with self.db() as db:
                         row=self.lookup(db,data.get('code'));devices=db.execute('SELECT device,name,created FROM devices WHERE license=?',(row['id'],)).fetchall()
-                    result={'devices':[dict(x) for x in devices],'maxDevices':PLANS[row['plan']]['devices']}
+                    result={'devices':[dict(x) for x in devices],'maxDevices':self.capacity(row)}
                 elif path=='/api/plus/remove-device':
                     with self.db() as db:
                         row=self.lookup(db,data.get('code'));db.execute('DELETE FROM devices WHERE license=? AND device=?',(row['id'],data.get('device')))
