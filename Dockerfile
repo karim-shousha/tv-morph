@@ -15,3 +15,5 @@ VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
 EXPOSE 80
 CMD ["/opt/morph-community/start.sh"]
+
+COPY google7e2785317cb0458c.html /usr/share/nginx/html/
