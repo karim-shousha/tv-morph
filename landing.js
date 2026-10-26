@@ -16,6 +16,6 @@ function renderDownloads(){var target=document.getElementById('download-cards');
  document.getElementById('version').textContent='v'+catalog.latest;
 }
 document.getElementById('language').onclick=function(){lang=lang==='ar'?'en':'ar';localStorage.setItem('morph.site.language',lang);render();};document.getElementById('platform').onchange=renderDownloads;
-var requested=new URLSearchParams(location.search).get('platform');if(['phone','android','firetv','samsung','lg','vidaa'].indexOf(requested)>=0)document.getElementById('platform').value=requested;
+var requested=new URLSearchParams(location.search).get('platform');if(['phone','android','firetv','samsung','lg'].indexOf(requested)>=0)document.getElementById('platform').value=requested;
 render();fetch('/catalog.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error();return r.json();}).then(function(data){catalog=data;renderDownloads();}).catch(function(){var host=document.getElementById('download-cards');host.textContent=t('تعذّر تحميل النسخ. أعد تحميل الصفحة للمحاولة.','Downloads could not load. Reload the page to retry.');host.className='error';});
 })();

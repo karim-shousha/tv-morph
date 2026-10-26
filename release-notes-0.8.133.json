@@ -1,0 +1,28 @@
+{
+  "version": "0.8.133",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Light performance mode is the default; migrate old automatic setting once while retaining an explicit Full choice",
+    "Reduce Home hidden nodes, cache light-mode navigation geometry with invalidation, coalesce focus and dock scrolling, remove light dock magnification",
+    "Process-owned Android phone listener survives Activity recreation and uses alternate ports when occupied; phone discovers current receiver before authenticated requests",
+    "Correct per-device stores and launcher-aware Android store launching; LG Content Store and Samsung store fallback",
+    "LG keeps SSH 9922 and Key Server 9991 separate with clearer connection diagnostics",
+    "Remove stale LG Preview badge and auto-hide playback controls; sync visible installed LG apps through authenticated Developer Mode and verify availability",
+    "Remove offered VIDAA build, retain Hisense Android/Google TV; expose existing ADB install/update route",
+    "Move guided installation CTA into website hero next to step-by-step guide"
+  ],
+  "validation": [
+    "Real-socket production listener and production phone-client HTTP fixtures",
+    "Built Android/Samsung/LG remote/search and episode browser regressions",
+    "Production StoreAccess and ExternalLaunch with mocked Android Activity and intents",
+    "LG installed-app sync and permission/missing-app fixtures",
+    "Home light-mode CPU-throttled browser benchmark and focus-cache invalidation checks",
+    "Responsive website hero at390/1440px; signed packages and embedded payload hashes"
+  ],
+  "limitations": [
+    "Browser/transport fixtures do not certify every physical TV or codec",
+    "LG installed-app sync requires paired Developer Mode and foreground Morph TV; webOS cannot be promised a default Home replacement or persistent background Adhan",
+    "ADB updates require prior device authorization and supported port5555; initial approval or firmware prompts may remain",
+    "Legacy remains0.1.1"
+  ]
+}

@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.132",
+  "latest": "0.8.133",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.132",
+      "version": "0.8.133",
       "download": "/download/phone",
-      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
-      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
+      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
+      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.132",
+      "version": "0.8.133",
       "download": "/download/android",
-      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
-      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
+      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
+      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.132",
+      "version": "0.8.133",
       "download": "/download/firetv",
-      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
-      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
+      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
+      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
-      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry.",
+      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
+      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.132",
+      "version": "0.8.133",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.132.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.133.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.132.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.133.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,44 +57,33 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
-      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry.",
-      "version": "0.8.132",
+      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
+      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements.",
+      "version": "0.8.133",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
       "installMode": "developer-mode"
-    },
-    {
-      "id": "vidaa",
-      "name": "Hisense · VIDAA",
-      "available": false,
-      "noteAr": "نسخة ويب تجريبية VIDAA 0.1 جاهزة لاختبار التشغيل. التثبيت يحتاج صفحة التطوير على شاشة متوافقة؛ لم يتم التحقق على جهاز فعلي بعد. الربط بالموبايل غير مضاف.",
-      "noteEn": "VIDAA 0.1 hosted web build ready for runtime testing. Installation requires a compatible development page; physical TV verification is pending. No phone pairing yet.",
-      "webPreview": "/vidaa.html",
-      "installGuide": "/vidaa-install.html",
-      "runtimeAvailable": true,
-      "physicalDeviceVerified": false
     }
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.132",
-      "file": "Morph-TV-Phone-0.8.132.apk",
-      "bytes": 12680235,
-      "sha256": "57b6f6164c9c529102c01deb5ececbba31d89f8bab6ef5df03e2f6ca79360987"
+      "name": "Morph-TV-Phone-0.8.133",
+      "file": "Morph-TV-Phone-0.8.133.apk",
+      "bytes": 12684331,
+      "sha256": "d1af8c63e626bc7e7ad79d05590035a2ab6ca2522761f62140a505dbabfe67fa"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.132",
-      "file": "Morph-TV-Android-TV-0.8.132.apk",
+      "name": "Morph-TV-Android-TV-0.8.133",
+      "file": "Morph-TV-Android-TV-0.8.133.apk",
       "bytes": 3938319,
-      "sha256": "6f341b81948e6f9c27ed9f8b06a9111c0baeb4e8bb73dcdb0f2738c123fc0546"
+      "sha256": "29d00ef68e9bc50e854867948c232d005b559e08a983af7bd6bc56d2ea10f883"
     },
     {
-      "name": "Morph-TV-LG-0.8.132",
-      "file": "Morph-TV-LG-0.8.132.ipk",
-      "bytes": 3776156,
-      "sha256": "3b92dcd14cf07c43c08a7057f54c7b36ba2cff632c3b548e2b28f7e5df930ae3"
+      "name": "Morph-TV-LG-0.8.133",
+      "file": "Morph-TV-LG-0.8.133.ipk",
+      "bytes": 3777898,
+      "sha256": "d66eade40a26d8f881683edab91148bd68907e1a59c51f036ee88024a595463e"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -103,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.132",
-      "file": "Morph-TV-Samsung-Computer-0.8.132.zip",
-      "bytes": 3808516,
-      "sha256": "1cfc649093a7356137d7b672f4238294255f0f08d5d44f6a2d953c905939be6f"
+      "name": "Morph-TV-Samsung-Computer-0.8.133",
+      "file": "Morph-TV-Samsung-Computer-0.8.133.zip",
+      "bytes": 3809391,
+      "sha256": "6f4a0b15ccda16301a3e9b6ff9f062bcae8c017c5fc24e2ce548091d3cfd2c7e"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.132",
-      "file": "Morph-TV-Install-Kit-0.8.132.zip",
-      "bytes": 11553260,
-      "sha256": "4015c8f4ce8b29fe2efe268b276a135e1e2c73eddb8b9eac8d6526a89a877781"
+      "name": "Morph-TV-Install-Kit-0.8.133",
+      "file": "Morph-TV-Install-Kit-0.8.133.zip",
+      "bytes": 11557523,
+      "sha256": "d80b7f824962f839afcf5f85a474f053456b0105792c0461b13c053120572c30"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.132",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.132.zip",
-      "bytes": 3808394,
-      "sha256": "4e80feae01171565d652c36393db47cccc5bf03aa779d660b7910160d716338c"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.133",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.133.zip",
+      "bytes": 3809270,
+      "sha256": "0476eb0c90f334af95f935870b5b6b6031e5fb837a265cacf80ae45aad7d8837"
     }
   ],
   "legacy": {
@@ -131,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.132.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.133.zip"
 }
