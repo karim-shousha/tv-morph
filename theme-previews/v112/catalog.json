@@ -1,0 +1,132 @@
+{
+  "version": 112,
+  "type": "Flattened watermarked TV screenshots; no original theme files",
+  "previews": [
+    {
+      "theme": "ahli-saudi",
+      "file": "ahli-saudi.webp",
+      "bytes": 42542,
+      "sha256": "1c69ffaecfb520527d9135c7f44570734c2d7b4a59fbe47ed27a32c50d8dcb2f"
+    },
+    {
+      "theme": "ahly",
+      "file": "ahly.webp",
+      "bytes": 42912,
+      "sha256": "8a84566f6c92f2dfa1683e17203eda5262e6349db444dd3c7e612b6842361fc6"
+    },
+    {
+      "theme": "argentina",
+      "file": "argentina.webp",
+      "bytes": 44682,
+      "sha256": "9d0162f9894abddb4039e9f95cd5319777aee074ea4da896c87934cec4e8dd81"
+    },
+    {
+      "theme": "barcelona",
+      "file": "barcelona.webp",
+      "bytes": 48260,
+      "sha256": "b538db8fb7ee349c8e0f6e42d46ddf287f5efa7a4e11c81d2a34aa4b9389c921"
+    },
+    {
+      "theme": "baseball",
+      "file": "baseball.webp",
+      "bytes": 40362,
+      "sha256": "a57dc7cdbc79942b13fb257764418a1b7028a9d7480d4a090d24f38f3f28ffae"
+    },
+    {
+      "theme": "basketball",
+      "file": "basketball.webp",
+      "bytes": 40786,
+      "sha256": "df91040202429a2734dd39ae3ff3bd98f55a67752649eae9aa1aac536bc6ae42"
+    },
+    {
+      "theme": "crown-prince",
+      "file": "crown-prince.webp",
+      "bytes": 45834,
+      "sha256": "2fbda6e1c09963ee12e82c6951acc3dcc2dca12585f62cdc31793de33eaed601"
+    },
+    {
+      "theme": "egypt-national",
+      "file": "egypt-national.webp",
+      "bytes": 28254,
+      "sha256": "61b9765a1f3e106c8c57eacedd662042c188416a8f0571716faa60b653b90e18"
+    },
+    {
+      "theme": "egypt",
+      "file": "egypt.webp",
+      "bytes": 40784,
+      "sha256": "5b008c05b316b8dd50126f41114506886ffc5e63fc16715c76180191d0fdef5b"
+    },
+    {
+      "theme": "hilal",
+      "file": "hilal.webp",
+      "bytes": 42638,
+      "sha256": "4f29e3de453f1399e92dfc7c865a04a377db3ba39d2e7106e6b9533fc0f69e0f"
+    },
+    {
+      "theme": "inter-miami",
+      "file": "inter-miami.webp",
+      "bytes": 38658,
+      "sha256": "817a4a29be8dd2bf4761fb311a3e305a465101d9453452b7007901b5b97faaa2"
+    },
+    {
+      "theme": "ismaily",
+      "file": "ismaily.webp",
+      "bytes": 33634,
+      "sha256": "9fe1c2d1f71f9b4f9d99720a70668b7988e7b692a71c350ada9e22afb8f32dbc"
+    },
+    {
+      "theme": "ittihad",
+      "file": "ittihad.webp",
+      "bytes": 44934,
+      "sha256": "7a1b4793b04e5fa1515e197c12584e1a4676c56f2edf76826adc80e8f3b70cee"
+    },
+    {
+      "theme": "king-salman",
+      "file": "king-salman.webp",
+      "bytes": 28102,
+      "sha256": "8a0a8ed0aaf1de943de6cb9c975952444cd94ef2082c6be8ef010cae854d375f"
+    },
+    {
+      "theme": "madrid",
+      "file": "madrid.webp",
+      "bytes": 44140,
+      "sha256": "316f2c515203431b3b5fee5b13ef2928234e73b1764d67fba7a1f965a17ccfe8"
+    },
+    {
+      "theme": "montreal",
+      "file": "montreal.webp",
+      "bytes": 46834,
+      "sha256": "2352396dcb8a05d5846324937501987b80898c32bf0332b098b047aee10225e8"
+    },
+    {
+      "theme": "nassr",
+      "file": "nassr.webp",
+      "bytes": 42938,
+      "sha256": "3be6b959b2559d84a2309eeeb5bbc9dcaebf4c7380d11c1e286dbabca2850a68"
+    },
+    {
+      "theme": "portugal",
+      "file": "portugal.webp",
+      "bytes": 43118,
+      "sha256": "d616721970324fad1d78280223103a5c6e6877f364932b676b8501ba5ea6a696"
+    },
+    {
+      "theme": "saudi-national",
+      "file": "saudi-national.webp",
+      "bytes": 63612,
+      "sha256": "7654fd3642e33659dd71fd93c43aeb13745c105957d2b950e88c8c4d7d72eddf"
+    },
+    {
+      "theme": "toronto",
+      "file": "toronto.webp",
+      "bytes": 45756,
+      "sha256": "4f28dd32a7bd49af76ec097dea7a21c249338744c254c95014f6e5621cadaac3"
+    },
+    {
+      "theme": "zamalek",
+      "file": "zamalek.webp",
+      "bytes": 47572,
+      "sha256": "3448802fcf5e1513139c942872bc7e3d37f4616568ffa73644005b90553d89fe"
+    }
+  ]
+}

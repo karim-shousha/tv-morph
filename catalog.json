@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.111",
+  "latest": "0.8.112",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.111",
+      "version": "0.8.112",
       "download": "/download/phone",
-      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
-      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
+      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
+      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.111",
+      "version": "0.8.112",
       "download": "/download/android",
-      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
-      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
+      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
+      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.111",
+      "version": "0.8.112",
       "download": "/download/firetv",
-      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
-      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
+      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
+      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
-      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes.",
+      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
+      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.111"
+      "version": "0.8.112"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
-      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes.",
-      "version": "0.8.111",
+      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
+      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote.",
+      "version": "0.8.112",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.111",
-      "file": "Morph-TV-Phone-0.8.111.apk",
-      "bytes": 12286355,
-      "sha256": "4972b0299252a6776d1473a2ff4bc1b6b4e00bc6cb93dd8486e8fca51d635cd1"
+      "name": "Morph-TV-Phone-0.8.112",
+      "file": "Morph-TV-Phone-0.8.112.apk",
+      "bytes": 12290451,
+      "sha256": "758868d8f76ac5bd5ccdb52c6617b0552448a0a31f3612c8d702e086ea81e9de"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.111",
-      "file": "Morph-TV-Android-TV-0.8.111.apk",
+      "name": "Morph-TV-Android-TV-0.8.112",
+      "file": "Morph-TV-Android-TV-0.8.112.apk",
       "bytes": 3842792,
-      "sha256": "9212ba8848cc0b891be03ce96c3dcfd477f3306ebca444fc783e8065f279b1c7"
+      "sha256": "da099963b5cfb9e27e496892bf4e906528a0f5f1ee23af643ad2cc786f8dde6e"
     },
     {
-      "name": "Morph-TV-LG-0.8.111",
-      "file": "Morph-TV-LG-0.8.111.ipk",
-      "bytes": 3697596,
-      "sha256": "60abc82995e811a6ebcd4e93d9f31b4a0bfe1126da8353035420803566c6650c"
+      "name": "Morph-TV-LG-0.8.112",
+      "file": "Morph-TV-LG-0.8.112.ipk",
+      "bytes": 3699340,
+      "sha256": "9a2dab961e081bfb4230c3bec32043e15c70a43f233d67d40860544749b678c3"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
