@@ -34,8 +34,8 @@
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
-      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player.",
+      "noteAr": "حزمة Tizen 4 جاهزة للتجربة على NU7100 وN5300 من الكمبيوتر؛ لم تختبر فعليًا على الجهازين.",
+      "noteEn": "Ready experimental Tizen 4 computer package for NU7100 and N5300; not physically verified on these TVs.",
       "webPreview": "/web-tv.html",
       "version": "0.8.126",
       "minTizen": "5.0",
@@ -46,7 +46,12 @@
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
-      "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0"
+      "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip",
+      "compatibilityModels": [
+        "UA43NU7100",
+        "UA43N5300"
+      ]
     },
     {
       "id": "lg",
