@@ -3,7 +3,7 @@
   "version": "0.8.131",
   "physicalTVVerified": false,
   "target": "webOS 5.0+ initial candidate; older versions unverified",
-  "sha256": "55f84a5b49902748713a81c3a95e637a1851be2e1c19d6c9f936065aa7ffe5e1",
-  "bytes": 3776132,
+  "sha256": "3a33aba4f9326b014e008bbbb1875e10fee80bbdd00be9084e62719eba89da24",
+  "bytes": 3776164,
   "productionFilesUnchanged": true
 }
