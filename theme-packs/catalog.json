@@ -161,25 +161,25 @@
     },
     {
       "id": "egypt-extra",
-      "version": 2,
+      "version": 3,
       "themes": [
         "ismaily"
       ],
       "files": [
         {
           "name": "ismaily-crest-v1.webp",
-          "file": "egypt-extra-v2-ismaily-crest-v1.webp",
+          "file": "egypt-extra-v3-ismaily-crest-v1.webp",
           "bytes": 40212,
           "sha256": "2e156c987983dba89aa204bff02eb024258ee4f1e5538dc5f26e8516408da285"
         },
         {
-          "name": "ismaily-team-v1.webp",
-          "file": "egypt-extra-v2-ismaily-team-v1.webp",
-          "bytes": 406718,
-          "sha256": "bd77c523fe3fbb435df06ddeaade72a1e39e00da8477a7f69bdb958b59188066"
+          "name": "ismaily-team-hq-v2.webp",
+          "file": "egypt-extra-v3-ismaily-team-hq-v2.webp",
+          "bytes": 1599242,
+          "sha256": "7b5972951db62b1a396e2d5a4c8ea3b2b1c3fa7376ecabd01708b889c75daf3e"
         }
       ],
-      "bytes": 446930,
+      "bytes": 1639454,
       "tier": "free",
       "titleAr": "\u0627\u0644\u0625\u0633\u0645\u0627\u0639\u064a\u0644\u064a",
       "titleEn": "Ismaily"
@@ -224,7 +224,7 @@
     },
     {
       "id": "saudi-clubs",
-      "version": 3,
+      "version": 4,
       "themes": [
         "nassr",
         "hilal",
@@ -234,54 +234,54 @@
       "files": [
         {
           "name": "ahli-saudi-crest-v1.webp",
-          "file": "saudi-clubs-v3-ahli-saudi-crest-v1.webp",
+          "file": "saudi-clubs-v4-ahli-saudi-crest-v1.webp",
           "bytes": 26134,
           "sha256": "05a1edf4ba840cb9bfb6d32663f162d148235310a5f84e968d8565c475f503b8"
         },
         {
           "name": "ahli-saudi-stars-cutout-v2.webp",
-          "file": "saudi-clubs-v3-ahli-saudi-stars-cutout-v2.webp",
+          "file": "saudi-clubs-v4-ahli-saudi-stars-cutout-v2.webp",
           "bytes": 349268,
           "sha256": "72add9ffde017c598184792a3c2870d18b8d7b1129fc752972fb8210374eec5d"
         },
         {
           "name": "hilal-crest-v1.webp",
-          "file": "saudi-clubs-v3-hilal-crest-v1.webp",
+          "file": "saudi-clubs-v4-hilal-crest-v1.webp",
           "bytes": 8284,
           "sha256": "acd529f9b229ee0c3c7817fb1cac7fba0e6db7443de8ca75eb303cfc0ea7820e"
         },
         {
           "name": "hilal-stars-cutout-v2.webp",
-          "file": "saudi-clubs-v3-hilal-stars-cutout-v2.webp",
+          "file": "saudi-clubs-v4-hilal-stars-cutout-v2.webp",
           "bytes": 388996,
           "sha256": "ecbd597fc42e28cc7bef7c8d88a1eca0e3f535f806f139a98be3e8406caacf65"
         },
         {
           "name": "ittihad-crest-v1.webp",
-          "file": "saudi-clubs-v3-ittihad-crest-v1.webp",
+          "file": "saudi-clubs-v4-ittihad-crest-v1.webp",
           "bytes": 18778,
           "sha256": "b90510f9cd757beb9a7776b103978c3a0e9cb5293cc49bf13b21a255a7362ed2"
         },
         {
-          "name": "ittihad-stars-cutout-v2.webp",
-          "file": "saudi-clubs-v3-ittihad-stars-cutout-v2.webp",
-          "bytes": 510742,
-          "sha256": "d80e60d5b1efde5fef6b7341776c33290a9811982b85d07f430c4f038999a2e5"
+          "name": "ittihad-stars-cutout-hq-v3.webp",
+          "file": "saudi-clubs-v4-ittihad-stars-cutout-hq-v3.webp",
+          "bytes": 1628720,
+          "sha256": "123218931d46a450046a37a2964ba6d10c4e605777aa61a89b7653ce6a0d1645"
         },
         {
           "name": "nassr-crest-v1.webp",
-          "file": "saudi-clubs-v3-nassr-crest-v1.webp",
+          "file": "saudi-clubs-v4-nassr-crest-v1.webp",
           "bytes": 32934,
           "sha256": "df36e0969e04f546064d066c73bf5cb25d1a3c37e5e0af48c0b5dd4f4351450a"
         },
         {
           "name": "nassr-stars-cutout-v2.webp",
-          "file": "saudi-clubs-v3-nassr-stars-cutout-v2.webp",
+          "file": "saudi-clubs-v4-nassr-stars-cutout-v2.webp",
           "bytes": 320374,
           "sha256": "eb8391bc573c709c75ab95c2069438594f7b967ebaecf57c558a5013dd152c54"
         }
       ],
-      "bytes": 1655510,
+      "bytes": 2773488,
       "tier": "plus",
       "titleAr": "\u0627\u0644\u0623\u0646\u062f\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629",
       "titleEn": "Saudi clubs"
@@ -556,6 +556,66 @@
       "file": "egypt-extra-v1-ismaily-team-v1.webp",
       "bytes": 66778,
       "sha256": "aae264990f16925f26851474c944f723adceb03fbc342423e7671c3237e42998"
+    },
+    {
+      "name": "ismaily-crest-v1.webp",
+      "file": "egypt-extra-v2-ismaily-crest-v1.webp",
+      "bytes": 40212,
+      "sha256": "2e156c987983dba89aa204bff02eb024258ee4f1e5538dc5f26e8516408da285"
+    },
+    {
+      "name": "ismaily-team-v1.webp",
+      "file": "egypt-extra-v2-ismaily-team-v1.webp",
+      "bytes": 406718,
+      "sha256": "bd77c523fe3fbb435df06ddeaade72a1e39e00da8477a7f69bdb958b59188066"
+    },
+    {
+      "name": "ahli-saudi-crest-v1.webp",
+      "file": "saudi-clubs-v3-ahli-saudi-crest-v1.webp",
+      "bytes": 26134,
+      "sha256": "05a1edf4ba840cb9bfb6d32663f162d148235310a5f84e968d8565c475f503b8"
+    },
+    {
+      "name": "ahli-saudi-stars-cutout-v2.webp",
+      "file": "saudi-clubs-v3-ahli-saudi-stars-cutout-v2.webp",
+      "bytes": 349268,
+      "sha256": "72add9ffde017c598184792a3c2870d18b8d7b1129fc752972fb8210374eec5d"
+    },
+    {
+      "name": "hilal-crest-v1.webp",
+      "file": "saudi-clubs-v3-hilal-crest-v1.webp",
+      "bytes": 8284,
+      "sha256": "acd529f9b229ee0c3c7817fb1cac7fba0e6db7443de8ca75eb303cfc0ea7820e"
+    },
+    {
+      "name": "hilal-stars-cutout-v2.webp",
+      "file": "saudi-clubs-v3-hilal-stars-cutout-v2.webp",
+      "bytes": 388996,
+      "sha256": "ecbd597fc42e28cc7bef7c8d88a1eca0e3f535f806f139a98be3e8406caacf65"
+    },
+    {
+      "name": "ittihad-crest-v1.webp",
+      "file": "saudi-clubs-v3-ittihad-crest-v1.webp",
+      "bytes": 18778,
+      "sha256": "b90510f9cd757beb9a7776b103978c3a0e9cb5293cc49bf13b21a255a7362ed2"
+    },
+    {
+      "name": "ittihad-stars-cutout-v2.webp",
+      "file": "saudi-clubs-v3-ittihad-stars-cutout-v2.webp",
+      "bytes": 510742,
+      "sha256": "d80e60d5b1efde5fef6b7341776c33290a9811982b85d07f430c4f038999a2e5"
+    },
+    {
+      "name": "nassr-crest-v1.webp",
+      "file": "saudi-clubs-v3-nassr-crest-v1.webp",
+      "bytes": 32934,
+      "sha256": "df36e0969e04f546064d066c73bf5cb25d1a3c37e5e0af48c0b5dd4f4351450a"
+    },
+    {
+      "name": "nassr-stars-cutout-v2.webp",
+      "file": "saudi-clubs-v3-nassr-stars-cutout-v2.webp",
+      "bytes": 320374,
+      "sha256": "eb8391bc573c709c75ab95c2069438594f7b967ebaecf57c558a5013dd152c54"
     }
   ]
 }

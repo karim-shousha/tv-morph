@@ -1,0 +1,36 @@
+{
+  "version": "0.8.107",
+  "changes": [
+    "Regenerated high-detail Ismaily and Ittihad cutouts with transparent alpha and lossless WebP",
+    "Inter Miami pink and black theme with owner supplied crest; player photo pending generation failure",
+    "Owner Egypt, Saudi emblem and Ittihad images preserved; old source exports archived outside builds"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.107",
+      "file": "Morph-TV-Phone-0.8.107.apk",
+      "bytes": 12265519,
+      "sha256": "d7ad736abdd798cde93637cf1df9bc20390575cfbbeed1eb27b01a6118b4ff5a"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.107",
+      "file": "Morph-TV-Android-TV-0.8.107.apk",
+      "bytes": 3838485,
+      "sha256": "451b0bebe435388f2e84d5b217e49fbfce5335aa0f57a1e44ebfa1e9fc5e56bf"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.107",
+      "file": "Morph-TV-LG-0.8.107.ipk",
+      "bytes": 3693178,
+      "sha256": "d50078e5c47ff6b8732ee32b75d09da3d71d253771c8dc583ca717a5c0f08e40"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}
