@@ -1,0 +1,36 @@
+{
+  "version": "0.8.111",
+  "changes": [
+    "Phone remote redesign: high contrast keys, colorful semantic SVG icons, legible disabled controls, touch mode and existing key/long press actions retained",
+    "Inter Miami pink and black theme with owner supplied crest and player art",
+    "Owner Egypt, Saudi emblem and Ittihad images preserved; old source exports archived outside builds"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.111",
+      "file": "Morph-TV-Phone-0.8.111.apk",
+      "bytes": 12286355,
+      "sha256": "4972b0299252a6776d1473a2ff4bc1b6b4e00bc6cb93dd8486e8fca51d635cd1"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.111",
+      "file": "Morph-TV-Android-TV-0.8.111.apk",
+      "bytes": 3842792,
+      "sha256": "9212ba8848cc0b891be03ce96c3dcfd477f3306ebca444fc783e8065f279b1c7"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.111",
+      "file": "Morph-TV-LG-0.8.111.ipk",
+      "bytes": 3697596,
+      "sha256": "60abc82995e811a6ebcd4e93d9f31b4a0bfe1126da8353035420803566c6650c"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}

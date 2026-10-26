@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.110",
+  "latest": "0.8.111",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.110",
+      "version": "0.8.111",
       "download": "/download/phone",
-      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
-      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
+      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
+      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.110",
+      "version": "0.8.111",
       "download": "/download/android",
-      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
-      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
+      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
+      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.110",
+      "version": "0.8.111",
       "download": "/download/firetv",
-      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
-      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
+      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
+      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
-      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus.",
+      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
+      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.110"
+      "version": "0.8.111"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
-      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus.",
-      "version": "0.8.110",
+      "noteAr": "تصميم ريموت أوضح بأيقونات ملوّنة وتباين قوي في الوضعين الفاتح والغامق.",
+      "noteEn": "Clearer phone remote with colorful icons and strong contrast in light and dark modes.",
+      "version": "0.8.111",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.110",
-      "file": "Morph-TV-Phone-0.8.110.apk",
-      "bytes": 12282114,
-      "sha256": "58f5ab7ae5eac3d681d97d98611c8273386639739e8b20225137d34ef4e684b7"
+      "name": "Morph-TV-Phone-0.8.111",
+      "file": "Morph-TV-Phone-0.8.111.apk",
+      "bytes": 12286355,
+      "sha256": "4972b0299252a6776d1473a2ff4bc1b6b4e00bc6cb93dd8486e8fca51d635cd1"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.110",
-      "file": "Morph-TV-Android-TV-0.8.110.apk",
+      "name": "Morph-TV-Android-TV-0.8.111",
+      "file": "Morph-TV-Android-TV-0.8.111.apk",
       "bytes": 3842792,
-      "sha256": "23f0a0ee8fc624231ab206f0bc32c06b7aaa0fe1906a165a8b27b0d0fa2d46c2"
+      "sha256": "9212ba8848cc0b891be03ce96c3dcfd477f3306ebca444fc783e8065f279b1c7"
     },
     {
-      "name": "Morph-TV-LG-0.8.110",
-      "file": "Morph-TV-LG-0.8.110.ipk",
-      "bytes": 3697564,
-      "sha256": "32326d04ac3d429644fad90a0a42510075966957a68bf227402f99bf2ff241a5"
+      "name": "Morph-TV-LG-0.8.111",
+      "file": "Morph-TV-LG-0.8.111.ipk",
+      "bytes": 3697596,
+      "sha256": "60abc82995e811a6ebcd4e93d9f31b4a0bfe1126da8353035420803566c6650c"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
