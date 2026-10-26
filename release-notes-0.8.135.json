@@ -1,0 +1,25 @@
+{
+  "version": "0.8.135",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Fix Android/Google/Hisense/Fire TV input inventory: TV Input Framework software channel providers are no longer treated as physical TV inputs",
+    "Share the same hardware-only inventory between Home/Last HDMI and the alternate HDMI player; reject unverified/stale IDs in the fallback player",
+    "Keep explicit OEM HDMI labels and native input IDs/connector numbers, group CEC children under their parent, keep stable order and preserve standby connection state",
+    "Add Android input diagnostics with raw service metadata and normalized sources; do not fabricate HDMI ports when firmware exposes none",
+    "Preserve Samsung, Samsung Tizen4, LG, mobile player controls and default light mode"
+  ],
+  "validation": [
+    "Production AndroidInputs collector with screenshot-like raw provider fixtures: software Movies/AirPlay/Haystack removed, physical generic-tuner HDMI retained, reordering, exact IDs, CEC grouping, standby and provider errors",
+    "Built Android input UI consumes the actual production collector output for Hisense/OEM, Google TV, Fire TV television and Fire Stick scenarios; software apps remain in Your Apps",
+    "Built Samsung and packaged Tizen4 public TV source API fixtures: names, order, deduplication, native source identity, HDMI/Back and native TV launch",
+    "Built LG input/application sync integration with mocked public APIs",
+    "Android/Samsung/LG remote search and live-channel tests; Samsung/LG episode boundaries; five-language player layout",
+    "Signed Android/phone packages, matching embedded TV/IPK payloads, installer integrity and release hashes"
+  ],
+  "limitations": [
+    "No physical Hisense raw input dump is available; OEM fixtures do not certify every model",
+    "Firmware may hide hardware inputs or block switching; use Input diagnostics and the TV system remote/settings in that case",
+    "A Fire Stick or external Android box does not expose the television HDMI sockets as its own inputs",
+    "Legacy0.1.1 remains unchanged and uses Android system playback controls"
+  ]
+}
