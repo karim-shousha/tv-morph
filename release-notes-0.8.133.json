@@ -9,7 +9,8 @@
     "LG keeps SSH 9922 and Key Server 9991 separate with clearer connection diagnostics",
     "Remove stale LG Preview badge and auto-hide playback controls; sync visible installed LG apps through authenticated Developer Mode and verify availability",
     "Remove offered VIDAA build, retain Hisense Android/Google TV; expose existing ADB install/update route",
-    "Move guided installation CTA into website hero next to step-by-step guide"
+    "Move guided installation CTA into website hero next to step-by-step guide",
+    "Stamp LG installer version and SHA-256 from the exact embedded IPK at build time; preserve UTF-8 installed-app titles"
   ],
   "validation": [
     "Real-socket production listener and production phone-client HTTP fixtures",
@@ -17,7 +18,8 @@
     "Production StoreAccess and ExternalLaunch with mocked Android Activity and intents",
     "LG installed-app sync and permission/missing-app fixtures",
     "Home light-mode CPU-throttled browser benchmark and focus-cache invalidation checks",
-    "Responsive website hero at390/1440px; signed packages and embedded payload hashes"
+    "Responsive website hero at390/1440px; signed packages and embedded payload hashes",
+    "Signed phone APK DEX contains the SHA-256 of its embedded LG IPK"
   ],
   "limitations": [
     "Browser/transport fixtures do not certify every physical TV or codec",
