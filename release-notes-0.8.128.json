@@ -1,0 +1,25 @@
+{
+  "version": "0.8.128",
+  "changes": [
+    "Connect account field clicks and Android OK to native input method requests",
+    "Add a local-only fallback keyboard for server, username, password and library name on active IPTV builds",
+    "Arabic/Latin letters, uppercase, digits and printable ASCII symbols; mask passwords; clear transient draft on close",
+    "Back cancels keyboard draft and returns focus without closing account settings",
+    "Remote phone text can target account fields as well as search",
+    "Preserve left/right cursor editing and up/down field navigation",
+    "Includes phone 0.8.127 local subscription and touch player fixes across current native receivers"
+  ],
+  "tests": [
+    "Signed APKs and LG IPK built; phone embeds matching receiver packages",
+    "Built Android/phone/LG/Samsung keyboard UI fixtures: native show request, remote text, password masking, symbols, save/cancel, Back, DPAD/Enter",
+    "Credentials and local provider HTTP auth regression",
+    "Native seek policy and stream fallback regression",
+    "Computer/kit manifests and all hashes verified"
+  ],
+  "limitations": [
+    "Native Android IME request tested with bridge mocks; no physical phone or TV attached",
+    "Physical Samsung and LG installation still unverified on reported models",
+    "Legacy 0.1.1 is unchanged",
+    "Does not disable Play Protect or bypass platform security"
+  ]
+}

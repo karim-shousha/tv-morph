@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.127",
+  "latest": "0.8.128",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.127",
+      "version": "0.8.128",
       "download": "/download/phone",
-      "noteAr": "إصلاح حفظ اشتراك IPTV على الموبايل دون تلفزيون، وروابط Xtream والتحكم باللمس والرجوع والتقديم.",
-      "noteEn": "Fix phone-local IPTV setup, Xtream URL input, touch controls, Back and seeking."
+      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
+      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.126",
+      "version": "0.8.128",
       "download": "/download/android",
-      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
-      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
+      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
+      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.126",
+      "version": "0.8.128",
       "download": "/download/firetv",
-      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
-      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
+      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
+      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "حزمة Tizen 4 جاهزة للتجربة على NU7100 وN5300 من الكمبيوتر؛ لم تختبر فعليًا على الجهازين.",
-      "noteEn": "Ready experimental Tizen 4 computer package for NU7100 and N5300; not physically verified on these TVs.",
+      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
+      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.126",
+      "version": "0.8.128",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.126.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.128.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.128.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
-      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player.",
-      "version": "0.8.126",
+      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
+      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback.",
+      "version": "0.8.128",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -79,16 +79,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Android-TV-0.8.126",
-      "file": "Morph-TV-Android-TV-0.8.126.apk",
-      "bytes": 3925876,
-      "sha256": "8a9bc2d6f1ba13dc48c64ead30c7b611b763c45e1e63687197658b7da18a2ca8"
+      "name": "Morph-TV-Phone-0.8.128",
+      "file": "Morph-TV-Phone-0.8.128.apk",
+      "bytes": 12655659,
+      "sha256": "f3d6a81194af79a26d1faefac9ada4dae17663f1b23442891224a451b0d3b337"
     },
     {
-      "name": "Morph-TV-LG-0.8.126",
-      "file": "Morph-TV-LG-0.8.126.ipk",
-      "bytes": 3768522,
-      "sha256": "8501df8129d99375dc8331687945a9453f9fb13c49295aef23f7944df036c9f2"
+      "name": "Morph-TV-Android-TV-0.8.128",
+      "file": "Morph-TV-Android-TV-0.8.128.apk",
+      "bytes": 3930127,
+      "sha256": "5a689b88090f3f99441e324cf7c16c5218d725f06cf31c066b7a4f853795245c"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.128",
+      "file": "Morph-TV-LG-0.8.128.ipk",
+      "bytes": 3771208,
+      "sha256": "8b50ef5b17e0f79c487403fe02ea12b311b782f720778a0b0fbd0f32a15fecfb"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -97,28 +103,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.126",
-      "file": "Morph-TV-Samsung-Computer-0.8.126.zip",
-      "bytes": 3801198,
-      "sha256": "129bb354161bc01e93fbe391bad132b110da0e6a4b0c405bf6b78734bf8d689e"
+      "name": "Morph-TV-Samsung-Computer-0.8.128",
+      "file": "Morph-TV-Samsung-Computer-0.8.128.zip",
+      "bytes": 3805003,
+      "sha256": "b64db3aaf5f5ee7dbfae1612c1070f0cb29de0b644355bc49fdd001f568dc27f"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.126",
-      "file": "Morph-TV-Install-Kit-0.8.126.zip",
-      "bytes": 11524666,
-      "sha256": "e0a182dc092d16f9c17607b94276e0987595a16d934cf7a5ad377a54c44d4deb"
+      "name": "Morph-TV-Install-Kit-0.8.128",
+      "file": "Morph-TV-Install-Kit-0.8.128.zip",
+      "bytes": 11536908,
+      "sha256": "108145e13c65aa4c351729991ba0ae1113cfa8b45c9992359673f98e8f7940c8"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.126",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip",
-      "bytes": 3801076,
-      "sha256": "3d7a4b2eb3bb90488f957a171ba38a4de8a1996ca6fbf3b269882ae4a7d3e622"
-    },
-    {
-      "name": "Morph-TV-Phone-0.8.127",
-      "file": "Morph-TV-Phone-0.8.127.apk",
-      "bytes": 12639120,
-      "sha256": "601829de59ea59a65ccbddb54eff9a24aab8e0fe2718999f2681fd36716e7587"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.128",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.128.zip",
+      "bytes": 3804881,
+      "sha256": "746c3b3ed6f340e62574081c7428c0f5d3fffb2c97ee416ad7fdb07f58034502"
     }
   ],
   "legacy": {
@@ -131,5 +131,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.126.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.128.zip"
 }
