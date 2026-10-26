@@ -1,0 +1,22 @@
+{
+  "version": "0.8.130",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Samsung and LG live playback accepts Up/Down and channel keys; mobile remote uses the same channel-switch path",
+    "Android live player switches through the originating IPTV library without stacking player Activities; movies retain seek and control navigation",
+    "Empty installed-app Search opens the input and native Android keyboard; nonempty Search submits the filter",
+    "Held arrow repeats no longer immediately eject focus from a newly selected text input; OK begins editing before submission",
+    "Existing free Madrid/Barcelona themes and Plus offer unchanged"
+  ],
+  "validation": [
+    "Actual Android/Samsung/LG bundle search editing, held-arrow focus and filter submission in browser fixtures",
+    "Samsung/LG real UI to local provider fixture: live channel 1 to 2 to 1 and mobile remote switch; mocked video decoders",
+    "Signed non-debug APKs, unchanged signing identity and matching embedded receiver packages",
+    "Package checksums and native Android compilation"
+  ],
+  "limitations": [
+    "No physical TV or phone attached; Android remote/video runtime and manufacturer-specific IME behavior need device confirmation",
+    "No change to Legacy 0.1.1",
+    "Channel switching uses the live list currently available in the IPTV library"
+  ]
+}

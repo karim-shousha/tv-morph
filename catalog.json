@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.129",
+  "latest": "0.8.130",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.129",
+      "version": "0.8.130",
       "download": "/download/phone",
-      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
-      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
+      "noteAr": "تغيير قنوات IPTV بفوق وتحت من الريموت، وإصلاح فتح البحث وثبات خانة الكتابة في التطبيقات.",
+      "noteEn": "IPTV live channel switching with remote Up/Down and stable installed-app search editing."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.129",
+      "version": "0.8.130",
       "download": "/download/android",
-      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
-      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
+      "noteAr": "تغيير قنوات IPTV بفوق وتحت من الريموت، وإصلاح فتح البحث وثبات خانة الكتابة في التطبيقات.",
+      "noteEn": "IPTV live channel switching with remote Up/Down and stable installed-app search editing."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.129",
+      "version": "0.8.130",
       "download": "/download/firetv",
-      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
-      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
+      "noteAr": "تغيير قنوات IPTV بفوق وتحت من الريموت، وإصلاح فتح البحث وثبات خانة الكتابة في التطبيقات.",
+      "noteEn": "IPTV live channel switching with remote Up/Down and stable installed-app search editing."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
-      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms.",
+      "noteAr": "تغيير قنوات IPTV بفوق وتحت من الريموت، وإصلاح فتح البحث وثبات خانة الكتابة في التطبيقات.",
+      "noteEn": "IPTV live channel switching with remote Up/Down and stable installed-app search editing.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.129",
+      "version": "0.8.130",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.129.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.130.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.129.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.130.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
-      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms.",
-      "version": "0.8.129",
+      "noteAr": "تغيير قنوات IPTV بفوق وتحت من الريموت، وإصلاح فتح البحث وثبات خانة الكتابة في التطبيقات.",
+      "noteEn": "IPTV live channel switching with remote Up/Down and stable installed-app search editing.",
+      "version": "0.8.130",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -79,22 +79,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.129",
-      "file": "Morph-TV-Phone-0.8.129.apk",
-      "bytes": 12663851,
-      "sha256": "e16c5d3027a28f7584b2397edab97fc8c5e8a8c97a48b97465c8f198812deaae"
+      "name": "Morph-TV-Phone-0.8.130",
+      "file": "Morph-TV-Phone-0.8.130.apk",
+      "bytes": 12667947,
+      "sha256": "9d887a8b889d207d35a084489de5377489ffb3120c373734cef3ee6c4d2c3bf3"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.129",
-      "file": "Morph-TV-Android-TV-0.8.129.apk",
+      "name": "Morph-TV-Android-TV-0.8.130",
+      "file": "Morph-TV-Android-TV-0.8.130.apk",
       "bytes": 3934223,
-      "sha256": "4aaa66355c1805af2368f175721c36e7a139aeb72c05a0db24a11f96b7041d57"
+      "sha256": "24bc3da0665cd78f16254f71c271c3c1530a4d2c9e936de0c63dcb2b9926ed37"
     },
     {
-      "name": "Morph-TV-LG-0.8.129",
-      "file": "Morph-TV-LG-0.8.129.ipk",
-      "bytes": 3773370,
-      "sha256": "ef24ab8eecee5e21474276882e72e95d89dd2ee149c1ce3696d9b57c79bd8f0f"
+      "name": "Morph-TV-LG-0.8.130",
+      "file": "Morph-TV-LG-0.8.130.ipk",
+      "bytes": 3773896,
+      "sha256": "4fbbf1ae36f7f3c12c2afd9c282e8d95aa0f8bed80ce81f53d2a79fed9dd00ef"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -103,22 +103,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.129",
-      "file": "Morph-TV-Samsung-Computer-0.8.129.zip",
-      "bytes": 3806734,
-      "sha256": "46aeb4275c8e05af473700e069d254b5a1083cc69d2a317ee9733b5e9367963a"
+      "name": "Morph-TV-Samsung-Computer-0.8.130",
+      "file": "Morph-TV-Samsung-Computer-0.8.130.zip",
+      "bytes": 3806924,
+      "sha256": "73c925016d7fb42e26c0367c74d510d19a63c4c25ea5d3538bec4bb5578faab2"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.129",
-      "file": "Morph-TV-Install-Kit-0.8.129.zip",
-      "bytes": 11542490,
-      "sha256": "2befe7d7fd1b703046d3b25bec831894ddcabd4bee654431b75599e17b684007"
+      "name": "Morph-TV-Install-Kit-0.8.130",
+      "file": "Morph-TV-Install-Kit-0.8.130.zip",
+      "bytes": 11544717,
+      "sha256": "236f4cd0b2eab72d74c9e046653cb299d947db5fabb522310d749f9ea41bca84"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.129",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.129.zip",
-      "bytes": 3806612,
-      "sha256": "99842b316c00f70467505a0a999d9f095f8352e651cad0df0ece3e55d6cde0c7"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.130",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.130.zip",
+      "bytes": 3806802,
+      "sha256": "01a9b0f4a2d304e307532f981ce1ab4ce8755150d0365610bafc0e22954ff1e1"
     }
   ],
   "legacy": {
@@ -131,5 +131,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.129.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.130.zip"
 }
