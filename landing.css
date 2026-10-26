@@ -51,3 +51,5 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{
 .hero-actions{flex-wrap:wrap}.hero-actions .plus-cta{background:linear-gradient(120deg,#f4d98e,#ffeec1);color:#39264e;border-color:#dbbb6a;font-weight:700}
 
 .contact-section{max-width:1100px;margin:60px auto;padding:32px;border:1px solid #d9d2e8;border-radius:24px;background:#fff;scroll-margin-top:90px}.contact-section p{line-height:1.9}.contact-section>a{display:inline-block;font-size:22px;font-weight:700;color:#6335b5;overflow-wrap:anywhere;user-select:all}@media(max-width:700px){.contact-section{margin:32px 20px;padding:24px}.contact-section>a{font-size:18px}}
+
+.download-counter-bar{text-align:center;padding:14px 5% 0}.download-counter-bar .download-live-count{margin:0;font-size:19px;padding:10px 24px;border-radius:999px;box-shadow:0 5px 20px #5932cd12}.download-counter-bar .download-live-count:hover{background:#eae0ff}@media(max-width:520px){.download-counter-bar{padding-top:12px}.download-counter-bar .download-live-count{font-size:17px;padding:9px 20px}}
