@@ -1,0 +1,15 @@
+{
+  "version": "0.8.126",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Automatic light mode includes Android 8/9 and up to 3 GB RAM; older Tizen and limited browser capability signals",
+    "Persist Android performance mode and share it with IPTV/radio; preserve manual Full override",
+    "Remove unnecessary category/card redraw on every live focus; debounce preview image loading",
+    "Disable heavy media blur, animated scaling and glow in light mode while preserving focus outlines",
+    "Fallback to public Android TvView passthrough playback when native input Activity launch fails; provide explicit alternate HDMI player button"
+  ],
+  "limitations": [
+    "Actual HOHO firmware HDMI session support requires physical test",
+    "Performance checked with simulated low-memory settings; no physical slow-TV timing claim"
+  ]
+}

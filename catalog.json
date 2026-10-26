@@ -1,48 +1,48 @@
 {
   "schema": 1,
-  "latest": "0.8.125",
+  "latest": "0.8.126",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.125",
+      "version": "0.8.126",
       "download": "/download/phone",
-      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
-      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
+      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
+      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.125",
+      "version": "0.8.126",
       "download": "/download/android",
-      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
-      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
+      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
+      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.125",
+      "version": "0.8.126",
       "download": "/download/firetv",
-      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
-      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
+      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
+      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
-      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android.",
+      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
+      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.125",
+      "version": "0.8.126",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.125.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.126.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -52,9 +52,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
-      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android.",
-      "version": "0.8.125",
+      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
+      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player.",
+      "version": "0.8.126",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,22 +74,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.125",
-      "file": "Morph-TV-Phone-0.8.125.apk",
-      "bytes": 12622658,
-      "sha256": "89ea1a45446a32a34b7de6b569743833906561092940e2231fd1b54640c290e1"
+      "name": "Morph-TV-Phone-0.8.126",
+      "file": "Morph-TV-Phone-0.8.126.apk",
+      "bytes": 12639120,
+      "sha256": "f674c6dee8d092efe500193db3544b25f73f5799bf76ce6af361bd909842a97d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.125",
-      "file": "Morph-TV-Android-TV-0.8.125.apk",
-      "bytes": 3917527,
-      "sha256": "ee523539164e12ba7d72ad6676962ecb4c9aa6f6f4482692d342105a6e05939b"
+      "name": "Morph-TV-Android-TV-0.8.126",
+      "file": "Morph-TV-Android-TV-0.8.126.apk",
+      "bytes": 3925876,
+      "sha256": "8a9bc2d6f1ba13dc48c64ead30c7b611b763c45e1e63687197658b7da18a2ca8"
     },
     {
-      "name": "Morph-TV-LG-0.8.125",
-      "file": "Morph-TV-LG-0.8.125.ipk",
-      "bytes": 3766782,
-      "sha256": "93044eb31986b0b3c266a310882f312d5437b9aae4a1ce42371d0ee287d6cf6b"
+      "name": "Morph-TV-LG-0.8.126",
+      "file": "Morph-TV-LG-0.8.126.ipk",
+      "bytes": 3768522,
+      "sha256": "8501df8129d99375dc8331687945a9453f9fb13c49295aef23f7944df036c9f2"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -98,22 +98,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.125",
-      "file": "Morph-TV-Samsung-Computer-0.8.125.zip",
-      "bytes": 3798596,
-      "sha256": "f2cfee24099ed738fd4f4eb657468e34080fde3a5bdac3d3ba0b828f25f1cea6"
+      "name": "Morph-TV-Samsung-Computer-0.8.126",
+      "file": "Morph-TV-Samsung-Computer-0.8.126.zip",
+      "bytes": 3801198,
+      "sha256": "129bb354161bc01e93fbe391bad132b110da0e6a4b0c405bf6b78734bf8d689e"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.125",
-      "file": "Morph-TV-Install-Kit-0.8.125.zip",
-      "bytes": 11514062,
-      "sha256": "e80035f9e0c1f3247227353cdc669e81127fbc1eff066921ad2f2a9630ab3247"
+      "name": "Morph-TV-Install-Kit-0.8.126",
+      "file": "Morph-TV-Install-Kit-0.8.126.zip",
+      "bytes": 11524666,
+      "sha256": "e0a182dc092d16f9c17607b94276e0987595a16d934cf7a5ad377a54c44d4deb"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.125",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.125.zip",
-      "bytes": 3798474,
-      "sha256": "65e177db118506a63e339adbe8e9a628429f31c05fddab53a7a062ef043d544e"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.126",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip",
+      "bytes": 3801076,
+      "sha256": "3d7a4b2eb3bb90488f957a171ba38a4de8a1996ca6fbf3b269882ae4a7d3e622"
     }
   ],
   "legacy": {
@@ -126,5 +126,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.125.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.126.zip"
 }
