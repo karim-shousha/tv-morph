@@ -1,0 +1,11 @@
+{
+  "version": "0.8.123",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Move alternate radio audio from the disposable Activity WebView into the existing application radio session",
+    "Share Stop, pause/resume, parental timer, viewer ownership and exclusive-video lifecycle across both engines",
+    "Preserve alternate playback when returning to Morph TV Home; destroy it on explicit stop or session background"
+  ],
+  "validation": "Production RadioPlayback lifecycle harness with simulated Android services passed; signed platform builds passed",
+  "physicalTVValidation": "Hisense Google TV audio retest pending; no physical device access"
+}

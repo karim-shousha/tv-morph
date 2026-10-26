@@ -1,48 +1,48 @@
 {
   "schema": 1,
-  "latest": "0.8.122",
+  "latest": "0.8.123",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.122",
+      "version": "0.8.123",
       "download": "/download/phone",
-      "noteAr": "إصلاح ظهور شعار التطبيق في واجهة الموبايل.",
-      "noteEn": "Fix missing phone header logo in the packaged app."
+      "noteAr": "استمرار الراديو على الهوم عند استخدام المشغل البديل على Android وGoogle TV.",
+      "noteEn": "Keep alternate radio playback alive when returning to Home on Android and Google TV."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.122",
+      "version": "0.8.123",
       "download": "/download/android",
-      "noteAr": "إصلاح ظهور شعار التطبيق في واجهة الموبايل.",
-      "noteEn": "Fix missing phone header logo in the packaged app."
+      "noteAr": "استمرار الراديو على الهوم عند استخدام المشغل البديل على Android وGoogle TV.",
+      "noteEn": "Keep alternate radio playback alive when returning to Home on Android and Google TV."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.122",
+      "version": "0.8.123",
       "download": "/download/firetv",
-      "noteAr": "إصلاح ظهور شعار التطبيق في واجهة الموبايل.",
-      "noteEn": "Fix missing phone header logo in the packaged app."
+      "noteAr": "استمرار الراديو على الهوم عند استخدام المشغل البديل على Android وGoogle TV.",
+      "noteEn": "Keep alternate radio playback alive when returning to Home on Android and Google TV."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح ظهور شعار التطبيق في واجهة الموبايل.",
-      "noteEn": "Fix missing phone header logo in the packaged app.",
+      "noteAr": "استمرار الراديو على الهوم عند استخدام المشغل البديل على Android وGoogle TV.",
+      "noteEn": "Keep alternate radio playback alive when returning to Home on Android and Google TV.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.122",
+      "version": "0.8.123",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.122.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.123.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -52,9 +52,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح ظهور شعار التطبيق في واجهة الموبايل.",
-      "noteEn": "Fix missing phone header logo in the packaged app.",
-      "version": "0.8.122",
+      "noteAr": "استمرار الراديو على الهوم عند استخدام المشغل البديل على Android وGoogle TV.",
+      "noteEn": "Keep alternate radio playback alive when returning to Home on Android and Google TV.",
+      "version": "0.8.123",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,22 +74,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.122",
-      "file": "Morph-TV-Phone-0.8.122.apk",
+      "name": "Morph-TV-Phone-0.8.123",
+      "file": "Morph-TV-Phone-0.8.123.apk",
       "bytes": 12610370,
-      "sha256": "1335440fc55d858c69b0117b805f87bb6abf9f15566d814cf89ddb778126681b"
+      "sha256": "6cce2296dfba87b98b66af195e9fa4e06e84d60cec5d38332d813fb2e68c058d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.122",
-      "file": "Morph-TV-Android-TV-0.8.122.apk",
+      "name": "Morph-TV-Android-TV-0.8.123",
+      "file": "Morph-TV-Android-TV-0.8.123.apk",
       "bytes": 3913431,
-      "sha256": "b2bd97341599850db5667efa6398bd2ab2c010d04f7735e479f78c53739f4d68"
+      "sha256": "3d930bd157def5f3207ba86b2e74ebbcc0d82361ea4faedd0d8ebf36d10d79f4"
     },
     {
-      "name": "Morph-TV-LG-0.8.122",
-      "file": "Morph-TV-LG-0.8.122.ipk",
-      "bytes": 3765424,
-      "sha256": "fec4310cf5973bdb1ebb7ceffe470b8d7351933ce4f7b4ec9fafdbdb66475a15"
+      "name": "Morph-TV-LG-0.8.123",
+      "file": "Morph-TV-LG-0.8.123.ipk",
+      "bytes": 3765420,
+      "sha256": "a04f0852efbdcd521dd84743dfb22cf730fe36fba7b05268bbfa94deda1ffe15"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -98,16 +98,16 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.122",
-      "file": "Morph-TV-Samsung-Computer-0.8.122.zip",
-      "bytes": 3797317,
-      "sha256": "d4f906e3a2817eb09295800e87268b188b2526ba8b276259425f4dc2840d9461"
+      "name": "Morph-TV-Samsung-Computer-0.8.123",
+      "file": "Morph-TV-Samsung-Computer-0.8.123.zip",
+      "bytes": 3797319,
+      "sha256": "a7e7de5d2ef85c79c8771c4fbaf9e0edf6c409e2e10f99f551bd8a16913d1283"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.122",
-      "file": "Morph-TV-Install-Kit-0.8.122.zip",
-      "bytes": 11505084,
-      "sha256": "bba1dfee93da20782ebf3c7e99ae71168d6b66c42d11a0490f5c5e1988839cd5"
+      "name": "Morph-TV-Install-Kit-0.8.123",
+      "file": "Morph-TV-Install-Kit-0.8.123.zip",
+      "bytes": 11505974,
+      "sha256": "f3bbb7193cd0aec315d39119704052af0be77d312d6c574fd677dd2733461ff9"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.122.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.123.zip"
 }
