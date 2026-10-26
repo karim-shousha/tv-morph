@@ -1,51 +1,58 @@
 {
   "schema": 1,
-  "latest": "0.8.114",
+  "latest": "0.8.115",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.114",
+      "version": "0.8.115",
       "download": "/download/phone",
-      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
-      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
+      "noteAr": "تصحيح اللغات وأسماء الثيمات ووصفها بالعربي والإنجليزي والفرنسي، ومعاينة منفصلة لكل لغة.",
+      "noteEn": "Localized theme names, descriptions and pack previews in Arabic, English and French."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.114",
+      "version": "0.8.115",
       "download": "/download/android",
-      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
-      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
+      "noteAr": "تصحيح اللغات وأسماء الثيمات ووصفها بالعربي والإنجليزي والفرنسي، ومعاينة منفصلة لكل لغة.",
+      "noteEn": "Localized theme names, descriptions and pack previews in Arabic, English and French."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.114",
+      "version": "0.8.115",
       "download": "/download/firetv",
-      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
-      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
+      "noteAr": "تصحيح اللغات وأسماء الثيمات ووصفها بالعربي والإنجليزي والفرنسي، ومعاينة منفصلة لكل لغة.",
+      "noteEn": "Localized theme names, descriptions and pack previews in Arabic, English and French."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
-      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections.",
+      "noteAr": "حزمة متوافقة مع Tizen 4.0 فأحدث؛ موديلات 2018 فأحدث مثل N5300. التثبيت من الموبايل بشهادة للشاشة. دعم الأجهزة القديمة تجريبي ويحتاج تجربة فعلية.",
+      "noteEn": "Tizen 4.0+ compatibility package for 2018 and newer TVs, including N5300. Installed from the phone with a device certificate. Older TV support is experimental; physical verification is pending.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.114"
+      "version": "0.8.115",
+      "minTizen": "4.0",
+      "targetEngine": "Chromium 56",
+      "installMode": "phone-device-signed",
+      "physicalDeviceVerified": false,
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.115.zip",
+      "installGuide": "/install.html",
+      "usbInstallerAvailable": false
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
-      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections.",
-      "version": "0.8.114",
+      "noteAr": "تصحيح اللغات وأسماء الثيمات ووصفها بالعربي والإنجليزي والفرنسي، ومعاينة منفصلة لكل لغة.",
+      "noteEn": "Localized theme names, descriptions and pack previews in Arabic, English and French.",
+      "version": "0.8.115",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,28 +72,40 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.114",
-      "file": "Morph-TV-Phone-0.8.114.apk",
-      "bytes": 12302739,
-      "sha256": "2f07bd0c4a90e3457e8d51de873ff8dd33da854ba5303c35ce0d7c7be53ff16f"
+      "name": "Morph-TV-Phone-0.8.115",
+      "file": "Morph-TV-Phone-0.8.115.apk",
+      "bytes": 12491226,
+      "sha256": "f3cde07713e9116150d6b863e28b4d39c986cf4be4a87c9a1dd5f1ddba326b14"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.114",
-      "file": "Morph-TV-Android-TV-0.8.114.apk",
-      "bytes": 3846888,
-      "sha256": "b6116e210f3100ff05b0b2d78b0f5f08ae03b4b20ceb0e941af446b018513e02"
+      "name": "Morph-TV-Android-TV-0.8.115",
+      "file": "Morph-TV-Android-TV-0.8.115.apk",
+      "bytes": 3900844,
+      "sha256": "8412a3d52e5dfb70dda68360eb21357ba07bccd16d32b5dbc6306e78155922f4"
     },
     {
-      "name": "Morph-TV-LG-0.8.114",
-      "file": "Morph-TV-LG-0.8.114.ipk",
-      "bytes": 3700986,
-      "sha256": "37f6d3cb2bf205222cf025b965987ada68279e57f554aaa5328cf5769863c43f"
+      "name": "Morph-TV-LG-0.8.115",
+      "file": "Morph-TV-LG-0.8.115.ipk",
+      "bytes": 3754482,
+      "sha256": "e6149c211cb32f7c44731fc3df43276fbdf761b174ce77b9609bd7be0927b743"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
       "file": "Morph-TV-Legacy-0.1.0.apk",
       "bytes": 135727,
       "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    },
+    {
+      "name": "Morph-TV-Samsung-Computer-0.8.115",
+      "file": "Morph-TV-Samsung-Computer-0.8.115.zip",
+      "bytes": 3764717,
+      "sha256": "884a08a31f3bffc9a2904fa789fd3fde4538402ec7aa6eb541b00c2f3ba57924"
+    },
+    {
+      "name": "Morph-TV-Install-Kit-0.8.115",
+      "file": "Morph-TV-Install-Kit-0.8.115.zip",
+      "bytes": 11447380,
+      "sha256": "2ded600df6560a2d72e5cf9380739e60b9cd19bae494d0d9ec80ba722faa3826"
     }
   ],
   "legacy": {
@@ -97,5 +116,7 @@
     "channel": "experimental",
     "download": "/download/legacy",
     "physicalDeviceVerified": false
-  }
+  },
+  "installGuide": "/install.html",
+  "installKit": "/Morph-TV-Install-Kit-0.8.115.zip"
 }

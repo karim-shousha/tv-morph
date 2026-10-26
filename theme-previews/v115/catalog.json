@@ -1,0 +1,447 @@
+{
+  "version": 115,
+  "type": "Localized flattened watermarked previews; no original theme files",
+  "previews": [
+    {
+      "theme": "ahli-saudi",
+      "language": "ar",
+      "file": "ar/ahli-saudi.webp",
+      "bytes": 43166,
+      "sha256": "6fe11c14992ba2489a1924dd3ae9fa9e3faf57b8a94ff0b943e9aab9fe5fa091"
+    },
+    {
+      "theme": "ahly",
+      "language": "ar",
+      "file": "ar/ahly.webp",
+      "bytes": 42826,
+      "sha256": "8cc4fef57883409671f2b1c382812457c95a4c35924dc642feaf3c5d6bc6dde3"
+    },
+    {
+      "theme": "argentina",
+      "language": "ar",
+      "file": "ar/argentina.webp",
+      "bytes": 44312,
+      "sha256": "1bfb8264a55019143bd8b26e50b7179c77bd9040ce3eecc4b088b5a1d77bddc5"
+    },
+    {
+      "theme": "barcelona",
+      "language": "ar",
+      "file": "ar/barcelona.webp",
+      "bytes": 47758,
+      "sha256": "7c2f7a53f5942ad22c9089775985b7ac5ec905f2b9ba3be72864c437cc789c93"
+    },
+    {
+      "theme": "baseball",
+      "language": "ar",
+      "file": "ar/baseball.webp",
+      "bytes": 40140,
+      "sha256": "47f6d346a22e2dd328c5c85aba4586520267876dd10442bc07703e46021f4779"
+    },
+    {
+      "theme": "basketball",
+      "language": "ar",
+      "file": "ar/basketball.webp",
+      "bytes": 40394,
+      "sha256": "324f380751d028cedc0b29d99fef9897435647a18799784726f3510ed8710e82"
+    },
+    {
+      "theme": "crown-prince",
+      "language": "ar",
+      "file": "ar/crown-prince.webp",
+      "bytes": 46784,
+      "sha256": "3934f6f0d89d48535ee1a29cf4d9be789121f4497ee4dc488ce31428f44d2c5a"
+    },
+    {
+      "theme": "egypt-national",
+      "language": "ar",
+      "file": "ar/egypt-national.webp",
+      "bytes": 54538,
+      "sha256": "31e505b7e88a259936328f563791c1bf299e45c89602d21c1e50dc13f769fbee"
+    },
+    {
+      "theme": "egypt",
+      "language": "ar",
+      "file": "ar/egypt.webp",
+      "bytes": 38666,
+      "sha256": "378b28c5ce6a6acd40970eb3d9b5f649f25f1f223f67a22df4f6cc9e97598796"
+    },
+    {
+      "theme": "hilal",
+      "language": "ar",
+      "file": "ar/hilal.webp",
+      "bytes": 43142,
+      "sha256": "bf4ca3eb512ff0005cb4dbe08115defe68a7c069edadd29026e25186bda1529e"
+    },
+    {
+      "theme": "inter-miami",
+      "language": "ar",
+      "file": "ar/inter-miami.webp",
+      "bytes": 38264,
+      "sha256": "4fac8eee179f893db1e0697944bed7ece16b79fd9240498d787f8b07811822b7"
+    },
+    {
+      "theme": "ismaily",
+      "language": "ar",
+      "file": "ar/ismaily.webp",
+      "bytes": 34956,
+      "sha256": "b00849d1caa6dd3062ac5a94912e9d2ffac5c3816717057750990d89b058f7ac"
+    },
+    {
+      "theme": "ittihad",
+      "language": "ar",
+      "file": "ar/ittihad.webp",
+      "bytes": 45680,
+      "sha256": "2390d8c6af16198d080194f27ac2b974789f5566bbfe217174ab4b00e903435f"
+    },
+    {
+      "theme": "king-salman",
+      "language": "ar",
+      "file": "ar/king-salman.webp",
+      "bytes": 27278,
+      "sha256": "f5a3c702b8fef1ed5b65662778920d24dd0b035c0e5d859a2c97ce0426dfc59e"
+    },
+    {
+      "theme": "madrid",
+      "language": "ar",
+      "file": "ar/madrid.webp",
+      "bytes": 43418,
+      "sha256": "7054a30575b48c613b97351535f5e6843f2895baa58da00dcd2b98a18fb5c627"
+    },
+    {
+      "theme": "montreal",
+      "language": "ar",
+      "file": "ar/montreal.webp",
+      "bytes": 46930,
+      "sha256": "1137fdbe343df0562277c72e893690c576d7f10b09108f3d1521aa0e60c1c763"
+    },
+    {
+      "theme": "nassr",
+      "language": "ar",
+      "file": "ar/nassr.webp",
+      "bytes": 43040,
+      "sha256": "57cc0296379e6bd74ad5dd0049dfacb54b5536cb4e20ff77f5a7d9d41944fa2a"
+    },
+    {
+      "theme": "portugal",
+      "language": "ar",
+      "file": "ar/portugal.webp",
+      "bytes": 43438,
+      "sha256": "d21090e22d4b2eb3a3773250a28a4cd1c3a57c9a120af7ac9e45c8c4dd72b6f8"
+    },
+    {
+      "theme": "saudi-national",
+      "language": "ar",
+      "file": "ar/saudi-national.webp",
+      "bytes": 65470,
+      "sha256": "78dd6066e0c126e114d99c6550273ed31d056eab7b2f7ba3b843db5496ccfbbb"
+    },
+    {
+      "theme": "toronto",
+      "language": "ar",
+      "file": "ar/toronto.webp",
+      "bytes": 46002,
+      "sha256": "cb7d3a028ef2122885915c749119b3cb508409fd985a2e40dad09be1e367f9e1"
+    },
+    {
+      "theme": "zamalek",
+      "language": "ar",
+      "file": "ar/zamalek.webp",
+      "bytes": 47152,
+      "sha256": "f603fab96e73bada84ba377fb9d7bfb86517aef954f754173ba678f02557c437"
+    },
+    {
+      "theme": "ahli-saudi",
+      "language": "en",
+      "file": "en/ahli-saudi.webp",
+      "bytes": 46658,
+      "sha256": "979fbc0ef5ca22874b6aec1e0349d90d9bf379e904684dea6a171351fce25c59"
+    },
+    {
+      "theme": "ahly",
+      "language": "en",
+      "file": "en/ahly.webp",
+      "bytes": 45324,
+      "sha256": "a47dd2cac88f23b1402127fc6a3eec13920dddf2f4d723a36b707d51d1c9a7db"
+    },
+    {
+      "theme": "argentina",
+      "language": "en",
+      "file": "en/argentina.webp",
+      "bytes": 47616,
+      "sha256": "091e7c536cadb1cca4a4d8c589435d37249e9997987e1c50a391956c88c3fed2"
+    },
+    {
+      "theme": "barcelona",
+      "language": "en",
+      "file": "en/barcelona.webp",
+      "bytes": 51712,
+      "sha256": "31eee8149208760d146844f2abda1d5bc67adba13b2bd3f11e84b1a8ad39dfae"
+    },
+    {
+      "theme": "baseball",
+      "language": "en",
+      "file": "en/baseball.webp",
+      "bytes": 43842,
+      "sha256": "f7f5146dcfef972bf7c51b6dd4c7e3350fd4bf7c35e89e7f2a0e51900262ecd8"
+    },
+    {
+      "theme": "basketball",
+      "language": "en",
+      "file": "en/basketball.webp",
+      "bytes": 43686,
+      "sha256": "c949696ede50163d2a0f7bb22ecccff6f0432a9ce2e30d784d7ff6e7d74ce746"
+    },
+    {
+      "theme": "crown-prince",
+      "language": "en",
+      "file": "en/crown-prince.webp",
+      "bytes": 52242,
+      "sha256": "d5da9ad7b255e003758a5f9f0f04ad9240994fae90ed2fafeab88341a9e03be6"
+    },
+    {
+      "theme": "egypt-national",
+      "language": "en",
+      "file": "en/egypt-national.webp",
+      "bytes": 60098,
+      "sha256": "0f9fcaad52b290b48b9cff7da5f3a03e82a8b26c3afa0e0e4acd619650484908"
+    },
+    {
+      "theme": "egypt",
+      "language": "en",
+      "file": "en/egypt.webp",
+      "bytes": 44194,
+      "sha256": "f5d0761ab746917cce2e6da0490ac6feedaa52c4bfaee575981f82e8d1622c39"
+    },
+    {
+      "theme": "hilal",
+      "language": "en",
+      "file": "en/hilal.webp",
+      "bytes": 45794,
+      "sha256": "e163048c6e1805428dfdec53a5d4001e0ded55dfa2adcc4c3374e4399544575e"
+    },
+    {
+      "theme": "inter-miami",
+      "language": "en",
+      "file": "en/inter-miami.webp",
+      "bytes": 42650,
+      "sha256": "80615c1770fadc25036531368a31ac8568ac7f5c3d3b2c862551a8e6a6866794"
+    },
+    {
+      "theme": "ismaily",
+      "language": "en",
+      "file": "en/ismaily.webp",
+      "bytes": 38860,
+      "sha256": "ce0cde109d409bdec8cf4583693feff993e310b7939a934086bd335fb67baddc"
+    },
+    {
+      "theme": "ittihad",
+      "language": "en",
+      "file": "en/ittihad.webp",
+      "bytes": 48716,
+      "sha256": "e818d937835b81c737edd8f814a926eba67bccca34db1b83c06c35ade8be79fe"
+    },
+    {
+      "theme": "king-salman",
+      "language": "en",
+      "file": "en/king-salman.webp",
+      "bytes": 31338,
+      "sha256": "0f6d8ebceb1f661fded60c77fb7a0d462e8fc104f142d466f8897973ebab64c9"
+    },
+    {
+      "theme": "madrid",
+      "language": "en",
+      "file": "en/madrid.webp",
+      "bytes": 47232,
+      "sha256": "e02e15dde4248b01e336b72c12c21c1a947acde37ea99093d156105bde0fd459"
+    },
+    {
+      "theme": "montreal",
+      "language": "en",
+      "file": "en/montreal.webp",
+      "bytes": 50720,
+      "sha256": "4c1b65eb720cf8a7195729cf9cd7acb004252eb93ace720f117ce8d9541a13c6"
+    },
+    {
+      "theme": "nassr",
+      "language": "en",
+      "file": "en/nassr.webp",
+      "bytes": 46658,
+      "sha256": "8ab8590101a2cc2d0bc9bad1702a6cf3d6af32d560b0d5d798ae68d1567d8c08"
+    },
+    {
+      "theme": "portugal",
+      "language": "en",
+      "file": "en/portugal.webp",
+      "bytes": 46420,
+      "sha256": "500330587b0d653ba88f4dc77e1e2c076ca1be947f215ef9bba4e83ea96405d7"
+    },
+    {
+      "theme": "saudi-national",
+      "language": "en",
+      "file": "en/saudi-national.webp",
+      "bytes": 71630,
+      "sha256": "c1733a9f2dd3ac3a4330d13eb3b9f8f79ab8b804c9da56f30f49d2dae7078fd2"
+    },
+    {
+      "theme": "toronto",
+      "language": "en",
+      "file": "en/toronto.webp",
+      "bytes": 49584,
+      "sha256": "bc83ff3cd15114b6e98f84e2adc1f299c133a5c3582ebf85c485391a40dcd884"
+    },
+    {
+      "theme": "zamalek",
+      "language": "en",
+      "file": "en/zamalek.webp",
+      "bytes": 51172,
+      "sha256": "30aa6c93c9129e24e89dd1ed048850277dd82a73e3a7d638655cf11436b2ff31"
+    },
+    {
+      "theme": "ahli-saudi",
+      "language": "fr",
+      "file": "fr/ahli-saudi.webp",
+      "bytes": 49724,
+      "sha256": "e7017ff3ffbe3b3fe286c8f7c394c40d6e95d1f1fe94398eb4a3d7354c6e25d2"
+    },
+    {
+      "theme": "ahly",
+      "language": "fr",
+      "file": "fr/ahly.webp",
+      "bytes": 47002,
+      "sha256": "b78e0ce3be858a4870d15911ba7d66ef62635a97f863a7e3844fecde9041975f"
+    },
+    {
+      "theme": "argentina",
+      "language": "fr",
+      "file": "fr/argentina.webp",
+      "bytes": 51370,
+      "sha256": "bc660efe2152b5671c88c9c41354178c24663bc580b10140269c1783a761e9ff"
+    },
+    {
+      "theme": "barcelona",
+      "language": "fr",
+      "file": "fr/barcelona.webp",
+      "bytes": 53694,
+      "sha256": "6b4b0a8fcda5104293cc10644566081ac02b402b5cd29f530a547af740da4f72"
+    },
+    {
+      "theme": "baseball",
+      "language": "fr",
+      "file": "fr/baseball.webp",
+      "bytes": 45756,
+      "sha256": "fb008452a61ef8fa5786e98007f98be4ea3cbb0db466bac4ab24c64158d0a767"
+    },
+    {
+      "theme": "basketball",
+      "language": "fr",
+      "file": "fr/basketball.webp",
+      "bytes": 46178,
+      "sha256": "34003cf1f24eeb9bc84ac0978c304f4aa1962ddcbea4a1f941297223ce3504c8"
+    },
+    {
+      "theme": "crown-prince",
+      "language": "fr",
+      "file": "fr/crown-prince.webp",
+      "bytes": 54982,
+      "sha256": "c5f7291407e7aeb4fe52031ee91a9fa3fbd43d874d5a6176948c9dfb00e3d789"
+    },
+    {
+      "theme": "egypt-national",
+      "language": "fr",
+      "file": "fr/egypt-national.webp",
+      "bytes": 61960,
+      "sha256": "fc6a9f650bdd148238beff601779e5c3390d2951ba4dc6841c5e7277c8a4ebda"
+    },
+    {
+      "theme": "egypt",
+      "language": "fr",
+      "file": "fr/egypt.webp",
+      "bytes": 46378,
+      "sha256": "5493144eece6d37ec5a4a3780ce89659d7b874af3ea156559458451ef32febc8"
+    },
+    {
+      "theme": "hilal",
+      "language": "fr",
+      "file": "fr/hilal.webp",
+      "bytes": 47710,
+      "sha256": "19de13c8969fd9f8250c209d882e7cac412ad49a0d309f3bb75a5c776943c70b"
+    },
+    {
+      "theme": "inter-miami",
+      "language": "fr",
+      "file": "fr/inter-miami.webp",
+      "bytes": 44946,
+      "sha256": "a48ae74c26deccd81e06cca71b250f3a041264b583df173aef0c6b6b5546682d"
+    },
+    {
+      "theme": "ismaily",
+      "language": "fr",
+      "file": "fr/ismaily.webp",
+      "bytes": 41326,
+      "sha256": "97f857820ab29719bc94361f1495473125e61541782791f1a9b4bea65c620213"
+    },
+    {
+      "theme": "ittihad",
+      "language": "fr",
+      "file": "fr/ittihad.webp",
+      "bytes": 50684,
+      "sha256": "242bf324dd6d851abae9e0f9c491b035c6a2d932e9e11a4c104ec6fc64cb39bd"
+    },
+    {
+      "theme": "king-salman",
+      "language": "fr",
+      "file": "fr/king-salman.webp",
+      "bytes": 33442,
+      "sha256": "faa5ac26534dc3596df09fa54c37abb6f6dd07f525ed9865d61323c215a34944"
+    },
+    {
+      "theme": "madrid",
+      "language": "fr",
+      "file": "fr/madrid.webp",
+      "bytes": 49044,
+      "sha256": "3af8d9d2c59d37bda2d1fc6cef3dd221c549e9fadfab6501fcc383670ea18320"
+    },
+    {
+      "theme": "montreal",
+      "language": "fr",
+      "file": "fr/montreal.webp",
+      "bytes": 53986,
+      "sha256": "02e097f1539e1dc1d1bb6d7b51fd91456bba9d56ef52ebc34e1afb1d57ab9bfe"
+    },
+    {
+      "theme": "nassr",
+      "language": "fr",
+      "file": "fr/nassr.webp",
+      "bytes": 48996,
+      "sha256": "df95e62dde451d9f7a2daf6e76fdbc1f1a561492458bdd1945dfa4b1a3e1f333"
+    },
+    {
+      "theme": "portugal",
+      "language": "fr",
+      "file": "fr/portugal.webp",
+      "bytes": 49796,
+      "sha256": "4408f663b5a0001e632fc0efec0257aa3c11e482c90b1083db2e15ec719f83a4"
+    },
+    {
+      "theme": "saudi-national",
+      "language": "fr",
+      "file": "fr/saudi-national.webp",
+      "bytes": 73210,
+      "sha256": "9bc2ab04d57af47e4cbd1a384feda3eaafb25fd0b4f3245215e436da646a1316"
+    },
+    {
+      "theme": "toronto",
+      "language": "fr",
+      "file": "fr/toronto.webp",
+      "bytes": 53170,
+      "sha256": "323e2371f1bb73d74ffe820e5c82072cca5d664911081115f50ef9c28a1402e9"
+    },
+    {
+      "theme": "zamalek",
+      "language": "fr",
+      "file": "fr/zamalek.webp",
+      "bytes": 52684,
+      "sha256": "63e459001f96ed90e21462147e493a0dd073f3b42f9816069e50c4a08d9d189e"
+    }
+  ]
+}

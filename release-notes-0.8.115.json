@@ -1,0 +1,38 @@
+{
+  "version": "0.8.115",
+  "changes": [
+    "Explicit Arabic, English and French theme names, slogans, details and categories",
+    "Localized pack names, Plus and preview dialogs; separate watermarked preview images for each language",
+    "Custom user text, provider titles and original artwork remain owner controlled",
+    "Samsung Tizen 4.0+ / Chromium 56 build with scoped flex layout fallbacks and automatic light effects on older engines; physical TV verification pending",
+    "Computer installation guide in Arabic, English and French; portable install kit with Android/Legacy APK, LG IPK and Samsung TV Web project. Samsung USB TMG is not included and requires Seller Office packaging."
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.115",
+      "file": "Morph-TV-Phone-0.8.115.apk",
+      "bytes": 12491226,
+      "sha256": "f3cde07713e9116150d6b863e28b4d39c986cf4be4a87c9a1dd5f1ddba326b14"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.115",
+      "file": "Morph-TV-Android-TV-0.8.115.apk",
+      "bytes": 3900844,
+      "sha256": "8412a3d52e5dfb70dda68360eb21357ba07bccd16d32b5dbc6306e78155922f4"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.115",
+      "file": "Morph-TV-LG-0.8.115.ipk",
+      "bytes": 3754482,
+      "sha256": "e6149c211cb32f7c44731fc3df43276fbdf761b174ce77b9609bd7be0927b743"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}
