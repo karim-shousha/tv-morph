@@ -1,0 +1,12 @@
+{
+  "version": "0.8.118",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Fitness entry points temporarily disabled; existing module preserved for later work",
+    "Home shows actual next prayer time as well as remaining time",
+    "Opaque high-contrast prayer cards and larger prayer labels and times",
+    "Samsung native input snapshots and numeric port matching; asynchronous Last HDMI retry",
+    "All main TV packages and computer kit rebuilt"
+  ],
+  "physicalTVValidation": "Pending Samsung HDMI device retest"
+}
