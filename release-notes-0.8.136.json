@@ -1,0 +1,27 @@
+{
+  "version": "0.8.136",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Group all settings: launcher/startup first, performance and reduce motion adjacent, themes/colors/Plus together, apps/family, IPTV, prayer, weather/time, device/tools and support",
+    "Add VOD/episode playback speeds: Android/phone/LG 0.5, 0.75, 1, 1.25, 1.5, 2 and 3; Samsung native AVPlay 1, 2 and 4. Live has no speed control",
+    "Preserve paused state on speed changes and retain previous speed when the decoder rejects a requested rate",
+    "Show fullscreen Adhan artwork and prayer name while Morph TV is foreground; Stop/Back/completion restores prior playback state without launching over other apps",
+    "Retain 0.8.135 physical-input filtering, shared HDMI routing and diagnostics; preserve default Light mode"
+  ],
+  "validation": [
+    "Production native playback-rate helper: all rates, paused-state preservation, rejected/ignored/invalid rate rollback with Android engine fixtures",
+    "Production native Adhan controller: timed crossing, prayer identity, duplicate guard, completion/Stop, paused state, foreground ownership and background stop with Android fixtures",
+    "Built Android/Samsung/LG and packaged Tizen4 grouped settings in five languages; category bounds, functional handlers, focus/Back, performance toggle and Plus entry",
+    "Built Samsung/LG and packaged Tizen4 speed and scheduled Adhan runtime checks; live exclusion, rejection rollback, playback pause/resume and Back behavior",
+    "Android/Samsung/LG remote search/live navigation; Samsung/LG next/previous episode boundaries; five-language player control layout",
+    "Actual production input output drives built Android UI fixtures; Samsung/Tizen4 source identities and LG app/HDMI launch fixtures",
+    "Signed APK signing identity, native class/artwork presence, exact embedded TV/IPK parity and installation-kit hashes"
+  ],
+  "limitations": [
+    "Platform APIs and players were simulated where hardware is unavailable; no physical Hisense/LG or every-model certification is claimed",
+    "Fullscreen Adhan operates while Morph TV owns the foreground; it does not force itself over another application or a powered-off TV",
+    "Codec/stream speed support depends on device firmware; Samsung native AVPlay does not expose fractional or 3x rates",
+    "Legacy 0.1.1 remains unchanged with system playback controls",
+    "Firmware may hide or restrict physical inputs; diagnostics and system input controls remain available"
+  ]
+}

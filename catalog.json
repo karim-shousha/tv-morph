@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.135",
+  "latest": "0.8.136",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.135",
+      "version": "0.8.136",
       "download": "/download/phone",
-      "noteAr": "إصلاح تصنيف مداخل Android/Hisense وفصل تطبيقات البث عن HDMI، مع تشخيص المداخل وفحوص بقية المنصات.",
-      "noteEn": "Hardware-only Android/Hisense input inventory, shared HDMI routing and input diagnostics; cross-platform regression checks."
+      "noteAr": "إعدادات مرتبة، شاشة أذان كاملة، وسرعات للأفلام والحلقات مع الحفاظ على إصلاح مداخل HDMI.",
+      "noteEn": "Grouped settings, fullscreen Adhan and VOD playback speeds; retains physical HDMI input filtering and diagnostics."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.135",
+      "version": "0.8.136",
       "download": "/download/android",
-      "noteAr": "إصلاح تصنيف مداخل Android/Hisense وفصل تطبيقات البث عن HDMI، مع تشخيص المداخل وفحوص بقية المنصات.",
-      "noteEn": "Hardware-only Android/Hisense input inventory, shared HDMI routing and input diagnostics; cross-platform regression checks."
+      "noteAr": "إعدادات مرتبة، شاشة أذان كاملة، وسرعات للأفلام والحلقات مع الحفاظ على إصلاح مداخل HDMI.",
+      "noteEn": "Grouped settings, fullscreen Adhan and VOD playback speeds; retains physical HDMI input filtering and diagnostics."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.135",
+      "version": "0.8.136",
       "download": "/download/firetv",
-      "noteAr": "إصلاح تصنيف مداخل Android/Hisense وفصل تطبيقات البث عن HDMI، مع تشخيص المداخل وفحوص بقية المنصات.",
-      "noteEn": "Hardware-only Android/Hisense input inventory, shared HDMI routing and input diagnostics; cross-platform regression checks."
+      "noteAr": "إعدادات مرتبة، شاشة أذان كاملة، وسرعات للأفلام والحلقات مع الحفاظ على إصلاح مداخل HDMI.",
+      "noteEn": "Grouped settings, fullscreen Adhan and VOD playback speeds; retains physical HDMI input filtering and diagnostics."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح تصنيف مداخل Android/Hisense وفصل تطبيقات البث عن HDMI، مع تشخيص المداخل وفحوص بقية المنصات.",
-      "noteEn": "Hardware-only Android/Hisense input inventory, shared HDMI routing and input diagnostics; cross-platform regression checks.",
+      "noteAr": "إعدادات مرتبة، شاشة أذان كاملة، وسرعات للأفلام والحلقات مع الحفاظ على إصلاح مداخل HDMI.",
+      "noteEn": "Grouped settings, fullscreen Adhan and VOD playback speeds; retains physical HDMI input filtering and diagnostics.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.135",
+      "version": "0.8.136",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.135.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.136.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.135.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.136.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح تصنيف مداخل Android/Hisense وفصل تطبيقات البث عن HDMI، مع تشخيص المداخل وفحوص بقية المنصات.",
-      "noteEn": "Hardware-only Android/Hisense input inventory, shared HDMI routing and input diagnostics; cross-platform regression checks.",
-      "version": "0.8.135",
+      "noteAr": "إعدادات مرتبة، شاشة أذان كاملة، وسرعات للأفلام والحلقات مع الحفاظ على إصلاح مداخل HDMI.",
+      "noteEn": "Grouped settings, fullscreen Adhan and VOD playback speeds; retains physical HDMI input filtering and diagnostics.",
+      "version": "0.8.136",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.135",
-      "file": "Morph-TV-Phone-0.8.135.apk",
-      "bytes": 12692523,
-      "sha256": "8cff816b496cc16b26c3a6a417a7b561865b0c075c345bf778c5f2a720c430c1"
+      "name": "Morph-TV-Phone-0.8.136",
+      "file": "Morph-TV-Phone-0.8.136.apk",
+      "bytes": 12713003,
+      "sha256": "5fbfeabd86c53c3a7e88d2a0c1cf4446f1b847fcfbc1bba99781cd564a2ddcfc"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.135",
-      "file": "Morph-TV-Android-TV-0.8.135.apk",
-      "bytes": 3942415,
-      "sha256": "2e893217614725052b1adf9a78ed230dffdc8f54cc020efe6823251d422ac1eb"
+      "name": "Morph-TV-Android-TV-0.8.136",
+      "file": "Morph-TV-Android-TV-0.8.136.apk",
+      "bytes": 3950679,
+      "sha256": "0ce1d7079bc332aa7437940080d86a3867501e63f96d40bff29cb0fec6fff155"
     },
     {
-      "name": "Morph-TV-LG-0.8.135",
-      "file": "Morph-TV-LG-0.8.135.ipk",
-      "bytes": 3779984,
-      "sha256": "89fa2855decbbcda7e2aecefae60db4c601b6f377a43440fffda5773aa36b000"
+      "name": "Morph-TV-LG-0.8.136",
+      "file": "Morph-TV-LG-0.8.136.ipk",
+      "bytes": 3784166,
+      "sha256": "049b4d1da0e0454838ee68ea537a0df857198d21a3f2d3eb722c24091a81e6a1"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.135",
-      "file": "Morph-TV-Samsung-Computer-0.8.135.zip",
-      "bytes": 3809614,
-      "sha256": "12ae60d1abd20d5731201b670cca2cfb167bc60c1e2f99a74b730d3149580006"
+      "name": "Morph-TV-Samsung-Computer-0.8.136",
+      "file": "Morph-TV-Samsung-Computer-0.8.136.zip",
+      "bytes": 3813917,
+      "sha256": "576b66f18056445e051550c7da6bb92dc08eba3825a09660d06f782af874299a"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.135",
-      "file": "Morph-TV-Install-Kit-0.8.135.zip",
-      "bytes": 11561563,
-      "sha256": "a655749f18d9194c78e4e35aa91aa33d26b0b869133086ea214f84cd61f00e35"
+      "name": "Morph-TV-Install-Kit-0.8.136",
+      "file": "Morph-TV-Install-Kit-0.8.136.zip",
+      "bytes": 11577585,
+      "sha256": "6939cadc38ccb8e50162b58bd00ec3cd82282a5b90a1033509231c0fb97bdf7f"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.135",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.135.zip",
-      "bytes": 3809492,
-      "sha256": "622f9b2757dd357d7ec9dc156995aaaf8a38f3b60b517a999131110535cbbc9d"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.136",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.136.zip",
+      "bytes": 3813795,
+      "sha256": "7ca61c5010bdabb92a720f8f1cfcc894767f0ad4ac01dde4de7b0c767a8e5348"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.135.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.136.zip"
 }
