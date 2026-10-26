@@ -1,48 +1,48 @@
 {
   "schema": 1,
-  "latest": "0.8.120",
+  "latest": "0.8.121",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.120",
+      "version": "0.8.121",
       "download": "/download/phone",
-      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
-      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
+      "noteAr": "مفضلة منفصلة لكل قسم، وتحسين تحميل البوسترات، وكارت صلاة خفيف ومدمج. إصلاح تصنيف مداخل Android وGoogle TV.",
+      "noteEn": "Separate favorites by section, poster recovery, compact light Home prayer widget, and Android/Google TV input classification fixes."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.120",
+      "version": "0.8.121",
       "download": "/download/android",
-      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
-      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
+      "noteAr": "مفضلة منفصلة لكل قسم، وتحسين تحميل البوسترات، وكارت صلاة خفيف ومدمج. إصلاح تصنيف مداخل Android وGoogle TV.",
+      "noteEn": "Separate favorites by section, poster recovery, compact light Home prayer widget, and Android/Google TV input classification fixes."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.120",
+      "version": "0.8.121",
       "download": "/download/firetv",
-      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
-      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
+      "noteAr": "مفضلة منفصلة لكل قسم، وتحسين تحميل البوسترات، وكارت صلاة خفيف ومدمج. إصلاح تصنيف مداخل Android وGoogle TV.",
+      "noteEn": "Separate favorites by section, poster recovery, compact light Home prayer widget, and Android/Google TV input classification fixes."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
-      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings.",
+      "noteAr": "مفضلة منفصلة لكل قسم، وتحسين تحميل البوسترات، وكارت صلاة خفيف ومدمج. إصلاح تصنيف مداخل Android وGoogle TV.",
+      "noteEn": "Separate favorites by section, poster recovery, compact light Home prayer widget, and Android/Google TV input classification fixes.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.120",
+      "version": "0.8.121",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.120.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.121.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -52,9 +52,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
-      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings.",
-      "version": "0.8.120",
+      "noteAr": "مفضلة منفصلة لكل قسم، وتحسين تحميل البوسترات، وكارت صلاة خفيف ومدمج. إصلاح تصنيف مداخل Android وGoogle TV.",
+      "noteEn": "Separate favorites by section, poster recovery, compact light Home prayer widget, and Android/Google TV input classification fixes.",
+      "version": "0.8.121",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,22 +74,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.120",
-      "file": "Morph-TV-Phone-0.8.120.apk",
-      "bytes": 12524286,
-      "sha256": "bd3bca79a628131ff1851a2c135f90147803c760681d3ccd0cf91b0c1e402059"
+      "name": "Morph-TV-Phone-0.8.121",
+      "file": "Morph-TV-Phone-0.8.121.apk",
+      "bytes": 12536574,
+      "sha256": "ffc24c89f7cc68e91c431c3ea5a99117803cee8c040489915eef7f9b36154a83"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.120",
-      "file": "Morph-TV-Android-TV-0.8.120.apk",
-      "bytes": 3909335,
-      "sha256": "9991be4a1b0f5c5ce3a737fa29e10d8641225c299dc9fea5aba9233dafecb832"
+      "name": "Morph-TV-Android-TV-0.8.121",
+      "file": "Morph-TV-Android-TV-0.8.121.apk",
+      "bytes": 3913431,
+      "sha256": "4421062075c8dff03c31b2a252f360495b4507acfbbf49a68e25e86d2f1d71af"
     },
     {
-      "name": "Morph-TV-LG-0.8.120",
-      "file": "Morph-TV-LG-0.8.120.ipk",
-      "bytes": 3763016,
-      "sha256": "502101ff9d87543e35a4328c6d7f7da85cde2861fe58495041f156ea5bdd62c2"
+      "name": "Morph-TV-LG-0.8.121",
+      "file": "Morph-TV-LG-0.8.121.ipk",
+      "bytes": 3765410,
+      "sha256": "94d183ba409493fd63e4ab16d9590f00d11db115fd9d13fe7b0ad3565de1dc06"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -98,16 +98,16 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.120",
-      "file": "Morph-TV-Samsung-Computer-0.8.120.zip",
-      "bytes": 3776448,
-      "sha256": "6492ab049a9a13cfadd7f54605188328e4e85c757b440f73a5f6648699ce63cf"
+      "name": "Morph-TV-Samsung-Computer-0.8.121",
+      "file": "Morph-TV-Samsung-Computer-0.8.121.zip",
+      "bytes": 3778644,
+      "sha256": "6d29a45a490bd899d821279e2a3fe95e572516fe153cfd7803967e134c348dc5"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.120",
-      "file": "Morph-TV-Install-Kit-0.8.120.zip",
-      "bytes": 11478434,
-      "sha256": "2d52ada33d8da05d0a85a514118b9f0f18dc142c7d62d2fb12489c766897284a"
+      "name": "Morph-TV-Install-Kit-0.8.121",
+      "file": "Morph-TV-Install-Kit-0.8.121.zip",
+      "bytes": 11486548,
+      "sha256": "442430c2e53b619f24539f7828c8b02fab9d88a1e456df8f4f900bb265d869c6"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.120.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.121.zip"
 }

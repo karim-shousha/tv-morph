@@ -1,0 +1,15 @@
+{
+  "version": "0.8.121",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android/Google TV inputs retain native labels and classify HDMI/AV hardware labels even when OEM input type is generic tuner",
+    "External inputs use the passthrough URI; tuner sources use channel-list URI; preserve source ID and Last HDMI",
+    "Android input page offers native TV settings and removes Samsung-specific instructions",
+    "Home next-prayer widget uses compact side-by-side rows with a nearly transparent background; full prayer page contrast retained",
+    "Separate Live, Movies and Series favorites with per-section counts; preserve existing saved data and prevent stale progress from restoring removed favorites",
+    "Resolve relative/alternate provider artwork; recover missing and failed posters from detail metadata with at most four concurrent requests, or show a visible unavailable placeholder"
+  ],
+  "favorites": "Scoped Live/Movies/Series tabs; existing saved items retained",
+  "posters": "Recover failed/missing poster from details with bounded concurrency; resolve relative provider covers and cover_big; visible unavailable placeholder",
+  "physicalTVValidation": "Hisense Google TV device retest pending; no physical access"
+}
