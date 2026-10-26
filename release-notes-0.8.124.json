@@ -1,0 +1,12 @@
+{
+  "version": "0.8.124",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Capture physical Samsung player keys before Home navigation; Back reveals controls then returns to library",
+    "Register transport/channel keys, support native and phone playback controls and live channel switching",
+    "Normalize array, keyed and flat episode provider data; skip malformed rows, order numerically and inherit series posters",
+    "Arabic hero direction, spacing and long-title fitting; reserve HDMI area from recent-use text",
+    "Add explicit N5300 Tizen 4, F6400 Orsay and Toshiba Portal compatibility notes to computer guide"
+  ],
+  "physicalTVValidation": "Physical N5300, F6400 and Toshiba devices not available; no unverified support claimed"
+}
