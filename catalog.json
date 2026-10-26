@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.128",
+  "latest": "0.8.129",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.128",
+      "version": "0.8.129",
       "download": "/download/phone",
-      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
-      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
+      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
+      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.128",
+      "version": "0.8.129",
       "download": "/download/android",
-      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
-      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
+      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
+      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.128",
+      "version": "0.8.129",
       "download": "/download/firetv",
-      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
-      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback."
+      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
+      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
-      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback.",
+      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
+      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.128",
+      "version": "0.8.129",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.128.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.129.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.128.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.129.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح فتح الكيبورد في خانات IPTV باللمس وزر OK، مع كيبورد داخل التطبيق للكتابة بالريموت.",
-      "noteEn": "Fix IPTV account input keyboard activation and add an in-app remote-control keyboard fallback.",
-      "version": "0.8.128",
+      "noteAr": "ريال مدريد وبرشلونة مجانًا، تحسين الرجوع على الموبايل والسلايد شو في الوضع الخفيف، وتوضيح عرض Plus.",
+      "noteEn": "Free Real Madrid and Barcelona themes, mobile Back and light-mode slideshow fixes, and clear Plus offer terms.",
+      "version": "0.8.129",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -79,22 +79,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.128",
-      "file": "Morph-TV-Phone-0.8.128.apk",
-      "bytes": 12655659,
-      "sha256": "f3d6a81194af79a26d1faefac9ada4dae17663f1b23442891224a451b0d3b337"
+      "name": "Morph-TV-Phone-0.8.129",
+      "file": "Morph-TV-Phone-0.8.129.apk",
+      "bytes": 12663851,
+      "sha256": "e16c5d3027a28f7584b2397edab97fc8c5e8a8c97a48b97465c8f198812deaae"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.128",
-      "file": "Morph-TV-Android-TV-0.8.128.apk",
-      "bytes": 3930127,
-      "sha256": "5a689b88090f3f99441e324cf7c16c5218d725f06cf31c066b7a4f853795245c"
+      "name": "Morph-TV-Android-TV-0.8.129",
+      "file": "Morph-TV-Android-TV-0.8.129.apk",
+      "bytes": 3934223,
+      "sha256": "4aaa66355c1805af2368f175721c36e7a139aeb72c05a0db24a11f96b7041d57"
     },
     {
-      "name": "Morph-TV-LG-0.8.128",
-      "file": "Morph-TV-LG-0.8.128.ipk",
-      "bytes": 3771208,
-      "sha256": "8b50ef5b17e0f79c487403fe02ea12b311b782f720778a0b0fbd0f32a15fecfb"
+      "name": "Morph-TV-LG-0.8.129",
+      "file": "Morph-TV-LG-0.8.129.ipk",
+      "bytes": 3773370,
+      "sha256": "ef24ab8eecee5e21474276882e72e95d89dd2ee149c1ce3696d9b57c79bd8f0f"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -103,22 +103,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.128",
-      "file": "Morph-TV-Samsung-Computer-0.8.128.zip",
-      "bytes": 3805003,
-      "sha256": "b64db3aaf5f5ee7dbfae1612c1070f0cb29de0b644355bc49fdd001f568dc27f"
+      "name": "Morph-TV-Samsung-Computer-0.8.129",
+      "file": "Morph-TV-Samsung-Computer-0.8.129.zip",
+      "bytes": 3806734,
+      "sha256": "46aeb4275c8e05af473700e069d254b5a1083cc69d2a317ee9733b5e9367963a"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.128",
-      "file": "Morph-TV-Install-Kit-0.8.128.zip",
-      "bytes": 11536908,
-      "sha256": "108145e13c65aa4c351729991ba0ae1113cfa8b45c9992359673f98e8f7940c8"
+      "name": "Morph-TV-Install-Kit-0.8.129",
+      "file": "Morph-TV-Install-Kit-0.8.129.zip",
+      "bytes": 11542490,
+      "sha256": "2befe7d7fd1b703046d3b25bec831894ddcabd4bee654431b75599e17b684007"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.128",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.128.zip",
-      "bytes": 3804881,
-      "sha256": "746c3b3ed6f340e62574081c7428c0f5d3fffb2c97ee416ad7fdb07f58034502"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.129",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.129.zip",
+      "bytes": 3806612,
+      "sha256": "99842b316c00f70467505a0a999d9f095f8352e651cad0df0ece3e55d6cde0c7"
     }
   ],
   "legacy": {
@@ -131,5 +131,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.128.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.129.zip"
 }

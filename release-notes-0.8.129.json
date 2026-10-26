@@ -1,0 +1,23 @@
+{
+  "version": "0.8.129",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Real Madrid and Barcelona themes and four artwork files are free; advanced customization remains Plus",
+    "Phone Back closes overlays, returns to Home, and exits at root",
+    "Light performance mode displays the first slideshow photo without rotation",
+    "Plus launch purchase is lifetime until 2026-11-26T20:26:24Z; existing lifetime entitlements remain lifetime",
+    "New purchases after the offer: $5 single TV or $10 family, 365 days, manual renewal without automatic charge",
+    "Localized Plus descriptions for custom name, images, logo and slideshow; fitness explicitly coming soon and unavailable now"
+  ],
+  "validation": [
+    "Production Nginx/API public free artwork and protected premium delivery",
+    "Mocked Stripe offer boundary, lifetime preservation, annual expiry and webhook replay",
+    "Actual phone/TV bundle theme permissions and artwork",
+    "AR/EN/FR pricing page and 390px layout",
+    "Package payloads and release hashes"
+  ],
+  "limitations": [
+    "No physical TV or phone attached; device-specific playback and HDMI require user testing",
+    "No real payment charged in tests"
+  ]
+}
