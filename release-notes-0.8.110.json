@@ -1,0 +1,36 @@
+{
+  "version": "0.8.110",
+  "changes": [
+    "TV theme categories, watermarked pack previews and support@herroshetta.com contact for custom company/brand themes and support",
+    "Inter Miami pink and black theme with owner supplied crest and player art",
+    "Owner Egypt, Saudi emblem and Ittihad images preserved; old source exports archived outside builds"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.110",
+      "file": "Morph-TV-Phone-0.8.110.apk",
+      "bytes": 12282114,
+      "sha256": "58f5ab7ae5eac3d681d97d98611c8273386639739e8b20225137d34ef4e684b7"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.110",
+      "file": "Morph-TV-Android-TV-0.8.110.apk",
+      "bytes": 3842792,
+      "sha256": "23f0a0ee8fc624231ab206f0bc32c06b7aaa0fe1906a165a8b27b0d0fa2d46c2"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.110",
+      "file": "Morph-TV-LG-0.8.110.ipk",
+      "bytes": 3697564,
+      "sha256": "32326d04ac3d429644fad90a0a42510075966957a68bf227402f99bf2ff241a5"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}

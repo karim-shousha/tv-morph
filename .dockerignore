@@ -12,8 +12,8 @@
 !tvmorph.png
 !SHA256SUMS.txt
 !README.md
-!Morph-TV-Phone-0.8.109.apk
-!Morph-TV-Android-TV-0.8.109.apk
+!Morph-TV-Phone-0.8.110.apk
+!Morph-TV-Android-TV-0.8.110.apk
 !site-assets/
 !site-assets/**
 !theme-packs/
@@ -21,7 +21,7 @@
 
 !lg-install.html
 !lg-preview-validation.json
-!Morph-TV-LG-0.8.109.ipk
+!Morph-TV-LG-0.8.110.ipk
 
 !release-notes-0.8.81.json
 !support-links.json
@@ -112,3 +112,7 @@
 !release-notes-0.8.109.json
 
 !release-notes-0.8.109.json
+
+!release-notes-0.8.110.json
+
+!release-notes-0.8.110.json
