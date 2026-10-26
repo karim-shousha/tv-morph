@@ -288,19 +288,25 @@
     },
     {
       "id": "inter-miami",
-      "version": 1,
+      "version": 2,
       "themes": [
         "inter-miami"
       ],
       "files": [
         {
           "name": "inter-miami-wordmark-v1.webp",
-          "file": "inter-miami-v1-inter-miami-wordmark-v1.webp",
+          "file": "inter-miami-v2-inter-miami-wordmark-v1.webp",
           "bytes": 153932,
           "sha256": "59014a8bd686f73b27939465eff685a13329e6ac5518b3d2667036c2760504d9"
+        },
+        {
+          "name": "intermiami.webp",
+          "file": "inter-miami-v2-intermiami.webp",
+          "bytes": 283554,
+          "sha256": "759c5f164fea7dbe420057c90303ec8df80a6a4c4b990b953fb077d6f766f460"
         }
       ],
-      "bytes": 153932,
+      "bytes": 437486,
       "tier": "plus"
     }
   ],
@@ -616,6 +622,12 @@
       "file": "saudi-clubs-v3-nassr-stars-cutout-v2.webp",
       "bytes": 320374,
       "sha256": "eb8391bc573c709c75ab95c2069438594f7b967ebaecf57c558a5013dd152c54"
+    },
+    {
+      "name": "inter-miami-wordmark-v1.webp",
+      "file": "inter-miami-v1-inter-miami-wordmark-v1.webp",
+      "bytes": 153932,
+      "sha256": "59014a8bd686f73b27939465eff685a13329e6ac5518b3d2667036c2760504d9"
     }
   ]
 }
