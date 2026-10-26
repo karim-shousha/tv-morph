@@ -1,0 +1,8 @@
+{
+  "version": "0.8.122",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Preserve core phone logo during theme-asset cleanup and assert that its bytes exist in the build"
+  ],
+  "physicalTVValidation": "Not required for phone branding; prior Hisense HDMI retest remains pending"
+}
