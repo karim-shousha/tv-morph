@@ -276,7 +276,7 @@
     },
     {
       "id": "patriotic",
-      "version": 3,
+      "version": 4,
       "themes": [
         "saudi-national",
         "egypt-national"
@@ -284,30 +284,30 @@
       "files": [
         {
           "name": "egypt-flag-hq-v1.webp",
-          "file": "patriotic-v3-egypt-flag-hq-v1.webp",
+          "file": "patriotic-v4-egypt-flag-hq-v1.webp",
           "bytes": 73340,
           "sha256": "45bb82194e738d137993ab5466e73e9a073f5799b1ba693bf28f7ec0253fa333"
         },
         {
-          "name": "egypt-patriotic-banner-v2.webp",
-          "file": "patriotic-v3-egypt-patriotic-banner-v2.webp",
-          "bytes": 212380,
-          "sha256": "bb5772464b75edbcd8df21809136c4def5dda1894948c65df30d8bd95766af46"
+          "name": "egypt-patriotic-world-v1.webp",
+          "file": "patriotic-v4-egypt-patriotic-world-v1.webp",
+          "bytes": 586502,
+          "sha256": "88367aac66bd26f32f7b9723a428a75f225c54fea4353b8ce9879675ea1dfcae"
         },
         {
           "name": "saudi-flag-hq-v1.webp",
-          "file": "patriotic-v3-saudi-flag-hq-v1.webp",
+          "file": "patriotic-v4-saudi-flag-hq-v1.webp",
           "bytes": 126096,
           "sha256": "d8c523bffc7bd6e9054d81bbfb78dd26646935ea25322e9f09b16bdc83615251"
         },
         {
           "name": "saudi-patriotic-world-v1.webp",
-          "file": "patriotic-v3-saudi-patriotic-world-v1.webp",
+          "file": "patriotic-v4-saudi-patriotic-world-v1.webp",
           "bytes": 630498,
           "sha256": "6494826716b52fa183cf90ff755f03f5b8a38b2777e91c604f7f4b1629cf5a04"
         }
       ],
-      "bytes": 1042314,
+      "bytes": 1416436,
       "tier": "free",
       "titleAr": "\u062b\u064a\u0645\u0627\u062a \u0648\u0637\u0646\u064a\u0629 \u0645\u062c\u0627\u0646\u064a\u0629",
       "titleEn": "Free patriotic themes"
@@ -762,6 +762,30 @@
       "file": "patriotic-v2-saudi-flag-hq-v1.webp",
       "bytes": 126096,
       "sha256": "d8c523bffc7bd6e9054d81bbfb78dd26646935ea25322e9f09b16bdc83615251"
+    },
+    {
+      "name": "egypt-flag-hq-v1.webp",
+      "file": "patriotic-v3-egypt-flag-hq-v1.webp",
+      "bytes": 73340,
+      "sha256": "45bb82194e738d137993ab5466e73e9a073f5799b1ba693bf28f7ec0253fa333"
+    },
+    {
+      "name": "egypt-patriotic-banner-v2.webp",
+      "file": "patriotic-v3-egypt-patriotic-banner-v2.webp",
+      "bytes": 212380,
+      "sha256": "bb5772464b75edbcd8df21809136c4def5dda1894948c65df30d8bd95766af46"
+    },
+    {
+      "name": "saudi-flag-hq-v1.webp",
+      "file": "patriotic-v3-saudi-flag-hq-v1.webp",
+      "bytes": 126096,
+      "sha256": "d8c523bffc7bd6e9054d81bbfb78dd26646935ea25322e9f09b16bdc83615251"
+    },
+    {
+      "name": "saudi-patriotic-world-v1.webp",
+      "file": "patriotic-v3-saudi-patriotic-world-v1.webp",
+      "bytes": 630498,
+      "sha256": "6494826716b52fa183cf90ff755f03f5b8a38b2777e91c604f7f4b1629cf5a04"
     }
   ]
 }
