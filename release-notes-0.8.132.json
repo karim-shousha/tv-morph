@@ -1,0 +1,23 @@
+{
+  "version": "0.8.132",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Detect Fire TV through manufacturer/system feature and installed store packages; display Amazon Appstore instead of a fixed Google Play label",
+    "Open the installed store through explicit native package launch intents; support Amazon URI search and launcher fallback",
+    "Installed-app and store searches open a native Android EditText dialog, request the system keyboard and preserve current text",
+    "Separate installed-app filter submission from Amazon/Google store search; cancel preserves the previous query",
+    "Store labels and search dialog actions support Arabic, English, French, Chinese and Japanese",
+    "Preserve 0.8.131 channel switching, previous/next episodes and contained episode lists"
+  ],
+  "validation": [
+    "Production StoreAccess with mocked Android intents: Fire priority, alternate Amazon package, encoded query, fallback and absent store",
+    "Actual built TV UI with mocked native bridge: both store buttons, native text-entry request, existing query and distinct store search in five languages",
+    "Live-channel/search and episode-navigation browser regression fixtures",
+    "Signed APKs, matching embedded receiver packages and release checksums"
+  ],
+  "limitations": [
+    "No physical Fire TV attached: actual Amazon Appstore launch and Fire keyboard rendering require device confirmation",
+    "Store availability also depends on the installed/enabled Amazon store and device setup",
+    "Legacy remains 0.1.1"
+  ]
+}

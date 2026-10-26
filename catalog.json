@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.131",
+  "latest": "0.8.132",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.131",
+      "version": "0.8.132",
       "download": "/download/phone",
-      "noteAr": "تغيير القنوات بالريموت، الحلقة السابقة والتالية، إصلاح قائمة الحلقات الطويلة والبحث في التطبيقات.",
-      "noteEn": "Live channel Up/Down, previous/next episodes, contained episode lists and stable installed-app search."
+      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
+      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.131",
+      "version": "0.8.132",
       "download": "/download/android",
-      "noteAr": "تغيير القنوات بالريموت، الحلقة السابقة والتالية، إصلاح قائمة الحلقات الطويلة والبحث في التطبيقات.",
-      "noteEn": "Live channel Up/Down, previous/next episodes, contained episode lists and stable installed-app search."
+      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
+      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.131",
+      "version": "0.8.132",
       "download": "/download/firetv",
-      "noteAr": "تغيير القنوات بالريموت، الحلقة السابقة والتالية، إصلاح قائمة الحلقات الطويلة والبحث في التطبيقات.",
-      "noteEn": "Live channel Up/Down, previous/next episodes, contained episode lists and stable installed-app search."
+      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
+      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تغيير القنوات بالريموت، الحلقة السابقة والتالية، إصلاح قائمة الحلقات الطويلة والبحث في التطبيقات.",
-      "noteEn": "Live channel Up/Down, previous/next episodes, contained episode lists and stable installed-app search.",
+      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
+      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.131",
+      "version": "0.8.132",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.131.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.132.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.131.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.132.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تغيير القنوات بالريموت، الحلقة السابقة والتالية، إصلاح قائمة الحلقات الطويلة والبحث في التطبيقات.",
-      "noteEn": "Live channel Up/Down, previous/next episodes, contained episode lists and stable installed-app search.",
-      "version": "0.8.131",
+      "noteAr": "إصلاح متجر Fire TV ليفتح Amazon Appstore، ونافذة كتابة أندرويد لبحث التطبيقات والمتجر.",
+      "noteEn": "Fire TV Amazon Appstore detection and launch, plus native Android search text entry.",
+      "version": "0.8.132",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -79,22 +79,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.131",
-      "file": "Morph-TV-Phone-0.8.131.apk",
-      "bytes": 12672043,
-      "sha256": "4a28409242dd5b491834d10171c4f579f259b705f03c06939ec5f45a0ade14ef"
+      "name": "Morph-TV-Phone-0.8.132",
+      "file": "Morph-TV-Phone-0.8.132.apk",
+      "bytes": 12680235,
+      "sha256": "57b6f6164c9c529102c01deb5ececbba31d89f8bab6ef5df03e2f6ca79360987"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.131",
-      "file": "Morph-TV-Android-TV-0.8.131.apk",
-      "bytes": 3934223,
-      "sha256": "a78dd04a31fbe1fdfaddbe1a48eb667bc9ffd4ba668dda99051dc60cd6bb4d25"
+      "name": "Morph-TV-Android-TV-0.8.132",
+      "file": "Morph-TV-Android-TV-0.8.132.apk",
+      "bytes": 3938319,
+      "sha256": "6f341b81948e6f9c27ed9f8b06a9111c0baeb4e8bb73dcdb0f2738c123fc0546"
     },
     {
-      "name": "Morph-TV-LG-0.8.131",
-      "file": "Morph-TV-LG-0.8.131.ipk",
-      "bytes": 3776164,
-      "sha256": "3a33aba4f9326b014e008bbbb1875e10fee80bbdd00be9084e62719eba89da24"
+      "name": "Morph-TV-LG-0.8.132",
+      "file": "Morph-TV-LG-0.8.132.ipk",
+      "bytes": 3776156,
+      "sha256": "3b92dcd14cf07c43c08a7057f54c7b36ba2cff632c3b548e2b28f7e5df930ae3"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -103,22 +103,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.131",
-      "file": "Morph-TV-Samsung-Computer-0.8.131.zip",
-      "bytes": 3808507,
-      "sha256": "c3fc8f24feafcbb33cf43543df5a4da8b57084eccfeb5f2f04400b204da39c71"
+      "name": "Morph-TV-Samsung-Computer-0.8.132",
+      "file": "Morph-TV-Samsung-Computer-0.8.132.zip",
+      "bytes": 3808516,
+      "sha256": "1cfc649093a7356137d7b672f4238294255f0f08d5d44f6a2d953c905939be6f"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.131",
-      "file": "Morph-TV-Install-Kit-0.8.131.zip",
-      "bytes": 11550735,
-      "sha256": "4fb416329a751ec41c2c1028064729c4aaced58abf007b67d79ca5a8c7249697"
+      "name": "Morph-TV-Install-Kit-0.8.132",
+      "file": "Morph-TV-Install-Kit-0.8.132.zip",
+      "bytes": 11553260,
+      "sha256": "4015c8f4ce8b29fe2efe268b276a135e1e2c73eddb8b9eac8d6526a89a877781"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.131",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.131.zip",
-      "bytes": 3808385,
-      "sha256": "b5cef03195421a12295eaca7d7ffdb1dd31067aeaa234530f4fc4a8feab78724"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.132",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.132.zip",
+      "bytes": 3808394,
+      "sha256": "4e80feae01171565d652c36393db47cccc5bf03aa779d660b7910160d716338c"
     }
   ],
   "legacy": {
@@ -131,5 +131,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.131.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.132.zip"
 }
