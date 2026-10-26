@@ -1,48 +1,48 @@
 {
   "schema": 1,
-  "latest": "0.8.118",
+  "latest": "0.8.119",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.118",
+      "version": "0.8.119",
       "download": "/download/phone",
-      "noteAr": "مواقيت صلاة أوضح وميعاد الصلاة القادمة في الرئيسية، تحسين HDMI، وإخفاء الرياضة مؤقتًا.",
-      "noteEn": "High-contrast prayer cards and next prayer time on Home, HDMI handling improvements, and Fitness temporarily hidden."
+      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
+      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.118",
+      "version": "0.8.119",
       "download": "/download/android",
-      "noteAr": "مواقيت صلاة أوضح وميعاد الصلاة القادمة في الرئيسية، تحسين HDMI، وإخفاء الرياضة مؤقتًا.",
-      "noteEn": "High-contrast prayer cards and next prayer time on Home, HDMI handling improvements, and Fitness temporarily hidden."
+      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
+      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.118",
+      "version": "0.8.119",
       "download": "/download/firetv",
-      "noteAr": "مواقيت صلاة أوضح وميعاد الصلاة القادمة في الرئيسية، تحسين HDMI، وإخفاء الرياضة مؤقتًا.",
-      "noteEn": "High-contrast prayer cards and next prayer time on Home, HDMI handling improvements, and Fitness temporarily hidden."
+      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
+      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "مواقيت صلاة أوضح وميعاد الصلاة القادمة في الرئيسية، تحسين HDMI، وإخفاء الرياضة مؤقتًا.",
-      "noteEn": "High-contrast prayer cards and next prayer time on Home, HDMI handling improvements, and Fitness temporarily hidden.",
+      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
+      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.118",
+      "version": "0.8.119",
       "minTizen": "4.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.118.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.119.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false
     },
@@ -50,9 +50,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "مواقيت صلاة أوضح وميعاد الصلاة القادمة في الرئيسية، تحسين HDMI، وإخفاء الرياضة مؤقتًا.",
-      "noteEn": "High-contrast prayer cards and next prayer time on Home, HDMI handling improvements, and Fitness temporarily hidden.",
-      "version": "0.8.118",
+      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
+      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings.",
+      "version": "0.8.119",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.118",
-      "file": "Morph-TV-Phone-0.8.118.apk",
-      "bytes": 12516022,
-      "sha256": "e6f16e5add13c1efa4ae2b6a101b7839058a9eef58dc8172088361d87815e037"
+      "name": "Morph-TV-Phone-0.8.119",
+      "file": "Morph-TV-Phone-0.8.119.apk",
+      "bytes": 12524286,
+      "sha256": "d2c95c3d48dcf9a60309c14d8db286d43667a72f999091058cab027dfa851063"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.118",
-      "file": "Morph-TV-Android-TV-0.8.118.apk",
-      "bytes": 3909263,
-      "sha256": "c2807d0047665e119057ac702df8dafa7de52237ebca058a0d57c7d46a410938"
+      "name": "Morph-TV-Android-TV-0.8.119",
+      "file": "Morph-TV-Android-TV-0.8.119.apk",
+      "bytes": 3909335,
+      "sha256": "02343102a1c8a8d5794c6b4b4f3fc81eaff1bddffc56539284519c3edd118e64"
     },
     {
-      "name": "Morph-TV-LG-0.8.118",
-      "file": "Morph-TV-LG-0.8.118.ipk",
-      "bytes": 3761050,
-      "sha256": "7cd63017cf340804a78ef24b3bf1c7b44edb32a21f601923dbad0739380d95b6"
+      "name": "Morph-TV-LG-0.8.119",
+      "file": "Morph-TV-LG-0.8.119.ipk",
+      "bytes": 3763804,
+      "sha256": "5b3846d659ba1a7224c250a2dfdaba7728acce3b3b78e453f2566064e8e2df49"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -96,16 +96,16 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.118",
-      "file": "Morph-TV-Samsung-Computer-0.8.118.zip",
-      "bytes": 3771929,
-      "sha256": "9af51f73faf42ae6efd55660df2946cc58fcf5c97a9c8fe3db9991de1d6e2476"
+      "name": "Morph-TV-Samsung-Computer-0.8.119",
+      "file": "Morph-TV-Samsung-Computer-0.8.119.zip",
+      "bytes": 3776108,
+      "sha256": "63fa08b34584126030a1dc8a1fb3835a6e88e307401138c868c5b03b62913098"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.118",
-      "file": "Morph-TV-Install-Kit-0.8.118.zip",
-      "bytes": 11468651,
-      "sha256": "144ae2337bae43e578a83db53ba7b4a66ca025734fd4b07f8ef3307378d29e2a"
+      "name": "Morph-TV-Install-Kit-0.8.119",
+      "file": "Morph-TV-Install-Kit-0.8.119.zip",
+      "bytes": 11479233,
+      "sha256": "fcb254bb53125359ef3786d3f811899e121a4f1f0cd21248f9b55455f2a7a730"
     }
   ],
   "legacy": {
@@ -118,5 +118,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.118.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.119.zip"
 }

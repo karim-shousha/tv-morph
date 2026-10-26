@@ -1,0 +1,12 @@
+{
+  "version": "0.8.119",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Redesigned movie and series details: correctly proportioned larger posters, readable copy, larger colored action icons",
+    "Provider ratings shown as fractional five-star visualization with numeric score out of ten; unrated fallback localized",
+    "Series episodes retained within the details page",
+    "Provider ratings normalized from five-point and ten-point scales, retaining list rating when details omit it",
+    "Samsung input diagnostics show raw source list and native API errors; HDMI not yet fixed on affected physical TV"
+  ],
+  "physicalTVValidation": "Samsung HDMI issue remains under investigation; no fix claimed in this release"
+}
