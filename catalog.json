@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.133",
+  "latest": "0.8.134",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.133",
+      "version": "0.8.134",
       "download": "/download/phone",
-      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
-      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
+      "noteAr": "مزامنة تطبيقات LG واختصارات HDMI والتلفزيون، وتحسين ترتيب أزرار IPTV على LG وسامسونج وأندرويد والموبايل.",
+      "noteEn": "LG app sync and verified input shortcuts; spaced IPTV controls across LG, Samsung and Android/phone."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.133",
+      "version": "0.8.134",
       "download": "/download/android",
-      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
-      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
+      "noteAr": "مزامنة تطبيقات LG واختصارات HDMI والتلفزيون، وتحسين ترتيب أزرار IPTV على LG وسامسونج وأندرويد والموبايل.",
+      "noteEn": "LG app sync and verified input shortcuts; spaced IPTV controls across LG, Samsung and Android/phone."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.133",
+      "version": "0.8.134",
       "download": "/download/firetv",
-      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
-      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements."
+      "noteAr": "مزامنة تطبيقات LG واختصارات HDMI والتلفزيون، وتحسين ترتيب أزرار IPTV على LG وسامسونج وأندرويد والموبايل.",
+      "noteEn": "LG app sync and verified input shortcuts; spaced IPTV controls across LG, Samsung and Android/phone."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
-      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements.",
+      "noteAr": "مزامنة تطبيقات LG واختصارات HDMI والتلفزيون، وتحسين ترتيب أزرار IPTV على LG وسامسونج وأندرويد والموبايل.",
+      "noteEn": "LG app sync and verified input shortcuts; spaced IPTV controls across LG, Samsung and Android/phone.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.133",
+      "version": "0.8.134",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.133.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.134.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.133.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.134.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "وضع خفيف افتراضي، تحسين تنقل الهوم وربط الهاتف والمتاجر، وإصلاحات LG.",
-      "noteEn": "Default light mode, faster Home navigation, phone-link and store fixes, plus LG improvements.",
-      "version": "0.8.133",
+      "noteAr": "مزامنة تطبيقات LG واختصارات HDMI والتلفزيون، وتحسين ترتيب أزرار IPTV على LG وسامسونج وأندرويد والموبايل.",
+      "noteEn": "LG app sync and verified input shortcuts; spaced IPTV controls across LG, Samsung and Android/phone.",
+      "version": "0.8.134",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.133",
-      "file": "Morph-TV-Phone-0.8.133.apk",
-      "bytes": 12684331,
-      "sha256": "34bf1ccc5a94e1851e8573a87f0b20b257d5665e3628eb05d335710eee66c7b4"
+      "name": "Morph-TV-Phone-0.8.134",
+      "file": "Morph-TV-Phone-0.8.134.apk",
+      "bytes": 12688427,
+      "sha256": "cc266f3825b7056ba87d12efc1f6a7d23d296ffe7b7d8bca9e1e71efdca31b3e"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.133",
-      "file": "Morph-TV-Android-TV-0.8.133.apk",
-      "bytes": 3938319,
-      "sha256": "29d00ef68e9bc50e854867948c232d005b559e08a983af7bd6bc56d2ea10f883"
+      "name": "Morph-TV-Android-TV-0.8.134",
+      "file": "Morph-TV-Android-TV-0.8.134.apk",
+      "bytes": 3942415,
+      "sha256": "d4d2b9da45d941cb180d21f42947b8d76efabb004aed03a789d657e08230da1d"
     },
     {
-      "name": "Morph-TV-LG-0.8.133",
-      "file": "Morph-TV-LG-0.8.133.ipk",
-      "bytes": 3777898,
-      "sha256": "d66eade40a26d8f881683edab91148bd68907e1a59c51f036ee88024a595463e"
+      "name": "Morph-TV-LG-0.8.134",
+      "file": "Morph-TV-LG-0.8.134.ipk",
+      "bytes": 3779966,
+      "sha256": "fc72e552ed4d527b10ec27db22183e9e53050606064eca5f3d9097e4e9b277c1"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.133",
-      "file": "Morph-TV-Samsung-Computer-0.8.133.zip",
-      "bytes": 3809391,
-      "sha256": "e9d87d28e860b8e6104585356dab819ebf9bd157a7aae64f7005aaa1fa69f91b"
+      "name": "Morph-TV-Samsung-Computer-0.8.134",
+      "file": "Morph-TV-Samsung-Computer-0.8.134.zip",
+      "bytes": 3809614,
+      "sha256": "12fe62d55a9de9bdbc0361ee19cd30e4c2f04494493e5380852d45849c5e734a"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.133",
-      "file": "Morph-TV-Install-Kit-0.8.133.zip",
-      "bytes": 11557522,
-      "sha256": "3c81088129af6d369bf555e11b6493df89818f1218d0168293b684d157d256bc"
+      "name": "Morph-TV-Install-Kit-0.8.134",
+      "file": "Morph-TV-Install-Kit-0.8.134.zip",
+      "bytes": 11559923,
+      "sha256": "880afd80cdd85aaa172c028eeb25f41eea3924967961088caea7a5b28f9c09a4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.133",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.133.zip",
-      "bytes": 3809270,
-      "sha256": "eb1b1803ed71ef38a802de50ded6eb5bcabe97e3c5fede6d530616f07f98d61f"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.134",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.134.zip",
+      "bytes": 3809492,
+      "sha256": "82a76396dde4ca1920fd8af4b6d01bb426d2fdd0852d06a90ce538b862146bec"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.133.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.134.zip"
 }

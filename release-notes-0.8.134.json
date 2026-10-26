@@ -1,0 +1,26 @@
+{
+  "version": "0.8.134",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "LG installed-app sync runs on phone remote connection as well as explicit app refresh; refreshes visible TV app and Home lists",
+    "Restore LG HDMI/Live TV shortcuts; list only system application IDs confirmed by public installed-status API and launch on explicit selection",
+    "Do not fabricate connected-cable status or current broadcast metadata; explain LG privilege rejection without retry",
+    "LG player uses separate header controls, fixed minimum button size, margins and an explicit single playback-state label",
+    "Samsung controls use a spaced wrapping toolbar and a single playback-state icon",
+    "Android TV/Google TV/Fire TV and phone native player use a scrollable control row with larger touch/focus targets",
+    "Retain default light performance mode, port9922 SSH vs9991 key server, and exact embedded LG-IPK integrity stamping"
+  ],
+  "validation": [
+    "Built LG app sync/pin and HDMI/tuner UI integration using mocked public service",
+    "Ten Samsung/LG layout fixtures: Arabic, English, French, Chinese, Japanese; no button overlap/clipping",
+    "Built Android/Samsung/LG remote search/live-channel regressions and Samsung/LG episode navigation boundaries",
+    "Native Android build, credential/seek and phone Back regression fixtures",
+    "Signed APK identity, bundled receiver parity, LG installer DEX/IPK SHA-256 and release checksums"
+  ],
+  "limitations": [
+    "Physical LG and every manufacturer/model have not been verified",
+    "LG may deny launching privileged system apps from a developer app; Input/Live TV remote remains the fallback",
+    "Complete LG app sync needs paired Developer Mode and foreground Morph TV; some hidden/system apps remain unavailable",
+    "Legacy0.1.1 retains its Android system MediaController; it does not have the custom TV launcher/platform features"
+  ]
+}
