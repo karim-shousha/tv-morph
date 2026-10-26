@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "latest": "0.8.126",
+  "latest": "0.8.127",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.126",
+      "version": "0.8.127",
       "download": "/download/phone",
-      "noteAr": "تحسين الوضع الخفيف والتنقل بين القنوات، مع مشغل HDMI بديل داخل التطبيق لأجهزة Android المتوافقة.",
-      "noteEn": "Broader automatic light mode, lighter IPTV focus updates and an in-app Android HDMI fallback player."
+      "noteAr": "إصلاح حفظ اشتراك IPTV على الموبايل دون تلفزيون، وروابط Xtream والتحكم باللمس والرجوع والتقديم.",
+      "noteEn": "Fix phone-local IPTV setup, Xtream URL input, touch controls, Back and seeking."
     },
     {
       "id": "android",
@@ -79,12 +79,6 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.126",
-      "file": "Morph-TV-Phone-0.8.126.apk",
-      "bytes": 12639120,
-      "sha256": "f674c6dee8d092efe500193db3544b25f73f5799bf76ce6af361bd909842a97d"
-    },
-    {
       "name": "Morph-TV-Android-TV-0.8.126",
       "file": "Morph-TV-Android-TV-0.8.126.apk",
       "bytes": 3925876,
@@ -119,6 +113,12 @@
       "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip",
       "bytes": 3801076,
       "sha256": "3d7a4b2eb3bb90488f957a171ba38a4de8a1996ca6fbf3b269882ae4a7d3e622"
+    },
+    {
+      "name": "Morph-TV-Phone-0.8.127",
+      "file": "Morph-TV-Phone-0.8.127.apk",
+      "bytes": 12639120,
+      "sha256": "601829de59ea59a65ccbddb54eff9a24aab8e0fe2718999f2681fd36716e7587"
     }
   ],
   "legacy": {

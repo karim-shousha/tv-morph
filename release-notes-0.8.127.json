@@ -1,0 +1,25 @@
+{
+  "phoneVersion": "0.8.127",
+  "tvReceiversVersion": "0.8.126",
+  "changes": [
+    "Phone IPTV account form is outside collapsed TV controls; encrypted phone-only authentication without a connected TV",
+    "Normalize provider bases and full Xtream get.php/player_api.php URLs; preserve password characters; do not expose credentials in invalid-URL errors",
+    "Preserve edit cursor arrow keys and exact native account failure messages",
+    "Touch video to reveal controls; phone Back returns to the library; horizontal action scrolling",
+    "Pause while dragging seekbar, clamp seek end, preserve paused state on returning; reset stale seek state on retry",
+    "New website installation helper selects route by OS/version, Android phone and computer availability; includes Samsung certificates and LG Developer Mode"
+  ],
+  "tests": [
+    "Signed non-debug APK, same signing identity, changed DEX, existing embedded receiver binaries preserved",
+    "Phone UI subscription save/retry/standalone and landscape account setup with native transport mocks",
+    "Production Xtream normalization and local HTTP provider auth fixture",
+    "Native SeekHoldPolicy exact 10s taps, acceleration, start/end bounds and stale-key guard",
+    "Stream HLS/TS regression",
+    "27 installation helper routes in AR/EN/FR at 390px"
+  ],
+  "limitations": [
+    "No physical Android phone attached; native touch/video integration requires user-device verification",
+    "No claim that all stream codecs are supported",
+    "Play Protect classification is not changed by this release"
+  ]
+}

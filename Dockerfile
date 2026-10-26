@@ -24,3 +24,5 @@ COPY install.html Morph-TV-Samsung-Computer-0.8.126.zip Morph-TV-Install-Kit-0.8
 COPY fitness-music /usr/share/nginx/html/fitness-music/
 
 COPY Morph-TV-Samsung-Tizen4-Computer-0.8.126.zip /usr/share/nginx/html/
+
+COPY install-helper.html install-helper.js install-helper.css release-notes-0.8.127.json /usr/share/nginx/html/
