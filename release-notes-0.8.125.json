@@ -1,0 +1,15 @@
+{
+  "version": "0.8.125",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android live playback automatically tries provider HLS/TS alternate once; keeps credentials, query and channel ID unchanged",
+    "Bounded 20-second prepare timeout per source; stale callbacks ignored",
+    "Distinguish reported decoder unsupported, malformed stream, network/timeout and unknown failures without exposing URLs",
+    "Retry preserves saved VOD resume position; optional installed external player selected by user",
+    "Error and recovery labels localized in Arabic, English, French, Chinese and Japanese"
+  ],
+  "limitations": [
+    "No software decoder embedded; device codec support remains a limit",
+    "No physical customer stream test; provider may not expose both live formats"
+  ]
+}

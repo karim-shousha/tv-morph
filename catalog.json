@@ -1,48 +1,48 @@
 {
   "schema": 1,
-  "latest": "0.8.124",
+  "latest": "0.8.125",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.124",
+      "version": "0.8.125",
       "download": "/download/phone",
-      "noteAr": "إصلاح ريموت مشغل سامسونج والرجوع والتقديم وتبديل القنوات، وتحسين تنسيق العربي وقراءة حلقات المسلسلات.",
-      "noteEn": "Samsung player remote, Back, seeking and channel switching fixes; Arabic layout and series episode normalization."
+      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
+      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.124",
+      "version": "0.8.125",
       "download": "/download/android",
-      "noteAr": "إصلاح ريموت مشغل سامسونج والرجوع والتقديم وتبديل القنوات، وتحسين تنسيق العربي وقراءة حلقات المسلسلات.",
-      "noteEn": "Samsung player remote, Back, seeking and channel switching fixes; Arabic layout and series episode normalization."
+      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
+      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.124",
+      "version": "0.8.125",
       "download": "/download/firetv",
-      "noteAr": "إصلاح ريموت مشغل سامسونج والرجوع والتقديم وتبديل القنوات، وتحسين تنسيق العربي وقراءة حلقات المسلسلات.",
-      "noteEn": "Samsung player remote, Back, seeking and channel switching fixes; Arabic layout and series episode normalization."
+      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
+      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح ريموت مشغل سامسونج والرجوع والتقديم وتبديل القنوات، وتحسين تنسيق العربي وقراءة حلقات المسلسلات.",
-      "noteEn": "Samsung player remote, Back, seeking and channel switching fixes; Arabic layout and series episode normalization.",
+      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
+      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.124",
+      "version": "0.8.125",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.124.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.125.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -52,9 +52,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح ريموت مشغل سامسونج والرجوع والتقديم وتبديل القنوات، وتحسين تنسيق العربي وقراءة حلقات المسلسلات.",
-      "noteEn": "Samsung player remote, Back, seeking and channel switching fixes; Arabic layout and series episode normalization.",
-      "version": "0.8.124",
+      "noteAr": "تجربة HLS وTS تلقائيًا للقنوات المباشرة، وتشخيص أوضح لأخطاء التشغيل وخيار مشغل آخر على Android.",
+      "noteEn": "Automatic HLS/TS live fallback, classified playback errors and an installed external-player option on Android.",
+      "version": "0.8.125",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,22 +74,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.124",
-      "file": "Morph-TV-Phone-0.8.124.apk",
-      "bytes": 12614466,
-      "sha256": "bccf53ac63d5abef7b0054a5f6b91a8700ad8c9a0e2e785cbc23fa539fd0d7a3"
+      "name": "Morph-TV-Phone-0.8.125",
+      "file": "Morph-TV-Phone-0.8.125.apk",
+      "bytes": 12622658,
+      "sha256": "89ea1a45446a32a34b7de6b569743833906561092940e2231fd1b54640c290e1"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.124",
-      "file": "Morph-TV-Android-TV-0.8.124.apk",
-      "bytes": 3913431,
-      "sha256": "36ec3a6f92967d1f0ea13246fb10d0959464623c59b2b5e01e8b1f9ce2c8fa92"
+      "name": "Morph-TV-Android-TV-0.8.125",
+      "file": "Morph-TV-Android-TV-0.8.125.apk",
+      "bytes": 3917527,
+      "sha256": "ee523539164e12ba7d72ad6676962ecb4c9aa6f6f4482692d342105a6e05939b"
     },
     {
-      "name": "Morph-TV-LG-0.8.124",
-      "file": "Morph-TV-LG-0.8.124.ipk",
-      "bytes": 3766836,
-      "sha256": "1e4ffe3bbba3916cf943c1458ec8b3983f4e704299ff2b90eb45663b66de4343"
+      "name": "Morph-TV-LG-0.8.125",
+      "file": "Morph-TV-LG-0.8.125.ipk",
+      "bytes": 3766782,
+      "sha256": "93044eb31986b0b3c266a310882f312d5437b9aae4a1ce42371d0ee287d6cf6b"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -98,22 +98,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.124",
-      "file": "Morph-TV-Samsung-Computer-0.8.124.zip",
+      "name": "Morph-TV-Samsung-Computer-0.8.125",
+      "file": "Morph-TV-Samsung-Computer-0.8.125.zip",
       "bytes": 3798596,
-      "sha256": "1acaa8d64d309587b33a58829f128f2b7b1e95f710036b7d83a5e952c58e6ef2"
+      "sha256": "f2cfee24099ed738fd4f4eb657468e34080fde3a5bdac3d3ba0b828f25f1cea6"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.124",
-      "file": "Morph-TV-Install-Kit-0.8.124.zip",
-      "bytes": 11510105,
-      "sha256": "3a79e3e86407120d9121305ca3b0cae400661580bb6c15887eb9be7b991586d6"
+      "name": "Morph-TV-Install-Kit-0.8.125",
+      "file": "Morph-TV-Install-Kit-0.8.125.zip",
+      "bytes": 11514062,
+      "sha256": "e80035f9e0c1f3247227353cdc669e81127fbc1eff066921ad2f2a9630ab3247"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.124",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.124.zip",
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.125",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.125.zip",
       "bytes": 3798474,
-      "sha256": "4367e6a0ca3756a7c42198639d1d4e8498d0df14ffbf77e6faa1a17c7c422545"
+      "sha256": "65e177db118506a63e339adbe8e9a628429f31c05fddab53a7a062ef043d544e"
     }
   ],
   "legacy": {
@@ -126,5 +126,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.124.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.125.zip"
 }
