@@ -4,7 +4,7 @@ No client-supplied paid flags, donor links or browser redirects grant a license.
 import base64, contextlib, hashlib, hmac, json, os, re, secrets, sqlite3, time
 from pathlib import Path
 from urllib.request import Request, urlopen
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from urllib.error import URLError
 
 PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}}
@@ -232,7 +232,7 @@ class Plus:
             if path=='/api/plus/webhook':self.webhook(body,handler.headers.get('Stripe-Signature',''));result={'ok':True}
             else:
                 origin=handler.headers.get('Origin','')
-                if origin not in ['', 'null',self.origin] and not origin.startswith('http://localhost'):raise ValueError('origin_rejected')
+                if origin not in ['', 'null',self.origin] and not (urlsplit(origin).scheme=='http' and urlsplit(origin).hostname in ['localhost','127.0.0.1'] and not urlsplit(origin).username and not urlsplit(origin).password):raise ValueError('origin_rejected')
                 self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
                 if path=='/api/plus/checkout':result=self.checkout(data.get('plan'))
                 elif path=='/api/plus/order':

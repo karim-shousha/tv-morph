@@ -1,0 +1,38 @@
+{
+  "version": "0.8.114",
+  "changes": [
+    "Durable bounded catalog caches, six-hour background refresh and seven-day disk fallback",
+    "Avoid unchanged grid/poster rebuilds and catalog reload on playback return",
+    "Persist Samsung and LG catalog/category metadata in IndexedDB with account epoch isolation",
+    "Bound LAN request queue, request deadlines and socket shutdown cleanup",
+    "Strict localhost origin validation for Plus API"
+  ],
+  "embeddedPackages": "MATCH",
+  "physicalTVValidation": "NOT TESTED",
+  "downloads": [
+    {
+      "name": "Morph-TV-Phone-0.8.114",
+      "file": "Morph-TV-Phone-0.8.114.apk",
+      "bytes": 12302739,
+      "sha256": "2f07bd0c4a90e3457e8d51de873ff8dd33da854ba5303c35ce0d7c7be53ff16f"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.114",
+      "file": "Morph-TV-Android-TV-0.8.114.apk",
+      "bytes": 3846888,
+      "sha256": "b6116e210f3100ff05b0b2d78b0f5f08ae03b4b20ceb0e941af446b018513e02"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.114",
+      "file": "Morph-TV-LG-0.8.114.ipk",
+      "bytes": 3700986,
+      "sha256": "37f6d3cb2bf205222cf025b965987ada68279e57f554aaa5328cf5769863c43f"
+    },
+    {
+      "name": "Morph-TV-Legacy-0.1.0",
+      "file": "Morph-TV-Legacy-0.1.0.apk",
+      "bytes": 135727,
+      "sha256": "a56b046b7b4b2c15fea603925c3f9f29ca3fefe43b6bf0683b25096ce1542e45"
+    }
+  ]
+}

@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.113",
+  "latest": "0.8.114",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.113",
+      "version": "0.8.114",
       "download": "/download/phone",
-      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
-      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
+      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
+      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.113",
+      "version": "0.8.114",
       "download": "/download/android",
-      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
-      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
+      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
+      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.113",
+      "version": "0.8.114",
       "download": "/download/firetv",
-      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
-      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote."
+      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
+      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
-      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote.",
+      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
+      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.113"
+      "version": "0.8.114"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ثيمان وطنيان مجانيان لمصر والسعودية، حزمة السعودية ضمن Plus ومعاينات لكل الثيمات، وريموت أوضح بأيقونات ملوّنة.",
-      "noteEn": "Free Egypt and Saudi patriotic themes, Saudi Plus pack with previews, and a clearer colorful phone remote.",
-      "version": "0.8.113",
+      "noteAr": "تحسين سرعة مكتبة IPTV، حفظ المكتبة والتصنيفات وتحديثها في الخلفية، وتقوية استقبال اتصالات الشبكة.",
+      "noteEn": "Faster IPTV catalogs with durable caches and background refresh; bounded LAN connections.",
+      "version": "0.8.114",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.113",
-      "file": "Morph-TV-Phone-0.8.113.apk",
-      "bytes": 12290451,
-      "sha256": "079c9fd87b273bf101ba8cc68a80dd0083635dc436264237b549e15e0cb0f1a1"
+      "name": "Morph-TV-Phone-0.8.114",
+      "file": "Morph-TV-Phone-0.8.114.apk",
+      "bytes": 12302739,
+      "sha256": "2f07bd0c4a90e3457e8d51de873ff8dd33da854ba5303c35ce0d7c7be53ff16f"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.113",
-      "file": "Morph-TV-Android-TV-0.8.113.apk",
-      "bytes": 3842792,
-      "sha256": "d173cda8975a82ad7bacd7994ce942ad70d09ee1eb2cb564b0cf1f940e244cb1"
+      "name": "Morph-TV-Android-TV-0.8.114",
+      "file": "Morph-TV-Android-TV-0.8.114.apk",
+      "bytes": 3846888,
+      "sha256": "b6116e210f3100ff05b0b2d78b0f5f08ae03b4b20ceb0e941af446b018513e02"
     },
     {
-      "name": "Morph-TV-LG-0.8.113",
-      "file": "Morph-TV-LG-0.8.113.ipk",
-      "bytes": 3699426,
-      "sha256": "1be46ed5769c1f41dd78ca4928187563f80cde05398c884f3879bba3990e880f"
+      "name": "Morph-TV-LG-0.8.114",
+      "file": "Morph-TV-LG-0.8.114.ipk",
+      "bytes": 3700986,
+      "sha256": "37f6d3cb2bf205222cf025b965987ada68279e57f554aaa5328cf5769863c43f"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
