@@ -1,0 +1,14 @@
+{
+  "version": "0.8.116",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Optional one-time first-launch notice: core use is free, donations are optional and separate from Plus purchases",
+    "Existing OpenCode Fitness module integrated as the first Home sidebar button with five-language labels, original glass styling, native view routing, Back/focus restoration and scrolling",
+    "Preserve active workout DOM when returning from music; pause on external audio takeover and visibility loss; abort old session before starting another",
+    "Samsung Tizen 4.0+ compatibility and localized theme previews retained from 0.8.115",
+    "Computer installation kit refreshed for Android, Legacy, LG and Samsung; no Samsung USB TMG installer"
+  ],
+  "physicalTVValidation": "NOT TESTED",
+  "fitnessEngine": "Existing implementation preserved",
+  "fitnessArtwork": "Existing assets preserved; no regeneration"
+}
