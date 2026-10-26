@@ -1,0 +1,12 @@
+{
+  "version": "0.8.120",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Restore original Samsung native input implementation from the physically verified ClearTV 0.3.8 package",
+    "Restore standard Samsung application required_version 5.0 from pre-0.8.115 releases",
+    "Keep optional Tizen 4.0 computer manifest config-tizen4.xml for 2018 models",
+    "Retain movie and series poster redesign, star ratings and prayer contrast",
+    "Restore BEHIND TV-window placement and native Samsung Live TV app launch; retain prayer launch guard and Last HDMI remembrance"
+  ],
+  "physicalTVValidation": "HDMI rollback candidate; physical retest pending, cause not yet proven"
+}

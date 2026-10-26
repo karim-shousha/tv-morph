@@ -1,58 +1,60 @@
 {
   "schema": 1,
-  "latest": "0.8.119",
+  "latest": "0.8.120",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.119",
+      "version": "0.8.120",
       "download": "/download/phone",
-      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
-      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
+      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
+      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.119",
+      "version": "0.8.120",
       "download": "/download/android",
-      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
-      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
+      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
+      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.119",
+      "version": "0.8.120",
       "download": "/download/firetv",
-      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
-      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings."
+      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
+      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
-      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings.",
+      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
+      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.119",
-      "minTizen": "4.0",
+      "version": "0.8.120",
+      "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.119.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.120.zip",
       "installGuide": "/install.html",
-      "usbInstallerAvailable": false
+      "usbInstallerAvailable": false,
+      "computerCompatibilityMinTizen": "4.0",
+      "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تفاصيل الأفلام والمسلسلات بتصميم أوضح وبوسترات متناسبة، وتقييم بالنجوم.",
-      "noteEn": "Larger movie and series detail posters, clearer controls and fractional star ratings.",
-      "version": "0.8.119",
+      "noteAr": "استعادة إعداد سامسونج الأصلي للمداخل، مع الاحتفاظ بالبوسترات والتقييمات الجديدة.",
+      "noteEn": "Restore the original Samsung input baseline while retaining redesigned posters and star ratings.",
+      "version": "0.8.120",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +74,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.119",
-      "file": "Morph-TV-Phone-0.8.119.apk",
+      "name": "Morph-TV-Phone-0.8.120",
+      "file": "Morph-TV-Phone-0.8.120.apk",
       "bytes": 12524286,
-      "sha256": "d2c95c3d48dcf9a60309c14d8db286d43667a72f999091058cab027dfa851063"
+      "sha256": "bd3bca79a628131ff1851a2c135f90147803c760681d3ccd0cf91b0c1e402059"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.119",
-      "file": "Morph-TV-Android-TV-0.8.119.apk",
+      "name": "Morph-TV-Android-TV-0.8.120",
+      "file": "Morph-TV-Android-TV-0.8.120.apk",
       "bytes": 3909335,
-      "sha256": "02343102a1c8a8d5794c6b4b4f3fc81eaff1bddffc56539284519c3edd118e64"
+      "sha256": "9991be4a1b0f5c5ce3a737fa29e10d8641225c299dc9fea5aba9233dafecb832"
     },
     {
-      "name": "Morph-TV-LG-0.8.119",
-      "file": "Morph-TV-LG-0.8.119.ipk",
-      "bytes": 3763804,
-      "sha256": "5b3846d659ba1a7224c250a2dfdaba7728acce3b3b78e453f2566064e8e2df49"
+      "name": "Morph-TV-LG-0.8.120",
+      "file": "Morph-TV-LG-0.8.120.ipk",
+      "bytes": 3763016,
+      "sha256": "502101ff9d87543e35a4328c6d7f7da85cde2861fe58495041f156ea5bdd62c2"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -96,16 +98,16 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.119",
-      "file": "Morph-TV-Samsung-Computer-0.8.119.zip",
-      "bytes": 3776108,
-      "sha256": "63fa08b34584126030a1dc8a1fb3835a6e88e307401138c868c5b03b62913098"
+      "name": "Morph-TV-Samsung-Computer-0.8.120",
+      "file": "Morph-TV-Samsung-Computer-0.8.120.zip",
+      "bytes": 3776448,
+      "sha256": "6492ab049a9a13cfadd7f54605188328e4e85c757b440f73a5f6648699ce63cf"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.119",
-      "file": "Morph-TV-Install-Kit-0.8.119.zip",
-      "bytes": 11479233,
-      "sha256": "fcb254bb53125359ef3786d3f811899e121a4f1f0cd21248f9b55455f2a7a730"
+      "name": "Morph-TV-Install-Kit-0.8.120",
+      "file": "Morph-TV-Install-Kit-0.8.120.zip",
+      "bytes": 11478434,
+      "sha256": "2d52ada33d8da05d0a85a514118b9f0f18dc142c7d62d2fb12489c766897284a"
     }
   ],
   "legacy": {
@@ -118,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.119.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.120.zip"
 }
