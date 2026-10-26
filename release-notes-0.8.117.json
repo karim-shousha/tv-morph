@@ -1,0 +1,17 @@
+{
+  "version": "0.8.117",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Optional one-time first-launch notice: core use is free, donations are optional and separate from Plus purchases",
+    "Existing OpenCode Fitness module integrated as the first Home sidebar button with five-language labels, original glass styling, native view routing, Back/focus restoration and scrolling",
+    "Preserve active workout DOM when returning from music; pause on external audio takeover and visibility loss; abort old session before starting another",
+    "Samsung Tizen 4.0+ compatibility and localized theme previews retained from 0.8.115",
+    "Computer installation kit refreshed for Android, Legacy, LG and Samsung; no Samsung USB TMG installer",
+    "Fitness keeps the approved dark glass appearance in full and light performance modes; no workout images regenerated",
+    "Three original HER sports tracks: Morning Energy, Rhythm of Movement and Power Boost; on-demand MP3 streaming with preview, volume, workout pause/resume, interruption handling and failure/retry states"
+  ],
+  "physicalTVValidation": "NOT TESTED",
+  "fitnessEngine": "Existing implementation preserved",
+  "fitnessArtwork": "Existing assets preserved; no regeneration",
+  "musicRequiresInternet": true
+}

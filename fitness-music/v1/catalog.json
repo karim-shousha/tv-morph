@@ -1,0 +1,20 @@
+{
+  "source": "Original HER sports collection",
+  "files": [
+    {
+      "file": "Sport1.mp3",
+      "bytes": 4416992,
+      "sha256": "89624f834705d41f214b65218a8b29de995675ff14d1f58b0940ff9bd9b2ac50"
+    },
+    {
+      "file": "Sport2.mp3",
+      "bytes": 1134341,
+      "sha256": "fa122ed4c86bc74e11d2b1149e34f900113231f1e89154273693a9d5376b03bd"
+    },
+    {
+      "file": "Sport3.mp3",
+      "bytes": 1571328,
+      "sha256": "575a0282b0a60e883cf5e2fa917bda5e8733c1aebe58a4616616f911e2946b7a"
+    }
+  ]
+}
