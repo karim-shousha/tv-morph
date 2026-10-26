@@ -1,51 +1,51 @@
 {
   "schema": 1,
-  "latest": "0.8.108",
+  "latest": "0.8.109",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.108",
+      "version": "0.8.109",
       "download": "/download/phone",
-      "noteAr": "إضافة صورة لاعبي إنتر ميامي لتصميم الثيم بالوردي والأسود.",
-      "noteEn": "Owner supplied Inter Miami player image in the pink and black theme."
+      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
+      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.108",
+      "version": "0.8.109",
       "download": "/download/android",
-      "noteAr": "إضافة صورة لاعبي إنتر ميامي لتصميم الثيم بالوردي والأسود.",
-      "noteEn": "Owner supplied Inter Miami player image in the pink and black theme."
+      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
+      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.108",
+      "version": "0.8.109",
       "download": "/download/firetv",
-      "noteAr": "إضافة صورة لاعبي إنتر ميامي لتصميم الثيم بالوردي والأسود.",
-      "noteEn": "Owner supplied Inter Miami player image in the pink and black theme."
+      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
+      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إضافة صورة لاعبي إنتر ميامي لتصميم الثيم بالوردي والأسود.",
-      "noteEn": "Owner supplied Inter Miami player image in the pink and black theme.",
+      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
+      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.108"
+      "version": "0.8.109"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إضافة صورة لاعبي إنتر ميامي لتصميم الثيم بالوردي والأسود.",
-      "noteEn": "Owner supplied Inter Miami player image in the pink and black theme.",
-      "version": "0.8.108",
+      "noteAr": "معاينة شكل حزم الثيمات على التلفزيون قبل الشراء؛ التطبيق والحفظ للحزم المدفوعة يحتاجان Plus.",
+      "noteEn": "Preview TV themes before buying; apply and save paid packs with Plus.",
+      "version": "0.8.109",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -65,22 +65,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.108",
-      "file": "Morph-TV-Phone-0.8.108.apk",
-      "bytes": 12265519,
-      "sha256": "f3cfb16e2f499a1b1ec365c5a2dd2b829f1ad0fa0ea9fce9ea233261761e9f62"
+      "name": "Morph-TV-Phone-0.8.109",
+      "file": "Morph-TV-Phone-0.8.109.apk",
+      "bytes": 12282114,
+      "sha256": "4625c4d11ed2f2c396565eeb91d8fcbeed67da0806f0eb02fedb39cb60296e14"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.108",
-      "file": "Morph-TV-Android-TV-0.8.108.apk",
-      "bytes": 3838485,
-      "sha256": "576f8eb6128f53ecebf891368767511e2277a77c75e551d4699c8fc1d5d9884d"
+      "name": "Morph-TV-Android-TV-0.8.109",
+      "file": "Morph-TV-Android-TV-0.8.109.apk",
+      "bytes": 3842792,
+      "sha256": "aee85a6446eeee324668f2f7318c5824c10b8c5d9b67287c3218e195cf21b306"
     },
     {
-      "name": "Morph-TV-LG-0.8.108",
-      "file": "Morph-TV-LG-0.8.108.ipk",
-      "bytes": 3693320,
-      "sha256": "fd4f8b5a8fa9dc6e035e006a884dd11e4179753a1a5159733169391c4a26e267"
+      "name": "Morph-TV-LG-0.8.109",
+      "file": "Morph-TV-LG-0.8.109.ipk",
+      "bytes": 3696636,
+      "sha256": "0ae8019349ef969d0ef0dfec36c12bbab6da97a602cd749b77acad0d985a922c"
     },
     {
       "name": "Morph-TV-Legacy-0.1.0",
