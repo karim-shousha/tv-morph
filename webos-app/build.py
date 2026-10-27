@@ -26,7 +26,7 @@ shutil.copy2(ROOT/'.tools/webos-library/webOSTVjs-1.2.13/webOSTV.js',APP/'webOST
 shutil.copy2(ROOT/'.tools/webos-library/webOSTVjs-1.2.13/LICENSE-2.0.txt',APP/'webOSTV-LICENSE.txt')
 for size,name in [(80,'icon.png'),(130,'large-icon.png')]:Image.open(ROOT/'distribution/site-assets/morph-mark.webp').convert('RGBA').resize((size,size)).save(APP/name)
 html=(APP/'index.html').read_text(encoding='utf-8')
-html=html.replace('<body data-theme=','<body data-fixed-layout="true" data-build-version="0.8.154-lg" data-theme=')
+html=html.replace('<body data-theme=','<body data-fixed-layout="true" data-build-version="0.8.155-lg" data-theme=')
 html=html.replace('<span class="brand-icon">C</span> clear<span class="thin">tv</span>','<img src="assets/tvmorph.webp" style="width:64px;height:54px;object-fit:contain;margin-right:12px" alt="">Morph <span class="thin">TV</span>')
 html=html.replace('<script src="core.js">','<script src="webOSTV.js"></script><script src="lg-platform.js"></script><script src="locale.js"></script><script src="core.js">')
 html=html.replace('<script src="app.js">','<script src="lg-catalog.js"></script><script src="app.js">').replace('</body>','<script src="lg-media-html.js"></script><script src="lg-media.js"></script></body>')
@@ -64,6 +64,6 @@ def run(args):
  print(result.stdout.strip())
 node=Path('C:/Program Files/nodejs/node.exe');cli=ROOT/'.tools/webos/node_modules/@webos-tools/cli/bin/ares-package.js'
 run([node,cli,APP,'-o',HERE,'--no-minify'])
-ipks=[HERE/'com.zainbot.morphtv.preview_0.8.154_all.ipk'];assert ipks[0].is_file()
-result={'package':'com.zainbot.morphtv.preview','version':'0.8.154','physicalTVVerified':False,'target':'webOS 5.0+ initial candidate; older versions unverified','sha256':hashlib.sha256(ipks[0].read_bytes()).hexdigest(),'bytes':ipks[0].stat().st_size,'productionFilesUnchanged':all(hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest for name,digest in baseline.items())}
+ipks=[HERE/'com.zainbot.morphtv.preview_0.8.155_all.ipk'];assert ipks[0].is_file()
+result={'package':'com.zainbot.morphtv.preview','version':'0.8.155','physicalTVVerified':False,'target':'webOS 5.0+ initial candidate; older versions unverified','sha256':hashlib.sha256(ipks[0].read_bytes()).hexdigest(),'bytes':ipks[0].stat().st_size,'productionFilesUnchanged':all(hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==digest for name,digest in baseline.items())}
 (HERE/'validation.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))
