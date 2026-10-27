@@ -1,0 +1,8 @@
+/* Reusable primitives are opt-in classes, never global button/dialog overrides. */
+body[data-ui-mode=modern] .ui-surface{background:var(--ui-card-bg);border:1px solid var(--ui-card-border);border-radius:var(--ui-radius-md);color:var(--ui-text)}
+body[data-ui-mode=modern] .ui-button{background:var(--ui-card-bg);border:1px solid var(--ui-card-border);border-radius:var(--ui-radius-sm);padding:16px 24px;color:var(--ui-text)}
+body[data-ui-mode=modern] .ui-button-primary{background:var(--ui-button-gradient);color:var(--ui-bg)}
+body[data-ui-mode=modern] .ui-button:focus,body[data-ui-mode=modern] .ui-card:focus{outline:3px solid var(--ui-focus-ring);outline-offset:4px}
+body[data-ui-mode=modern] .ui-dialog{background:var(--ui-overlay-bg);color:var(--ui-text);border:1px solid var(--ui-card-border);border-radius:var(--ui-radius-lg)}
+body[data-ui-mode=modern] .ui-icon{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+body[data-ui-mode=modern] .ui-icon svg{width:100%;height:100%}

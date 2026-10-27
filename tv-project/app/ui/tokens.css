@@ -1,0 +1,14 @@
+/* Opt-in tokens. Existing Classic selectors and variables are untouched. */
+body[data-ui-mode=modern]{
+ --ui-bg:#080e1d;--ui-bg-raised:#142036;--ui-glass-color:#101a30;--ui-glass-opacity:.7;
+ --ui-glass-blur:10px;--ui-card-bg:rgba(12,22,40,.78);--ui-card-border:rgba(255,255,255,.2);
+ --ui-text:#f7f9ff;--ui-text-muted:#c8d2e3;--ui-accent:#66cfff;--ui-accent-secondary:#a88aff;
+ --ui-button-gradient:linear-gradient(120deg,var(--ui-accent),var(--ui-accent-secondary));
+ --ui-focus-ring:#9ddfff;--ui-focus-glow:rgba(102,207,255,.36);
+ --ui-dock-bg:rgba(10,19,37,.74);--ui-dock-border:rgba(255,255,255,.22);
+ --ui-art-scrim:linear-gradient(90deg,rgba(3,7,17,.92),rgba(3,7,17,.42) 35%,transparent 72%);
+ --ui-overlay-bg:rgba(3,7,17,.88);--ui-shadow:0 12px 30px rgba(0,0,0,.3);
+ --ui-radius-sm:14px;--ui-radius-md:22px;--ui-radius-lg:34px;--ui-space:16px;
+ --ui-focus-duration:160ms;--ui-panel-duration:200ms;--ui-theme-duration:260ms;
+ --ui-ease:cubic-bezier(.2,.8,.2,1);
+}
