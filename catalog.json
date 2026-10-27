@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.141",
+  "latest": "0.8.142",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.141",
+      "version": "0.8.142",
       "download": "/download/phone",
       "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
       "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.141",
+      "version": "0.8.142",
       "download": "/download/android",
       "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
       "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
@@ -25,7 +25,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.141",
+      "version": "0.8.142",
       "download": "/download/firetv",
       "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
       "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
@@ -37,17 +37,17 @@
       "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
       "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.141",
+      "version": "0.8.142",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.141.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.142.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.141.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.142.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,7 +59,7 @@
       "available": true,
       "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
       "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility.",
-      "version": "0.8.141",
+      "version": "0.8.142",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.141",
-      "file": "Morph-TV-Phone-0.8.141.apk",
+      "name": "Morph-TV-Phone-0.8.142",
+      "file": "Morph-TV-Phone-0.8.142.apk",
       "bytes": 12758279,
-      "sha256": "198cd5b649daed7a94fdecd5cab7682e09e649d134142883fafd68353f00e6a4"
+      "sha256": "368c231a100d16dbf1d9b98e180c5f245c07c852942a6aa059dbddf9e946f3e8"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.141",
-      "file": "Morph-TV-Android-TV-0.8.141.apk",
+      "name": "Morph-TV-Android-TV-0.8.142",
+      "file": "Morph-TV-Android-TV-0.8.142.apk",
       "bytes": 3963180,
-      "sha256": "2a62739b2e234090dd2f0577deb9b7f99ab0507c656fd498fef99c9f4d41bf1a"
+      "sha256": "45db2797b5d8a19f07ad9bf709869755ea31bff6285a217e377631449a498382"
     },
     {
-      "name": "Morph-TV-LG-0.8.141",
-      "file": "Morph-TV-LG-0.8.141.ipk",
-      "bytes": 3791334,
-      "sha256": "954b226f74de1f480f15da38f4a16b89e67ec5b309976d5ecf5e6cbf74e39055"
+      "name": "Morph-TV-LG-0.8.142",
+      "file": "Morph-TV-LG-0.8.142.ipk",
+      "bytes": 3791380,
+      "sha256": "83be99e87b91fe1c83ea2aa1f92bf449f6d4d3736c65eff1d1bc884a3ebc4382"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.141",
-      "file": "Morph-TV-Samsung-Computer-0.8.141.zip",
-      "bytes": 3823981,
-      "sha256": "64cc50b646211895a2c20e18f88a330da505b44e76656f2bba47b31decfd5a6c"
+      "name": "Morph-TV-Samsung-Computer-0.8.142",
+      "file": "Morph-TV-Samsung-Computer-0.8.142.zip",
+      "bytes": 3823982,
+      "sha256": "2d50d700c0112b2898f22f0a569c947bf9aeff7820ed31ceebd04cc389992e51"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.141",
-      "file": "Morph-TV-Install-Kit-0.8.141.zip",
-      "bytes": 11609066,
-      "sha256": "855b0f9a210063c889a23ca089ded704cd23340d9d7e78f253e4af8e040e6e49"
+      "name": "Morph-TV-Install-Kit-0.8.142",
+      "file": "Morph-TV-Install-Kit-0.8.142.zip",
+      "bytes": 11609117,
+      "sha256": "4a3d4cb3e26dcbeba94ff1c000174ac6b99c15bfda1a711453baaca35b93f92c"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.141",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.141.zip",
-      "bytes": 3823857,
-      "sha256": "cd54ae6fae40e6e148c8d841eb53d3b919a999bab119348aba47a29e96b892bf"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.142",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.142.zip",
+      "bytes": 3823860,
+      "sha256": "a72f96a4a7f7721c3753792eff173fe6deecc7b783d296674a84fe8928d7d5cc"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.141.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.142.zip"
 }

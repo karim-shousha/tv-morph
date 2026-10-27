@@ -64,6 +64,17 @@ class Plus:
     def short_code(self, order):
         return 'MT-'+base64.b32encode(hmac.new(self.secret, ('license-short:'+order).encode(), hashlib.sha256).digest()).decode()[:12]
 
+    def client_origin_allowed(self, origin, path):
+        if origin in ['', 'null', self.origin]:return True
+        value=urlsplit(origin)
+        if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
+        # Packaged TV runtimes serialize file origins differently. Only the
+        # code/token authenticated client endpoints accept these app origins.
+        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status']:return False
+        if value.username or value.password or value.query or value.fragment:return False
+        if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview']:return True
+        return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview']
+
     def register_short(self, db, order):
         code=self.short_code(order);hashed=self.digest(code)
         db.execute('INSERT OR IGNORE INTO short_codes(hash,license) VALUES (?,?)',(hashed,order))
@@ -264,7 +275,7 @@ class Plus:
             if path=='/api/plus/webhook':self.webhook(body,handler.headers.get('Stripe-Signature',''));result={'ok':True}
             else:
                 origin=handler.headers.get('Origin','')
-                if origin not in ['', 'null',self.origin] and not (urlsplit(origin).scheme=='http' and urlsplit(origin).hostname in ['localhost','127.0.0.1'] and not urlsplit(origin).username and not urlsplit(origin).password):raise ValueError('origin_rejected')
+                if not self.client_origin_allowed(origin,path):raise ValueError('origin_rejected')
                 self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
                 if path=='/api/plus/checkout':result=self.checkout(data.get('plan'),data.get('expectedEntitlement'))
                 elif path=='/api/plus/order':

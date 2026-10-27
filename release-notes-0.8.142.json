@@ -1,0 +1,18 @@
+{
+  "version": "0.8.142",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Accept packaged LG file/app origins on Plus activate/studio/status only; keep valid-code/token checks, rate limits and strict web/admin/payment/management origin restrictions",
+    "Hide Android/Fire TV Home setup on LG and block these actions in the native bridge",
+    "Retain separate private/public IPTV, native keyboard, short Plus codes, optimized theme assets and LG SSH compatibility from 0.8.141"
+  ],
+  "validation": [
+    "Actual nginx/API fixtures: known packaged LG origins reach token verification; foreign web/file origins rejected; checkout/device management remain protected",
+    "Phone UI: LG Home setup hidden, no ADB request; Android Home setup retained",
+    "Signed packages and embedded bundle hashes verified"
+  ],
+  "limitations": [
+    "Physical TV activation must be retried by the owner; no real gift activation consumed by tests",
+    "LG Home replacement is unavailable; ADB5555 is an Android/Fire TV transport"
+  ]
+}
