@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.137",
+  "latest": "0.8.138",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.137",
+      "version": "0.8.138",
       "download": "/download/phone",
-      "noteAr": "ثيم السينما الزرقاء الأصلي مجانًا، مع توضيح تثبيت AU7000 وT5300 والحفاظ على إصلاحات النسخة السابقة.",
-      "noteEn": "Free original Blue Cinema theme, AU7000/T5300 installation guidance and previous player/input fixes retained."
+      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
+      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.137",
+      "version": "0.8.138",
       "download": "/download/android",
-      "noteAr": "ثيم السينما الزرقاء الأصلي مجانًا، مع توضيح تثبيت AU7000 وT5300 والحفاظ على إصلاحات النسخة السابقة.",
-      "noteEn": "Free original Blue Cinema theme, AU7000/T5300 installation guidance and previous player/input fixes retained."
+      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
+      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.137",
+      "version": "0.8.138",
       "download": "/download/firetv",
-      "noteAr": "ثيم السينما الزرقاء الأصلي مجانًا، مع توضيح تثبيت AU7000 وT5300 والحفاظ على إصلاحات النسخة السابقة.",
-      "noteEn": "Free original Blue Cinema theme, AU7000/T5300 installation guidance and previous player/input fixes retained."
+      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
+      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ثيم السينما الزرقاء الأصلي مجانًا، مع توضيح تثبيت AU7000 وT5300 والحفاظ على إصلاحات النسخة السابقة.",
-      "noteEn": "Free original Blue Cinema theme, AU7000/T5300 installation guidance and previous player/input fixes retained.",
+      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
+      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.137",
+      "version": "0.8.138",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.137.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.138.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.137.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.138.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ثيم السينما الزرقاء الأصلي مجانًا، مع توضيح تثبيت AU7000 وT5300 والحفاظ على إصلاحات النسخة السابقة.",
-      "noteEn": "Free original Blue Cinema theme, AU7000/T5300 installation guidance and previous player/input fixes retained.",
-      "version": "0.8.137",
+      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
+      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained.",
+      "version": "0.8.138",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.137",
-      "file": "Morph-TV-Phone-0.8.137.apk",
+      "name": "Morph-TV-Phone-0.8.138",
+      "file": "Morph-TV-Phone-0.8.138.apk",
       "bytes": 12713003,
-      "sha256": "9ba2d25d5540e43642113c4222b3b8efa7b2ff5b1372b6d2b5ddbdc15927bf00"
+      "sha256": "ea73a896ce6e47b615b062447b15a2b9bee4ce0eda8894ca331735ce3fc178a2"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.137",
-      "file": "Morph-TV-Android-TV-0.8.137.apk",
+      "name": "Morph-TV-Android-TV-0.8.138",
+      "file": "Morph-TV-Android-TV-0.8.138.apk",
       "bytes": 3950679,
-      "sha256": "7bd1aa127e05014595e0209ec7390d89077b6ff891b52ae253c7a94abe407815"
+      "sha256": "8b402e77480825111eb2a616aa58e5ad046dbe22a28da74c6e659d9a80f8bc61"
     },
     {
-      "name": "Morph-TV-LG-0.8.137",
-      "file": "Morph-TV-LG-0.8.137.ipk",
-      "bytes": 3784808,
-      "sha256": "a50b81472d571fa2f3f586631b1d71dc2615819b2b59d7eebef6b2e7f425bca2"
+      "name": "Morph-TV-LG-0.8.138",
+      "file": "Morph-TV-LG-0.8.138.ipk",
+      "bytes": 3784860,
+      "sha256": "fa6f47b41e61e5fc2bc52a9c8e8318279a18b18fa59ab9c7c4db247c797b5e89"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.137",
-      "file": "Morph-TV-Samsung-Computer-0.8.137.zip",
-      "bytes": 3814572,
-      "sha256": "0e0fee7c978355231bcc61e168ad1b769a4702db13c97357b43e5c0adadec864"
+      "name": "Morph-TV-Samsung-Computer-0.8.138",
+      "file": "Morph-TV-Samsung-Computer-0.8.138.zip",
+      "bytes": 3814608,
+      "sha256": "9245f1d032ff5f6db5b9d2568abb7a5b7775128f354b97373e12fbf89dc63c8c"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.137",
-      "file": "Morph-TV-Install-Kit-0.8.137.zip",
-      "bytes": 11579397,
-      "sha256": "089be22cccf49833bd784e2722be9d02fc910d77ef313376f361363bc5f4832a"
+      "name": "Morph-TV-Install-Kit-0.8.138",
+      "file": "Morph-TV-Install-Kit-0.8.138.zip",
+      "bytes": 11579529,
+      "sha256": "288a7e956846700892ad2c9eb6342efedef06982e984f8732c8ae6af0661d873"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.137",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.137.zip",
-      "bytes": 3814450,
-      "sha256": "a08bd3ad67eae0a037ab867bac7e73c34c71144c2bc5312da60eb664ea2c41bb"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.138",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.138.zip",
+      "bytes": 3814486,
+      "sha256": "ea9d55bc6cb97eebe01130bebf09514b92a6fd6b7094b68ce4da4e678a5fe952"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.137.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.138.zip"
 }

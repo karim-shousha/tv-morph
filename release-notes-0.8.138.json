@@ -1,0 +1,20 @@
+{
+  "version": "0.8.138",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Separate Continue watching by the active content section: Movies contains VOD movies only; Series contains episode progress only",
+    "Filter the merged history before requesting progress and filter progress responses again before rendering",
+    "Preserve saved history and resume positions, including movie/episode entries sharing the same provider ID",
+    "Keep existing free Blue Cinema theme, fullscreen Adhan, grouped settings and playback controls"
+  ],
+  "validation": [
+    "Regression fixture reproduces mixed movie/episode rows on 0.8.137 before the fix",
+    "Actual built Android TV, phone, LG, Samsung and packaged Tizen4 IPTV pages: Movies/Series separation, same-ID isolation, zero-progress exclusion, series metadata and hidden Live resume action",
+    "Samsung/LG next/previous episode and season/page boundaries",
+    "Signed phone/TV certificates, exact embedded APK/IPK and installation-kit checksums"
+  ],
+  "limitations": [
+    "UI/native-provider fixtures used; no physical model certification",
+    "Legacy0.1.1 unchanged"
+  ]
+}
