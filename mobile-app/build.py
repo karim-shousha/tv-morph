@@ -14,7 +14,7 @@ for old in classes.rglob('*.class'):old.unlink()
 if '--phone-only' not in sys.argv:run(['python',ROOT/'android-tv/build.py'])
 tv_package=ROOT/'android-tv/TV-Morph-Android-TV-Preview.apk'
 shutil.copytree(SOURCE/'assets',assets,dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.jpg','tvmorph.png'))
-lg_ipk=ROOT/'webos-app/com.zainbot.morphtv.preview_0.8.152_all.ipk'
+lg_ipk=ROOT/'webos-app/com.zainbot.morphtv.preview_0.8.153_all.ipk'
 assert __import__('hashlib').sha256(lg_ipk.read_bytes()).hexdigest()==json.loads((ROOT/'webos-app/validation.json').read_text())['sha256']
 shutil.copy2(lg_ipk,assets/'lg-preview.ipk')
 # The installer must authenticate the exact embedded package, never a prior release.
