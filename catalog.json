@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.154",
+  "latest": "0.8.155",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.154",
+      "version": "0.8.155",
       "download": "/download/phone",
-      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
-      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available."
+      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
+      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.154",
+      "version": "0.8.155",
       "download": "/download/android",
-      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
-      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
+      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
+      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.154",
+      "version": "0.8.155",
       "download": "/download/firetv",
-      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
-      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available."
+      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
+      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
-      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
+      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
+      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.154",
+      "version": "0.8.155",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.154.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.155.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.154.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.155.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
-      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
-      "version": "0.8.154",
+      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
+      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
+      "version": "0.8.155",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.154",
-      "file": "Morph-TV-Phone-0.8.154.apk",
-      "bytes": 14098048,
-      "sha256": "12127883a773c7cda2b2631549cd8291939eaf05e5197898e16d814fe325a333"
+      "name": "Morph-TV-Phone-0.8.155",
+      "file": "Morph-TV-Phone-0.8.155.apk",
+      "bytes": 14110336,
+      "sha256": "28c4cdad862bb0c2d26946bda1a3a33fb9535570fe863aa2827a6e342bb553cc"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.154",
-      "file": "Morph-TV-Android-TV-0.8.154.apk",
-      "bytes": 4399655,
-      "sha256": "280f555bc7ac2ed1f745c4d637145b573bfe318ff4eed2e6ff08e0388336d45c"
+      "name": "Morph-TV-Android-TV-0.8.155",
+      "file": "Morph-TV-Android-TV-0.8.155.apk",
+      "bytes": 4403821,
+      "sha256": "62c43d281706694220a980de93122d2181c2dbdbc0b08fc66d5fac827f0fb286"
     },
     {
-      "name": "Morph-TV-LG-0.8.154",
-      "file": "Morph-TV-LG-0.8.154.ipk",
-      "bytes": 4229320,
-      "sha256": "f46015958bf16c1d6a9f0312e8c041c9cd99ae86c7a59f90107530e5b5f31246"
+      "name": "Morph-TV-LG-0.8.155",
+      "file": "Morph-TV-LG-0.8.155.ipk",
+      "bytes": 4231254,
+      "sha256": "52ebe54b14cfac0b52371602afef6e304cab901ae4fe3c94bddf0111036530be"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.154",
-      "file": "Morph-TV-Samsung-Computer-0.8.154.zip",
-      "bytes": 4268099,
-      "sha256": "dc98ca3ccedf8d0df3940c1367e52828d5ff07ae7f415f50f36518580781e538"
+      "name": "Morph-TV-Samsung-Computer-0.8.155",
+      "file": "Morph-TV-Samsung-Computer-0.8.155.zip",
+      "bytes": 4270978,
+      "sha256": "a59049bffca71171985628c18165e88e474688a5a99e9df507f2f7b38935d718"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.154",
-      "file": "Morph-TV-Install-Kit-0.8.154.zip",
-      "bytes": 12925037,
-      "sha256": "3858b12327887f3b773444e4cd2c1097802b02944b5d4cfa81046d4da960bfd4"
+      "name": "Morph-TV-Install-Kit-0.8.155",
+      "file": "Morph-TV-Install-Kit-0.8.155.zip",
+      "bytes": 12932582,
+      "sha256": "13b86d851250500556e32ab1a3b0ab04fcf96fdb5a7d5d8bf6628f71211994e1"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.154",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.154.zip",
-      "bytes": 4267977,
-      "sha256": "10eece6d0f818f5760a28df99e03a388f01a6b6e04d964cc79948b3bdc6d7bf5"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.155",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.155.zip",
+      "bytes": 4270858,
+      "sha256": "1fcbdb0d21e75f6b4ea2b133fbf430a6a35daff69db8748eabb7853bf2180c07"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.154.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.155.zip"
 }

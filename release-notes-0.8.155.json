@@ -1,0 +1,28 @@
+{
+  "version": "0.8.155",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android USB controls hide after four seconds during playback; remote reveal and paused controls retained",
+    "Embedded USB video controls auto-hide; remote reveal does not pause or activate a control",
+    "Home shows platform-discovered HDMI beside USB without changing dock pins",
+    "Input-page rename/reset saves aliases inside MorphTV; original source IDs retained; Android keyboard accepts rename field",
+    "Includes 0.8.154 receiver-input control timeout and IPTV startup provider-refresh prompt"
+  ],
+  "verification": [
+    "Actual MP4 decoded in desktop Edge; hide/reveal/pause behavior passed",
+    "Input fixtures: USB/two HDMI, original launch ID, saved aliases/reset, five languages, refresh stability, persistence in a fresh page",
+    "IPTV refresh and Modern navigation regression fixtures passed",
+    "Android/LG/phone builds passed; no physical-device validation"
+  ],
+  "samsungStartup": {
+    "replacementLauncherImplemented": false,
+    "supportedAlternative": "Start Screen Options / Autorun Last App where supported; disable Start with Smart Hub Home. This does not guarantee Smart Hub or Home-key replacement.",
+    "officialGuide": "https://www.samsung.com/ae/support/tv-audio-video/use-autorun-start-screen-options-on-your-samsung-tv/"
+  },
+  "limitations": [
+    "No physical receiver/TV tested",
+    "Aliases affect MorphTV labels, not TV system input names",
+    "Samsung autorun support varies by model and app; no unsupported launcher override added",
+    "Legacy Android 0.1.1 unchanged; Tizen 4 experimental"
+  ]
+}
