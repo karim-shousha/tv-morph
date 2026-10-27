@@ -1,7 +1,7 @@
-a98e7de300c8d4ba4407b114958f8ddae77d52882f4aae03e0b953bd441b7cdb  Morph-TV-Phone-0.8.145.apk
-222f4b027ef87bddae3d5aca437c11fffe2260ff4a7e7bf2ee40e9c4e0c140f7  Morph-TV-Android-TV-0.8.145.apk
-e8fbcbc0f4cf1e5825ac2fed9acc60a93fd13676b037d29491d008515ea56985  Morph-TV-LG-0.8.145.ipk
+2d64dea51dd200992a835c36ff3e627b90e1d94a5a90b5882fd3dc2ff429c8c3  Morph-TV-Phone-0.8.146.apk
+cd036d7df311c3d7d49be115c488664bdb1511d13aa72454e842cea0d2e3e522  Morph-TV-Android-TV-0.8.146.apk
+0bac389482b6698dae913a6faa04f8b01161c7d35b6029e14815b9f7dbcb136f  Morph-TV-LG-0.8.146.ipk
 291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf  Morph-TV-Legacy-0.1.1.apk
-d277467bfe5eee726a6363c9bbb3b8a87867ec2c42df93779be247ad9a2afed9  Morph-TV-Samsung-Computer-0.8.145.zip
-8bdc4421584de9281902b893f45702edbee22931b91d3e7750b26e21a9f95aaf  Morph-TV-Install-Kit-0.8.145.zip
-28145fec66a8440a585e33c69075edfdd0abcdb44b77888bccf22a54f289d38e  Morph-TV-Samsung-Tizen4-Computer-0.8.145.zip
+13cf8f3594cd97479416694babb4088171a13b24ad69f48f492140ea03cfea27  Morph-TV-Samsung-Computer-0.8.146.zip
+922affe95455f2533ce22afa9db89614211a46c69f3ff72a950373026233986d  Morph-TV-Install-Kit-0.8.146.zip
+abddca46770555121e23b83ad9ce50f8e5bdf0fab459859f7231293d0403cbf0  Morph-TV-Samsung-Tizen4-Computer-0.8.146.zip

@@ -1,0 +1,26 @@
+{
+  "version": "0.8.146",
+  "changes": [
+    "Mounted removable USB storage on Android/Fire OS: home shortcut, hotplug removal and Inputs entry; system media picker with scoped content URI permissions and fallback",
+    "Samsung external mounted-storage discovery, storage notifications and read-only folder/media browser",
+    "LG verified media-player USB entry in Inputs with unknown cable/mount status instead of a false Connected label",
+    "Independent Arabic/English text-size presets: 90%, 100%, 110%; persistent phone controls, TV/web media and native player labels",
+    "Theme image replacement, position and size are free; remaining Plus customization stays gated",
+    "Shorter image customization section and collapsible advanced groups; 1920x1080 guidance and local-only image storage/TV LAN transfer explained"
+  ],
+  "validation": [
+    "Signed Android/phone certificate continuity and exact embedded TV payload hashes",
+    "Android hotplug and Inputs contract tests; existing Hisense/Google TV/Fire input metadata fixtures",
+    "Samsung filesystem callbacks mocked: external only, read mode, folder list and unplug cleanup; existing HDMI/tuner tests",
+    "LG public app-load-status and launch mocked; denied/unknown mount state stays honest",
+    "Native phone bridge mocked: image picker, preview, position/size apply without Plus; paid text/logo excluded",
+    "Independent text sizing persists and does not compound after repeated apply",
+    "Sports access/exit regressions on Android, LG and Samsung/Tizen4"
+  ],
+  "limitations": [
+    "No physical TV/USB devices tested; cannot guarantee every model or format",
+    "Android requires a system or installed media picker/player; unavailable devices show a clear fallback",
+    "LG automatic storage notifications unavailable through the public integration; media player entry remains accessible in Inputs",
+    "Legacy 0.1.1 unchanged"
+  ]
+}
