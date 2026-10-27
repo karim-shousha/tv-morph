@@ -1,0 +1,34 @@
+{
+  "version": "0.8.140",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Add free GTA VI-inspired Vice Sunset theme with original generated neon artwork, phone/TV selection, native persistence, integrity-checked downloadable pack and localized previews",
+    "Plus activation now shows a prominent success state, clears and disables the code field and activation button, and remains visibly active after server-verified reopen/reload; failed activation stays retryable",
+    "Add IPTV source choice: existing Xtream credentials or an HTTP(S) M3U channel playlist",
+    "Add explicit one-click public IPTV-org news preset for phone/TV. It imports automatically and opens Live TV; it never replaces a configured account at startup",
+    "Parse M3U with groups, logos, quoted metadata, relative URLs, stable IDs, duplicate removal, size limits and HTTP-only stream validation; reject HLS segment manifests as channel lists",
+    "Resolve M3U playback from the current parsed playlist by ID, without guessing Xtream paths; public/M3U channel sources hide unavailable movie/series sections",
+    "Keep larger TV typography, separate Continue watching, episode/remote controls and Light mode",
+    "Dedicated Android TV Plus code editor reopens with OK/click; active Plus label updates in settings and phone",
+    "Android IPTV search uses a bounded in-app keyboard only after OK/click, never on focus; supports Arabic, cancel, Done and reopening",
+    "Fix washed-out theme-pack preview/delete buttons with explicit readable colors",
+    "Optimize eight large theme assets into new versioned WebP packs; every current pack image is below 400000 bytes, preserve immutable legacy assets for old installations"
+  ],
+  "validation": [
+    "Generated GTA theme applies and stays cached without a Plus license in built Android/phone/LG/Samsung/Tizen4; other paid themes remain locked",
+    "Built Plus UI: rejected code retries, confirmed success, disabled code/button, close/reopen and server-verified reload on Android/phone/LG",
+    "Production Java and JavaScript M3U parser fixtures: native/web stable-ID parity, groups with commas, relative links, duplicates, unsupported links and HLS rejection",
+    "Production Java HTTPS loader and JavaScript parser read the real public news playlist: 1028 channels at test time",
+    "Real FFmpeg video decoding succeeded for public DW Arabic and France24 English samples; sampled DW English URL failed the test",
+    "Built Samsung/LG/Tizen4 source form: own M3U list, correct player URL, explicit public opt-in, automatic live library, pagination, hidden unsupported sections and invalid import retaining the active profile",
+    "Built phone source form: own M3U without credentials and explicit public phone/TV connect-plus-open actions",
+    "Production Xtream credentials/local HTTP authentication, remote search/channel changes, episode boundaries, Continue watching isolation, signed payloads and install kit hashes",
+    "Native Android build and browser regression: code editor reopen, Plus success/persistence, theme-pack contrast, search focus versus activation, cancel and re-edit"
+  ],
+  "limitations": [
+    "M3U support is for channel playlists; movie/series metadata and provider EPG remain Xtream features",
+    "Public streams are third-party links: availability, geography, codecs and CORS vary; successful sample decoding on this computer does not certify every physical TV",
+    "DW English sampled public URL did not decode in the FFmpeg test; not all listed channels are guaranteed",
+    "No physical model certification; Legacy0.1.1 unchanged"
+  ]
+}

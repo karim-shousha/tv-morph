@@ -1,9 +1,9 @@
 {
   "package": "com.zainbot.morphtv.preview",
-  "version": "0.8.139",
+  "version": "0.8.140",
   "physicalTVVerified": false,
   "target": "webOS 5.0+ initial candidate; older versions unverified",
-  "sha256": "f88d3bb794c94447b7980c59ad1726f4c76420b1f0d9cd36573209b71e306371",
-  "bytes": 3786166,
+  "sha256": "455d9bedf2b1660e7bbdf71e8b5e83b0f661574dd19a33280854d7cb23f54895",
+  "bytes": 3790772,
   "productionFilesUnchanged": true
 }

@@ -13,7 +13,7 @@ OFFER_START = 1793046384  # 2026-10-26 20:26:24 UTC
 OFFER_END = 1795724784    # 2026-11-26 20:26:24 UTC
 ANNUAL_SECONDS = 365 * 24 * 60 * 60
 GRANT_PLANS = dict(PLANS, owner={'devices': None})
-FREE = ['blue-cinema', 'blue', 'emerald', 'violet', 'ahly', 'zamalek', 'ismaily', 'saudi-national', 'egypt-national', 'madrid', 'barcelona']
+FREE = ['gta6', 'blue-cinema', 'blue', 'emerald', 'violet', 'ahly', 'zamalek', 'ismaily', 'saudi-national', 'egypt-national', 'madrid', 'barcelona']
 
 class Plus:
     def __init__(self, data, secret, origin):
