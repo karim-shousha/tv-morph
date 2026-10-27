@@ -356,19 +356,19 @@
     },
     {
       "id": "gaming",
-      "version": 2,
+      "version": 3,
       "themes": [
         "gta6"
       ],
       "files": [
         {
-          "name": "gta6-vice-sunset-v2.webp",
-          "file": "gaming-v2-gta6-vice-sunset-v2.webp",
-          "bytes": 205634,
-          "sha256": "28d2d488c3766a0ae2ea6421f6b729679bdffe2fd62b64a7a22f2affe58908e9"
+          "name": "gta6-vice-sunset-v3.webp",
+          "file": "gaming-v3-gta6-vice-sunset-v3.webp",
+          "bytes": 320952,
+          "sha256": "073bff713708d4bc3ed4e167e1567b5ec5671e35142a296f112876cd64a03286"
         }
       ],
-      "bytes": 205634,
+      "bytes": 320952,
       "tier": "free",
       "titleAr": "\u0623\u0644\u0639\u0627\u0628 \u0645\u062c\u0627\u0646\u064a\u0629",
       "titleEn": "Free gaming"
@@ -974,6 +974,12 @@
       "file": "gaming-v1-gta6-vice-sunset-v1.webp",
       "bytes": 281978,
       "sha256": "a5ad51c207ad4889ebefc031d153483deb0f9db84cb53a2f0d5a607112dfa159"
+    },
+    {
+      "name": "gta6-vice-sunset-v2.webp",
+      "file": "gaming-v2-gta6-vice-sunset-v2.webp",
+      "bytes": 205634,
+      "sha256": "28d2d488c3766a0ae2ea6421f6b729679bdffe2fd62b64a7a22f2affe58908e9"
     }
   ]
 }

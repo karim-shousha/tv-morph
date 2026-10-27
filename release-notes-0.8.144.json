@@ -1,0 +1,18 @@
+{
+  "version": "0.8.144",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "New GTA theme artwork uses the three male game characters from the supplied reference, composited into the existing neon Miami sunset mood",
+    "Keep left-side UI space, free access, optimized WebP and versioned gaming pack v3/previews",
+    "Preserve prior IPTV, native keyboard, Plus and LG fixes"
+  ],
+  "validation": [
+    "Built Android/phone/LG/Samsung/Tizen4: free theme download, decoded artwork, apply and persistent cache",
+    "Visual inspection: three requested male characters, neon city waterfront, no female characters",
+    "Signed bundle and embedded payload parity checks"
+  ],
+  "limitations": [
+    "Update the application to receive the new embedded theme manifest and replace older cached artwork",
+    "No physical TV testing"
+  ]
+}
