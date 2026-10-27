@@ -7,7 +7,7 @@ final class LgActions {
   if((action.equals("pins")||action.equals("open"))&&!Boolean.TRUE.equals(tv.evaluate("!!(window.ClearTV&&ClearTV.LGApps)")))throw new IOException("حدّث Morph TV LG Preview إلى 0.1.1 من زر تثبيت LG لإضافة التطبيقات المثبتة.");
   if(action.equals("apply"))return tv.json("ClearTV.applyRemoteConfig("+p.toString()+")");
   if(action.equals("apps")){syncApps(tv);return tv.json("new Promise(function(resolve){ClearTV.Catalog.load(function(){resolve(ClearTV.getRemoteState());});})");}
-  if(action.equals("pins")){JSONArray pins=p.getJSONArray("pins");if(pins.length()>24)throw new IOException("Too many pins");return tv.json("ClearTV.LGApps.pins("+pins.toString()+")");}
+  if(action.equals("pins")){JSONArray pins=p.getJSONArray("pins");return tv.json("ClearTV.LGApps.pins("+pins.toString()+")");}
   if(action.equals("open")){String id=p.optString("id");JSONObject result=(JSONObject)tv.json("ClearTV.LGApps.open("+JSONObject.quote(id)+")");if(!result.optBoolean("sent"))throw new IOException(result.optString("error","LG did not confirm app launch."));return result;}
   if(action.equals("remoteConnect")){syncApps(tv);return new JSONObject().put("ready",true).put("native",false).put("scope","داخل Morph TV على LG فقط · Developer Mode مطلوب");}
   if(action.equals("remoteKey")){String key=p.optString("key");if(!Arrays.asList("UP","DOWN","LEFT","RIGHT","ENTER","RETURN","HOME","PLAY","PAUSE","FAVORITE").contains(key))throw new IOException("LG system/volume control is not included.");return tv.json("ClearTV.Remote.key("+JSONObject.quote(key)+")");}
