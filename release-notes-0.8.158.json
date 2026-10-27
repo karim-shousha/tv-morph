@@ -1,0 +1,24 @@
+{
+  "version": "0.8.158",
+  "changes": [
+    "Includes 0.8.157 shared text-sizing performance fix: skip full-page font scans on idle clock/status and remote-hint updates",
+    "Persist the IPTV startup refresh offer as shown once; manual provider refresh remains available",
+    "Replace Provider order with A-Z, Z-A, Oldest first and Newest first; sort whole provider catalogs before pagination on native Android and shared Samsung/LG backend",
+    "Cache ordered catalog rows for pagination and reuse a single text collator; retain provider episode sequence",
+    "Keep unknown provider-added dates last, preserve stable ties and show an explanation when dates are unavailable",
+    "Use one sidebar scroll container for Favorites, Recently added, Continue watching and provider categories; unified remote Up/Down skips hidden entries",
+    "Keep Watch now CTA label dark and readable in both normal and focused states"
+  ],
+  "validation": [
+    "Actual shared backend functions tested with 130 rows across three pages; four orders, unique IDs, missing dates last, source immutability and episode order",
+    "Pure Java CatalogOrder tests cover alphabetical/date orders and pagination boundaries; Android/phone builds compile native integration",
+    "Browser fixture: startup offer stays dismissed after reload; sort choice persists and resets page zero; arrow navigation reveals the whole sidebar in live/movies/series",
+    "Watch now text and computed contrast color verified with screenshot; large/current/small text regressions pass",
+    "Package signatures, exact embedded TV payloads and release hashes checked"
+  ],
+  "limitations": [
+    "No physical television available for this run",
+    "Oldest/newest uses provider-added metadata, not a fabricated release date; M3U/providers without dates retain original order for that choice",
+    "Performance numbers in 0.8.157 are software-fixture measurements, not whole-app FPS claims"
+  ]
+}
