@@ -57,3 +57,5 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{
 .download-counter-bar{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px}.downloader-shortcut{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:9px 20px;border:1px solid #8bcabd;background:#e5f6ef;color:#134c40;border-radius:999px;font-size:16px;font-weight:700}.downloader-shortcut bdi{font-size:24px;letter-spacing:1px}.downloader-note{padding:16px 20px;border:1px solid #8bcabd;background:#e5f6ef;color:#134c40;border-radius:16px;margin:0 0 28px;line-height:1.8}
 
 .install-help-actions{display:flex;flex-basis:100%;gap:13px;align-items:stretch}.install-help-actions>a{flex:1;min-width:0;text-align:center;line-height:1.5}@media(max-width:520px){.install-help-actions{flex-direction:column}}
+
+.device-install-video{display:block!important;margin-top:12px;border:1px solid #7750d6!important;background:#eee7fc!important;color:#45218b!important;text-align:center;font-weight:700}.device-install-guide{margin-top:12px;display:block;text-align:center}

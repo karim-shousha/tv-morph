@@ -1,0 +1,20 @@
+{
+  "version": "0.8.145",
+  "changes": [
+    "Sports initial release for Plus subscribers only, restored left sidebar shortcut",
+    "Seven optimized WebP covers; full athlete framing in hero and category cards",
+    "Eight sports screens with navy/cyan/purple styling, remote exit confirmation, preserved builder focus, no repeated timer listeners after Music",
+    "Real active-time accounting and skipped exercises excluded from completed count",
+    "Per-device installation guides and user-supplied Samsung/Android installation video links"
+  ],
+  "validation": [
+    "28 unit checks",
+    "Built Android, LG and Samsung: Plus access gate, sidebar, decoded images, builder selection, music return, remote exit and Back",
+    "Signed Android/phone certificate continuity and exact embedded TV package/hash parity"
+  ],
+  "limitations": [
+    "Detailed exercise images pending user assets",
+    "No physical TV testing",
+    "Legacy 0.1.1 unchanged; sports requires the main application"
+  ]
+}
