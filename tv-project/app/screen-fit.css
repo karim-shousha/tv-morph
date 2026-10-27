@@ -1,0 +1,18 @@
+/* Keep content and focus outlines inside their page, including old Tizen. */
+body[data-fixed-layout=true] .view{min-width:0;max-width:100%}
+body[data-fixed-layout=true] #view-settings{overflow-x:hidden;padding-left:16px;padding-right:16px}
+body[data-fixed-layout=true] .settings-category-menu{width:100%;grid-gap:26px;gap:0!important}
+body[data-fixed-layout=true] .settings-category-entry{flex:1 1 0;min-width:0;margin-right:26px}
+body[data-fixed-layout=true] .settings-category-entry:last-child{margin-right:0}
+body[data-fixed-layout=true] .settings-category-entry strong{max-width:100%;white-space:normal;overflow-wrap:break-word;text-align:center}
+body[data-fixed-layout=true] .settings-panel,body[data-fixed-layout=true] .input-layout>*,body[data-fixed-layout=true] .search-row>*{min-width:0}
+body[data-fixed-layout=true] .input-layout{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr)}
+body[data-fixed-layout=true] .modal{max-width:calc(100% - 140px)}
+body[data-fixed-layout=true] .modal .city-row input{min-width:0}
+body[data-fixed-layout=true] .prayer-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-fixed-layout=true] .prayer-times{grid-template-columns:repeat(6,minmax(0,1fr))}
+body[data-fixed-layout=true] .prayer-header>*{min-width:0}
+
+html[data-tv-canvas=true]{overscroll-behavior:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}body[data-fixed-layout=true]{-webkit-text-size-adjust:100%;text-size-adjust:100%;touch-action:manipulation}
+
+.text-size-overlay{position:fixed;inset:0;z-index:12500;background:#04101ee8;display:flex;align-items:center;justify-content:center}.text-size-dialog{width:650px;padding:32px;border:1px solid #7594b6;background:#142b43;border-radius:22px;color:#fff}.text-size-dialog h2{font-size:32px;margin:0 0 24px}.text-size-option{display:block;width:100%;margin:12px 0;padding:18px;font:inherit;font-size:26px;background:#203d58;color:#fff;border:1px solid #8ca8bf;border-radius:12px}.text-size-option[aria-pressed=true]{background:#354895;border-color:#aab2ff}.text-size-option:focus{outline:4px solid #7de6ff;outline-offset:3px}

@@ -1,0 +1,5 @@
+package local.tvmorph.tv;
+import android.content.Context;import android.media.MediaPlayer;import org.json.*;import java.util.concurrent.*;
+public final class RadioPlaybackCheck{
+ public static void run(Context c)throws Exception{JSONArray stations=RadioActivity.catalog(c);if(stations.length()!=8)throw new Exception("Unexpected radio catalog");for(int i=0;i<stations.length();i++){JSONObject station=stations.getJSONObject(i);MediaPlayer player=new MediaPlayer();CountDownLatch done=new CountDownLatch(1);boolean[] prepared={false};player.setVolume(0,0);player.setOnPreparedListener(p->{prepared[0]=true;done.countDown();});player.setOnErrorListener((p,w,e)->{done.countDown();return true;});try{player.setDataSource(station.getString("streamUrl"));player.prepareAsync();if(!done.await(20,TimeUnit.SECONDS)||!prepared[0])throw new Exception("Radio decoder failed: "+station.getString("id"));player.start();Thread.sleep(120);if(!player.isPlaying())throw new Exception("Radio failed to start");player.pause();}finally{player.release();}}}
+}

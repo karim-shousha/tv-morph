@@ -1,0 +1,187 @@
+/* Reference home composition, shared by the Samsung and Android TV shells.
+   Existing artwork, viewer settings and launch handlers remain authoritative. */
+body[data-fixed-layout=true] main{padding:72px 38px 30px 178px}
+body[data-fixed-layout=true] main>header{height:78px;position:relative;z-index:12}
+body[data-fixed-layout=true] header .brand{font-size:31px;letter-spacing:-1px}
+body[data-fixed-layout=true] header nav{margin-left:26px;background:linear-gradient(100deg,#0b16294d,#14203833);border:1px solid #9ac7ff16;border-radius:40px;padding:4px}
+body[data-fixed-layout=true] header .nav{font-size:17px;min-height:54px;padding:12px 17px!important;white-space:nowrap}
+body[data-fixed-layout=true] header .nav.active{background:linear-gradient(115deg,var(--cinema-glow,#28caff),#6e46ed);box-shadow:0 0 18px #219fff77,inset 0 1px #ffffff77}
+body[data-fixed-layout=true] header .header-clock{min-width:130px;padding-left:25px;border-left:1px solid #b0c4e144;margin-left:20px}
+body[data-fixed-layout=true] header .header-clock time{font-size:42px}
+body[data-fixed-layout=true] #view-home .hero{margin-top:30px;height:480px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro,
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero{height:480px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy{left:35px;top:130px;width:680px;max-width:680px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero h1{font-size:var(--reference-title-size,64px);line-height:1.18;max-height:182px;margin:18px 0 12px;letter-spacing:-1px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy>p{font-size:var(--reference-subtitle-size,30px);line-height:1.45;max-height:106px;color:#d6dce7}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-overline{font-size:20px;letter-spacing:1px}
+body[data-fixed-layout=true] #cinema-background:after{background:linear-gradient(90deg,#030b17a6,transparent 68%),linear-gradient(0deg,#020814a8,transparent 45%)}
+body[data-fixed-layout=true][data-theme=blue]:not(.has-personal-art) #cinema-background>img{top:0}
+body[data-fixed-layout=true] #view-home .home-tools{left:32px;top:206px;width:116px;bottom:auto;padding:0}
+body[data-fixed-layout=true] #view-home .home-tools>.tool{width:108px;height:110px;min-height:110px;max-height:110px;margin:0 0 16px;border-radius:18px;font-size:17px;background:linear-gradient(145deg,#6492ae40,#15283c38)!important;box-shadow:inset 0 1px #e8f7ff66,0 5px 14px #0004}
+body[data-fixed-layout=true] #view-home .home-tools>#home-inputs{display:none!important}
+body[data-fixed-layout=true] #view-home .home-tools>.tool:before{width:52px;height:52px;margin-bottom:7px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section{left:200px;right:40px;bottom:292px;height:164px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section h2{font-size:27px;margin:0 0 10px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-rail{margin-right:286px;padding:8px 4px 14px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-card{height:118px;min-width:225px;max-width:none;margin-right:12px;border-radius:18px;background:linear-gradient(120deg,var(--cinema-glass,#1b3b5a55),#0b172535);padding:16px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-card .app-icon{width:72px;height:72px;min-width:72px;border-radius:17px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-copy{margin-left:16px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-copy strong{font-size:21px}
+body.dock-home[data-fixed-layout=true] #view-home .last-hdmi-card{top:49px;width:274px;height:118px;border-radius:18px}
+body.dock-home[data-fixed-layout=true] #view-home .last-hdmi-card strong{font-size:24px}
+body.dock-home[data-fixed-layout=true] #view-home .section-heading{right:45px;bottom:178px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock{left:calc(50% + 75px);bottom:34px;height:162px;padding:25px 30px 26px!important;max-width:calc(100% - 300px)}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button{width:108px!important;min-width:108px!important;flex-basis:108px!important;margin:0 10px!important}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock .app-icon{width:96px;height:96px;min-width:96px;min-height:96px;border-radius:24px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock .plus-icon{width:96px;height:96px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button:focus{transform:translateY(-18px) scale(1.45)!important;z-index:6}
+body[data-fixed-layout=true] #view-home #home-next-prayer{right:45px;top:260px;bottom:auto;width:310px;padding:20px 22px;min-height:170px;border:1px solid #ffffff38!important;border-radius:20px;background:rgba(7,16,32,.45)!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);text-shadow:0 2px 12px #0009}
+body[data-fixed-layout=true] #view-home #home-next-prayer small{font-size:22px}
+body[data-fixed-layout=true] #view-home #home-next-prayer strong{font-size:34px}
+body[data-fixed-layout=true] #view-home #home-next-prayer time{font-size:48px}
+body[data-fixed-layout=true] #view-home>footer.cinema-credit{bottom:7px;opacity:.55}
+/* The floor reflection is made from each real icon, fades downwards and
+   inherits focus movement; it never receives input or affects layout. */
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock{overflow-y:visible;isolation:auto;padding-top:58px!important;padding-bottom:70px!important;height:254px;bottom:0;width:max-content;left:50%;box-sizing:border-box}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button{isolation:isolate}
+.dock-reflection{position:absolute;pointer-events:none;left:8px;top:112px;width:96px;height:64px;overflow:hidden;opacity:.38;filter:blur(1.4px);-webkit-mask-image:linear-gradient(#0009,transparent 95%);mask-image:linear-gradient(#0009,transparent 95%)}
+.dock-reflection>.app-icon,.dock-reflection>.plus-icon{transform:scaleY(-1)!important;transform-origin:center center;box-shadow:none!important}
+/* A static glass glint adds depth without a looping effect or extra image. */
+body.dock-home[data-fixed-layout=true] #favourites>button>.favourite-top>.app-icon,
+body.dock-home[data-fixed-layout=true] #favourites>button>.app-icon,
+body.dock-home[data-fixed-layout=true] #favourites>button>.plus-icon{position:relative;overflow:hidden;box-shadow:inset 0 1px 1px #ffffff90,inset 1px 0 1px #ffffff40,0 6px 15px #0004}
+body.dock-home[data-fixed-layout=true] #favourites>button .app-icon:after,
+body.dock-home[data-fixed-layout=true] #favourites>button .plus-icon:after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(125deg,transparent 20%,#ffffff08 29%,#ffffff80 31%,#ffffff16 33%,transparent 43%),linear-gradient(180deg,#ffffff22,transparent 55%);box-shadow:inset 0 1px #ffffff70;z-index:2}
+.home-title-accent{color:#70bdff;background:linear-gradient(100deg,#c46bfa,#50baff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+body[data-fixed-layout=true]:after{content:'';pointer-events:none;position:fixed;left:0;right:0;bottom:0;height:140px;z-index:1;background:linear-gradient(0deg,#05101c22,transparent),repeating-linear-gradient(177deg,transparent 0,transparent 18px,#90caff0b 20px,transparent 22px)}
+body[data-fixed-layout=true] #view-home .recent-app-card{box-shadow:inset 0 1px #c9edff66,inset 1px 0 #c9edff22,0 5px 18px #0003}
+body[data-fixed-layout=true].reduce-motion #view-home #favourites.app-dock>button:focus{transform:none!important}
+@media(prefers-reduced-motion:reduce){body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button:focus{transform:none!important}}
+
+/* Ismaily: the Dervishes, with a visible yellow and blue identity. */
+body[data-theme=ismaily]{--accent:#ffcf24;--cinema-glow:#ffcf24;--club-primary:#ffcf24;--club-secondary:#123f82}
+body[data-theme=ismaily] .landscape{background:linear-gradient(115deg,#07152e 5%,#123f82 65%,#bb941c 100%)}
+body[data-fixed-layout=true][data-theme=ismaily] header .nav.active{background:linear-gradient(115deg,#ffe778,#ffcf24);color:#10284d;box-shadow:0 0 20px #ffcf2455}
+body[data-fixed-layout=true][data-theme=ismaily] #view-home .hero .intro .club-hero h1{color:#ffdc43;text-shadow:0 4px 24px #0008}
+body[data-theme=ismaily] .home-title-accent{background:linear-gradient(100deg,#ffe991,#ffca1a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+body[data-fixed-layout=true][data-theme=ismaily] #view-home .hero .intro .club-overline{color:#ffdc43}
+body[data-theme=ismaily] #cinema-background:after{background:linear-gradient(90deg,#07152ef0,#123f8266 55%,#ffcf241c),linear-gradient(0deg,#07152ef0,transparent 65%)}
+body[data-theme=ismaily] .club-century{color:#ffe991}
+
+/* Restore the calm default Home; personal art and slides retain priority. */
+body[data-theme="blue"] .landscape{background:radial-gradient(ellipse at 99% 7%,#c0d3d699,transparent 50%),radial-gradient(ellipse 140% 90% at 122% 125%,#234f6666 49%,transparent 49.2%),radial-gradient(ellipse 130% 95% at 115% 120%,#92bdc944 60%,transparent 60.2%),linear-gradient(110deg,#111c31 5%,#245777 54%,#81b8c3 100%)!important}
+/* Reference home composition, shared by the Samsung and Android TV shells.
+   Existing artwork, viewer settings and launch handlers remain authoritative. */
+body[data-fixed-layout=true] main{padding:72px 38px 30px 178px}
+body[data-fixed-layout=true] main>header{height:78px;position:relative;z-index:12}
+body[data-fixed-layout=true] header .brand{font-size:31px;letter-spacing:-1px}
+body[data-fixed-layout=true] header nav{margin-left:26px;background:linear-gradient(100deg,#0b16294d,#14203833);border:1px solid #9ac7ff16;border-radius:40px;padding:4px}
+body[data-fixed-layout=true] header .nav{font-size:17px;min-height:54px;padding:12px 17px!important;white-space:nowrap}
+body[data-fixed-layout=true] header .nav.active{background:linear-gradient(115deg,var(--cinema-glow,#28caff),#6e46ed);box-shadow:0 0 18px #219fff77,inset 0 1px #ffffff77}
+body[data-fixed-layout=true] header .header-clock{min-width:130px;padding-left:25px;border-left:1px solid #b0c4e144;margin-left:20px}
+body[data-fixed-layout=true] header .header-clock time{font-size:42px}
+body[data-fixed-layout=true] #view-home .hero{margin-top:30px;height:480px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro,
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero{height:480px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy{left:35px;top:130px;width:680px;max-width:680px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero h1{font-size:var(--reference-title-size,64px);line-height:1.18;max-height:182px;margin:18px 0 12px;letter-spacing:-1px}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy>p{font-size:var(--reference-subtitle-size,30px);line-height:1.45;max-height:106px;color:#d6dce7}
+body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-overline{font-size:20px;letter-spacing:1px}
+body[data-fixed-layout=true] #cinema-background:after{background:linear-gradient(90deg,#030b17a6,transparent 68%),linear-gradient(0deg,#020814a8,transparent 45%)}
+body[data-fixed-layout=true][data-theme=blue]:not(.has-personal-art) #cinema-background>img{top:0}
+body[data-fixed-layout=true] #view-home .home-tools{left:32px;top:206px;width:116px;bottom:auto;padding:0}
+body[data-fixed-layout=true] #view-home .home-tools>.tool{width:108px;height:110px;min-height:110px;max-height:110px;margin:0 0 16px;border-radius:18px;font-size:17px;background:linear-gradient(145deg,#6492ae40,#15283c38)!important;box-shadow:inset 0 1px #e8f7ff66,0 5px 14px #0004}
+body[data-fixed-layout=true] #view-home .home-tools>#home-inputs{display:none!important}
+body[data-fixed-layout=true] #view-home .home-tools>.tool:before{width:52px;height:52px;margin-bottom:7px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section{left:200px;right:40px;bottom:292px;height:164px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section h2{font-size:27px;margin:0 0 10px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-rail{margin-right:286px;padding:8px 4px 14px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-card{height:118px;min-width:225px;max-width:none;margin-right:12px;border-radius:18px;background:linear-gradient(120deg,var(--cinema-glass,#1b3b5a55),#0b172535);padding:16px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-card .app-icon{width:72px;height:72px;min-width:72px;border-radius:17px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-copy{margin-left:16px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-app-copy strong{font-size:21px}
+body.dock-home[data-fixed-layout=true] #view-home .last-hdmi-card{top:49px;width:274px;height:118px;border-radius:18px}
+body.dock-home[data-fixed-layout=true] #view-home .last-hdmi-card strong{font-size:24px}
+body.dock-home[data-fixed-layout=true] #view-home .section-heading{right:45px;bottom:178px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock{left:calc(50% + 75px);bottom:34px;height:162px;padding:25px 30px 26px!important;max-width:calc(100% - 300px)}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button{width:108px!important;min-width:108px!important;flex-basis:108px!important;margin:0 10px!important}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock .app-icon{width:96px;height:96px;min-width:96px;min-height:96px;border-radius:24px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock .plus-icon{width:96px;height:96px}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button:focus{transform:translateY(-18px) scale(1.45)!important;z-index:6}
+body[data-fixed-layout=true] #view-home #home-next-prayer{right:45px;top:260px;bottom:auto;width:310px;padding:20px 22px;min-height:170px;border:1px solid #ffffff38!important;border-radius:20px;background:rgba(7,16,32,.45)!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);text-shadow:0 2px 12px #0009}
+body[data-fixed-layout=true] #view-home #home-next-prayer small{font-size:22px}
+body[data-fixed-layout=true] #view-home #home-next-prayer strong{font-size:34px}
+body[data-fixed-layout=true] #view-home #home-next-prayer time{font-size:48px}
+body[data-fixed-layout=true] #view-home>footer.cinema-credit{bottom:7px;opacity:.55}
+/* The floor reflection is made from each real icon, fades downwards and
+   inherits focus movement; it never receives input or affects layout. */
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock{overflow-y:visible;isolation:auto;padding-top:58px!important;padding-bottom:70px!important;height:254px;bottom:0;width:max-content;left:50%;box-sizing:border-box}
+body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button{isolation:isolate}
+.dock-reflection{position:absolute;pointer-events:none;left:8px;top:112px;width:96px;height:64px;overflow:hidden;opacity:.38;filter:blur(1.4px);-webkit-mask-image:linear-gradient(#0009,transparent 95%);mask-image:linear-gradient(#0009,transparent 95%)}
+.dock-reflection>.app-icon,.dock-reflection>.plus-icon{transform:scaleY(-1)!important;transform-origin:center center;box-shadow:none!important}
+/* A static glass glint adds depth without a looping effect or extra image. */
+body.dock-home[data-fixed-layout=true] #favourites>button>.favourite-top>.app-icon,
+body.dock-home[data-fixed-layout=true] #favourites>button>.app-icon,
+body.dock-home[data-fixed-layout=true] #favourites>button>.plus-icon{position:relative;overflow:hidden;box-shadow:inset 0 1px 1px #ffffff90,inset 1px 0 1px #ffffff40,0 6px 15px #0004}
+body.dock-home[data-fixed-layout=true] #favourites>button .app-icon:after,
+body.dock-home[data-fixed-layout=true] #favourites>button .plus-icon:after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(125deg,transparent 20%,#ffffff08 29%,#ffffff80 31%,#ffffff16 33%,transparent 43%),linear-gradient(180deg,#ffffff22,transparent 55%);box-shadow:inset 0 1px #ffffff70;z-index:2}
+.home-title-accent{color:#70bdff;background:linear-gradient(100deg,#c46bfa,#50baff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+body[data-fixed-layout=true]:after{content:'';pointer-events:none;position:fixed;left:0;right:0;bottom:0;height:140px;z-index:1;background:linear-gradient(0deg,#05101c22,transparent),repeating-linear-gradient(177deg,transparent 0,transparent 18px,#90caff0b 20px,transparent 22px)}
+body[data-fixed-layout=true] #view-home .recent-app-card{box-shadow:inset 0 1px #c9edff66,inset 1px 0 #c9edff22,0 5px 18px #0003}
+body[data-fixed-layout=true].reduce-motion #view-home #favourites.app-dock>button:focus{transform:none!important}
+@media(prefers-reduced-motion:reduce){body.dock-home[data-fixed-layout=true] #view-home #favourites.app-dock>button:focus{transform:none!important}}
+
+/* Ismaily: the Dervishes, with a visible yellow and blue identity. */
+body[data-theme=ismaily]{--accent:#ffcf24;--cinema-glow:#ffcf24;--club-primary:#ffcf24;--club-secondary:#123f82}
+body[data-theme=ismaily] .landscape{background:linear-gradient(115deg,#07152e 5%,#123f82 65%,#bb941c 100%)}
+body[data-fixed-layout=true][data-theme=ismaily] header .nav.active{background:linear-gradient(115deg,#ffe778,#ffcf24);color:#10284d;box-shadow:0 0 20px #ffcf2455}
+body[data-fixed-layout=true][data-theme=ismaily] #view-home .hero .intro .club-hero h1{color:#ffdc43;text-shadow:0 4px 24px #0008}
+body[data-theme=ismaily] .home-title-accent{background:linear-gradient(100deg,#ffe991,#ffca1a);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+body[data-fixed-layout=true][data-theme=ismaily] #view-home .hero .intro .club-overline{color:#ffdc43}
+body[data-theme=ismaily] #cinema-background:after{background:linear-gradient(90deg,#07152ef0,#123f8266 55%,#ffcf241c),linear-gradient(0deg,#07152ef0,transparent 65%)}
+body[data-theme=ismaily] .club-century{color:#ffe991}
+
+/* Restore the calm default Home; personal art and slides retain priority. */
+body[data-theme="blue"] .landscape{background:radial-gradient(ellipse at 99% 7%,#c0d3d699,transparent 50%),radial-gradient(ellipse 140% 90% at 122% 125%,#234f6666 49%,transparent 49.2%),radial-gradient(ellipse 130% 95% at 115% 120%,#92bdc944 60%,transparent 60.2%),linear-gradient(110deg,#111c31 5%,#245777 54%,#81b8c3 100%)!important}
+
+body[data-fixed-layout=true] #view-home #home-next-prayer{background:rgba(6,19,34,.88)!important;color:#fff;min-height:260px;border:2px solid #8199ad!important}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-at{font-size:58px;font-weight:700;line-height:1.05;margin-top:2px}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-remaining-label{font-size:20px;color:#dceafb;margin-top:10px}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-remaining{font-size:29px;line-height:1.15;margin-top:0;letter-spacing:1px}
+
+body[data-fixed-layout=true] #view-home #home-next-prayer{background:rgba(6,19,34,.08)!important;border-color:rgba(255,255,255,.15)!important;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none!important;text-shadow:0 2px 8px #000,0 0 18px #0009}
+
+/* Compact next-prayer summary: use the width instead of an empty tall card. */
+body[data-fixed-layout=true] #view-home #home-next-prayer{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto auto;align-items:center;gap:7px 16px;grid-gap:7px 16px;width:360px;min-height:0;height:auto;padding:16px 20px;border-radius:18px;background:rgba(6,19,34,.06)!important;border-color:rgba(255,255,255,.14)!important;text-shadow:0 2px 6px #000b,0 0 14px #0008}
+body[data-fixed-layout=true] #view-home #home-next-prayer small{grid-column:1/3;font-size:18px;line-height:1.3;opacity:.95}
+body[data-fixed-layout=true] #view-home #home-next-prayer strong{font-size:32px;line-height:1.2;margin:0}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-at{font-size:49px;line-height:1.12;letter-spacing:0;margin:0;white-space:nowrap}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-remaining-label{font-size:18px;line-height:1.3;margin:3px 0 0;padding-top:9px;border-top:1px solid #ffffff38;color:#fff}
+body[data-fixed-layout=true] #view-home #home-next-prayer .prayer-remaining{font-size:26px;line-height:1.3;letter-spacing:0;margin:3px 0 0;padding-top:9px;border-top:1px solid #ffffff38}
+body[data-fixed-layout=true] #view-home #home-next-prayer[data-ready=false] strong{grid-column:1/3;font-size:22px}
+body[data-fixed-layout=true] #view-home #home-next-prayer[data-ready=false] time,body[data-fixed-layout=true] #view-home #home-next-prayer[data-ready=false] .prayer-remaining-label{display:none}
+html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer{display:flex!important;flex-direction:row;flex-wrap:wrap!important;align-content:center;gap:0!important}
+html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer>:nth-child(1){flex:0 0 100%!important;width:100%!important;margin:0 0 7px!important}
+html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer>:nth-child(2),html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer>:nth-child(4){flex:0 0 42%!important;width:42%!important;margin:0!important}
+html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer>:nth-child(3),html.morph-legacy-layout body[data-fixed-layout=true] #view-home #home-next-prayer>:nth-child(5){flex:0 0 58%!important;width:58%!important;margin:0!important;text-align:end}
+
+/* Keep physical TV regions stable while Arabic text flows right to left inside them. */
+html[lang=ar] body[data-fixed-layout=true] #view-home .intro h1,
+html[lang=ar] body[data-fixed-layout=true] #view-home .intro>p,
+html[lang=ar] body[data-fixed-layout=true] #view-home .club-hero-copy{direction:rtl;text-align:right;letter-spacing:0;unicode-bidi:plaintext}
+html[lang=ar] body[data-fixed-layout=true] #view-home .intro h1{line-height:1.4;letter-spacing:0}
+html[lang=ar] body[data-fixed-layout=true] #view-home .intro>p{line-height:1.6;max-width:680px}
+html[lang=ar] body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy{top:75px}
+html[lang=ar] body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero h1{font-size:var(--reference-title-size,56px);line-height:1.4;max-height:236px;overflow:hidden;margin:14px 0}
+html[lang=ar] body[data-fixed-layout=true][data-theme] #view-home .hero .intro .club-hero-copy>p{font-size:var(--reference-subtitle-size,28px);line-height:1.6;max-height:100px;margin-top:14px}
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>h2,
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>p{max-width:calc(100% - 300px)}
+html[lang=ar] body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>h2,
+html[lang=ar] body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>p{direction:rtl;text-align:right}
+html[lang=ar] body[data-fixed-layout=true] #view-home .last-hdmi-card span{min-width:0;direction:rtl;text-align:right}
+html[lang=ar] body[data-fixed-layout=true] #view-home .last-hdmi-card strong{direction:rtl!important;unicode-bidi:plaintext;line-height:1.3;font-size:22px}
+
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>h2,
+body.dock-home[data-fixed-layout=true] #view-home .recent-apps-section>p{margin-left:0!important;margin-right:auto!important}
+html[lang=ar] body[data-fixed-layout=true] #view-home .club-hero-copy>p{direction:rtl!important;text-align:right!important;unicode-bidi:isolate;letter-spacing:0}

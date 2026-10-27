@@ -1,0 +1,8 @@
+/* Painted from the document head, even while the themed body is preparing. */
+html.theme-starting{background:var(--startup-background,radial-gradient(ellipse at 99% 7%,#c0d3d699,transparent 50%),radial-gradient(ellipse 140% 90% at 122% 125%,#234f6666 49%,transparent 49.2%),radial-gradient(ellipse 130% 95% at 115% 120%,#92bdc944 60%,transparent 60.2%),linear-gradient(110deg,#111c31 5%,#245777 54%,#81b8c3 100%))!important}
+html.theme-starting:before{content:'Morph TV';position:fixed;left:0;right:0;top:41%;text-align:center;color:#f5f9ff;font:600 46px Arial,sans-serif;letter-spacing:1px;z-index:2147483646;pointer-events:none}
+html.theme-starting:after{content:'Loading…  ·  جارٍ التحميل';position:fixed;left:0;right:0;top:53%;text-align:center;color:#a8ceff;font:24px Arial,sans-serif;z-index:2147483646;pointer-events:none;animation:startup-glow 1.4s ease-in-out infinite alternate}
+@keyframes startup-glow{from{opacity:.55}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){html.theme-starting:after{animation:none}}
+
+html.theme-starting:before,html.theme-starting:after{text-shadow:0 2px 18px #071323aa}

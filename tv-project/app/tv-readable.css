@@ -1,0 +1,5 @@
+/* Larger launcher navigation at the existing 1920px television design scale. */
+body[data-fixed-layout=true] header .nav{font-size:25px!important;min-height:64px;padding:13px 17px!important;line-height:1.25}
+body[data-fixed-layout=true] header nav{margin-left:18px!important;min-width:0}
+body[data-fixed-layout=true] #view-settings .setting{font-size:26px!important;line-height:1.4;min-height:68px}
+body[data-fixed-layout=true] #view-settings .settings-category-back{font-size:25px;min-height:58px}

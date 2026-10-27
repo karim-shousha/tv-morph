@@ -1,0 +1,43 @@
+html[data-media-cinema] body{isolation:isolate}
+html[data-media-cinema] body:before{content:'';position:fixed;inset:0;z-index:-1;background-image:linear-gradient(90deg,#020917f0,#020917db),var(--media-art);background-size:cover;background-position:center;pointer-events:none}
+html[data-media-cinema] header{height:104px;min-height:104px;background:#020916b8!important}
+html[data-media-cinema] .library-sidebar{border-radius:22px;background:#04101edc!important;border:1px solid #a8cfff40!important}
+html[data-media-cinema] #filters button.active{background:linear-gradient(110deg,var(--media-accent),var(--media-secondary))!important;color:#fff;box-shadow:0 0 18px #6257ed55}
+html[data-media-cinema] .radio-hero{height:90px;flex-basis:90px;background:transparent!important;border:0!important;padding:8px 18px;margin-bottom:12px}
+html[data-media-cinema] .radio-hero h1{font-size:34px;margin:0 0 8px}
+html[data-media-cinema] .radio-hero .eyebrow,html[data-media-cinema] .hero-orbit{display:none}
+html[data-media-cinema] .station{border-radius:18px;background:linear-gradient(145deg,#1b3043aa,#071221db)!important;border:1px solid #adcaff44!important;box-shadow:inset 0 1px #ffffff25}
+html[data-media-cinema] .now-playing{border-radius:20px;background:linear-gradient(100deg,#102b42dd,#0b1625ef)!important;border:1px solid #adcaff55!important}
+html[data-media-cinema] .station:focus{outline:3px solid var(--media-accent);box-shadow:0 0 20px var(--media-accent);transform:none}
+@media(max-height:800px){html[data-media-cinema] header{height:76px;min-height:76px}html[data-media-cinema] .radio-hero{height:74px;flex-basis:74px}html[data-media-cinema] .radio-hero h1{font-size:27px}}
+
+/* One visual grid and the same calm backdrop as Home. */
+html[data-media-cinema] body:before{background-image:linear-gradient(90deg,#0713234d,#07132320),var(--media-art),var(--radio-background);background-size:cover;background-position:center}
+html[data-media-theme="blue"][data-radio-art="false"] body:before{background-image:var(--radio-background)}
+html[data-media-cinema] header{background:#0c203242!important;border-bottom:1px solid #ffffff24}
+html[data-media-cinema] main{padding-top:26px;gap:26px}
+html[data-media-cinema] .library-sidebar{flex-basis:232px;margin-right:0;background:#10253d77!important;border:1px solid #d0eaff40!important;padding:24px 18px}
+html[data-media-cinema] .library-sidebar h2{font-size:18px;letter-spacing:1px;color:#dbe8f4}
+html[data-media-cinema] #filters button{min-height:74px;margin-bottom:12px;background:transparent!important;border:1px solid #ffffff18;font-size:22px}
+html[data-media-cinema] #filters button.active{background:#b5e5ff29!important;border-color:#b5e5ff99;box-shadow:inset 4px 0 #b5e5ff}
+html[data-media-cinema] .radio-hero{height:108px;flex-basis:108px;padding:8px 12px;margin-bottom:8px}
+html[data-media-cinema] .radio-hero h1{font-size:38px;line-height:1.25;margin:0 0 12px;letter-spacing:0}
+html[data-media-cinema] .radio-hero p{font-size:22px;line-height:1.4}
+html[data-media-cinema] .section-head{padding:0 12px;min-height:42px}
+html[data-media-cinema] #stations{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:max-content;align-content:start;gap:20px;padding:12px 12px 20px}
+html[data-media-cinema] .station-group,html[data-media-cinema] .station-grid{display:contents}
+html[data-media-cinema] .station-group h3{display:none}
+html[data-media-cinema] .station{height:var(--radio-card-height,198px);min-height:160px;padding:18px 20px;border-radius:22px;background:linear-gradient(135deg,#19364d99,#10253db8)!important;border:1px solid #d4edff40!important;justify-content:center}
+html[data-media-cinema] .station .icon{width:64px;height:64px;min-height:64px;border-radius:18px;margin-bottom:12px}
+html[data-media-cinema] .station .icon svg{width:40px;height:40px}
+html[data-media-cinema] .station strong{font-size:22px;line-height:1.2;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;height:54px;min-height:54px;max-height:54px;flex-shrink:0}
+html[data-media-cinema] .station small{font-size:12px;margin-top:9px;letter-spacing:.5px}
+html[data-media-cinema] .station:focus{background:linear-gradient(135deg,#294e68dd,#163a57ee)!important;border-color:#c9efff!important;outline:3px solid #b6e9ff;outline-offset:3px;box-shadow:0 0 0 7px #97dcff18}
+html[data-media-cinema] .now-playing{height:126px;min-height:126px;flex-basis:126px;background:linear-gradient(110deg,#153b52d9,#0d2339eb)!important;padding:18px 24px;border-color:#c6e8ff55!important;box-shadow:0 12px 30px #0003}
+html[data-media-cinema] .now-playing button{min-width:112px;border:1px solid #ffffff33;background:#ffffff10!important;border-radius:14px}
+html[data-media-cinema] .now-copy h2{font-size:27px}.now-copy p{color:#d5e6f2}
+html[lang="ar"] .library-sidebar,html[lang="ar"] .radio-hero,html[lang="ar"] .now-copy{direction:rtl;text-align:right}
+@media(max-width:1400px){html[data-media-cinema] #stations{grid-template-columns:repeat(3,minmax(0,1fr))}html[data-media-cinema] .library-sidebar{flex-basis:200px}html[data-media-cinema] .radio-hero h1{font-size:30px}html[data-media-cinema] .radio-hero p{font-size:18px}html[data-media-cinema] .station strong{font-size:19px}html[data-media-cinema] .now-playing button{min-width:86px}}
+@media(max-height:800px){html[data-media-cinema] main{padding-top:16px;gap:18px}html[data-media-cinema] .radio-hero{height:84px;flex-basis:84px}html[data-media-cinema] .now-playing{height:104px;min-height:104px;flex-basis:104px}html[data-media-cinema] #filters button{min-height:60px;font-size:18px}html[data-media-cinema] .station .icon{width:50px;height:50px;min-height:50px;margin-bottom:8px}html[data-media-cinema] .station small{font-size:10px}html[data-media-cinema] .now-copy h2{font-size:22px}}
+
+html[data-media-cinema] .station .icon{width:56px;height:56px;min-height:56px;margin-bottom:8px}html[data-media-cinema] .station{padding:14px 20px}@media(max-height:800px){html[data-media-cinema] .station strong{font-size:18px;height:46px;min-height:46px;max-height:46px}html[data-media-cinema] .station .icon{width:46px;height:46px;min-height:46px;margin-bottom:6px}}

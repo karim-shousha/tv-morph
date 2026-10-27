@@ -1,0 +1,5 @@
+package local.cleartv.mobile;
+import android.content.Context;import android.graphics.*;import android.net.Uri;import java.io.*;import java.util.*;
+final class ImageAssetCheck{
+ static void run(Context context)throws Exception{Bitmap source=Bitmap.createBitmap(1000,600,Bitmap.Config.ARGB_8888);source.eraseColor(0x5566aaee);File image=new File(context.getCacheDir(),"fixture-image.png");try(FileOutputStream out=new FileOutputStream(image)){source.compress(Bitmap.CompressFormat.PNG,100,out);}source.recycle();String data=ImageAsset.read(context,Uri.fromFile(image),"logo");if(!data.startsWith("data:image/png;base64,")||data.length()>240000)throw new Exception("Image encoding failed");byte[] bytes=Base64.getDecoder().decode(data.substring(data.indexOf(',')+1));Bitmap converted=BitmapFactory.decodeByteArray(bytes,0,bytes.length);if(!converted.hasAlpha()||Math.max(converted.getWidth(),converted.getHeight())>600)throw new Exception("Image transparency or bounds failed");converted.recycle();image.delete();}
+}

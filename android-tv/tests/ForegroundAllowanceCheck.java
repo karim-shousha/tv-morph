@@ -1,0 +1,9 @@
+package local.tvmorph.tv;
+import java.util.*;
+public final class ForegroundAllowanceCheck {
+ static void check(boolean ok,String message){if(!ok)throw new AssertionError(message);}
+ public static void main(String[] args){Map<String,Long> data=new HashMap<>();data.put("youtube",60000L);data.put("radio",30000L);ForegroundAllowance.Store store=new ForegroundAllowance.Store(){public long read(String id){return data.getOrDefault(id,-1L);}public void write(String id,long remaining){data.put(id,remaining);}};ForegroundAllowance clock=new ForegroundAllowance(store);
+ clock.focus("youtube",0);clock.settle(10000);check(data.get("youtube")==50000,"Count foreground use from elapsed zero");clock.focus("radio",12000);check(data.get("youtube")==48000,"Charge transition interval");clock.settle(17000);check(data.get("radio")==25000,"Independent second app");clock.focus("",18000);clock.settle(90000000);check(data.get("radio")==24000,"Screen off and next day do not renew or consume");clock.focus("youtube",90000000);clock.settle(90010000);check(data.get("youtube")==38000,"Resume saved balance");
+ clock=new ForegroundAllowance(store);clock.focus("youtube",0);clock.settle(40000);check(data.get("youtube")==0,"Process restart retains saved balance; saturates at zero");clock.settle(50000);check(data.get("youtube")==0,"Expired never becomes negative");data.put("youtube",30000L);clock.settle(51000);check(data.get("youtube")==29000,"Parent grants new allowance");clock.focus("unlimited",52000);clock.settle(90000000);check(!data.containsKey("unlimited"),"Unlimited apps do not create a timer");check(data.get("radio")==24000,"Other app allowance remains unchanged");System.out.println("PASS native allowance: transitions, screen off, no daily renewal, saved restart, expiry, grant and app isolation.");
+ }
+}

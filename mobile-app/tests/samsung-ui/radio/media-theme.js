@@ -1,0 +1,26 @@
+(function() {
+  "use strict";
+  var palettes = { argentina: ["#142d40", "#31576b", "#9bd8f3"], portugal: ["#1b2527", "#642c3a", "#dc5263"], basketball: ["#261714", "#261714", "#ed873c"], baseball: ["#14243c", "#14243c", "#d6bc91"], montreal: ["#102343", "#102343", "#df344f"], toronto: ["#102956", "#102956", "#74baff"], blue: ["#101c35", "#293d60", "#80cfff"], night: ["#0a0c17", "#252a40", "#9baeff"], ahly: ["#250b16", "#691c32", "#ff718d"], zamalek: ["#26161e", "#65404e", "#f299ac"], madrid: ["#23202d", "#655c70", "#e8d3a0"], barcelona: ["#160e2c", "#552747", "#d88cff"], egypt: ["#210c13", "#6a2232", "#ff8795"], emerald: ["#091e20", "#28564f", "#85e6c0"], amber: ["#221711", "#674b32", "#ffd49a"], violet: ["#1b112b", "#573665", "#d9acff"] };
+  function apply() {
+    var cfg = {};
+    try {
+      if (parent !== window && parent.ClearTV) cfg = parent.ClearTV.settings;
+      else {
+        var bridge = window.IptvNative || window.RadioNative;
+        if (bridge && bridge.settingsJson) cfg = JSON.parse(bridge.settingsJson());
+      }
+    } catch (e) {
+    }
+    var p = palettes[cfg.theme] || palettes.blue, root = document.documentElement;
+    root.style.setProperty("--media-bg", p[0]);
+    root.style.setProperty("--media-card", cfg.cardColor || p[1]);
+    root.style.setProperty("--media-accent", cfg.highlightColor || cfg.accent || p[2]);
+  }
+  var css = document.createElement("style");
+  css.textContent = "html,body{background:var(--media-bg)!important}.glow{background:radial-gradient(ellipse at 90% 0,var(--media-card),transparent 75%)!important}header,aside,.radio-hero,.now-playing,.tile,.station,.radio-card,.settings-dialog,.details-dialog,.portal-grid button,.portal-tools button{background:linear-gradient(135deg,var(--media-card),var(--media-bg))!important;border-color:var(--media-accent)!important}button.active,button.selected{background:var(--media-card)!important;color:#fff!important}button:focus,input:focus,select:focus{outline-color:var(--media-accent)!important;box-shadow:0 0 20px var(--media-accent)!important}.eyebrow,.resume-tag{color:var(--media-accent)!important}";
+  document.head.appendChild(css);
+  apply();
+  window.addEventListener("storage", apply);
+  window.addEventListener("load", apply);
+  window.addEventListener("focus", apply);
+})();

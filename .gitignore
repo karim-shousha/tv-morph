@@ -1,0 +1,3 @@
+# Source checkpoint; assets, runtime, credentials and release outputs stay local.
+*
+!.gitignore

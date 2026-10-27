@@ -1,0 +1,16 @@
+/* Stable colored artwork; cards and focus rings continue to follow the theme. */
+#view-home .home-tools>.tool:before{content:"";display:block;width:48px;height:48px;min-height:48px;margin:0 auto 6px;background-position:center;background-size:contain;background-repeat:no-repeat;filter:drop-shadow(0 4px 8px #0003)}
+#view-home .home-tools>#open-prayer:before{display:block}
+#view-home .home-tools>#open-prayer>svg{display:none}
+#view-home .home-tools>.tool{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:16px;line-height:19px;padding:7px 6px}
+#view-home .home-tools>#home-inputs{background:var(--cinema-glass,#26344e66)!important;border-color:var(--cinema-border,#ffffff30)!important}
+#view-home .home-tools>#open-prayer:before{background-image:url(assets/tvm-prayer.svg)}
+#view-home .home-tools>#home-inputs:before{background-image:url(assets/tvm-hdmi.svg)}
+#view-home .home-tools>#home-store:before{background-image:url(assets/tvm-store.svg)}
+#view-home .home-tools>#home-internet:before{background-image:url(assets/tvm-internet.svg)}
+#view-home .home-tools>#home-appearance:before{background-image:url(assets/tvm-appearance.svg)}
+#view-home .home-tools>#home-help:before{background-image:url(assets/tvm-help.svg)}
+
+#view-home .home-tools>.tool{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+
+#view-home .home-tools>#home-fitness:before{background-image:url(assets/tvm-fitness.svg)}

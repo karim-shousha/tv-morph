@@ -1,0 +1,5 @@
+package local.tvmorph.tv;
+public class BackReturnPolicyCheck {
+ static void check(boolean value){if(!value)throw new AssertionError();}
+ public static void main(String[] args){BackReturnPolicy p=new BackReturnPolicy();p.arm("netflix");p.window("netflix");check(!p.key(false,0,4,0,100));check(!p.key(false,0,4,0,200));check(!p.key(true,0,4,0,1000));check(!p.key(true,1,4,0,1050));check(p.key(true,0,4,0,1250));p.disarm();check(p.key(true,1,4,0,1300));check(!p.key(true,0,4,0,1350));p.arm("netflix");p.window("other");check(!p.key(true,0,4,0,2000));check(!p.key(true,0,4,0,2100));p.window("netflix");check(!p.key(true,0,4,1,2200));check(!p.key(true,0,4,0,3000));check(!p.key(true,0,4,0,4000));check(!p.key(true,0,24,0,4100));p.window("home");p.window("netflix");check(!p.key(true,0,4,0,4200));check(p.key(true,0,4,0,4500));check(p.key(true,1,4,0,4550));p.arm("tv.tuner");p.window("tv.tuner");check(!p.key(true,0,4,0,5000));check(p.key(true,0,4,0,5200));System.out.println("PASS quick return: opt-in only, armed app only, single Back preserved, double Back paired, repeats/volume/slow presses ignored, window transitions reset.");}
+}

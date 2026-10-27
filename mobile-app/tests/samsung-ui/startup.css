@@ -1,0 +1,6 @@
+/* Painted from the document head, even while the themed body is preparing. */
+html.theme-starting{background:#060d1b!important}
+html.theme-starting:before{content:'Morph TV';position:fixed;left:0;right:0;top:41%;text-align:center;color:#f5f9ff;font:600 46px Arial,sans-serif;letter-spacing:1px;z-index:2147483646;pointer-events:none}
+html.theme-starting:after{content:'Loading…  ·  جارٍ التحميل';position:fixed;left:0;right:0;top:53%;text-align:center;color:#a8ceff;font:24px Arial,sans-serif;z-index:2147483646;pointer-events:none;animation:startup-glow 1.4s ease-in-out infinite alternate}
+@keyframes startup-glow{from{opacity:.55}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){html.theme-starting:after{animation:none}}

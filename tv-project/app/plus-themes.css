@@ -1,0 +1,59 @@
+[data-theme="ismaily"]{--accent:#ffcf24;--bg:#123f82;--club-primary:#ffcf24;--club-secondary:#123f82}[data-theme="ismaily"] .landscape{background:linear-gradient(125deg,#070e19,#123f82)}[data-theme="ismaily"] .club-hero{background:linear-gradient(120deg,#123f82ed,#ffcf2466);border-left-color:#ffcf24}[data-theme="ismaily"] .nav.active{background:#ffcf2455}[data-theme="ismaily"] .favourite{border-color:#ffcf2466}
+[data-theme="king-salman"]{--accent:#cfb877;--bg:#063d31;--club-primary:#cfb877;--club-secondary:#063d31}[data-theme="king-salman"] .landscape{background:linear-gradient(125deg,#070e19,#063d31)}[data-theme="king-salman"] .club-hero{background:linear-gradient(120deg,#063d31ed,#cfb87766);border-left-color:#cfb877}[data-theme="king-salman"] .nav.active{background:#cfb87755}[data-theme="king-salman"] .favourite{border-color:#cfb87766}
+[data-theme="crown-prince"]{--accent:#d5b876;--bg:#064d42;--club-primary:#d5b876;--club-secondary:#064d42}[data-theme="crown-prince"] .landscape{background:linear-gradient(125deg,#070e19,#064d42)}[data-theme="crown-prince"] .club-hero{background:linear-gradient(120deg,#064d42ed,#d5b87666);border-left-color:#d5b876}[data-theme="crown-prince"] .nav.active{background:#d5b87655}[data-theme="crown-prince"] .favourite{border-color:#d5b87666}
+[data-theme="nassr"]{--accent:#efc82f;--bg:#12377a;--club-primary:#efc82f;--club-secondary:#12377a}[data-theme="nassr"] .landscape{background:linear-gradient(125deg,#070e19,#12377a)}[data-theme="nassr"] .club-hero{background:linear-gradient(120deg,#12377aed,#efc82f66);border-left-color:#efc82f}[data-theme="nassr"] .nav.active{background:#efc82f55}[data-theme="nassr"] .favourite{border-color:#efc82f66}
+[data-theme="hilal"]{--accent:#3984fa;--bg:#081d5a;--club-primary:#3984fa;--club-secondary:#081d5a}[data-theme="hilal"] .landscape{background:linear-gradient(125deg,#070e19,#081d5a)}[data-theme="hilal"] .club-hero{background:linear-gradient(120deg,#081d5aed,#3984fa66);border-left-color:#3984fa}[data-theme="hilal"] .nav.active{background:#3984fa55}[data-theme="hilal"] .favourite{border-color:#3984fa66}
+[data-theme="ittihad"]{--accent:#eccb3c;--bg:#171714;--club-primary:#eccb3c;--club-secondary:#171714}[data-theme="ittihad"] .landscape{background:linear-gradient(125deg,#070e19,#171714)}[data-theme="ittihad"] .club-hero{background:linear-gradient(120deg,#171714ed,#eccb3c66);border-left-color:#eccb3c}[data-theme="ittihad"] .nav.active{background:#eccb3c55}[data-theme="ittihad"] .favourite{border-color:#eccb3c66}
+[data-theme="ahli-saudi"]{--accent:#4abf8a;--bg:#073c2e;--club-primary:#4abf8a;--club-secondary:#073c2e}[data-theme="ahli-saudi"] .landscape{background:linear-gradient(125deg,#070e19,#073c2e)}[data-theme="ahli-saudi"] .club-hero{background:linear-gradient(120deg,#073c2eed,#4abf8a66);border-left-color:#4abf8a}[data-theme="ahli-saudi"] .nav.active{background:#4abf8a55}[data-theme="ahli-saudi"] .favourite{border-color:#4abf8a66}
+[data-theme="king-salman"] #cinema-background img,[data-theme="crown-prince"] #cinema-background img{object-fit:contain!important;object-position:65% 15%!important;opacity:.9}[data-theme="king-salman"] #cinema-background,[data-theme="crown-prince"] #cinema-background{background:radial-gradient(ellipse at 65% 30%,#166d51,#061c1a 70%)}
+
+[data-theme="king-salman"] .club-hero h1,[data-theme="crown-prince"] .club-hero h1{white-space:normal!important;font-size:48px!important;line-height:1.4!important}[data-theme="king-salman"] .club-watermark,[data-theme="crown-prince"] .club-watermark{display:none!important}
+
+.royal-vision-mark{display:block;width:150px;height:100px;object-fit:contain;margin-top:12px}.pack-list{max-height:52vh;overflow-y:auto;padding:8px;box-sizing:border-box}.pack-row button:focus{outline-offset:-3px}
+
+body.dock-home[data-theme="crown-prince"] .royal-vision-mark{position:fixed;top:185px;left:330px;width:150px;height:100px;margin:0}body[data-theme="king-salman"] #cinema-background img,body[data-theme="crown-prince"] #cinema-background img{max-width:none!important}
+
+
+body[data-theme="nassr"] #cinema-background>img,body[data-theme="hilal"] #cinema-background>img,body[data-theme="ittihad"] #cinema-background>img,body[data-theme="ahli-saudi"] #cinema-background>img{object-fit:contain!important;object-position:right top!important}
+
+[data-theme="inter-miami"]{--accent:#f7b5cd;--bg:#111115;--club-primary:#f7b5cd;--club-secondary:#111115}[data-theme="inter-miami"] .landscape{background:radial-gradient(ellipse at 90% 15%,#f7b5cd44,transparent 60%),linear-gradient(125deg,#0b0b0e,#30212a)}[data-theme="inter-miami"] .club-hero{background:linear-gradient(120deg,#111115ed,#f7b5cd44);border-left-color:#f7b5cd}[data-theme="inter-miami"] .nav.active{background:#f7b5cd44}[data-theme="inter-miami"] .favourite{border-color:#f7b5cd66}
+
+body[data-theme="inter-miami"] #cinema-background>img{object-fit:contain!important;object-position:right top!important}
+
+.tv-theme-categories{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.tv-theme-categories button{font-size:20px;padding:12px 18px;border:1px solid #aabbd766;border-radius:12px;background:#142236;color:#fff}.tv-theme-categories button[aria-pressed=true]{background:#6254cd;border-color:#d2caff}.tv-theme-categories button:focus{outline:4px solid #8ae3ff;outline-offset:1px}.tv-theme-count{font-size:18px!important;margin:8px 0!important;opacity:.85}.theme-options .theme-option[hidden]{display:none!important}
+
+[data-theme="saudi-national"]{--accent:#38d98d;--bg:#043d2c;--club-primary:#38d98d;--club-secondary:#043d2c}[data-theme="egypt-national"]{--accent:#ed334b;--bg:#171b28;--club-primary:#ed334b;--club-secondary:#171b28}
+[data-theme="saudi-national"] .landscape{background:radial-gradient(ellipse at 80% 30%,#168451,#042d24 75%)}[data-theme="egypt-national"] .landscape{background:radial-gradient(ellipse at 85% 25%,#67303b,#101b28 70%)}
+body[data-theme="saudi-national"] #cinema-background>img{width:1120px!important;height:747px!important;top:100px!important;right:0!important;object-fit:contain!important;object-position:center!important;mask-image:none!important;-webkit-mask-image:none!important;opacity:.95!important;max-width:none!important}
+body[data-theme="egypt-national"] #cinema-background>img{width:750px!important;height:970px!important;right:10px!important;top:65px!important;object-fit:cover!important;object-position:top!important;max-width:none!important;mask-image:linear-gradient(90deg,transparent,#000 16%,#000 87%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 16%,#000 87%,transparent)}
+body[data-theme="egypt-national"] .royal-vision-mark{position:fixed!important;top:185px!important;left:920px!important;width:310px!important;height:207px!important;object-fit:contain!important;margin:0!important;border:2px solid #ffffff55;box-shadow:0 12px 40px #0006;border-radius:8px}
+body[data-theme="saudi-national"] .hero-heading h1,body[data-theme="egypt-national"] .hero-heading h1{font-size:64px!important}
+
+body[data-theme="saudi-national"] #cinema-background>img{width:900px!important;height:600px!important;top:200px!important;right:360px!important}
+body[data-theme="egypt-national"] #cinema-background>img{width:1260px!important;height:710px!important;right:280px!important;top:190px!important;object-fit:contain!important;object-position:center!important;mask-image:linear-gradient(90deg,transparent,#000 23%,#000 96%,transparent)!important;-webkit-mask-image:linear-gradient(90deg,transparent,#000 23%,#000 96%,transparent)!important}
+
+body[data-theme="saudi-national"] #cinema-background{inset:0!important;width:1920px!important;height:1080px!important;background:#043d2c!important;opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="saudi-national"] #cinema-background>img{inset:0!important;width:1920px!important;height:1080px!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center!important;opacity:1!important;transform:none!important;margin:0!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="saudi-national"] #cinema-background:after{background:linear-gradient(90deg,#001c17c4,transparent 75%),linear-gradient(0deg,#001b17aa,transparent 50%)!important}
+
+body[data-theme="egypt-national"] #cinema-background{inset:0!important;width:1920px!important;height:1080px!important;background:#171b28!important;opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="egypt-national"] #cinema-background>img{inset:0!important;width:1920px!important;height:1080px!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center!important;opacity:1!important;transform:none!important;margin:0!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="egypt-national"] #cinema-background:after{background:linear-gradient(90deg,#101722c9,transparent 75%),linear-gradient(0deg,#101722aa,transparent 50%)!important}
+
+/* Original cinematic artwork, independent from the default blue theme. */
+[data-theme="blue-cinema"]{--accent:#61c9ff;--bg:#07152c;--club-primary:#61c9ff;--club-secondary:#07152c}
+body[data-theme="blue-cinema"] .landscape{background:#07152c}
+body[data-theme="blue-cinema"] #cinema-background{inset:0!important;width:1920px!important;height:1080px!important;opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="blue-cinema"] #cinema-background>img{inset:0!important;width:1920px!important;height:1080px!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center!important;opacity:1!important;transform:none!important;margin:0!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="blue-cinema"] #cinema-background:after{background:linear-gradient(90deg,#03102055,transparent 70%),linear-gradient(0deg,#03102066,transparent 40%)!important}
+body[data-theme="blue-cinema"] .club-hero-logo,body[data-theme="blue-cinema"] .club-crest,body[data-theme="blue-cinema"] .club-watermark{display:none!important}
+
+/* GTA VI-inspired Vice Sunset: original generated art, static and light-mode friendly. */
+[data-theme="gta6"]{--accent:#ff78bb;--bg:#25103e;--club-primary:#ff78bb;--club-secondary:#25103e}
+body[data-theme="gta6"] .landscape{background:linear-gradient(125deg,#100b28,#32143e 65%,#5a265e)}
+body[data-theme="gta6"] #cinema-background{inset:0!important;width:1920px!important;height:1080px!important;opacity:1!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="gta6"] #cinema-background>img{inset:0!important;width:1920px!important;height:1080px!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center!important;opacity:1!important;transform:none!important;margin:0!important;mask-image:none!important;-webkit-mask-image:none!important}
+body[data-theme="gta6"] #cinema-background:after{background:linear-gradient(90deg,#100b28bb,transparent 73%),linear-gradient(0deg,#120b28dc,transparent 48%)!important}
+body[data-theme="gta6"] .club-hero-logo,body[data-theme="gta6"] .club-crest,body[data-theme="gta6"] .club-watermark{display:none!important}
+body[data-theme="gta6"] header .nav.active{background:linear-gradient(115deg,#ee5da0,#8c54d6)!important;color:#fff!important}
+body[data-theme="gta6"] .hero-heading h1{color:#fff}

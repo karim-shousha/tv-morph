@@ -1,0 +1,48 @@
+/* The home dock keeps app identities visible and lifts the selected icon. */
+body.dock-home #view-home .home-shelf{display:none!important}
+body.dock-home #view-home .section-heading>div{display:none}
+body.dock-home #view-home .section-heading{position:absolute;right:70px;bottom:223px;margin:0;z-index:5}
+body.dock-home #view-home .home-feed{overflow:hidden;height:600px}
+body.dock-home #view-home #favourites.app-dock{position:absolute;left:calc(50% + 50px);bottom:40px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 280px);height:192px;margin:0;padding:60px 30px 26px!important;display:flex;align-items:center;gap:0!important;overflow-x:auto;overflow-y:hidden;z-index:10;isolation:isolate;border-radius:30px;background:transparent;scroll-snap-type:none!important}
+body.dock-home #view-home #favourites.app-dock:before{content:'';position:absolute;left:0;right:0;bottom:5px;height:120px;border-radius:30px;background:var(--cinema-glass,#26344e55);border:1px solid var(--cinema-border,#ffffff40);box-shadow:inset 0 1px #ffffff50,0 16px 40px #0003;z-index:-1;pointer-events:none}
+body.dock-home #view-home #favourites.app-dock>button{position:relative;width:104px!important;min-width:104px!important;max-width:104px!important;flex:0 0 104px!important;height:104px!important;min-height:104px!important;margin:0 9px!important;padding:8px!important;border:0!important;border-radius:23px;background:transparent!important;background-image:none!important;box-shadow:none!important;outline:0!important;overflow:visible;transform-origin:50% 90%;transition:transform 100ms ease-out!important}
+body.dock-home #view-home #favourites.app-dock>button:before,body.dock-home #view-home #favourites.app-dock>button:after{display:none}
+body.dock-home #view-home #favourites.app-dock .favourite-top{margin:0}
+body.dock-home #view-home #favourites.app-dock .app-icon{width:88px;height:88px;transform:none!important}
+body.dock-home #view-home #favourites.app-dock h3{position:absolute;top:110px;left:-28px;width:160px;font-size:15px;opacity:0;transition:opacity 70ms;pointer-events:none}
+body.dock-home #view-home #favourites.app-dock>button:focus,body.dock-home #view-home #favourites.app-dock>button:hover{transform:translateY(-18px) scale(1.28)!important;z-index:5}
+body.dock-home #view-home #favourites.app-dock>button:focus .app-icon{box-shadow:0 0 0 2px var(--cinema-glow),0 0 20px var(--cinema-glow),0 12px 20px #0004}
+body.dock-home #view-home #favourites.app-dock>button:focus h3,body.dock-home #view-home #favourites.app-dock>button:hover h3{opacity:1}
+body.dock-home #view-home #favourites.app-dock>button.dock-neighbor:not(:focus):not(:hover){transform:translateY(-3px) scale(1.04)!important}
+body.dock-home #view-home #favourites.app-dock .plus-icon{width:88px;height:88px;margin:0;border-radius:23px;background:linear-gradient(145deg,#ffffff29,#ffffff0a);border:1px solid var(--cinema-border)}
+body.dock-home #view-home .recent-apps-section{position:absolute;left:182px;right:70px;bottom:282px;height:200px;z-index:4}
+.recent-apps-section h2{font-size:26px;font-weight:500;margin:0 0 18px}.recent-apps-section>p{font-size:21px;color:#d4dcea;margin-top:40px}.recent-apps-rail{display:flex;overflow-x:auto;padding:10px 8px 18px;scrollbar-width:none}.recent-apps-rail::-webkit-scrollbar{display:none}
+.recent-app-card{flex:1 0 0;min-width:230px;max-width:310px;height:132px;margin-right:20px;padding:17px;display:flex;align-items:center;border-radius:20px;border:1px solid var(--cinema-border);background:var(--cinema-glass);box-shadow:inset 0 1px #ffffff35;transition:transform .2s}
+.recent-app-card .app-icon{width:68px;height:68px;min-width:68px;flex-shrink:0;border-radius:17px;font-size:25px}.recent-app-card .app-icon img{width:100%;height:100%;object-fit:contain}.recent-app-card .app-icon svg{width:42px;height:42px}.recent-app-copy{display:block;margin-left:14px;text-align:start;min-width:0}.recent-app-copy strong{display:block;font-size:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.recent-app-copy small{display:block;margin-top:9px;font-size:14px;opacity:.72}.recent-app-card:focus{outline:3px solid var(--cinema-glow);outline-offset:3px;transform:translateY(-3px)}
+body.reduce-motion #view-home #favourites.app-dock>button{transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){body.dock-home #view-home #favourites.app-dock>button{transform:none!important;transition:none!important}}
+
+body.dock-home #view-home .recent-apps-rail{margin-right:350px}
+body.dock-home #view-home .recent-app-card{height:116px;padding:14px;min-width:220px}
+body.dock-home #view-home .recent-app-card .app-icon{width:48px;height:48px;min-width:48px;min-height:48px;border-radius:13px;font-size:20px}
+body.dock-home #view-home .recent-app-card .app-icon img{border-radius:13px}body.dock-home #view-home .recent-app-card .app-icon svg{width:35px;height:35px}
+.last-hdmi-card{position:absolute;right:0;top:57px;width:320px;height:116px;display:flex;align-items:center;padding:18px;border-radius:20px;border:1px solid var(--cinema-border);background:var(--cinema-glass);color:inherit;text-align:start;box-shadow:inset 0 1px #ffffff40}
+.last-hdmi-card>svg{width:46px;height:46px;flex-shrink:0;margin-inline-end:18px;color:var(--cinema-glow)}.last-hdmi-card span{min-width:0}.last-hdmi-card small{display:block;font-size:15px;opacity:.75}.last-hdmi-card strong{display:block;font-size:25px;margin:6px 0;text-align:start}.last-hdmi-card em{display:block;font-style:normal;font-size:14px;opacity:.8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.last-hdmi-card:focus{outline:3px solid var(--cinema-glow);outline-offset:3px;box-shadow:0 0 20px var(--cinema-glow)}
+.recent-apps-section>.last-hdmi-card{position:absolute}
+
+#favourites>#dock-hdmi{background:linear-gradient(135deg,#ffb84533,#ef553b44);border-color:#ffbd70}#favourites>#dock-hdmi img{width:88px;height:88px;object-fit:contain}#home-inputs{background:linear-gradient(145deg,#b45a22cc,#a7313bcc)!important;border-color:#ffc477!important}#home-inputs svg{color:#ffd38d!important}
+
+body.dock-home #view-home #favourites.app-dock{width:1100px;max-width:calc(100% - 280px);scroll-padding:0;direction:ltr}
+
+body.dock-home #view-home #favourites.app-dock:before{display:none;content:none}
+
+/* Stable dock: center the group, not every newly focused icon. */
+body.dock-home #view-home #favourites.app-dock{width:max-content;scroll-behavior:auto!important}
+
+body.dock-home.reduce-motion #view-home #favourites.app-dock>button{transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){body.dock-home #view-home #favourites.app-dock>button:focus,body.dock-home #view-home #favourites.app-dock>button:hover,body.dock-home #view-home #favourites.app-dock>button.dock-neighbor{transform:none!important;transition:none!important}}
+
+/* Light mode must override the dock's more specific transform rules too. */
+body.dock-home.light-mode #view-home #favourites.app-dock>button,body.dock-home.light-mode #view-home #favourites.app-dock>button:focus,body.dock-home.light-mode #view-home #favourites.app-dock>button:hover,body.dock-home.light-mode #view-home #favourites.app-dock>button.dock-neighbor{transform:none!important;transition:none!important}
+body.dock-home.light-mode #view-home #favourites.app-dock>button:focus{outline:3px solid var(--cinema-glow,#bdf8ff)!important;outline-offset:3px!important}

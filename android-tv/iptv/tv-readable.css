@@ -1,0 +1,95 @@
+/* Living-room typography; phone layouts do not opt in. */
+html[data-tv-library] header{height:102px!important;flex-basis:102px!important;padding:0 24px!important;gap:14px!important}
+html[data-tv-library] header .brand{font-size:30px!important}
+html[data-tv-library] header nav{gap:8px;min-width:0}
+html[data-tv-library] header button,html[data-tv-library] header nav button{font-size:25px!important;line-height:1.25;min-height:58px;padding:12px 16px!important;white-space:nowrap}
+html[data-tv-library] header .unified-bar{flex:1 1 440px!important;min-width:280px;max-width:600px;gap:10px}
+html[data-tv-library] header .unified-bar input{font-size:24px!important;min-height:58px;padding:12px 16px!important;min-width:100px}
+html[data-tv-library] main{padding:10px 20px 6px!important;gap:16px!important;grid-template-columns:400px minmax(0,1fr)!important}
+html[data-tv-library] main>aside{padding:10px 6px!important}
+html[data-tv-library] #playlist-name{font-size:28px;white-space:normal;max-height:76px;line-height:1.35;margin:4px 12px 10px}
+html[data-tv-library] #library-special{padding:0 3px 6px;margin-bottom:4px}
+html[data-tv-library] #library-special button{font-size:26px!important;min-height:62px;padding:12px 14px!important;line-height:1.35;white-space:normal}
+html[data-tv-library] #categories button{font-size:27px!important;min-height:78px;line-height:1.35;padding:14px 12px!important;white-space:normal;overflow-wrap:break-word;word-wrap:break-word;text-overflow:clip;text-align:start}
+html[data-tv-library] .heading{height:58px;flex-basis:58px;padding:0 8px 8px}
+html[data-tv-library] .heading h2{font-size:32px!important;line-height:1.3}
+html[data-tv-library] #status{font-size:22px;min-height:28px;line-height:1.3}
+html[data-tv-library] body[data-kind] #items{gap:14px;grid-gap:14px;padding:7px}
+html[data-tv-library] .tile strong{font-size:26px!important;line-height:1.35;min-height:70px;max-height:78px;padding:8px 10px!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;unicode-bidi:plaintext}
+html[data-tv-library] .tile .resume-tag{font-size:20px!important;padding:0 10px 7px}
+html[data-tv-library] .tv-rating{font-size:22px;padding:5px 9px}
+html[data-tv-library] .pagination{flex-basis:46px;min-height:46px;gap:16px}
+html[data-tv-library] .pagination button{font-size:22px;padding:8px 18px}
+html[data-tv-library] #page-number{font-size:20px}
+html[data-tv-library] body[data-kind=live] main>section{grid-template-rows:58px 32px minmax(0,1fr) 46px}
+html[data-tv-library] body[data-kind=live] .item{flex-basis:84px;height:84px}
+html[data-tv-library] body[data-kind=live] .items .item .tile{min-height:84px;padding:8px 12px!important}
+html[data-tv-library] body[data-kind=live] .tile strong{font-size:27px!important;min-height:0;max-height:none;white-space:normal}
+html[data-tv-library] body[data-kind=live] .items .item .tile img{width:58px;height:58px;flex-basis:58px}
+html[data-tv-library] #tv-channel-name{font-size:36px!important}
+html[data-tv-library] #tv-preview-hint,html[data-tv-library] #tv-live-preview button{font-size:25px!important}
+html[data-tv-library] .detail-copy p{font-size:26px!important;line-height:1.5}
+html[data-tv-library] .detail-copy h2{font-size:42px!important}
+html[data-tv-library] .detail-actions button{font-size:25px!important;min-height:60px}
+html[data-tv-library] .tv-episode strong{font-size:28px!important}
+html[data-tv-library] .tv-episode small,html[data-tv-library] .tv-episode-toolbar label,html[data-tv-library] .tv-episode-toolbar select,html[data-tv-library] .tv-episode-toolbar button{font-size:24px!important}
+@media(max-width:1400px){
+html[data-tv-library] header{height:82px!important;flex-basis:82px!important;padding:0 14px!important;gap:9px!important}
+html[data-tv-library] header .brand{font-size:24px!important;padding-left:40px!important}
+html[data-tv-library] header button,html[data-tv-library] header nav button{font-size:20px!important;min-height:48px;padding:10px 11px!important}
+html[data-tv-library] header .unified-bar{min-width:220px;flex-basis:300px!important}
+html[data-tv-library] header .unified-bar input{font-size:20px!important;min-height:48px;padding:10px!important}
+html[data-tv-library] main{padding:8px 12px 5px!important;gap:12px!important;grid-template-columns:290px minmax(0,1fr)!important}
+html[data-tv-library] #playlist-name{font-size:23px;max-height:62px}
+html[data-tv-library] #library-special button{font-size:21px!important;min-height:48px;padding:9px 10px!important}
+html[data-tv-library] #categories button{font-size:22px!important;min-height:65px;padding:10px!important}
+html[data-tv-library] .heading{height:46px;flex-basis:46px}
+html[data-tv-library] .heading h2{font-size:26px!important}
+html[data-tv-library] #status{font-size:18px;min-height:24px}
+html[data-tv-library] .tile strong{font-size:21px!important;min-height:56px;max-height:62px;padding:6px 8px!important}
+html[data-tv-library] .tile .resume-tag{font-size:17px!important}
+html[data-tv-library] .tv-rating{font-size:18px}
+html[data-tv-library] .pagination{min-height:38px;flex-basis:38px}
+html[data-tv-library] .pagination button,html[data-tv-library] #page-number{font-size:18px}
+html[data-tv-library] body[data-kind=live] main>section{grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);grid-template-rows:46px 26px minmax(0,1fr) 38px}
+html[data-tv-library] body[data-kind=live] .item{height:70px;flex-basis:70px}
+html[data-tv-library] body[data-kind=live] .items .item .tile{min-height:70px}
+html[data-tv-library] body[data-kind=live] .tile strong{font-size:22px!important;min-height:0}
+html[data-tv-library] #tv-channel-name{font-size:28px!important}
+html[data-tv-library] #tv-preview-hint,html[data-tv-library] #tv-live-preview button{font-size:21px!important}
+html[data-tv-library] .detail-copy p{font-size:21px!important}
+html[data-tv-library] .detail-copy h2{font-size:32px!important}
+html[data-tv-library] .detail-actions button{font-size:21px!important;min-height:48px}
+html[data-tv-library] .tv-episode strong{font-size:23px!important}
+html[data-tv-library] .tv-episode small,html[data-tv-library] .tv-episode-toolbar label,html[data-tv-library] .tv-episode-toolbar select,html[data-tv-library] .tv-episode-toolbar button{font-size:20px!important}
+}
+
+html[data-tv-library] header .brand{flex:0 0 auto}
+html[data-tv-library] header nav{flex:0 0 auto!important}
+html[data-tv-library] #status{color:#e1edf8!important}
+html[data-tv-library] #categories button{color:#fff!important}
+@media(max-width:1400px){
+html[data-tv-library] header{height:148px!important;flex-basis:148px!important;align-items:flex-start;padding-top:8px!important}
+html[data-tv-library] header .brand{margin-top:15px}
+html[data-tv-library] header>button{margin-top:6px}
+html[data-tv-library] header .unified-bar{position:absolute!important;top:84px;left:14px;right:14px;width:auto!important;max-width:none;min-width:0;height:52px;margin:0!important;display:flex}
+html[data-tv-library] header .unified-bar input{width:auto;flex:1}
+}
+
+html[data-tv-library] header .media-clock{display:none!important}
+@media(min-width:1401px){html[data-tv-library] header .unified-bar{min-width:340px}}
+
+html[data-tv-library] .heading select{font-size:24px!important;min-height:50px;padding:8px 14px}
+html[data-tv-library] .settings-dialog label,html[data-tv-library] .settings-dialog input,html[data-tv-library] .settings-dialog select,html[data-tv-library] .settings-dialog button{font-size:24px!important;line-height:1.4}
+html[data-tv-library] .settings-dialog p{font-size:22px;line-height:1.5}
+html[data-tv-library] .settings-dialog h2{font-size:36px}
+@media(max-width:1400px){html[data-tv-library] .heading select{font-size:20px!important;min-height:40px}html[data-tv-library] .settings-dialog label,html[data-tv-library] .settings-dialog input,html[data-tv-library] .settings-dialog select,html[data-tv-library] .settings-dialog button{font-size:20px!important}html[data-tv-library] .settings-dialog p{font-size:19px}}
+
+/* Smaller posters remain available without reducing text legibility. */
+html[data-tv-library] body[data-density=compact]:not([data-kind=live]) #items{grid-template-columns:repeat(6,minmax(0,1fr))}
+
+/* Source capabilities must win over cinematic navigation display rules. */
+html[data-media-cinema] header #kind-live[hidden],html[data-media-cinema] header #kind-vod[hidden],html[data-media-cinema] header #kind-series[hidden],html[data-media-cinema] header #only-favorites[hidden],html[data-media-cinema] #dashboard .portal-grid button[hidden]{display:none!important}
+
+html[data-tv-library] body[data-source=m3u] #watch-hero.watch-history-grid{grid-template-columns:minmax(0,1fr)}
+html[data-tv-library] .watch-card[hidden],html[data-tv-library] #favorite-kinds button[hidden]{display:none!important}

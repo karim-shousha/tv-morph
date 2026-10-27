@@ -1,0 +1,162 @@
+
+/* Native home shelves: vertically scrollable, horizontal TV remote rails. */
+#view-home .home-feed{height:800px;overflow-y:auto;overflow-x:hidden;padding:0 16px 45px;margin:0 -16px;scrollbar-width:none}.home-feed::-webkit-scrollbar{display:none}.home-shelf{margin:24px 0 12px}.home-shelf h2{font-size:26px;font-weight:500;margin:14px 0}.home-shelf-rail{display:flex;gap:22px;overflow-x:auto;overflow-y:hidden;padding:12px 10px 24px;scrollbar-width:none}.shelf-card{flex:0 0 310px;height:164px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;border:1px solid #ffffff30;border-radius:23px;background:linear-gradient(130deg,#ffffff25,#ffffff09);backdrop-filter:blur(18px);font-size:22px;text-align:center;padding:20px}.shelf-card:focus{background:linear-gradient(130deg,#ffffff45,#ffffff18);transform:scale(1.025)}.shelf-card .app-icon{width:55px;height:55px}.shelf-card svg{width:48px;height:48px}.radio-card{background:linear-gradient(125deg,#108c8d88,#193a6699)}.radio-card strong{font-size:37px;color:#8affd4}.shelf-card span{max-width:100%;white-space:normal}header nav{margin-left:28px}.nav{font-size:17px;padding:12px 15px;margin-right:4px}.header-clock{min-width:150px}.network{display:none}
+
+#view-home .home-feed{height:720px}#view-home .home-tools{position:absolute;bottom:90px;left:112px;right:112px;margin:0;padding:16px 18px;border:1px solid #ffffff28;border-radius:22px;background:linear-gradient(100deg,#101725ee,#1b2438d9);backdrop-filter:blur(22px);display:flex;justify-content:center;gap:14px;z-index:8}#view-home .home-tools .recent{display:none}.brand{direction:ltr;white-space:nowrap}.home-feed,.favourites,.home-shelf-rail,header{direction:ltr}.shelf-card span,.favourite h3,.favourite p{unicode-bidi:plaintext}.favourite.reordering{outline:5px solid #7affd3;box-shadow:0 0 35px #66ffd855;transform:translateY(-5px)}#reorder-hint{position:fixed;bottom:172px;left:520px;right:520px;padding:18px;border-radius:18px;background:#0c2039ed;border:1px solid #80ffd6;text-align:center;font-size:23px;z-index:12}
+
+/* Explicit spacing supports Tizen engines without flex gap. Bottom bar owns credits. */
+.home-shelf-rail{gap:0}.home-shelf-rail>.shelf-card{margin-right:22px}.home-shelf-rail>.shelf-card:last-child{margin-right:0}.shelf-card{gap:0}.shelf-card>.app-icon,.shelf-card>strong{margin-bottom:14px}
+#view-home .home-feed{height:800px;padding-bottom:28px}
+#view-home .home-tools{bottom:10px;padding:16px 18px 44px;gap:0}
+#view-home .home-tools>.tool{margin-right:14px}
+#view-home .home-tools>footer{position:absolute;bottom:13px;left:18px;right:18px;font-size:13px;line-height:18px;z-index:9}
+
+/* Compact glass dock: controls and labels share one horizontal centerline. */
+#view-home .home-tools{padding:12px 18px;min-height:84px;align-items:center}
+#view-home .home-tools>.tool{font-size:18px;position:relative;z-index:2}
+#view-home .home-tools>footer{top:0;bottom:0;left:18px;right:18px;align-items:center;pointer-events:none;font-size:12px;line-height:16px}
+#view-home .home-tools #focus-hint{max-width:230px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#view-home .home-tools .credit{max-width:360px;font-size:13px;text-align:right;white-space:nowrap}
+#view-home .home-tools #preview-badge{display:none}
+#view-home .home-feed{height:836px}
+/* Cinematic home: full-width faded art, clear text zone and side tools. */
+main{padding-left:170px;padding-right:70px;padding-top:32px}header{height:76px}header nav{margin-left:24px}.nav{padding-left:15px!important;padding-right:15px!important}#view-home .home-feed{height:910px;padding-top:0;padding-bottom:55px}#view-home .hero{position:relative;height:440px;margin-top:20px;isolation:isolate;align-items:stretch}body[data-theme] #view-home .hero .intro{position:relative;width:100%;max-width:100%;height:440px;padding:0}body[data-theme] #view-home .hero .intro .club-hero{display:flex;position:relative;width:100%;max-width:100%;height:440px;background:transparent!important;border:0;border-radius:0;box-shadow:none;padding:50px 35px;overflow:hidden;align-items:center}body[data-theme] #view-home .hero .intro .club-hero-logo{position:relative;width:125px;max-width:125px;height:180px;flex:0 0 125px;margin:0 30px 0 0;z-index:3}body[data-theme] #view-home .hero .intro .club-hero-copy{position:relative;flex:none;width:560px;max-width:560px;text-align:left;z-index:3;margin:0;padding:0}html[lang=ar] body[data-theme] #view-home .hero .intro .club-hero-copy{text-align:right}body[data-theme] #view-home .hero .intro .club-hero h1{color:#fff;text-shadow:0 3px 25px #0009}body[data-theme] #view-home .hero .intro .club-hero-copy>p,body[data-theme] #view-home .hero .intro .club-overline,body[data-theme] #view-home .hero .intro .club-century{color:#e2eaf4}body[data-theme] #view-home .hero .intro .club-team-photo{position:absolute;display:block;left:auto;right:0;top:0;bottom:0;width:970px;max-width:970px;height:440px;margin:0;z-index:0;overflow:hidden!important;opacity:.95;-webkit-mask-image:linear-gradient(90deg,transparent,#000 38%);mask-image:linear-gradient(90deg,transparent,#000 38%)}body[data-theme] #view-home .hero .intro .club-team-photo img{width:100%;height:100%;object-fit:contain;object-position:right center;filter:none}body[data-theme] #view-home .hero .intro .club-hero:after{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;height:auto;transform:none;border:0;background:linear-gradient(90deg,#091322f2 0%,#091322c9 35%,#09132222 70%),linear-gradient(0deg,#091322bb,transparent 35%);z-index:1}#view-home .weather-card{position:absolute;right:16px;bottom:18px;width:220px;height:116px;padding:13px 18px;background:#0b172ab0;z-index:5}#view-home .weather-temp{font-size:35px;margin:5px 0}#view-home .weather-top{font-size:15px}#view-home #weather-condition{font-size:14px}#view-home .weather-bottom{display:none}.club-watermark{opacity:.035!important}.ridge{opacity:.15}
+#view-home .home-tools{position:fixed;left:16px;right:auto;top:130px;bottom:55px;width:126px;min-height:0;padding:18px 10px;display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;border-radius:25px!important;background:#0a1428ce!important;z-index:8}#view-home .home-tools>.tool{margin:0 0 16px;width:104px;min-height:112px;padding:12px 7px;font-size:17px;white-space:normal;text-align:center;border-radius:18px;background:#ffffff05}#view-home .home-tools>.tool:before{display:block;font-size:31px;line-height:40px;margin-bottom:7px}#home-inputs:before{content:'▣'}#home-store:before{content:'▦'}#home-internet:before{content:'◎'}#home-appearance:before{content:'◐'}#home-help:before{content:'?'}#view-home .home-tools>.tool>span{display:none}#view-home .home-tools>footer{position:fixed;left:170px;right:70px;top:auto;bottom:12px;height:24px;display:flex;justify-content:space-between;font-size:12px;background:transparent}#view-home .home-tools .credit{max-width:420px}#view-home .section-heading{margin-top:8px}#view-home .section-heading h2{font-size:25px}#favourites-subtitle{display:none}#view-home .favourites{padding-top:10px;padding-bottom:18px}#view-home .favourite{height:150px!important;min-height:150px;padding:16px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:20px;background:linear-gradient(145deg,#183758cf,#101a2cdd)}#view-home .favourite-top{position:static;display:flex;align-items:center;justify-content:center;width:100%;margin:0 0 9px}#view-home .favourite .app-icon{width:70px;height:70px;border-radius:16px;object-fit:contain}#view-home .favourite .app-icon img{width:100%;height:100%;object-fit:contain}#view-home .favourite .tag,#view-home .favourite p,#view-home .favourite .arrow{display:none}#view-home .favourite h3{font-size:20px;margin:0;text-align:center;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#view-home .favourite:focus,#view-home .shelf-card:focus{outline:4px solid #8edbff;outline-offset:3px;box-shadow:0 0 30px #48b3ff55}#view-home .shelf-card{height:150px;flex-basis:235px}#view-home .shelf-card .app-icon{width:65px;height:65px}.home-shelf{margin-top:14px}#view-home .add-favourite .plus-icon{margin-bottom:12px}
+#view-home .weather-card{height:116px;overflow:hidden}#view-home #weather-condition{display:block;font-size:14px;line-height:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#view-home .weather-temp{font-size:30px;line-height:34px;margin:2px 0}#view-home .home-tools>footer{direction:ltr;flex-direction:row}#view-home .home-tools>footer .credit{margin-left:auto;text-align:right;color:#d2dfec}#view-home .favourites .favourite{width:205px!important;flex-shrink:0}#view-home .favourites .add-favourite{width:170px!important}
+
+/* Blend panel edges into the theme; keep credits out of filtered sidebar ancestors. */
+#view-home>footer.cinema-credit{position:fixed;left:170px;right:24px;top:auto;bottom:12px;height:24px;padding:0;display:flex;align-items:center;justify-content:flex-end;pointer-events:none;background:transparent;z-index:10;direction:ltr}
+#view-home>footer.cinema-credit .credit{margin-left:auto;max-width:none;font-size:12px;line-height:18px;white-space:nowrap;color:#c6d1df;text-align:right}
+#view-home>footer.cinema-credit #focus-hint,#view-home>footer.cinema-credit #preview-badge{display:none}
+body[data-theme] #view-home .hero .intro .club-hero{-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 95%,transparent)}
+body[data-theme] #view-home .hero .intro .club-team-photo{-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 35%,#000 90%,transparent)}
+#view-home .favourites,#view-home .home-shelf-rail{padding-left:10px;padding-right:10px;scroll-padding-left:10px;scroll-padding-right:10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent)}
+#view-home .home-feed{padding-left:16px;padding-right:16px}
+
+/* Artwork is a screen backdrop, never a hero panel. */
+#cinema-background{position:fixed;top:0;right:0;bottom:0;left:0;width:1920px;height:1080px;z-index:1;pointer-events:none;overflow:hidden}
+#cinema-background>img{position:absolute;right:0;top:0;width:1450px;height:1080px;object-fit:cover;object-position:center top;transform-origin:right top;-webkit-mask-image:linear-gradient(90deg,transparent,#000 36%);mask-image:linear-gradient(90deg,transparent,#000 36%)}
+#cinema-background:after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(90deg,#060b16e8,transparent 75%),linear-gradient(0deg,#060b16f5 0%,#060b1699 36%,transparent 85%)}
+body[data-theme] #view-home .hero,body[data-theme] #view-home .hero .intro,body[data-theme] #view-home .hero .intro .club-hero{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;-webkit-mask-image:none;mask-image:none;isolation:auto;overflow:visible}
+body[data-theme] #view-home .hero .intro .club-hero:after,body[data-theme] #view-home .hero .intro .club-hero:before,body[data-theme] #view-home .hero .intro .club-team-photo{display:none!important}
+#view-home .home-tools{background:var(--cinema-glass,#182739cc)!important;border-color:var(--cinema-border,#ffffff30)!important}
+#view-home .home-tools>.tool,#view-home .favourite,#view-home .shelf-card,#view-home .weather-card{background:var(--cinema-glass,#182739cc)!important;border-color:var(--cinema-border,#ffffff30)!important}
+#view-home button:focus,header button:focus{outline:3px solid var(--cinema-glow,#63caff)!important;outline-offset:4px!important;box-shadow:0 0 12px var(--cinema-glow,#63caff),0 0 28px var(--cinema-glow,#63caff)!important}
+#view-home .home-tools>.tool:focus{background:var(--cinema-glass,#182739cc)!important}
+body.watching #cinema-background{visibility:hidden}
+
+#cinema-background>.slide-layer{opacity:0;transition:opacity 1.2s ease-in-out}.reduce-motion #cinema-background>.slide-layer{transition:none}
+#view-home .home-tools{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none}
+#view-home .home-tools>.tool{background:var(--cinema-glass,#26344e66)!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--cinema-border,#ffffff30)}
+header .weather-card{position:static;width:175px;height:66px;min-width:175px;padding:3px 15px;margin-right:18px;border:0!important;border-radius:0;background:transparent!important;box-shadow:none;text-align:right;backdrop-filter:none}
+header .weather-card .weather-top{font-size:13px;line-height:17px}header .weather-card .weather-temp{font-size:25px;line-height:27px;margin:0}header #weather-condition{font-size:12px;line-height:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}header .weather-bottom{display:none}header .weather-icon svg{width:20px;height:20px}header .header-clock{min-width:130px}header nav{margin-left:15px}header .nav{font-size:15px;padding-left:11px!important;padding-right:11px!important}
+
+/* A restrained reflection, with opaque app logos above the glass. */
+#view-home .home-tools>.tool,#view-home .favourite,#view-home .shelf-card{position:relative;isolation:isolate;backdrop-filter:blur(18px) saturate(125%);-webkit-backdrop-filter:blur(18px) saturate(125%);background-image:linear-gradient(145deg,#ffffff20 0%,#ffffff08 38%,transparent 52%,#ffffff04 100%)!important;box-shadow:inset 0 1px 0 #ffffff55,inset 1px 0 0 #ffffff16,0 8px 22px #00000020}
+#view-home .home-tools>.tool:after,#view-home .favourite:after,#view-home .shelf-card:after{content:'';position:absolute;left:1px;right:1px;top:1px;height:46%;border-radius:inherit;background:linear-gradient(170deg,#ffffff14,transparent 75%);pointer-events:none;z-index:0}
+#view-home .favourite-top,#view-home .favourite h3,#view-home .shelf-card .app-icon,#view-home .shelf-card span{position:relative;z-index:1;opacity:1}
+/* Fit full app rows above the screen footer instead of exposing half cards. */
+#view-home .home-feed{height:910px;padding-bottom:20px}
+#view-home .hero,body[data-theme] #view-home .hero .intro,body[data-theme] #view-home .hero .intro .club-hero{height:350px}
+body[data-theme] #view-home .hero .intro .club-hero{padding-top:25px;padding-bottom:25px}
+#view-home .favourites{height:182px;padding-top:10px;padding-bottom:18px}
+#view-home .home-shelf{margin-top:8px;margin-bottom:8px}
+#view-home .home-shelf h2{margin-top:8px;margin-bottom:8px}
+#view-home .home-shelf-rail{padding-top:10px;padding-bottom:15px;min-height:175px}
+
+#view-home .radio-home-section{margin-top:95px}
+
+#view-home .home-tools>.tool:before{color:var(--cinema-icon,#fff)}
+/* Inputs remains available from the sidebar; no duplicate top navigation. */
+header #nav-inputs{display:none!important}
+
+header #nav-iptv{display:none!important}
+
+#view-home .shelf-card{flex-basis:var(--shelf-card-width,235px);scroll-snap-align:start}.home-shelf-rail{scroll-snap-type:x mandatory}#view-home .home-shelf-rail{-webkit-mask-image:none;mask-image:none}
+/* Remote focus: a gentle lift, slight icon movement and restrained theme tint. */
+#view-home .favourite,#view-home .shelf-card{transition:transform 180ms ease-out,box-shadow 180ms ease-out,border-color 180ms ease-out;transform-origin:center center;will-change:auto}
+#view-home .favourite .app-icon,#view-home .shelf-card .app-icon{transition:transform 210ms ease-out;transform-origin:center center}
+#view-home .favourite:focus,#view-home .shelf-card:focus{transform:translateY(-4px) scale(1.045);z-index:4;border-color:var(--cinema-glow,#63caff)!important;background-image:linear-gradient(145deg,#ffffff17,transparent 48%,#ffffff04)!important;box-shadow:0 0 12px var(--cinema-glow,#63caff),0 12px 28px #00000038,inset 0 1px #ffffff55!important}
+#view-home .favourite:focus .app-icon,#view-home .shelf-card:focus .app-icon{transform:translateY(-2px) scale(1.09)}
+#view-home .favourites{height:192px;padding-top:16px;padding-bottom:24px}#view-home .home-shelf-rail{padding-top:16px;padding-bottom:24px;min-height:190px}
+body.reduce-motion #view-home .favourite:focus,body.reduce-motion #view-home .shelf-card:focus,body.reduce-motion #view-home .favourite:focus .app-icon,body.reduce-motion #view-home .shelf-card:focus .app-icon{transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){#view-home .favourite:focus,#view-home .shelf-card:focus,#view-home .favourite:focus .app-icon,#view-home .shelf-card:focus .app-icon{transform:none!important;transition:none!important}}
+
+.viewer-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:20px;margin:25px 0}.viewer-card{height:120px;border:1px solid #9ab8d3;background:#30445d;color:white;border-radius:22px;font-size:25px}#viewer-name{width:360px;margin:20px 20px 20px 0}#viewer-button{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:1px solid #ffffff40}
+
+.viewer-card{background:var(--cinema-glass,#30445d)!important;border-color:var(--cinema-glow,#9ab8d3)}.viewer-card:focus{outline:4px solid var(--cinema-glow,#9ab8d3);box-shadow:0 0 22px var(--cinema-glow,#9ab8d3)}
+
+#modal-content label[for=viewer-name]{display:block;margin-top:25px;font-size:20px;color:#d8e3ee}
+
+body[data-theme=egypt] #cinema-background>img,body[data-theme=madrid] #cinema-background>img,body[data-theme=barcelona] #cinema-background>img,body[data-theme=zamalek] #cinema-background>img,body[data-theme=basketball] #cinema-background>img,body[data-theme=baseball] #cinema-background>img,body[data-theme=montreal] #cinema-background>img,body[data-theme=toronto] #cinema-background>img{object-fit:contain;object-position:right top}
+
+
+
+#view-home .favourites,#view-home .home-shelf-rail{padding-left:12px!important;padding-right:12px!important;gap:0!important;mask-image:none!important;-webkit-mask-image:none!important;scroll-behavior:auto}#view-home .favourites>button,#view-home .home-shelf-rail>button{width:var(--fit-card,220px)!important;min-width:var(--fit-card,220px)!important;max-width:var(--fit-card,220px)!important;flex:0 0 var(--fit-card,220px)!important;margin-left:0!important;margin-right:22px!important}#view-home .favourites>button:last-child,#view-home .home-shelf-rail>button:last-child{margin-right:0!important}
+
+body[data-theme=argentina] #cinema-background>img{object-fit:contain;object-position:right top;-webkit-mask-image:linear-gradient(90deg,transparent,#000 28%);mask-image:linear-gradient(90deg,transparent,#000 28%)}body[data-theme=portugal] #cinema-background>img{object-fit:contain;object-position:right top}
+
+/* One home title, shared by calm and club themes. Keep legacy text nodes for customisation. */
+body[data-fixed-layout=true] #view-home .intro>#greeting,
+body[data-fixed-layout=true] #view-home .intro>.hero-heading,
+body[data-fixed-layout=true] #view-home .intro>p{display:none!important}
+body[data-fixed-layout=true] header #weather-card{position:static!important;top:auto!important;left:auto!important;bottom:auto!important;right:auto!important;height:76px!important;flex:0 0 175px;min-width:175px;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+body[data-fixed-layout=true] #view-settings{height:900px;overflow-y:auto;padding-bottom:60px}
+body[data-fixed-layout=true] #view-settings .settings-grid{align-items:start}
+body[data-fixed-layout=true] #view-settings .settings-panel{min-width:0}
+body[data-fixed-layout=true] #view-settings .settings-note{display:none}
+
+/* Home, settings and dialogs share the active palette. */
+body[data-fixed-layout=true] .settings-panel,body[data-fixed-layout=true] .catalog-tile,body[data-fixed-layout=true] .source-card,body[data-fixed-layout=true] .modal{border-color:var(--cinema-border,#ffffff30)}
+body[data-fixed-layout=true] .setting:focus,body[data-fixed-layout=true] .modal button:focus,body[data-fixed-layout=true] .catalog-tile:focus{outline-color:var(--cinema-glow,#ffffff)!important;box-shadow:0 0 18px var(--cinema-glow,#ffffff)!important}
+
+/* Prayer uses exactly the same spacing and footprint as all side tools. */
+#view-home .home-tools>button{flex-shrink:0;margin:0 0 16px}
+#view-home .home-tools>#open-prayer>span{display:block}
+#view-home .home-tools>#open-prayer>svg{display:block;width:31px;height:40px;margin:0 auto 7px}
+#view-home .home-tools>#open-prayer:before{display:none}
+body[data-theme=blue] #cinema-background>img{width:1920px;height:1080px;object-fit:cover;object-position:right center;transform-origin:right center;-webkit-mask-image:none;mask-image:none}
+
+#view-home .home-tools>.tool{height:112px;min-height:112px;max-height:112px;line-height:20px;box-sizing:border-box}
+#view-home .home-tools>#open-prayer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+
+/* Clear, smooth focus lift; padding reserves room for the scaled end cards. */
+#view-home .favourites,#view-home .home-shelf-rail{padding-left:24px!important;padding-right:24px!important;padding-top:22px!important;padding-bottom:28px!important}
+#view-home .favourite,#view-home .shelf-card,#view-home .home-tools>.tool{transition:transform 240ms cubic-bezier(.2,.75,.25,1),box-shadow 240ms ease,border-color 240ms ease!important;transform-origin:center}
+#view-home .favourite:focus,#view-home .favourite:hover,#view-home .shelf-card:focus,#view-home .shelf-card:hover{transform:translateY(-5px) scale(1.065)!important;z-index:6;border-color:var(--cinema-glow)!important;box-shadow:0 0 14px var(--cinema-glow),0 14px 24px #0004,inset 0 1px #ffffff66!important}
+#view-home .favourite:focus .app-icon,#view-home .favourite:hover .app-icon,#view-home .shelf-card:focus .app-icon,#view-home .shelf-card:hover .app-icon{transform:translateY(-2px) scale(1.12)}
+#view-home .home-tools>.tool:focus,#view-home .home-tools>.tool:hover{transform:scale(1.055)!important}
+body.reduce-motion #view-home button,body.reduce-motion #view-home button .app-icon{transform:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){#view-home button,#view-home button .app-icon{transform:none!important;transition:none!important}}
+
+#view-home .favourites,#view-home .home-shelf-rail{scroll-snap-type:none!important}
+
+/* App identities stay colorful while card borders continue to follow the theme. */
+#view-home .favourite .app-icon,#view-home .shelf-card .app-icon{width:88px;height:88px;min-width:88px;min-height:88px;border-radius:22px;flex-shrink:0;font-size:34px;box-shadow:inset 0 1px 0 #ffffff55,0 6px 14px #0003}
+#view-home .favourite{padding:10px!important}#view-home .favourite-top{margin-bottom:6px}#view-home .shelf-card>.app-icon{margin-bottom:8px}
+#view-home .app-icon svg{width:58px;height:58px}#view-home .app-icon.youtube svg{width:51px;height:51px}
+#view-home .app-icon.branded-icon{background:transparent;padding:0;overflow:visible}#view-home .app-icon.branded-icon img{display:block;width:100%;height:100%;border-radius:22px}
+#view-home .app-icon.youtube{background:linear-gradient(145deg,#ff5353,#df0929);color:#fff}#view-home .app-icon.netflix{background:#17131b;color:#ff3046;font-size:68px}
+#view-home .app-icon.settings{background:linear-gradient(145deg,#a2b5d0,#4b5a79);color:#fff}#view-home .app-icon.prayer-icon{background:linear-gradient(145deg,#279c92,#325779);color:#fff}
+#view-home .app-icon.music{background:linear-gradient(145deg,#4fe09a,#128761);color:#fff}#view-home .app-icon.internet{background:linear-gradient(145deg,#5dbeef,#5352c9);color:#fff}
+#view-home .app-icon.store{background:linear-gradient(145deg,#42cfb7,#3768da);color:#fff}#view-home .app-icon.television{background:linear-gradient(145deg,#40c6d6,#5752cd);color:#fff}
+#view-home .app-icon.generic{background:linear-gradient(145deg,#9a80cd,#495d8b);color:#fff}
+#view-home .shelf-card{padding:10px}
+
+#view-home .app-icon.prime{background:linear-gradient(145deg,#10a7e2,#1256a8);color:#fff;font-size:25px;line-height:1;white-space:pre;text-align:center;font-weight:bold}
+#view-home .app-icon.disney{background:linear-gradient(145deg,#16398d,#091b50);color:#fff;font:italic 21px Georgia,serif;letter-spacing:-1px}
+#view-home .app-icon.apple-tv{background:linear-gradient(145deg,#424653,#080a11);color:#fff;font-size:38px;letter-spacing:-3px}
+#view-home .app-icon.spotify{background:linear-gradient(145deg,#143d2c,#091a18);color:#22dd81}#view-home .app-icon.spotify svg{width:76px;height:76px}
+
+.samsung-startup-guide{width:1240px;max-height:940px;overflow:auto}.samsung-startup-guide p{font-size:22px;line-height:1.65;margin:18px 0}.samsung-startup-guide h2{font-size:32px}
+
+/* Physical left placement is independent of Arabic reading direction. */
+body[data-theme] #view-home .hero .intro .club-hero-copy{position:absolute;left:35px;right:auto;top:118px;width:600px;max-width:600px;text-align:left!important}
+html[lang=ar] body[data-theme] #view-home .hero .intro .club-hero-copy{direction:rtl;text-align:left!important;font-family:Tahoma,Arial,sans-serif}
+body[data-theme] #view-home .hero .intro .club-hero-logo{position:absolute;left:35px;top:12px;width:76px;max-width:76px;height:90px;margin:0}
+body[data-theme] #view-home .hero .intro .club-overline{font-size:15px;text-align:left!important}body[data-theme] #view-home .hero .intro .club-century{font-size:18px;text-align:left!important}
+body[data-theme] #view-home .hero .intro .club-hero h1{line-height:1.35;max-height:166px;text-shadow:0 3px 16px #000b}
+
+/* Personal portraits retain their native aspect and visible faces. */
+body.has-personal-art #cinema-background>img{width:1450px;height:1080px;object-fit:contain;object-position:right top;transform-origin:right top;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%);mask-image:linear-gradient(90deg,transparent,#000 12%)}
+body.has-personal-art #cinema-background:after{background:linear-gradient(90deg,#060b16e8,transparent 55%),linear-gradient(0deg,#060b16ed 0%,#060b1640 26%,transparent 65%)}

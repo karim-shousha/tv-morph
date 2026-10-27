@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://local.example/clear-tv" version="0.8.86" viewmodes="maximized">
+ <tizen:application id="ClearMob01.Home" package="ClearMob01" required_version="5.0"/>
+ <tizen:privilege name="http://tizen.org/privilege/tv.window"/><tizen:privilege name="http://tizen.org/privilege/tv.channel"/><content src="index.html"/><name>Morph TV</name><icon src="tvmorph.png"/><tizen:profile name="tv-samsung"/>
+ <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+ <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+ <tizen:privilege name="http://tizen.org/privilege/internet"/>
+ <access origin="https://api.ipapi.is" subdomains="true"/>
+ <access origin="https://ipwho.is" subdomains="true"/>
+ <access origin="https://api.open-meteo.com" subdomains="true"/>
+ <access origin="https://geocoding-api.open-meteo.com" subdomains="true"/>
+ <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+ <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+ <tizen:metadata key="http://samsung.com/tv/metadata/screen.size" value="1920x1080"/>
+<access origin="*" subdomains="true"/></widget>

@@ -1,0 +1,1 @@
+package android.content; public class Context{private final java.util.Map<String,SharedPreferences> stores=new java.util.HashMap<>();public SharedPreferences getSharedPreferences(String name,int mode){return stores.computeIfAbsent(name,k->new SharedPreferences());}}

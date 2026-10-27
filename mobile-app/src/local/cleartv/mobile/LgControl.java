@@ -1,0 +1,24 @@
+package local.cleartv.mobile;
+import com.jcraft.jsch.*;import android.content.Context;import java.io.*;import java.net.URI;import java.util.*;import org.json.*;
+/** Own-app-only Web Inspector through the authenticated Developer Mode SSH tunnel. */
+final class LgControl implements AutoCloseable {
+ private JSch ssh;private Session session;private Inspector inspector;
+ LgControl(Context c,String ip)throws Exception{
+  if(!LgInstallProtocol.local(ip))throw new IOException("Select your LG TV first.");byte[] record=new Vault(c).get(LgInstaller.credentialName(ip));if(record==null)throw new IOException("اربط LG بالمفتاح من صفحة التوصيل أولًا.");
+  byte[] key=null,phrase=null;String stage="credentials";
+  try{JSONObject value=new JSONObject(new String(record,"UTF-8"));key=Base64.getDecoder().decode(value.getString("key"));phrase=Base64.getDecoder().decode(value.getString("phrase"));String expected=c.getSharedPreferences("lg-hosts",0).getString(ip,"");if(expected.isEmpty())throw new IOException("LG host trust is missing. Pair again.");
+   ssh=new JSch();ssh.addIdentity("Morph LG",key,null,phrase);ssh.setHostKeyRepository(new HostKeyRepository(){public int check(String h,byte[] b){return expected.equals(LgInstallProtocol.fingerprint(b))?OK:CHANGED;}public void add(HostKey h,UserInfo u){}public void remove(String h,String t){}public void remove(String h,String t,byte[] k){}public String getKnownHostsRepositoryID(){return "Pinned LG";}public HostKey[] getHostKey(){return new HostKey[0];}public HostKey[] getHostKey(String h,String t){return getHostKey();}});
+   stage="SSH 9922: فعّل Developer Mode وتأكد أن الموبايل والشاشة على نفس الشبكة";session=ssh.getSession("prisoner",ip,9922);LgSsh.configure(session);session.setTimeout(15000);session.connect(15000);
+   stage="Web Inspector 9998: افتح Morph TV على الشاشة ثم أعد الاتصال";int local=session.setPortForwardingL("127.0.0.1",0,"127.0.0.1",9998);for(String endpoint:new String[]{"/json/list","/pagelist.json"}){JSONArray targets;try{targets=new JSONArray(Network.get("http://127.0.0.1:"+local+endpoint,5000));}catch(Exception unavailable){continue;}for(int i=0;i<targets.length();i++){String path=LgInspectorTarget.socket(targets.getJSONObject(i),ip,LgInstallProtocol.APP);if(path==null)continue;Inspector candidate=null;try{candidate=new Inspector("ws://127.0.0.1:"+local+path);if(Boolean.TRUE.equals(candidate.evaluate("!!(window.MorphLG&&window.ClearTV&&webOS.fetchAppId()==='"+LgInstallProtocol.APP+"')"))){inspector=candidate;break;}}finally{if(candidate!=null&&candidate!=inspector)candidate.close();}}if(inspector!=null)break;}
+   if(inspector==null)throw new IOException("افتح Morph TV LG Preview على الشاشة ثم اضغط اتصال. الفحص لا يفتح أي تطبيق تلقائيًا.");
+   // Also silence the old preview's pending update check when connecting to it.
+   inspector.evaluate("(function(){localStorage.setItem('tvmorph.updateAlerts','off');var b=document.getElementById('release-alert');if(b){b.remove();if(window.ClearTV&&ClearTV.focusDefault)ClearTV.focusDefault();}return true;})()");
+  }catch(Exception e){close();throw new IOException("تعذّر ربط LG — "+stage+". تأكد من صلاحية Developer Mode، وأعد الربط بالمفتاح إذا تغيّر.",e);}finally{Arrays.fill(record,(byte)0);if(key!=null)Arrays.fill(key,(byte)0);if(phrase!=null)Arrays.fill(phrase,(byte)0);}
+ }
+ JSONArray installedApps()throws Exception{JSONObject result=LgInstallProtocol.run(session,"/usr/bin/luna-send-pub -n 1 luna://com.webos.applicationManager/dev/listApps '{\"subscribe\":false}'",false,15000);JSONArray apps=result.optJSONArray("apps"),rows=new JSONArray();if(!result.optBoolean("returnValue")||apps==null)throw new IOException("LG did not permit installed-app listing.");for(int i=0;i<apps.length()&&rows.length()<300;i++){JSONObject a=apps.optJSONObject(i);if(a==null||!a.optBoolean("visible"))continue;String id=a.optString("id"),name=a.optString("title",a.optString("name",id));if(id.matches("[a-zA-Z0-9._-]{1,160}"))rows.put(new JSONObject().put("id",id).put("name",name.length()>100?name.substring(0,100):name));}return rows;}
+ Object evaluate(String expression)throws Exception{return inspector.evaluate(expression);}
+ Object json(String expression)throws Exception{Object value=evaluate("(async function(){return JSON.stringify(await ("+expression+"));})()");String s=String.valueOf(value);return s.startsWith("[")?new JSONArray(s):new JSONObject(s);}
+ public void close(){if(inspector!=null)inspector.close();if(session!=null)session.disconnect();if(ssh!=null)try{ssh.removeAllIdentity();}catch(Exception ignored){}}
+ static boolean saved(Context c,String ip){return c.getFileStreamPath(LgInstaller.credentialName(ip)).isFile();}
+ static void forget(Context c,String ip)throws Exception{if(!LgInstallProtocol.local(ip))throw new IOException("Invalid LG address");c.deleteFile(LgInstaller.credentialName(ip));c.getSharedPreferences("lg-hosts",0).edit().remove(ip).apply();}
+}
