@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.153",
+  "latest": "0.8.154",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.153",
+      "version": "0.8.154",
       "download": "/download/phone",
-      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
-      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements."
+      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
+      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.153",
+      "version": "0.8.154",
       "download": "/download/android",
-      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
-      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
+      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
+      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.153",
+      "version": "0.8.154",
       "download": "/download/firetv",
-      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
-      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements."
+      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
+      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
-      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
+      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
+      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.153",
+      "version": "0.8.154",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.153.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.154.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.153.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.154.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
-      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
-      "version": "0.8.153",
+      "noteAr": "سؤال تحديث مكتبة IPTV عند فتحها مع الحفاظ على الاشتراك والمفضلة، وإخفاء شريط مدخل الرسيفر تلقائيًا بعد ظهور الصورة على Android.",
+      "noteEn": "IPTV startup library-refresh prompt preserves account/favorites; Android receiver-input controls hide automatically once video is available.",
+      "version": "0.8.154",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.153",
-      "file": "Morph-TV-Phone-0.8.153.apk",
-      "bytes": 14093876,
-      "sha256": "43b7eefc06557eb83b8fda614d29bc35164791fa9f6e1e3f465f8f2db1c75d6d"
+      "name": "Morph-TV-Phone-0.8.154",
+      "file": "Morph-TV-Phone-0.8.154.apk",
+      "bytes": 14098048,
+      "sha256": "12127883a773c7cda2b2631549cd8291939eaf05e5197898e16d814fe325a333"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.153",
-      "file": "Morph-TV-Android-TV-0.8.153.apk",
-      "bytes": 4399579,
-      "sha256": "c347abde786ce4d1c27efba65a34be05a25bae24394e74cf29c1ce9e863f7a8b"
+      "name": "Morph-TV-Android-TV-0.8.154",
+      "file": "Morph-TV-Android-TV-0.8.154.apk",
+      "bytes": 4399655,
+      "sha256": "280f555bc7ac2ed1f745c4d637145b573bfe318ff4eed2e6ff08e0388336d45c"
     },
     {
-      "name": "Morph-TV-LG-0.8.153",
-      "file": "Morph-TV-LG-0.8.153.ipk",
-      "bytes": 4227304,
-      "sha256": "3a8f386e762b9a3fd9465f97f62ba4d0e2d2905561e5a6c6c1b0f3c609bd3d68"
+      "name": "Morph-TV-LG-0.8.154",
+      "file": "Morph-TV-LG-0.8.154.ipk",
+      "bytes": 4229320,
+      "sha256": "f46015958bf16c1d6a9f0312e8c041c9cd99ae86c7a59f90107530e5b5f31246"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.153",
-      "file": "Morph-TV-Samsung-Computer-0.8.153.zip",
-      "bytes": 4265779,
-      "sha256": "b747840a3efb925453fa4f08a670cd9889c2850eddb4b38391c71d775451796d"
+      "name": "Morph-TV-Samsung-Computer-0.8.154",
+      "file": "Morph-TV-Samsung-Computer-0.8.154.zip",
+      "bytes": 4268099,
+      "sha256": "dc98ca3ccedf8d0df3940c1367e52828d5ff07ae7f415f50f36518580781e538"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.153",
-      "file": "Morph-TV-Install-Kit-0.8.153.zip",
-      "bytes": 12918040,
-      "sha256": "f18998ff6419efbff37084a5d1744dac4e4da994f24b4d31efaabbb9cdea87e4"
+      "name": "Morph-TV-Install-Kit-0.8.154",
+      "file": "Morph-TV-Install-Kit-0.8.154.zip",
+      "bytes": 12925037,
+      "sha256": "3858b12327887f3b773444e4cd2c1097802b02944b5d4cfa81046d4da960bfd4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.153",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.153.zip",
-      "bytes": 4265658,
-      "sha256": "7eadc1e46f4e98f34a24e4d62370dac27f6d361b7b71dadcb02ad5e78143830e"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.154",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.154.zip",
+      "bytes": 4267977,
+      "sha256": "10eece6d0f818f5760a28df99e03a388f01a6b6e04d964cc79948b3bdc6d7bf5"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.153.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.154.zip"
 }

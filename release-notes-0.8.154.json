@@ -1,0 +1,22 @@
+{
+  "version": "0.8.154",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android input fallback controls hide after four seconds of video availability; OK/arrows/Menu reveal them without accidental activation",
+    "Keep input controls visible on disconnected/unavailable video and cancel hide callbacks while paused or window is unfocused",
+    "Offer Update now / Not now once on IPTV startup in five languages; returning from playback does not repeat the question",
+    "Accepted refresh uses existing provider/cache APIs and reloads enabled category/catalog data without changing subscription, favorites or resume settings",
+    "Refresh failures show a retry option; Back and directional focus remain inside the startup prompt; visible library redraws with updated content"
+  ],
+  "verification": [
+    "Five-language browser fixtures: defer/Back without provider refresh, accept all three sections, failure/retry and no repeat on playback return",
+    "Public-mode fixture verifies refreshed provider titles appear in the visible library",
+    "Android input activity compiled; hide/reveal state paths reviewed; physical receiver-input validation pending",
+    "Android/LG/phone builds verified; no physical devices used"
+  ],
+  "limitations": [
+    "HDMI video-availability callbacks and remote behavior depend on actual TV firmware; no physical TV available",
+    "Provider refresh requires network and active subscription; failures are reported rather than presented as success",
+    "Legacy Android 0.1.1 unchanged; Tizen 4 remains experimental"
+  ]
+}
