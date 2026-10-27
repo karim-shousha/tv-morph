@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.150",
+  "latest": "0.8.151",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.150",
+      "version": "0.8.151",
       "download": "/download/phone",
-      "noteAr": "نظام Modern موحد للرئيسية والإعدادات والصلاة واللياقة والتطبيقات والمداخل وIPTV والراديو، مع الحفاظ على صورة الصلاة وإصلاح الخطوط.",
-      "noteEn": "Shared Modern surfaces across Home, Settings, Prayer, Fitness, Apps, Inputs, IPTV and Radio; original Prayer artwork retained and text sizing repaired."
+      "noteAr": "Modern موحد لكل واجهات التطبيق، صورة الصلاة الأصلية، إصلاح الخطوط، وحالة Plus داخل الإعدادات مع تأكيد التفعيل.",
+      "noteEn": "Shared Modern app surfaces, original Prayer artwork, repaired text sizing, settings-only Plus status and clear activation confirmation."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.150",
+      "version": "0.8.151",
       "download": "/download/android",
-      "noteAr": "نظام Modern موحد للرئيسية والإعدادات والصلاة واللياقة والتطبيقات والمداخل وIPTV والراديو، مع الحفاظ على صورة الصلاة وإصلاح الخطوط.",
-      "noteEn": "Shared Modern surfaces across Home, Settings, Prayer, Fitness, Apps, Inputs, IPTV and Radio; original Prayer artwork retained and text sizing repaired.",
+      "noteAr": "Modern موحد لكل واجهات التطبيق، صورة الصلاة الأصلية، إصلاح الخطوط، وحالة Plus داخل الإعدادات مع تأكيد التفعيل.",
+      "noteEn": "Shared Modern app surfaces, original Prayer artwork, repaired text sizing, settings-only Plus status and clear activation confirmation.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.150",
+      "version": "0.8.151",
       "download": "/download/firetv",
-      "noteAr": "نظام Modern موحد للرئيسية والإعدادات والصلاة واللياقة والتطبيقات والمداخل وIPTV والراديو، مع الحفاظ على صورة الصلاة وإصلاح الخطوط.",
-      "noteEn": "Shared Modern surfaces across Home, Settings, Prayer, Fitness, Apps, Inputs, IPTV and Radio; original Prayer artwork retained and text sizing repaired."
+      "noteAr": "Modern موحد لكل واجهات التطبيق، صورة الصلاة الأصلية، إصلاح الخطوط، وحالة Plus داخل الإعدادات مع تأكيد التفعيل.",
+      "noteEn": "Shared Modern app surfaces, original Prayer artwork, repaired text sizing, settings-only Plus status and clear activation confirmation."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "نظام Modern موحد للرئيسية والإعدادات والصلاة واللياقة والتطبيقات والمداخل وIPTV والراديو، مع الحفاظ على صورة الصلاة وإصلاح الخطوط.",
-      "noteEn": "Shared Modern surfaces across Home, Settings, Prayer, Fitness, Apps, Inputs, IPTV and Radio; original Prayer artwork retained and text sizing repaired.",
+      "noteAr": "Modern موحد لكل واجهات التطبيق، صورة الصلاة الأصلية، إصلاح الخطوط، وحالة Plus داخل الإعدادات مع تأكيد التفعيل.",
+      "noteEn": "Shared Modern app surfaces, original Prayer artwork, repaired text sizing, settings-only Plus status and clear activation confirmation.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.150",
+      "version": "0.8.151",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.150.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.151.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.150.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.151.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "نظام Modern موحد للرئيسية والإعدادات والصلاة واللياقة والتطبيقات والمداخل وIPTV والراديو، مع الحفاظ على صورة الصلاة وإصلاح الخطوط.",
-      "noteEn": "Shared Modern surfaces across Home, Settings, Prayer, Fitness, Apps, Inputs, IPTV and Radio; original Prayer artwork retained and text sizing repaired.",
-      "version": "0.8.150",
+      "noteAr": "Modern موحد لكل واجهات التطبيق، صورة الصلاة الأصلية، إصلاح الخطوط، وحالة Plus داخل الإعدادات مع تأكيد التفعيل.",
+      "noteEn": "Shared Modern app surfaces, original Prayer artwork, repaired text sizing, settings-only Plus status and clear activation confirmation.",
+      "version": "0.8.151",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.150",
-      "file": "Morph-TV-Phone-0.8.150.apk",
+      "name": "Morph-TV-Phone-0.8.151",
+      "file": "Morph-TV-Phone-0.8.151.apk",
       "bytes": 14069300,
-      "sha256": "f3e35a68729cb051afa03e7df633579db7bf8ec30491a622ffee7fb6c563445f"
+      "sha256": "a949e29a0d91078dccfca06a97c5ddee60f0897bcab1fb849baef0bc97d487d2"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.150",
-      "file": "Morph-TV-Android-TV-0.8.150.apk",
+      "name": "Morph-TV-Android-TV-0.8.151",
+      "file": "Morph-TV-Android-TV-0.8.151.apk",
       "bytes": 4391319,
-      "sha256": "59a98ca7cb456597a1c835751d602e6ac6147c7d10a501747406da7457191abe"
+      "sha256": "31210dc120ede2f2c311767d7be83d043ee8070a0b5864d081ab6cbdca1bff4f"
     },
     {
-      "name": "Morph-TV-LG-0.8.150",
-      "file": "Morph-TV-LG-0.8.150.ipk",
-      "bytes": 4221602,
-      "sha256": "f44b9a39b48a81de00bd3a800e19e8caa385bfab6d9f45617ab21a75d8da7efa"
+      "name": "Morph-TV-LG-0.8.151",
+      "file": "Morph-TV-LG-0.8.151.ipk",
+      "bytes": 4221754,
+      "sha256": "844f7626dd1c485a420bb65df5dcfb75ecc9ea297fbc9710ac10c684104f8c35"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.150",
-      "file": "Morph-TV-Samsung-Computer-0.8.150.zip",
-      "bytes": 4259833,
-      "sha256": "449a25d0608595cf678cb047bfc0c2185668ed39a36816794950a463d13dff54"
+      "name": "Morph-TV-Samsung-Computer-0.8.151",
+      "file": "Morph-TV-Samsung-Computer-0.8.151.zip",
+      "bytes": 4259991,
+      "sha256": "e626394a48062e22160011a82043cce3a8e207f93745a2e89026a64d999964f4"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.150",
-      "file": "Morph-TV-Install-Kit-0.8.150.zip",
-      "bytes": 12898100,
-      "sha256": "7ceeb420dc95e23fd98b1e1f58f82f7d7128e50bf8f81ba5e15ecc1b1218ed26"
+      "name": "Morph-TV-Install-Kit-0.8.151",
+      "file": "Morph-TV-Install-Kit-0.8.151.zip",
+      "bytes": 12898495,
+      "sha256": "435106e5c6dab1ba948124eff6d783e1acb87d14a48126cd4d2d8ae7ca821b20"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.150",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.150.zip",
-      "bytes": 4259712,
-      "sha256": "1a85c4a1f43b771271f753592120319acd2fbe6c6bcc36f5ac31fcdbe1b95f62"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.151",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.151.zip",
+      "bytes": 4259869,
+      "sha256": "063568b1845afe81f5747ea1a2282f8cbfd2e183a746bf9fec0fc424b55bc35b"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.150.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.151.zip"
 }
