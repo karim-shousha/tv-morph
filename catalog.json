@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.148",
+  "latest": "0.8.149",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.148",
+      "version": "0.8.149",
       "download": "/download/phone",
-      "noteAr": "واجهة Modern اختيارية بأيقونات زجاجية عائمة وجلو، إصلاح حجم الخط، سلايد شو وتحسين اكتشاف التطبيقات.",
-      "noteEn": "Optional Modern Home with floating glass icons and glow, repaired text sizing, slideshow controls and improved app discovery."
+      "noteAr": "واجهة Modern عائمة، جلو موحد، إصلاح الخطوط وربط ألوان Settings وIPTV والراديو بنفس نظام الثيم.",
+      "noteEn": "Floating Modern Home, unified glow, repaired text sizing and shared theme colors across Settings, IPTV and Radio."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.148",
+      "version": "0.8.149",
       "download": "/download/android",
-      "noteAr": "واجهة Modern اختيارية بأيقونات زجاجية عائمة وجلو، إصلاح حجم الخط، سلايد شو وتحسين اكتشاف التطبيقات.",
-      "noteEn": "Optional Modern Home with floating glass icons and glow, repaired text sizing, slideshow controls and improved app discovery.",
+      "noteAr": "واجهة Modern عائمة، جلو موحد، إصلاح الخطوط وربط ألوان Settings وIPTV والراديو بنفس نظام الثيم.",
+      "noteEn": "Floating Modern Home, unified glow, repaired text sizing and shared theme colors across Settings, IPTV and Radio.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.148",
+      "version": "0.8.149",
       "download": "/download/firetv",
-      "noteAr": "واجهة Modern اختيارية بأيقونات زجاجية عائمة وجلو، إصلاح حجم الخط، سلايد شو وتحسين اكتشاف التطبيقات.",
-      "noteEn": "Optional Modern Home with floating glass icons and glow, repaired text sizing, slideshow controls and improved app discovery."
+      "noteAr": "واجهة Modern عائمة، جلو موحد، إصلاح الخطوط وربط ألوان Settings وIPTV والراديو بنفس نظام الثيم.",
+      "noteEn": "Floating Modern Home, unified glow, repaired text sizing and shared theme colors across Settings, IPTV and Radio."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "واجهة Modern اختيارية بأيقونات زجاجية عائمة وجلو، إصلاح حجم الخط، سلايد شو وتحسين اكتشاف التطبيقات.",
-      "noteEn": "Optional Modern Home with floating glass icons and glow, repaired text sizing, slideshow controls and improved app discovery.",
+      "noteAr": "واجهة Modern عائمة، جلو موحد، إصلاح الخطوط وربط ألوان Settings وIPTV والراديو بنفس نظام الثيم.",
+      "noteEn": "Floating Modern Home, unified glow, repaired text sizing and shared theme colors across Settings, IPTV and Radio.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.148",
+      "version": "0.8.149",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.148.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.149.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.148.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.149.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "واجهة Modern اختيارية بأيقونات زجاجية عائمة وجلو، إصلاح حجم الخط، سلايد شو وتحسين اكتشاف التطبيقات.",
-      "noteEn": "Optional Modern Home with floating glass icons and glow, repaired text sizing, slideshow controls and improved app discovery.",
-      "version": "0.8.148",
+      "noteAr": "واجهة Modern عائمة، جلو موحد، إصلاح الخطوط وربط ألوان Settings وIPTV والراديو بنفس نظام الثيم.",
+      "noteEn": "Floating Modern Home, unified glow, repaired text sizing and shared theme colors across Settings, IPTV and Radio.",
+      "version": "0.8.149",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.148",
-      "file": "Morph-TV-Phone-0.8.148.apk",
-      "bytes": 14052916,
-      "sha256": "6340913256e3bfbd6e305be4a238462afebdc12131f6c5649ab0b434d5008b02"
+      "name": "Morph-TV-Phone-0.8.149",
+      "file": "Morph-TV-Phone-0.8.149.apk",
+      "bytes": 14061108,
+      "sha256": "df43d7b896c8601e9809bda14f5f4c29e200744607bed39253a0b2fa1f5d46b0"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.148",
-      "file": "Morph-TV-Android-TV-0.8.148.apk",
-      "bytes": 4382901,
-      "sha256": "bfb97903b4b506bdffcb8d7c3a2266c68365c80a46fd93530d8c145ff3a48639"
+      "name": "Morph-TV-Android-TV-0.8.149",
+      "file": "Morph-TV-Android-TV-0.8.149.apk",
+      "bytes": 4387147,
+      "sha256": "1b6c61426a8aa13e56282f5b698e9e2a4fae8b2a379ec6440d0a04865a9ce572"
     },
     {
-      "name": "Morph-TV-LG-0.8.148",
-      "file": "Morph-TV-LG-0.8.148.ipk",
-      "bytes": 4217452,
-      "sha256": "28342efe85143b6503fe681aeb6f391f8f2f698a0abbe524cefa145fe65d5e3d"
+      "name": "Morph-TV-LG-0.8.149",
+      "file": "Morph-TV-LG-0.8.149.ipk",
+      "bytes": 4219370,
+      "sha256": "68727e471771ca3f71da2ee0eb20d8767a80cfbbda4d67d3cc6b239db76cfb0e"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.148",
-      "file": "Morph-TV-Samsung-Computer-0.8.148.zip",
-      "bytes": 4254423,
-      "sha256": "840fd13469edfc836d2f3b4e7c14dcb679298a76c0c2155a6f94b13d0f83e159"
+      "name": "Morph-TV-Samsung-Computer-0.8.149",
+      "file": "Morph-TV-Samsung-Computer-0.8.149.zip",
+      "bytes": 4257086,
+      "sha256": "8e54004349d1a0981127dc748956021cca2aae702fff35c1d1af14a27ff93128"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.148",
-      "file": "Morph-TV-Install-Kit-0.8.148.zip",
-      "bytes": 12883427,
-      "sha256": "c3a3ff4f3eb23d38ca6ccb4e1422947d6a7255946298a342e777cf244222f295"
+      "name": "Morph-TV-Install-Kit-0.8.149",
+      "file": "Morph-TV-Install-Kit-0.8.149.zip",
+      "bytes": 12890437,
+      "sha256": "b60895a1b32e4867bdc8054c8539ee0bc36d7c52e81981f8c5b21d3872646dc5"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.148",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.148.zip",
-      "bytes": 4254300,
-      "sha256": "9a9567fc6126842a0aebafd22540576d1840e63f3e51b00a71967b052e312a7d"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.149",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.149.zip",
+      "bytes": 4256964,
+      "sha256": "4e3b9730bf533982377d135f8e937712a003c1910b3ef4510ab7450055d05e9c"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.148.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.149.zip"
 }
