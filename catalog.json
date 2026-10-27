@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.146",
+  "latest": "0.8.147",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.146",
+      "version": "0.8.147",
       "download": "/download/phone",
-      "noteAr": "مداخل USB، ثلاثة أحجام للخط، وتغيير صورة الثيم وتحريكها مجانًا.",
-      "noteEn": "USB inputs, three text-size presets, and free theme-image replacement and positioning."
+      "noteAr": "ضبط عرض الشاشة، أحجام الخط من التلفزيون، علامة Plus المفعّلة، عالم الصغار داخل التطبيق وتحسين إعادة اتصال البث.",
+      "noteEn": "Screen fit, TV text-size settings, active Plus badge, embedded Kids World live channel and stream reconnect recovery."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.146",
+      "version": "0.8.147",
       "download": "/download/android",
-      "noteAr": "مداخل USB، ثلاثة أحجام للخط، وتغيير صورة الثيم وتحريكها مجانًا.",
-      "noteEn": "USB inputs, three text-size presets, and free theme-image replacement and positioning.",
+      "noteAr": "ضبط عرض الشاشة، أحجام الخط من التلفزيون، علامة Plus المفعّلة، عالم الصغار داخل التطبيق وتحسين إعادة اتصال البث.",
+      "noteEn": "Screen fit, TV text-size settings, active Plus badge, embedded Kids World live channel and stream reconnect recovery.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.146",
+      "version": "0.8.147",
       "download": "/download/firetv",
-      "noteAr": "مداخل USB، ثلاثة أحجام للخط، وتغيير صورة الثيم وتحريكها مجانًا.",
-      "noteEn": "USB inputs, three text-size presets, and free theme-image replacement and positioning."
+      "noteAr": "ضبط عرض الشاشة، أحجام الخط من التلفزيون، علامة Plus المفعّلة، عالم الصغار داخل التطبيق وتحسين إعادة اتصال البث.",
+      "noteEn": "Screen fit, TV text-size settings, active Plus badge, embedded Kids World live channel and stream reconnect recovery."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "مداخل USB، ثلاثة أحجام للخط، وتغيير صورة الثيم وتحريكها مجانًا.",
-      "noteEn": "USB inputs, three text-size presets, and free theme-image replacement and positioning.",
+      "noteAr": "ضبط عرض الشاشة، أحجام الخط من التلفزيون، علامة Plus المفعّلة، عالم الصغار داخل التطبيق وتحسين إعادة اتصال البث.",
+      "noteEn": "Screen fit, TV text-size settings, active Plus badge, embedded Kids World live channel and stream reconnect recovery.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.146",
+      "version": "0.8.147",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.146.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.147.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.146.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.147.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "مداخل USB، ثلاثة أحجام للخط، وتغيير صورة الثيم وتحريكها مجانًا.",
-      "noteEn": "USB inputs, three text-size presets, and free theme-image replacement and positioning.",
-      "version": "0.8.146",
+      "noteAr": "ضبط عرض الشاشة، أحجام الخط من التلفزيون، علامة Plus المفعّلة، عالم الصغار داخل التطبيق وتحسين إعادة اتصال البث.",
+      "noteEn": "Screen fit, TV text-size settings, active Plus badge, embedded Kids World live channel and stream reconnect recovery.",
+      "version": "0.8.147",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.146",
-      "file": "Morph-TV-Phone-0.8.146.apk",
-      "bytes": 13643248,
-      "sha256": "2d64dea51dd200992a835c36ff3e627b90e1d94a5a90b5882fd3dc2ff429c8c3"
+      "name": "Morph-TV-Phone-0.8.147",
+      "file": "Morph-TV-Phone-0.8.147.apk",
+      "bytes": 13987380,
+      "sha256": "3d19210f806a123a01014bd8b5e12ee7365eabdce3d80c5f102c28ef5bed51f0"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.146",
-      "file": "Morph-TV-Android-TV-0.8.146.apk",
-      "bytes": 4259082,
-      "sha256": "cd036d7df311c3d7d49be115c488664bdb1511d13aa72454e842cea0d2e3e522"
+      "name": "Morph-TV-Android-TV-0.8.147",
+      "file": "Morph-TV-Android-TV-0.8.147.apk",
+      "bytes": 4361854,
+      "sha256": "7bedcf2cdf01ac2850b3282a8128aba70c2ae76ae088d77abf8e0483f421370f"
     },
     {
-      "name": "Morph-TV-LG-0.8.146",
-      "file": "Morph-TV-LG-0.8.146.ipk",
-      "bytes": 4080550,
-      "sha256": "0bac389482b6698dae913a6faa04f8b01161c7d35b6029e14815b9f7dbcb136f"
+      "name": "Morph-TV-LG-0.8.147",
+      "file": "Morph-TV-LG-0.8.147.ipk",
+      "bytes": 4198652,
+      "sha256": "bb37537f8938fe00615d47c22758d431e17bddc2f4bde6cadb634482c7d292ed"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.146",
-      "file": "Morph-TV-Samsung-Computer-0.8.146.zip",
-      "bytes": 4116286,
-      "sha256": "13cf8f3594cd97479416694babb4088171a13b24ad69f48f492140ea03cfea27"
+      "name": "Morph-TV-Samsung-Computer-0.8.147",
+      "file": "Morph-TV-Samsung-Computer-0.8.147.zip",
+      "bytes": 4234701,
+      "sha256": "4e71a79bf456ce4ba2df1929c8cbaa463f29b9037e3e013b1eed0ae4e0e64b2f"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.146",
-      "file": "Morph-TV-Install-Kit-0.8.146.zip",
-      "bytes": 12484650,
-      "sha256": "922affe95455f2533ce22afa9db89614211a46c69f3ff72a950373026233986d"
+      "name": "Morph-TV-Install-Kit-0.8.147",
+      "file": "Morph-TV-Install-Kit-0.8.147.zip",
+      "bytes": 12824043,
+      "sha256": "920bda81748bbc2363424af53c2fbb3d1192cb90f811837d40ededea4ec2b815"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.146",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.146.zip",
-      "bytes": 4116165,
-      "sha256": "abddca46770555121e23b83ad9ce50f8e5bdf0fab459859f7231293d0403cbf0"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.147",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.147.zip",
+      "bytes": 4234579,
+      "sha256": "b57a05da7d229793f766be92dcf77255c0c9cc43a9c210029f900ff24a49edb9"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.146.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.147.zip"
 }

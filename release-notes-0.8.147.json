@@ -1,0 +1,24 @@
+{
+  "version": "0.8.147",
+  "changes": [
+    "Fit the logical TV canvas to the visible viewport, follow zoom/resize changes and disable native WebView zoom; account for canvas scale during focus scrolling",
+    "TV Settings > Appearance has independent persistent Arabic and English text sizes; activated Plus badge is visible below the brand",
+    "Kids World is pinned by default, removable from the home dock or Settings > Apps; play the provided public Castr channel inside the app with Samsung AVPlay or HTML/HLS, pause/mute/retry and remote Back",
+    "Clean up kids playback, radio/audio conflicts and parental time tracking on close or background",
+    "Classify Android -1005 as connection lost; bounded delayed reconnects followed by an available provider TS/HLS alternative, with reset after stable playback or manual Retry"
+  ],
+  "validation": [
+    "Zoom clipping reproduced against 0.8.146 and fixed in browser emulation; viewport/DPR matrix from 960x540 to 3840x2160",
+    "TV text picker, persistence, back handling and active Plus badge verified",
+    "Actual public kids stream decoded at 960x540 H264/AAC; pause/mute/back and hide/reload/restore verified",
+    "Samsung AVPlay path, display rectangle and audio restoration verified with API mocks",
+    "Java retry policy checks cover limits, delays, manual reset, codec/VOD behavior and preservation of signed stream URLs",
+    "Signed packages retain signing identity and phone embeds matching TV builds; regression checks preserve USB, free image customization and sports access/exit"
+  ],
+  "limitations": [
+    "No physical televisions were available for validation; the reported TV model and IPTV stream URL were not supplied",
+    "An unavailable or provider-blocked IPTV channel cannot be repaired by reconnecting alone",
+    "Kids stream availability and content are controlled by its external broadcaster",
+    "Legacy 0.1.1 remains unchanged; Coolita is not a supported installation target"
+  ]
+}
