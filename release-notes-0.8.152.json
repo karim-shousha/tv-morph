@@ -1,0 +1,20 @@
+{
+  "version": "0.8.152",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "One Modern design with Light and Full performance variants; migrate legacy Classic preference to Modern Light without resetting pins",
+    "Centered floating dock when shortcuts fit; stable item positions; direct left-edge navigation to sidebar and restored dock focus",
+    "Clean local Morph icons and transparent YouTube mark inside glass surfaces; remove extra focus outline and nested surface",
+    "Kids World remains available in dock; remove duplicate Prayer shortcut from dock while preserving sidebar",
+    "Content-sized top navigation; prayer clock respects 12/24-hour setting and separates countdown label",
+    "Shared theme tokens retained in Settings, IPTV and Radio; prayer artwork preserved; Arabic and English text scaling verified",
+    "Broader recognized local USB media extensions and full-screen Samsung playback controls with AVPlay/HTML fallback",
+    "Android selected-file MIME inference and private fullscreen local-video player with remote controls and external-player fallback"
+  ],
+  "limitations": [
+    "No physical television tested in this release; platform API fixtures and desktop rendered UI used",
+    "Media container recognition does not guarantee that a television supports its codecs",
+    "LG USB entry uses the supported installed media-player path; full mounted-file enumeration is not claimed",
+    "Legacy Android 0.1.1 package remains unchanged; experimental Tizen 4 compatibility remains subject to physical-device testing"
+  ]
+}
