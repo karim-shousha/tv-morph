@@ -14,12 +14,13 @@
   /* Retain the user's hue as a safe tonal surface; never rewrite the saved color. */
   while(luminance(raised)>.075)raised=mix(raised,'#050916',.12);
   var focus=readable(accent,raised,4.5),text=readable(hex(s.textColor,'#f7f9ff'),raised,7),secondary=id==='blue'||id==='blue-cinema'?'#a88aff':readable(mix(accent,identity,.25),raised,3);
+  var reference=['blue','blue-cinema','gta6'].indexOf(id)>=0&&!hex(s.highlightColor,hex(s.accent,'')),neonA=reference?'#36bfff':focus,neonB=reference?'#7045ff':secondary;
   var opacity=Math.max(.48,Math.min(.88,.42+(Number(s.glassOpacity)||18)/150)),custom=/^data:image\/(png|jpeg|webp);base64,/.test(s.artImage||''),slides=s.slideshowEnabled&&Array.isArray(s.backgroundImages)&&s.backgroundImages.length;
   return {theme:id,art:{fit:'contain',position:club.portrait?'right center':'right top',width:custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',height:'100%',custom:custom,slideshow:!!slides,source:custom?s.artImage:club.art|| (id==='ahly'?'al-ahly-duel.webp':'')},tokens:{
    '--ui-bg':bg,'--ui-bg-raised':raised,'--ui-glass-color':identity,'--ui-glass-opacity':String(opacity),
    '--ui-card-bg':rgba(raised,.8),'--ui-card-border':rgba(focus,.28),'--ui-text':text,'--ui-text-muted':readable(mix(text,raised,.24),raised,4.5),
    '--ui-accent':accent,'--ui-accent-secondary':secondary,'--ui-button-gradient':'linear-gradient(120deg,'+accent+','+secondary+')',
-   '--ui-focus-ring':focus,'--ui-focus-glow':rgba(focus,.38),'--ui-dock-bg':rgba(raised,opacity),'--ui-dock-border':rgba(focus,.3),
+   '--ui-neon-a':neonA,'--ui-neon-b':neonB,'--ui-neon-halo':rgba(neonA,.65),'--ui-neon-halo-secondary':rgba(neonB,.6),'--ui-focus-surface-a':rgba(neonB,.38),'--ui-focus-surface-b':rgba(neonA,.25),'--ui-focus-ring':focus,'--ui-focus-glow':rgba(focus,.38),'--ui-dock-bg':rgba(raised,opacity),'--ui-dock-border':rgba(focus,.3),
    '--ui-art-scrim':'linear-gradient(90deg,'+rgba(mix(bg,'#030610',.7),.96)+','+rgba(mix(bg,'#030610',.7),.68)+' 33%,'+rgba(bg,.08)+' 73%)',
    '--ui-overlay-bg':rgba(bg,.9),'--ui-art-width':custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',
    '--ui-art-position':club.portrait?'right center':'right top','--ui-art-fit':'contain'

@@ -2,3 +2,6 @@ body[data-ui-mode=modern][data-ui-home=true] #view-home button,body[data-ui-mode
 body[data-ui-mode=modern][data-ui-home=true] #cinema-background .slide-layer{transition:opacity var(--ui-theme-duration) ease!important}
 body[data-ui-mode=modern][data-ui-home=true].light-mode #view-home *,body[data-ui-mode=modern][data-ui-home=true].reduce-motion #view-home *,body[data-ui-mode=modern][data-ui-effects=light] #view-home *,body[data-ui-mode=modern][data-ui-effects=light] main>header *{transition:none!important;animation:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
 @media(prefers-reduced-motion:reduce){body[data-ui-mode=modern][data-ui-home=true] #view-home *,body[data-ui-mode=modern][data-ui-home=true] main>header *{transition:none!important;animation:none!important}}
+
+@keyframes morph-focus-gleam{from{opacity:0;transform:translateX(-14px)}45%{opacity:.85}to{opacity:1;transform:translateX(0)}}
+body[data-ui-mode=modern][data-ui-home=true] #favourites .app:focus:before{animation:morph-focus-gleam 180ms ease-out both}

@@ -11,11 +11,11 @@
  }
  function fitHero(){
   if(body.getAttribute('data-ui-mode')!=='modern'||!home())return;
-  var lang=w.MorphLocale?MorphLocale.get():'en',preset=C.settings[lang==='ar'?'fontSizeAr':'fontSizeEn'],factor=preset==='large'?1.1:preset==='small'?.9:1;
+  var lang=w.MorphLocale?MorphLocale.get():'en',preset=C.settings[lang==='ar'?'fontSizeAr':'fontSizeEn'],factor=1;
   var custom=Math.max(.7,Math.min(1.2,(Number(C.settings.heroTitleSize)||100)/100)),size=64*custom*(lang==='ar'?1:1.25)*factor;
   body.style.setProperty('--ui-hero-title-size',size+'px');body.style.setProperty('--ui-hero-subtitle-size',(30*Math.max(.7,Math.min(1.2,(Number(C.settings.heroSubtitleSize)||100)/100))*factor)+'px');
   var title=document.querySelector('#view-home .club-hero h1');if(!title)return;
-  while(title.scrollHeight>title.clientHeight+2&&size>40){size-=2;body.style.setProperty('--ui-hero-title-size',size+'px');}
+  while((!w.MorphTextSize)&&title.scrollHeight>title.clientHeight+2&&size>40){size-=2;body.style.setProperty('--ui-hero-title-size',size+'px');}
  }
  function sync(){queued=false;try{
   decorateSidebar();var mode=failed?'classic':get(),modern=mode==='modern';if(modern){if(!w.MorphThemeAdapter||!w.MorphIcons)throw Error('Modern foundation unavailable');w.MorphThemeAdapter.apply();}
@@ -42,6 +42,6 @@
   sync();
  }
  w.MorphUIMode={get:get,set:set,refresh:sync};
- ['morphViewer','morphLanguage','morphPerformance','morphUIMode'].forEach(function(name){w.addEventListener(name,schedule);});
+ ['morphViewer','morphLanguage','morphPerformance','morphUIMode','morphTextSize'].forEach(function(name){w.addEventListener(name,schedule);});
  if(document.readyState==='complete')mount();else w.addEventListener('load',mount);
 })(window);
