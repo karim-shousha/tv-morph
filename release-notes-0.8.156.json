@@ -1,0 +1,17 @@
+{
+  "version": "0.8.156",
+  "changes": [
+    "TV Plus dialog uses the logical TV canvas height rather than physical viewport units; long translated content scrolls independently",
+    "Activate and Back remain in a fixed footer; remote focus reveals the code and purchase controls; initial focus keeps the explanatory content visible",
+    "LG tutorial added to the device download card and LG installation guide"
+  ],
+  "validation": [
+    "Sports Plus gate tested at 720p and 1080p in Arabic, English, French, Chinese and Japanese with large text",
+    "All purchase/code/activation/Back controls stay inside dialog and are reachable; native code editor reopen regression passed",
+    "Matching embedded TV packages, release hashes and signing continuity checked"
+  ],
+  "limitations": [
+    "No physical television tested; system keyboard dimensions vary by device",
+    "Modern UI and existing playback/account behavior retained"
+  ]
+}

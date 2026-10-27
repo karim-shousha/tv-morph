@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.155",
+  "latest": "0.8.156",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.155",
+      "version": "0.8.156",
       "download": "/download/phone",
-      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
-      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide."
+      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
+      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.155",
+      "version": "0.8.156",
       "download": "/download/android",
-      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
-      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
+      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
+      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.155",
+      "version": "0.8.156",
       "download": "/download/firetv",
-      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
-      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide."
+      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
+      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
-      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
+      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
+      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.155",
+      "version": "0.8.156",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.155.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.156.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.155.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.156.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,33 +59,34 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إخفاء تحكم فيديو USB تلقائيًا، HDMI بجوار USB وأسماء مداخل محفوظة، مع سؤال تحديث مكتبة IPTV وإخفاء تحكم الرسيفر.",
-      "noteEn": "Auto-hide USB video controls, HDMI beside USB with saved input aliases; includes IPTV startup refresh and receiver-control auto-hide.",
-      "version": "0.8.155",
+      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
+      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
+      "version": "0.8.156",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
-      "installMode": "developer-mode"
+      "installMode": "developer-mode",
+      "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/"
     }
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.155",
-      "file": "Morph-TV-Phone-0.8.155.apk",
+      "name": "Morph-TV-Phone-0.8.156",
+      "file": "Morph-TV-Phone-0.8.156.apk",
       "bytes": 14110336,
-      "sha256": "28c4cdad862bb0c2d26946bda1a3a33fb9535570fe863aa2827a6e342bb553cc"
+      "sha256": "bd0d0a6c825bb2b2ecefe02bb867e267da759a6c8afab49494c2ac927767c743"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.155",
-      "file": "Morph-TV-Android-TV-0.8.155.apk",
+      "name": "Morph-TV-Android-TV-0.8.156",
+      "file": "Morph-TV-Android-TV-0.8.156.apk",
       "bytes": 4403821,
-      "sha256": "62c43d281706694220a980de93122d2181c2dbdbc0b08fc66d5fac827f0fb286"
+      "sha256": "1d99a2449c6e41cdee3f4872f8d9d672efc20b08e9a72a6078bd8a2153d4363a"
     },
     {
-      "name": "Morph-TV-LG-0.8.155",
-      "file": "Morph-TV-LG-0.8.155.ipk",
-      "bytes": 4231254,
-      "sha256": "52ebe54b14cfac0b52371602afef6e304cab901ae4fe3c94bddf0111036530be"
+      "name": "Morph-TV-LG-0.8.156",
+      "file": "Morph-TV-LG-0.8.156.ipk",
+      "bytes": 4231518,
+      "sha256": "f2a5f58304c0058562c84683d03a52e44f8267a544fc6204cb2c1762cea2c47f"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +95,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.155",
-      "file": "Morph-TV-Samsung-Computer-0.8.155.zip",
-      "bytes": 4270978,
-      "sha256": "a59049bffca71171985628c18165e88e474688a5a99e9df507f2f7b38935d718"
+      "name": "Morph-TV-Samsung-Computer-0.8.156",
+      "file": "Morph-TV-Samsung-Computer-0.8.156.zip",
+      "bytes": 4271299,
+      "sha256": "c22c8643746e504eb898d0aa85cc9c4219a572bad3e6fb72f74057b0021dd80f"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.155",
-      "file": "Morph-TV-Install-Kit-0.8.155.zip",
-      "bytes": 12932582,
-      "sha256": "13b86d851250500556e32ab1a3b0ab04fcf96fdb5a7d5d8bf6628f71211994e1"
+      "name": "Morph-TV-Install-Kit-0.8.156",
+      "file": "Morph-TV-Install-Kit-0.8.156.zip",
+      "bytes": 12933536,
+      "sha256": "5f1c6ffc3c6faa17c6d33d2398eb64f9e5249a5b421c24fd2f48f0d8427c74ec"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.155",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.155.zip",
-      "bytes": 4270858,
-      "sha256": "1fcbdb0d21e75f6b4ea2b133fbf430a6a35daff69db8748eabb7853bf2180c07"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.156",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.156.zip",
+      "bytes": 4271176,
+      "sha256": "07024a07cdbc0416521686cd17e1f455beb337ceb2ea126349540b8341a420ba"
     }
   ],
   "legacy": {
@@ -122,5 +123,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.155.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.156.zip"
 }
