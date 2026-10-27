@@ -1,0 +1,37 @@
+{
+  "version": "0.8.150",
+  "changes": [
+    "Optional profile-scoped Modern UI with Classic fallback and 28-theme adapter",
+    "Sculpted floating glass dock, focus halo clearance, sidebar contour glow, local icons and preserved installed-app logos",
+    "Repair visible Arabic and English text scaling in both modes and synchronize native preferences",
+    "Reuse background slideshow with accessible indicators/manual navigation and static Light fallback",
+    "Normalize discoverable app catalog, merge Android Leanback/Launcher activities, retain pins and visibility policies",
+    "Fix supported LG catalog bridge cases, remove inappropriate truncation/filtering, preserve public-platform discovery limitations",
+    "Refresh Your Apps and preserve stable focus, ordering and launch behavior",
+    "Use the central Theme Adapter in standalone native IPTV/Radio WebViews and embedded TV pages",
+    "Bind Settings, Apps, dialogs, prayer and fitness shared surfaces to Modern semantic tokens while preserving layouts and actions",
+    "Propagate mode/profile/theme changes to embedded pages; restore Classic palette when switching back",
+    "Retain native mode preference and share one theme identity registry",
+    "Modern Settings uses glass icon surfaces, theme-aware cards and consistent focus; Classic restores original SVG nodes",
+    "Theme-aware Prayer cards/countdown/duas retain original prayer-pause-v1 artwork",
+    "Shared surfaces for Inputs, Apps, Fitness, dialogs, support, text picker and family notices; preserve official logos and content artwork",
+    "Native Android playback control colors consume resolved shared tokens; no playback engine changes"
+  ],
+  "validation": [
+    "28 themes, five languages, five viewport sizes",
+    "Remote navigation, overflow dock, launch and Back; profile preferences and Classic isolation",
+    "Arabic/English text picker, computed 90/100/110 percent sizes, dynamic text and native bridge failure",
+    "Android, Samsung and LG platform fixtures; native Java discovery fixtures; signatures and embedded package integrity",
+    "56 IPTV/Radio theme combinations match shared tokens with contrast >=7; custom accents and Classic/Modern transitions",
+    "140 Settings theme/language cases, 28 Prayer theme checks, five real internal-page screenshots and original Prayer artwork assertion",
+    "Native player sources compiled with signed Android builds; no physical device validation"
+  ],
+  "limitations": [
+    "No physical TV validation; LG/Samsung capability tests use fixtures",
+    "LG completeness depends on permitted platform APIs and the existing authorized bridge; unrestricted app enumeration is not claimed",
+    "Samsung computer packages require the owner TV certificate and Developer Mode; Tizen4 remains experimental",
+    "Classic remains the safe default: enable Modern in Settings > Appearance > UI mode",
+    "Legacy 0.1.1 remains unchanged",
+    "System settings and third-party applications keep their own system/app UI; these are outside MorphTV styling control"
+  ]
+}
