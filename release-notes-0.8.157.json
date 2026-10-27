@@ -1,0 +1,20 @@
+{
+  "version": "0.8.157",
+  "changes": [
+    "Normal text size follows the existing CSS cascade without scanning/measuring every element just to multiply by one",
+    "Font observer ignores identical attribute assignments and text-only updates to already-sized or hidden controls; new content, visibility, theme/language/font changes still trigger sizing",
+    "Shared text sizing fix included in Home, IPTV and radio across Android, Samsung and LG"
+  ],
+  "validation": [
+    "Matched desktop Edge before/after test: 150 installed-app fixtures, 1646 DOM elements, Light mode, 4x CPU throttle, four seconds idle and 15 alternating remote arrows",
+    "Normal size: idle style reads 336 to 0; navigation style reads 804 to 90; font apply callbacks 17 to 0 during navigation",
+    "Large size: idle style reads 168 to 0; navigation style reads 846 to 90; font apply callbacks 18 to 0 during navigation",
+    "Font normal/small/large ratios and repeated apply, Arabic, settings picker, dynamic Plus dialog, media text updates/revealed content/input sizes and normal restore passed",
+    "Sports Plus dialog bounds/control reachability and native editor regression passed before packaging; package hashes, embedded TV builds and signing continuity checked"
+  ],
+  "limitations": [
+    "Software fixture measurement, not a physical-TV FPS or whole-application speedup claim",
+    "Provider/network delays, firmware rendering and image/video decoding may have additional device-specific costs",
+    "Light/Full selection and all existing features remain unchanged; Automatic behavior was not redesigned"
+  ]
+}

@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.156",
+  "latest": "0.8.157",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.156",
+      "version": "0.8.157",
       "download": "/download/phone",
-      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
-      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added."
+      "noteAr": "تحسين الأداء في الوضع الخفيف: إيقاف فحص الخطوط المتكرر مع الساعة والتنقل، مع الحفاظ على أحجام الخط ومزايا التطبيق.",
+      "noteEn": "Light-mode performance fix: avoid repeated page-wide text measurement during clock updates and remote navigation; preserve text sizes and app features."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.156",
+      "version": "0.8.157",
       "download": "/download/android",
-      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
-      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
+      "noteAr": "تحسين الأداء في الوضع الخفيف: إيقاف فحص الخطوط المتكرر مع الساعة والتنقل، مع الحفاظ على أحجام الخط ومزايا التطبيق.",
+      "noteEn": "Light-mode performance fix: avoid repeated page-wide text measurement during clock updates and remote navigation; preserve text sizes and app features.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.156",
+      "version": "0.8.157",
       "download": "/download/firetv",
-      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
-      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added."
+      "noteAr": "تحسين الأداء في الوضع الخفيف: إيقاف فحص الخطوط المتكرر مع الساعة والتنقل، مع الحفاظ على أحجام الخط ومزايا التطبيق.",
+      "noteEn": "Light-mode performance fix: avoid repeated page-wide text measurement during clock updates and remote navigation; preserve text sizes and app features."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
-      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
+      "noteAr": "تحسين الأداء في الوضع الخفيف: إيقاف فحص الخطوط المتكرر مع الساعة والتنقل، مع الحفاظ على أحجام الخط ومزايا التطبيق.",
+      "noteEn": "Light-mode performance fix: avoid repeated page-wide text measurement during clock updates and remote navigation; preserve text sizes and app features.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.156",
+      "version": "0.8.157",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.156.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.157.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.156.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.157.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ضبط نافذة Plus في الرياضة: أزرار ثابتة ونص قابل للتمرير بالريموت، مع إضافة فيديو شرح LG.",
-      "noteEn": "Sports Plus dialog fits the TV with pinned actions and remote scrolling; LG installation tutorial added.",
-      "version": "0.8.156",
+      "noteAr": "تحسين الأداء في الوضع الخفيف: إيقاف فحص الخطوط المتكرر مع الساعة والتنقل، مع الحفاظ على أحجام الخط ومزايا التطبيق.",
+      "noteEn": "Light-mode performance fix: avoid repeated page-wide text measurement during clock updates and remote navigation; preserve text sizes and app features.",
+      "version": "0.8.157",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -71,22 +71,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.156",
-      "file": "Morph-TV-Phone-0.8.156.apk",
+      "name": "Morph-TV-Phone-0.8.157",
+      "file": "Morph-TV-Phone-0.8.157.apk",
       "bytes": 14110336,
-      "sha256": "bd0d0a6c825bb2b2ecefe02bb867e267da759a6c8afab49494c2ac927767c743"
+      "sha256": "ad045f8526074549eb23d313c8e407748c69a2b3e1134929d0161ed043bc5087"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.156",
-      "file": "Morph-TV-Android-TV-0.8.156.apk",
+      "name": "Morph-TV-Android-TV-0.8.157",
+      "file": "Morph-TV-Android-TV-0.8.157.apk",
       "bytes": 4403821,
-      "sha256": "1d99a2449c6e41cdee3f4872f8d9d672efc20b08e9a72a6078bd8a2153d4363a"
+      "sha256": "43e649eafa04c88767e4496866a6daaee3e56d7a09ed5c0a014f27bee81c6490"
     },
     {
-      "name": "Morph-TV-LG-0.8.156",
-      "file": "Morph-TV-LG-0.8.156.ipk",
-      "bytes": 4231518,
-      "sha256": "f2a5f58304c0058562c84683d03a52e44f8267a544fc6204cb2c1762cea2c47f"
+      "name": "Morph-TV-LG-0.8.157",
+      "file": "Morph-TV-LG-0.8.157.ipk",
+      "bytes": 4232006,
+      "sha256": "d915a42ab4f1a27f613d396d5d3cfa3601923afb396ec1f864055dcb39b76569"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -95,22 +95,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.156",
-      "file": "Morph-TV-Samsung-Computer-0.8.156.zip",
-      "bytes": 4271299,
-      "sha256": "c22c8643746e504eb898d0aa85cc9c4219a572bad3e6fb72f74057b0021dd80f"
+      "name": "Morph-TV-Samsung-Computer-0.8.157",
+      "file": "Morph-TV-Samsung-Computer-0.8.157.zip",
+      "bytes": 4271798,
+      "sha256": "01c607b081fcd99d1524fce009c4ba6c3bf3cf8e3609550bd241eed993496082"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.156",
-      "file": "Morph-TV-Install-Kit-0.8.156.zip",
-      "bytes": 12933536,
-      "sha256": "5f1c6ffc3c6faa17c6d33d2398eb64f9e5249a5b421c24fd2f48f0d8427c74ec"
+      "name": "Morph-TV-Install-Kit-0.8.157",
+      "file": "Morph-TV-Install-Kit-0.8.157.zip",
+      "bytes": 12935294,
+      "sha256": "88fc05a7ea2d11ac631a591e35438e5fe628944801f5366107300c400dda1582"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.156",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.156.zip",
-      "bytes": 4271176,
-      "sha256": "07024a07cdbc0416521686cd17e1f455beb337ceb2ea126349540b8341a420ba"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.157",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.157.zip",
+      "bytes": 4271676,
+      "sha256": "b2b71ac9ec043fc6a10706ae63e0bda710ca785f44f00571bc10af47843bf105"
     }
   ],
   "legacy": {
@@ -123,5 +123,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.156.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.157.zip"
 }
