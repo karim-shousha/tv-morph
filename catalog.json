@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.138",
+  "latest": "0.8.139",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.138",
+      "version": "0.8.139",
       "download": "/download/phone",
-      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
-      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
+      "noteAr": "خطوط وقوائم أكبر للتلفزيون، بوسترات طولية كبيرة وقائمة أقسام أوسع، مع الحفاظ على فصل متابعة المشاهدة.",
+      "noteEn": "Larger TV text/navigation, portrait poster wall and wider category rail; separate movie/series Continue watching retained."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.138",
+      "version": "0.8.139",
       "download": "/download/android",
-      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
-      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
+      "noteAr": "خطوط وقوائم أكبر للتلفزيون، بوسترات طولية كبيرة وقائمة أقسام أوسع، مع الحفاظ على فصل متابعة المشاهدة.",
+      "noteEn": "Larger TV text/navigation, portrait poster wall and wider category rail; separate movie/series Continue watching retained."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.138",
+      "version": "0.8.139",
       "download": "/download/firetv",
-      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
-      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained."
+      "noteAr": "خطوط وقوائم أكبر للتلفزيون، بوسترات طولية كبيرة وقائمة أقسام أوسع، مع الحفاظ على فصل متابعة المشاهدة.",
+      "noteEn": "Larger TV text/navigation, portrait poster wall and wider category rail; separate movie/series Continue watching retained."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
-      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained.",
+      "noteAr": "خطوط وقوائم أكبر للتلفزيون، بوسترات طولية كبيرة وقائمة أقسام أوسع، مع الحفاظ على فصل متابعة المشاهدة.",
+      "noteEn": "Larger TV text/navigation, portrait poster wall and wider category rail; separate movie/series Continue watching retained.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.138",
+      "version": "0.8.139",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.138.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.139.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.138.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.139.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "فصل متابعة المشاهدة بين الأفلام والمسلسلات مع الحفاظ على مواضع المشاهدة المحفوظة.",
-      "noteEn": "Continue watching scoped to movies or series; saved playback positions retained.",
-      "version": "0.8.138",
+      "noteAr": "خطوط وقوائم أكبر للتلفزيون، بوسترات طولية كبيرة وقائمة أقسام أوسع، مع الحفاظ على فصل متابعة المشاهدة.",
+      "noteEn": "Larger TV text/navigation, portrait poster wall and wider category rail; separate movie/series Continue watching retained.",
+      "version": "0.8.139",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.138",
-      "file": "Morph-TV-Phone-0.8.138.apk",
-      "bytes": 12713003,
-      "sha256": "ea73a896ce6e47b615b062447b15a2b9bee4ce0eda8894ca331735ce3fc178a2"
+      "name": "Morph-TV-Phone-0.8.139",
+      "file": "Morph-TV-Phone-0.8.139.apk",
+      "bytes": 12721268,
+      "sha256": "eacf65643da4d9855158c131a68425abe396960edee875d7d416f47516aaf29c"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.138",
-      "file": "Morph-TV-Android-TV-0.8.138.apk",
-      "bytes": 3950679,
-      "sha256": "8b402e77480825111eb2a616aa58e5ad046dbe22a28da74c6e659d9a80f8bc61"
+      "name": "Morph-TV-Android-TV-0.8.139",
+      "file": "Morph-TV-Android-TV-0.8.139.apk",
+      "bytes": 3950823,
+      "sha256": "b004eb9dc3ca427dc2b04937d7e159447a6aa713e45cd44af33669c0718015bc"
     },
     {
-      "name": "Morph-TV-LG-0.8.138",
-      "file": "Morph-TV-LG-0.8.138.ipk",
-      "bytes": 3784860,
-      "sha256": "fa6f47b41e61e5fc2bc52a9c8e8318279a18b18fa59ab9c7c4db247c797b5e89"
+      "name": "Morph-TV-LG-0.8.139",
+      "file": "Morph-TV-LG-0.8.139.ipk",
+      "bytes": 3786160,
+      "sha256": "72cc5b8b636379a92fdb61773f0ad4360ea15ab9d4e1acfbf2794d3751446833"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.138",
-      "file": "Morph-TV-Samsung-Computer-0.8.138.zip",
-      "bytes": 3814608,
-      "sha256": "9245f1d032ff5f6db5b9d2568abb7a5b7775128f354b97373e12fbf89dc63c8c"
+      "name": "Morph-TV-Samsung-Computer-0.8.139",
+      "file": "Morph-TV-Samsung-Computer-0.8.139.zip",
+      "bytes": 3817027,
+      "sha256": "585ae123d3db7817db79dd86f1e1df4dbb54e1313b08653836322722b9788a3e"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.138",
-      "file": "Morph-TV-Install-Kit-0.8.138.zip",
-      "bytes": 11579529,
-      "sha256": "288a7e956846700892ad2c9eb6342efedef06982e984f8732c8ae6af0661d873"
+      "name": "Morph-TV-Install-Kit-0.8.139",
+      "file": "Morph-TV-Install-Kit-0.8.139.zip",
+      "bytes": 11585167,
+      "sha256": "005992ec625db6304cd664b13258fb65794870bfd973fe6ca44b1b93daf79c8d"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.138",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.138.zip",
-      "bytes": 3814486,
-      "sha256": "ea9d55bc6cb97eebe01130bebf09514b92a6fd6b7094b68ce4da4e678a5fe952"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.139",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.139.zip",
+      "bytes": 3816905,
+      "sha256": "5427518f93205ef3a667f6e89b23ed5995f3784622862bd00707922c579b1eda"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.138.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.139.zip"
 }

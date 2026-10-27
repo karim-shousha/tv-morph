@@ -1,0 +1,24 @@
+{
+  "version": "0.8.139",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Increase TV IPTV text: poster titles 26px and categories 27px at 1080p; 21px/22px at 720p instead of the previous 15px/16px small-screen rules",
+    "Widen category rail, allow wrapped category names, reduce outer margins and keep a five-column poster wall",
+    "Size poster rows using their portrait width/aspect ratio so large artwork is no longer compressed into short cards",
+    "Enlarge TV IPTV top controls, search, pagination, details/episodes and settings fields; separate the search row at 720p to prevent overlap",
+    "Increase main TV launcher navigation to 25px and settings rows to 26px; retain category organization and Light mode",
+    "Keep phone layout independent and preserve separate Movies/Series Continue watching"
+  ],
+  "validation": [
+    "Built Android TV, LG, Samsung and Tizen4 at 1280x720 and 1920x1080 in Arabic/English/French: font thresholds, five columns, header bounds/no overlaps, full first poster, keyboard scroll/focus and settings dialog width",
+    "Built Android/LG/Samsung launcher navigation and settings in five languages: enlarged fonts and no header overlap",
+    "Remote search and live-channel switching; Samsung/LG next/previous episode and boundaries",
+    "Built Android/phone/LG/Samsung/Tizen4 Continue watching regression: type isolation and saved progress",
+    "Signed package identity, embedded APK/IPK integrity and installation-kit checksums"
+  ],
+  "limitations": [
+    "Automated browser and platform fixtures; physical viewing-distance/device testing remains necessary",
+    "Larger portrait cards show fewer rows; arrow navigation scrolls to the next row",
+    "Legacy0.1.1 remains unchanged"
+  ]
+}
