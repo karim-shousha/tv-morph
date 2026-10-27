@@ -1,0 +1,18 @@
+{
+  "version": "0.8.143",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Replace the female GTA VI theme character with a fully clothed adult male; preserve neon sunset/car composition and the original male character",
+    "Keep GTA theme free; distribute a new integrity-checked gaming pack v2 and versioned previews to avoid stale cached artwork",
+    "Retain separate personal/public IPTV sources, native IME, short Plus codes and LG origin/Home fixes"
+  ],
+  "validation": [
+    "Built Android/phone/LG/Samsung/Tizen4 theme applies without Plus and downloaded WebP decodes",
+    "Cache persistence and paid-theme lock verified",
+    "Signed packages and embedded LG payload/hash parity verified"
+  ],
+  "limitations": [
+    "Existing installations need the updated app/theme pack to replace cached v1 artwork",
+    "No physical TV testing"
+  ]
+}
