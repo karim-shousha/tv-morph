@@ -1,6 +1,6 @@
 /* Same views and launch handlers in both modes. No second navigation system. */
 (function(w){'use strict';
- var C=w.ClearTV,body=document.body,button,search,queued=false,failed=false;
+ var C=w.ClearTV,body=document.body,button,search,queued=false,failed=false,nativeThemeStamp='';
  function t(ar,en){return w.MorphLocale?MorphLocale.t(ar,en):en;}
  function get(){if(failed)return 'classic';return C.settings.uiMode==='modern'?'modern':'classic';}
  function paint(){if(button){button.textContent=t('وضع الواجهة','UI mode')+' · '+(get()==='modern'?t('حديث','Modern'):t('كلاسيكي','Classic'));button.setAttribute('aria-label',button.textContent);}if(search){var label=t('البحث في التطبيقات','Search apps');search.title=label;search.setAttribute('aria-label',label);}}
@@ -19,7 +19,7 @@
  }
  function sync(){queued=false;try{
   decorateSidebar();var mode=failed?'classic':get(),modern=mode==='modern';if(modern){if(!w.MorphThemeAdapter||!w.MorphIcons)throw Error('Modern foundation unavailable');w.MorphThemeAdapter.apply();}
-  body.setAttribute('data-ui-mode',mode);if(modern&&!getComputedStyle(body).getPropertyValue('--ui-radius-md'))throw Error('Modern styles unavailable');body.setAttribute('data-ui-home',modern&&home()?'true':'false');
+  if(w.MorphInternalUI)w.MorphInternalUI.apply(mode);try{if(w.TVNative&&TVNative.saveSettings){var resolved=w.MorphThemeAdapter&&w.MorphThemeAdapter.resolve(C.settings),tokens=resolved&&resolved.tokens||{},nativeTheme={uiMode:mode,viewerId:C.Profiles?C.Profiles.active():'default',theme:C.settings.theme||'blue',uiBg:tokens['--ui-bg'],uiSurface:tokens['--ui-bg-raised'],uiAccent:tokens['--ui-focus-ring'],uiText:tokens['--ui-text']},stamp=JSON.stringify(nativeTheme);if(stamp!==nativeThemeStamp){TVNative.saveSettings(stamp);nativeThemeStamp=stamp;}}}catch(nativeError){}body.setAttribute('data-ui-mode',mode);if(modern&&!getComputedStyle(body).getPropertyValue('--ui-radius-md'))throw Error('Modern styles unavailable');body.setAttribute('data-ui-home',modern&&home()?'true':'false');
   var weak=w.MorphTVCompatibility&&MorphTVCompatibility.legacyLayout||/Tizen[ \/][1-6](?:\.|\b)/i.test(navigator.userAgent),light=C.Performance&&C.Performance.isLight()||!C.settings.motion||weak||w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches;
   body.setAttribute('data-ui-effects',light?'light':'full');if(search)search.hidden=!(modern&&home());
   var hdmi=document.getElementById('dock-hdmi');if(hdmi&&w.MorphIcons){var glyph=hdmi.querySelector('.ui-dock-icon');if(!glyph){glyph=C.el('span','app-icon ui-dock-icon');glyph.setAttribute('aria-hidden','true');glyph.innerHTML=MorphIcons.svg('inputs');hdmi.appendChild(glyph);}glyph.hidden=!(modern&&home());var original=hdmi.querySelector('img.app-icon');if(original)original.hidden=modern&&home();}
