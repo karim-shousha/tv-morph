@@ -71,19 +71,19 @@
       "name": "Morph-TV-Phone-0.8.139",
       "file": "Morph-TV-Phone-0.8.139.apk",
       "bytes": 12721268,
-      "sha256": "eacf65643da4d9855158c131a68425abe396960edee875d7d416f47516aaf29c"
+      "sha256": "89aec4aaaea6917731347e0a21ce479ea5a4fedb63d72034ec23e2d8e5f710a7"
     },
     {
       "name": "Morph-TV-Android-TV-0.8.139",
       "file": "Morph-TV-Android-TV-0.8.139.apk",
       "bytes": 3950823,
-      "sha256": "b004eb9dc3ca427dc2b04937d7e159447a6aa713e45cd44af33669c0718015bc"
+      "sha256": "de24a7a7fdcea24d661fb4eeac811bd5b7c4b2a7cdc2fa8bfe7b439bae54e7fa"
     },
     {
       "name": "Morph-TV-LG-0.8.139",
       "file": "Morph-TV-LG-0.8.139.ipk",
-      "bytes": 3786160,
-      "sha256": "72cc5b8b636379a92fdb61773f0ad4360ea15ab9d4e1acfbf2794d3751446833"
+      "bytes": 3786166,
+      "sha256": "f88d3bb794c94447b7980c59ad1726f4c76420b1f0d9cd36573209b71e306371"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,20 +94,20 @@
     {
       "name": "Morph-TV-Samsung-Computer-0.8.139",
       "file": "Morph-TV-Samsung-Computer-0.8.139.zip",
-      "bytes": 3817027,
-      "sha256": "585ae123d3db7817db79dd86f1e1df4dbb54e1313b08653836322722b9788a3e"
+      "bytes": 3817177,
+      "sha256": "8df9f4c6aa8d00077a48daf611ec853bad6008ccf0469871526a918bba3ea484"
     },
     {
       "name": "Morph-TV-Install-Kit-0.8.139",
       "file": "Morph-TV-Install-Kit-0.8.139.zip",
-      "bytes": 11585167,
-      "sha256": "005992ec625db6304cd664b13258fb65794870bfd973fe6ca44b1b93daf79c8d"
+      "bytes": 11585410,
+      "sha256": "598669e9b036666272e3e26c415c6d9dd77ad6e3e08c1460c08e4ab28248cc26"
     },
     {
       "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.139",
       "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.139.zip",
-      "bytes": 3816905,
-      "sha256": "5427518f93205ef3a667f6e89b23ed5995f3784622862bd00707922c579b1eda"
+      "bytes": 3817055,
+      "sha256": "9dc9a8d6f745fee64a02b377f0d5e641ff1c99944ed10d6dcbf69c7e6d187ed4"
     }
   ],
   "legacy": {
