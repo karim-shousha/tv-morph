@@ -77,3 +77,6 @@ body[data-ui-mode=modern] .fit-hero-side,body[data-ui-mode=modern] .fit-chip{bac
 body[data-ui-mode=modern] .fit-chip.on,body[data-ui-mode=modern] .fit-ctl.main{background:var(--ui-button-gradient);color:var(--ui-bg);border-color:var(--ui-accent)}
 body[data-ui-mode=modern] .fit-screen-complete{background:radial-gradient(ellipse,var(--ui-focus-surface-a),transparent 70%)}
 body[data-ui-mode=modern] #prayer-break-overlay button,body[data-ui-mode=modern] #prayer-adhan-overlay button{background:var(--ui-card-bg);border-color:var(--ui-accent);color:var(--ui-text)}
+
+body[data-ui-mode=modern] .morph-plus-dialog{background:var(--ui-bg-raised);color:var(--ui-text);border-color:var(--ui-card-border);border-radius:var(--ui-radius-lg)}
+body[data-ui-mode=modern] .morph-plus-setting .morph-plus-active-badge,body[data-ui-mode=modern] .plus-is-active .plus-status{background:var(--ui-focus-surface-a);border-color:var(--ui-accent);color:var(--ui-text)}
