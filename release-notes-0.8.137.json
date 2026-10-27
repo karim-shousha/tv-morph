@@ -1,0 +1,22 @@
+{
+  "version": "0.8.137",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Add Blue Cinema as a separate free theme using the existing original twilight-entertainment-v4 artwork, without replacing the blue default",
+    "Offer a small independently downloaded free artwork pack with verified SHA-256 and persistent offline cache",
+    "Add phone theme selection, TV theme category, native saved-theme allowlists and localized previews",
+    "Add installation-helper model guidance for Samsung AU7000 (2021/Tizen6.0) and T5300 (2020/Tizen5.5), supporting short family names and full model codes",
+    "Preserve 0.8.136 grouped settings, fullscreen foreground Adhan, VOD speeds and physical input filtering"
+  ],
+  "validation": [
+    "Actual built Android, phone, LG, Samsung and Tizen4: no Plus license, free pack download, artwork decode, theme application and persistence; paid themes remain locked",
+    "Original artwork byte identity checked against existing source export; single 112332-byte download",
+    "Signed phone and TV packages, unchanged signing identity, embedded TV/IPK parity and install kit hashes",
+    "Samsung model mapping verified against official TV Model Groups; installation guidance remains explicit about Developer Mode and certificates"
+  ],
+  "limitations": [
+    "No physical AU7000 or T5300 test performed; OS compatibility is not device certification",
+    "Samsung installation requires device-specific certificate and Developer Mode; APK is not a Samsung installer",
+    "Legacy0.1.1 unchanged"
+  ]
+}
