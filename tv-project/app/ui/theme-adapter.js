@@ -1,6 +1,6 @@
 /* Presentation only: never downloads assets, changes a license, or writes settings. */
 (function(w){'use strict';
- var C=w.ClearTV,base={blue:['#63caff','#14283e'],night:['#8aaeff','#101421'],emerald:['#68e8ba','#0d302e'],amber:['#ffc680','#302017'],violet:['#cda2ff','#241632'],ahly:['#ff4769','#300c1b']};
+ var C=w.ClearTV||{},base={blue:['#63caff','#14283e'],night:['#8aaeff','#101421'],emerald:['#68e8ba','#0d302e'],amber:['#ffc680','#302017'],violet:['#cda2ff','#241632'],ahly:['#ff4769','#300c1b']};
  var keys=['blue','night','emerald','amber','violet','ahly','zamalek','barcelona','madrid','egypt','basketball','baseball','montreal','toronto','argentina','portugal','ismaily','king-salman','crown-prince','nassr','hilal','ittihad','ahli-saudi','inter-miami','saudi-national','egypt-national','blue-cinema','gta6'];
  var scenes={'gta6':true,'blue-cinema':true,'saudi-national':true,'egypt-national':true};
  function hex(v,fallback){return /^#[0-9a-f]{6}$/i.test(v||'')?v:fallback;}
@@ -9,7 +9,7 @@
  function mix(a,b,t){var x=rgb(a),y=rgb(b);return '#'+x.map(function(n,i){var v=Math.round(n+(y[i]-n)*t).toString(16);return v.length<2?'0'+v:v;}).join('');}
  function luminance(s){return rgb(s).map(function(v){v/=255;return v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4);}).reduce(function(sum,v,i){return sum+v*[.2126,.7152,.0722][i];},0);}
  function readable(text,bg,minimum){var value=text;for(var i=0;i<12;i++){var a=luminance(value),b=luminance(bg);if((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=minimum)return value;value=mix(value,'#ffffff',.22);}return '#ffffff';}
- function resolve(settings){var s=settings||{},id=keys.indexOf(s.theme)>=0?s.theme:'blue',club=(C.ClubThemes||{})[id]||{},p=base[id]||['#63caff','#14283e'];
+ function resolve(settings){var s=settings||{},id=keys.indexOf(s.theme)>=0?s.theme:'blue',club=(C.ClubThemes||w.MorphThemeIdentities||{})[id]||{},p=base[id]||['#63caff','#14283e'];
   var accent=hex(s.highlightColor,hex(s.accent,hex(club.primary,p[0]))),identity=hex(club.secondary,p[1]),bg=hex(s.backgroundStart,mix(identity,'#030610',.7)),raised=mix(hex(s.cardColor,identity),'#050916',.45);
   /* Retain the user's hue as a safe tonal surface; never rewrite the saved color. */
   while(luminance(raised)>.075)raised=mix(raised,'#050916',.12);
