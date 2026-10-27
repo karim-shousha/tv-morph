@@ -1,53 +1,53 @@
 {
   "schema": 1,
-  "latest": "0.8.140",
+  "latest": "0.8.141",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.140",
+      "version": "0.8.141",
       "download": "/download/phone",
-      "noteAr": "ثيم GTA VI مجاني، تأكيد واضح لتفعيل Plus، وخيارات Xtream وM3U وقنوات عامة للأخبار.",
-      "noteEn": "Free GTA VI-inspired theme, clear Plus activation state, Xtream/M3U choices and opt-in public news channels."
+      "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
+      "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.140",
+      "version": "0.8.141",
       "download": "/download/android",
-      "noteAr": "ثيم GTA VI مجاني، تأكيد واضح لتفعيل Plus، وخيارات Xtream وM3U وقنوات عامة للأخبار.",
-      "noteEn": "Free GTA VI-inspired theme, clear Plus activation state, Xtream/M3U choices and opt-in public news channels."
+      "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
+      "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.140",
+      "version": "0.8.141",
       "download": "/download/firetv",
-      "noteAr": "ثيم GTA VI مجاني، تأكيد واضح لتفعيل Plus، وخيارات Xtream وM3U وقنوات عامة للأخبار.",
-      "noteEn": "Free GTA VI-inspired theme, clear Plus activation state, Xtream/M3U choices and opt-in public news channels."
+      "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
+      "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "ثيم GTA VI مجاني، تأكيد واضح لتفعيل Plus، وخيارات Xtream وM3U وقنوات عامة للأخبار.",
-      "noteEn": "Free GTA VI-inspired theme, clear Plus activation state, Xtream/M3U choices and opt-in public news channels.",
+      "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
+      "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.140",
+      "version": "0.8.141",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.140.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.141.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.140.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.141.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -57,9 +57,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "ثيم GTA VI مجاني، تأكيد واضح لتفعيل Plus، وخيارات Xtream وM3U وقنوات عامة للأخبار.",
-      "noteEn": "Free GTA VI-inspired theme, clear Plus activation state, Xtream/M3U choices and opt-in public news channels.",
-      "version": "0.8.140",
+      "noteAr": "حفظ اشتراك IPTV الخاص مع فصل العام، كيبورد الجهاز، وأكواد Plus قصيرة.",
+      "noteEn": "Separate saved personal/public IPTV sources, device keyboard, short Plus codes and improved LG connection compatibility.",
+      "version": "0.8.141",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -68,22 +68,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.140",
-      "file": "Morph-TV-Phone-0.8.140.apk",
-      "bytes": 12754111,
-      "sha256": "cf294200f197f4dc56b241774ac84e1c5b90693dcabc547026db160b35463826"
+      "name": "Morph-TV-Phone-0.8.141",
+      "file": "Morph-TV-Phone-0.8.141.apk",
+      "bytes": 12758279,
+      "sha256": "198cd5b649daed7a94fdecd5cab7682e09e649d134142883fafd68353f00e6a4"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.140",
-      "file": "Morph-TV-Android-TV-0.8.140.apk",
+      "name": "Morph-TV-Android-TV-0.8.141",
+      "file": "Morph-TV-Android-TV-0.8.141.apk",
       "bytes": 3963180,
-      "sha256": "24a215e3577e219654d5c05dab780861a6747024f1daa7e9978311ea307da5c6"
+      "sha256": "2a62739b2e234090dd2f0577deb9b7f99ab0507c656fd498fef99c9f4d41bf1a"
     },
     {
-      "name": "Morph-TV-LG-0.8.140",
-      "file": "Morph-TV-LG-0.8.140.ipk",
-      "bytes": 3790772,
-      "sha256": "455d9bedf2b1660e7bbdf71e8b5e83b0f661574dd19a33280854d7cb23f54895"
+      "name": "Morph-TV-LG-0.8.141",
+      "file": "Morph-TV-LG-0.8.141.ipk",
+      "bytes": 3791334,
+      "sha256": "954b226f74de1f480f15da38f4a16b89e67ec5b309976d5ecf5e6cbf74e39055"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -92,22 +92,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.140",
-      "file": "Morph-TV-Samsung-Computer-0.8.140.zip",
-      "bytes": 3823205,
-      "sha256": "139e1ba7d70566d489a4f8d3eda9887e7400da86f8d99daa77153232fb0d74e8"
+      "name": "Morph-TV-Samsung-Computer-0.8.141",
+      "file": "Morph-TV-Samsung-Computer-0.8.141.zip",
+      "bytes": 3823981,
+      "sha256": "64cc50b646211895a2c20e18f88a330da505b44e76656f2bba47b31decfd5a6c"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.140",
-      "file": "Morph-TV-Install-Kit-0.8.140.zip",
-      "bytes": 11605501,
-      "sha256": "56c3602d68f91f06bd710bc8149f028edf649d5073599ef21bd1ae2c77f584d9"
+      "name": "Morph-TV-Install-Kit-0.8.141",
+      "file": "Morph-TV-Install-Kit-0.8.141.zip",
+      "bytes": 11609066,
+      "sha256": "855b0f9a210063c889a23ca089ded704cd23340d9d7e78f253e4af8e040e6e49"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.140",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.140.zip",
-      "bytes": 3823083,
-      "sha256": "2b2dcf4b8c3f8a3884c83e77cc88a64d43e44132f6b7962cf2981d380cdf347d"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.141",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.141.zip",
+      "bytes": 3823857,
+      "sha256": "cd54ae6fae40e6e148c8d841eb53d3b919a999bab119348aba47a29e96b892bf"
     }
   ],
   "legacy": {
@@ -120,5 +120,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.140.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.141.zip"
 }

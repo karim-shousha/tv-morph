@@ -1,0 +1,27 @@
+{
+  "version": "0.8.141",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Keep personal IPTV credentials in a separate saved profile when choosing public news, with an explicit return-to-subscription button on TV and phone",
+    "Preserve personal account identity, favorites and resume namespace after switching back; failed source changes keep the current account",
+    "Restore Android device IME for IPTV search; only open after OK/click, reset edit state after dismissing, avoid shrinking TV layout",
+    "LG developer connection: session-scoped older RSA/DH compatibility, validate encrypted-key passphrase before SSH, specific authentication/host-trust/algorithm error messages",
+    "Support both modern and older LG inspector target-list formats while checking exact Morph TV app and SSH-tunnel host",
+    "Plus activation reports server-confirmed device limit, invalid license, rate limit or network error instead of one generic message",
+    "Introduce 12-character MT- Plus codes; previous long codes and existing device limits remain valid",
+    "Retain 0.8.140 free GTA theme, readable pack buttons, clear Plus active state, M3U/public IPTV and optimized versioned WebP images"
+  ],
+  "validation": [
+    "Signed Android/phone builds, matching embedded LG/TV packages and release hashes",
+    "Personal/public switching, reload and restoration fixtures on native store and Samsung/LG",
+    "Search focus vs OK/click and repeated native IME activation",
+    "Local SSH compatibility fixtures and LG inspector target identity restrictions",
+    "Plus activation retry, success/persistence and specific error messages"
+  ],
+  "limitations": [
+    "Physical LG confirmation is pending; the supplied recording shows authentication failure but does not expose its underlying SSH cause",
+    "Existing credentials overwritten by version 0.8.140 cannot be reconstructed; add them once if no saved profile remains",
+    "Public stream availability, codecs, geographic restrictions and CORS still depend on the source",
+    "Legacy0.1.1 remains unchanged"
+  ]
+}

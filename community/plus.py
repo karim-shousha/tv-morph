@@ -33,6 +33,7 @@ class Plus:
               name TEXT NOT NULL DEFAULT '', created INTEGER NOT NULL, updated INTEGER NOT NULL);
              CREATE TABLE IF NOT EXISTS grant_audit(id INTEGER PRIMARY KEY, license TEXT NOT NULL, action TEXT NOT NULL,
               actor TEXT NOT NULL, created INTEGER NOT NULL);
+             CREATE TABLE IF NOT EXISTS short_codes(hash TEXT PRIMARY KEY, license TEXT UNIQUE NOT NULL REFERENCES orders(id));
             ''')
             if 'source' not in [r['name'] for r in db.execute('PRAGMA table_info(orders)')]:
                 db.execute("ALTER TABLE orders ADD COLUMN source TEXT NOT NULL DEFAULT 'stripe'")
@@ -43,6 +44,8 @@ class Plus:
                 db.execute("ALTER TABLE orders ADD COLUMN entitlement TEXT NOT NULL DEFAULT 'lifetime'")
             if 'expires' not in columns:
                 db.execute("ALTER TABLE orders ADD COLUMN expires INTEGER")
+            for row in db.execute('SELECT id FROM orders').fetchall():
+                self.register_short(db,row['id'])
         os.chmod(self.path, 0o600)
 
     @contextlib.contextmanager
@@ -57,6 +60,16 @@ class Plus:
 
     def code(self, order):
         return 'MORPH-'+base64.b32encode(hmac.new(self.secret, ('license:'+order).encode(), hashlib.sha256).digest()[:20]).decode().rstrip('=')
+
+    def short_code(self, order):
+        return 'MT-'+base64.b32encode(hmac.new(self.secret, ('license-short:'+order).encode(), hashlib.sha256).digest()).decode()[:12]
+
+    def register_short(self, db, order):
+        code=self.short_code(order);hashed=self.digest(code)
+        db.execute('INSERT OR IGNORE INTO short_codes(hash,license) VALUES (?,?)',(hashed,order))
+        if db.execute('SELECT license FROM short_codes WHERE hash=?',(hashed,)).fetchone()['license']!=order:
+            raise ValueError('short_code_collision')
+        return code
 
     def enabled(self):
         mode=os.environ.get('MORPH_PLUS_MODE','test')
@@ -144,9 +157,9 @@ class Plus:
         with self.db() as db:db.execute('INSERT OR IGNORE INTO events VALUES (?,?)',(eid,int(time.time())))
 
     def lookup(self, db, code):
-        if not re.fullmatch(r'MORPH-[A-Z2-7]{32}',str(code)):raise ValueError('invalid_license')
+        if not re.fullmatch(r'(?:MORPH-[A-Z2-7]{32}|MT-[A-Z2-7]{12})',str(code)):raise ValueError('invalid_license')
         # Paid orders only. The code is derived, never stored in plaintext.
-        row=db.execute("SELECT * FROM orders WHERE license_hash=? AND ((paid=1 AND mode=?) OR source='complimentary') AND revoked=0",(self.digest(code),os.environ.get('MORPH_PLUS_MODE','test'))).fetchone()
+        row=db.execute("SELECT * FROM orders WHERE (license_hash=? OR id=(SELECT license FROM short_codes WHERE hash=?)) AND ((paid=1 AND mode=?) OR source='complimentary') AND revoked=0",(self.digest(code),self.digest(code),os.environ.get('MORPH_PLUS_MODE','test'))).fetchone()
         if row and (row['entitlement']=='lifetime' or row['expires'] is not None and row['expires']>int(time.time())):return row
         raise ValueError('invalid_license')
 
@@ -213,7 +226,7 @@ class Plus:
                 if not row:raise ValueError('unknown_grant')
                 if action=='code':
                     if row['revoked']:raise ValueError('grant_disabled')
-                    result={'code':self.code(oid)}
+                    result={'code':self.register_short(db,oid)}
                 elif action=='devices':
                     result={'devices':[dict(r) for r in db.execute('SELECT device,name,created FROM devices WHERE license=? ORDER BY created',(oid,))]}
                 elif action in ['revoke','restore']:
@@ -258,7 +271,9 @@ class Plus:
                     with self.db() as db:row=db.execute('SELECT * FROM orders WHERE id=? AND proof=?',(data.get('order'),self.digest(str(data.get('proof',''))))).fetchone()
                     if not row:raise ValueError('unknown_order')
                     result={'paid':bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))}
-                    if result['paid']:result.update(code=self.code(row['id']),plan=row['plan'],maxDevices=self.capacity(row),entitlement=row['entitlement'],expiresAt=row['expires'])
+                    if result['paid']:
+                        with self.db() as db:short=self.register_short(db,row['id'])
+                        result.update(code=short,plan=row['plan'],maxDevices=self.capacity(row),entitlement=row['entitlement'],expiresAt=row['expires'])
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
@@ -272,6 +287,9 @@ class Plus:
                     result={'removed':True}
                 else:handler.send_json(404,{'error':'not_found'});return True
             handler.send_json(200,result)
-        except (ValueError,KeyError,TypeError):handler.send_json(400,{'error':'invalid_or_unavailable_request'})
+        except (ValueError,KeyError,TypeError) as error:
+            reason=str(error)
+            visible={'invalid_license','device_limit','invalid_device','rate_limited','origin_rejected'}
+            handler.send_json(400,{'error':reason if path in ['/api/plus/activate','/api/plus/studio','/api/plus/status'] and reason in visible else 'invalid_or_unavailable_request'})
         except (URLError,TimeoutError):handler.send_json(503,{'error':'payment_service_unavailable'})
         return True
