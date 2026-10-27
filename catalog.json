@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.152",
+  "latest": "0.8.153",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.152",
+      "version": "0.8.153",
       "download": "/download/phone",
-      "noteAr": "واجهة Modern موحدة بوضع خفيف وكامل، تحسين الدوك والريموت والخطوط ومواقيت الصلاة، وإصلاح عرض ملفات USB والتحكم في الفيديو.",
-      "noteEn": "Unified Modern Light/Full interface, refined dock, remote navigation, text sizing and prayer times; improved USB file discovery and fullscreen video controls."
+      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
+      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.152",
+      "version": "0.8.153",
       "download": "/download/android",
-      "noteAr": "واجهة Modern موحدة بوضع خفيف وكامل، تحسين الدوك والريموت والخطوط ومواقيت الصلاة، وإصلاح عرض ملفات USB والتحكم في الفيديو.",
-      "noteEn": "Unified Modern Light/Full interface, refined dock, remote navigation, text sizing and prayer times; improved USB file discovery and fullscreen video controls.",
+      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
+      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.152",
+      "version": "0.8.153",
       "download": "/download/firetv",
-      "noteAr": "واجهة Modern موحدة بوضع خفيف وكامل، تحسين الدوك والريموت والخطوط ومواقيت الصلاة، وإصلاح عرض ملفات USB والتحكم في الفيديو.",
-      "noteEn": "Unified Modern Light/Full interface, refined dock, remote navigation, text sizing and prayer times; improved USB file discovery and fullscreen video controls."
+      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
+      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "واجهة Modern موحدة بوضع خفيف وكامل، تحسين الدوك والريموت والخطوط ومواقيت الصلاة، وإصلاح عرض ملفات USB والتحكم في الفيديو.",
-      "noteEn": "Unified Modern Light/Full interface, refined dock, remote navigation, text sizing and prayer times; improved USB file discovery and fullscreen video controls.",
+      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
+      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.152",
+      "version": "0.8.153",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.152.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.153.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.152.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.153.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "واجهة Modern موحدة بوضع خفيف وكامل، تحسين الدوك والريموت والخطوط ومواقيت الصلاة، وإصلاح عرض ملفات USB والتحكم في الفيديو.",
-      "noteEn": "Unified Modern Light/Full interface, refined dock, remote navigation, text sizing and prayer times; improved USB file discovery and fullscreen video controls.",
-      "version": "0.8.152",
+      "noteAr": "إصلاح تشغيل Kids World بمشغّل Android الأصلي، وإضافة ملء الشاشة بالريموت ومسار HLS بديل عند فشل التشغيل.",
+      "noteEn": "Kids World uses the native Android player; embedded fullscreen with remote Back and native-HLS fallback improvements.",
+      "version": "0.8.153",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -70,22 +70,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.152",
-      "file": "Morph-TV-Phone-0.8.152.apk",
-      "bytes": 14085684,
-      "sha256": "ba7721e2021ec1b4246692dab71714bcbce38ca463a6ba2c80a5c96ab0dfe9fb"
+      "name": "Morph-TV-Phone-0.8.153",
+      "file": "Morph-TV-Phone-0.8.153.apk",
+      "bytes": 14093876,
+      "sha256": "43b7eefc06557eb83b8fda614d29bc35164791fa9f6e1e3f465f8f2db1c75d6d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.152",
-      "file": "Morph-TV-Android-TV-0.8.152.apk",
-      "bytes": 4395483,
-      "sha256": "815479a5737e92f4b5dbfb982ab9dbc28c186abd05f08af9a0283e45a0b67501"
+      "name": "Morph-TV-Android-TV-0.8.153",
+      "file": "Morph-TV-Android-TV-0.8.153.apk",
+      "bytes": 4399579,
+      "sha256": "c347abde786ce4d1c27efba65a34be05a25bae24394e74cf29c1ce9e863f7a8b"
     },
     {
-      "name": "Morph-TV-LG-0.8.152",
-      "file": "Morph-TV-LG-0.8.152.ipk",
-      "bytes": 4226204,
-      "sha256": "af5b1860afdae25ed51238b3920035760e9c1c3ada62340792ce7a196015f90c"
+      "name": "Morph-TV-LG-0.8.153",
+      "file": "Morph-TV-LG-0.8.153.ipk",
+      "bytes": 4227304,
+      "sha256": "3a8f386e762b9a3fd9465f97f62ba4d0e2d2905561e5a6c6c1b0f3c609bd3d68"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -94,22 +94,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.152",
-      "file": "Morph-TV-Samsung-Computer-0.8.152.zip",
-      "bytes": 4264782,
-      "sha256": "44aa94507c29ba47f8fe9aa3c239cec182789c4c00d8768bbd565d46de5ba369"
+      "name": "Morph-TV-Samsung-Computer-0.8.153",
+      "file": "Morph-TV-Samsung-Computer-0.8.153.zip",
+      "bytes": 4265779,
+      "sha256": "b747840a3efb925453fa4f08a670cd9889c2850eddb4b38391c71d775451796d"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.152",
-      "file": "Morph-TV-Install-Kit-0.8.152.zip",
-      "bytes": 12914646,
-      "sha256": "02f062f8754a4b54a12f080e75ad0b49140e5fa862f428048118ea68f031d2dc"
+      "name": "Morph-TV-Install-Kit-0.8.153",
+      "file": "Morph-TV-Install-Kit-0.8.153.zip",
+      "bytes": 12918040,
+      "sha256": "f18998ff6419efbff37084a5d1744dac4e4da994f24b4d31efaabbb9cdea87e4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.152",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.152.zip",
-      "bytes": 4264661,
-      "sha256": "a9ae727d05ab72301e50b3e8ae516a1563a4d53b6e7fdd9fc0add40476d85ec7"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.153",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.153.zip",
+      "bytes": 4265658,
+      "sha256": "7eadc1e46f4e98f34a24e4d62370dac27f6d361b7b71dadcb02ad5e78143830e"
     }
   ],
   "legacy": {
@@ -122,5 +122,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.152.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.153.zip"
 }

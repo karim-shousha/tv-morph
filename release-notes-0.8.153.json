@@ -1,0 +1,23 @@
+{
+  "version": "0.8.153",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android Kids World opens the existing native fullscreen player through a guarded fixed-stream bridge instead of relying only on WebView HLS",
+    "Preserve Kids parental time identity, prayer interruption and playback controls; prevent Kids playback from invoking IPTV channel switching",
+    "Embedded player adds localized fullscreen/exit button; Back first leaves fullscreen, then closes player",
+    "Do not dismiss loading status before a video frame is available; report sustained stalls and allow retry",
+    "If native HTML HLS fails, attempt the bundled HLS/MSE engine; guard stale asynchronous callbacks",
+    "Samsung AVPlay receives updated fullscreen display rect and transparent video plane; stop/close cleanup corrected"
+  ],
+  "verification": [
+    "Actual live HLS decoded 960x540 video in desktop Edge with positive rendered frame count",
+    "Fullscreen stage fills 1920x1080; pause/mute/Back and pin persistence tested",
+    "Samsung AVPlay behavior tested with API fixtures; Android bridge and HLS failure fallback tested with fixtures",
+    "Android/LG/phone packages built and signatures verified"
+  ],
+  "limitations": [
+    "No physical Hisense or other TV available; native Android decoding and device-specific codec support remain unverified on hardware",
+    "Live provider/network availability can change",
+    "Tizen 4 remains experimental; Legacy 0.1.1 unchanged"
+  ]
+}
