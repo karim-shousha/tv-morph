@@ -1,6 +1,6 @@
 /* Morph-owned actions only. Installed application logos remain authoritative. */
 (function(w){'use strict';
- var paths={performance:'<path d="M4 18a9 9 0 1 1 16 0M12 12l5-5"/><circle cx="12" cy="12" r="2"/>',family:'<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 6"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',settings:'<path d="M4 7h16M4 17h16M8 4v6M16 14v6"/>',search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
+ var paths={iptv:'<rect x="3" y="4" width="18" height="13" rx="3"/><path d="M8 21h8M12 17v4"/><path d="m10 7 5 3.5-5 3.5Z"/>',radio:'<rect x="3" y="7" width="18" height="14" rx="3"/><path d="M5 7 18 3M14 12h4M14 16h4"/><circle cx="8" cy="14" r="2.5"/>',kids:'<rect x="3" y="5" width="18" height="14" rx="4"/><path d="m8 2 4 3 4-3M8 13q4 4 8 0M8 22h8"/><path d="M8 9h.01M16 9h.01"/>',performance:'<path d="M4 18a9 9 0 1 1 16 0M12 12l5-5"/><circle cx="12" cy="12" r="2"/>',family:'<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 6"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',settings:'<path d="M4 7h16M4 17h16M8 4v6M16 14v6"/>',search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
   fitness:'<path d="M6 5v14M3 8v8M18 5v14M21 8v8M6 12h12"/>',
   prayer:'<path d="M18 3a9 9 0 1 0 3 14A8 8 0 0 1 18 3Z"/>',
   inputs:'<rect x="3" y="4" width="18" height="13" rx="3"/><path d="M8 21h8M12 17v4"/>',

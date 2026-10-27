@@ -4,7 +4,7 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme]:after{display:none!impo
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header{position:absolute;left:40px;right:40px;top:24px;height:82px;z-index:20;display:flex;align-items:center;direction:ltr}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand{font-size:29px;min-width:200px;max-width:220px;flex-shrink:0;letter-spacing:-1px;margin-right:22px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img:not(#personal-brand){width:62px!important;height:52px!important;margin-right:8px!important}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav{display:flex;align-items:center;flex:1 1 auto;min-width:0;max-width:1090px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:none;margin:0 18px 0 0;padding:6px;border-radius:40px;background:var(--ui-dock-bg);border:1px solid var(--ui-dock-border);height:68px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav{display:flex;align-items:center;flex:0 1 auto;min-width:0;max-width:1090px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:none;margin:0 18px 0 0;padding:6px;border-radius:40px;background:var(--ui-dock-bg);border:1px solid var(--ui-dock-border);height:68px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav::-webkit-scrollbar{display:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav{flex:0 0 auto;min-height:48px;margin:0 1px!important;padding:10px 15px!important;font-size:20px;border-radius:28px;line-height:26px;background:transparent;color:var(--ui-text);white-space:nowrap}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav.active{background:var(--ui-button-gradient)!important;color:var(--ui-bg)!important;box-shadow:0 0 18px var(--ui-focus-glow)}
@@ -84,11 +84,11 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-p
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer small{font-size:20px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer strong{font-size:25px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer time{font-size:39px}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] #home-usb-rail{left:178px;right:45px;bottom:438px;max-height:96px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #home-usb-rail{left:178px;right:45px;bottom:472px;max-height:56px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .cinema-credit,body[data-ui-mode=modern][data-ui-home=true][data-theme] main>footer{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .ui-sidebar-icon{display:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=full] #favourites.app-dock{backdrop-filter:none;-webkit-backdrop-filter:none}
-body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus,body[data-ui-mode=modern][data-ui-home=true][data-theme].light-mode #view-home #favourites.app-dock>button:focus{transform:none!important;box-shadow:none!important;outline:3px solid var(--ui-focus-ring)!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus,body[data-ui-mode=modern][data-ui-home=true][data-theme].light-mode #view-home #favourites.app-dock>button:focus{transform:none!important;box-shadow:none!important;outline:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home .dock-reflection{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home .recent-app-card:focus{transform:none!important;box-shadow:none!important}
 html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy{direction:rtl;text-align:right!important}
@@ -113,7 +113,7 @@ body[data-ui-mode=modern][data-ui-home=true] .hero-slide-dot{width:22px;height:1
 body[data-ui-mode=modern][data-ui-home=true] .hero-slide-dot:after{content:"";position:absolute;left:0;right:0;top:7px;height:4px;border-radius:4px;background:var(--ui-text-muted);opacity:.4}
 body[data-ui-mode=modern][data-ui-home=true] .hero-slide-dot[aria-current=true]:after{opacity:1;background:var(--ui-neon-a);box-shadow:0 0 9px var(--ui-neon-halo)}
 body[data-ui-mode=modern][data-ui-home=true] .hero-slide-dot:focus{outline:2px solid var(--ui-focus-ring);outline-offset:3px}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus>.app-icon,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus>.plus-icon{background:transparent!important;border-color:transparent!important;box-shadow:none!important;z-index:1;transform:translateY(5px) scale(1.08);border-radius:32%}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus .favourite-top>.app-icon,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus>.app-icon,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus>.plus-icon{background:transparent!important;border-color:transparent!important;box-shadow:none!important;z-index:1;transform:translateY(5px) scale(1.08);border-radius:32%}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{display:block!important;content:"";position:absolute;left:8px;right:8px;top:9px;height:110px;border-radius:32%;pointer-events:none;background:repeating-radial-gradient(ellipse at 120% -20%,transparent 0,transparent 13px,var(--ui-focus-surface-a) 14px,transparent 16px);transform:skewX(7deg);opacity:.7}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .youtube{--ui-icon-light:var(--ui-focus-surface-b)}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .youtube>svg{background:#ff1029;border-radius:13px;padding:8px;width:64px;height:46px;box-sizing:border-box}
@@ -126,3 +126,20 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] 
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus:after{display:none!important}
 
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus):before,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus):after{display:none!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button h3,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button>.app-name{bottom:auto!important;min-height:0!important;height:auto!important;top:149px;line-height:1.25;max-height:2.6em}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{border:0!important;outline:0!important;box-shadow:none!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{display:flex!important;flex-direction:column;align-items:flex-start;gap:0;grid-gap:0;width:290px;min-height:0;height:auto;padding:18px 20px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>small{display:block;width:100%;margin:0 0 8px;font-size:20px;line-height:1.35}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>strong{display:block;width:100%;font-size:24px;line-height:1.35;margin:0 0 5px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-at{display:block;width:100%;font-size:34px;line-height:1.3;letter-spacing:0;margin:0;white-space:nowrap}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining-label{display:block;width:100%;font-size:18px;line-height:1.4;margin:12px 0 2px;padding:10px 0 0;border-top:1px solid var(--ui-card-border)}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining{display:block;width:100%;font-size:29px;line-height:1.3;letter-spacing:0;margin:0;padding:0;border:0;white-space:nowrap}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-icon{box-sizing:border-box;overflow:hidden}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-icon>img{width:68%;height:68%;max-width:68%;max-height:68%;object-fit:contain;border-radius:18%;display:block}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .official-youtube>svg{background:none;padding:0;border-radius:0;width:64px;height:48px}
+body[data-ui-mode=modern] .ui-owned-app{color:var(--ui-neon-a,var(--ui-accent))}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app>svg{width:57px;height:57px}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #favourites>button:focus .ui-owned-app{color:var(--ui-text)}

@@ -3,7 +3,7 @@ import com.jcraft.jsch.*;
 import java.io.*;import java.net.*;import java.nio.charset.StandardCharsets;import java.security.*;import java.util.*;import org.json.*;
 /** Developer Mode transport matching @webos-tools/cli, fixed package only. No root or launch. */
 final class LgInstallProtocol {
- static final String APP="com.zainbot.morphtv.preview",VERSION="0.8.151",SHA="844f7626dd1c485a420bb65df5dcfb75ecc9ea297fbc9710ac10c684104f8c35";
+ static final String APP="com.zainbot.morphtv.preview",VERSION="0.8.152",SHA="af5b1860afdae25ed51238b3920035760e9c1c3ada62340792ce7a196015f90c";
  interface Trust {boolean accept(String fingerprint);}
  interface Progress {void update(String text);}
  static boolean local(String ip){try{String[] parts=ip.split("\\.");if(parts.length!=4)return false;int[] n=new int[4];for(int i=0;i<4;i++){if(!parts[i].matches("[0-9]{1,3}"))return false;n[i]=Integer.parseInt(parts[i]);if(n[i]>255)return false;}return n[0]==10||n[0]==192&&n[1]==168||n[0]==172&&n[1]>=16&&n[1]<=31;}catch(Exception e){return false;}}
