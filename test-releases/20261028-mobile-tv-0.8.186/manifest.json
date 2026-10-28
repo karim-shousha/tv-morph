@@ -1,0 +1,83 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.186",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.186-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.186-tester",
+      "versionCode": 198,
+      "bytes": 35975746,
+      "sha256": "a6dd4d4bb4a28261e6db4aeb6c874f5c7d5a389191bf7ee5a2be3f2a69ca5d57",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.186/Morph-TV-Mobile-3.0-0.8.186-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.186-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.186-preview",
+      "versionCode": 186,
+      "bytes": 12133626,
+      "sha256": "b360cddbbc85b14200f17c214dcd221fb14bce53219bd1f16dac988a9045731d",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.186/Morph-TV-Android-TV-0.8.186-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.186-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.186",
+      "versionCode": null,
+      "bytes": 7233708,
+      "sha256": "a71a6a25efcc60bfa32e3737b150e0204b5bb7181d5d76ababd113a233a76847",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.186/Morph-TV-LG-0.8.186-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.186-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.186",
+      "versionCode": null,
+      "bytes": 7310357,
+      "sha256": "fdf9072a15bfb89d5313391ce5550a3e78412e01628bc61835294e611407eba5",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.186/Morph-TV-Samsung-0.8.186-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.186-test.zip",
+      "version": "0.8.186",
+      "bytes": 7288731,
+      "sha256": "2c26e45bcc4b2da58793271d60729ee68bd88c787b1994cc899f6fd77922817b",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.186/Morph-TV-Samsung-Computer-0.8.186-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "nativeAndroidEmulatorMultiView": true,
+    "multiViewRealFramesRendered": 4,
+    "packMigrationCases": [
+      "old-free",
+      "legacy-plus",
+      "corrupt-free"
+    ],
+    "freeIslamicThemes": 3,
+    "phoneAndTVGalleryTested": true,
+    "physicalTVVerified": false,
+    "realIPTVProviderVerified": false,
+    "kidsyNativeEmulatorFrames": true
+  },
+  "changes": [
+    "Kidsy: Android phone/TV uses existing Media3 with bounded 8MB live buffering; verified actual H264 frames on emulator and release on exit. HTML player detects audio-only startup and tries its existing HLS fallback. Samsung native video clears every artwork layer.",
+    "Fix external Android app launches: preserve NEW_TASK and RESET_TASK_IF_NEEDED and use startActivity, so task-root splash checks can reach the main screen. Oscar TV report not yet verified on physical TCL.",
+    "Native IPTV multi-view on Android TV/Google TV and Android phone: up to four independent players, 2x2/two/large+three layouts, one audio source or mute all; channel chooser uses current subscription.",
+    "On Android emulator: four local test videos actually rendered, channel chooser, selected audio/mute, hidden-player release and exit cleanup verified. Physical TVs/provider concurrency remain unverified.",
+    "Remove Morph Sports section, dock shortcut and unused Sports artwork from packages; remove public Sports backend routes.",
+    "Fitness sidebar shortcut defaults hidden; optional toggle in existing Home and apps settings category, preserving workout history and Plus behavior.",
+    "Light preset keeps icon/focus animations on while blur and shadows remain off. Independent motion-off switch is retained.",
+    "Theme-aware curved/striped dock focus uses the sidebar visual language. Radio and HDMI use matching glass shells with distinct glyph colors.",
+    "Multi-view is hidden on Samsung/LG; this release does not claim four-stream playback on these platforms.",
+    "Remove redundant Back to Settings buttons; remote Back returns to settings categories.",
+    "Fix World clubs mixed-pack routing: Madrid/Barcelona stay free, Miami assets use the authenticated Plus endpoint. Verify and reuse older cached images and legacy Miami packs; repair only missing/corrupt assets.",
+    "Three bundled free Islamic themes in their own category on TV and phone: Makkah, Madinah and Jerusalem. Supplied images converted to WebP with full-frame fit and CSS gradient blending."
+  ]
+}

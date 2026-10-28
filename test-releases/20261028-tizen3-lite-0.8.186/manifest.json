@@ -1,0 +1,64 @@
+{
+  "version": "0.8.186-tizen3.1",
+  "appId": "MorphT3001.Home",
+  "target": "Tizen 3.0 / Chromium 47",
+  "physicalTVVerified": false,
+  "bytes": 7363698,
+  "sha256": "3d87fae1daf38b473191c0258e6b3d4d990b8e2076a33d4ea5277c31db1e0399",
+  "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\mobile-app\\build\\assets\\tv-app.zip",
+  "javascriptTarget": "chrome47",
+  "defaults": "fixed artwork, no blur/glow/animation, modest focus scale",
+  "dependencies": {
+    "core-js": "3.39.0",
+    "css-vars-ponyfill": "2.4.9",
+    "whatwg-fetch": "3.6.20"
+  },
+  "browser": {
+    "actualOldEngine": false,
+    "cases": [
+      {
+        "language": "en",
+        "result": "PASS",
+        "polyfills": true,
+        "launch": true,
+        "settingsBack": true,
+        "theme": true
+      },
+      {
+        "language": "ar",
+        "result": "PASS",
+        "polyfills": true,
+        "launch": true,
+        "settingsBack": true,
+        "theme": true
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "file": "Install-Tizen3.ps1",
+      "bytes": 2058,
+      "sha256": "68fe7fa8bdd3044e6a057838527d9ab422b3bb05105abfd941437c3cba0c45da"
+    },
+    {
+      "file": "Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt",
+      "bytes": 7385127,
+      "sha256": "96bc72491a733e406bdf55f246ccbd770eb31f20445b7a331cfd275669127e84"
+    },
+    {
+      "file": "Morph-TV-Tizen3-Lite-0.8.186-candidate.zip",
+      "bytes": 7363698,
+      "sha256": "3d87fae1daf38b473191c0258e6b3d4d990b8e2076a33d4ea5277c31db1e0399"
+    },
+    {
+      "file": "Morph-TV-Tizen3-Lite-Computer-0.8.186.zip",
+      "bytes": 7358128,
+      "sha256": "2e3295c618b0fc59513225189f117fc25c7d34c98378521904d19fe966dd6b31"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3536,
+      "sha256": "63a6a3c04a9e4bbad3df43d46f03eb3e710382b586dd1b55a2d2fb6f492e5c4f"
+    }
+  ]
+}

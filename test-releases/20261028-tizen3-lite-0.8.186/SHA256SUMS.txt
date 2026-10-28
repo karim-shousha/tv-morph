@@ -1,0 +1,5 @@
+68fe7fa8bdd3044e6a057838527d9ab422b3bb05105abfd941437c3cba0c45da  Install-Tizen3.ps1
+96bc72491a733e406bdf55f246ccbd770eb31f20445b7a331cfd275669127e84  Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt
+3d87fae1daf38b473191c0258e6b3d4d990b8e2076a33d4ea5277c31db1e0399  Morph-TV-Tizen3-Lite-0.8.186-candidate.zip
+2e3295c618b0fc59513225189f117fc25c7d34c98378521904d19fe966dd6b31  Morph-TV-Tizen3-Lite-Computer-0.8.186.zip
+63a6a3c04a9e4bbad3df43d46f03eb3e710382b586dd1b55a2d2fb6f492e5c4f  README.md

@@ -366,3 +366,9 @@
 
 !test-releases/20261028-mobile-tv-0.8.185/
 !test-releases/20261028-mobile-tv-0.8.185/**
+
+!test-releases/20261028-mobile-tv-0.8.186/
+!test-releases/20261028-mobile-tv-0.8.186/**
+
+!test-releases/20261028-tizen3-lite-0.8.186/
+!test-releases/20261028-tizen3-lite-0.8.186/**
