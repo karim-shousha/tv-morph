@@ -1,0 +1,20 @@
+{
+  "version": "0.8.160",
+  "changes": [
+    "IPTV first-row Up stops on Title order in live/movie/series; explicit control-row routes preserve access to search, view and tiles",
+    "Remote-friendly order picker: OK opens four existing catalog orders, Up/Down selects, OK applies, Back cancels and restores focus",
+    "Radio Black screen button hides visual content with a static opaque black surface while leaving native/web audio untouched",
+    "Pause visual animations in black screen mode, without timers or animation loops; first remote key or pointer tap restores UI without activating playback controls",
+    "Android Back and phone remote commands wake the radio screen first"
+  ],
+  "validation": [
+    "720p browser fixture: live/movie/series Up reaches order, OK opens, Up/Down stays in picker, Back restores focus, Down returns to content",
+    "Four full-catalog sort orders still persist and reset pagination; unified sidebar and one-time refresh prompt regressions pass",
+    "Radio 720p Light /1080p Full: opaque black, animations paused or disabled, unchanged audio bridge calls/state, physical/phone/pointer wake consumed",
+    "Native Android and phone packages compiled; signatures and exact embedded TV payload hashes verified"
+  ],
+  "limitations": [
+    "No physical TV available; this hides the image, not the TV panel backlight or TV power",
+    "Power/sleep buttons remain system-controlled and may stop audio; black screen is an in-app radio option"
+  ]
+}
