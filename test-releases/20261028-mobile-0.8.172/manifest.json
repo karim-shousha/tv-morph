@@ -1,0 +1,89 @@
+{
+  "channel": "manual-test",
+  "scope": "phone-ui-fixes",
+  "version": "0.8.172",
+  "mobileExperience": "3.0",
+  "artifact": {
+    "version": "0.8.172-tester",
+    "versionCode": 184,
+    "package": "local.cleartv.mobile",
+    "bytes": 23636999,
+    "sha256": "5a30869badaaa2f42cc014c97e7f5b522e093d3799dc94a06af3365f14467497",
+    "certificateSha256": "47cc6e1a0c9242e3c5bbc5a16b4d64c353ee5e8ef060b802459fbf0e74909fd8",
+    "embeddedTVVersion": "0.8.171",
+    "tvPayloadsUnchanged": true,
+    "sourcesExact": true,
+    "file": "Morph-TV-Mobile-3.0-0.8.172-test.apk",
+    "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-0.8.172/Morph-TV-Mobile-3.0-0.8.172-test.apk"
+  },
+  "tvVersion": "0.8.171",
+  "tvBuildsChanged": false,
+  "tvArtifacts": [
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.171-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.171-preview",
+      "versionCode": 172,
+      "bytes": 9138323,
+      "sha256": "7fcead9c753a0de1c814b688a7ac90ca6cf099c4872cb0743162cc0070659870",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Android-TV-0.8.171-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.171-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4243988,
+      "sha256": "94139ec0bb33e41647503e353aa4c82445a4d45ace134d4e580c9c764a014c95",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-LG-0.8.171-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.171-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4305116,
+      "sha256": "96a7b09a1bafad4f7faf8cd298ac7062cea1cb40607c32682dbbdb977615efe1",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Samsung-0.8.171-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.171-test.zip",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4286083,
+      "sha256": "b36e1e2c0fafbbee2ce7dedac0aa129bf09ef8ee68220ad215127da58fea5350",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Samsung-Computer-0.8.171-test.zip"
+    }
+  ],
+  "changes": [
+    "Readable consistent light/dark surfaces and compact mobile layouts.",
+    "Home opens first; Design starts with the preview and open theme library.",
+    "Apply remains visible above the bottom navigation while designing.",
+    "Settings has a close button, keyboard focus containment and hidden closed state.",
+    "Back consumes busy/error/Plus dialogs first; onboarding is a single dismissible flow.",
+    "Preview fits 320px phones; legacy navigation callbacks use the current navigation controller."
+  ],
+  "validation": {
+    "screenCases": 48,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "appearances": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      320,
+      390,
+      412
+    ],
+    "existingSuites": 12,
+    "transport": "mocked, no physical phone/TV claim"
+  }
+}

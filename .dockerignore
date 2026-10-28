@@ -321,3 +321,6 @@
 !test-releases/
 !test-releases/20261028-opencode-6adfc59b33b9/
 !test-releases/20261028-opencode-6adfc59b33b9/**
+
+!test-releases/20261028-mobile-0.8.172/
+!test-releases/20261028-mobile-0.8.172/**

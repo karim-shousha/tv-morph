@@ -37,3 +37,5 @@ COPY Morph-TV-Samsung-Tizen4-Computer-0.8.170.zip /usr/share/nginx/html/
 
 # Isolated manual test downloads; production routes/manifests unchanged.
 COPY test-releases/20261028-opencode-6adfc59b33b9/ /usr/share/nginx/html/test-releases/20261028-opencode-6adfc59b33b9/
+
+COPY test-releases/20261028-mobile-0.8.172/ /usr/share/nginx/html/test-releases/20261028-mobile-0.8.172/
