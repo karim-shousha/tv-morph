@@ -1,0 +1,23 @@
+{
+  "version": "0.8.164",
+  "changes": [
+    "Shared Android/phone Xtream playback respects provider VOD metadata container_extension instead of always trusting the catalog MP4 fallback",
+    "Use validated provider direct_source URLs privately for movies and episodes, retaining signed queries and relative provider routes",
+    "Resolve episode source/extension from series metadata when playing from history, including info-level container_extension",
+    "Bound private source hints to 512 entries and five-minute expiry; clear with provider metadata, never expose source URLs/credentials to web UI",
+    "Normalize dotted/uppercase extensions and reject empty/null/undefined container hints; keep M3U route behavior and live container switching",
+    "Allow 45 seconds for VOD/episode preparation instead of 20; live stays 20 seconds, no unbounded retries",
+    "Includes previous compact controls, buffering diagnostics, app updates, large theme packs and connection recovery"
+  ],
+  "validation": [
+    "JVM executes actual Xtream and credential code using seeded provider metadata: MKV override, direct/signed/relative URLs, null fallback, episode metadata, history re-resolution and no URLs projected to UI",
+    "Pure provider hint tests: cache expiry, kind separation, valid signed sources and invalid schemes/userinfo rejected",
+    "Android/phone compilation, signing, embedded TV payload hashes and release checksums verified"
+  ],
+  "limitations": [
+    "No affected customer stream or physical device available; reported -110/-1005 failures still require customer confirmation",
+    "Native Android playback remains Android MediaPlayer; ExoPlayer/VLC are not embedded by this release",
+    "XCIPTV screenshots show ExoPlayer selected for Live and VLC selected for VOD/Series; per-kind embedded engines remain a separate integration",
+    "Samsung Tizen 4 computer package remains experimental; Samsung UA55K6500 from the older Tizen 2.4 generation is not supported by current packages"
+  ]
+}
