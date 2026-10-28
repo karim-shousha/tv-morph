@@ -331,3 +331,6 @@
 !test-releases/20261028-mobile-0.8.174/
 !test-releases/20261028-mobile-0.8.174/**
 !test-releases/mobile-latest.json
+
+!test-releases/20261028-mobile-tv-0.8.175/
+!test-releases/20261028-mobile-tv-0.8.175/**

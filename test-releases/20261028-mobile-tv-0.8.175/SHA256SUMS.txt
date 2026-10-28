@@ -1,0 +1,5 @@
+cefa92bdf8c38653367f8fec1cccbb69d983e5be0481591e525f5884cec76387  Morph-TV-Mobile-3.0-0.8.175-test.apk
+6d41e62c34207f53d3c02502ae8d9bdc02e99feccf72396658fc0cf4e0cff135  Morph-TV-Android-TV-0.8.175-test.apk
+b48ac25d0f93c1748aaa0b9040bd7541f17e50d1c3f8d033fe2b69e49420c54e  Morph-TV-LG-0.8.175-test.ipk
+ef16e2341f230733b1b06cb4f7bba59ee57a81ba65ce65329ee32527b976a50d  Morph-TV-Samsung-0.8.175-test.wgt
+49d259d5038d3fdc19f57cf31718a3fdea4e2a3698c8c90bb1afd3dcf1c7809c  Morph-TV-Samsung-Computer-0.8.175-test.zip
