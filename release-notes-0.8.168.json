@@ -1,0 +1,27 @@
+{
+  "version": "0.8.168",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Sidebar Continue Watching now opens the most recent unfinished episode/movie detail directly, with inline episodes and saved position, instead of replacing the section with a resume-poster grid",
+    "Keep Continue detail and current episode on player return; Back restores the originating sidebar control",
+    "Keep focus on the clicked sidebar filter, including Recently added and Favorites, rather than forcing All content",
+    "TV season selector uses a remote-friendly picker: Up returns to detail actions, Down reaches episodes, and Back closes only the picker",
+    "Center and contain complete poster artwork in catalog cards and detail/episode images",
+    "Use compact channel-specific rows for live grids, centered logo/fallback content, and actual column count for remote Up/Down movement",
+    "Reuse known same-profile channel artwork across category and All content results, including cached category pages, when the all-content row omits or fails its logo",
+    "Android/Google TV/Fire TV list view automatically starts a muted native preview after 700 ms focus dwell; rapid focus changes are coalesced and never recorded as viewing history",
+    "Stop/release preview when leaving the channel area, changing view, opening overlays, pausing/destroying IPTV, or opening full-screen playback",
+    "Consume one-shot IPTV launch intents and restore Home warm state so Activity recreation does not replay IPTV launch or show the startup cover again"
+  ],
+  "validation": [
+    "1280x720 English and 1920x1080 Arabic shared UI: sidebar Continue, exact episode, saved position, player return, season Up/options/Back, filter focus, image fit, same-ID category/all logo fallback and four-column navigation",
+    "Shared TV and phone favorite isolation and episode/navigation regression checks",
+    "Android 13 emulator: actual native live preview video playback, stale request suppression, one preview surface, stop/exit release, retained Home WebView, consumed launch intent and warm Home recreation",
+    "Signed TV/phone APKs retain signing identity, include all DEX files, match embedded LG/Samsung packages and pass release hash checks"
+  ],
+  "limitations": [
+    "No access to the customer provider account or physical Hisense TV; cannot confirm which individual provider logo URLs are valid",
+    "Automatic native video preview is implemented for Android TV / Google TV / Fire TV list mode; Samsung/LG retain their existing artwork preview",
+    "Preview availability depends on provider format, device decoding and provider connection limits; preview is muted and full-screen OK remains available"
+  ]
+}
