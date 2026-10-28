@@ -1,0 +1,22 @@
+{
+  "version": "0.8.166",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Android TV / Google TV / Fire TV and phone VOD/episodes now default to Media3 ExoPlayer 1.9.3, with progressive MP4/MKV, HLS and DASH modules",
+    "Forward buffering targets 20–60 seconds, starts after 3 seconds, resumes rebuffering after 6 seconds, and is bounded by 16 or 32 MiB based on device memory",
+    "Use Media3 HTTP loading and bounded retry policy to continue interrupted transfers with byte-range requests; enable decoder fallback",
+    "Preserve the existing remote/touch controls, 10-second and held seeking, episode/movie navigation, resume, video sizing, audio tracks and subtitles",
+    "Expose Media3 / system compatibility player selection in the native Size menu; retain live TV, kids, Samsung and LG playback engines",
+    "Include all dex files and pinned, hash-verified playback libraries with their generated resources and third-party notices"
+  ],
+  "validation": [
+    "Signed TV and phone APK builds; previous signing identity retained",
+    "Android 13 emulator: actual video and audio output, forward buffer, multiple tracks, HTTP 503 retries, interrupted progressive transfer recovery, seek/pause/rate/resume and HLS",
+    "TV/phone inline episode and navigation regression tests"
+  ],
+  "limitations": [
+    "No access to the customer Hisense Google TV or the reported provider stream; on-device reproduction is still required",
+    "ExoPlayer uses device decoders; this does not guarantee support for every provider codec or eliminate provider/network outages",
+    "Samsung, LG and Android Legacy do not gain the Media3 engine"
+  ]
+}
