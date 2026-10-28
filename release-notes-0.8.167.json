@@ -1,0 +1,22 @@
+{
+  "version": "0.8.167",
+  "legacyVersion": "0.1.1",
+  "changes": [
+    "Continue Watching on IPTV Home opens the last watched movie or exact episode detail screen, with its saved position and inline episode list; live shortcuts retain direct playback",
+    "Favorites are available only inside each content section; remove the mixed Home Favorites card, global navigation button and cross-section favorites switcher",
+    "Movie favorites show only movies, live favorites show only channels, and series favorites show only series",
+    "Represent saved episodes by their parent series in series favorites; deduplicate old episode entries and existing series entries without deleting stored personal data",
+    "Adding/removing favorite from episode details affects its parent series consistently; keep section scope when opening favorites from an episode list",
+    "Preserve Media3 buffered playback, existing user/account storage, vertical episode list and remote navigation"
+  ],
+  "validation": [
+    "Shared UI tested at 1280x720 English TV, 1920x1080 Arabic TV and 800x400 phone",
+    "Continue opens episode S01E08 details with saved 22:10 position and no autoplay; Resume sends the exact episode ID",
+    "Mixed saved fixtures with identical IDs in different kinds, duplicate legacy episodes, favorite toggle, section isolation and preserved raw orphan records",
+    "Episode/player-return and movie navigation regressions; sorting/pagination/one-time-prompt/remote sidebar regressions",
+    "Signed APK identity, current embedded UI assets, matching embedded LG/Samsung payloads and release checksums"
+  ],
+  "limitations": [
+    "UI tests use fixture data; no physical TV verification of this release"
+  ]
+}

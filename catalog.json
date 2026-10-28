@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.166",
+  "latest": "0.8.167",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.166",
+      "version": "0.8.167",
       "download": "/download/phone",
-      "noteAr": "مشغّل Media3 للأفلام والحلقات مع بافر محدود واستكمال تحميل البيانات بعد الانقطاع. يلزم تجربة البث على جهازك.",
-      "noteEn": "Media3 movie/episode playback with bounded forward buffering and interrupted-transfer recovery. Verify your provider on the device."
+      "noteAr": "استكمال المشاهدة يفتح تفاصيل الحلقة الحالية مباشرة، والمفضلة منفصلة داخل كل قسم بدون قائمة مجمعة.",
+      "noteEn": "Continue Watching opens the current episode details; Favorites are isolated inside Live, Movies and Series."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.166",
+      "version": "0.8.167",
       "download": "/download/android",
-      "noteAr": "مشغّل Media3 للأفلام والحلقات مع بافر محدود واستكمال تحميل البيانات بعد الانقطاع. يلزم تجربة البث على جهازك.",
-      "noteEn": "Media3 movie/episode playback with bounded forward buffering and interrupted-transfer recovery. Verify your provider on the device.",
+      "noteAr": "استكمال المشاهدة يفتح تفاصيل الحلقة الحالية مباشرة، والمفضلة منفصلة داخل كل قسم بدون قائمة مجمعة.",
+      "noteEn": "Continue Watching opens the current episode details; Favorites are isolated inside Live, Movies and Series.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.166",
+      "version": "0.8.167",
       "download": "/download/firetv",
-      "noteAr": "مشغّل Media3 للأفلام والحلقات مع بافر محدود واستكمال تحميل البيانات بعد الانقطاع. يلزم تجربة البث على جهازك.",
-      "noteEn": "Media3 movie/episode playback with bounded forward buffering and interrupted-transfer recovery. Verify your provider on the device."
+      "noteAr": "استكمال المشاهدة يفتح تفاصيل الحلقة الحالية مباشرة، والمفضلة منفصلة داخل كل قسم بدون قائمة مجمعة.",
+      "noteEn": "Continue Watching opens the current episode details; Favorites are isolated inside Live, Movies and Series."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "قائمة حلقات رأسية والرجوع للحلقة الحالية والتنقل بين الحلقات والأفلام. يحتفظ بمشغل المنصة.",
-      "noteEn": "Vertical episode lists, current episode restoration and movie/episode navigation; retains the platform player.",
+      "noteAr": "استكمال المشاهدة يفتح تفاصيل الحلقة الحالية مباشرة، والمفضلة منفصلة داخل كل قسم بدون قائمة مجمعة.",
+      "noteEn": "Continue Watching opens the current episode details; Favorites are isolated inside Live, Movies and Series.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.166",
+      "version": "0.8.167",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.166.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.167.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.166.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.167.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "قائمة حلقات رأسية والرجوع للحلقة الحالية والتنقل بين الحلقات والأفلام. يحتفظ بمشغل المنصة.",
-      "noteEn": "Vertical episode lists, current episode restoration and movie/episode navigation; retains the platform player.",
-      "version": "0.8.166",
+      "noteAr": "استكمال المشاهدة يفتح تفاصيل الحلقة الحالية مباشرة، والمفضلة منفصلة داخل كل قسم بدون قائمة مجمعة.",
+      "noteEn": "Continue Watching opens the current episode details; Favorites are isolated inside Live, Movies and Series.",
+      "version": "0.8.167",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -71,22 +71,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.166",
-      "file": "Morph-TV-Phone-0.8.166.apk",
+      "name": "Morph-TV-Phone-0.8.167",
+      "file": "Morph-TV-Phone-0.8.167.apk",
       "bytes": 23550777,
-      "sha256": "43a07d3ebaad12cec33bfea52c12d9cb1afb8015be99dab688d7c79544dd9241"
+      "sha256": "5f1c9cd8daa1564e4fac7793460a13a5967ca22a9e10b321a035a1a8f4f83ea6"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.166",
-      "file": "Morph-TV-Android-TV-0.8.166.apk",
+      "name": "Morph-TV-Android-TV-0.8.167",
+      "file": "Morph-TV-Android-TV-0.8.167.apk",
       "bytes": 9097154,
-      "sha256": "7250f63dfbf9eb5775812d735f847a6b5d6e423b28e34b6cd976706411fb01eb"
+      "sha256": "a232261110c5ac7681326f485cbf1deab45cf2f2b4e0e089d7a07893b3acacae"
     },
     {
-      "name": "Morph-TV-LG-0.8.166",
-      "file": "Morph-TV-LG-0.8.166.ipk",
-      "bytes": 4238692,
-      "sha256": "18423803487bde1663575bd69cfa2516911d5149bd29fb352197942be7f5b675"
+      "name": "Morph-TV-LG-0.8.167",
+      "file": "Morph-TV-LG-0.8.167.ipk",
+      "bytes": 4238498,
+      "sha256": "225a78e8d09940a7252141184cb6ca28cd8afed564677e438c54c0c6ab663b91"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -95,22 +95,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.166",
-      "file": "Morph-TV-Samsung-Computer-0.8.166.zip",
-      "bytes": 4279241,
-      "sha256": "5dc50428c2772690c1071e8aa07080521501e9bf5c0a65bfd53a6baf5b8ce0ba"
+      "name": "Morph-TV-Samsung-Computer-0.8.167",
+      "file": "Morph-TV-Samsung-Computer-0.8.167.zip",
+      "bytes": 4279046,
+      "sha256": "e3f002f69d24d851e8910aacf5647fb44a7c3b35edd92b5196a44c17d1a073a9"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.166",
-      "file": "Morph-TV-Install-Kit-0.8.166.zip",
-      "bytes": 17334394,
-      "sha256": "0f0befc53445f0a93c033e32a9b3af847404be4e89f57513034f42ca8cb7cd4e"
+      "name": "Morph-TV-Install-Kit-0.8.167",
+      "file": "Morph-TV-Install-Kit-0.8.167.zip",
+      "bytes": 17333820,
+      "sha256": "114837597754777699be2d92396fff73b2789add9d10a376853dcbc3ebfeca4b"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.166",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.166.zip",
-      "bytes": 4279119,
-      "sha256": "5e3fec9a3395a228247087922b93123f01c4cc3128e55d01ea9c1e9c7ffa0619"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.167",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.167.zip",
+      "bytes": 4278924,
+      "sha256": "6eb62528f457ecb877fa7ae4301e594d5e0c790c89d72cfc462419a1d3b212bf"
     }
   ],
   "legacy": {
@@ -123,5 +123,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.166.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.167.zip"
 }
