@@ -7,12 +7,14 @@
     "Bound private source hints to 512 entries and five-minute expiry; clear with provider metadata, never expose source URLs/credentials to web UI",
     "Normalize dotted/uppercase extensions and reject empty/null/undefined container hints; keep M3U route behavior and live container switching",
     "Allow 45 seconds for VOD/episode preparation instead of 20; live stays 20 seconds, no unbounded retries",
-    "Includes previous compact controls, buffering diagnostics, app updates, large theme packs and connection recovery"
+    "Includes previous compact controls, buffering diagnostics, app updates, large theme packs and connection recovery",
+    "Authoritative provider hints replace old source values, including removal of an expired/withdrawn direct source"
   ],
   "validation": [
     "JVM executes actual Xtream and credential code using seeded provider metadata: MKV override, direct/signed/relative URLs, null fallback, episode metadata, history re-resolution and no URLs projected to UI",
     "Pure provider hint tests: cache expiry, kind separation, valid signed sources and invalid schemes/userinfo rejected",
-    "Android/phone compilation, signing, embedded TV payload hashes and release checksums verified"
+    "Android/phone compilation, signing, embedded TV payload hashes and release checksums verified",
+    "Provider removal of a signed direct URL clears old hint immediately; whitespace/null/false placeholder URLs rejected"
   ],
   "limitations": [
     "No affected customer stream or physical device available; reported -110/-1005 failures still require customer confirmation",
