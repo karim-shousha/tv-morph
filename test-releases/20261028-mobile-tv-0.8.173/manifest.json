@@ -1,0 +1,73 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.173",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.173-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.173-tester",
+      "versionCode": 185,
+      "bytes": 23641095,
+      "sha256": "ab9331793735713d064b438c3251b01d92032e782672b0a0ffa906bc8fab89e7",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Mobile-3.0-0.8.173-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.173-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.173-preview",
+      "versionCode": 173,
+      "bytes": 9138323,
+      "sha256": "083442f61ad4caecd6660524ab75dc4770a4b7bfc8aaf7d0ccbc1f3dad7ab679",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Android-TV-0.8.173-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.173-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.173",
+      "versionCode": null,
+      "bytes": 4244316,
+      "sha256": "eefb3534f2788c3d1f7fc056d403985651b5a059f87c7d0b0dedf82f3d22a57d",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-LG-0.8.173-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.173-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.173",
+      "versionCode": null,
+      "bytes": 4305379,
+      "sha256": "f37ddccfce6a93ca6b5d7b2c31f7b3923a0177468daadfe68020e00604b5b1c3",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-0.8.173-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.173-test.zip",
+      "version": "0.8.173",
+      "bytes": 4285966,
+      "sha256": "0aa755be0fbaa22fd6c3fc0bc4abbcd25ba21e4b9add3b0557abd8a7dc0fb336",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-Computer-0.8.173-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "mobileScreenCases": 48,
+    "automaticFlow": true,
+    "tvHoldMenu": true,
+    "packagedPlatforms": [
+      "android",
+      "samsung",
+      "lg"
+    ],
+    "nativeTransport": "mocked; no physical device claim"
+  },
+  "changes": [
+    "Automatic discovery result step and ready connection to version/install step.",
+    "Readable connection confirmation, default dark phone appearance and visible optional Home support.",
+    "TV text-only MorphTV brand, spacious HDMI cards, distinct Kids/Radio/HDMI colors.",
+    "Remove dock shortcut from hold menu; Android uninstall system confirmation for removable apps.",
+    "Dock reflection generation and cloning removed."
+  ]
+}
