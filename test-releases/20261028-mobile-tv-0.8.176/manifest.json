@@ -9,7 +9,7 @@
       "version": "0.8.176-tester",
       "versionCode": 188,
       "bytes": 25361976,
-      "sha256": "ee50bad3e65ccb6f8e07cd6aae2cb6904eec98918ebe38699c654b73e3a77206",
+      "sha256": "37d9b67bdd3497b7fed12e5477879e40c23ca2190fbbfe3a3feaf17553da1bf0",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.176/Morph-TV-Mobile-3.0-0.8.176-test.apk"
     },
     {
@@ -19,7 +19,7 @@
       "version": "0.8.176-preview",
       "versionCode": 176,
       "bytes": 9568763,
-      "sha256": "c58ea043f30ffdd84fe8231613447011fb53f0bd614206067e4b7c459f3021c5",
+      "sha256": "46bc862920c69ffaea99f753013bd1a82faffe342bc4eb81aebc98c80a609f57",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.176/Morph-TV-Android-TV-0.8.176-test.apk"
     },
     {
@@ -28,8 +28,8 @@
       "applicationId": "com.zainbot.morphtv.preview",
       "version": "0.8.176",
       "versionCode": null,
-      "bytes": 4673446,
-      "sha256": "d545cdfa9367d9951d9908013459db2a3319a4ad68fb159ae64e8bd53311e64f",
+      "bytes": 4673540,
+      "sha256": "e4320eb9b89292b2106dc3e9b51ed669edf6db327766cdef3f5261b57d9d33a9",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.176/Morph-TV-LG-0.8.176-test.ipk"
     },
     {
@@ -38,16 +38,16 @@
       "applicationId": "ClearMob01.Home",
       "version": "0.8.176",
       "versionCode": null,
-      "bytes": 4735291,
-      "sha256": "fd0c17ef03d36b827b25c3b21876e7cb7808de2744a948de926413878f15623c",
+      "bytes": 4735563,
+      "sha256": "0dde638c922dec1c8d61c6f8a6b7c78b51191a15cf92401fee3b0c328edc93a6",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.176/Morph-TV-Samsung-0.8.176-test.wgt"
     },
     {
       "platform": "samsung-computer",
       "file": "Morph-TV-Samsung-Computer-0.8.176-test.zip",
       "version": "0.8.176",
-      "bytes": 4716197,
-      "sha256": "ae04ef03149452f21da3cd5f001b3f43f7a4598db10a2d7a715a84e0c28bdf84",
+      "bytes": 4716466,
+      "sha256": "7e0dc4b94d9b3dc5003c1761fef6b2211871c2a23d030d04e626a2842023e192",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.176/Morph-TV-Samsung-Computer-0.8.176-test.zip"
     }
   ],
@@ -62,6 +62,8 @@
     "physicalDevices": false
   },
   "changes": [
+    "Readable local-image notice and white selected Remote/Apps labels in both phone appearances.",
+    "Full provider get.php URLs recognized through Xtream on Samsung/LG, with standard M3U fallback and no account loss on failure.",
     "Fixed first Midnight artwork without automatic slideshow; repeated appearance refresh never uses a stale club image.",
     "Preserve focused channel during asynchronous catalog redraw.",
     "Readable M3U server-comma validation.",
