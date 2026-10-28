@@ -1,0 +1,25 @@
+{
+  "version": "0.8.165",
+  "changes": [
+    "Show a single vertical episode list directly below series and episode details on TV and phone, including entries opened from history/favorites",
+    "Retain seriesId and parent metadata in episode catalog/history; episode Back and player return restore episode context and the currently played page/row",
+    "Episode previous/next crosses pagination and seasons; preserve provider episode ordering and show clear first/last boundaries",
+    "Movie previous/next follows the active catalog/search/favorites/history context, including page boundaries; refresh the current movie detail on return",
+    "Expose previous/next for movies as well as episodes in Android, Samsung and LG players",
+    "Compact phone playback controls into a full-width non-scrolling row, retaining accessible full labels; Android media Next/Previous keys route by content type",
+    "Separate phone responsive episode layout from TV-specific live preview work; keep native playback engine, accounts, licensing and provider compatibility logic"
+  ],
+  "validation": [
+    "Real built UI browser fixtures on TV 1280x720 and phone landscape/portrait: episode list below episode details is one vertical column",
+    "67 episodes spanning 60-row pages and two seasons: next/previous crosses both boundaries; history opens the correct parent; return restores the current episode page instead of its cover",
+    "125 movies: next crosses a page boundary and current movie cover updates on return",
+    "Samsung/LG actual player UI functions with mocked native engines: movie Previous/Next dispatch expected IDs/directions; tap/hold seeking regressions pass",
+    "Four sort modes, persistent prompt behavior and unified sidebar regressions pass; native Xtream episode parent IDs checked",
+    "Android/phone packages compile and signatures, embedded TV payloads and release checksums match"
+  ],
+  "limitations": [
+    "No physical TV available in this run; browser/native-engine mocks do not verify physical media playback",
+    "Old saved episode entries lacking a series identifier offer a series search instead of inventing a parent ID",
+    "ExoPlayer/VLC are not newly embedded; provider-source fixes from 0.8.165 and native buffering diagnostics are retained"
+  ]
+}
