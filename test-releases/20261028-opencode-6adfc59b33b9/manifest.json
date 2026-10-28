@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "channel": "manual-test",
+  "productionChannelChanged": false,
+  "version": "0.8.171",
+  "mobileExperience": "3.0",
+  "source": {
+    "branch": "codex/perf-recovery-impl",
+    "revision": "fff41ebc52025826c894dc6de84ea8b867a9ab46",
+    "dirtyWorkingTree": true,
+    "preReleaseSourceSha256": "6adfc59b33b98e718d104732df55da8f271043a0575639373996316715908e85"
+  },
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.171-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.171-tester",
+      "versionCode": 183,
+      "bytes": 23632830,
+      "sha256": "a9f0c7a23faa60b21fcc68e723633dc9539f06eb44b46e4975e57e228d4e0ba2",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Mobile-3.0-0.8.171-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.171-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.171-preview",
+      "versionCode": 172,
+      "bytes": 9138323,
+      "sha256": "7fcead9c753a0de1c814b688a7ac90ca6cf099c4872cb0743162cc0070659870",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Android-TV-0.8.171-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.171-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4243988,
+      "sha256": "94139ec0bb33e41647503e353aa4c82445a4d45ace134d4e580c9c764a014c95",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-LG-0.8.171-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.171-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4305116,
+      "sha256": "96a7b09a1bafad4f7faf8cd298ac7062cea1cb40607c32682dbbdb977615efe1",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Samsung-0.8.171-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.171-test.zip",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.171",
+      "versionCode": null,
+      "bytes": 4286083,
+      "sha256": "b36e1e2c0fafbbee2ce7dedac0aa129bf09ef8ee68220ad215127da58fea5350",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-opencode-6adfc59b33b9/Morph-TV-Samsung-Computer-0.8.171-test.zip"
+    }
+  ],
+  "signing": {
+    "phone": {
+      "certificateSha256": "47cc6e1a0c9242e3c5bbc5a16b4d64c353ee5e8ef060b802459fbf0e74909fd8",
+      "badging": [
+        "package: name='local.cleartv.mobile' versionCode='183' versionName='0.8.171-tester' compileSdkVersion='35' compileSdkVersionCodename='15'",
+        "sdkVersion:'26'",
+        "targetSdkVersion:'30'",
+        "uses-permission: name='android.permission.INTERNET'"
+      ]
+    },
+    "android": {
+      "certificateSha256": "47cc6e1a0c9242e3c5bbc5a16b4d64c353ee5e8ef060b802459fbf0e74909fd8",
+      "badging": [
+        "package: name='local.tvmorph.tv' versionCode='172' versionName='0.8.171-preview' compileSdkVersion='35' compileSdkVersionCodename='15'",
+        "uses-permission: name='android.permission.REQUEST_DELETE_PACKAGES'",
+        "sdkVersion:'26'",
+        "targetSdkVersion:'30'"
+      ]
+    },
+    "samsung": {
+      "authorCertificateSha256": "ca4b4cd26e6f345b49041880e4bcc1ea1e610d764ebcfdaca4a9590e2b48bb3a",
+      "rsaXmlSignatures": "both cryptographically verified",
+      "matchesExistingAuthor": true
+    }
+  },
+  "validation": {
+    "tv": [
+      {
+        "suite": "check-perf-regression.cjs",
+        "exitCode": 0,
+        "tail": "PASS boot-no-pageerrors\nPASS boot-under-30s | 2833ms (desktop Chrome, file://)\nPASS dpad-up-to-nav\nPASS dpad-right-stays-dock\nPASS nav-paint-measured | p50=33.3ms p95=34.8ms (desktop Chrome)\nPASS settings-visible | 22 .setting rows\nPASS settings-clock-toggle | 24 hour -> 12 hour\nPASS settings-clock-persist\nPASS settings-clock-persist-value | 12 hour\nPASS settings-7-visible-2-hidden | {\"appearance\":true,\"performance\":true,\"home\":true,\"livetv\":true,\"prayer\":true,\"time\":true,\"system\":true,\"launcher\":false,\"iptv\":false}\nPASS settings-placement | {\"hdmi\":true,\"sys\":true,\"home\":true,\"perf\":true,\"sub\":true}\nPASS motion-label\nPASS kids-label\nPASS theme-switch\nPASS perf-tier-api | tier API present\nPASS showview-apps\nPASS dom-census | 678 nodes\nALL CHECKS PASSED\n"
+      },
+      {
+        "suite": "check-lifecycle.cjs",
+        "exitCode": 0,
+        "tail": "PASS radio-stays-hidden-idle\nPASS slideshow-builds | {\"dots\":2,\"timersOnHome\":1,\"timersOffHome\":0,\"timersBackHome\":1}\nPASS slideshow-cleared-off-home | {\"dots\":2,\"timersOnHome\":1,\"timersOffHome\":0,\"timersBackHome\":1}\nPASS slideshow-rearmed-on-home | {\"dots\":2,\"timersOnHome\":1,\"timersOffHome\":0,\"timersBackHome\":1}\nPASS programme-kick-exists\nPASS prayer-api-intact\nALL LIFECYCLE CHECKS PASSED\n"
+      },
+      {
+        "suite": "check-settings-nav.cjs",
+        "exitCode": 0,
+        "tail": "PASS category-row-reachable | settings-category-home-entry\nPASS category-drillin\nPASS panel-arrow-down | [\"setting-recent-apps\",\"setting-kids-home\",\"setting-favourites\",\"setting-favourites\"]\nPASS settings-back | settings-category-home-entry\nALL SETTINGS-NAV CHECKS PASSED\n"
+      },
+      {
+        "suite": "check-tiers.cjs",
+        "exitCode": 0,
+        "tail": "PASS migrate-full-quality | {\"tier\":\"quality\",\"light\":false,\"stored\":\"\\\"quality\\\"\"}\nPASS migrate-light-performance | {\"tier\":\"performance\",\"light\":true,\"stored\":\"\\\"performance\\\"\"}\nPASS tier-cycle | [{\"t\":\"balanced\",\"tier\":\"balanced\",\"light\":false,\"idle\":5000,\"stored\":\"\\\"balanced\\\"\"},{\"t\":\"quality\",\"tier\":\"quality\",\"light\":false,\"idle\":1000,\"stored\":\"\\\"quality\\\"\"},{\"t\":\"performance\",\"tier\":\"performance\",\"light\":true,\"idle\":10000,\"stored\":\"\\\"performance\\\"\"}]\nPASS legacy-alias | quality\nALL TIER CHECKS PASSED\n"
+      }
+    ],
+    "phone": [
+      {
+        "suite": "ui-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: auto-discovery selection, theme editor, connection gating, guides, pairing, remote/Arabic payloads and D-pad direction. Native services mocked; no physical TV tested.\n"
+      },
+      {
+        "suite": "locales-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: all five phone languages, five screens, every installation guide and dynamic connection error; RTL/LTR and screenshots.\n"
+      },
+      {
+        "suite": "connect-flow.cjs",
+        "exitCode": 0,
+        "tail": "PASS: scan → selection → Samsung setup; phone IP prominent; install routes back when not ready; English; Android hides Samsung IP; no horizontal overflow. Transport mocked.\n"
+      },
+      {
+        "suite": "appearance-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: collapsed customization, persistent appearance, light/dark layout across all tabs, readable pricing colors.\n"
+      },
+      {
+        "suite": "bright-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: light identity, crest assets, collections, upcoming categories, 360/412px layout and bilingual navigation. Preview only, no purchases.\n"
+      },
+      {
+        "suite": "editor-directions-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: Arabic RTL sliders move right for positive X, left for negative X; upload panel and LTR image count.\n"
+      },
+      {
+        "suite": "family-phone-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: phone selects viewer and loads that viewer’s draft without leaking prior custom title. Native transport mocked.\n"
+      },
+      {
+        "suite": "header-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: fixed left brand/right IP at 320/360/412px in both languages, locked viewport and twilight blue surfaces.\n"
+      },
+      {
+        "suite": "languages-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: 5-language picker, translations, switching back, persistence and no page errors.\n"
+      },
+      {
+        "suite": "library-polish.cjs",
+        "exitCode": 0,
+        "tail": "PASS: app cards/icons, search, pin filter, reorder persistence, cleanup request, real progress 62% and indeterminate reset, Arabic/English, responsive widths. Native transport mocked.\n"
+      },
+      {
+        "suite": "reconnect-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: startup stale connection banner, remote unavailable state, successful reconnect, failure disables keys and routes to reconnect. Native transport mocked.\n"
+      },
+      {
+        "suite": "morph30-check.cjs",
+        "exitCode": 0,
+        "tail": "PASS: 3.0 nav/aliases/back-stack/segments/gear/status/IP/onboarding/appearances/widths. Native mocked; no physical TV.\n"
+      }
+    ],
+    "packagedTV": [
+      {
+        "platform": "android",
+        "result": "PASS",
+        "state": {
+          "tier": "performance",
+          "settings": true,
+          "theme": "night",
+          "android": "android",
+          "samsung": false,
+          "lg": false,
+          "lgMedia": false
+        },
+        "pageErrors": []
+      },
+      {
+        "platform": "samsung",
+        "result": "PASS",
+        "state": {
+          "tier": "performance",
+          "settings": true,
+          "theme": "night",
+          "samsung": true,
+          "lg": false,
+          "lgMedia": false
+        },
+        "pageErrors": []
+      },
+      {
+        "platform": "lg",
+        "result": "PASS",
+        "state": {
+          "tier": "performance",
+          "settings": true,
+          "theme": "night",
+          "samsung": false,
+          "lg": true,
+          "lgMedia": true
+        },
+        "pageErrors": []
+      }
+    ]
+  },
+  "limitations": [
+    "No physical TV/phone validation. Install manually.",
+    "Samsung signed WGT uses the existing developer certificate profile; certificate/DUID permissions still govern installation. Computer project supports signing with the TV owner certificate.",
+    "VIDAA has no supported downloadable runtime package in the existing distribution; no VIDAA build published.",
+    "Legacy Android 0.1.1 is unchanged and was not rebuilt or restamped."
+  ]
+}
