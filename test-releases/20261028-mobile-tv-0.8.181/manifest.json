@@ -1,0 +1,84 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.181",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.181-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.181-tester",
+      "versionCode": 193,
+      "bytes": 29651000,
+      "sha256": "302f9caf0dcecbe4a0bc76a9be0617152942c2e99a2f56e8b7f8c58e1cb14d58",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.181/Morph-TV-Mobile-3.0-0.8.181-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.181-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.181-preview",
+      "versionCode": 181,
+      "bytes": 10695746,
+      "sha256": "751eeb50f7fc5ed28154c520928093b8b492a3a15204a1e2670e0299d267e85a",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.181/Morph-TV-Android-TV-0.8.181-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.181-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.181",
+      "versionCode": null,
+      "bytes": 5802244,
+      "sha256": "6017c7daed35473092762134f56e352cfbbf4f14ec1253b61fcb2f56164bbbee",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.181/Morph-TV-LG-0.8.181-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.181-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.181",
+      "versionCode": null,
+      "bytes": 5880565,
+      "sha256": "ec65765284e73acdfa8711e18fcd4ee14c5099e6c1ea59d29daba3f1087da211",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.181/Morph-TV-Samsung-0.8.181-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.181-test.zip",
+      "version": "0.8.181",
+      "bytes": 5860397,
+      "sha256": "2291964b807af9f0421005367e90dba4051639a5795671a761da841b22667a01",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.181/Morph-TV-Samsung-Computer-0.8.181-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "mobileScreenCases": 48,
+    "nativeEncryptedProfileSwitching": true,
+    "portalMockServer": true,
+    "physicalDevices": false
+  },
+  "changes": [
+    "Three visible source choices: subscription details, full M3U URL, Portal + MAC.",
+    "Fix settings arrow navigation being captured by the dashboard beneath the dialog; hide remote keyboard controls for inactive fields.",
+    "Skip unchanged app-catalog rescan on Home resume; batch and reuse unchanged Home HDMI/recent sections to retain focus.",
+    "Native Android last-HDMI history is synchronized to the Home card; visible choose-input fallback when no history exists.",
+    "Live TV/input Home options merged into Home and apps.",
+    "One-click Light, Balanced and Full-effects presets with clear descriptions; independent blur/glow/motion switches without a full theme/app rerender.",
+    "IPTV settings split into Accounts/source, Add account, Playback and Library pages; saved subscriptions and free source side by side. Existing account IDs, favorites and backend handlers retained.",
+    "LG Plus: encrypted same-TV identity backup through paired phone; validated restore without new activation slot; in-app device management on device-limit error.",
+    "World clubs download bundle combines Barcelona, Real Madrid, AC Milan Legends and Inter Miami; existing individual theme entitlements retained.",
+    "Samsung TVWindow uses actual TV/HDMI descriptors, current source reuse and transparent Modern background; removes model-specific Live TV app launch.",
+    "Kidsy channel inside IPTV on phone/TV; removed standalone Kids World dock/catalog tile.",
+    "USB playback speed control: 1.25x and 1.5x on HTML/Android; AVPlay integer rates only.",
+    "Phone logo has no added white background/frame; AC Milan Legends is now visible under World clubs.",
+    "Remove Samsung tv.channel restricted privilege to address installation failure 118019; retain tv.window HDMI integration and original signing identity.",
+    "Free bundled AC Milan Legends theme using supplied artwork as WebP with full-frame contain fit.",
+    "Portal URL + registered MAC source on Android phone/Google TV/Fire TV; Stalker handshake, provider session, paginated catalogs and create_link. Samsung/LG Portal not yet supported.",
+    "Multiple saved subscriptions with stable profile IDs and isolated favorites/history/progress; selected account expiry/remaining days where supplied by provider.",
+    "Visible refresh busy/success/error feedback and source-switch confirmation after reload.",
+    "Native Home hidden until resumed appearance/render is ready. Muted non-focusable Media3 live-preview surface.",
+    "Episode long-press saves parent series; redundant detail Favorite/Back removed; remote Back retained.",
+    "Supplied transparent WebP logo applied to phone UI and native app icons."
+  ]
+}
