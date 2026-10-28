@@ -38,8 +38,8 @@
       "applicationId": "ClearMob01.Home",
       "version": "0.8.175",
       "versionCode": null,
-      "bytes": 9459361,
-      "sha256": "ef16e2341f230733b1b06cb4f7bba59ee57a81ba65ce65329ee32527b976a50d",
+      "bytes": 4735101,
+      "sha256": "209e311d1619a413a4ed6f4eb2d20d6a6c7cdc569f9e208690ec7985f906d21f",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.175/Morph-TV-Samsung-0.8.175-test.wgt"
     },
     {
@@ -47,7 +47,7 @@
       "file": "Morph-TV-Samsung-Computer-0.8.175-test.zip",
       "version": "0.8.175",
       "bytes": 4715020,
-      "sha256": "49d259d5038d3fdc19f57cf31718a3fdea4e2a3698c8c90bb1afd3dcf1c7809c",
+      "sha256": "bf202a307b9767dffef1f674deb5e097103b14d01052f07a4f8f265480259d15",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.175/Morph-TV-Samsung-Computer-0.8.175-test.zip"
     }
   ],
