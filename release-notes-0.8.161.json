@@ -1,0 +1,24 @@
+{
+  "version": "0.8.161",
+  "changes": [
+    "Android theme apply returns compact acknowledgement instead of echoing full settings/images",
+    "LAN responses have a 45-second total socket deadline so abandoned readers cannot permanently occupy every server worker",
+    "Phone native calls expire with a recoverable error and ignore late replies; automatic compatibility checks no longer open the blocking progress modal",
+    "Android/Fire TV: official HTTPS update check, once-per-day cached startup check and once-per-version offer; Settings > Device & tools > App update supports manual check",
+    "User starts update download; SHA-256, package identity, signing certificate and version verified before Android package installer confirmation; existing install permission flow preserved",
+    "Theme packs dialog expands to 1720x950 logical size with independent flexible list scrolling and fixed Close; remote Up/Down preserves action column and reveals selected row"
+  ],
+  "validation": [
+    "JVM socket backpressure test: three non-reading clients fill all workers, status request recovers in 44 seconds without restarting server",
+    "Phone timeout test: expires stalled call, ignores late reply and accepts next result; automatic/manual compatibility check behavior verified",
+    "Browser: 100 consecutive theme changes; native update button/badge and clearing stale badge; version comparison tests",
+    "Theme packs 720p/1080p with large Arabic text: dialog size, last-row scrolling, fixed Close and Back focus restoration",
+    "Native packages compiled and signed; embedded TV payloads and release hashes checked"
+  ],
+  "limitations": [
+    "No physical television available; repeat theme-edit scenario still needs device confirmation",
+    "Existing Android users must install this version once to receive future in-app update offers",
+    "Automatic check does not silently install; user initiates download and approves Android installation",
+    "Black-screen radio and IPTV seek/sort/navigation fixes from 0.8.161 are retained"
+  ]
+}
