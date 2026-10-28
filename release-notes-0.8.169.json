@@ -1,0 +1,13 @@
+{
+  "version": "0.8.169",
+  "changes": [
+    "Remove recently used apps and all input shortcuts from Home; keep Inputs in the dock and preserve USB detection.",
+    "Android TV and Fire TV local video player now shares native timeline scrubbing, held seek, playback speed, audio and embedded subtitle controls.",
+    "Choose external SRT, VTT or ASS subtitles; switch to previous or next video in selected files or a user-picked folder.",
+    "Preserve local queue, playback position and pause state; no broad storage permission required."
+  ],
+  "limitations": [
+    "Local player additions apply to Android TV, Google TV and Fire TV. Folder queues contain up to 200 videos.",
+    "Actual USB drives, device decoders and Hisense firmware still require physical device testing."
+  ]
+}

@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.168",
+  "latest": "0.8.169",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.168",
+      "version": "0.8.169",
       "download": "/download/phone",
-      "noteAr": "استكمال مباشر من القائمة الجانبية، تنقل مواسم وتركيز ثابت، وبوسترات كاملة وشبكة قنوات محسنة.",
-      "noteEn": "Direct sidebar Continue, stable filter focus, remote season picker, complete centered artwork and compact live grid."
+      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
+      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.168",
+      "version": "0.8.169",
       "download": "/download/android",
-      "noteAr": "استكمال مباشر من القائمة الجانبية، تنقل مواسم وتركيز ثابت، وبوسترات كاملة وشبكة قنوات محسنة. معاينة صامتة تلقائية للقناة عند الوقوف عليها في عرض القائمة، وتحسين الرجوع للرئيسية.",
-      "noteEn": "Direct sidebar Continue, stable filter focus, remote season picker, complete centered artwork and compact live grid. Automatic muted channel preview in List view and warm Home return.",
+      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
+      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.168",
+      "version": "0.8.169",
       "download": "/download/firetv",
-      "noteAr": "استكمال مباشر من القائمة الجانبية، تنقل مواسم وتركيز ثابت، وبوسترات كاملة وشبكة قنوات محسنة. معاينة صامتة تلقائية للقناة عند الوقوف عليها في عرض القائمة، وتحسين الرجوع للرئيسية.",
-      "noteEn": "Direct sidebar Continue, stable filter focus, remote season picker, complete centered artwork and compact live grid. Automatic muted channel preview in List view and warm Home return."
+      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
+      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "استكمال مباشر من القائمة الجانبية، تنقل مواسم وتركيز ثابت، وبوسترات كاملة وشبكة قنوات محسنة.",
-      "noteEn": "Direct sidebar Continue, stable filter focus, remote season picker, complete centered artwork and compact live grid.",
+      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
+      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.168",
+      "version": "0.8.169",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.168.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.169.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.168.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.169.zip",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "استكمال مباشر من القائمة الجانبية، تنقل مواسم وتركيز ثابت، وبوسترات كاملة وشبكة قنوات محسنة.",
-      "noteEn": "Direct sidebar Continue, stable filter focus, remote season picker, complete centered artwork and compact live grid.",
-      "version": "0.8.168",
+      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
+      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
+      "version": "0.8.169",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -71,22 +71,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.168",
-      "file": "Morph-TV-Phone-0.8.168.apk",
-      "bytes": 23591737,
-      "sha256": "a4ba58ce3ca5ae45ac2da41327603953508ceeb0bbe71f0449041e86cc0010b3"
+      "name": "Morph-TV-Phone-0.8.169",
+      "file": "Morph-TV-Phone-0.8.169.apk",
+      "bytes": 23595833,
+      "sha256": "afd48ff597132d1bebb9c94e4db7489ad9e31dfa13a1406ee53cbe136b2cdaf0"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.168",
-      "file": "Morph-TV-Android-TV-0.8.168.apk",
-      "bytes": 9125884,
-      "sha256": "223345254a824efca2064d71ffdc52bb30d4ead706e6c8ce35577b82970d554b"
+      "name": "Morph-TV-Android-TV-0.8.169",
+      "file": "Morph-TV-Android-TV-0.8.169.apk",
+      "bytes": 9129980,
+      "sha256": "68de58e9e5dbacffdd0930b67b97fd0b5cf79bc21173fe26671e39112332c392"
     },
     {
-      "name": "Morph-TV-LG-0.8.168",
-      "file": "Morph-TV-LG-0.8.168.ipk",
-      "bytes": 4241766,
-      "sha256": "5bb9e0a78865b72cab54628cc4485b545a3efa05074663fec0a3aee1583bf2b8"
+      "name": "Morph-TV-LG-0.8.169",
+      "file": "Morph-TV-LG-0.8.169.ipk",
+      "bytes": 4240580,
+      "sha256": "15c6b1fc3426822ca7affff65d6aada3fcfea753626f8c14f83df38d3de8f6c3"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -95,22 +95,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.168",
-      "file": "Morph-TV-Samsung-Computer-0.8.168.zip",
-      "bytes": 4282018,
-      "sha256": "ddbf96f20dec6272c5ffe5ecbfb98bed42bfe5d1009d6c76270a3e89988f471b"
+      "name": "Morph-TV-Samsung-Computer-0.8.169",
+      "file": "Morph-TV-Samsung-Computer-0.8.169.zip",
+      "bytes": 4280022,
+      "sha256": "671b093a264cd36e993a107c7453c59fd6ad7fb8fd1b7dcd0475d63c4f33d547"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.168",
-      "file": "Morph-TV-Install-Kit-0.8.168.zip",
-      "bytes": 17369128,
-      "sha256": "1c13447527e58d6203a9186c2a8bb47c41f21fa0974e4c40b393d96b452948f1"
+      "name": "Morph-TV-Install-Kit-0.8.169",
+      "file": "Morph-TV-Install-Kit-0.8.169.zip",
+      "bytes": 17368506,
+      "sha256": "c54b9656451f95370e78146ccc446bd91bfaa20af8dbf3d76af69d045209190e"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.168",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.168.zip",
-      "bytes": 4281896,
-      "sha256": "1d31cc0c46fc901e2493721d80d2785ee379d3a6bd14898009c4183c8b2a1604"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.169",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.169.zip",
+      "bytes": 4279900,
+      "sha256": "e4f122467eeabf3970ff66cf5d83fdc163f0ea20be1fd2b1fc7d8b49ef3493ef"
     }
   ],
   "legacy": {
@@ -123,5 +123,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.168.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.169.zip"
 }
