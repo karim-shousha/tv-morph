@@ -1,0 +1,20 @@
+{
+  "version": "0.8.163",
+  "changes": [
+    "Android TV player handles native buffering start/end events with a visible waiting-for-stream-data indicator",
+    "Event-only buffering diagnostics count rebuffer events and duration, excluding seeks; reset per source and close active periods on pause/error",
+    "Existing Size menu adds Playback status: waiting state, rebuffer count/time, buffered-file percentage, resolution and playback rate; no URLs or credentials displayed",
+    "Save playback checkpoint every five seconds instead of every second; explicit pause/exit still saves immediately",
+    "Skip hidden player-control UI updates, refresh on reveal; no changes to provider URLs, extensions, decoder selection or automatic reconnect policy",
+    "Includes 0.8.163 compact controls, large theme-pack browser, official Android updates and stalled-link recovery"
+  ],
+  "validation": [
+    "Pure Java buffering diagnostics: duplicate events, duration, seek exclusion, accumulated waits and episode reset",
+    "Android/phone native builds compile; package signatures, exact embedded payloads and release checksums verified"
+  ],
+  "limitations": [
+    "This adds measurement and reduces periodic storage work; it does not prove or guarantee resolution of the reported pause",
+    "No physical TV or affected provider stream was available to reproduce the reported pause",
+    "Buffering counters are MediaPlayer signals, not an Internet throughput test; buffer percentage may be unavailable for some live sources"
+  ]
+}
