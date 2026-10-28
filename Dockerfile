@@ -1,6 +1,6 @@
 FROM nginx:stable-alpine
 RUN apk add --no-cache python3
-COPY community/server.py community/plus.py community/sports.py community/start.sh /opt/morph-community/
+COPY community/server.py community/plus.py community/start.sh /opt/morph-community/
 RUN chmod 755 /opt/morph-community/start.sh
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY launcher-guide.html launcher-help.js index.html landing.css landing.js gallery.js web-tv.html catalog.json tvmorph.png SHA256SUMS.txt /usr/share/nginx/html/
@@ -60,3 +60,5 @@ COPY test-releases/20261028-mobile-tv-0.8.180/ /usr/share/nginx/html/test-releas
 COPY test-releases/20261028-mobile-tv-0.8.181/ /usr/share/nginx/html/test-releases/20261028-mobile-tv-0.8.181/
 
 COPY test-releases/20261028-mobile-tv-0.8.182/ /usr/share/nginx/html/test-releases/20261028-mobile-tv-0.8.182/
+
+COPY test-releases/20261028-mobile-tv-0.8.183/ /usr/share/nginx/html/test-releases/20261028-mobile-tv-0.8.183/

@@ -1,0 +1,74 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.183",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.183-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.183-tester",
+      "versionCode": 195,
+      "bytes": 30224738,
+      "sha256": "a5dc20d67b27814066428bbb3031326bf4716b9dbde3669c9b095256d563faac",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.183/Morph-TV-Mobile-3.0-0.8.183-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.183-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.183-preview",
+      "versionCode": 183,
+      "bytes": 10695685,
+      "sha256": "aa0ce0ca6515bbcd6a7dfb267e2c1bd8bdfbd81c1fbf34917c0dcd38d6b322d1",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.183/Morph-TV-Android-TV-0.8.183-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.183-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.183",
+      "versionCode": null,
+      "bytes": 5794932,
+      "sha256": "797fc7aff57046196a211d55b0f4eef2161b624cf4bdd5703e28a8eed7bc33b0",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.183/Morph-TV-LG-0.8.183-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.183-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.183",
+      "versionCode": null,
+      "bytes": 5870962,
+      "sha256": "1c0abeeaac60ca25cca723151df1fd15765093c38eab029055ae527f1958c22d",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.183/Morph-TV-Samsung-0.8.183-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.183-test.zip",
+      "version": "0.8.183",
+      "bytes": 5850829,
+      "sha256": "aad436aa93b6a8b5fe60eac66da763190c2b6ab641c5214b8855e8e9b7a6e669",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.183/Morph-TV-Samsung-Computer-0.8.183-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "packagedPlatforms": [
+      "android",
+      "samsung",
+      "lg"
+    ],
+    "multiViewAndroidEmulator": true,
+    "physicalTVVerified": false,
+    "realIPTVProviderVerified": false
+  },
+  "changes": [
+    "Native IPTV multi-view on Android TV/Google TV and Android phone: up to four independent players, 2x2/two/large+three layouts, one audio source or mute all; channel chooser uses current subscription.",
+    "On Android emulator: four local test videos actually rendered, channel chooser, selected audio/mute, hidden-player release and exit cleanup verified. Physical TVs/provider concurrency remain unverified.",
+    "Remove Morph Sports section, dock shortcut and unused Sports artwork from packages; remove public Sports backend routes.",
+    "Fitness sidebar shortcut defaults hidden; optional toggle in existing Home and apps settings category, preserving workout history and Plus behavior.",
+    "Light preset keeps icon/focus animations on while blur and shadows remain off. Independent motion-off switch is retained.",
+    "Theme-aware curved/striped dock focus uses the sidebar visual language. Radio and HDMI use matching glass shells with distinct glyph colors.",
+    "Multi-view is hidden on Samsung/LG; this release does not claim four-stream playback on these platforms."
+  ]
+}
