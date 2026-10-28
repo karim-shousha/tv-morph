@@ -8,8 +8,8 @@
       "applicationId": "local.cleartv.mobile",
       "version": "0.8.173-tester",
       "versionCode": 185,
-      "bytes": 23641095,
-      "sha256": "dcbcd947ea40ed1446723a574b8c5ac70663c0c3d2c011b653c4bc0e81123fba",
+      "bytes": 25353706,
+      "sha256": "8ddaa2a62ba1dde63882c6ddd57b89e586b15989a2bf562f0eb30ce1c4ef148a",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Mobile-3.0-0.8.173-test.apk"
     },
     {
@@ -18,8 +18,8 @@
       "applicationId": "local.tvmorph.tv",
       "version": "0.8.173-preview",
       "versionCode": 173,
-      "bytes": 9138323,
-      "sha256": "70d81606ed3c8c719d875dafdfbdfccb93556885b3f16507f768262aea5d9752",
+      "bytes": 9564667,
+      "sha256": "a83826b8f009b230494775735df6d974fc44f540a631489fe688df04f52f9b66",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Android-TV-0.8.173-test.apk"
     },
     {
@@ -28,8 +28,8 @@
       "applicationId": "com.zainbot.morphtv.preview",
       "version": "0.8.173",
       "versionCode": null,
-      "bytes": 4244280,
-      "sha256": "e359d73fb635fc796f16ee311d85044cf02b138457178b613d5a6a6757412b6d",
+      "bytes": 4672390,
+      "sha256": "9d3c5af344bfbf7588dacd60754c96662ae1a315ea662c65db5de172df24b084",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-LG-0.8.173-test.ipk"
     },
     {
@@ -38,16 +38,16 @@
       "applicationId": "ClearMob01.Home",
       "version": "0.8.173",
       "versionCode": null,
-      "bytes": 4305344,
-      "sha256": "a835056202dfd83b733d8272426463c7aea9e6c830d37a3c6481aba627e7b676",
+      "bytes": 4734098,
+      "sha256": "ba6df8f6bea2a7253c2c5fa6c6173fa77dff990fd9a718e0ef8ae8f42e32abea",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-0.8.173-test.wgt"
     },
     {
       "platform": "samsung-computer",
       "file": "Morph-TV-Samsung-Computer-0.8.173-test.zip",
       "version": "0.8.173",
-      "bytes": 4285936,
-      "sha256": "f8513a261416b45e8935e00f8e8f46902d1af10049933e90ffa4b9f609a77615",
+      "bytes": 4714001,
+      "sha256": "3c8c76e5b1f92e4f329ad7a5615f6ea6a46ca3d15e0587584ff86238b1b37062",
       "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-Computer-0.8.173-test.zip"
     }
   ],
@@ -69,6 +69,9 @@
     "TV text-only MorphTV brand, spacious HDMI cards, distinct Kids/Radio/HDMI colors.",
     "Remove dock shortcut from hold menu; Android uninstall system confirmation for removable apps.",
     "Dock reflection generation and cloning removed.",
-    "Fixed-size dock icons with horizontal overflow; no shrinking when apps are added."
+    "Fixed-size dock icons with horizontal overflow; no shrinking when apps are added.",
+    "Four optimized local WebP slides on Midnight only; red gradient Ahly retains original player artwork and one crest beside the title.",
+    "Native performance tier persistence fixed; hidden radio timers stop and slides pause outside Home.",
+    "Cinematic cyan/violet phone surfaces and functional Home shortcuts."
   ]
 }
