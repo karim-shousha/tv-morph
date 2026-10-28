@@ -41,3 +41,6 @@ COPY test-releases/20261028-opencode-6adfc59b33b9/ /usr/share/nginx/html/test-re
 COPY test-releases/20261028-mobile-0.8.172/ /usr/share/nginx/html/test-releases/20261028-mobile-0.8.172/
 
 COPY test-releases/20261028-mobile-tv-0.8.173/ /usr/share/nginx/html/test-releases/20261028-mobile-tv-0.8.173/
+
+COPY test-releases/20261028-mobile-0.8.174/ /usr/share/nginx/html/test-releases/20261028-mobile-0.8.174/
+COPY test-releases/mobile-latest.json /usr/share/nginx/html/test-releases/mobile-latest.json

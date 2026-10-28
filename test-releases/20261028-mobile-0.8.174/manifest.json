@@ -1,0 +1,67 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.174",
+  "artifact": {
+    "platform": "phone",
+    "file": "Morph-TV-Mobile-3.0-0.8.174-test.apk",
+    "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-0.8.174/Morph-TV-Mobile-3.0-0.8.174-test.apk",
+    "applicationId": "local.cleartv.mobile",
+    "version": "0.8.174-tester",
+    "versionCode": 186,
+    "bytes": 25353784,
+    "sha256": "dc4d1ef13252eb2983a26621107a474cf54eb6750c74b37f4595cda180395d60"
+  },
+  "tvArtifacts": [
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.173-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.173-preview",
+      "versionCode": 173,
+      "bytes": 9564667,
+      "sha256": "a83826b8f009b230494775735df6d974fc44f540a631489fe688df04f52f9b66",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Android-TV-0.8.173-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.173-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.173",
+      "versionCode": null,
+      "bytes": 4672390,
+      "sha256": "9d3c5af344bfbf7588dacd60754c96662ae1a315ea662c65db5de172df24b084",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-LG-0.8.173-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.173-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.173",
+      "versionCode": null,
+      "bytes": 4734098,
+      "sha256": "ba6df8f6bea2a7253c2c5fa6c6173fa77dff990fd9a718e0ef8ae8f42e32abea",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-0.8.173-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.173-test.zip",
+      "version": "0.8.173",
+      "bytes": 4714001,
+      "sha256": "3c8c76e5b1f92e4f329ad7a5615f6ea6a46ca3d15e0587584ff86238b1b37062",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.173/Morph-TV-Samsung-Computer-0.8.173-test.zip"
+    }
+  ],
+  "tvVersion": "0.8.173",
+  "tvBuildsChanged": false,
+  "changes": [
+    "Explicit test update feed; public update channel unchanged.",
+    "Version-aware download URL and native browser action.",
+    "Update dialog closes on Android Back/Escape and supports keyboard focus containment.",
+    "InstaPay link on Home and Settings support, retaining Stripe and PayPal."
+  ],
+  "limitations": [
+    "Older 0.8.173 public-feed clients require one manual phone update to opt into test updates.",
+    "No automatic install or payment; only user-triggered external links.",
+    "Tests use mocked native update/support actions."
+  ]
+}
