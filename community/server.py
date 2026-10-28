@@ -34,6 +34,8 @@ if len(SECRET) != 32:
 DB = DATA / 'community.sqlite3'
 from plus import Plus
 PLUS = Plus(DATA, SECRET, ORIGIN)
+from sports import Sports
+SPORTS = Sports(DATA)
 
 
 @contextlib.contextmanager
@@ -129,7 +131,7 @@ def backup_loop():
 
 class Handler(BaseHTTPRequestHandler):
     def end_headers(self):
-        if self.path.startswith('/api/plus/'):
+        if self.path.startswith(('/api/plus/', '/api/sports/')):
             self.send_header('Access-Control-Allow-Origin', '*')
             self.send_header('Vary', 'Origin')
         super().end_headers()
@@ -208,6 +210,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         try:
+            if SPORTS.handle(self, urlsplit(self.path).path):
+                return
             if PLUS.handle(self, urlsplit(self.path).path):
                 return
             self.get()
@@ -304,6 +308,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         try:
+            if SPORTS.handle(self, urlsplit(self.path).path):
+                return
             if PLUS.handle(self, urlsplit(self.path).path):
                 return
             self.post()

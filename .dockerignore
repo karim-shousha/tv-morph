@@ -352,3 +352,8 @@
 
 !test-releases/20261028-mobile-tv-0.8.181/
 !test-releases/20261028-mobile-tv-0.8.181/**
+
+!community/sports.py
+
+!test-releases/20261028-mobile-tv-0.8.182/
+!test-releases/20261028-mobile-tv-0.8.182/**
