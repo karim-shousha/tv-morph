@@ -1,0 +1,77 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.179",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.179-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.179-tester",
+      "versionCode": 191,
+      "bytes": 29589409,
+      "sha256": "d23c50203e65e9d2d5095104026224f0a40adafb17a7d19af40f03ad958cf0d4",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.179/Morph-TV-Mobile-3.0-0.8.179-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.179-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.179-preview",
+      "versionCode": 179,
+      "bytes": 10674984,
+      "sha256": "f68203be85b272318389ecf65ed438c521cfb2690e8e1c649d83ef64d42d8300",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.179/Morph-TV-Android-TV-0.8.179-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.179-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.179",
+      "versionCode": null,
+      "bytes": 5787524,
+      "sha256": "ceff41f7d0f79529c75d2bf3eaa191795bfebf1e2b21f68abd3c910f184995b4",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.179/Morph-TV-LG-0.8.179-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.179-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.179",
+      "versionCode": null,
+      "bytes": 5861403,
+      "sha256": "c6d137e6877e6cad8ce8e730ca2712ceb6be3e6a70cf05f23ae5ae1f91968ffc",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.179/Morph-TV-Samsung-0.8.179-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.179-test.zip",
+      "version": "0.8.179",
+      "bytes": 5841725,
+      "sha256": "a6f216d879a885d654642a8187efe513ccae37a92f263badc05b81d405415423",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.179/Morph-TV-Samsung-Computer-0.8.179-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "mobileScreenCases": 48,
+    "nativeEncryptedProfileSwitching": true,
+    "portalMockServer": true,
+    "physicalDevices": false
+  },
+  "changes": [
+    "LG Plus: encrypted same-TV identity backup through paired phone; validated restore without new activation slot; in-app device management on device-limit error.",
+    "World clubs download bundle combines Barcelona, Real Madrid, AC Milan Legends and Inter Miami; existing individual theme entitlements retained.",
+    "Samsung TVWindow uses actual TV/HDMI descriptors, current source reuse and transparent Modern background; removes model-specific Live TV app launch.",
+    "Kidsy channel inside IPTV on phone/TV; removed standalone Kids World dock/catalog tile.",
+    "USB playback speed control: 1.25x and 1.5x on HTML/Android; AVPlay integer rates only.",
+    "Phone logo has no added white background/frame; AC Milan Legends is now visible under World clubs.",
+    "Remove Samsung tv.channel restricted privilege to address installation failure 118019; retain tv.window HDMI integration and original signing identity.",
+    "Free bundled AC Milan Legends theme using supplied artwork as WebP with full-frame contain fit.",
+    "Portal URL + registered MAC source on Android phone/Google TV/Fire TV; Stalker handshake, provider session, paginated catalogs and create_link. Samsung/LG Portal not yet supported.",
+    "Multiple saved subscriptions with stable profile IDs and isolated favorites/history/progress; selected account expiry/remaining days where supplied by provider.",
+    "Visible refresh busy/success/error feedback and source-switch confirmation after reload.",
+    "Native Home hidden until resumed appearance/render is ready. Muted non-focusable Media3 live-preview surface.",
+    "Episode long-press saves parent series; redundant detail Favorite/Back removed; remote Back retained.",
+    "Supplied transparent WebP logo applied to phone UI and native app icons."
+  ]
+}
