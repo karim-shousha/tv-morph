@@ -3,8 +3,8 @@
   "appId": "MorphT3001.Home",
   "target": "Tizen 3.0 / Chromium 47",
   "physicalTVVerified": false,
-  "bytes": 7363698,
-  "sha256": "3d87fae1daf38b473191c0258e6b3d4d990b8e2076a33d4ea5277c31db1e0399",
+  "bytes": 7363875,
+  "sha256": "5bda2a456a7d6300f1d0b25aa985f75fcea66a7c878a2bd8a9459c6d6627e448",
   "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\mobile-app\\build\\assets\\tv-app.zip",
   "javascriptTarget": "chrome47",
   "defaults": "fixed artwork, no blur/glow/animation, modest focus scale",
@@ -42,18 +42,18 @@
     },
     {
       "file": "Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt",
-      "bytes": 7385127,
-      "sha256": "96bc72491a733e406bdf55f246ccbd770eb31f20445b7a331cfd275669127e84"
+      "bytes": 7385300,
+      "sha256": "6ed901a53207b5bcbd58e9b86bf2553e11da55910df4e191a6a76b8eeb0becb8"
     },
     {
       "file": "Morph-TV-Tizen3-Lite-0.8.186-candidate.zip",
-      "bytes": 7363698,
-      "sha256": "3d87fae1daf38b473191c0258e6b3d4d990b8e2076a33d4ea5277c31db1e0399"
+      "bytes": 7363875,
+      "sha256": "5bda2a456a7d6300f1d0b25aa985f75fcea66a7c878a2bd8a9459c6d6627e448"
     },
     {
       "file": "Morph-TV-Tizen3-Lite-Computer-0.8.186.zip",
-      "bytes": 7358128,
-      "sha256": "2e3295c618b0fc59513225189f117fc25c7d34c98378521904d19fe966dd6b31"
+      "bytes": 7358319,
+      "sha256": "0a636bd9cf948c715df39dd5a04f67c0686967cd31f53185403e41218a906a45"
     },
     {
       "file": "README.md",
