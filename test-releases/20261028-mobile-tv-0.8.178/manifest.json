@@ -1,0 +1,71 @@
+{
+  "channel": "manual-test",
+  "version": "0.8.178",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.178-test.apk",
+      "applicationId": "local.cleartv.mobile",
+      "version": "0.8.178-tester",
+      "versionCode": 190,
+      "bytes": 29581151,
+      "sha256": "badd5d39a0fe6da1682cf537adb0e0682265b35837fe14ca084106554e18f25f",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.178/Morph-TV-Mobile-3.0-0.8.178-test.apk"
+    },
+    {
+      "platform": "android-tv-firetv",
+      "file": "Morph-TV-Android-TV-0.8.178-test.apk",
+      "applicationId": "local.tvmorph.tv",
+      "version": "0.8.178-preview",
+      "versionCode": 178,
+      "bytes": 10674918,
+      "sha256": "f1c0285560efd30a03effe140bf12f4d86cc1d7cde12317832948548fdbbdb70",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.178/Morph-TV-Android-TV-0.8.178-test.apk"
+    },
+    {
+      "platform": "lg-webos",
+      "file": "Morph-TV-LG-0.8.178-test.ipk",
+      "applicationId": "com.zainbot.morphtv.preview",
+      "version": "0.8.178",
+      "versionCode": null,
+      "bytes": 5784924,
+      "sha256": "66be124fdcdf85bcda85064e670eb8732d8c416188ec143aad5be3cae77e06db",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.178/Morph-TV-LG-0.8.178-test.ipk"
+    },
+    {
+      "platform": "samsung-tizen",
+      "file": "Morph-TV-Samsung-0.8.178-test.wgt",
+      "applicationId": "ClearMob01.Home",
+      "version": "0.8.178",
+      "versionCode": null,
+      "bytes": 5858716,
+      "sha256": "e521ed08c2260d49219022d1fe3d2a0262b8fb1bde16e91281ffddbbf19f8ff1",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.178/Morph-TV-Samsung-0.8.178-test.wgt"
+    },
+    {
+      "platform": "samsung-computer",
+      "file": "Morph-TV-Samsung-Computer-0.8.178-test.zip",
+      "version": "0.8.178",
+      "bytes": 5839145,
+      "sha256": "449377331b7f34d2b664ddc2c98f46a40a85ebfbd8a7404390dd24acd1b9394f",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261028-mobile-tv-0.8.178/Morph-TV-Samsung-Computer-0.8.178-test.zip"
+    }
+  ],
+  "productionUnchanged": "0.8.170",
+  "validation": {
+    "mobileScreenCases": 48,
+    "nativeEncryptedProfileSwitching": true,
+    "portalMockServer": true,
+    "physicalDevices": false
+  },
+  "changes": [
+    "Remove Samsung tv.channel restricted privilege to address installation failure 118019; retain tv.window HDMI integration and original signing identity.",
+    "Free bundled AC Milan Legends theme using supplied artwork as WebP with full-frame contain fit.",
+    "Portal URL + registered MAC source on Android phone/Google TV/Fire TV; Stalker handshake, provider session, paginated catalogs and create_link. Samsung/LG Portal not yet supported.",
+    "Multiple saved subscriptions with stable profile IDs and isolated favorites/history/progress; selected account expiry/remaining days where supplied by provider.",
+    "Visible refresh busy/success/error feedback and source-switch confirmation after reload.",
+    "Native Home hidden until resumed appearance/render is ready. Muted non-focusable Media3 live-preview surface.",
+    "Episode long-press saves parent series; redundant detail Favorite/Back removed; remote Back retained.",
+    "Supplied transparent WebP logo applied to phone UI and native app icons."
+  ]
+}
