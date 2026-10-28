@@ -1,49 +1,49 @@
 {
   "schema": 1,
-  "latest": "0.8.169",
+  "latest": "0.8.170",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.169",
+      "version": "0.8.170",
       "download": "/download/phone",
-      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
-      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next."
+      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
+      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.169",
+      "version": "0.8.170",
       "download": "/download/android",
-      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
-      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
+      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
+      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.169",
+      "version": "0.8.170",
       "download": "/download/firetv",
-      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
-      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next."
+      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
+      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
-      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
+      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
+      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.169",
+      "version": "0.8.170",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.169.zip",
+      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.170.zip",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -59,9 +59,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تبسيط الهوم مع المداخل في الدوك. مشغل الفيديو المحلي لأندرويد TV يدعم شريط التقدم والسرعة والترجمة والسابق والتالي.",
-      "noteEn": "Cleaner Home with Inputs in the dock. Android TV local video adds timeline seeking, speed, subtitles and previous/next.",
-      "version": "0.8.169",
+      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
+      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
+      "version": "0.8.170",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -71,22 +71,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.169",
-      "file": "Morph-TV-Phone-0.8.169.apk",
-      "bytes": 23595833,
-      "sha256": "afd48ff597132d1bebb9c94e4db7489ad9e31dfa13a1406ee53cbe136b2cdaf0"
+      "name": "Morph-TV-Phone-0.8.170",
+      "file": "Morph-TV-Phone-0.8.170.apk",
+      "bytes": 23608121,
+      "sha256": "074d40a1a2f08f48b4b798e330428d483136350b1f8439f25622925394824a4d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.169",
-      "file": "Morph-TV-Android-TV-0.8.169.apk",
-      "bytes": 9129980,
-      "sha256": "68de58e9e5dbacffdd0930b67b97fd0b5cf79bc21173fe26671e39112332c392"
+      "name": "Morph-TV-Android-TV-0.8.170",
+      "file": "Morph-TV-Android-TV-0.8.170.apk",
+      "bytes": 9134227,
+      "sha256": "9908eb6b169ee0f0e0f342aeb3012bb792f0cceeb73fcc33d42d1f0013a9b07e"
     },
     {
-      "name": "Morph-TV-LG-0.8.169",
-      "file": "Morph-TV-LG-0.8.169.ipk",
-      "bytes": 4240580,
-      "sha256": "15c6b1fc3426822ca7affff65d6aada3fcfea753626f8c14f83df38d3de8f6c3"
+      "name": "Morph-TV-LG-0.8.170",
+      "file": "Morph-TV-LG-0.8.170.ipk",
+      "bytes": 4242056,
+      "sha256": "2df6c24b85f9b41d2f696520db8caca7ff4b191e551d640624afed0ca1094d02"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
@@ -95,22 +95,22 @@
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.169",
-      "file": "Morph-TV-Samsung-Computer-0.8.169.zip",
-      "bytes": 4280022,
-      "sha256": "671b093a264cd36e993a107c7453c59fd6ad7fb8fd1b7dcd0475d63c4f33d547"
+      "name": "Morph-TV-Samsung-Computer-0.8.170",
+      "file": "Morph-TV-Samsung-Computer-0.8.170.zip",
+      "bytes": 4283602,
+      "sha256": "b39ca838d98e49af7e57604e9d2e7f96331eb822e17adcb7bae442ac96878e52"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.169",
-      "file": "Morph-TV-Install-Kit-0.8.169.zip",
-      "bytes": 17368506,
-      "sha256": "c54b9656451f95370e78146ccc446bd91bfaa20af8dbf3d76af69d045209190e"
+      "name": "Morph-TV-Install-Kit-0.8.170",
+      "file": "Morph-TV-Install-Kit-0.8.170.zip",
+      "bytes": 17376544,
+      "sha256": "aeffb5ba372eeba4004901720edf0327db7c4992ac5351e679993426e2730f2c"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.169",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.169.zip",
-      "bytes": 4279900,
-      "sha256": "e4f122467eeabf3970ff66cf5d83fdc163f0ea20be1fd2b1fc7d8b49ef3493ef"
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.170",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.170.zip",
+      "bytes": 4283480,
+      "sha256": "f527d091d44687b942f3bb2bcb88374ddaf068d81a7eee1e94fe6d508f8212ad"
     }
   ],
   "legacy": {
@@ -123,5 +123,5 @@
     "physicalDeviceVerified": false
   },
   "installGuide": "/install.html",
-  "installKit": "/Morph-TV-Install-Kit-0.8.169.zip"
+  "installKit": "/Morph-TV-Install-Kit-0.8.170.zip"
 }

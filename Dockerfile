@@ -30,3 +30,7 @@ COPY install-helper.html install-helper.js install-helper.css release-notes-0.8.
 COPY plus-offer.css plus-offer.js /usr/share/nginx/html/
 
 COPY release-notes-0.8.169.json /usr/share/nginx/html/
+
+COPY install.html Morph-TV-Samsung-Computer-0.8.170.zip Morph-TV-Install-Kit-0.8.170.zip /usr/share/nginx/html/
+
+COPY Morph-TV-Samsung-Tizen4-Computer-0.8.170.zip /usr/share/nginx/html/

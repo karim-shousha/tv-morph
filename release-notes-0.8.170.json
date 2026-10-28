@@ -1,0 +1,18 @@
+{
+  "version": "0.8.170",
+  "changes": [
+    "Use Midnight as the free default theme on first launch; preserve saved theme selections.",
+    "Center Home top navigation and fit dock icons to available screen width with safe focus margins.",
+    "Remove floating All apps text from Home.",
+    "Add independent Settings > Apps & family visibility switches for recent apps, HDMI shortcuts and last HDMI input; all default hidden.",
+    "Compact horizontal prayer summary with AM/PM; distinguish Morph IPTV from radio with an orange/pink gradient.",
+    "Fix phone theme pack validation by reading the shipped theme manifest for Android, Samsung and LG commands."
+  ],
+  "validation": [
+    "Home behavior and visual layout checked at 1280x720 English and 1920x1080 Arabic, including 17 dock icons, focus endpoints, saved switches and fresh Midnight default.",
+    "Signed APK sources and embedded TV/LG packages verified."
+  ],
+  "limitations": [
+    "No physical TV or customer phone pairing test performed for this release. Update both phone and TV."
+  ]
+}
