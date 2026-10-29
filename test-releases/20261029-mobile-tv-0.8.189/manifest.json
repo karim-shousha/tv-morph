@@ -1,0 +1,33 @@
+{
+  "version": "0.8.189",
+  "channel": "manual-test",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.189-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.189/Morph-TV-Mobile-3.0-0.8.189-test.apk",
+      "versionCode": 201,
+      "bytes": 35983938,
+      "sha256": "e0f6a90d55a68166277b09433feafc2d7990febace39712e880f00369bbb9130"
+    },
+    {
+      "platform": "android",
+      "file": "Morph-TV-Android-TV-0.8.189-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.189/Morph-TV-Android-TV-0.8.189-test.apk",
+      "versionCode": 189,
+      "bytes": 12137722,
+      "sha256": "1bd8dfcb9fa34b6eed673dbcd623c37c1753b93cbeec0860b410ac5169941cbc"
+    }
+  ],
+  "changes": [
+    "Explicit Activity-level D-pad routing between categories and channels; underlying grid cannot receive picker focus.",
+    "Solid full-screen two-column category/channel selector matching supplied reference; Favorites provided from current account library.",
+    "Four round vector controls with separate red close button beneath; full-screen grid with no redundant header."
+  ],
+  "validation": {
+    "signedApksVerified": true,
+    "packagedNativeFocusHandlerVerified": true,
+    "browserNavigationChecksPassed": true,
+    "physicalTVVerified": false
+  }
+}
