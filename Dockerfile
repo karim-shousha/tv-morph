@@ -74,3 +74,5 @@ COPY test-releases/20261028-tizen3-lite-0.8.186/ /usr/share/nginx/html/test-rele
 COPY samsung-pc-guide.js /usr/share/nginx/html/
 
 COPY samsung-computer.html Morph-TV-Samsung-Tizen5-0.8.170.wgt Morph-TV-Samsung-Tizen4-0.8.170.wgt /usr/share/nginx/html/
+
+COPY test-releases/20261028-mobile-0.8.187/ /usr/share/nginx/html/test-releases/20261028-mobile-0.8.187/
