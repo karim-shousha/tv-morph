@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.207",
+  "latest": "0.8.208",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.207",
+      "version": "0.8.208",
       "download": "/download/phone",
-      "noteAr": "تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
+      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
+      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.207",
+      "version": "0.8.208",
       "download": "/download/android",
-      "noteAr": "تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
+      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
+      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.207",
+      "version": "0.8.208",
       "download": "/download/firetv",
-      "noteAr": "تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
+      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
+      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
+      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
+      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.207",
+      "version": "0.8.208",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.207.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.208.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.207.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.208.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -60,9 +60,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
-      "version": "0.8.207",
+      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
+      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
+      "version": "0.8.208",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-LG-0.8.207",
-      "file": "Morph-TV-LG-0.8.207.ipk",
-      "bytes": 7451892,
-      "sha256": "0c09e5aa3fd30eb8821c4d1c780c9c07ae7ada342e1503e08c9212e13bc977dd"
+      "name": "Morph-TV-LG-0.8.208",
+      "file": "Morph-TV-LG-0.8.208.ipk",
+      "bytes": 7453518,
+      "sha256": "c6deea3f9e998355bb333a68dcaf69900ced66a5b5000a781e5fe9dbaac73cf3"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.207",
-      "file": "Morph-TV-Android-TV-0.8.207.apk",
-      "bytes": 12671374,
-      "sha256": "02c79e20e697e3d5fa0408e34374f4af59bdd7e7830ef0dd8a71f6cf76a64fd6"
+      "name": "Morph-TV-Android-TV-0.8.208",
+      "file": "Morph-TV-Android-TV-0.8.208.apk",
+      "bytes": 12675470,
+      "sha256": "7d1003ff73285454eab563f141a2d2c008a4fd3d15d9e6baa3896f8681332531"
     },
     {
-      "name": "Morph-TV-Phone-0.8.207",
-      "file": "Morph-TV-Phone-0.8.207.apk",
-      "bytes": 38058532,
-      "sha256": "7e560cfd680f2bfb974337e5d0354b96751f75ad86a17623d5f9c62fb79b1441"
+      "name": "Morph-TV-Phone-0.8.208",
+      "file": "Morph-TV-Phone-0.8.208.apk",
+      "bytes": 38070820,
+      "sha256": "f3abd77a26222c3238d7c566b6bcd3586af43da2ad8a1b525738cb07532f13a2"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
