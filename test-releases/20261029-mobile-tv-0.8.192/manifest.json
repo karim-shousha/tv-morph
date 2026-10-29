@@ -1,0 +1,45 @@
+{
+  "version": "0.8.192",
+  "channel": "manual-test",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.192-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.192/Morph-TV-Mobile-3.0-0.8.192-test.apk",
+      "versionCode": 204,
+      "bytes": 36573913,
+      "sha256": "11dfd9a09ab4730eb33b0d6c4c2973915efd97fe5a8d5d076f86398ca83e9f87"
+    },
+    {
+      "platform": "android",
+      "file": "Morph-TV-Android-TV-0.8.192-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.192/Morph-TV-Android-TV-0.8.192-test.apk",
+      "versionCode": 192,
+      "bytes": 12428689,
+      "sha256": "053ed8f8978e6faba8cbb54cd1dd3fb82cc07ddc904a29084544006b101e4e17"
+    }
+  ],
+  "changes": [
+    "Includes IPTV player improvements from191.",
+    "Android TV: Add account > QR opens a local phone browser form, without installing a phone app.",
+    "Xtream credentials, M3U full link and Portal/MAC supported through the existing account store.",
+    "Five-minute one-use capability, fragment secret, no remote service or logs, only subscription connect route.",
+    "Samsung/LG remain191: QR reception and multi-view are not implemented for those platforms."
+  ],
+  "validation": {
+    "signedApksVerified": true,
+    "browserFormTests": [
+      "Xtream",
+      "M3U",
+      "Portal/MAC",
+      "missing QR token",
+      "390px layout"
+    ],
+    "actualLanServerTests": [
+      "same-origin QR POST permitted",
+      "foreign origin blocked",
+      "other routes keep Origin rejection"
+    ],
+    "physicalTVVerified": false
+  }
+}
