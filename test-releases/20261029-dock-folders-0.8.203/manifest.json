@@ -1,0 +1,31 @@
+{
+  "version": "0.8.203",
+  "purpose": "User-requested isolated review builds; public feed and download center unchanged.",
+  "files": [
+    {
+      "file": "Morph-TV-Dock-Folders-0.8.203-review.apk",
+      "versionCode": 203,
+      "bytes": 12654843,
+      "sha256": "e7e2e9131461a4d2ad6a3fba4d90df5782312bdbe129cbbb861221642b5d0c94"
+    },
+    {
+      "file": "Morph-Mobile-Dock-Folders-0.8.203-review.apk",
+      "versionCode": 215,
+      "bytes": 37831985,
+      "sha256": "255cc0f6d27bbdd12dc01a0daa49dce789a90c1e68ed9e66a1cc5dff45d88141"
+    }
+  ],
+  "physicalDeviceVerified": false,
+  "validation": [
+    "Actual launcher browser test: folder create/distinct colors/long-press move/launch/Back/persistence/rename/delete/profile isolation",
+    "Network protocol, UI and Help regression checks",
+    "Android builds and signature verification"
+  ],
+  "features": [
+    "Dock folders with editable names and automatic colors",
+    "Move apps into folders from long-press menu",
+    "Same-dock folder browsing and Back restoration",
+    "Delete folder returns apps to main dock",
+    "Includes local-network review implementation with documented device verification limitations"
+  ]
+}
