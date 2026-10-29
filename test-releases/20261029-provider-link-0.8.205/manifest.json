@@ -1,0 +1,37 @@
+{
+  "version": "0.8.205",
+  "purpose": "Isolated review only; no public update feed changed.",
+  "files": [
+    {
+      "file": "Morph-TV-0.8.205-review.apk",
+      "versionCode": 205,
+      "bytes": 12659012,
+      "sha256": "b41be7508d9c6cbe80db87d5759da0272c1aabe225742da9c0719647539f194c"
+    },
+    {
+      "file": "Morph-Mobile-0.8.205-review.apk",
+      "versionCode": 217,
+      "bytes": 37840177,
+      "sha256": "b20511b67342e38ab9df941de6dfcfcd9f717b7663ad616b285ec14d1ed8c26a"
+    }
+  ],
+  "physicalDeviceVerified": false,
+  "changes": [
+    "Native IPTV detects personal credential-bearing get.php/player_api.php M3U links and authenticates through Xtream API before attempting whole playlist import",
+    "Preserves provider path/port, encoded credentials, profile ID and library name; enables live/movies/series after successful API authentication",
+    "If API authentication fails, original M3U URL remains available as fallback; generic/public playlists unchanged",
+    "Sidebar label shortened to DLNA only in every language",
+    "Includes review 204 M3U streaming, input fallback, silent double Back and glass dock folders changes"
+  ],
+  "tests": [
+    "Actual connection-selection code with mock provider auth: API-first avoids M3U, proper extraction and fallback",
+    "Actual built launcher Back/input label tests",
+    "Actual built launcher dock folder tests",
+    "Android TV and mobile compilation/signature checks"
+  ],
+  "limitations": [
+    "Submitted subscription/server not accessed; user must validate its API availability",
+    "Generic M3U playlists keep bounded 96MiB / 100000-item safety limits",
+    "OEM input switching still requires physical Mega TV verification"
+  ]
+}
