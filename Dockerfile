@@ -76,3 +76,5 @@ COPY samsung-pc-guide.js /usr/share/nginx/html/
 COPY samsung-computer.html Morph-TV-Samsung-Tizen5-0.8.170.wgt Morph-TV-Samsung-Tizen4-0.8.170.wgt /usr/share/nginx/html/
 
 COPY test-releases/20261028-mobile-0.8.187/ /usr/share/nginx/html/test-releases/20261028-mobile-0.8.187/
+
+COPY test-releases/20261029-mobile-tv-0.8.188/ /usr/share/nginx/html/test-releases/20261029-mobile-tv-0.8.188/

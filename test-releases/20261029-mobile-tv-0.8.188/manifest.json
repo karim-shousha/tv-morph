@@ -1,0 +1,55 @@
+{
+  "version": "0.8.188",
+  "channel": "manual-test",
+  "artifacts": [
+    {
+      "platform": "phone",
+      "file": "Morph-TV-Mobile-3.0-0.8.188-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.188/Morph-TV-Mobile-3.0-0.8.188-test.apk",
+      "bytes": 35983938,
+      "sha256": "86ba39a2fbf4dc4c1c155894a4d7a0707bf2030a208ba9c8dcea26d6faea93a5",
+      "versionCode": 200
+    },
+    {
+      "platform": "android",
+      "file": "Morph-TV-Android-TV-0.8.188-test.apk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.188/Morph-TV-Android-TV-0.8.188-test.apk",
+      "bytes": 12137722,
+      "sha256": "eee9cad63093136fec009b1547232d5e41446b6aa67d62b05ff0d62eaf15a792",
+      "versionCode": 188
+    },
+    {
+      "platform": "lg",
+      "file": "Morph-TV-LG-0.8.188-test.ipk",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.188/Morph-TV-LG-0.8.188-test.ipk",
+      "bytes": 7233640,
+      "sha256": "d5ac571d05f29abb99d938e49a07c4d53657d3a40d94df3c170d876736bb1e61",
+      "versionCode": null
+    },
+    {
+      "platform": "samsung",
+      "file": "Morph-TV-Samsung-0.8.188-test.wgt",
+      "url": "https://morphtv.herroshetta.com/test-releases/20261029-mobile-tv-0.8.188/Morph-TV-Samsung-0.8.188-test.wgt",
+      "bytes": 7310186,
+      "sha256": "0f6b4606f348ca691b6bee13174766180e86c245a38549bcf53db738b52b76cf",
+      "versionCode": null
+    }
+  ],
+  "changes": [
+    "Multi-view: controls over the selected screen, no native alert menus.",
+    "Category browser and category-scoped search; retains last category when adding screens.",
+    "Four IPTV dashboard cards on supported Android platforms; Kidsy remains in top navigation.",
+    "Double Back to exit IPTV home; internal Back navigation unchanged.",
+    "Multi-view bounded buffer: 8\u201325s, 1.5s startup / 4s rebuffer, 12MB target per player; failed streams hide stale video."
+  ],
+  "validation": {
+    "signedApksVerified": true,
+    "browserRemoteChecks": [
+      "1280x720 English",
+      "1920x1080 Arabic",
+      "390x844 Arabic"
+    ],
+    "physicalTVVerified": false,
+    "nativeRuntimeValidation": "New instrumentation run blocked by automatic approval review; prior four-stream engine tests do not validate the new controls."
+  }
+}
