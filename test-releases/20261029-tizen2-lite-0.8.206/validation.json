@@ -1,0 +1,16 @@
+{
+  "version": "0.8.206-tizen2",
+  "appId": "MorphT2001.Home",
+  "target": "Tizen 2.3 / 2.4 WebKit",
+  "physicalTVVerified": false,
+  "bytes": 7583853,
+  "sha256": "0d3143a1eff089a597f5e049b90a883ec1dca9b55635e828daf7d0cc8ef0c5d8",
+  "source": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\mobile-app\\build\\assets\\tv-app.zip",
+  "javascriptTarget": "ES5 / Safari 7 CSS",
+  "defaults": "fixed artwork, no blur/glow/animation, modest focus scale; device installation/playback unverified",
+  "dependencies": {
+    "core-js": "3.39.0",
+    "css-vars-ponyfill": "2.4.9",
+    "whatwg-fetch": "3.6.20"
+  }
+}

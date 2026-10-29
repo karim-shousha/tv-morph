@@ -1,67 +1,68 @@
 {
   "schema": 1,
-  "latest": "0.8.170",
+  "latest": "0.8.206",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.170",
+      "version": "0.8.206",
       "download": "/download/phone",
-      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
-      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs."
+      "noteAr": "IPTV الجديد، فولدرات الدوك وDLNA، سلايدر لحجم الخط في التطبيق كله. استيراد M3U من الجهاز واختيار الجودة المتاحة على أندرويد.",
+      "noteEn": "Modern IPTV, dock folders, DLNA and app-wide text sizing. Android adds local M3U import and available stream quality selection."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.170",
+      "version": "0.8.206",
       "download": "/download/android",
-      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
-      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
+      "noteAr": "IPTV الجديد، فولدرات الدوك وDLNA، سلايدر لحجم الخط في التطبيق كله. استيراد M3U من الجهاز واختيار الجودة المتاحة على أندرويد.",
+      "noteEn": "Modern IPTV, dock folders, DLNA and app-wide text sizing. Android adds local M3U import and available stream quality selection.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.170",
+      "version": "0.8.206",
       "download": "/download/firetv",
-      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
-      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs."
+      "noteAr": "IPTV الجديد، فولدرات الدوك وDLNA، سلايدر لحجم الخط في التطبيق كله. استيراد M3U من الجهاز واختيار الجودة المتاحة على أندرويد.",
+      "noteEn": "Modern IPTV, dock folders, DLNA and app-wide text sizing. Android adds local M3U import and available stream quality selection."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
-      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
+      "noteAr": "IPTV الجديد، فولدرات الدوك وDLNA، سلايدر لحجم الخط في التطبيق كله. استيراد M3U من الجهاز واختيار الجودة المتاحة على أندرويد.",
+      "noteEn": "Modern IPTV, dock folders, DLNA and app-wide text sizing. Android adds local M3U import and available stream quality selection.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.170",
+      "version": "0.8.206",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.170.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.206.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.170.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.206.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
       ],
-      "installVideo": "https://www.facebook.com/reel/1158151803538155"
+      "installVideo": "https://www.facebook.com/reel/1158151803538155",
+      "experimentalTizen2": "/test-releases/20261029-tizen2-lite-0.8.206/"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "Midnight افتراضي، قائمة علوية في المنتصف، دوك بدون قص، كارت صلاة أصغر، اختيارات لإظهار عناصر الهوم وإصلاح الثيمات من الموبايل.",
-      "noteEn": "Midnight default, centered Home navigation, fitted dock, compact prayer widget, optional Home shortcuts and corrected phone theme packs.",
-      "version": "0.8.170",
+      "noteAr": "IPTV الجديد، فولدرات الدوك وDLNA، سلايدر لحجم الخط في التطبيق كله. استيراد M3U من الجهاز واختيار الجودة المتاحة على أندرويد.",
+      "noteEn": "Modern IPTV, dock folders, DLNA and app-wide text sizing. Android adds local M3U import and available stream quality selection.",
+      "version": "0.8.206",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -71,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.170",
-      "file": "Morph-TV-Phone-0.8.170.apk",
-      "bytes": 23608121,
-      "sha256": "074d40a1a2f08f48b4b798e330428d483136350b1f8439f25622925394824a4d"
+      "name": "Morph-TV-LG-0.8.206",
+      "file": "Morph-TV-LG-0.8.206.ipk",
+      "bytes": 7448786,
+      "sha256": "e5e891d555c2bd9e70b1f6496de8ba5f6864465379aa772df1e48c7c2e3a1138"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.170",
-      "file": "Morph-TV-Android-TV-0.8.170.apk",
-      "bytes": 9134227,
-      "sha256": "9908eb6b169ee0f0e0f342aeb3012bb792f0cceeb73fcc33d42d1f0013a9b07e"
+      "name": "Morph-TV-Android-TV-0.8.206",
+      "file": "Morph-TV-Android-TV-0.8.206.apk",
+      "bytes": 12663182,
+      "sha256": "38fdca8dbfd19337673fd986a5e87c2edd05f38b92efb8d9c66a5d5d9d998a9e"
     },
     {
-      "name": "Morph-TV-LG-0.8.170",
-      "file": "Morph-TV-LG-0.8.170.ipk",
-      "bytes": 4242056,
-      "sha256": "2df6c24b85f9b41d2f696520db8caca7ff4b191e551d640624afed0ca1094d02"
+      "name": "Morph-TV-Phone-0.8.206",
+      "file": "Morph-TV-Phone-0.8.206.apk",
+      "bytes": 37885375,
+      "sha256": "e5f4bda7c6486996999f57d50fdc3603be84e27fbe05fc57673ecb6b6d724574"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",

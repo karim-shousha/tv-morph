@@ -396,3 +396,11 @@
 
 !test-releases/20261029-mobile-tv-0.8.192/
 !test-releases/20261029-mobile-tv-0.8.192/**
+
+!Morph-TV-*0.8.206*
+!releases/
+!releases/**
+!test-releases/20261029-tizen2-lite-0.8.206/
+!test-releases/20261029-tizen2-lite-0.8.206/**
+!test-releases/20261029-public-0.8.206/
+!test-releases/20261029-public-0.8.206/**
