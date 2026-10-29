@@ -1,0 +1,37 @@
+{
+  "version": "0.8.204",
+  "purpose": "Isolated user review; public feed and website download center unchanged.",
+  "files": [
+    {
+      "file": "Morph-TV-0.8.204-review.apk",
+      "versionCode": 204,
+      "bytes": 12654916,
+      "sha256": "45e0a837dfff5a22bd5809e37f99d1eda354ed6c64e1aafb573573c575408e29"
+    },
+    {
+      "file": "Morph-Mobile-0.8.204-review.apk",
+      "versionCode": 216,
+      "bytes": 37836081,
+      "sha256": "cd24b5903ba774806ac38f7f8640a8a63adf312e717f53b5c2c2d48fd497f701"
+    }
+  ],
+  "physicalDeviceVerified": false,
+  "changes": [
+    "M3U streaming import instead of 12MiB whole-file rejection; bounded 96MiB text / 100000 items / deadline / gzip; no silent old 20000-entry truncation",
+    "Silent double Back within 2 seconds at application root; internal navigation remains single Back",
+    "OEM input custom labels, generic passthrough and unavailable input-state handling; actual exported source selectors when direct HDMI unavailable",
+    "Visible DLNA / Local Network sidebar label",
+    "Dock folders share theme-aware glass surfaces; random accent retained only on symbol"
+  ],
+  "validation": [
+    "Java actual M3U parser: >12MiB / 25001 entries with 128MiB JVM, dedup, HLS rejection, deadline and failed-import atomicity",
+    "Actual AndroidInputs via desktop OEM fixture stubs: custom HDMI2, external passthrough, system DTV, input-state security error, software tuner excluded",
+    "Source selector policy fixtures exclude keyboard/reset/factory screens",
+    "Actual built launcher browser: silent double Back, navigation reset, source dispatch, visible DLNA name, dock folders CRUD and profile isolation",
+    "TV and phone builds/signatures verified"
+  ],
+  "limitations": [
+    "Mega TV physical input switching requires owner validation; unsupported firmware cannot expose individual HDMI ports through an app",
+    "Samsung/LG startup behavior remains controlled by firmware; no unsupported auto-launch change included"
+  ]
+}
