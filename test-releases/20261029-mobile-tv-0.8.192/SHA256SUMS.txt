@@ -1,2 +1,2 @@
-11dfd9a09ab4730eb33b0d6c4c2973915efd97fe5a8d5d076f86398ca83e9f87  Morph-TV-Mobile-3.0-0.8.192-test.apk
-053ed8f8978e6faba8cbb54cd1dd3fb82cc07ddc904a29084544006b101e4e17  Morph-TV-Android-TV-0.8.192-test.apk
+4c24be37f7d3b5c5ebb7883447231447370efcf1f615da91955422e100962e92  Morph-TV-Mobile-3.0-0.8.192-test.apk
+48d9f17ac45f946ba5183d869624cea8612f0920a78d08db2258c2307e6f06c2  Morph-TV-Android-TV-0.8.192-test.apk
