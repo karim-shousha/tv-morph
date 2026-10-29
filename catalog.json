@@ -43,12 +43,12 @@
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Computer-0.8.170.zip",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.170.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-Computer-0.8.169.zip",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.170.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
