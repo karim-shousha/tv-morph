@@ -70,3 +70,5 @@ COPY test-releases/20261028-mobile-tv-0.8.185/ /usr/share/nginx/html/test-releas
 COPY test-releases/20261028-mobile-tv-0.8.186/ /usr/share/nginx/html/test-releases/20261028-mobile-tv-0.8.186/
 
 COPY test-releases/20261028-tizen3-lite-0.8.186/ /usr/share/nginx/html/test-releases/20261028-tizen3-lite-0.8.186/
+
+COPY samsung-pc-guide.js /usr/share/nginx/html/
