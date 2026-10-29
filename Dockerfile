@@ -80,3 +80,5 @@ COPY test-releases/20261028-mobile-0.8.187/ /usr/share/nginx/html/test-releases/
 COPY test-releases/20261029-mobile-tv-0.8.188/ /usr/share/nginx/html/test-releases/20261029-mobile-tv-0.8.188/
 
 COPY test-releases/20261029-mobile-tv-0.8.189/ /usr/share/nginx/html/test-releases/20261029-mobile-tv-0.8.189/
+
+COPY test-releases/20261029-mobile-tv-0.8.190/ /usr/share/nginx/html/test-releases/20261029-mobile-tv-0.8.190/
