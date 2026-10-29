@@ -1,0 +1,20 @@
+{
+  "version": "0.8.199",
+  "versionCode": 211,
+  "purpose": "User-requested design review only. No public update feed or download center changes.",
+  "file": "Morph-TV-Mobile-IPTV-UI-0.8.199-review.apk",
+  "sha256": "cd66ec1f8db5f8af531c9e4a8c39f9860982759109a46beba5c6230742c1504e",
+  "bytes": 37754161,
+  "physicalDeviceVerified": false,
+  "uiChecks": [
+    "TV1080p English/Arabic",
+    "TV720p",
+    "Phone390px English/Arabic",
+    "Home rails",
+    "Catalog/details Back focus",
+    "Search Back",
+    "Settings",
+    "Scoped favorites"
+  ],
+  "playerChanges": "Persist actual video duration with resume position; turquoise proportional continue-watching progress, remove continue timestamp and reduce card height. YouTube trailer feature deferred pending device playback verification."
+}
