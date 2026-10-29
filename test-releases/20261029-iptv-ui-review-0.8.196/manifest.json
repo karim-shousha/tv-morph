@@ -1,0 +1,20 @@
+{
+  "version": "0.8.196",
+  "versionCode": 208,
+  "purpose": "User-requested design review only. No public update feed or download center changes.",
+  "file": "Morph-TV-Mobile-IPTV-UI-0.8.196-review.apk",
+  "sha256": "aace6b293a035a9a217b14e71162347b865814f9de440323a531af094470082c",
+  "bytes": 37754161,
+  "physicalDeviceVerified": false,
+  "uiChecks": [
+    "TV1080p English/Arabic",
+    "TV720p",
+    "Phone390px English/Arabic",
+    "Home rails",
+    "Catalog/details Back focus",
+    "Search Back",
+    "Settings",
+    "Scoped favorites"
+  ],
+  "playerChanges": "Bounded original-provider VOD URL recovery, provider API redirects and diagnostics; phone category layering, long episode metadata layout and release year. Physical subscription playback remains unverified."
+}
