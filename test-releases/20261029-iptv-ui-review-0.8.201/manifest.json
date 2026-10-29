@@ -1,0 +1,20 @@
+{
+  "version": "0.8.201",
+  "versionCode": 213,
+  "purpose": "User-requested design review only. No public update feed or download center changes.",
+  "file": "Morph-TV-Mobile-IPTV-UI-0.8.201-review.apk",
+  "sha256": "54dc790c83feb3ec746263fa25ff0380aa8e110954431bde452ec12dabd08fb0",
+  "bytes": 37758257,
+  "physicalDeviceVerified": false,
+  "uiChecks": [
+    "TV1080p English/Arabic",
+    "TV720p",
+    "Phone390px English/Arabic",
+    "Home rails",
+    "Catalog/details Back focus",
+    "Search Back",
+    "Settings",
+    "Scoped favorites"
+  ],
+  "playerChanges": "Subscription dropdown before Update reuses saved/free source switching. Global search Go visibility and keyboard submission fixed; verified list requests across live, movies, series. Native stream information uses a compact translucent dialog; physical device rendering not verified."
+}
