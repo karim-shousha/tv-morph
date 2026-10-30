@@ -131,3 +131,5 @@ COPY releases/0.8.222/ /usr/share/nginx/html/releases/0.8.222/
 
 COPY Morph-TV-Samsung-Tizen5-0.8.223.wgt Morph-TV-Samsung-Tizen4-0.8.223.wgt Morph-TV-LG-0.8.223.ipk /usr/share/nginx/html/
 COPY test-releases/20261030-public-0.8.223/ /usr/share/nginx/html/test-releases/20261030-public-0.8.223/
+
+COPY releases/0.8.223/ /usr/share/nginx/html/releases/0.8.223/
