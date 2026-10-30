@@ -54,7 +54,9 @@
         "UA43N5300"
       ],
       "installVideo": "https://www.facebook.com/reel/1158151803538155",
-      "experimentalTizen2": "/test-releases/20261029-tizen2-lite-0.8.206/"
+      "experimentalTizen2": "/test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-candidate.wgt",
+      "computerLite2Package": "/test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-candidate.wgt",
+      "computerLite2Version": "0.8.215"
     },
     {
       "id": "lg",
