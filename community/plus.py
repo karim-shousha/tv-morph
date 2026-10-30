@@ -144,6 +144,31 @@ class Plus:
                 expires=int(time.time())+ANNUAL_SECONDS
             db.execute('UPDATE orders SET paid=1,payment=?,expires=? WHERE id=?',(session['payment_intent'],expires,oid))
 
+    def order_status(self, order, proof):
+        with self.db() as db:
+            row=db.execute('SELECT * FROM orders WHERE id=? AND proof=?',(order,self.digest(str(proof or '')))).fetchone()
+        if not row:raise ValueError('unknown_order')
+        # Only the authenticated purchase owner may request Stripe reconciliation.
+        # Claim a short DB-backed cooldown before network I/O, across workers.
+        reconcile=False
+        if not row['paid'] and not row['revoked'] and row['source']=='stripe' and row['session'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test') and self.enabled():
+            now=int(time.time());key=self.digest('reconcile:'+row['id'])
+            with self.db() as db:
+                db.execute('BEGIN IMMEDIATE')
+                prior=db.execute('SELECT expires FROM rate WHERE key=?',(key,)).fetchone()
+                if not prior or prior['expires']<=now:
+                    db.execute('INSERT INTO rate VALUES (?,1,?) ON CONFLICT(key) DO UPDATE SET expires=excluded.expires',(key,now+30))
+                    reconcile=True
+            if reconcile:self.fulfill(row['session'])
+        # Re-read after Stripe or a concurrent webhook; never trust browser flags.
+        with self.db() as db:
+            row=db.execute('SELECT * FROM orders WHERE id=?',(row['id'],)).fetchone()
+            paid=bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))
+            result={'paid':paid}
+            if paid:
+                result.update(code=self.register_short(db,row['id']),plan=row['plan'],maxDevices=self.capacity(row),entitlement=row['entitlement'],expiresAt=row['expires'])
+        return result
+
     def webhook(self, body, header):
         if not self.enabled():raise ValueError('sales_not_enabled')
         parts=header.split(',');timestamp=next((p[2:] for p in parts if p.startswith('t=')), '')
@@ -278,13 +303,7 @@ class Plus:
                 if not self.client_origin_allowed(origin,path):raise ValueError('origin_rejected')
                 self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
                 if path=='/api/plus/checkout':result=self.checkout(data.get('plan'),data.get('expectedEntitlement'))
-                elif path=='/api/plus/order':
-                    with self.db() as db:row=db.execute('SELECT * FROM orders WHERE id=? AND proof=?',(data.get('order'),self.digest(str(data.get('proof',''))))).fetchone()
-                    if not row:raise ValueError('unknown_order')
-                    result={'paid':bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))}
-                    if result['paid']:
-                        with self.db() as db:short=self.register_short(db,row['id'])
-                        result.update(code=short,plan=row['plan'],maxDevices=self.capacity(row),entitlement=row['entitlement'],expiresAt=row['expires'])
+                elif path=='/api/plus/order':result=self.order_status(data.get('order'),data.get('proof'))
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
