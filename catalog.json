@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.208",
+  "latest": "0.8.209",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.208",
+      "version": "0.8.209",
       "download": "/download/phone",
-      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
-      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing."
+      "noteAr": "إصلاح البحث والرجوع والقوائم، ترتيب التصنيفات، صفوف الرئيسية والمواسم. تحسين أزرار مشغل أندرويد.",
+      "noteEn": "Search, navigation, category ordering, two-row Home and compact seasons. Android player controls and sidebar improvements."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.208",
+      "version": "0.8.209",
       "download": "/download/android",
-      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
-      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
+      "noteAr": "إصلاح البحث والرجوع والقوائم، ترتيب التصنيفات، صفوف الرئيسية والمواسم. تحسين أزرار مشغل أندرويد.",
+      "noteEn": "Search, navigation, category ordering, two-row Home and compact seasons. Android player controls and sidebar improvements.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.208",
+      "version": "0.8.209",
       "download": "/download/firetv",
-      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
-      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing."
+      "noteAr": "إصلاح البحث والرجوع والقوائم، ترتيب التصنيفات، صفوف الرئيسية والمواسم. تحسين أزرار مشغل أندرويد.",
+      "noteEn": "Search, navigation, category ordering, two-row Home and compact seasons. Android player controls and sidebar improvements."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
-      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
+      "noteAr": "إصلاح البحث والرجوع والقوائم، ترتيب التصنيفات، صفوف الرئيسية والمواسم. تحسين أزرار مشغل أندرويد.",
+      "noteEn": "Search, navigation, category ordering, two-row Home and compact seasons. Android player controls and sidebar improvements.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.208",
+      "version": "0.8.209",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.208.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.209.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.208.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.209.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -60,9 +60,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "كروت IPTV أكبر وهيرو متجدد وقوائم أوضح وتنقل محسّن. مشغل أندرويد: هايلايت واضح وتصفح الحلقات.",
-      "noteEn": "Larger IPTV posters, rotating provider artwork, readable navigation and Android in-player episode browsing.",
-      "version": "0.8.208",
+      "noteAr": "إصلاح البحث والرجوع والقوائم، ترتيب التصنيفات، صفوف الرئيسية والمواسم. تحسين أزرار مشغل أندرويد.",
+      "noteEn": "Search, navigation, category ordering, two-row Home and compact seasons. Android player controls and sidebar improvements.",
+      "version": "0.8.209",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-LG-0.8.208",
-      "file": "Morph-TV-LG-0.8.208.ipk",
-      "bytes": 7453518,
-      "sha256": "c6deea3f9e998355bb333a68dcaf69900ced66a5b5000a781e5fe9dbaac73cf3"
+      "name": "Morph-TV-LG-0.8.209",
+      "file": "Morph-TV-LG-0.8.209.ipk",
+      "bytes": 7457348,
+      "sha256": "e184b9ca98db4bd05a2bcdff2d2860fbfbdf6618e09a37a3fb5191a225378d28"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.208",
-      "file": "Morph-TV-Android-TV-0.8.208.apk",
-      "bytes": 12675470,
-      "sha256": "7d1003ff73285454eab563f141a2d2c008a4fd3d15d9e6baa3896f8681332531"
+      "name": "Morph-TV-Android-TV-0.8.209",
+      "file": "Morph-TV-Android-TV-0.8.209.apk",
+      "bytes": 12679641,
+      "sha256": "6cab2b7d6cef79a8cc59c6eecd82c15d286f864957c0dc25769a6a08ecd0516e"
     },
     {
-      "name": "Morph-TV-Phone-0.8.208",
-      "file": "Morph-TV-Phone-0.8.208.apk",
-      "bytes": 38070820,
-      "sha256": "f3abd77a26222c3238d7c566b6bcd3586af43da2ad8a1b525738cb07532f13a2"
+      "name": "Morph-TV-Phone-0.8.209",
+      "file": "Morph-TV-Phone-0.8.209.apk",
+      "bytes": 38087279,
+      "sha256": "eb983a4f3f0ca8fb3dbf9803bb6ee145000febaee90ba808864e981a73b0059a"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
