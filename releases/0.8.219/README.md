@@ -12,3 +12,5 @@
 Automated native-bridge fixture matrix: stalled series with available movies/live, live-only non-sports subscription, first-request failure recovery, persisted cold restart, all requests failing and remote-accessible recovery controls. No real Fire TV/projector playback/performance claim.
 
 No account, favorite, player or theme logic is replaced. Existing 0.8.218 visual/performance changes are retained.
+
+- Removed duplicate Inputs & TV and Morph IPTV shortcuts from launcher top navigation; dock entry points remain.
