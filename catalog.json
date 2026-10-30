@@ -74,20 +74,20 @@
     {
       "name": "Morph-TV-LG-0.8.221",
       "file": "Morph-TV-LG-0.8.221.ipk",
-      "bytes": 7780918,
-      "sha256": "3f4d497f661dadc245b9864d552797c7a36257c1053cfcbe4f413d4837b8eea5"
+      "bytes": 7781020,
+      "sha256": "0e0f056df2cf466ff90aec1424bd1a707733833cf22219adbc554315b19b24f4"
     },
     {
       "name": "Morph-TV-Android-TV-0.8.221",
       "file": "Morph-TV-Android-TV-0.8.221.apk",
       "bytes": 13015885,
-      "sha256": "f4a9cfed861581f1645269cbe36b856e5108e46380c57279eaf8c7b906c4fbef"
+      "sha256": "747b33c4798f85e1d90c9a44f0b93c5da947789126b2dcb7818fbb2ae21f5caa"
     },
     {
       "name": "Morph-TV-Phone-0.8.221",
       "file": "Morph-TV-Phone-0.8.221.apk",
       "bytes": 39402319,
-      "sha256": "69f442d563479b6e7d5aae381fad50822964f914980453d9271a48c82e934988"
+      "sha256": "030dba9b96e5764aae413384d81708d9bf9f478cfce062ef1a2d69dae30c3c8f"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
