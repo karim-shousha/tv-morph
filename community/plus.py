@@ -70,7 +70,7 @@ class Plus:
         if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
         # Packaged TV runtimes serialize file origins differently. Only the
         # code/token authenticated client endpoints accept these app origins.
-        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status']:return False
+        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device']:return False
         if value.username or value.password or value.query or value.fragment:return False
         if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview']:return True
         return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview']
