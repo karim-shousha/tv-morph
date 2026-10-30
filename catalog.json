@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.225",
+  "latest": "0.8.226",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.225",
+      "version": "0.8.226",
       "download": "/download/phone",
-      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
-      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending."
+      "noteAr": "DLNA: اختبار الاتصال وإرسال ملفات الموبايل، وتحسين مسافات كروت IPTV والأيقونات. التوافق الفعلي يعتمد على الجهاز.",
+      "noteEn": "DLNA receiver connection check and local phone media casting; IPTV card and navigation icon spacing. Physical-device compatibility still needs validation."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.225",
+      "version": "0.8.226",
       "download": "/download/android",
-      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
-      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
+      "noteAr": "DLNA: اختبار الاتصال وإرسال ملفات الموبايل، وتحسين مسافات كروت IPTV والأيقونات. التوافق الفعلي يعتمد على الجهاز.",
+      "noteEn": "DLNA receiver connection check and local phone media casting; IPTV card and navigation icon spacing. Physical-device compatibility still needs validation.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.225",
+      "version": "0.8.226",
       "download": "/download/firetv",
-      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
-      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending."
+      "noteAr": "DLNA: اختبار الاتصال وإرسال ملفات الموبايل، وتحسين مسافات كروت IPTV والأيقونات. التوافق الفعلي يعتمد على الجهاز.",
+      "noteEn": "DLNA receiver connection check and local phone media casting; IPTV card and navigation icon spacing. Physical-device compatibility still needs validation."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
-      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
+      "noteAr": "DLNA: اختبار الاتصال وإرسال ملفات الموبايل، وتحسين مسافات كروت IPTV والأيقونات. التوافق الفعلي يعتمد على الجهاز.",
+      "noteEn": "DLNA receiver connection check and local phone media casting; IPTV card and navigation icon spacing. Physical-device compatibility still needs validation.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.225",
+      "version": "0.8.226",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.225.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.226.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.225.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.226.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -62,9 +62,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
-      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
-      "version": "0.8.225",
+      "noteAr": "DLNA: اختبار الاتصال وإرسال ملفات الموبايل، وتحسين مسافات كروت IPTV والأيقونات. التوافق الفعلي يعتمد على الجهاز.",
+      "noteEn": "DLNA receiver connection check and local phone media casting; IPTV card and navigation icon spacing. Physical-device compatibility still needs validation.",
+      "version": "0.8.226",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,34 +74,34 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.225",
-      "file": "Morph-TV-Phone-0.8.225.apk",
-      "bytes": 39422799,
-      "sha256": "fa6f1f360d73ac20d350c368c6ee147978e9eac7168916c0c8c9769223433d5f"
+      "name": "Morph-TV-Phone-0.8.226",
+      "file": "Morph-TV-Phone-0.8.226.apk",
+      "bytes": 39426895,
+      "sha256": "8b2ea37dc841de2d0aaf7aab80938e9c4431cb46d904df2b963ac6a2a43b0c0d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.225",
-      "file": "Morph-TV-Android-TV-0.8.225.apk",
+      "name": "Morph-TV-Android-TV-0.8.226",
+      "file": "Morph-TV-Android-TV-0.8.226.apk",
       "bytes": 13024077,
-      "sha256": "2316e42eae86aa391dea00928caa5c7603f4784cefc07a85ff39c8222ecc56c4"
+      "sha256": "e7e08d82cc3dff7e227afc03e10dd88c73d7928ebcc2a927151f59bcc0d0bcc8"
     },
     {
-      "name": "Morph-TV-LG-0.8.225",
-      "file": "Morph-TV-LG-0.8.225.ipk",
-      "bytes": 7783658,
-      "sha256": "734084fd80884dc16c08ba9b1f7881812568e73ac4880ea87a7444c6599c15c4"
+      "name": "Morph-TV-LG-0.8.226",
+      "file": "Morph-TV-LG-0.8.226.ipk",
+      "bytes": 7783902,
+      "sha256": "f24b025878d46d1ac2e6f11511b0328f1db90cd83dbbcdc40f20e0b9b37b3dd6"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.225",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.225.wgt",
-      "bytes": 7833962,
-      "sha256": "246fb738de20bb96edb5750d7fb501eb44155739b34820c2970050a1f505cce8"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.226",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.226.wgt",
+      "bytes": 7834082,
+      "sha256": "262e2f9419ac9af9486a1d76da1ee4825b166aa99a0e680630a6d483d3ce2f1b"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.225",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.225.wgt",
-      "bytes": 7833962,
-      "sha256": "14e33935c4f5713fd37027146cf93c35e5491140f396b1d9b4b86c630fb56103"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.226",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.226.wgt",
+      "bytes": 7834082,
+      "sha256": "dd2dd2660a9b30237db61fdebaaafc9697bff801315a52ff0cc0172a1722245c"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
