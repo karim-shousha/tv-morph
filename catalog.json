@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.221",
+  "latest": "0.8.222",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.221",
+      "version": "0.8.222",
       "download": "/download/phone",
-      "noteAr": "إصلاح التنقل والمفضلة والإعدادات، ترتيب أقسام الهوم، ضبط الدوك والمشغل، تشغيل سلايد الخلفيات في وضع الأداء، وإصلاح إدارة أجهزة Plus في نسخ LG.",
-      "noteEn": "Navigation, favorites and settings fixes; customizable Home shelf order; dock and player layout; wallpaper rotation in performance mode; packaged LG Plus device management."
+      "noteAr": "0.8.222: تحسين تمرير الأقسام والموبايل، تقليب المفضلة، الحلقة التالية تلقائياً، وسرعات تشغيل إضافية على المشغلات المتوافقة.",
+      "noteEn": "Category and phone scrolling, favorite channel switching, next episode autoplay, fractional playback speeds on compatible players."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.221",
+      "version": "0.8.222",
       "download": "/download/android",
-      "noteAr": "إصلاح التنقل والمفضلة والإعدادات، ترتيب أقسام الهوم، ضبط الدوك والمشغل، تشغيل سلايد الخلفيات في وضع الأداء، وإصلاح إدارة أجهزة Plus في نسخ LG.",
-      "noteEn": "Navigation, favorites and settings fixes; customizable Home shelf order; dock and player layout; wallpaper rotation in performance mode; packaged LG Plus device management.",
+      "noteAr": "0.8.222: تحسين تمرير الأقسام والموبايل، تقليب المفضلة، الحلقة التالية تلقائياً، وسرعات تشغيل إضافية على المشغلات المتوافقة.",
+      "noteEn": "Category and phone scrolling, favorite channel switching, next episode autoplay, fractional playback speeds on compatible players.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.221",
+      "version": "0.8.222",
       "download": "/download/firetv",
-      "noteAr": "إصلاح التنقل والمفضلة والإعدادات، ترتيب أقسام الهوم، ضبط الدوك والمشغل، تشغيل سلايد الخلفيات في وضع الأداء، وإصلاح إدارة أجهزة Plus في نسخ LG.",
-      "noteEn": "Navigation, favorites and settings fixes; customizable Home shelf order; dock and player layout; wallpaper rotation in performance mode; packaged LG Plus device management."
+      "noteAr": "0.8.222: تحسين تمرير الأقسام والموبايل، تقليب المفضلة، الحلقة التالية تلقائياً، وسرعات تشغيل إضافية على المشغلات المتوافقة.",
+      "noteEn": "Category and phone scrolling, favorite channel switching, next episode autoplay, fractional playback speeds on compatible players."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح التنقل والمفضلة والإعدادات، ترتيب أقسام الهوم، ضبط الدوك والمشغل، تشغيل سلايد الخلفيات في وضع الأداء، وإصلاح إدارة أجهزة Plus في نسخ LG.",
-      "noteEn": "Navigation, favorites and settings fixes; customizable Home shelf order; dock and player layout; wallpaper rotation in performance mode; packaged LG Plus device management.",
+      "noteAr": "0.8.222: تحسين تمرير الأقسام والموبايل، تقليب المفضلة، الحلقة التالية تلقائياً، وسرعات تشغيل إضافية على المشغلات المتوافقة.",
+      "noteEn": "Category and phone scrolling, favorite channel switching, next episode autoplay, fractional playback speeds on compatible players.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.221",
+      "version": "0.8.222",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.221.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.222.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.221.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.222.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -60,9 +60,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح التنقل والمفضلة والإعدادات، ترتيب أقسام الهوم، ضبط الدوك والمشغل، تشغيل سلايد الخلفيات في وضع الأداء، وإصلاح إدارة أجهزة Plus في نسخ LG.",
-      "noteEn": "Navigation, favorites and settings fixes; customizable Home shelf order; dock and player layout; wallpaper rotation in performance mode; packaged LG Plus device management.",
-      "version": "0.8.221",
+      "noteAr": "0.8.222: تحسين تمرير الأقسام والموبايل، تقليب المفضلة، الحلقة التالية تلقائياً، وسرعات تشغيل إضافية على المشغلات المتوافقة.",
+      "noteEn": "Category and phone scrolling, favorite channel switching, next episode autoplay, fractional playback speeds on compatible players.",
+      "version": "0.8.222",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-LG-0.8.221",
-      "file": "Morph-TV-LG-0.8.221.ipk",
-      "bytes": 7781020,
-      "sha256": "0e0f056df2cf466ff90aec1424bd1a707733833cf22219adbc554315b19b24f4"
+      "name": "Morph-TV-LG-0.8.222",
+      "file": "Morph-TV-LG-0.8.222.ipk",
+      "bytes": 7781518,
+      "sha256": "ef84d869ee93aab65b60e967992c4860c9118bf7387047ea75bebbf6214c5b4a"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.221",
-      "file": "Morph-TV-Android-TV-0.8.221.apk",
-      "bytes": 13015885,
-      "sha256": "747b33c4798f85e1d90c9a44f0b93c5da947789126b2dcb7818fbb2ae21f5caa"
+      "name": "Morph-TV-Android-TV-0.8.222",
+      "file": "Morph-TV-Android-TV-0.8.222.apk",
+      "bytes": 13019981,
+      "sha256": "4edafc8194fe2cdd75bce0fe3cd2aec4be5125e68edba5f1e03ba03e03eaed58"
     },
     {
-      "name": "Morph-TV-Phone-0.8.221",
-      "file": "Morph-TV-Phone-0.8.221.apk",
-      "bytes": 39402319,
-      "sha256": "030dba9b96e5764aae413384d81708d9bf9f478cfce062ef1a2d69dae30c3c8f"
+      "name": "Morph-TV-Phone-0.8.222",
+      "file": "Morph-TV-Phone-0.8.222.apk",
+      "bytes": 39410511,
+      "sha256": "f064eb0c140d4ce53aba5df4eaf08f4dd4674b048b9da3331dc2113b40d62e24"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
