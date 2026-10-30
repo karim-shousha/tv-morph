@@ -1,0 +1,1 @@
+Tizen 2 experimental 0.8.215: old ClientRect geometry compatibility for directional focus, lightweight rendering and Tahoma/Arial fonts. Automated browser simulation only; physical device test required. Samsung signing with the TV DUID is still required. This does not include third-party experimental builds 211-214.
