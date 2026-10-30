@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "latest": "0.8.229",
+  "latest": "0.8.230",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.229",
+      "version": "0.8.230",
       "download": "/download/phone",
-      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
-      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "noteAr": "إصلاح الوصول للسلايدر بالريموت، وإرجاع سرعة 3×، وتأكيد تبديل حساب IPTV، وإظهار حالة الاشتراك بلون واضح. تحميل المكتبة وباقي الواجهة محفوظان.",
+      "noteEn": "Player timeline focus, restored 3x speed, verified IPTV account selection and a visible subscription status badge. Library loading and existing layout preserved.",
       "channel": "preview"
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.229",
+      "version": "0.8.230",
       "download": "/download/android",
-      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
-      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "noteAr": "إصلاح الوصول للسلايدر بالريموت، وإرجاع سرعة 3×، وتأكيد تبديل حساب IPTV، وإظهار حالة الاشتراك بلون واضح. تحميل المكتبة وباقي الواجهة محفوظان.",
+      "noteEn": "Player timeline focus, restored 3x speed, verified IPTV account selection and a visible subscription status badge. Library loading and existing layout preserved.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false
@@ -29,30 +29,30 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.229",
+      "version": "0.8.230",
       "download": "/download/firetv",
-      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
-      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "noteAr": "إصلاح الوصول للسلايدر بالريموت، وإرجاع سرعة 3×، وتأكيد تبديل حساب IPTV، وإظهار حالة الاشتراك بلون واضح. تحميل المكتبة وباقي الواجهة محفوظان.",
+      "noteEn": "Player timeline focus, restored 3x speed, verified IPTV account selection and a visible subscription status badge. Library loading and existing layout preserved.",
       "channel": "preview"
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
-      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "noteAr": "إصلاح الوصول للسلايدر بالريموت، وإرجاع سرعة 3×، وتأكيد تبديل حساب IPTV، وإظهار حالة الاشتراك بلون واضح. تحميل المكتبة وباقي الواجهة محفوظان.",
+      "noteEn": "Player timeline focus, restored 3x speed, verified IPTV account selection and a visible subscription status badge. Library loading and existing layout preserved.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.229",
+      "version": "0.8.230",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.229.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.230.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.229.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.230.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -67,9 +67,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
-      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
-      "version": "0.8.229",
+      "noteAr": "إصلاح الوصول للسلايدر بالريموت، وإرجاع سرعة 3×، وتأكيد تبديل حساب IPTV، وإظهار حالة الاشتراك بلون واضح. تحميل المكتبة وباقي الواجهة محفوظان.",
+      "noteEn": "Player timeline focus, restored 3x speed, verified IPTV account selection and a visible subscription status badge. Library loading and existing layout preserved.",
+      "version": "0.8.230",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -80,34 +80,34 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.229",
-      "file": "Morph-TV-Phone-0.8.229.apk",
-      "bytes": 39463759,
-      "sha256": "5dff71a4555506202e887b24b46ec6ada306c9f2eb6f57fe3e01afd5e77f487d"
+      "name": "Morph-TV-Phone-0.8.230",
+      "file": "Morph-TV-Phone-0.8.230.apk",
+      "bytes": 39467855,
+      "sha256": "fc1570d424726d7125e7056a40f610deafa57b2532d67af47548e141cd14b94f"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.229",
-      "file": "Morph-TV-Android-TV-0.8.229.apk",
-      "bytes": 13048723,
-      "sha256": "15268b9a52cdd2b0f08c15bfebfa6d9fd78469d6b934a80ced669103bf4a310e"
+      "name": "Morph-TV-Android-TV-0.8.230",
+      "file": "Morph-TV-Android-TV-0.8.230.apk",
+      "bytes": 13052819,
+      "sha256": "ab71e44038ff2836371c87a8296bea9d3a1b6667c240f5a566328018c6ebbeb8"
     },
     {
-      "name": "Morph-TV-LG-0.8.229",
-      "file": "Morph-TV-LG-0.8.229.ipk",
-      "bytes": 7786856,
-      "sha256": "ccab7d021f8f311d467dde8e0f7ac0b29384a6a94990cd6ab1b1e5457c7ab91b"
+      "name": "Morph-TV-LG-0.8.230",
+      "file": "Morph-TV-LG-0.8.230.ipk",
+      "bytes": 7787768,
+      "sha256": "317355150fd483b476aee7b5142121d70e808bdc3d13c6d648d93a4f757478b0"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.229",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.229.wgt",
-      "bytes": 7837966,
-      "sha256": "9c82a9294e6886d6b70608727962a87073dfc74c354523dc089eb6e6b2548de4"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.230",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.230.wgt",
+      "bytes": 7838800,
+      "sha256": "73d44b0ab00beed2f70bb77f149b80894c9c02d2d4514e0fc380f65f3a2ab162"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.229",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.229.wgt",
-      "bytes": 7837966,
-      "sha256": "90d2986b7b289e54bfe9d45d6f7adec542d46dccb30a076aa85cf755cbd80a52"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.230",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.230.wgt",
+      "bytes": 7838800,
+      "sha256": "38f0d8a4ebb5ba01a392b503a9d1883d5482976965459a1b04b3b50456deb881"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
