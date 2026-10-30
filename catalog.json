@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.217",
+  "latest": "0.8.218",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.217",
+      "version": "0.8.218",
       "download": "/download/phone",
-      "noteAr": "اللوجو الرسمي، بار موحد، سلايد شو سينمائي وإصلاح الثيمات المحملة. تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
+      "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
+      "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.217",
+      "version": "0.8.218",
       "download": "/download/android",
-      "noteAr": "اللوجو الرسمي، بار موحد، سلايد شو سينمائي وإصلاح الثيمات المحملة. تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
+      "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
+      "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.217",
+      "version": "0.8.218",
       "download": "/download/firetv",
-      "noteAr": "اللوجو الرسمي، بار موحد، سلايد شو سينمائي وإصلاح الثيمات المحملة. تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
+      "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
+      "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "اللوجو الرسمي، بار موحد، سلايد شو سينمائي وإصلاح الثيمات المحملة. تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
+      "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
+      "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.217",
+      "version": "0.8.218",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.217.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.218.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.217.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.218.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -60,9 +60,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "اللوجو الرسمي، بار موحد، سلايد شو سينمائي وإصلاح الثيمات المحملة. تحسين سرعة IPTV، قوائم مقروءة وتنقل أفضل وإصلاح ظهور التصميم القديم. أندرويد: حذف ملف M3U وتصفح القنوات داخل المشغل. الموبايل: متصفح DLNA.",
-      "noteEn": "Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
-      "version": "0.8.217",
+      "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
+      "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
+      "version": "0.8.218",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-LG-0.8.217",
-      "file": "Morph-TV-LG-0.8.217.ipk",
-      "bytes": 7774954,
-      "sha256": "2d49b8b287ff9fe956d9ec3980b311eed0b083c5459358f0464355ec3ba7936f"
+      "name": "Morph-TV-LG-0.8.218",
+      "file": "Morph-TV-LG-0.8.218.ipk",
+      "bytes": 7777570,
+      "sha256": "600514b94135266df803187933101cd5cd9f4369edc62f9742fdd0344e3f475e"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.217",
-      "file": "Morph-TV-Android-TV-0.8.217.apk",
+      "name": "Morph-TV-Android-TV-0.8.218",
+      "file": "Morph-TV-Android-TV-0.8.218.apk",
       "bytes": 13011644,
-      "sha256": "4123b1c24603df5bdff971ace5190bde43efb5fe19c6a27d51095db71da71bef"
+      "sha256": "003b63541dca749a52b92251230853e762337fdbf77f5793642b44f41f00691d"
     },
     {
-      "name": "Morph-TV-Phone-0.8.217",
-      "file": "Morph-TV-Phone-0.8.217.apk",
-      "bytes": 39377671,
-      "sha256": "5fc4650e64ba62f8ed48f323ab31e51950e9fc81d6bec4bdca986b4fbc4bff89"
+      "name": "Morph-TV-Phone-0.8.218",
+      "file": "Morph-TV-Phone-0.8.218.apk",
+      "bytes": 39385863,
+      "sha256": "de3c11a4a5021ee9dbe5f1d0fd938cff67f8373bfd81c2b517450142a31c0dc9"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
