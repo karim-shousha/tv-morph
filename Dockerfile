@@ -114,3 +114,6 @@ COPY test-releases/20261029-public-0.8.217/ /usr/share/nginx/html/test-releases/
 
 COPY Morph-TV-Samsung-Tizen5-0.8.218.wgt Morph-TV-Samsung-Tizen4-0.8.218.wgt Morph-TV-LG-0.8.218.ipk /usr/share/nginx/html/
 COPY test-releases/20261029-public-0.8.218/ /usr/share/nginx/html/test-releases/20261029-public-0.8.218/
+
+COPY Morph-TV-Samsung-Tizen5-0.8.219.wgt Morph-TV-Samsung-Tizen4-0.8.219.wgt Morph-TV-LG-0.8.219.ipk /usr/share/nginx/html/
+COPY test-releases/20261029-public-0.8.219/ /usr/share/nginx/html/test-releases/20261029-public-0.8.219/

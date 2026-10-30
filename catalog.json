@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.218",
+  "latest": "0.8.219",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.218",
+      "version": "0.8.219",
       "download": "/download/phone",
       "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
       "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
@@ -16,7 +16,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.218",
+      "version": "0.8.219",
       "download": "/download/android",
       "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
       "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
@@ -26,7 +26,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.218",
+      "version": "0.8.219",
       "download": "/download/firetv",
       "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
       "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing."
@@ -38,17 +38,17 @@
       "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
       "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.218",
+      "version": "0.8.219",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.218.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.219.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.218.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.219.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -62,7 +62,7 @@
       "available": true,
       "noteAr": "بار موحد ورموز ملوّنة، إصلاح تحميل هوم IPTV عند الفتح، عناوين أوضح وتقييمات بنجوم نسبية، شاشة تحميل وتحسين وضع الأداء للأجهزة الضعيفة.",
       "noteEn": "Compact unified navigation, colored section icons and theme-aware focus. Faster progressive IPTV loading, readable TV categories, focus and first-paint fixes. Android adds saved M3U deletion and an in-player channel browser. Phone adds DLNA browsing.",
-      "version": "0.8.218",
+      "version": "0.8.219",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -72,22 +72,22 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-LG-0.8.218",
-      "file": "Morph-TV-LG-0.8.218.ipk",
-      "bytes": 7777570,
-      "sha256": "600514b94135266df803187933101cd5cd9f4369edc62f9742fdd0344e3f475e"
+      "name": "Morph-TV-LG-0.8.219",
+      "file": "Morph-TV-LG-0.8.219.ipk",
+      "bytes": 7778430,
+      "sha256": "346bc7c30d3e1340a8e2bd832f9dca99007d37adefed99f210ac7473afcb836a"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.218",
-      "file": "Morph-TV-Android-TV-0.8.218.apk",
-      "bytes": 13011644,
-      "sha256": "003b63541dca749a52b92251230853e762337fdbf77f5793642b44f41f00691d"
+      "name": "Morph-TV-Android-TV-0.8.219",
+      "file": "Morph-TV-Android-TV-0.8.219.apk",
+      "bytes": 13015740,
+      "sha256": "78871aedd3d6b8dd6ff298fe5092f366367cc78f27b114803f171db57402be92"
     },
     {
-      "name": "Morph-TV-Phone-0.8.218",
-      "file": "Morph-TV-Phone-0.8.218.apk",
-      "bytes": 39385863,
-      "sha256": "de3c11a4a5021ee9dbe5f1d0fd938cff67f8373bfd81c2b517450142a31c0dc9"
+      "name": "Morph-TV-Phone-0.8.219",
+      "file": "Morph-TV-Phone-0.8.219.apk",
+      "bytes": 39394055,
+      "sha256": "1fe70a96cc47011268520fe565b334c3225e15c915b0ccddd84ec96693b3a7b7"
     },
     {
       "name": "Morph-TV-Legacy-0.1.1",
