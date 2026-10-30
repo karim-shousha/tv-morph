@@ -1,56 +1,58 @@
 {
   "schema": 1,
-  "latest": "0.8.227",
+  "latest": "0.8.229",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.227",
+      "version": "0.8.229",
       "download": "/download/phone",
-      "noteAr": "تحسين تحميل وفرز مكتبات IPTV الكبيرة وإعادة استخدام الكاش وتنظيف مستمعي الواجهة. اختبار محلي 15 دقيقة؛ التحقق على الشاشات الفعلية مطلوب.",
-      "noteEn": "Large IPTV catalogue loading, bounded sorting and cache reuse; iframe listener cleanup. 15-minute desktop validation; physical TV testing pending."
+      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
+      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "channel": "preview"
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.228",
+      "version": "0.8.229",
       "download": "/download/android",
-      "noteAr": "نسخة Android TV تجريبية بتعديلات OpenCode لربط كاش المكتبة. حل توقف أول تحميل ما زال قيد التحقق على التلفزيون.",
-      "noteEn": "Android TV test with OpenCode native catalogue revalidation. First-load timeout remains unverified on hardware.",
+      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
+      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
-      "channel": "manual-test",
+      "channel": "preview",
       "physicalDeviceVerified": false
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.227",
+      "version": "0.8.229",
       "download": "/download/firetv",
-      "noteAr": "تحسين تحميل وفرز مكتبات IPTV الكبيرة وإعادة استخدام الكاش وتنظيف مستمعي الواجهة. اختبار محلي 15 دقيقة؛ التحقق على الشاشات الفعلية مطلوب.",
-      "noteEn": "Large IPTV catalogue loading, bounded sorting and cache reuse; iframe listener cleanup. 15-minute desktop validation; physical TV testing pending."
+      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
+      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "channel": "preview"
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحسين تحميل وفرز مكتبات IPTV الكبيرة وإعادة استخدام الكاش وتنظيف مستمعي الواجهة. اختبار محلي 15 دقيقة؛ التحقق على الشاشات الفعلية مطلوب.",
-      "noteEn": "Large IPTV catalogue loading, bounded sorting and cache reuse; iframe listener cleanup. 15-minute desktop validation; physical TV testing pending.",
+      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
+      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.227",
+      "version": "0.8.229",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.227.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.229.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.227.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.229.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -58,52 +60,54 @@
       "installVideo": "https://www.facebook.com/reel/1158151803538155",
       "experimentalTizen2": "/test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-candidate.wgt",
       "computerLite2Package": "/test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-candidate.wgt",
-      "computerLite2Version": "0.8.215"
+      "computerLite2Version": "0.8.215",
+      "channel": "preview"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحسين تحميل وفرز مكتبات IPTV الكبيرة وإعادة استخدام الكاش وتنظيف مستمعي الواجهة. اختبار محلي 15 دقيقة؛ التحقق على الشاشات الفعلية مطلوب.",
-      "noteEn": "Large IPTV catalogue loading, bounded sorting and cache reuse; iframe listener cleanup. 15-minute desktop validation; physical TV testing pending.",
-      "version": "0.8.227",
+      "noteAr": "تحديث 229: فتح المكتبة حسب التصنيف ومعاينات محدودة للهوم، وتحسين كاش Android TV. الموبايل مرفق بنفس إصدار التلفزيون. التحقق على الأجهزة الفعلية ما زال مطلوبًا.",
+      "noteEn": "Release 229: category-first IPTV entry, bounded Home previews and native Android cache revalidation. Phone bundles the same TV version. Physical-device verification pending.",
+      "version": "0.8.229",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
       "installMode": "developer-mode",
-      "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/"
+      "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/",
+      "channel": "preview"
     }
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.227",
-      "file": "Morph-TV-Phone-0.8.227.apk",
-      "bytes": 39459663,
-      "sha256": "a453ef031102bde3efeda8fe7535abd26f715588f4466e0f4a4fbd697e3f5885"
+      "name": "Morph-TV-Phone-0.8.229",
+      "file": "Morph-TV-Phone-0.8.229.apk",
+      "bytes": 39463759,
+      "sha256": "5dff71a4555506202e887b24b46ec6ada306c9f2eb6f57fe3e01afd5e77f487d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.227",
-      "file": "Morph-TV-Android-TV-0.8.227.apk",
+      "name": "Morph-TV-Android-TV-0.8.229",
+      "file": "Morph-TV-Android-TV-0.8.229.apk",
       "bytes": 13048723,
-      "sha256": "9b69b889b63eb3eedb06c9bc4f236127cf109f23bac90ba6494e96e5452202be"
+      "sha256": "15268b9a52cdd2b0f08c15bfebfa6d9fd78469d6b934a80ced669103bf4a310e"
     },
     {
-      "name": "Morph-TV-LG-0.8.227",
-      "file": "Morph-TV-LG-0.8.227.ipk",
-      "bytes": 7786068,
-      "sha256": "21d39ed8767387c028c7154e454d5391e0a1bdcb0c696b07853ff0d8faa33035"
+      "name": "Morph-TV-LG-0.8.229",
+      "file": "Morph-TV-LG-0.8.229.ipk",
+      "bytes": 7786856,
+      "sha256": "ccab7d021f8f311d467dde8e0f7ac0b29384a6a94990cd6ab1b1e5457c7ab91b"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.227",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.227.wgt",
-      "bytes": 7837244,
-      "sha256": "01bd25898a4795572e70c3da4d3cd9d10c539abddd3b7b67c0d5e5b836dbe92e"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.229",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.229.wgt",
+      "bytes": 7837966,
+      "sha256": "9c82a9294e6886d6b70608727962a87073dfc74c354523dc089eb6e6b2548de4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.227",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.227.wgt",
-      "bytes": 7837244,
-      "sha256": "29865165f743845ea2338c51d7cd4efb7edcaf173df3be85e259a0197c1bf5f9"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.229",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.229.wgt",
+      "bytes": 7837966,
+      "sha256": "90d2986b7b289e54bfe9d45d6f7adec542d46dccb30a076aa85cf755cbd80a52"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
@@ -122,12 +126,6 @@
       "file": "Morph-TV-Legacy-0.1.1.apk",
       "bytes": 135727,
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
-    },
-    {
-      "name": "Morph-TV-Android-TV-0.8.228-test",
-      "file": "test-releases/20261030-android-opencode-0.8.228/Morph-TV-Android-TV-0.8.228-test.apk",
-      "bytes": 13048723,
-      "sha256": "a22b1b1ca29939ab8df3425f2ba755aa07edeeedca1c298f9b92fb290d10ca59"
     }
   ],
   "legacy": {
