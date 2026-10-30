@@ -1,54 +1,54 @@
 {
   "schema": 1,
-  "latest": "0.8.224",
+  "latest": "0.8.225",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.224",
+      "version": "0.8.225",
       "download": "/download/phone",
-      "noteAr": "تحميل صور IPTV حسب الظهور للأجهزة الضعيفة، تنسيق موبايل أصغر دون تداخل، شريط تقدم تركواز وتحسين رجوع المشغل. يحتاج اختبار الأجهزة الفعلية.",
-      "noteEn": "Bounded visible artwork loading on constrained TVs, compact phone layout, turquoise watched progress and player Back handling. Physical device validation remains pending."
+      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
+      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.224",
+      "version": "0.8.225",
       "download": "/download/android",
-      "noteAr": "تحميل صور IPTV حسب الظهور للأجهزة الضعيفة، تنسيق موبايل أصغر دون تداخل، شريط تقدم تركواز وتحسين رجوع المشغل. يحتاج اختبار الأجهزة الفعلية.",
-      "noteEn": "Bounded visible artwork loading on constrained TVs, compact phone layout, turquoise watched progress and player Back handling. Physical device validation remains pending.",
+      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
+      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.224",
+      "version": "0.8.225",
       "download": "/download/firetv",
-      "noteAr": "تحميل صور IPTV حسب الظهور للأجهزة الضعيفة، تنسيق موبايل أصغر دون تداخل، شريط تقدم تركواز وتحسين رجوع المشغل. يحتاج اختبار الأجهزة الفعلية.",
-      "noteEn": "Bounded visible artwork loading on constrained TVs, compact phone layout, turquoise watched progress and player Back handling. Physical device validation remains pending."
+      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
+      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending."
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "تحميل صور IPTV حسب الظهور للأجهزة الضعيفة، تنسيق موبايل أصغر دون تداخل، شريط تقدم تركواز وتحسين رجوع المشغل. يحتاج اختبار الأجهزة الفعلية.",
-      "noteEn": "Bounded visible artwork loading on constrained TVs, compact phone layout, turquoise watched progress and player Back handling. Physical device validation remains pending.",
+      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
+      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.224",
+      "version": "0.8.225",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.224.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.225.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.224.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.225.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -62,9 +62,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "تحميل صور IPTV حسب الظهور للأجهزة الضعيفة، تنسيق موبايل أصغر دون تداخل، شريط تقدم تركواز وتحسين رجوع المشغل. يحتاج اختبار الأجهزة الفعلية.",
-      "noteEn": "Bounded visible artwork loading on constrained TVs, compact phone layout, turquoise watched progress and player Back handling. Physical device validation remains pending.",
-      "version": "0.8.224",
+      "noteAr": "تقليل حسابات التنقل بالأسهم على سامسونج وتأجيل تحديث الهيرو أثناء الحركة السريعة. اختبارات آلية ناجحة؛ اختبار التلفزيون الفعلي مطلوب.",
+      "noteEn": "Reduced D-pad layout calculations and coalesced Home hero updates. Automated navigation and phone layout checks passed; physical TV validation pending.",
+      "version": "0.8.225",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -74,34 +74,34 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.224",
-      "file": "Morph-TV-Phone-0.8.224.apk",
-      "bytes": 39418703,
-      "sha256": "bd3cfa3186d2cc67c02aa262742f8f85a9097132dcfd43ff95dc8c40c7331143"
+      "name": "Morph-TV-Phone-0.8.225",
+      "file": "Morph-TV-Phone-0.8.225.apk",
+      "bytes": 39422799,
+      "sha256": "fa6f1f360d73ac20d350c368c6ee147978e9eac7168916c0c8c9769223433d5f"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.224",
-      "file": "Morph-TV-Android-TV-0.8.224.apk",
-      "bytes": 13019981,
-      "sha256": "67ddbecc26a9d54c8ac3aea426765bb13a52346dcf61c100ca8f658cc28cd8f9"
+      "name": "Morph-TV-Android-TV-0.8.225",
+      "file": "Morph-TV-Android-TV-0.8.225.apk",
+      "bytes": 13024077,
+      "sha256": "2316e42eae86aa391dea00928caa5c7603f4784cefc07a85ff39c8222ecc56c4"
     },
     {
-      "name": "Morph-TV-LG-0.8.224",
-      "file": "Morph-TV-LG-0.8.224.ipk",
-      "bytes": 7783174,
-      "sha256": "34bd094c9b863a8e696e89f05e45cbb63a808fabcfae008c9b9df62b3a454d1d"
+      "name": "Morph-TV-LG-0.8.225",
+      "file": "Morph-TV-LG-0.8.225.ipk",
+      "bytes": 7783658,
+      "sha256": "734084fd80884dc16c08ba9b1f7881812568e73ac4880ea87a7444c6599c15c4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.224",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.224.wgt",
-      "bytes": 7833519,
-      "sha256": "7d60db1ec9250fc5445ccf35455f9fbb2e276748043fbc8d2b1d6570ce6a47c6"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.225",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.225.wgt",
+      "bytes": 7833962,
+      "sha256": "246fb738de20bb96edb5750d7fb501eb44155739b34820c2970050a1f505cce8"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.224",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.224.wgt",
-      "bytes": 7833519,
-      "sha256": "ae716debc3042b6726d722463d62eb1290d459a31a38c4e41c2980430e8b362b"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.225",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.225.wgt",
+      "bytes": 7833962,
+      "sha256": "14e33935c4f5713fd37027146cf93c35e5491140f396b1d9b4b86c630fb56103"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
