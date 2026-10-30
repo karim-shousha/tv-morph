@@ -16,11 +16,13 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.227",
+      "version": "0.8.228",
       "download": "/download/android",
-      "noteAr": "تحسين تحميل وفرز مكتبات IPTV الكبيرة وإعادة استخدام الكاش وتنظيف مستمعي الواجهة. اختبار محلي 15 دقيقة؛ التحقق على الشاشات الفعلية مطلوب.",
-      "noteEn": "Large IPTV catalogue loading, bounded sorting and cache reuse; iframe listener cleanup. 15-minute desktop validation; physical TV testing pending.",
-      "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf"
+      "noteAr": "نسخة Android TV تجريبية بتعديلات OpenCode لربط كاش المكتبة. حل توقف أول تحميل ما زال قيد التحقق على التلفزيون.",
+      "noteEn": "Android TV test with OpenCode native catalogue revalidation. First-load timeout remains unverified on hardware.",
+      "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
+      "channel": "manual-test",
+      "physicalDeviceVerified": false
     },
     {
       "id": "firetv",
@@ -120,6 +122,12 @@
       "file": "Morph-TV-Legacy-0.1.1.apk",
       "bytes": 135727,
       "sha256": "291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.228-test",
+      "file": "test-releases/20261030-android-opencode-0.8.228/Morph-TV-Android-TV-0.8.228-test.apk",
+      "bytes": 13048723,
+      "sha256": "a22b1b1ca29939ab8df3425f2ba755aa07edeeedca1c298f9b92fb290d10ca59"
     }
   ],
   "legacy": {
