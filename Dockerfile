@@ -12,6 +12,7 @@ COPY test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-can
 COPY test-releases/20261028-tizen3-lite-0.8.186/Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt /usr/share/nginx/html/test-releases/20261028-tizen3-lite-0.8.186/Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt
 COPY test-releases/mobile-latest.json /usr/share/nginx/html/test-releases/mobile-latest.json
 COPY releases/0.8.227/ /usr/share/nginx/html/releases/0.8.227/
+COPY test-releases/20261030-android-opencode-0.8.228/ /usr/share/nginx/html/test-releases/20261030-android-opencode-0.8.228/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1

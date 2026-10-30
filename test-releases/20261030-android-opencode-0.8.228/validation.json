@@ -1,0 +1,12 @@
+{
+  "version": "0.8.228-preview",
+  "versionCode": 228,
+  "package": "local.tvmorph.tv",
+  "channel": "manual-android-tv-test",
+  "url": "https://morphtv.herroshetta.com/test-releases/20261030-android-opencode-0.8.228/Morph-TV-Android-TV-0.8.228-test.apk",
+  "bytes": 13048723,
+  "sha256": "a22b1b1ca29939ab8df3425f2ba755aa07edeeedca1c298f9b92fb290d10ca59",
+  "physicalDeviceVerified": false,
+  "publicDownloadsChanged": false,
+  "changes": "OpenCode native IptvStore catalog revalidation and full-catalog category derivation. Cold-load timeout remains unconfirmed."
+}
