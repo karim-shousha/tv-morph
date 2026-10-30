@@ -1,7 +1,7 @@
 {
   "channel": "manual-test",
-  "version": "0.8.210",
-  "url": "https://morphtv.herroshetta.com/test-releases/20261029-public-0.8.210/Morph-TV-Phone-0.8.210.apk",
-  "sha256": "52c33ddbfc0714ce236077d0fea2b88a3c7bd9d2ee5ec11bd33634d8209dc80d",
-  "bytes": 38091375
+  "version": "0.8.216",
+  "url": "https://morphtv.herroshetta.com/test-releases/20261029-public-0.8.216/Morph-TV-Phone-0.8.216.apk",
+  "sha256": "7d845747a58282806ab476cc3e88ee9cbad38212ece15a04e26da89f644a2bc8",
+  "bytes": 38243002
 }
