@@ -1,8 +1,8 @@
-72a114deed49b6f2f3a871ba16f76227ea489cdd5f266c082cc9d42e9d6f59d4  Morph-TV-Phone-0.8.233.apk
-f5c2ce26b98cc7e2feb02f9f1d7abca0093f5dc2d244b1db116acafb0f49e7d9  Morph-TV-Android-TV-0.8.233.apk
-ca431eb7f67e94f218a4a3f779c5814d5f252bcc260783121e3ac7e2a295420c  Morph-TV-LG-0.8.233.ipk
-85512159031a1c08695728b56b839267886a31be4034a4c1f8f4c8272bb76a88  Morph-TV-Samsung-Tizen5-0.8.233.wgt
-0a84640a4bf732db00c7f3d93364da868e0f54d238053819fa155eb09eff5c0f  Morph-TV-Samsung-Tizen4-0.8.233.wgt
+ff8f3d11f40f002b162c48b5c156537131e6835aeadb5b3baf318873ca9e46e5  Morph-TV-Phone-0.8.233.apk
+4152e4efae1ea4d9757b0c65c4b91af43ea1326c170801c23c5f7c5e780a55b3  Morph-TV-Android-TV-0.8.233.apk
+684e9d215f2f9a5304fc4133e7e3110b6a324ed07c5b5d28c7881f4fef22866e  Morph-TV-LG-0.8.233.ipk
+3f043ea7277caa9cc7ccd715256f5ca37901873cf7fb6a31de5b5d64e01934c6  Morph-TV-Samsung-Tizen5-0.8.233.wgt
+d573436d737eb9c5fd7024bbce0b708e2d65a600b2f11298f4b9b9a8c3f69291  Morph-TV-Samsung-Tizen4-0.8.233.wgt
 ce0d8693d2dee8e3a7c3ea695f439a099a50f95127746a7f1486c4102c05d343  test-releases/20261029-tizen2-lite-0.8.215/Morph-TV-Tizen2-Lite-0.8.215-candidate.wgt
 6ed901a53207b5bcbd58e9b86bf2553e11da55910df4e191a6a76b8eeb0becb8  test-releases/20261028-tizen3-lite-0.8.186/Morph-TV-Tizen3-Lite-0.8.186-candidate.wgt
 291466e145b86fc6a188222ea2e56893079e8f6e925c35243e77c11f21dd53cf  Morph-TV-Legacy-0.1.1.apk
