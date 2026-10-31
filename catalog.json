@@ -88,50 +88,50 @@
     {
       "name": "Morph-TV-Phone-0.8.253",
       "file": "Morph-TV-Phone-0.8.253.apk",
-      "bytes": 40708826,
-      "sha256": "3a327a34c61ee2a7079180d0b9e39155ec7837140770c31f7fc28d6cf1ea46ea"
+      "bytes": 40712922,
+      "sha256": "4431ad61a3a0d66d44468d7810549fb30eda57dabca54edaea8820e414ad43b8"
     },
     {
       "name": "Morph-TV-Android-TV-0.8.253",
       "file": "Morph-TV-Android-TV-0.8.253.apk",
       "bytes": 13368134,
-      "sha256": "70fc538301a6883f8b95973fb7ad83dfd4073043d5c6c4a1ad1b1aecca46a91a"
+      "sha256": "5abd5f7179a6750979ce4fba354d7f3b9d20e6a398e932c776cad455e64fb152"
     },
     {
       "name": "Morph-TV-LG-0.8.253",
       "file": "Morph-TV-LG-0.8.253.ipk",
-      "bytes": 8094394,
-      "sha256": "fd0f5d88d0c09f1cdc03bf0a4335d27198a81b4bb0aa1bd573665ff8b0cd5031"
+      "bytes": 8094760,
+      "sha256": "04e3d9af2517a0d4c7811be43f05a914821519d3be449cafd4263353fb530bca"
     },
     {
       "name": "Morph-TV-Samsung-Tizen4-0.8.253",
       "file": "Morph-TV-Samsung-Tizen4-0.8.253.wgt",
-      "bytes": 8146981,
-      "sha256": "fdce2a01bd13e3965f3194af3d4e1bacbb31f96e8d6afbbb8106db50c8072187"
+      "bytes": 8147111,
+      "sha256": "eca1676bbf86e4b0cb5f97ccb68d2b379dce9690a6ff251e9ab48dee5f524268"
     },
     {
       "name": "Morph-TV-Legacy-0.1.4",
       "file": "Morph-TV-Legacy-0.1.4.apk",
       "bytes": 143919,
-      "sha256": "98772db4f06dd18b7803642ec8f1ebeb15c0a063696849c4e8b32e31b0b7fb53"
+      "sha256": "c629d12cd9cb8f6e9cef65e26bb9526f8427e01fbd7473ec59ebcc33b7b313b5"
     },
     {
       "name": "Morph-TV-Samsung-Tizen5-0.8.253",
       "file": "Morph-TV-Samsung-Tizen5-0.8.253.wgt",
-      "bytes": 8143540,
-      "sha256": "a5202807adcbc7b2ce0dbc89a8a167e7acb46dda1f393e7e892dcadc63c62b25"
+      "bytes": 8143668,
+      "sha256": "b7d1a7c84ce8e248ad117b0af2d5a8008c52dd7aca5ea69592891fd977787d25"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.253-candidate",
       "file": "test-releases/20261031-tizen2-lite-0.8.253/Morph-TV-Tizen2-Lite-0.8.253-candidate.wgt",
-      "bytes": 8247800,
-      "sha256": "d4c47256db9a6c600b82671a9732a24a224a0ac265a74a5626efe5229f0c79fd"
+      "bytes": 8247870,
+      "sha256": "f2e324cfa9a942aa07d1c7544669fefc876d33dcc39c5ab9cb0ea4f2fabece42"
     },
     {
       "name": "Morph-TV-Tizen3-Lite-0.8.253-candidate",
       "file": "test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.wgt",
-      "bytes": 8246823,
-      "sha256": "2ed176d8fb546a107dcae668273c1aedc6ba9920642f453cbf867c8429132ae1"
+      "bytes": 8246893,
+      "sha256": "660440323ecd511e6bda0067a198dee7b1645192f62270682554dcfe99182c53"
     }
   ],
   "legacy": {
