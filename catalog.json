@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.231",
+  "latest": "0.8.232",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.231",
+      "version": "0.8.232",
       "download": "/download/phone",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -17,7 +17,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.231",
+      "version": "0.8.232",
       "download": "/download/android",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -29,7 +29,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.231",
+      "version": "0.8.232",
       "download": "/download/firetv",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -42,17 +42,17 @@
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.231",
+      "version": "0.8.232",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.231.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.232.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.231.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.232.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -69,7 +69,7 @@
       "available": true,
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
-      "version": "0.8.231",
+      "version": "0.8.232",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -80,34 +80,34 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.231",
-      "file": "Morph-TV-Phone-0.8.231.apk",
-      "bytes": 39471951,
-      "sha256": "aec2fa4fda45161c4346fae95ba7b341c58f6f77dbe5bba81426f40127ad5beb"
+      "name": "Morph-TV-Phone-0.8.232",
+      "file": "Morph-TV-Phone-0.8.232.apk",
+      "bytes": 39492431,
+      "sha256": "1835bd1a656990dad9b939710281c1d7a08bdadfe3cfb99601fb4bb82359c55d"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.231",
-      "file": "Morph-TV-Android-TV-0.8.231.apk",
-      "bytes": 13052819,
-      "sha256": "5f22343931bbb68f9dfaa3a0774dc2e497f61b79cc3f1d745fee638ec7879031"
+      "name": "Morph-TV-Android-TV-0.8.232",
+      "file": "Morph-TV-Android-TV-0.8.232.apk",
+      "bytes": 13056915,
+      "sha256": "c64320552ea482ad1a076ffe3f235a97b96fac2176c5231a57ea038ff3556e60"
     },
     {
-      "name": "Morph-TV-LG-0.8.231",
-      "file": "Morph-TV-LG-0.8.231.ipk",
-      "bytes": 7789630,
-      "sha256": "29ab38a8b5c820a7b0e4487cc0ee93f8fb01e0125b0042e9f3777e1784865095"
+      "name": "Morph-TV-LG-0.8.232",
+      "file": "Morph-TV-LG-0.8.232.ipk",
+      "bytes": 7794818,
+      "sha256": "41472cee7768907edce54f44f8b83d2234cbb3817bacbbfbeff6d0f18b33166a"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.231",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.231.wgt",
-      "bytes": 7840536,
-      "sha256": "0addffebd80ff86c514c288ef3a24045a091c9e496c57a8f30645eddbfd029d4"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.232",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.232.wgt",
+      "bytes": 7845080,
+      "sha256": "3182360b18bc648d8f71584f8f2a7d38b21982d2f2df8a4fdbf06f678da52d1c"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.231",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.231.wgt",
-      "bytes": 7840536,
-      "sha256": "f2b907edf0961d079f4c88a2c6db8ad9ce961e968fe8d5bcc24e7c53131ab6ca"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.232",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.232.wgt",
+      "bytes": 7845080,
+      "sha256": "31808c3cdd7000dfd0c45025a22883ef5a2e5aca48d05953d56f00a92cb88189"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
