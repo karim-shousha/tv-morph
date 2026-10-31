@@ -38,11 +38,11 @@
 !support-links.json
 !tvmorph.png
 !web-tv.html
-!Morph-TV-Phone-0.8.232.apk
-!Morph-TV-Android-TV-0.8.232.apk
-!Morph-TV-LG-0.8.232.ipk
-!Morph-TV-Samsung-Tizen5-0.8.232.wgt
-!Morph-TV-Samsung-Tizen4-0.8.232.wgt
+!Morph-TV-Phone-0.8.233.apk
+!Morph-TV-Android-TV-0.8.233.apk
+!Morph-TV-LG-0.8.233.ipk
+!Morph-TV-Samsung-Tizen5-0.8.233.wgt
+!Morph-TV-Samsung-Tizen4-0.8.233.wgt
 !Morph-TV-Legacy-0.1.1.apk
 !fitness-music/
 !fitness-music/**
@@ -53,8 +53,8 @@
 !theme-previews/
 !theme-previews/**
 !releases/
-!releases/0.8.232/
-!releases/0.8.232/**
+!releases/0.8.233/
+!releases/0.8.233/**
 !test-releases/
 !test-releases/mobile-latest.json
 !test-releases/20261029-tizen2-lite-0.8.215/
