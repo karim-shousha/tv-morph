@@ -83,31 +83,31 @@
       "name": "Morph-TV-Phone-0.8.242",
       "file": "Morph-TV-Phone-0.8.242.apk",
       "bytes": 40593923,
-      "sha256": "d5f6a1f0162f0513bc87eaaa0ca9bdd8ca3fab9f0be9d8411ed18440884ccf95"
+      "sha256": "2c75d9268729349f29c4359be1284eae89b47947de62a39c8ce26bd6cc35fa94"
     },
     {
       "name": "Morph-TV-Android-TV-0.8.242",
       "file": "Morph-TV-Android-TV-0.8.242.apk",
       "bytes": 13335076,
-      "sha256": "137e6f1ffeb3fc1b9fe1b3895c8a2d37bbc807859d28929adb0700247cadefb7"
+      "sha256": "57d77dd975b1d50fb2fa387ffbb7886c3ce21c5777f73c9ce16a7a2fdb45a9ea"
     },
     {
       "name": "Morph-TV-LG-0.8.242",
       "file": "Morph-TV-LG-0.8.242.ipk",
-      "bytes": 8070836,
-      "sha256": "147eac617d370e0a6fcbcb143e62e4cd92772e12eb3ae1aa9f6eca5ca1d1765a"
+      "bytes": 8070872,
+      "sha256": "758a7d96e07f2bdf049a20acff2dd185bda56437c049ca11aa7c20c6c86a012f"
     },
     {
       "name": "Morph-TV-Samsung-Tizen5-0.8.242",
       "file": "Morph-TV-Samsung-Tizen5-0.8.242.wgt",
-      "bytes": 8121363,
-      "sha256": "1500db8f5efc3eb26283b660c705f147664be07687b211da9f7d55c03296abc3"
+      "bytes": 8121506,
+      "sha256": "0a7eb48b84c39adb513b7f08e3ff14472c3a30e3a142ea147319883af244fbaa"
     },
     {
       "name": "Morph-TV-Samsung-Tizen4-0.8.242",
       "file": "Morph-TV-Samsung-Tizen4-0.8.242.wgt",
-      "bytes": 8121363,
-      "sha256": "cf3b88d21c8ad38dd2b9cc481d72ee0ea3b1a9087d6118c87363638e6c94d5fd"
+      "bytes": 8121506,
+      "sha256": "0d0ecf6289e4f6366103557687ae60184936174803cc390eb24ab52af4e7dd9a"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
