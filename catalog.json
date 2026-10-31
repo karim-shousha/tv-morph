@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "latest": "0.8.234",
+  "latest": "0.8.235",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.234",
+      "version": "0.8.235",
       "download": "/download/phone",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -17,7 +17,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.234",
+      "version": "0.8.235",
       "download": "/download/android",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -29,7 +29,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.234",
+      "version": "0.8.235",
       "download": "/download/firetv",
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
@@ -42,17 +42,17 @@
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.234",
+      "version": "0.8.235",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.234.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.235.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.234.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.235.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -69,7 +69,7 @@
       "available": true,
       "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
       "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
-      "version": "0.8.234",
+      "version": "0.8.235",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -80,34 +80,34 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.234",
-      "file": "Morph-TV-Phone-0.8.234.apk",
+      "name": "Morph-TV-Phone-0.8.235",
+      "file": "Morph-TV-Phone-0.8.235.apk",
       "bytes": 39492431,
-      "sha256": "543d77a06cee99a1191585c274d2ba4a336e739a01ee9e18bbbc6f05d0407244"
+      "sha256": "acfa8896007dde0e93538d346e37cdabe0e1c00ba5867badf5fd1407490205c8"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.234",
-      "file": "Morph-TV-Android-TV-0.8.234.apk",
+      "name": "Morph-TV-Android-TV-0.8.235",
+      "file": "Morph-TV-Android-TV-0.8.235.apk",
       "bytes": 13056915,
-      "sha256": "a29052c118376d600228737417a500ab11ba2b59da3a4a246620171f0cd1f23a"
+      "sha256": "19237594e22e9caf658f00f9abab935af1f136d99a3c46e7ad14feb2ffcf4f43"
     },
     {
-      "name": "Morph-TV-LG-0.8.234",
-      "file": "Morph-TV-LG-0.8.234.ipk",
-      "bytes": 7795240,
-      "sha256": "36b45b687279039f4ca2fccafef225aee21d288572fdfeea3c0f72d98761da13"
+      "name": "Morph-TV-LG-0.8.235",
+      "file": "Morph-TV-LG-0.8.235.ipk",
+      "bytes": 7795448,
+      "sha256": "27fe5a5ccc316def048fd958ab109c905dbee1f64ac9fe3e62e23a3dcb90db79"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.234",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.234.wgt",
-      "bytes": 7845494,
-      "sha256": "0f4c66636361b0be419b66aef4c60e39d8e10218292ca4cb56a36df793f50939"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.235",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.235.wgt",
+      "bytes": 7845695,
+      "sha256": "08ecc26ee59f4fc675e8443a25ff0c703dec3d4e5e79ad19d94b650a25acf0ce"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.234",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.234.wgt",
-      "bytes": 7845494,
-      "sha256": "4251a592e7b86322afe6ce8e4025371381e9cc631c647643dbad24309cc00466"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.235",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.235.wgt",
+      "bytes": 7845695,
+      "sha256": "041e70076243d1cef4b3a0e7f6702a3ee7c81311f7080e1c4d33e40fe91dae49"
     },
     {
       "name": "Morph-TV-Tizen2-Lite-0.8.215-candidate",
