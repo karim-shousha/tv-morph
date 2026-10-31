@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "latest": "0.8.247",
+  "latest": "0.8.248",
   "channel": "preview",
   "platforms": [
     {
@@ -17,7 +17,7 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.247",
+      "version": "0.8.248",
       "download": "/download/android",
       "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
       "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
@@ -29,7 +29,7 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.247",
+      "version": "0.8.248",
       "download": "/download/firetv",
       "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
       "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
@@ -90,6 +90,12 @@
       "file": "Morph-TV-Android-TV-0.8.247.apk",
       "bytes": 7633179,
       "sha256": "9254e287a5df4f1651bac1eaff76f7737eb03152113eccaf073fc305ff91d301"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.248",
+      "file": "Morph-TV-Android-TV-0.8.248.apk",
+      "bytes": 13343268,
+      "sha256": "7724f51e9afd5662a2cbbaa5ab539c23cfdac204c7b5c73becec92e35e9a63e6"
     },
     {
       "name": "Morph-TV-LG-0.8.247",
