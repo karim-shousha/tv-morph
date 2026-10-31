@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "latest": "0.8.246",
+  "latest": "0.8.247",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.246",
+      "version": "0.8.247",
       "download": "/download/phone",
-      "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
-      "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
+      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
+      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
       "channel": "preview"
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.246",
+      "version": "0.8.247",
       "download": "/download/android",
-      "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
-      "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
+      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
+      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false
@@ -29,30 +29,30 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.246",
+      "version": "0.8.247",
       "download": "/download/firetv",
-      "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
-      "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
+      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
+      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
       "channel": "preview"
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
-      "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
+      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
+      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.246",
+      "version": "0.8.247",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.246.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.247.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.246.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.247.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -67,9 +67,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إضافة 3 أحجام لأيقونات الدوك، ومزج الأفلام والمسلسلات مع نوع المحتوى في Trending Now وMost Popular، ونقل Fitness فوق الصلاة. يشمل إصلاحات البلاير والحسابات وسرعة 3× والرجوع للهوم عند إعادة فتح التطبيق.",
-      "noteEn": "Three dock icon sizes; mixed Movie/Series Trending and Most Popular cards with type labels; Fitness above Prayer. Includes player focus, account switching/status, 3x and Home on app relaunch.",
-      "version": "0.8.246",
+      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
+      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
+      "version": "0.8.247",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -80,43 +80,43 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.246",
-      "file": "Morph-TV-Phone-0.8.246.apk",
-      "bytes": 40634953,
-      "sha256": "e4e0b41f9131490269100daff1bcd2bd424d917f159a7774798d82bedf2435fd"
+      "name": "Morph-TV-Phone-0.8.247",
+      "file": "Morph-TV-Phone-0.8.247.apk",
+      "bytes": 34925129,
+      "sha256": "70fec0e613c6238d361b64c3c0a420ff55b428563908a589cd59d93153262eeb"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.246",
-      "file": "Morph-TV-Android-TV-0.8.246.apk",
-      "bytes": 13343268,
-      "sha256": "0994935f74744dc65723ca6c0c849c016b1851d8d216320a310b96164b01e862"
+      "name": "Morph-TV-Android-TV-0.8.247",
+      "file": "Morph-TV-Android-TV-0.8.247.apk",
+      "bytes": 7633179,
+      "sha256": "9254e287a5df4f1651bac1eaff76f7737eb03152113eccaf073fc305ff91d301"
     },
     {
-      "name": "Morph-TV-LG-0.8.246",
-      "file": "Morph-TV-LG-0.8.246.ipk",
-      "bytes": 8077240,
-      "sha256": "22b3c12d31da06683d1edf838a89925b50f7293cb9bb3359d2fae54505d2e0dc"
+      "name": "Morph-TV-LG-0.8.247",
+      "file": "Morph-TV-LG-0.8.247.ipk",
+      "bytes": 8077264,
+      "sha256": "602956d249d4c6d50c852c8bd6bd5fd77609b988494644e96787a98ecf4e0a9a"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.246",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.246.wgt",
-      "bytes": 8127778,
-      "sha256": "59c9b17e49a0cb1a0e37e7e905dc4d7bd8c0e2c50823156111fd41f195166164"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.247",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.247.wgt",
+      "bytes": 8127787,
+      "sha256": "3ebc294d8137a04272074cd38b1ab4e2b7f84657dc0fff29e44df57b22efe932"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.246",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.246.wgt",
-      "bytes": 8131210,
-      "sha256": "a26617c6f653b17f04b0deb7eca722108018d2ba83d05ccd91e06f8a0c74a4c5"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.247",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.247.wgt",
+      "bytes": 8127629,
+      "sha256": "b9c7e94a5c5f94b829b1355094780e8dfcb140b726e6f8a2c0e2f4dbac23321b"
     },
     {
-      "name": "Morph-TV-Tizen2-Lite-0.8.219-candidate",
+      "name": "test-releases/20261031-tizen2-lite-0.8.219/Morph-TV-Tizen2-Lite-0.8.219-candidate",
       "file": "test-releases/20261031-tizen2-lite-0.8.219/Morph-TV-Tizen2-Lite-0.8.219-candidate.wgt",
       "bytes": 8233062,
       "sha256": "746deeb229c001e2a9aa99cec020c0c618ae77acf390bb9ab23de94550ba1beb"
     },
     {
-      "name": "Morph-TV-Tizen3-Lite-0.8.190-candidate",
+      "name": "test-releases/20261031-tizen3-lite-0.8.190/Morph-TV-Tizen3-Lite-0.8.190-candidate",
       "file": "test-releases/20261031-tizen3-lite-0.8.190/Morph-TV-Tizen3-Lite-0.8.190-candidate.wgt",
       "bytes": 8232085,
       "sha256": "47911e88c2043ba6ecfd2f50fab20b1ed4f93db2699a4e6c0e5c4f3b6272c67b"
