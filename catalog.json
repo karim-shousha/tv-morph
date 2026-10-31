@@ -1,75 +1,81 @@
 {
   "schema": 1,
-  "latest": "0.8.249",
+  "latest": "0.8.252",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.249",
+      "version": "0.8.252",
       "download": "/download/phone",
-      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
-      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
-      "channel": "preview"
+      "noteAr": "بلاير أصغر بمنتصف الشاشة، قوائم متحاذية ومنسدلة وألوان الثيم، تحسين بدء الأفلام، تريلر Samsung/LG، وشاشات مستقلة لإضافة الاشتراك.",
+      "noteEn": "Compact centered themed player, aligned accordion panels, faster VOD startup, Samsung/LG trailer launch, separate subscription source forms.",
+      "channel": "preview",
+      "versionCode": 256
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.249",
+      "version": "0.8.252",
       "download": "/download/android",
-      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
-      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
+      "noteAr": "بلاير أصغر بمنتصف الشاشة، قوائم متحاذية ومنسدلة وألوان الثيم، تحسين بدء الأفلام، تريلر Samsung/LG، وشاشات مستقلة لإضافة الاشتراك.",
+      "noteEn": "Compact centered themed player, aligned accordion panels, faster VOD startup, Samsung/LG trailer launch, separate subscription source forms.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
-      "physicalDeviceVerified": false
+      "physicalDeviceVerified": false,
+      "versionCode": 252
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.249",
+      "version": "0.8.252",
       "download": "/download/firetv",
-      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
-      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
-      "channel": "preview"
+      "noteAr": "بلاير أصغر بمنتصف الشاشة، قوائم متحاذية ومنسدلة وألوان الثيم، تحسين بدء الأفلام، تريلر Samsung/LG، وشاشات مستقلة لإضافة الاشتراك.",
+      "noteEn": "Compact centered themed player, aligned accordion panels, faster VOD startup, Samsung/LG trailer launch, separate subscription source forms.",
+      "channel": "preview",
+      "versionCode": 252
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
-      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
+      "noteAr": "بلاير أصغر بمنتصف الشاشة، قوائم متحاذية ومنسدلة وألوان الثيم، تحسين بدء الأفلام، تريلر Samsung/LG، وشاشات مستقلة لإضافة الاشتراك.",
+      "noteEn": "Compact centered themed player, aligned accordion panels, faster VOD startup, Samsung/LG trailer launch, separate subscription source forms.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.249",
+      "version": "0.8.252",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.249.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.252.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.249.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.252.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
       ],
       "installVideo": "https://www.facebook.com/reel/1158151803538155",
-      "experimentalTizen2": "/test-releases/20261031-tizen2-lite-0.8.218/Morph-TV-Tizen2-Lite-0.8.218-candidate.wgt",
-      "computerLite2Package": "/test-releases/20261031-tizen2-lite-0.8.218/Morph-TV-Tizen2-Lite-0.8.218-candidate.wgt",
-      "computerLite2Version": "0.8.218",
-      "channel": "preview"
+      "experimentalTizen2": "/test-releases/20261031-tizen2-lite-0.8.252/Morph-TV-Tizen2-Lite-0.8.252-candidate.wgt",
+      "computerLite2Package": "/test-releases/20261031-tizen2-lite-0.8.252/Morph-TV-Tizen2-Lite-0.8.252-candidate.wgt",
+      "computerLite2Version": "0.8.252",
+      "channel": "preview",
+      "experimentalTizen3": "/test-releases/20261031-tizen3-lite-0.8.252/Morph-TV-Tizen3-Lite-0.8.252-candidate.wgt",
+      "computerLite3Package": "/test-releases/20261031-tizen3-lite-0.8.252/Morph-TV-Tizen3-Lite-0.8.252-candidate.wgt",
+      "computerLite3Version": "0.8.252"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
-      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
-      "version": "0.8.249",
+      "noteAr": "بلاير أصغر بمنتصف الشاشة، قوائم متحاذية ومنسدلة وألوان الثيم، تحسين بدء الأفلام، تريلر Samsung/LG، وشاشات مستقلة لإضافة الاشتراك.",
+      "noteEn": "Compact centered themed player, aligned accordion panels, faster VOD startup, Samsung/LG trailer launch, separate subscription source forms.",
+      "version": "0.8.252",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -80,122 +86,63 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.247",
-      "file": "Morph-TV-Phone-0.8.247.apk",
-      "bytes": 34925129,
-      "sha256": "70fec0e613c6238d361b64c3c0a420ff55b428563908a589cd59d93153262eeb"
+      "name": "Morph-TV-Phone-0.8.252",
+      "file": "Morph-TV-Phone-0.8.252.apk",
+      "bytes": 40708826,
+      "sha256": "1f1a98b37311dbcdc61bf30f75e2ddc28baea50f648c1b1e64567968b21f2d50"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.247",
-      "file": "Morph-TV-Android-TV-0.8.247.apk",
-      "bytes": 7633179,
-      "sha256": "9254e287a5df4f1651bac1eaff76f7737eb03152113eccaf073fc305ff91d301"
+      "name": "Morph-TV-Android-TV-0.8.252",
+      "file": "Morph-TV-Android-TV-0.8.252.apk",
+      "bytes": 13368134,
+      "sha256": "1ca50930f5994a26fdbef5cd7bbf9bbaca41c11f701eafc3c6d13cd2fa488383"
     },
     {
-      "name": "Morph-TV-Android-TV-0.8.248",
-      "file": "Morph-TV-Android-TV-0.8.248.apk",
-      "bytes": 13343268,
-      "sha256": "7724f51e9afd5662a2cbbaa5ab539c23cfdac204c7b5c73becec92e35e9a63e6"
+      "name": "Morph-TV-LG-0.8.252",
+      "file": "Morph-TV-LG-0.8.252.ipk",
+      "bytes": 8094142,
+      "sha256": "099ec1a5320e18ea708dc2391e0794306542bf3a4338a2f069ea4573589133ac"
     },
     {
-      "name": "Morph-TV-LG-0.8.247",
-      "file": "Morph-TV-LG-0.8.247.ipk",
-      "bytes": 8077264,
-      "sha256": "602956d249d4c6d50c852c8bd6bd5fd77609b988494644e96787a98ecf4e0a9a"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.252",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.252.wgt",
+      "bytes": 8146846,
+      "sha256": "11e5090c7b74c2bfe4738ba41a714f2dadca21db2b693cdfb682959bc93fbd7a"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.247",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.247.wgt",
-      "bytes": 8127787,
-      "sha256": "3ebc294d8137a04272074cd38b1ab4e2b7f84657dc0fff29e44df57b22efe932"
+      "name": "Morph-TV-Legacy-0.1.3",
+      "file": "Morph-TV-Legacy-0.1.3.apk",
+      "bytes": 143919,
+      "sha256": "028e7f63246e6588bc6b5e9b31e18121c8618a932d29fb85c345d3b5d09382ec"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.247",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.247.wgt",
-      "bytes": 8127629,
-      "sha256": "b9c7e94a5c5f94b829b1355094780e8dfcb140b726e6f8a2c0e2f4dbac23321b"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.252",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.252.wgt",
+      "bytes": 8143403,
+      "sha256": "60e1c6f5deba057d803104219b8f746ff803cc81e28c533dd1331bf8b8bb0a6d"
     },
     {
-      "name": "test-releases/20261031-tizen2-lite-0.8.219/Morph-TV-Tizen2-Lite-0.8.219-candidate",
-      "file": "test-releases/20261031-tizen2-lite-0.8.219/Morph-TV-Tizen2-Lite-0.8.219-candidate.wgt",
-      "bytes": 8233062,
-      "sha256": "746deeb229c001e2a9aa99cec020c0c618ae77acf390bb9ab23de94550ba1beb"
+      "name": "Morph-TV-Tizen2-Lite-0.8.252-candidate",
+      "file": "test-releases/20261031-tizen2-lite-0.8.252/Morph-TV-Tizen2-Lite-0.8.252-candidate.wgt",
+      "bytes": 8247723,
+      "sha256": "59119826cefa7cfcb016a6160c71cd85c0ac976f02cbebaa39a1ba513e3b8ee7"
     },
     {
-      "name": "test-releases/20261031-tizen3-lite-0.8.190/Morph-TV-Tizen3-Lite-0.8.190-candidate",
-      "file": "test-releases/20261031-tizen3-lite-0.8.190/Morph-TV-Tizen3-Lite-0.8.190-candidate.wgt",
-      "bytes": 8232085,
-      "sha256": "47911e88c2043ba6ecfd2f50fab20b1ed4f93db2699a4e6c0e5c4f3b6272c67b"
-    },
-    {
-      "name": "Morph-TV-Legacy-0.1.2",
-      "file": "Morph-TV-Legacy-0.1.2.apk",
-      "bytes": 139823,
-      "sha256": "b6a200c6e102f2d2a6898588eee5674004d830a497e4c7e181818a7b64f7aa7b"
-    },
-    {
-      "name": "Morph-TV-Phone-0.8.248",
-      "file": "Morph-TV-Phone-0.8.248.apk",
-      "bytes": 40634953,
-      "sha256": "3e93156535f056a302cef6989a69560a30ad075d5da012673c27ed4fb231f656"
-    },
-    {
-      "name": "Morph-TV-LG-0.8.248",
-      "file": "Morph-TV-LG-0.8.248.ipk",
-      "bytes": 8077272,
-      "sha256": "466c4d9bb86cd999e956b3c9af037a8b010c5299a3ddd5800f064394101c3eec"
-    },
-    {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.248",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.248.wgt",
-      "bytes": 8127791,
-      "sha256": "c453afd2858c08e4af4307e42ccddfae3248b9c8bf0c469b7b71b4818d4bcd74"
-    },
-    {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.248",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.248.wgt",
-      "bytes": 8131222,
-      "sha256": "aebc1d827c3f8fabd1dd9beef81003e5dc6076f8ed71ca0ad9cd0a132145b6f6"
-    },
-    {
-      "name": "Morph-TV-Phone-0.8.249",
-      "file": "Morph-TV-Phone-0.8.249.apk",
-      "bytes": 40634953,
-      "sha256": "c7c76fc88e0bed1c9b7f68ccefcfcbc4083c26ff271053fcbee00ce3b44c0ece"
-    },
-    {
-      "name": "Morph-TV-Android-TV-0.8.249",
-      "file": "Morph-TV-Android-TV-0.8.249.apk",
-      "bytes": 13343268,
-      "sha256": "a9085d4084831c58dbe071ff593c5091db5d02927565f6ab96fe4a7726cf5d8e"
-    },
-    {
-      "name": "Morph-TV-LG-0.8.249",
-      "file": "Morph-TV-LG-0.8.249.ipk",
-      "bytes": 8077302,
-      "sha256": "28ef58bdc68e5b26c725debfa7a5b54cb0cc74efb5c55cbee96cb4b4ca5bd96e"
-    },
-    {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.249",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.249.wgt",
-      "bytes": 8127834,
-      "sha256": "ebc4d71c9eed380d54304a5f0ddeb75776516716b459ed16a918c8c3445598b0"
-    },
-    {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.249",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.249.wgt",
-      "bytes": 8131265,
-      "sha256": "5d4a6cf37f18522f801069faddb0470b3592abd6dc2dde14e89c8228ed494933"
+      "name": "Morph-TV-Tizen3-Lite-0.8.252-candidate",
+      "file": "test-releases/20261031-tizen3-lite-0.8.252/Morph-TV-Tizen3-Lite-0.8.252-candidate.wgt",
+      "bytes": 8246747,
+      "sha256": "3dfdc69b9b654440808b416198b5fc1bc9fb18296d776eb130003eddd30d2aa8"
     }
   ],
   "legacy": {
     "available": true,
-    "version": "0.1.2",
+    "version": "0.1.3",
     "minAndroid": "4.4",
     "minSdk": 19,
     "channel": "experimental",
     "download": "/download/legacy",
-    "physicalDeviceVerified": false
+    "physicalDeviceVerified": false,
+    "versionCode": 4
   },
   "installGuide": "/install.html",
   "installKit": "/samsung-computer.html"
