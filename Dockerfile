@@ -27,7 +27,15 @@ COPY test-releases/20261031-tizen3-lite-0.8.252/README.md /usr/share/nginx/html/
 COPY test-releases/20261031-tizen3-lite-0.8.252/Install-Tizen3.ps1 /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.252/Install-Tizen3.ps1
 COPY test-releases/20261031-tizen3-lite-0.8.252/Morph-TV-Tizen3-Lite-0.8.252-candidate.zip /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.252/Morph-TV-Tizen3-Lite-0.8.252-candidate.zip
 COPY releases/0.8.252/ /usr/share/nginx/html/releases/0.8.252/
-
+COPY Morph-TV-Phone-0.8.253.apk Morph-TV-Android-TV-0.8.253.apk Morph-TV-LG-0.8.253.ipk Morph-TV-Samsung-Tizen4-0.8.253.wgt Morph-TV-Legacy-0.1.4.apk Morph-TV-Samsung-Tizen5-0.8.253.wgt /usr/share/nginx/html/
+COPY test-releases/20261031-tizen2-lite-0.8.253/Morph-TV-Tizen2-Lite-0.8.253-candidate.wgt /usr/share/nginx/html/test-releases/20261031-tizen2-lite-0.8.253/Morph-TV-Tizen2-Lite-0.8.253-candidate.wgt
+COPY test-releases/20261031-tizen2-lite-0.8.253/README.md /usr/share/nginx/html/test-releases/20261031-tizen2-lite-0.8.253/README.md
+COPY test-releases/20261031-tizen2-lite-0.8.253/Install-Tizen2.ps1 /usr/share/nginx/html/test-releases/20261031-tizen2-lite-0.8.253/Install-Tizen2.ps1
+COPY test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.wgt /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.wgt
+COPY test-releases/20261031-tizen3-lite-0.8.253/README.md /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/README.md
+COPY test-releases/20261031-tizen3-lite-0.8.253/Install-Tizen3.ps1 /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Install-Tizen3.ps1
+COPY test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip
+COPY releases/0.8.253/ /usr/share/nginx/html/releases/0.8.253/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
