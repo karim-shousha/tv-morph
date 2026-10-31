@@ -7,7 +7,7 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.247",
+      "version": "0.8.248",
       "download": "/download/phone",
       "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
       "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
@@ -42,17 +42,17 @@
       "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
       "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.247",
+      "version": "0.8.248",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.247.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.248.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.247.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.248.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -69,7 +69,7 @@
       "available": true,
       "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
       "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
-      "version": "0.8.247",
+      "version": "0.8.248",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -132,6 +132,30 @@
       "file": "Morph-TV-Legacy-0.1.2.apk",
       "bytes": 139823,
       "sha256": "b6a200c6e102f2d2a6898588eee5674004d830a497e4c7e181818a7b64f7aa7b"
+    },
+    {
+      "name": "Morph-TV-Phone-0.8.248",
+      "file": "Morph-TV-Phone-0.8.248.apk",
+      "bytes": 40634953,
+      "sha256": "3e93156535f056a302cef6989a69560a30ad075d5da012673c27ed4fb231f656"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.248",
+      "file": "Morph-TV-LG-0.8.248.ipk",
+      "bytes": 8077272,
+      "sha256": "466c4d9bb86cd999e956b3c9af037a8b010c5299a3ddd5800f064394101c3eec"
+    },
+    {
+      "name": "Morph-TV-Samsung-Tizen5-0.8.248",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.248.wgt",
+      "bytes": 8127791,
+      "sha256": "c453afd2858c08e4af4307e42ccddfae3248b9c8bf0c469b7b71b4818d4bcd74"
+    },
+    {
+      "name": "Morph-TV-Samsung-Tizen4-0.8.248",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.248.wgt",
+      "bytes": 8131222,
+      "sha256": "aebc1d827c3f8fabd1dd9beef81003e5dc6076f8ed71ca0ad9cd0a132145b6f6"
     }
   ],
   "legacy": {
