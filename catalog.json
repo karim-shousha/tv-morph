@@ -1,26 +1,26 @@
 {
   "schema": 1,
-  "latest": "0.8.248",
+  "latest": "0.8.249",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.248",
+      "version": "0.8.249",
       "download": "/download/phone",
-      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
-      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
+      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
+      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
       "channel": "preview"
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.248",
+      "version": "0.8.249",
       "download": "/download/android",
-      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
-      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
+      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
+      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false
@@ -29,30 +29,30 @@
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.248",
+      "version": "0.8.249",
       "download": "/download/firetv",
-      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
-      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
+      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
+      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
       "channel": "preview"
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
-      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
+      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
+      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.248",
+      "version": "0.8.249",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.248.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.249.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.248.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.249.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
@@ -67,9 +67,9 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاح تنقّل ريموت IPTV بين السلايدر وأزرار التشغيل، تحسين QR، وتوحيد حجم شريط التنقل وواجهة الشبكة المحلية.",
-      "noteEn": "IPTV remote focus navigation fix, QR reliability improvements, unified navigation sizing and local-network layout polish.",
-      "version": "0.8.248",
+      "noteAr": "إصلاح قائمة جودة المشغّل، فصل الأقسام عن المحتوى في البلاير، وإضافة شعار YouTube الأحمر للتريلر.",
+      "noteEn": "Player quality menu, category browser separation, and red YouTube trailer icon fixes.",
+      "version": "0.8.249",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -156,6 +156,36 @@
       "file": "Morph-TV-Samsung-Tizen4-0.8.248.wgt",
       "bytes": 8131222,
       "sha256": "aebc1d827c3f8fabd1dd9beef81003e5dc6076f8ed71ca0ad9cd0a132145b6f6"
+    },
+    {
+      "name": "Morph-TV-Phone-0.8.249",
+      "file": "Morph-TV-Phone-0.8.249.apk",
+      "bytes": 40634953,
+      "sha256": "c7c76fc88e0bed1c9b7f68ccefcfcbc4083c26ff271053fcbee00ce3b44c0ece"
+    },
+    {
+      "name": "Morph-TV-Android-TV-0.8.249",
+      "file": "Morph-TV-Android-TV-0.8.249.apk",
+      "bytes": 13343268,
+      "sha256": "a9085d4084831c58dbe071ff593c5091db5d02927565f6ab96fe4a7726cf5d8e"
+    },
+    {
+      "name": "Morph-TV-LG-0.8.249",
+      "file": "Morph-TV-LG-0.8.249.ipk",
+      "bytes": 8077302,
+      "sha256": "28ef58bdc68e5b26c725debfa7a5b54cb0cc74efb5c55cbee96cb4b4ca5bd96e"
+    },
+    {
+      "name": "Morph-TV-Samsung-Tizen5-0.8.249",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.249.wgt",
+      "bytes": 8127834,
+      "sha256": "ebc4d71c9eed380d54304a5f0ddeb75776516716b459ed16a918c8c3445598b0"
+    },
+    {
+      "name": "Morph-TV-Samsung-Tizen4-0.8.249",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.249.wgt",
+      "bytes": 8131265,
+      "sha256": "5d4a6cf37f18522f801069faddb0470b3592abd6dc2dde14e89c8228ed494933"
     }
   ],
   "legacy": {
