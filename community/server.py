@@ -276,7 +276,7 @@ class Handler(BaseHTTPRequestHandler):
         # route must resolve the catalog's current release, not the first older
         # artifact that happens to share the Android-TV prefix.
         versions = {row.get('id'): row.get('version') for row in catalog.get('platforms', [])}
-        version = versions.get(route) or (catalog.get('legacy', {}).get('version') if route == 'legacy' else None)
+        version = versions.get('lg' if route == 'lg-preview' else route) or (catalog.get('legacy', {}).get('version') if route == 'legacy' else None)
         current_name = 'Morph-TV-' + platform + '-' + str(version) if platform and version else ''
         entry = next((row for row in catalog['releases'] if (platform and row['name'] == current_name) or ('/' + row['file'] == path)), None)
         if not entry or not re.fullmatch(r'Morph-TV-[A-Za-z0-9.\-]+\.(apk|ipk)', entry['file']):
