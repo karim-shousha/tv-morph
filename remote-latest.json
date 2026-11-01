@@ -1,0 +1,12 @@
+{
+  "available": true,
+  "name": "Morph Remote",
+  "version": "1.0.9",
+  "versionCode": 10,
+  "minAndroid": "7.0",
+  "minSdk": 24,
+  "download": "/download/remote",
+  "file": "Morph-Remote-1.0.9.apk",
+  "bytes": 56771788,
+  "sha256": "714efec1199286ac29eb0ad281187e60e0e2905cec24681639f6d1dbcf11d67e"
+}

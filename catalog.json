@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "latest": "0.8.271",
+  "latest": "0.8.272",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.271",
+      "version": "0.8.272",
       "download": "/download/phone",
-      "noteAr": "هوية بريميم موحّدة، صفحة الثيمات الجديدة، الراديو وDLNA ومواقيت الصلاة، خلفية IPTV ثابتة وكروت قنوات متناسقة وإصلاحات الرجوع والإدخال.",
-      "noteEn": "Unified premium UI, Showcase themes, Radio, DLNA and Prayer; static IPTV hero, consistent free-channel cards, input and navigation fixes.",
+      "noteAr": "واجهة استوديو للموبايل بالأيقونة الجديدة وزر Reconnect مختصر، مع حزم التلفزيون النهائية.",
+      "noteEn": "Studio mobile UI, new icon and compact Reconnect, with the final TV installer payloads.",
       "channel": "preview",
-      "versionCode": 275
+      "versionCode": 276
     },
     {
       "id": "android",
@@ -68,8 +68,8 @@
       "experimentalTizen3": "/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt",
       "computerLite3Package": "/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt",
       "computerLite3Version": "0.8.271",
-      "computerBundle": "/Morph-TV-Samsung-Computer-0.8.271.zip",
-      "computerCompatibilityBundle": "/Morph-TV-Samsung-Tizen4-Computer-0.8.271.zip"
+      "computerBundle": "/Morph-TV-Samsung-Computer-0.8.272.zip",
+      "computerCompatibilityBundle": "/Morph-TV-Samsung-Tizen4-Computer-0.8.272.zip"
     },
     {
       "id": "lg",
@@ -87,12 +87,6 @@
     }
   ],
   "releases": [
-    {
-      "name": "Morph-TV-Phone-0.8.271",
-      "file": "Morph-TV-Phone-0.8.271.apk",
-      "bytes": 44298639,
-      "sha256": "22095f10cab7f220ab9295735a4ff5d14a3653526b9a5c2b287b736ee38e62cc"
-    },
     {
       "name": "Morph-TV-Android-TV-0.8.271",
       "file": "Morph-TV-Android-TV-0.8.271.apk",
@@ -142,22 +136,34 @@
       "sha256": "d59e6624344477ee8aeb0e8301b15a4f76a19d70efed43c79e86ae7b1545b4d2"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.271",
-      "file": "Morph-TV-Samsung-Computer-0.8.271.zip",
-      "bytes": 46817200,
-      "sha256": "2abee54abb4557b855f5c1111c996e3a9c9876f7b985cbccbef80a5c5bca89e2"
+      "name": "Morph-TV-Phone-0.8.272",
+      "file": "Morph-TV-Phone-0.8.272.apk",
+      "bytes": 44442218,
+      "sha256": "a685a1f368d57f5d91fc0135c74d0292b97a600f2c85d1047f440827bd0f3459"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.271",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.271.zip",
-      "bytes": 9305507,
-      "sha256": "43f99869e0841adffd19daebc80583c17e46b34be8ae3096640dd9506cce165a"
+      "name": "Morph-Remote-1.0.9",
+      "file": "Morph-Remote-1.0.9.apk",
+      "bytes": 56771788,
+      "sha256": "714efec1199286ac29eb0ad281187e60e0e2905cec24681639f6d1dbcf11d67e"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.271",
-      "file": "Morph-TV-Install-Kit-0.8.271.zip",
-      "bytes": 85013484,
-      "sha256": "a4c1b1b9a22dd8b7d723d72afd924c783dfd18d7d7fc1c096350b08ff72aa85c"
+      "name": "Morph-TV-Install-Kit-0.8.272",
+      "file": "Morph-TV-Install-Kit-0.8.272.zip",
+      "bytes": 85155759,
+      "sha256": "6f2d166651c5ffabafd7419ab18e119cd6ab5392612d534db572ea4a1577f4d6"
+    },
+    {
+      "name": "Morph-TV-Samsung-Computer-0.8.272",
+      "file": "Morph-TV-Samsung-Computer-0.8.272.zip",
+      "bytes": 46817277,
+      "sha256": "6e83b781ecaf30b2adbefb2d6fc1c7020fb8cd32884e1f8b51be0b575b387e50"
+    },
+    {
+      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.272",
+      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.272.zip",
+      "bytes": 9305584,
+      "sha256": "3fc6c282a539ef310d9f94f9a441db3fabe08977ffff09f982fa18714c29a5d9"
     }
   ],
   "legacy": {
@@ -172,5 +178,17 @@
   },
   "installGuide": "/install.html",
   "installKit": "/samsung-computer.html",
-  "offlineInstallKit": "/Morph-TV-Install-Kit-0.8.271.zip"
+  "offlineInstallKit": "/Morph-TV-Install-Kit-0.8.272.zip",
+  "remote": {
+    "available": true,
+    "name": "Morph Remote",
+    "version": "1.0.9",
+    "versionCode": 10,
+    "minAndroid": "7.0",
+    "minSdk": 24,
+    "download": "/download/remote",
+    "file": "Morph-Remote-1.0.9.apk",
+    "bytes": 56771788,
+    "sha256": "714efec1199286ac29eb0ad281187e60e0e2905cec24681639f6d1dbcf11d67e"
+  }
 }

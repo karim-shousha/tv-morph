@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "release": "0.8.272",
+  "platforms": [
+    {
+      "id": "android",
+      "version": "0.8.271",
+      "minSdk": 26,
+      "minAndroid": "8.0",
+      "package": "/download/android",
+      "physicalDeviceVerified": false
+    },
+    {
+      "id": "firetv",
+      "version": "0.8.271",
+      "minAndroidApi": 26,
+      "package": "/download/firetv",
+      "note": "Compatible Fire OS models only; input, codec and provider support depends on the device.",
+      "physicalDeviceVerified": false
+    },
+    {
+      "id": "phone",
+      "version": "0.8.272",
+      "minSdk": 26,
+      "package": "/download/phone"
+    },
+    {
+      "id": "remote",
+      "version": "1.0.9",
+      "minSdk": 24,
+      "minAndroid": "7.0",
+      "package": "/download/remote"
+    },
+    {
+      "id": "lg",
+      "version": "0.8.271",
+      "initialWebOS": "5.0+",
+      "installMode": "Developer Mode / Key Server",
+      "package": "/download/lg",
+      "physicalDeviceVerified": false
+    },
+    {
+      "id": "samsung",
+      "version": "0.8.271",
+      "editions": [
+        "Tizen 2.3/2.4 candidate",
+        "Tizen 3.0 candidate",
+        "Tizen 4.0 dedicated package",
+        "Tizen 5.0+ main package"
+      ],
+      "installGuide": "/samsung-computer.html",
+      "portalSupported": false,
+      "physicalDeviceVerified": false
+    },
+    {
+      "id": "legacy",
+      "version": "0.1.6",
+      "minSdk": 19,
+      "minAndroid": "4.4",
+      "package": "/download/legacy",
+      "featureSet": "Separate lightweight native M3U subset; no full Showcase theme library."
+    }
+  ],
+  "excluded": [
+    "VIDAA"
+  ],
+  "notes": [
+    "morph-IPTV ships inside the MorphTV package; the website states this beside its download buttons.",
+    "Physical HDMI/audio/codec/provider behavior needs verification on the target television.",
+    "Samsung/LG Portal is not advertised as supported."
+  ]
+}
