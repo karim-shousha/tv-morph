@@ -1,0 +1,26 @@
+{
+  "version": "0.8.271",
+  "legacyVersion": "0.1.6",
+  "excluded": [
+    "VIDAA"
+  ],
+  "changes": [
+    "Approved Showcase themes: preview then apply; every existing theme, free/Plus/saved filters and collections; verified pack download; two-step delete; original Plus entitlements retained",
+    "Premium Home/Radio/DLNA/Prayer and player updates from 0.8.254–0.8.270 included",
+    "Static generated calm IPTV hero; fixed logo, missing-logo and caption geometry; anchored source controls",
+    "First-source choice and original Arabic free channels; saved subscriptions take priority; explicit keyboard activation",
+    "One launcher icon; Home on app reopening; double-Back guards; prior audio/input handoff fixes retained"
+  ],
+  "checks": [
+    "Signed Android/Legacy builds",
+    "LG and Samsung dedicated Tizen 2/3/4/5 bundles inspected for current UI assets",
+    "English/Arabic/landscape Showcase fixture runtime: preview, apply, Plus gate, real IndexedDB verified download, delete, filters and Back",
+    "Exact native APK and LG IPK embedded in phone installer",
+    "Catalog, guide, bundle and update hashes match staged artifacts"
+  ],
+  "limitations": [
+    "Physical TV input, decoder and provider interoperability remain device-dependent; not certified by browser fixtures",
+    "Android Legacy is a separate API19 M3U subset without the full theme library",
+    "Samsung/LG Portal remains unsupported; VIDAA excluded"
+  ]
+}

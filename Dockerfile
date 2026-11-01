@@ -38,6 +38,18 @@ COPY test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-can
 COPY releases/0.8.253/ /usr/share/nginx/html/releases/0.8.253/
 COPY q/ /usr/share/nginx/html/q/
 COPY test-releases/Morph-TV-Android-TV-0.8.254.apk /usr/share/nginx/html/test-releases/
+
+COPY Morph-TV-Phone-0.8.271.apk Morph-TV-Android-TV-0.8.271.apk Morph-TV-LG-0.8.271.ipk Morph-TV-Samsung-Tizen4-0.8.271.wgt Morph-TV-Legacy-0.1.6.apk Morph-TV-Samsung-Tizen5-0.8.271.wgt Morph-TV-Samsung-Computer-0.8.271.zip Morph-TV-Samsung-Tizen4-Computer-0.8.271.zip Morph-TV-Install-Kit-0.8.271.zip /usr/share/nginx/html/
+COPY test-releases/20261101-tizen2-lite-0.8.271/Morph-TV-Tizen2-Lite-0.8.271-candidate.wgt /usr/share/nginx/html/test-releases/20261101-tizen2-lite-0.8.271/Morph-TV-Tizen2-Lite-0.8.271-candidate.wgt
+COPY test-releases/20261101-tizen2-lite-0.8.271/README.md /usr/share/nginx/html/test-releases/20261101-tizen2-lite-0.8.271/README.md
+COPY test-releases/20261101-tizen2-lite-0.8.271/Install-Tizen2.ps1 /usr/share/nginx/html/test-releases/20261101-tizen2-lite-0.8.271/Install-Tizen2.ps1
+COPY test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt /usr/share/nginx/html/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt
+COPY test-releases/20261101-tizen3-lite-0.8.271/README.md /usr/share/nginx/html/test-releases/20261101-tizen3-lite-0.8.271/README.md
+COPY test-releases/20261101-tizen3-lite-0.8.271/Install-Tizen3.ps1 /usr/share/nginx/html/test-releases/20261101-tizen3-lite-0.8.271/Install-Tizen3.ps1
+COPY test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.zip /usr/share/nginx/html/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.zip
+COPY releases/0.8.271/ /usr/share/nginx/html/releases/0.8.271/
+COPY release-notes-0.8.271.json /usr/share/nginx/html/
+
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1

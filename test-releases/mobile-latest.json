@@ -1,8 +1,8 @@
 {
   "channel": "manual-test",
-  "version": "0.8.253",
-  "versionCode": 257,
+  "version": "0.8.271",
+  "versionCode": 275,
   "url": "https://morphtv.herroshetta.com/download/phone",
-  "sha256": "4431ad61a3a0d66d44468d7810549fb30eda57dabca54edaea8820e414ad43b8",
-  "bytes": 40712922
+  "sha256": "22095f10cab7f220ab9295735a4ff5d14a3653526b9a5c2b287b736ee38e62cc",
+  "bytes": 44298639
 }
