@@ -1,6 +1,7 @@
 'use strict';
 const englishCopy = `
 انتقل للمحتوى|Skip to content
+القائمة|Menu
 القائمة الرئيسية|Main navigation
 التطبيقات|Apps
 روابط الموقع|Site links
@@ -318,6 +319,22 @@ Connected. واتحكم فورًا.|Connected. Start controlling.
 رابط تحميل تطبيق الريموت المستقل يُضاف هنا عند تجهيزه|The standalone remote app download link will appear here when ready
 شاشاتك، أقرب ليك.|Your screens, closer to you.
 دعم الأجهزة حسب الموديل والنظام وإمكانيات الشبكة. بعض الأجهزة تحتاج إعدادات إضافية قبل الربط.|Device support depends on model, platform and network. Some devices need additional setup before pairing.
+واجهة الريموت الجديدة|The new remote interface
+من واجهة الريموت الجديدة · التصميم الفاتح|From the current remote app · Light design
+بحث. اقتران. تحكّم.|Scan. Pair. Control.
+بساطة تشوفها. وسهولة تحسّها.|Looks simple. Feels effortless.
+كل زر في مكانه.|Every button, in its place.
+وكل أجهزتك أقرب.|Every device, closer to you.
+من اختيار الشاشة للتحكم في الصوت والتنقّل. واجهة فاتحة وواضحة، مصممة علشان تتحكم بإيد واحدة.|From choosing a screen to volume and navigation. A clear, light interface designed for one-handed control.
+ابحث عن الأجهزة الموجودة على نفس الشبكة|Find devices on the same network
+اختار شاشتك واعمل Pair بسهولة|Choose your TV and pair with ease
+اتجاهات، صوت وتشغيل في واجهة واحدة|Navigation, volume and playback in one interface
+شوف خطوات الربط ↙|See the pairing steps ↙
+اختار شاشتك|Choose your screen
+وخليك متحكم|Stay in control
+واجهة الريموت الفاتحة بالعربية|Light remote interface in Arabic
+شاشة البحث عن الأجهزة بالعربية|Device discovery screen in Arabic
+واجهة التحكم الفاتحة بالعربية|Light remote controls in Arabic
 رأيكم بيطوّر التجربة|Built with your feedback
 جرّبت Morph؟ قول لنا رأيك.|Tried Morph? Tell us what you think.
 تقييمات الزوار من الموقع الرسمي. رأيك يساعد غيرك، وملاحظاتك تساعدنا نحسّن MorphTV.|Visitor ratings from the official website. Your opinion helps others, and your feedback helps us improve MorphTV.

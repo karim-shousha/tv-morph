@@ -27,6 +27,7 @@ COPY landing-assets/ /usr/share/nginx/html/landing-assets/
 COPY releases/0.8.272/ /usr/share/nginx/html/releases/0.8.272/
 COPY device-compatibility.json /usr/share/nginx/html/
 COPY release-notes-0.8.272.json /usr/share/nginx/html/
+COPY site-light.css site-navigation.css site-navigation.js /usr/share/nginx/html/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1

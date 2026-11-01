@@ -86,3 +86,7 @@
 !releases/0.8.272/**
 !device-compatibility.json
 !release-notes-0.8.272.json
+
+!site-light.css
+!site-navigation.css
+!site-navigation.js

@@ -1,0 +1,121 @@
+/* Approved landing appearance: one fixed light theme, regardless of OS preference. */
+:root{color-scheme:light;--bg:#f4f7fb;--panel:#fff;--line:#dce5f1;--muted:#4e6381;--blue:#2463eb;--text:#193352}
+html body[data-product]{background:var(--bg);color:var(--text);--bg:#f4f7fb;--panel:#fff;--line:#dce5f1;--muted:#4e6381;--blue:#2463eb;--text:#193352}
+html body[data-product] #main,html body[data-product] .product-page{background:#f4f7fb;color:#193352}
+html body[data-product] .header{background:#fff;border-color:#dce5f1}
+html body[data-product] .header .brand,.footer .brand{background:#132238;border-radius:10px;padding:3px 12px}
+html body[data-product] .header .brand img{width:150px;height:59px}
+html body[data-product] .nav-products a,html body[data-product] .nav-utilities a,html body[data-product] .nav-utilities button{background:#f4f7fb;color:#29496f;border-color:#e4ebf5}
+html body[data-product] .nav-products a.active,html body[data-product] .nav-utilities a.active{background:#eaf0fb;border-color:#aec6f2;color:#2463eb}
+html body[data-product] .header-navigation svg{color:#5278aa}
+html body[data-product] .nav-utilities{border-color:#eaf0fb}
+html body[data-product] .nav-cta{color:#193352;border-color:#c9d9ed}
+html body[data-product] .proof-metric{background:#fff;border-color:#dce5f1}
+html body[data-product] .proof-metric strong{color:#193352}
+html body[data-product] .proof-label,html body[data-product] .stats-status{color:#4e6381}
+html body[data-product] .proof-icon{color:#168654;background:#e9f7ef;border-color:#bce5ce}
+html body[data-product] .proof-rating .proof-icon{color:#c89322;background:#fff8e9;border-color:#efddb1}
+html body[data-product] .downloader-highlight{background:#eaf0fb;color:#193352;border-color:#c3d5ed;box-shadow:none}
+html body[data-product] .downloader-highlight strong{color:#2463eb}
+html body[data-product] .downloader-kicker,html body[data-product] .downloader-arrow{color:#4e6381}
+.home:before{background:radial-gradient(ellipse,#dbe9ff88,transparent 65%)}
+html body[data-product] .gradient{background-image:linear-gradient(100deg,#2463eb,#527eae)}
+html body[data-product] .status-dot{background:#2463eb;box-shadow:0 0 0 5px #2463eb0c}
+.choose-label{color:#526884}
+html body[data-product] .product-card{background:#fff;border-color:#dce5f1;box-shadow:0 6px 24px #344d6408}
+html body[data-product] .card-iptv{background:linear-gradient(145deg,#fff,#f0eef9)}
+html body[data-product] .card-remote{background:linear-gradient(145deg,#fff,#edf3fb)}
+.card-iptv:after{display:none}
+html body[data-product] .card-body p,html body[data-product] .card-label .index{color:#4e6381}
+html body[data-product] .mini-tag{background:#eaf0fb;color:#315f9c;border-color:#d0dff4}
+html body[data-product] .card-iptv .mini-tag{background:#eeebf8;color:#685294;border-color:#ded6ef}
+html body[data-product] .card-link{color:#193352}
+html body[data-product] .card-link span:last-child{color:#2463eb}
+.three-products .product-logo{width:min(100%,250px);height:100px;min-height:100px;padding:13px 16px;background:#132238;border-radius:12px;margin:18px 0}
+.three-products .product-logo>img,.three-products .product-logo>.uploaded-logo{width:100%;height:74px;max-width:220px;object-fit:contain;object-position:center}
+.card-shot:after{box-shadow:inset 0 -15px 20px #10203b33}
+.remote-card-art:after{background:linear-gradient(transparent,#edf3fb)}
+.remote-card-note{color:#4e6381}
+.platform-strip,.platform-strip>span:first-child,.free-line{color:#4e6381}
+.platform-strip .platform:nth-child(2){color:#34876f}.platform-strip .platform:nth-child(3){color:#2463eb}.platform-strip .platform:nth-child(4){color:#bf3554}
+.free-line span:before{color:#2463eb}
+html body[data-product] .breadcrumb,html body[data-product] .breadcrumb span,html body[data-product] .breadcrumb b{color:#527090}
+html body[data-product] .product-hero:before{background:radial-gradient(ellipse,#bad3fa25,transparent 67%)}
+html body[data-product] .hero-desc,html body[data-product] .tiny,html body[data-product] .section-footnote,html body[data-product] .screen-caption{color:#4e6381}
+html body[data-product] .btn{background:#fff;color:#193352;border-color:#c9d9ed;border-radius:10px}
+html body[data-product] .btn.primary{background:#2463eb;color:#fff;border-color:#2463eb;box-shadow:0 8px 20px #2463eb17}
+html body[data-product] .text-button{color:#2463eb}
+.screen-frame{box-shadow:0 20px 45px #344d6420}
+html body[data-product] .hero-note{background:#fffffff2;color:#193352;border-color:#dce5f1;box-shadow:0 10px 25px #344d6414}
+.hero-note small{color:#4e6381}
+.capability-bar{color:#29496f;background:#fff;border:1px solid #dce5f1;border-radius:14px}
+html body[data-product] .feature-grid{gap:16px;border:0;background:none;overflow:visible}
+html body[data-product] .feature{background:#fff;border:1px solid #dce5f1;border-radius:16px;box-shadow:0 5px 16px #344d6405}
+html body[data-product] .feature h3{color:#193352}
+html body[data-product] .feature p{color:#4e6381}
+html body[data-product] .feature .icon,html body[data-product] .capability-bar .icon{color:#2463eb}
+html body[data-product] .feature:before,html body[data-product] .download-card:before,html body[data-product] .product-card:before{background:radial-gradient(360px circle at var(--light-x) var(--light-y),#2463eb0c,transparent 75%)}
+.feature:after{display:none}
+html body[data-product] .showcase-section{background:#eaf0fb;border-color:#dce5f1}
+.showcase-grid p,.check-list{color:#4e6381}
+.check-list li:before{color:#2463eb}
+.showcase-img{box-shadow:0 15px 35px #344d6410}
+.plus-inline{color:#86600b;background:#fff5d9;border-color:#e9d69e}
+html body[data-product] .download-card{background:#fff;border-color:#dce5f1;box-shadow:0 6px 20px #344d6406;border-radius:16px}
+.platform-logo.samsung,.platform-logo.lg{color:#29496f}
+.download-card p,.download-card .format,.download-note{color:#4e6381}
+html body[data-product] .download-warning{background:#eaf0fb;color:#315b90;border-color:#c9d9ed}
+html body[data-product] .guide{background:#fff;border-color:#dce5f1}
+.guide-intro,.steps li,.guide-note{color:#4e6381}
+.guide h3,.steps strong{color:#193352}
+.steps li:not(:last-child):after{border-color:#dce5f1}
+html body[data-product] .steps li:before{background:#eaf0fb;color:#2463eb;border-color:#c9d9ed}
+html body[data-product] .install-tab{color:#4e6381}
+html body[data-product] .install-tab.active,html body[data-product] .method-tabs button.active{background:#eaf0fb;border-color:#acc6ed;color:#2463eb}
+.method-tabs button{color:#4e6381;border-color:#c9d9ed}
+html body[data-product] .code-box{background:#eaf0fb;color:#29496f;border-color:#c9d9ed}
+.code-box .downloader-code{background:#2463eb;color:#fff;border-color:#2463eb;box-shadow:none}
+html body[data-product] .bottom-cta{background:radial-gradient(ellipse at 50% 120%,#d2e3ff,transparent 75%),#fff;border-color:#c9d9ed}
+.faq-wrap p,.bottom-cta p{color:#4e6381}
+html body[data-product] .support-section,html body[data-product] .contact-section,html body[data-product] .footer{background:#f4f7fb}
+.support-intro p,.contact-intro p,.donation-note,.payment-note,.contact-hint{color:#4e6381}
+.donation-card{background:#fff;border-color:#dce5f1;box-shadow:0 6px 20px #344d6406}
+.donation-copy{color:#29496f}.paypal .payment-word{color:#21599a}.paypal .payment-word span{color:#1784c3}.stripe .payment-word{color:#6754c6}.instapay .payment-word{color:#70529c}.instapay .payment-word span{color:#a3651c}
+.contact-email{color:#2463eb}
+.contact-form{background:#fff;border-color:#dce5f1;box-shadow:0 8px 30px #344d6406}
+.contact-form label{color:#193352}
+.contact-form input,.contact-form textarea{background:#f7f9fc;border-color:#c9d9ed;color:#193352}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#71839d}
+.contact-submit>span,#contact-status{color:#4e6381}
+.footer p,.footer p span,.footer>a:last-of-type,.footer small{color:#526884}
+.footer small{border-color:#dce5f1}
+.reviews-summary{background:linear-gradient(125deg,#fff,#eaf0fb);border-color:#dce5f1}
+.reviews-summary strong,.reviews-summary h2{color:#193352}
+.reviews-summary p,.reviews-summary #reviews-count,.reviews-intro{color:#4e6381}
+.reviews-summary>div:first-child{border-color:#dce5f1}
+.visitor-review{background:#fff;border-color:#dce5f1}
+.visitor-review p,.visitor-review time{color:#4e6381}
+.review-stars-display,.review-large-star{color:#c89322}
+.public-review-form{background:#fff;border-color:#dce5f1;color:#193352}
+.public-review-form input,.public-review-form textarea{background:#f7f9fc;border-color:#c9d9ed;color:#193352}
+.public-review-intro,.public-review-privacy,.public-review-result{color:#4e6381}
+.public-review-stars button{background:#f4f7fb;border-color:#dce5f1;color:#8191a6}.public-review-stars button.chosen{color:#b88920}
+dialog{background:#fff;color:#193352;border-color:#c9d9ed}dialog p{color:#4e6381}
+@media(hover:hover){html body[data-product] .feature:hover,html body[data-product] .download-card:hover{background:#fff;border-color:#9ebee9;box-shadow:0 12px 30px #344d6410}html body[data-product] .feature:hover h3{color:#193352}html body[data-product] .product-card:hover{border-color:#91b4e6;box-shadow:0 15px 35px #344d6412}html body[data-product] .btn.primary:hover{background:#1853d3}.contact-email:hover{color:#1847a4}}
+@media(max-width:700px){html body[data-product] .header .brand img{width:136px;height:54px}.three-products .product-logo{height:100px}.feature-grid{gap:10px}.public-review-form{padding:22px 18px}}
+/* One unified logo, directly on the full-width header surface. */
+html body[data-product] .header{background:#465e7a;border-color:#3e536c}
+html body[data-product] .header .brand{background:transparent;border-radius:0;padding:0;box-shadow:none;border:0}
+html body[data-product] .header .brand img{width:190px;height:76px;object-fit:contain}
+.nav{grid-template-columns:190px minmax(0,1fr) auto}
+html body[data-product] .nav-products a,html body[data-product] .nav-utilities a,html body[data-product] .nav-utilities button{background:#ffffff0a;color:#f3f7ff;border-color:#ffffff18}
+html body[data-product] .nav-products a.active,html body[data-product] .nav-utilities a.active{background:#ffffff1e;border-color:#ffffff50;color:#fff}
+html body[data-product] .header-navigation svg{color:#d2e5ff}
+html body[data-product] .nav-utilities{border-color:#ffffff18}
+html body[data-product] .nav-cta{color:#fff;border-color:#ffffff50}
+html body[data-product] .nav-cta span{color:#d2e5ff}
+.product-name{font:600 25px/1.3 Arial,sans-serif;color:#193352;letter-spacing:-.7px;margin:24px 0 18px}
+.card-iptv .product-name{color:#65528d}.card-remote .product-name{color:#3c618b}
+.footer-name{font:700 23px/1.3 Arial,sans-serif;color:#193352}
+@media(max-width:1100px){.nav{grid-template-columns:170px minmax(0,1fr)}html body[data-product] .header .brand img{width:170px;height:68px}}
+@media(max-width:700px){.nav{grid-template-columns:1fr}html body[data-product] .header .brand img{width:180px;height:72px}.product-name{font-size:27px;margin-top:22px}}
