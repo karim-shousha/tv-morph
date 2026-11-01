@@ -1,6 +1,6 @@
 FROM nginx:stable-alpine
 RUN apk add --no-cache python3
-COPY community/server.py community/plus.py community/start.sh /opt/morph-community/
+COPY community/server.py community/plus.py community/qr_link.py community/start.sh /opt/morph-community/
 RUN chmod 755 /opt/morph-community/start.sh
 COPY Morph-TV-Phone-0.8.248.apk Morph-TV-LG-0.8.248.ipk Morph-TV-Samsung-Tizen5-0.8.248.wgt Morph-TV-Samsung-Tizen4-0.8.248.wgt Morph-TV-Phone-0.8.249.apk Morph-TV-LG-0.8.249.ipk Morph-TV-Samsung-Tizen5-0.8.249.wgt Morph-TV-Samsung-Tizen4-0.8.249.wgt /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
@@ -36,6 +36,7 @@ COPY test-releases/20261031-tizen3-lite-0.8.253/README.md /usr/share/nginx/html/
 COPY test-releases/20261031-tizen3-lite-0.8.253/Install-Tizen3.ps1 /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Install-Tizen3.ps1
 COPY test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip
 COPY releases/0.8.253/ /usr/share/nginx/html/releases/0.8.253/
+COPY q/ /usr/share/nginx/html/q/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1

@@ -33,6 +33,7 @@ if len(SECRET) != 32:
     raise RuntimeError('Invalid persistent site secret')
 DB = DATA / 'community.sqlite3'
 from plus import Plus
+import qr_link
 PLUS = Plus(DATA, SECRET, ORIGIN)
 
 
@@ -206,8 +207,14 @@ class Handler(BaseHTTPRequestHandler):
     def do_HEAD(self):
         self.do_GET()
 
+    def do_OPTIONS(self):
+        if not qr_link.handle(self, urlsplit(self.path).path):
+            self.send_json(405, {'error': 'method'})
+
     def do_GET(self):
         try:
+            if qr_link.handle(self, urlsplit(self.path).path):
+                return
             if PLUS.handle(self, urlsplit(self.path).path):
                 return
             self.get()
@@ -310,6 +317,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         try:
+            if qr_link.handle(self, urlsplit(self.path).path):
+                return
             if PLUS.handle(self, urlsplit(self.path).path):
                 return
             self.post()
