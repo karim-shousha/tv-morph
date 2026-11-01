@@ -37,6 +37,7 @@ COPY test-releases/20261031-tizen3-lite-0.8.253/Install-Tizen3.ps1 /usr/share/ng
 COPY test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip /usr/share/nginx/html/test-releases/20261031-tizen3-lite-0.8.253/Morph-TV-Tizen3-Lite-0.8.253-candidate.zip
 COPY releases/0.8.253/ /usr/share/nginx/html/releases/0.8.253/
 COPY q/ /usr/share/nginx/html/q/
+COPY test-releases/Morph-TV-Android-TV-0.8.254.apk /usr/share/nginx/html/test-releases/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
