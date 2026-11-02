@@ -10,8 +10,8 @@
     "available": true,
     "version": "0.8.272",
     "download": "/download/phone",
-    "noteAr": "واجهة استوديو للموبايل بالأيقونة الجديدة وزر Reconnect مختصر، مع حزم التلفزيون النهائية.",
-    "noteEn": "Studio mobile UI, new icon and compact Reconnect, with the final TV installer payloads.",
+    "noteAr": "آخر نسخة موبايل منشورة؛ النسخة الجديدة قيد المراجعة.",
+    "noteEn": "Latest published phone release; the new version is under review.",
     "channel": "preview",
     "versionCode": 276
   },
@@ -124,5 +124,5 @@
     "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
   ],
   "physicalTVVerified": false,
-  "phonePendingOtherChat": true
+  "phoneUpdateUnderReview": true
 }

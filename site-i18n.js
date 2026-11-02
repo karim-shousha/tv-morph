@@ -88,7 +88,7 @@ IPTV مدمج للموبايل|Built-in mobile IPTV
 جواه كل اللي تحتاجه|Everything you need, inside
 Morph IPTV نسخة مستقلة للتلفزيونات. روابط تحميلها هتتضاف بعد رفع الحزم الخاصة بكل جهاز.|Morph IPTV is a standalone TV app. Download links will be added once each device package is uploaded.
 التحميل بعد رفع النسخ|Downloads available after upload
-ملف APK لنسخة Morph IPTV المستقلة. روابط الملفات تُضاف بعد رفعها.|An APK for standalone Morph IPTV. File links will be added after upload.
+ملف APK لنسخة Morph IPTV المستقلة. نزّل أحدث نسخة من زر Android TV بالأعلى.|An APK for standalone Morph IPTV. Download the latest release using the Android TV button above.
 كود Morph IPTV المستقل هيُضاف بعد رفع نسخته. كود 6443144 يخص MorphTV للتلفزيون.|The standalone Morph IPTV code will be added after upload. Code 6443144 is for MorphTV on TV.
 كود نسخة تلفزيون MorphTV هو 6443144. افتح Downloader، اكتب الكود واضغط Go لتنزيل أحدث نسخة اللانشر.|The MorphTV TV code is 6443144. Open Downloader, enter the code and select Go for the latest launcher version.
 هل MorphTV Launcher مجاني؟|Is MorphTV Launcher free?
