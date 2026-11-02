@@ -1,5 +1,9 @@
 'use strict';
 const englishCopy = `
+مواعيد المباريات والنتائج والإحصائيات|Live match schedules, results and statistics
+تابع مواعيد المباريات والنتائج والإحصائيات بتحديثات مباشرة على الموبايل والتلفزيون، من داخل التطبيق.|Follow match schedules, results and statistics with live updates on your phone and TV, right inside the app.
+مباشر على الموبايل والتلفزيون|Live on your phone and TV
+
 تنويه مهم: Plus لا يشمل حساب IPTV|Important: Plus does not include an IPTV account
 Plus مخصص لمميزات التطبيق: البرنامج الرياضي، وتعديل الثيمات، وتنزيل كل الثيمات المدفوعة. حساب IPTV والقنوات واشتراك المحتوى غير مشمولين؛ استخدم حساب IPTV الخاص بك بشكل منفصل.|Plus is for app features: the fitness program, theme customization, and downloading all paid themes. An IPTV account, channels and a content subscription are not included; use your own IPTV account separately.
 
