@@ -1,0 +1,39 @@
+{
+  "phoneVersion": "0.8.298",
+  "phoneVersionCode": 302,
+  "embeddedTVVersion": "0.8.295",
+  "download": {
+    "name": "Morph-TV-Phone-0.8.298",
+    "file": "Morph-TV-Phone-0.8.298.apk",
+    "version": "0.8.298",
+    "product": "phone",
+    "target": "android",
+    "bytes": 99682861,
+    "sha256": "90f4a4cf437daac4bc1d278b2fcb71db3b78432316e5725d87cc8adcb02ec1b7",
+    "download": "/download/phone",
+    "versionCode": 302
+  },
+  "optionalAdhanPack": {
+    "version": 1,
+    "url": "/packs/adhan/voices-v1.zip",
+    "bytes": 7393496,
+    "sha256": "01e0021ee3a7729fb39bfe5686d371926094dd8235cdf025d61fe5b6b348c882",
+    "bundledVoice": "egypt",
+    "additionalVoices": 6
+  },
+  "changes": [
+    "Worship is opt-in in Settings; no accounts, HER groups or challenges.",
+    "114 Quran surahs, adhkar, duas, tasbih and progress work locally.",
+    "Offline city prayer calculations, OS prayer reminders and foreground Adhan with independent toggles.",
+    "Only Egypt voice bundled; six extra original recordings available in a validated optional pack.",
+    "Five colored navigation icons when enabled; Devices centered and Worship rightmost.",
+    "Shared match schedules open from IPTV without losing its destination; previous/today/tomorrow/next seven days/custom date, day/week navigation and multiple favorite teams filter the cached feed locally."
+  ],
+  "validation": [
+    "467 browser checks including exact comparison of all 6236 Quran verses and light/dark contrast.",
+    "56 phone match-calendar checks in Cairo/New York across DST, including multiple favorites and no network requests on filters.",
+    "24 prayer calculation comparisons against the HER calculation engine, including DST.",
+    "Android emulator: actual WebView, optional-pack import, seven decoders, background OS alarms, player interruption/resumption, native Matches Back and unchanged IPTV accounts."
+  ],
+  "authorization": "User explicitly requested website-server publication and download-link update."
+}

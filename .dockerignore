@@ -51,7 +51,7 @@
 !site-navigation.js
 !site-themes.css
 !site-studio.css
-!Morph-TV-Phone-0.8.297.apk
+!Morph-TV-Phone-0.8.298.apk
 !Morph-TV-Legacy-0.1.7.apk
 !Morph-TV-Android-TV-0.8.295.apk
 !Morph-TV-LG-0.8.295.ipk
@@ -93,3 +93,6 @@ community/*
 releases/*
 !releases/0.8.295/
 !releases/0.8.295/**
+
+!Morph-TV-Adhan-Voices-v1.zip
+!release-notes-phone-0.8.298.json

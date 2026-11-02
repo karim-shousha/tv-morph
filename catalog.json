@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.297",
+      "version": "0.8.298",
       "download": "/download/phone",
-      "noteAr": "آخر واجهة للموبايل: تحسين الريموت والتصميم، فتح الريموت دون أجهزة، ومراجعة العربية والإنجليزية.",
-      "noteEn": "Latest mobile interface: refined remote/design cards, remote access before device discovery, Arabic and English reviewed.",
+      "noteAr": "عباداتي اختياري: قرآن وأذكار وتسبيح محفوظ محليًا، مواقيت الصلاة وتنبيهات وأذان في الخلفية. مواعيد المباريات داخل IPTV.",
+      "noteEn": "Optional My Worship: offline Quran, adhkar, tasbih and local prayer times, background reminders and Adhan. Match schedules inside IPTV.",
       "channel": "preview",
-      "versionCode": 301
+      "versionCode": 302
     },
     {
       "id": "android",
@@ -100,15 +100,15 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.297",
-      "file": "Morph-TV-Phone-0.8.297.apk",
-      "version": "0.8.297",
+      "name": "Morph-TV-Phone-0.8.298",
+      "file": "Morph-TV-Phone-0.8.298.apk",
+      "version": "0.8.298",
       "product": "phone",
       "target": "android",
-      "bytes": 96936989,
-      "sha256": "95440d6d615739c81994b7968d22132d304343eb56dc6fe8e6300132864eea7e",
+      "bytes": 99682861,
+      "sha256": "90f4a4cf437daac4bc1d278b2fcb71db3b78432316e5725d87cc8adcb02ec1b7",
       "download": "/download/phone",
-      "versionCode": 301
+      "versionCode": 302
     },
     {
       "name": "Morph-TV-Legacy-0.1.7",
@@ -337,7 +337,7 @@
     "remote": "Morph-Remote-1.1.1.apk",
     "legacy": "Morph-TV-Legacy-0.1.7.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-0.1.0.apk",
-    "phone": "Morph-TV-Phone-0.8.297.apk",
+    "phone": "Morph-TV-Phone-0.8.298.apk",
     "firetv": "Morph-TV-Android-TV-0.8.295.apk",
     "iptv/firetv": "Morph-IPTV-Android-TV-0.1.5.apk"
   },
@@ -442,6 +442,16 @@
         "EPG",
         "modern UI"
       ]
+    }
+  },
+  "optionalPacks": {
+    "adhan": {
+      "version": 1,
+      "url": "/packs/adhan/voices-v1.zip",
+      "bytes": 7393496,
+      "sha256": "01e0021ee3a7729fb39bfe5686d371926094dd8235cdf025d61fe5b6b348c882",
+      "bundledVoice": "egypt",
+      "additionalVoices": 6
     }
   }
 }

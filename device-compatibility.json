@@ -23,10 +23,10 @@
     },
     {
       "id": "phone",
-      "version": "0.8.297",
+      "version": "0.8.298",
       "minSdk": 26,
       "package": "/download/phone",
-      "versionCode": 301
+      "versionCode": 302
     },
     {
       "id": "remote",
