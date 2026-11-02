@@ -8,12 +8,12 @@
     "id": "phone",
     "name": "Android Phone",
     "available": true,
-    "version": "0.8.295",
+    "version": "0.8.297",
     "download": "/download/phone",
-    "noteAr": "واجهة الموبايل الجديدة والريموت المدمج، مع حزم التلفزيون الحالية وحذف حساب IPTV واحد.",
-    "noteEn": "New phone interface and integrated remote, current TV packages and individual IPTV account removal.",
+    "noteAr": "آخر واجهة للموبايل: تحسين الريموت والتصميم، فتح الريموت دون أجهزة، ومراجعة العربية والإنجليزية.",
+    "noteEn": "Latest mobile interface: refined remote/design cards, remote access before device discovery, Arabic and English reviewed.",
     "channel": "preview",
-    "versionCode": 299
+    "versionCode": 301
   },
   "iptv": {
     "name": "Morph IPTV",

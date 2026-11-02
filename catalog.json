@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.295",
+      "version": "0.8.297",
       "download": "/download/phone",
-      "noteAr": "واجهة الموبايل الجديدة والريموت المدمج، مع حزم التلفزيون الحالية وحذف حساب IPTV واحد.",
-      "noteEn": "New phone interface and integrated remote, current TV packages and individual IPTV account removal.",
+      "noteAr": "آخر واجهة للموبايل: تحسين الريموت والتصميم، فتح الريموت دون أجهزة، ومراجعة العربية والإنجليزية.",
+      "noteEn": "Latest mobile interface: refined remote/design cards, remote access before device discovery, Arabic and English reviewed.",
       "channel": "preview",
-      "versionCode": 299
+      "versionCode": 301
     },
     {
       "id": "android",
@@ -100,15 +100,15 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.295",
-      "file": "Morph-TV-Phone-0.8.295.apk",
-      "version": "0.8.295",
+      "name": "Morph-TV-Phone-0.8.297",
+      "file": "Morph-TV-Phone-0.8.297.apk",
+      "version": "0.8.297",
       "product": "phone",
       "target": "android",
-      "bytes": 96941085,
-      "sha256": "04c695b026b586641bc60e39de634a83f611dddad7484fef65ad9828ab562dc7",
+      "bytes": 96936989,
+      "sha256": "95440d6d615739c81994b7968d22132d304343eb56dc6fe8e6300132864eea7e",
       "download": "/download/phone",
-      "versionCode": 299
+      "versionCode": 301
     },
     {
       "name": "Morph-TV-Legacy-0.1.7",
@@ -337,7 +337,7 @@
     "remote": "Morph-Remote-1.1.1.apk",
     "legacy": "Morph-TV-Legacy-0.1.7.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-0.1.0.apk",
-    "phone": "Morph-TV-Phone-0.8.295.apk",
+    "phone": "Morph-TV-Phone-0.8.297.apk",
     "firetv": "Morph-TV-Android-TV-0.8.293.apk",
     "iptv/firetv": "Morph-IPTV-Android-TV-0.1.3.apk"
   },

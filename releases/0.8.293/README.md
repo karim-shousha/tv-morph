@@ -6,4 +6,4 @@ Morph Launcher 0.8.293 / Morph IPTV 0.1.3
 - Category order: OK saves immediately from any row; Back cancels.
 - Current shared source validated across Android, Samsung 2/3/4/5 and LG.
 
-Phone: 0.8.295
+Phone: 0.8.297

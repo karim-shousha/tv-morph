@@ -10,7 +10,7 @@ COPY theme-packs/ /usr/share/nginx/html/theme-packs/
 COPY theme-previews/ /usr/share/nginx/html/theme-previews/
 COPY landing-assets/ /usr/share/nginx/html/landing-assets/
 COPY q/ /usr/share/nginx/html/q/
-COPY Morph-TV-Phone-0.8.295.apk Morph-TV-Legacy-0.1.7.apk Morph-TV-Android-TV-0.8.293.apk Morph-TV-LG-0.8.293.ipk Morph-TV-Samsung-Tizen2-0.8.293.wgt Morph-TV-Samsung-Tizen3-0.8.293.wgt Morph-TV-Samsung-Tizen4-0.8.293.wgt Morph-TV-Samsung-Tizen5-0.8.293.wgt Morph-IPTV-LG-0.1.3.ipk Morph-IPTV-tizen4-0.1.3.wgt Morph-IPTV-tizen5-0.1.3.wgt Morph-IPTV-tizen2-0.1.3.wgt Morph-IPTV-tizen3-0.1.3.wgt Morph-IPTV-Android-TV-0.1.3.apk Morph-Remote-1.1.1.apk Morph-IPTV-Legacy-0.1.0.apk Morph-TV-Install-Kit-0.8.293.zip /usr/share/nginx/html/
+COPY Morph-TV-Phone-0.8.297.apk Morph-TV-Legacy-0.1.7.apk Morph-TV-Android-TV-0.8.293.apk Morph-TV-LG-0.8.293.ipk Morph-TV-Samsung-Tizen2-0.8.293.wgt Morph-TV-Samsung-Tizen3-0.8.293.wgt Morph-TV-Samsung-Tizen4-0.8.293.wgt Morph-TV-Samsung-Tizen5-0.8.293.wgt Morph-IPTV-LG-0.1.3.ipk Morph-IPTV-tizen4-0.1.3.wgt Morph-IPTV-tizen5-0.1.3.wgt Morph-IPTV-tizen2-0.1.3.wgt Morph-IPTV-tizen3-0.1.3.wgt Morph-IPTV-Android-TV-0.1.3.apk Morph-Remote-1.1.1.apk Morph-IPTV-Legacy-0.1.0.apk Morph-TV-Install-Kit-0.8.293.zip /usr/share/nginx/html/
 COPY releases/0.8.293/ /usr/share/nginx/html/releases/0.8.293/
 RUN nginx -t
 VOLUME /data
