@@ -1,5 +1,98 @@
 'use strict';
 const englishCopy = `
+تحميل Morph Remote المستقل|Download standalone Morph Remote
+
+تحميل WGT · Tizen 5+|Download WGT · Tizen 5+
+إصدار Tizen أقدم؟|An older Tizen version?
+سامسونج: اختار WGT المتوافق مع إصدار Tizen. ‏LG: يلزم إبقاء Developer Mode مفعّلًا وتجديد مدته؛ إيقافه يحذف التطبيقات المثبّتة به.|Samsung: choose the WGT for your Tizen version. LG: keep Developer Mode enabled and extend its session; disabling it removes apps installed through it.
+تطبيق MorphTV للموبايل يجمع تنزيل التحديثات وIPTV والتحكم بالتلفزيون. أندرويد 8 أو أحدث.|MorphTV for mobile combines updates, IPTV and TV controls. Android 8 or newer.
+
+واجهة MorphTV للموبايل بالإنجليزية|MorphTV mobile interface in English
+واجهة واضحة وعصرية|A clear, modern interface
+معاينة حديثة من واجهة MorphTV Launcher|Current MorphTV Launcher interface
+روابط أسفل الصفحة|Footer navigation
+بإمكانيات أكتر.|More possibilities.
+عالم Morph|The Morph family
+اختار جهازك.|Choose your device.
+ابدأ تجربتك.|Start your experience.
+تطبيق للموبايل، مشغل IPTV للتلفزيون، أو لانشر يغيّر شاشتك.|A mobile app, a TV IPTV player, or a launcher to make your TV yours.
+للموبايل · Android|For mobile · Android
+للتلفزيون · مشغل IPTV|For TV · IPTV player
+للتلفزيون · لانشر|For TV · Launcher
+التحديثات وIPTV والريموت، كلهم في تطبيق واحد.|Updates, IPTV and remote control, together in one app.
+شغّل اشتراكك وقنواتك وأفلامك على الشاشة الكبيرة.|Play your subscription, channels and movies on the big screen.
+تطبيقاتك، الصلاة والراديو، وIPTV في واجهة واحدة.|Your apps, prayer times, radio and IPTV in one home screen.
+استكشف تطبيق الموبايل|Explore the mobile app
+استكشف مشغل IPTV|Explore the IPTV player
+استكشف لانشر التلفزيون|Explore the TV launcher
+شرح التثبيت بالفيديو|INSTALLATION VIDEO
+شاهد شرح تثبيت Android TV|Watch the Android TV installation guide
+شاهد شرح تثبيت Samsung|Watch the Samsung installation guide
+شاهد شرح تثبيت LG|Watch the LG installation guide
+أندرويد 8 أو أحدث|Android 8.0 or later
+تطبيق الموبايل الشامل|The all-in-one mobile app
+IPTV مستقل للتلفزيونات|Standalone IPTV for TVs
+لانشر للتلفزيونات|A launcher for your TV
+للتلفزيون والموبايل. تجربة متكاملة.|For your TV and phone. One connected experience.
+واجهة لتلفزيونك. وتطبيق موبايل يجمع التحديثات وIPTV والريموت.|A home for your TV. A mobile app for updates, IPTV and remote control.
+MorphTV للموبايل يجمع تنزيل التحديثات، ومشغل IPTV، والريموت المدمج. ومع نسخة التلفزيون، خلّي شاشتك بطابعك ووصل لكل اللي بتحبه بسهولة.|MorphTV for mobile brings updates, IPTV and remote control together. With the TV launcher, make your screen yours and reach what you love.
+تطبيق MorphTV للموبايل يجمع تنزيل التحديثات وIPTV والريموت المدمج. أندرويد 8 أو أحدث.|MorphTV for mobile includes updates, IPTV and remote control. Android 8.0 or later.
+كل أدواتك في تطبيق موبايل واحد|All your tools in one mobile app
+تحديثاتك. مشاهدتك. ريموتك.|Your updates. Your viewing. Your remote.
+نزّل التحديثات، شاهد IPTV، واتحكم في التلفزيون. كل ده مدمج في MorphTV للموبايل.|Get updates, watch IPTV and control your TV. All built into MorphTV for mobile.
+IPTV والريموت والتحديثات في تطبيق واحد|IPTV, remote control and updates in one app
+تطبيق واحد. كل اللي تحتاجه.|One app. Everything you need.
+واجهة MorphTV للموبايل بالعربية|MorphTV mobile interface in Arabic
+MorphTV · للموبايل|MorphTV · Mobile
+تطبيق MorphTV للموبايل|MorphTV for mobile
+تطبيق واحد.|One app.
+والكل معاك.|Everything with you.
+نزّل تحديثاتك، شاهد قنواتك وأفلامك، واتحكم في التلفزيون من موبايلك. MorphTV بيجمع التحديثات وIPTV والريموت في تطبيق واحد.|Get updates, watch channels and movies, and control your TV from your phone. MorphTV brings updates, IPTV and the remote together in one app.
+تحميل MorphTV للموبايل|Download MorphTV for mobile
+للموبايل · أندرويد 8 أو أحدث|For mobile · Android 8.0 or later
+من واجهة MorphTV للموبايل الحالية|From the current MorphTV mobile interface
+التحديثات في مكان واحد|Updates in one place
+IPTV مدمج للموبايل|Built-in mobile IPTV
+ريموت مدمج|Built-in remote control
+كل حاجة أقرب|Everything within reach
+٣ إمكانيات. تطبيق واحد.|3 capabilities. One app.
+من تنزيل النسخة الجديدة لحد المشاهدة والتحكم في الشاشة، كل ده من نفس التطبيق.|From downloading a new version to watching and controlling your TV. All in the same app.
+تنزيل النسخ والتحديثات|App downloads and updates
+وصل لنسخ MorphTV وتحديثاتها من تطبيق الموبايل، واختار النسخة المناسبة لجهازك.|Access MorphTV versions and updates from your phone and choose the right version for your device.
+شاهد IPTV على موبايلك|Watch IPTV on your phone
+ضيف مصدر المحتوى الخاص بيك، وتابع القنوات والأفلام والمسلسلات من المشغل المدمج.|Add your content source and watch channels, movies and series in the built-in player.
+ريموت داخل MorphTV|A remote inside MorphTV
+ابحث عن التلفزيون على نفس الشبكة، اختار جهازك واعمل Pair، وابدأ التحكم من جوه MorphTV.|Find your TV on the same network, choose it and pair, then control it right inside MorphTV.
+موبايلك والتلفزيون متصلين|Your phone and TV, connected
+تابع الربط وإدارة الاتصال بالشاشات المتوافقة من مكان واحد.|Manage pairing and connections to compatible TVs in one place.
+واجهة فاتحة وواضحة|A clear, light interface
+تصميم مرتب للموبايل، وأزرار واضحة علشان توصل للي تحتاجه بسهولة.|An organized mobile design with clear buttons to help you reach what you need.
+مشاهدة وتحكم من نفس التطبيق|Watch and control in the same app
+تنقّل بين IPTV والريموت والتحديثات داخل MorphTV، من غير تطبيق ريموت منفصل.|Switch between IPTV, the remote and updates within MorphTV, without a separate remote app.
+مشغل IPTV يستخدم مصدر المحتوى الخاص بك. وظائف الريموت والربط تختلف حسب الجهاز والشبكة.|IPTV uses your own content source. Remote and pairing features depend on device and network support.
+الريموت بقى جزء من MorphTV|The remote is part of MorphTV
+الريموت ضاع؟|Lost your remote?
+افتح MorphTV.|Open MorphTV.
+الريموت مدمج في تطبيق الموبايل نفسه. اعمل بحث في الشبكة، اختار التلفزيون واعمل Pair، واتحكم مباشرة.|The remote is built into the mobile app. Scan your network, choose your TV, pair and take control.
+ابدأ بسهولة|Get started easily
+نزّل MorphTV. والباقي من جوّاه.|Get MorphTV. Find everything inside.
+نزّل تطبيق الموبايل|Download the mobile app
+ثبّت MorphTV على موبايل Android، وافتح التطبيق.|Install MorphTV on your Android phone and open the app.
+اختار اللي محتاجه|Choose what you need
+التحديثات وتنزيل النسخ، أو مشغل IPTV، أو الريموت المدمج.|Updates and downloads, the IPTV player or the built-in remote.
+وصّل شاشتك عند الحاجة|Connect your TV when needed
+للريموت، وصّل الموبايل والتلفزيون بنفس الشبكة، وابحث عن الجهاز واعمل Pair.|For remote control, connect your phone and TV to the same network, find the device and pair.
+للموبايل|For mobile
+ابدأ من MorphTV.|Start with MorphTV.
+تطبيق واحد للتحديثات والمشاهدة والتحكم. حمّل نسخة الموبايل المناسبة ليك.|One app for updates, viewing and control. Get MorphTV for your phone.
+جواه كل اللي تحتاجه|Everything you need, inside
+Morph IPTV نسخة مستقلة للتلفزيونات. روابط تحميلها هتتضاف بعد رفع الحزم الخاصة بكل جهاز.|Morph IPTV is a standalone TV app. Download links will be added once each device package is uploaded.
+التحميل بعد رفع النسخ|Downloads available after upload
+ملف APK لنسخة Morph IPTV المستقلة. روابط الملفات تُضاف بعد رفعها.|An APK for standalone Morph IPTV. File links will be added after upload.
+كود Morph IPTV المستقل هيُضاف بعد رفع نسخته. كود 6443144 يخص MorphTV للتلفزيون.|The standalone Morph IPTV code will be added after upload. Code 6443144 is for MorphTV on TV.
+كود نسخة تلفزيون MorphTV هو 6443144. افتح Downloader، اكتب الكود واضغط Go لتنزيل أحدث نسخة اللانشر.|The MorphTV TV code is 6443144. Open Downloader, enter the code and select Go for the latest launcher version.
+هل MorphTV Launcher مجاني؟|Is MorphTV Launcher free?
+اكتشف MorphTV Launcher|Explore MorphTV Launcher
 انتقل للمحتوى|Skip to content
 القائمة|Menu
 القائمة الرئيسية|Main navigation

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "latest": "0.8.272",
+  "latest": "0.8.293",
   "channel": "preview",
   "platforms": [
     {
@@ -18,66 +18,67 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "0.8.271",
+      "version": "0.8.293",
       "download": "/download/android",
-      "noteAr": "هوية بريميم موحّدة، صفحة الثيمات الجديدة، الراديو وDLNA ومواقيت الصلاة، خلفية IPTV ثابتة وكروت قنوات متناسقة وإصلاحات الرجوع والإدخال.",
-      "noteEn": "Unified premium UI, Showcase themes, Radio, DLNA and Prayer; static IPTV hero, consistent free-channel cards, input and navigation fixes.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI مربعة، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, square HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false,
-      "versionCode": 271
+      "versionCode": 294
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "0.8.271",
+      "version": "0.8.293",
       "download": "/download/firetv",
-      "noteAr": "هوية بريميم موحّدة، صفحة الثيمات الجديدة، الراديو وDLNA ومواقيت الصلاة، خلفية IPTV ثابتة وكروت قنوات متناسقة وإصلاحات الرجوع والإدخال.",
-      "noteEn": "Unified premium UI, Showcase themes, Radio, DLNA and Prayer; static IPTV hero, consistent free-channel cards, input and navigation fixes.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI مربعة، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, square HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "channel": "preview",
-      "versionCode": 271
+      "versionCode": 294,
+      "physicalDeviceVerified": false
     },
     {
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "هوية بريميم موحّدة، صفحة الثيمات الجديدة، الراديو وDLNA ومواقيت الصلاة، خلفية IPTV ثابتة وكروت قنوات متناسقة وإصلاحات الرجوع والإدخال.",
-      "noteEn": "Unified premium UI, Showcase themes, Radio, DLNA and Prayer; static IPTV hero, consistent free-channel cards, input and navigation fixes.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI مربعة، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, square HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "webPreview": "/web-tv.html",
-      "version": "0.8.271",
+      "version": "0.8.293",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.271.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-0.8.293.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
       "inputRollbackBaseline": "ClearTV 0.3.8 / standard required_version 5.0",
-      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.271.wgt",
+      "computerCompatibilityPackage": "/Morph-TV-Samsung-Tizen4-0.8.293.wgt",
       "compatibilityModels": [
         "UA43NU7100",
         "UA43N5300"
       ],
       "installVideo": "https://www.facebook.com/reel/1158151803538155",
-      "experimentalTizen2": "/test-releases/20261101-tizen2-lite-0.8.271/Morph-TV-Tizen2-Lite-0.8.271-candidate.wgt",
-      "computerLite2Package": "/test-releases/20261101-tizen2-lite-0.8.271/Morph-TV-Tizen2-Lite-0.8.271-candidate.wgt",
-      "computerLite2Version": "0.8.271",
+      "experimentalTizen2": "/Morph-TV-Samsung-Tizen2-0.8.293.wgt",
+      "computerLite2Package": "/Morph-TV-Samsung-Tizen2-0.8.293.wgt",
+      "computerLite2Version": "0.8.293",
       "channel": "preview",
-      "experimentalTizen3": "/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt",
-      "computerLite3Package": "/test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt",
-      "computerLite3Version": "0.8.271",
-      "computerBundle": "/Morph-TV-Samsung-Computer-0.8.272.zip",
-      "computerCompatibilityBundle": "/Morph-TV-Samsung-Tizen4-Computer-0.8.272.zip"
+      "experimentalTizen3": "/Morph-TV-Samsung-Tizen3-0.8.293.wgt",
+      "computerLite3Package": "/Morph-TV-Samsung-Tizen3-0.8.293.wgt",
+      "computerLite3Version": "0.8.293",
+      "computerBundle": "/Morph-TV-Install-Kit-0.8.293.zip",
+      "computerCompatibilityBundle": "/Morph-TV-Install-Kit-0.8.293.zip"
     },
     {
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "هوية بريميم موحّدة، صفحة الثيمات الجديدة، الراديو وDLNA ومواقيت الصلاة، خلفية IPTV ثابتة وكروت قنوات متناسقة وإصلاحات الرجوع والإدخال.",
-      "noteEn": "Unified premium UI, Showcase themes, Radio, DLNA and Prayer; static IPTV hero, consistent free-channel cards, input and navigation fixes.",
-      "version": "0.8.271",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI مربعة، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, square HDMI cards, individual IPTV account removal and instant OK to save category order.",
+      "version": "0.8.293",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -88,22 +89,10 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Android-TV-0.8.271",
-      "file": "Morph-TV-Android-TV-0.8.271.apk",
-      "bytes": 14222764,
-      "sha256": "7b4f4af0aa118ea8dfbe552a7e416f53a28dad277af60a942938f529cb48fbab"
-    },
-    {
-      "name": "Morph-TV-LG-0.8.271",
-      "file": "Morph-TV-LG-0.8.271.ipk",
-      "bytes": 8870898,
-      "sha256": "a1c83c0baea361cb5a89563c21cac8efb9c770718253e0edc5ec4e9af7625e73"
-    },
-    {
-      "name": "Morph-TV-Samsung-Tizen4-0.8.271",
-      "file": "Morph-TV-Samsung-Tizen4-0.8.271.wgt",
-      "bytes": 9315127,
-      "sha256": "b5ba3cd807c415770bcff71efa5129e303ef7e6d75619fe6abd4df9b6d394dc0"
+      "name": "Morph-TV-Phone-0.8.272",
+      "file": "Morph-TV-Phone-0.8.272.apk",
+      "bytes": 44442218,
+      "sha256": "a685a1f368d57f5d91fc0135c74d0292b97a600f2c85d1047f440827bd0f3459"
     },
     {
       "name": "Morph-TV-Legacy-0.1.6",
@@ -112,58 +101,145 @@
       "sha256": "841f1878fb473cb6008dfd2f6d23aec8ff45a059682cf2b09694c3366fa285ff"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-0.8.271",
-      "file": "Morph-TV-Samsung-Tizen5-0.8.271.wgt",
-      "bytes": 9312364,
-      "sha256": "6f4e49b26b7144a2e49f65ab63277ba4070edf4c31d4b47787f5a8d39fd30f37"
+      "name": "Morph-TV-Android-TV-0.8.293",
+      "file": "Morph-TV-Android-TV-0.8.293.apk",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "android",
+      "bytes": 15800948,
+      "sha256": "f6f483f9b7136cb37e3306209620f4951810f6ca588e6e78ec724b4a4dbc85f8",
+      "download": "/download/android"
     },
     {
-      "name": "Morph-TV-Tizen2-Lite-0.8.271-candidate",
-      "file": "test-releases/20261101-tizen2-lite-0.8.271/Morph-TV-Tizen2-Lite-0.8.271-candidate.wgt",
-      "bytes": 9412939,
-      "sha256": "25d286734a867d3463ec7446cbfc724df44adfd2488141ab80f55b38bab46363"
+      "name": "Morph-TV-LG-0.8.293",
+      "file": "Morph-TV-LG-0.8.293.ipk",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "webos",
+      "bytes": 10233480,
+      "sha256": "115d1a8ee11cb554ad3d23bb1f5dd9d3ce747c97a3e0a3df0c5e54295163cf57",
+      "download": "/download/lg"
     },
     {
-      "name": "Morph-TV-Tizen3-Lite-0.8.271-candidate",
-      "file": "test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.wgt",
-      "bytes": 9411908,
-      "sha256": "d59e6624344477ee8aeb0e8301b15a4f76a19d70efed43c79e86ae7b1545b4d2"
+      "name": "Morph-TV-Samsung-Tizen2-0.8.293",
+      "file": "Morph-TV-Samsung-Tizen2-0.8.293.wgt",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "tizen2",
+      "bytes": 10692849,
+      "sha256": "644b3748cac12885379a56213798afb3e84602d476f030e476b2e8fd3f9c22c3",
+      "download": "/download/samsung-tizen2"
     },
     {
-      "name": "Morph-TV-Tizen3-Lite-0.8.271-candidate",
-      "file": "test-releases/20261101-tizen3-lite-0.8.271/Morph-TV-Tizen3-Lite-0.8.271-candidate.zip",
-      "bytes": 9411908,
-      "sha256": "d59e6624344477ee8aeb0e8301b15a4f76a19d70efed43c79e86ae7b1545b4d2"
+      "name": "Morph-TV-Samsung-Tizen3-0.8.293",
+      "file": "Morph-TV-Samsung-Tizen3-0.8.293.wgt",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "tizen3",
+      "bytes": 10691843,
+      "sha256": "a22adedebf56a8ae6c5254ea490360edc0753d67545fbcd1f9069fd0ad89fb84",
+      "download": "/download/samsung-tizen3"
     },
     {
-      "name": "Morph-TV-Phone-0.8.272",
-      "file": "Morph-TV-Phone-0.8.272.apk",
-      "bytes": 44442218,
-      "sha256": "a685a1f368d57f5d91fc0135c74d0292b97a600f2c85d1047f440827bd0f3459"
+      "name": "Morph-TV-Samsung-Tizen4-0.8.293",
+      "file": "Morph-TV-Samsung-Tizen4-0.8.293.wgt",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "tizen4",
+      "bytes": 10597769,
+      "sha256": "d9d19e827ee6e583f9f8c0fe1aa5a477530f0ed170b7afb3f5b9e8867ebcae42",
+      "download": "/download/samsung-tizen4"
     },
     {
-      "name": "Morph-Remote-1.0.9",
-      "file": "Morph-Remote-1.0.9.apk",
-      "bytes": 56771788,
-      "sha256": "714efec1199286ac29eb0ad281187e60e0e2905cec24681639f6d1dbcf11d67e"
+      "name": "Morph-TV-Samsung-Tizen5-0.8.293",
+      "file": "Morph-TV-Samsung-Tizen5-0.8.293.wgt",
+      "version": "0.8.293",
+      "product": "launcher",
+      "target": "tizen5",
+      "bytes": 10595047,
+      "sha256": "cd20413129b74f181abf17864813e5b88bb2b16c4d80a922309ed15a11a19436",
+      "download": "/download/samsung-tizen5"
     },
     {
-      "name": "Morph-TV-Install-Kit-0.8.272",
-      "file": "Morph-TV-Install-Kit-0.8.272.zip",
-      "bytes": 85155759,
-      "sha256": "6f2d166651c5ffabafd7419ab18e119cd6ab5392612d534db572ea4a1577f4d6"
+      "name": "Morph-IPTV-LG-0.1.3",
+      "file": "Morph-IPTV-LG-0.1.3.ipk",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "webos",
+      "bytes": 3181376,
+      "sha256": "734e7eacd508e543377df13ee976e4502a1e727578504269a1d57c5aaf213a38",
+      "download": "/download/iptv/lg"
     },
     {
-      "name": "Morph-TV-Samsung-Computer-0.8.272",
-      "file": "Morph-TV-Samsung-Computer-0.8.272.zip",
-      "bytes": 46817277,
-      "sha256": "6e83b781ecaf30b2adbefb2d6fc1c7020fb8cd32884e1f8b51be0b575b387e50"
+      "name": "Morph-IPTV-tizen4-0.1.3",
+      "file": "Morph-IPTV-tizen4-0.1.3.wgt",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "tizen4",
+      "bytes": 3194167,
+      "sha256": "c151ca086aaf1661779a382d03e487ef0ea85a903471fbbb57097dfeba818a8c",
+      "download": "/download/iptv/tizen4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen4-Computer-0.8.272",
-      "file": "Morph-TV-Samsung-Tizen4-Computer-0.8.272.zip",
-      "bytes": 9305584,
-      "sha256": "3fc6c282a539ef310d9f94f9a441db3fabe08977ffff09f982fa18714c29a5d9"
+      "name": "Morph-IPTV-tizen5-0.1.3",
+      "file": "Morph-IPTV-tizen5-0.1.3.wgt",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "tizen5",
+      "bytes": 3194162,
+      "sha256": "f8e33f9b8544d4f4b3d8e3f2c041b01b093d02fbbcf8deea644248e0a0b39070",
+      "download": "/download/iptv/tizen5"
+    },
+    {
+      "name": "Morph-IPTV-tizen2-0.1.3",
+      "file": "Morph-IPTV-tizen2-0.1.3.wgt",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "tizen2",
+      "bytes": 3279988,
+      "sha256": "75b2624af47bb17c408ff5b83f43e14c90458fa33d4c73900f7777c2f144c3ae",
+      "download": "/download/iptv/tizen2"
+    },
+    {
+      "name": "Morph-IPTV-tizen3-0.1.3",
+      "file": "Morph-IPTV-tizen3-0.1.3.wgt",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "tizen3",
+      "bytes": 3279030,
+      "sha256": "8df9580f3aac4a97659f68e87f92f874e922bd6286c7d187c4160c7a2171f7a1",
+      "download": "/download/iptv/tizen3"
+    },
+    {
+      "name": "Morph-IPTV-Android-TV-0.1.3",
+      "file": "Morph-IPTV-Android-TV-0.1.3.apk",
+      "version": "0.1.3",
+      "product": "iptv",
+      "target": "android",
+      "bytes": 10860413,
+      "sha256": "85e2b30d21cfd1130d748f2921fcb5fe3942592c7ac40fac06254e92ce2e2a2b",
+      "download": "/download/iptv/android"
+    },
+    {
+      "name": "Morph Remote",
+      "file": "Morph-Remote-1.1.1.apk",
+      "version": "1.1.1",
+      "product": "remote",
+      "target": "android",
+      "bytes": 56804740,
+      "sha256": "b66bb9dddc82dd48e7b541814b01b033202c07ab816190a9c350791a5a1023ab",
+      "download": "/download/remote",
+      "versionCode": 12,
+      "minAndroid": "7.0",
+      "minSdk": 24,
+      "available": true
+    },
+    {
+      "name": "Morph-TV-Install-Kit-0.8.293",
+      "file": "Morph-TV-Install-Kit-0.8.293.zip",
+      "version": "0.8.293",
+      "bytes": 94627065,
+      "sha256": "d9835280c5603b007d8f59d72cd82daa47167a8dcff0e58185a0bbaf6a1b273f"
     }
   ],
   "legacy": {
@@ -178,17 +254,119 @@
   },
   "installGuide": "/install.html",
   "installKit": "/samsung-computer.html",
-  "offlineInstallKit": "/Morph-TV-Install-Kit-0.8.272.zip",
+  "offlineInstallKit": "/Morph-TV-Install-Kit-0.8.293.zip",
   "remote": {
-    "available": true,
     "name": "Morph Remote",
-    "version": "1.0.9",
-    "versionCode": 10,
+    "file": "Morph-Remote-1.1.1.apk",
+    "version": "1.1.1",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56804740,
+    "sha256": "b66bb9dddc82dd48e7b541814b01b033202c07ab816190a9c350791a5a1023ab",
+    "download": "/download/remote",
+    "versionCode": 12,
     "minAndroid": "7.0",
     "minSdk": 24,
-    "download": "/download/remote",
-    "file": "Morph-Remote-1.0.9.apk",
-    "bytes": 56771788,
-    "sha256": "714efec1199286ac29eb0ad281187e60e0e2905cec24681639f6d1dbcf11d67e"
+    "available": true
+  },
+  "downloads": {
+    "android": "Morph-TV-Android-TV-0.8.293.apk",
+    "lg": "Morph-TV-LG-0.8.293.ipk",
+    "samsung-tizen2": "Morph-TV-Samsung-Tizen2-0.8.293.wgt",
+    "samsung-tizen3": "Morph-TV-Samsung-Tizen3-0.8.293.wgt",
+    "samsung-tizen4": "Morph-TV-Samsung-Tizen4-0.8.293.wgt",
+    "samsung-tizen5": "Morph-TV-Samsung-Tizen5-0.8.293.wgt",
+    "iptv/lg": "Morph-IPTV-LG-0.1.3.ipk",
+    "iptv/tizen4": "Morph-IPTV-tizen4-0.1.3.wgt",
+    "iptv/tizen5": "Morph-IPTV-tizen5-0.1.3.wgt",
+    "iptv/tizen2": "Morph-IPTV-tizen2-0.1.3.wgt",
+    "iptv/tizen3": "Morph-IPTV-tizen3-0.1.3.wgt",
+    "iptv/android": "Morph-IPTV-Android-TV-0.1.3.apk",
+    "remote": "Morph-Remote-1.1.1.apk",
+    "phone": "Morph-TV-Phone-0.8.272.apk",
+    "legacy": "Morph-TV-Legacy-0.1.6.apk",
+    "firetv": "Morph-TV-Android-TV-0.8.293.apk",
+    "iptv/firetv": "Morph-IPTV-Android-TV-0.1.3.apk"
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "0.1.3",
+    "versionCode": 4,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-0.1.3",
+        "file": "Morph-IPTV-LG-0.1.3.ipk",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 3181376,
+        "sha256": "734e7eacd508e543377df13ee976e4502a1e727578504269a1d57c5aaf213a38",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-0.1.3",
+        "file": "Morph-IPTV-tizen4-0.1.3.wgt",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 3194167,
+        "sha256": "c151ca086aaf1661779a382d03e487ef0ea85a903471fbbb57097dfeba818a8c",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-0.1.3",
+        "file": "Morph-IPTV-tizen5-0.1.3.wgt",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 3194162,
+        "sha256": "f8e33f9b8544d4f4b3d8e3f2c041b01b093d02fbbcf8deea644248e0a0b39070",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-0.1.3",
+        "file": "Morph-IPTV-tizen2-0.1.3.wgt",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 3279988,
+        "sha256": "75b2624af47bb17c408ff5b83f43e14c90458fa33d4c73900f7777c2f144c3ae",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-0.1.3",
+        "file": "Morph-IPTV-tizen3-0.1.3.wgt",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 3279030,
+        "sha256": "8df9580f3aac4a97659f68e87f92f874e922bd6286c7d187c4160c7a2171f7a1",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-0.1.3",
+        "file": "Morph-IPTV-Android-TV-0.1.3.apk",
+        "version": "0.1.3",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 10860413,
+        "sha256": "85e2b30d21cfd1130d748f2921fcb5fe3942592c7ac40fac06254e92ce2e2a2b",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false
   }
 }

@@ -119,3 +119,27 @@ html body[data-product] .nav-cta span{color:#d2e5ff}
 .footer-name{font:700 23px/1.3 Arial,sans-serif;color:#193352}
 @media(max-width:1100px){.nav{grid-template-columns:170px minmax(0,1fr)}html body[data-product] .header .brand img{width:170px;height:68px}}
 @media(max-width:700px){.nav{grid-template-columns:1fr}html body[data-product] .header .brand img{width:180px;height:72px}.product-name{font-size:27px;margin-top:22px}}
+/* The mobile app includes updates, IPTV and remote control. */
+.card-mobile{background:linear-gradient(145deg,#fff,#edf3fb)}.card-mobile .product-name{color:#2463eb}.card-mobile .mini-tag{background:#eaf0fb;color:#315f9c}.mobile-download-summary{background:#fff;border:1px solid #dce5f1;border-radius:16px;padding:30px;color:#193352}.mobile-download-summary h3{margin:0 0 20px;font-size:22px}.mobile-download-summary>div{display:flex;gap:14px;align-items:center;padding:14px 0;border-top:1px solid #eaf0fb;color:#4e6381}.mobile-download-summary .icon{color:#2463eb}.download-card .btn:disabled{cursor:not-allowed;opacity:1;box-shadow:none}
+@media(min-width:701px) and (max-width:1100px){.three-products{grid-template-columns:repeat(3,minmax(0,1fr))}.three-products .card-body{padding-inline:18px}.three-products .card-body h2{font-size:17px}.three-products .product-name{font-size:21px}}
+
+/* Existing platform installation tutorials. */
+.installation-video{display:flex;align-items:center;gap:16px;padding:20px;margin:0 0 28px;border:1px solid #cbdaf2;border-radius:16px;background:linear-gradient(110deg,#f1f6ff,#fff);color:#173758;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.installation-video:hover{background:#e9f1ff;border-color:#799fdf;transform:translateY(-2px)}
+.installation-video:focus-visible{outline:3px solid #3165c6;outline-offset:4px}
+.installation-video-icon{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:50%;background:#2d61c5;color:#fff}
+.installation-video-icon svg{width:23px;height:23px}
+.installation-video small{display:block;font-size:12px;color:#4f6e98;margin-bottom:4px}
+.installation-video strong{display:block;font-size:17px;line-height:1.5}
+.installation-video-arrow{margin-inline-start:auto;font-size:24px;color:#2d61c5}
+@media(max-width:480px){.installation-video{padding:15px;gap:12px}.installation-video strong{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.installation-video{transition:none}.installation-video:hover{transform:none}}
+
+/* Clear actions, matching the mobile app's light palette. */
+html body[data-product] .btn.primary,html body[data-product] .btn.primary:disabled{background:#245ff1;border-color:#245ff1;color:#fff;opacity:1;font-weight:600}
+html body[data-product] .btn.primary:hover:not(:disabled){background:#174ed5;border-color:#174ed5}
+html body[data-product] .btn:not(.primary){background:#eaf0fb;border-color:#ccd9ef;color:#193758;font-weight:600}
+html body[data-product] .btn:focus-visible,html body[data-product] .install-tab:focus-visible,html body[data-product] .method-tabs button:focus-visible{outline:3px solid #245ff1;outline-offset:4px}
+html body[data-product] .install-tab.active,html body[data-product] .method-tabs button.active{background:#245ff1;border-color:#245ff1;color:#fff;font-weight:600}
+html body[data-product] .install-tab:not(.active),html body[data-product] .method-tabs button:not(.active){background:#eaf0fb;border-color:#ccd9ef;color:#29496f}
+html body[data-product] .installation-video-icon{background:#245ff1}

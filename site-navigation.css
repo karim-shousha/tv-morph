@@ -1,12 +1,12 @@
 /* Compact editorial navigation. The shared logo sits directly on the header. */
-html body[data-product] .header{background:#172b43;border:0;box-shadow:0 1px 0 #ffffff0c;position:relative;z-index:30}
+html body[data-product] .header{background:#f4f7fc;border:0;box-shadow:0 1px 0 #dce5f1;position:relative;z-index:30}
 html body[data-product] .header .nav{display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:88px;padding-block:10px;position:relative}
 html body[data-product] .header .brand{background:none;padding:0;border:0;border-radius:0;flex-shrink:0}
 html body[data-product] .header .brand img{width:168px;height:62px;object-fit:contain}
 html body[data-product] .header .header-navigation{display:flex;flex-direction:row;align-items:center;gap:28px;width:auto;min-width:0}
 .product-switcher{position:relative}
-html body[data-product] .header .products-trigger{display:flex;align-items:center;gap:7px;background:none;border:0;padding:12px 0;font:500 13px/1.5 var(--font);color:#f1f6fc;white-space:nowrap}
-html body[data-product] .header .products-trigger svg{width:15px;height:15px;color:#b9cce4;transition:transform .2s}
+html body[data-product] .header .products-trigger{display:flex;align-items:center;gap:7px;background:none;border:0;padding:12px 0;font:500 13px/1.5 var(--font);color:#193758;white-space:nowrap}
+html body[data-product] .header .products-trigger svg{width:15px;height:15px;color:#4b6484;transition:transform .2s}
 .products-open .products-trigger svg{transform:rotate(180deg)}
 html body[data-product] .header .nav-products{display:none;position:absolute;top:calc(100% + 9px);inset-inline-start:-18px;width:225px;padding:9px;flex-direction:column;align-items:stretch;gap:3px;background:#fff;border:1px solid #dae4ef;border-radius:13px;box-shadow:0 18px 45px #11253e25;z-index:40}
 html body[data-product] .header .products-open .nav-products{display:flex}
@@ -14,14 +14,14 @@ html body[data-product] .header .nav-products a{background:none;color:#29496f;bo
 html body[data-product] .header .nav-products a svg{width:21px;height:21px;color:#5278aa}
 html body[data-product] .header .nav-products a:hover,html body[data-product] .header .nav-products a.active{background:#edf3fb;color:#2463eb}
 html body[data-product] .header .nav-utilities{display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:24px;border:0;padding:0;width:auto}
-html body[data-product] .header .nav-utilities a{border:0;border-radius:0;background:none;color:#dce6f3;font-size:12px;font-weight:450;padding:12px 0;position:relative;gap:0}
+html body[data-product] .header .nav-utilities a{border:0;border-radius:0;background:none;color:#29496f;font-size:12px;font-weight:450;padding:12px 0;position:relative;gap:0}
 html body[data-product] .header .nav-utilities a svg{display:none}
-html body[data-product] .header .nav-utilities a:hover,html body[data-product] .header .nav-utilities a.active{color:#fff;background:none}
-html body[data-product] .header .nav-utilities a.active:after{content:'';position:absolute;inset-inline:0;bottom:3px;height:2px;background:#70b6ff;border-radius:2px}
+html body[data-product] .header .nav-utilities a:hover,html body[data-product] .header .nav-utilities a.active{color:#245ff1;background:none}
+html body[data-product] .header .nav-utilities a.active:after{content:'';position:absolute;inset-inline:0;bottom:3px;height:2px;background:#245ff1;border-radius:2px}
 .nav-tools{display:flex;gap:12px;align-items:center;flex-shrink:0}
-html body[data-product] .header #language-toggle{display:flex;align-items:center;gap:8px;padding:9px 13px;margin:0;background:#ffffff06;color:#eaf2ff;border:1px solid #ffffff26;border-radius:22px;font:12px/1.5 var(--font);cursor:pointer;white-space:nowrap}
-html body[data-product] .header #language-toggle svg{width:16px;height:16px;fill:none;stroke:#bed2ec;stroke-width:1.5}
-#menu-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;background:transparent;border:1px solid #ffffff25;color:#eef4ff;border-radius:9px}
+html body[data-product] .header #language-toggle{display:flex;align-items:center;gap:8px;padding:9px 13px;margin:0;background:#fff;color:#193758;border:1px solid #cfdbed;border-radius:22px;font:12px/1.5 var(--font);cursor:pointer;white-space:nowrap}
+html body[data-product] .header #language-toggle svg{width:16px;height:16px;fill:none;stroke:#29496f;stroke-width:1.5}
+#menu-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;background:transparent;border:1px solid #cfdbed;color:#193758;border-radius:9px}
 #menu-toggle svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
 html body[data-product] .header .nav-cta{display:none!important}
 @media(max-width:1150px) and (min-width:1001px){html body[data-product] .header .nav{gap:20px}html body[data-product] .header .header-navigation{gap:20px}html body[data-product] .header .nav-utilities{gap:17px}html body[data-product] .header .brand img{width:145px}}
@@ -29,18 +29,21 @@ html body[data-product] .header .nav-cta{display:none!important}
  html body[data-product] .header .nav{min-height:80px;padding-block:9px;flex-wrap:wrap;gap:0}
  html body[data-product] .header .brand img{width:158px;height:58px}
  #menu-toggle{display:flex}
- html body[data-product] .header .header-navigation{display:none;flex-basis:100%;width:100%;order:3;flex-direction:column;align-items:stretch;gap:13px;padding:15px 0 20px;margin-top:9px;border-top:1px solid #ffffff16}
+ html body[data-product] .header .header-navigation{display:none;flex-basis:100%;width:100%;order:3;flex-direction:column;align-items:stretch;gap:13px;padding:15px 0 20px;margin-top:9px;border-top:1px solid #dce5f1}
  html body[data-product] .header.navigation-open .header-navigation{display:flex}
  html body[data-product] .header .products-trigger{display:none}
- html body[data-product] .header .nav-products{position:static;display:flex;width:100%;background:#ffffff05;border-color:#ffffff14;box-shadow:none;border-radius:10px;padding:5px;gap:0}
- html body[data-product] .header .nav-products a{color:#e9f1fc;border-radius:6px;font-size:13px;min-height:46px}
- html body[data-product] .header .nav-products a svg{color:#a6c9f0}
- html body[data-product] .header .nav-products a:hover,html body[data-product] .header .nav-products a.active{background:#ffffff0c;color:#fff}
+ html body[data-product] .header .nav-products{position:static;display:flex;width:100%;background:#eaf0fb;border-color:#dce5f1;box-shadow:none;border-radius:10px;padding:5px;gap:0}
+ html body[data-product] .header .nav-products a{color:#193758;border-radius:6px;font-size:13px;min-height:46px}
+ html body[data-product] .header .nav-products a svg{color:#42699b}
+ html body[data-product] .header .nav-products a:hover,html body[data-product] .header .nav-products a.active{background:#dce8ff;color:#194db5}
  html body[data-product] .header .nav-utilities{display:flex;flex-direction:column;align-items:stretch;gap:0;width:100%}
- html body[data-product] .header .nav-utilities a{justify-content:flex-start;gap:13px;font-size:13px;min-height:45px;padding:10px 13px;color:#dae7f7}
- html body[data-product] .header .nav-utilities a svg{display:block;width:18px;height:18px;color:#a6c9f0}
+ html body[data-product] .header .nav-utilities a{justify-content:flex-start;gap:13px;font-size:13px;min-height:45px;padding:10px 13px;color:#29496f}
+ html body[data-product] .header .nav-utilities a svg{display:block;width:18px;height:18px;color:#42699b}
  html body[data-product] .header .nav-utilities a.active:after{inset-inline:auto;inset-inline-start:0;top:12px;bottom:12px;width:2px;height:auto}
 }
 @media(max-width:480px){html body[data-product] .header .nav{min-height:76px}html body[data-product] .header .brand img{width:139px;height:54px}.nav-tools{gap:9px}html body[data-product] .header #language-toggle{padding:8px 11px;font-size:11px}#menu-toggle{width:38px;height:38px}}
 html body[data-product] .header .products-trigger{font-size:14px}html body[data-product] .header .nav-utilities a{font-size:14px}
 @media(max-width:1000px){html body[data-product] .header .nav-utilities a{font-size:13px}}
+
+/* Keep the supplied white wordmark readable on the light header. */
+html body[data-product] .header .brand img{filter:drop-shadow(0 1px 1px #17375899) drop-shadow(0 0 1px #17375888)}
