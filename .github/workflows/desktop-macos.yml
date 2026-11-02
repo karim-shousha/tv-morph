@@ -39,6 +39,7 @@ jobs:
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/desktop/dist/mac-universal/Morph Launcher.app/Contents/MacOS/Morph Launcher
         run: npm test
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: morph-mac-universal
           path: |
