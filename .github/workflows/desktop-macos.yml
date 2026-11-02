@@ -29,6 +29,7 @@ jobs:
         working-directory: desktop
         run: |
           npm ci --no-audit --no-fund
+          npx playwright install chromium
           command -v ffmpeg || brew install ffmpeg
       - name: Build one Mac application for Apple Silicon and Intel
         working-directory: desktop
@@ -75,6 +76,7 @@ jobs:
         working-directory: desktop
         run: |
           npm ci --no-audit --no-fund
+          npx playwright install chromium
           command -v ffmpeg || brew install ffmpeg
       - name: Verify the same application on Intel
         working-directory: desktop
