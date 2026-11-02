@@ -4,6 +4,9 @@ on:
     branches: [codex/desktop-macos]
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
   workflow_dispatch:
+concurrency:
+  group: morph-desktop-macos
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
