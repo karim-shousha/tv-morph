@@ -36,6 +36,7 @@ jobs:
       - name: Run application and mouse/playback regression on Apple Silicon
         working-directory: desktop
         env:
+          MORPH_TEST_NO_SCREENSHOTS: "1"
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/desktop/dist/mac-universal/Morph Launcher.app/Contents/MacOS/Morph Launcher
         run: npm test
       - uses: actions/upload-artifact@v4
@@ -78,6 +79,7 @@ jobs:
       - name: Verify the same application on Intel
         working-directory: desktop
         env:
+          MORPH_TEST_NO_SCREENSHOTS: "1"
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher
         run: npm test
       - uses: actions/upload-artifact@v4
