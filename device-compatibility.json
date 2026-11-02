@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "release": "0.8.297",
+  "release": "0.8.298",
   "platforms": [
     {
       "id": "android",
-      "version": "0.8.297",
+      "version": "0.8.298",
       "minSdk": 26,
       "minAndroid": "8.0",
       "package": "/download/android",
@@ -13,7 +13,7 @@
     },
     {
       "id": "firetv",
-      "version": "0.8.297",
+      "version": "0.8.298",
       "minAndroidApi": 26,
       "package": "/download/firetv",
       "note": "Compatible Fire OS models only; input, codec and provider support depends on the device.",
@@ -37,7 +37,7 @@
     },
     {
       "id": "lg",
-      "version": "0.8.297",
+      "version": "0.8.298",
       "initialWebOS": "5.0+",
       "installMode": "Developer Mode / Key Server",
       "package": "/download/lg",
@@ -45,7 +45,7 @@
     },
     {
       "id": "samsung",
-      "version": "0.8.297",
+      "version": "0.8.298",
       "editions": [
         "Tizen 2.3/2.4 candidate",
         "Tizen 3.0 candidate",

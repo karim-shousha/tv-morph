@@ -77,7 +77,7 @@ class Plus:
         if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
         # Packaged TV runtimes serialize file origins differently. Only the
         # code/token authenticated client endpoints accept these app origins.
-        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device']:return False
+        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device','/api/plus/parent-reset']:return False
         if value.username or value.password or value.query or value.fragment:return False
         if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview']:return True
         return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview']
@@ -224,6 +224,16 @@ class Plus:
             db.execute('INSERT INTO studios VALUES (?,?,?,?) ON CONFLICT(license,device) DO UPDATE SET token=excluded.token',(self.digest(token),row['id'],device,int(time.time())))
         return {'token':token,'active':True,'scope':'studio','plan':row['plan']}
 
+    def verify_parent_reset(self, code, token):
+        # Recovery proves ownership of this existing device. It does not activate,
+        # rotate a token, allocate a seat, or grant an entitlement.
+        if not isinstance(code,str) or not re.fullmatch(r'(?:MORPH-[A-Z2-7]{32}|MT-[A-Z2-7]{12})',code):raise ValueError('recovery_rejected')
+        if not isinstance(token,str) or not re.fullmatch(r'[A-Za-z0-9_-]{32,128}',token):raise ValueError('recovery_rejected')
+        with self.db() as db:
+            row=db.execute("SELECT 1 FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND (o.license_hash=? OR o.id=(SELECT license FROM short_codes WHERE hash=?))",(self.digest(token),self.digest(code),self.digest(code))).fetchone()
+        if not row:raise ValueError('recovery_rejected')
+        return {'allowed':True}
+
     def check(self, token):
         with self.db() as db:
             valid=" AND (o.entitlement='lifetime' OR o.expires>?)"
@@ -314,6 +324,7 @@ class Plus:
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
+                elif path=='/api/plus/parent-reset':result=self.verify_parent_reset(data.get('code'),data.get('token'))
                 elif path=='/api/plus/devices':
                     with self.db() as db:
                         row=self.lookup(db,data.get('code'));devices=db.execute('SELECT device,name,created FROM devices WHERE license=?',(row['id'],)).fetchall()
