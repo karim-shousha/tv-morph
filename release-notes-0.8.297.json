@@ -1,0 +1,158 @@
+{
+  "version": "0.8.297",
+  "tv": {
+    "version": "0.8.297",
+    "versionCode": 298
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "0.8.298",
+    "download": "/download/phone",
+    "noteAr": "عباداتي اختياري: قرآن وأذكار وتسبيح محفوظ محليًا، مواقيت الصلاة وتنبيهات وأذان في الخلفية. مواعيد المباريات داخل IPTV.",
+    "noteEn": "Optional My Worship: offline Quran, adhkar, tasbih and local prayer times, background reminders and Adhan. Match schedules inside IPTV.",
+    "channel": "preview",
+    "versionCode": 302
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "0.1.7",
+    "versionCode": 8,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-0.1.7",
+        "file": "Morph-IPTV-LG-0.1.7.ipk",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5763954,
+        "sha256": "c66234d7cdaa05d4e8ce333080f1fce233252a8dad786cbf2c1f7f36092964fe",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-0.1.7",
+        "file": "Morph-IPTV-tizen4-0.1.7.wgt",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5780806,
+        "sha256": "75465cc9e2253fe34152378641985d763b8dc388155731508fd60b0eb8d0bb0a",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-0.1.7",
+        "file": "Morph-IPTV-tizen5-0.1.7.wgt",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5780798,
+        "sha256": "4e7eed8529ea91a87ffa075b3ab531cf8ec631ec15e63a85474d3bc6d014fb83",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-0.1.7",
+        "file": "Morph-IPTV-tizen2-0.1.7.wgt",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5862520,
+        "sha256": "17947cfd82ca4e6b2e4a2ace54bca8f9bda0f3a3dc3a5fc637e5fe30fca4a491",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-0.1.7",
+        "file": "Morph-IPTV-tizen3-0.1.7.wgt",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5861564,
+        "sha256": "05ccf122e8bc87939dd14a9c7575eed99f3307abac5923b4d4fe8218b17ed153",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-0.1.7",
+        "file": "Morph-IPTV-Android-TV-0.1.7.apk",
+        "version": "0.1.7",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 10943418,
+        "sha256": "20ad136872570e02d96b9521a8d9b3e0784bb4fb1e455b4208f89dd9aeae93e8",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-0.1.0",
+      "file": "Morph-IPTV-Legacy-0.1.0.apk",
+      "version": "0.1.0",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "edff23513735d47c18fdeacb053048a9f07723734d91ec3e23cdbae266bdf002",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.1.apk",
+    "version": "1.1.1",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56804740,
+    "sha256": "b66bb9dddc82dd48e7b541814b01b033202c07ab816190a9c350791a5a1023ab",
+    "download": "/download/remote",
+    "versionCode": 12,
+    "minAndroid": "7.0",
+    "minSdk": 24,
+    "available": true
+  },
+  "changes": [
+    "TV search uses the internal QWERTY/Arabic keyboard with a visible delete-character key; Back dismisses trailer and restores the existing IPTV page.",
+    "Loading enters Home when the first usable content arrives and never traps the viewer behind a stalled provider; remaining sections continue in the background.",
+    "Player category menus scroll correctly, open the current channel category and retain focus. Plus identity has an app-private upgrade backup; transient verification failures do not change paid themes.",
+    "Android provider compatibility restores the older HTTP client profile after404 only; real Hydra-account verification remains pending.",
+    "Matches: Previous, Today, Tomorrow, Next 7 days and choose a day; local timezone and cached filtering without network requests on navigation. Today home summary and one translucent prayer/match panel, with independent accessible actions.",
+    "Updated every Samsung WGT install guide and download link to the current release.",
+    "Fixed the shared Launcher backdrop pushing Apps, Inputs and Settings offscreen. Radio search opens the keyboard only on OK; all visible controls and the themed mini-player are reachable.",
+    "Centred horizontal HDMI cards, shared free match schedules/results with badges and multiple favorite teams, and focus-only translucent navigation.",
+    "Delete a single saved IPTV account without affecting other subscriptions; expired accounts can be removed offline.",
+    "Category order: OK saves immediately from any row; Back cancels.",
+    "Standalone IPTV reuses the Launcher prayer page/settings and native Adhan interruption/resume. Floating prayer and match summaries have independent Home visibility settings."
+  ],
+  "validation": [
+    "source receipts: 75 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": true,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "frozen tested release297 source; later UI audit changes remain staged separately"
+}
