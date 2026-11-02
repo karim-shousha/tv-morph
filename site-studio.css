@@ -158,3 +158,5 @@ html body[data-product] .studio-home .product-card{column-gap:32px}
  html body[data-product] .studio-home .product-choice{min-height:48px;line-height:1.5}
  html body[data-product] .studio-home .home-tv{width:100%;max-width:100%}
 }
+
+.plus-scope-notice{margin:24px 0;padding:20px 22px;border:1px solid #65a3ff55;border-inline-start:4px solid #3283ff;border-radius:16px;background:#4790ff0d;text-align:start}.plus-scope-notice strong{display:block;font-size:17px;line-height:1.65}.plus-scope-notice p{font-size:15px;line-height:1.9;margin:10px 0 0!important;color:var(--muted)}
