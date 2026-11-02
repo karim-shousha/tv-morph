@@ -450,7 +450,7 @@ Connected. واتحكم فورًا.|Connected. Start controlling.
 تطبيق MorphTV للموبايل لتثبيت نسخة التلفزيون وإدارة الاتصال. أندرويد 8 أو أحدث.|Use MorphTV for mobile to install the TV app and manage connections. Android 8 or newer.
 تحميل MorphTV للموبايل|Download MorphTV for mobile
 `;
-const translations=new Map(englishCopy.trim().split('\n').map(line=>line.split('|')));
+const translations=new Map(englishCopy.trim().split('\n').map(line=>line.split('|')).filter(([ar,en])=>ar.length>0&&typeof en==='string'));
 const orderedTranslations=[...translations].sort((a,b)=>b[0].length-a[0].length);
 let siteLanguage=localStorage.getItem('morph.preview.language')==='en'?'en':'ar';
 const originalText=new WeakMap(),originalAttributes=new WeakMap();
