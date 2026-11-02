@@ -8,12 +8,12 @@
     "id": "phone",
     "name": "Android Phone",
     "available": true,
-    "version": "0.8.272",
+    "version": "0.8.295",
     "download": "/download/phone",
-    "noteAr": "آخر نسخة موبايل منشورة؛ النسخة الجديدة قيد المراجعة.",
-    "noteEn": "Latest published phone release; the new version is under review.",
+    "noteAr": "واجهة الموبايل الجديدة والريموت المدمج، مع حزم التلفزيون الحالية وحذف حساب IPTV واحد.",
+    "noteEn": "New phone interface and integrated remote, current TV packages and individual IPTV account removal.",
     "channel": "preview",
-    "versionCode": 276
+    "versionCode": 299
   },
   "iptv": {
     "name": "Morph IPTV",
@@ -91,10 +91,32 @@
       "tizen5": "/download/iptv/tizen5",
       "tizen2": "/download/iptv/tizen2",
       "tizen3": "/download/iptv/tizen3",
-      "android": "/download/iptv/android"
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
     },
     "androidMinSdk": 26,
-    "physicalDeviceVerified": false
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-0.1.0",
+      "file": "Morph-IPTV-Legacy-0.1.0.apk",
+      "version": "0.1.0",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "edff23513735d47c18fdeacb053048a9f07723734d91ec3e23cdbae266bdf002",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
   },
   "remote": {
     "name": "Morph Remote",
@@ -124,5 +146,5 @@
     "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
   ],
   "physicalTVVerified": false,
-  "phoneUpdateUnderReview": true
+  "phoneUpdateUnderReview": false
 }

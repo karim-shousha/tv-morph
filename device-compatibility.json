@@ -23,13 +23,14 @@
     },
     {
       "id": "phone",
-      "version": "0.8.272",
+      "version": "0.8.295",
       "minSdk": 26,
-      "package": "/download/phone"
+      "package": "/download/phone",
+      "versionCode": 299
     },
     {
       "id": "remote",
-      "version": "1.0.9",
+      "version": "1.1.1",
       "minSdk": 24,
       "minAndroid": "7.0",
       "package": "/download/remote"
@@ -57,18 +58,19 @@
     },
     {
       "id": "legacy",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "minSdk": 19,
       "minAndroid": "4.4",
       "package": "/download/legacy",
-      "featureSet": "Separate lightweight native M3U subset; no full Showcase theme library."
+      "featureSet": "Separate lightweight native M3U subset; no full Showcase theme library.",
+      "versionCode": 8
     }
   ],
   "excluded": [
     "VIDAA"
   ],
   "notes": [
-    "morph-IPTV ships inside the MorphTV package; the website states this beside its download buttons.",
+    "Morph IPTV has separate modern and Android 4.4 Legacy packages; Legacy is a reduced native M3U edition.",
     "Physical HDMI/audio/codec/provider behavior needs verification on the target television.",
     "Samsung/LG Portal is not advertised as supported."
   ],
@@ -88,6 +90,15 @@
       "VIDAA"
     ],
     "physicalDeviceVerified": false,
-    "sharedSourceFiles": 69
+    "sharedSourceFiles": 69,
+    "legacy": {
+      "version": "0.1.0",
+      "versionCode": 1,
+      "minSdk": 19,
+      "minAndroid": "4.4",
+      "package": "/download/iptv/legacy",
+      "featureSet": "M3U playlists and native playback; no Xtream account login, EPG or modern UI.",
+      "physicalDeviceVerified": false
+    }
   }
 }

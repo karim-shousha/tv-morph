@@ -1,5 +1,5 @@
 'use strict';
-const mobileProduct={name:'MorphTV',tag:'كل أدواتك في تطبيق موبايل واحد',cardTitle:'تحديثاتك. مشاهدتك. ريموتك.',cardDesc:'نزّل التحديثات، شاهد IPTV، واتحكم في التلفزيون. كل ده مدمج في MorphTV للموبايل.'};
+const mobileProduct={name:'Morph TV',tag:'كل أدواتك في تطبيق موبايل واحد',cardTitle:'تحديثاتك. مشاهدتك. ريموتك.',cardDesc:'نزّل التحديثات، شاهد IPTV، واتحكم في التلفزيون. كل ده مدمج في MorphTV للموبايل.'};
 function mobileIllustration(size='large',kind='home'){
  const file=kind==='remote'?'mobile-remote-latest-291':'mobile-latest-291';
  return `<div class="remote-real-preview ${size}"><div class="remote-real-halo"></div><div class="remote-real-device"><img class="mobile-current-shot" src="landing-assets/${file}-en.jpg" alt="واجهة MorphTV للموبايل بالإنجليزية" width="390" height="844"></div>${size==='large'?`<span class="remote-real-badge">${icon('layers')}<span>تطبيق واحد. كل اللي تحتاجه.</span></span>`:''}</div>`;

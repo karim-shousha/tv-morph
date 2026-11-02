@@ -1,5 +1,40 @@
 'use strict';
 const englishCopy = `
+النسخة الحديثة|Modern version
+الأجهزة القديمة|Older devices
+تحميل النسخة القديمة|Download legacy version
+غير متاحة حاليًا|Currently unavailable
+
+Android 4.4+ · الأجهزة القديمة|Android 4.4+ · Older devices
+نسخة Morph IPTV للأندرويد القديم غير متاحة حاليًا|Morph IPTV for older Android devices is currently unavailable
+تحميل Morph Launcher للأجهزة القديمة|Download Morph Launcher for older devices
+
+معاينة Morph Launcher وMorph TV على التلفزيون والموبايل|Morph Launcher and Morph TV on a television and phone
+
+قنوات مباشرة|Live channels
+عند الطلب|On demand
+أفلام ومسلسلات|Movies and series
+واجهة عصرية|Modern interface
+وسهلة الاستخدام|Easy to use
+يدعم قوائم|Supports multiple
+IPTV متعددة|IPTV playlists
+متوفر للموبايل|Made for mobile
+والتلفزيون|and TV
+مستقر|Stable
+وموثوق|and reliable
+أداء سريع|Fast performance
+وسلس|Smooth experience
+شاشتك أندرويد قديم؟|An older Android TV?
+نسخة Morph Launcher للأجهزة القديمة · Android 4.4 أو أحدث|Morph Launcher for older devices · Android 4.4 or newer
+نسخة تجريبية للأجهزة القديمة. المميزات والتوافق قد يختلفوا عن النسخة الحديثة.|An experimental build for older devices. Features and compatibility may differ from the modern version.
+تحميل نسخة Android 4.4+|Download for Android 4.4+
+نسخة الأجهزة القديمة · Android 4.4+|Older devices · Android 4.4+
+إصدار تجريبي · للأجهزة القديمة|Experimental release · Older devices
+تجربة واحدة. إمكانيات أكتر.|One experience. More possibilities.
+Morph TV للموبايل يجمع تنزيل التحديثات، ومشغل IPTV، والريموت المدمج. ومع Morph Launcher، خلّي شاشتك بطابعك ووصل لكل اللي بتحبه بسهولة.|Morph TV brings updates, IPTV and remote control to your phone. With Morph Launcher, make your TV yours and reach everything you love.
+تحتاج النسخة الحديثة Android 8.0 أو أحدث. للأجهزة الأقدم،|The modern version requires Android 8.0 or newer. For older devices,
+نزّل نسخة Android 4.4+ التجريبية|download the experimental Android 4.4+ version
+
 تحميل Morph Remote المستقل|Download standalone Morph Remote
 
 تحميل WGT · Tizen 5+|Download WGT · Tizen 5+
@@ -450,7 +485,8 @@ Connected. واتحكم فورًا.|Connected. Start controlling.
 تطبيق MorphTV للموبايل لتثبيت نسخة التلفزيون وإدارة الاتصال. أندرويد 8 أو أحدث.|Use MorphTV for mobile to install the TV app and manage connections. Android 8 or newer.
 تحميل MorphTV للموبايل|Download MorphTV for mobile
 `;
-const translations=new Map(englishCopy.trim().split('\n').map(line=>line.split('|')).filter(([ar,en])=>ar.length>0&&typeof en==='string'));
+const legacyReleaseCopy=`نسخة خفيفة · قوائم M3U وتشغيل أساسي|Lightweight edition · M3U playlists and basic playback`;
+const translations=new Map((englishCopy+'\n'+legacyReleaseCopy).trim().split('\n').map(line=>line.split('|')).filter(([ar,en])=>ar.length>0&&typeof en==='string'));
 const orderedTranslations=[...translations].sort((a,b)=>b[0].length-a[0].length);
 let siteLanguage=localStorage.getItem('morph.preview.language')==='en'?'en':'ar';
 const originalText=new WeakMap(),originalAttributes=new WeakMap();

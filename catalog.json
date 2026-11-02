@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "0.8.272",
+      "version": "0.8.295",
       "download": "/download/phone",
-      "noteAr": "آخر نسخة موبايل منشورة؛ النسخة الجديدة قيد المراجعة.",
-      "noteEn": "Latest published phone release; the new version is under review.",
+      "noteAr": "واجهة الموبايل الجديدة والريموت المدمج، مع حزم التلفزيون الحالية وحذف حساب IPTV واحد.",
+      "noteEn": "New phone interface and integrated remote, current TV packages and individual IPTV account removal.",
       "channel": "preview",
-      "versionCode": 276
+      "versionCode": 299
     },
     {
       "id": "android",
@@ -85,20 +85,51 @@
       "installMode": "developer-mode",
       "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/",
       "channel": "preview"
+    },
+    {
+      "id": "android44",
+      "name": "Android 4.4 Legacy",
+      "available": true,
+      "version": "0.1.7",
+      "versionCode": 8,
+      "minSdk": 19,
+      "download": "/download/legacy",
+      "noteEn": "M3U playlists and native playback; reduced feature set.",
+      "noteAr": "قوائم M3U وتشغيل أساسي؛ خصائص محدودة للأجهزة القديمة."
     }
   ],
   "releases": [
     {
-      "name": "Morph-TV-Phone-0.8.272",
-      "file": "Morph-TV-Phone-0.8.272.apk",
-      "bytes": 44442218,
-      "sha256": "a685a1f368d57f5d91fc0135c74d0292b97a600f2c85d1047f440827bd0f3459"
+      "name": "Morph-TV-Phone-0.8.295",
+      "file": "Morph-TV-Phone-0.8.295.apk",
+      "version": "0.8.295",
+      "product": "phone",
+      "target": "android",
+      "bytes": 96941085,
+      "sha256": "04c695b026b586641bc60e39de634a83f611dddad7484fef65ad9828ab562dc7",
+      "download": "/download/phone",
+      "versionCode": 299
     },
     {
-      "name": "Morph-TV-Legacy-0.1.6",
-      "file": "Morph-TV-Legacy-0.1.6.apk",
-      "bytes": 221743,
-      "sha256": "841f1878fb473cb6008dfd2f6d23aec8ff45a059682cf2b09694c3366fa285ff"
+      "name": "Morph-TV-Legacy-0.1.7",
+      "file": "Morph-TV-Legacy-0.1.7.apk",
+      "version": "0.1.7",
+      "product": "legacy-launcher",
+      "target": "android44",
+      "bytes": 479880,
+      "sha256": "275086b1137bd20d0361231eaf314f37ae9c92fc8243b312ecad246440384aec",
+      "download": "/download/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
     },
     {
       "name": "Morph-TV-Android-TV-0.8.293",
@@ -235,11 +266,32 @@
       "available": true
     },
     {
+      "name": "Morph-IPTV-Legacy-0.1.0",
+      "file": "Morph-IPTV-Legacy-0.1.0.apk",
+      "version": "0.1.0",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "edff23513735d47c18fdeacb053048a9f07723734d91ec3e23cdbae266bdf002",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    },
+    {
       "name": "Morph-TV-Install-Kit-0.8.293",
       "file": "Morph-TV-Install-Kit-0.8.293.zip",
       "version": "0.8.293",
-      "bytes": 94627065,
-      "sha256": "d9835280c5603b007d8f59d72cd82daa47167a8dcff0e58185a0bbaf6a1b273f"
+      "bytes": 95595344,
+      "sha256": "a9eaed002aab88d135c56d3f05cec8ebcf24bed1f88ce57d294a2b5adbad4edb"
     }
   ],
   "legacy": {
@@ -283,8 +335,9 @@
     "iptv/tizen3": "Morph-IPTV-tizen3-0.1.3.wgt",
     "iptv/android": "Morph-IPTV-Android-TV-0.1.3.apk",
     "remote": "Morph-Remote-1.1.1.apk",
-    "phone": "Morph-TV-Phone-0.8.272.apk",
-    "legacy": "Morph-TV-Legacy-0.1.6.apk",
+    "legacy": "Morph-TV-Legacy-0.1.7.apk",
+    "iptv/legacy": "Morph-IPTV-Legacy-0.1.0.apk",
+    "phone": "Morph-TV-Phone-0.8.295.apk",
     "firetv": "Morph-TV-Android-TV-0.8.293.apk",
     "iptv/firetv": "Morph-IPTV-Android-TV-0.1.3.apk"
   },
@@ -364,9 +417,31 @@
       "tizen5": "/download/iptv/tizen5",
       "tizen2": "/download/iptv/tizen2",
       "tizen3": "/download/iptv/tizen3",
-      "android": "/download/iptv/android"
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
     },
     "androidMinSdk": 26,
-    "physicalDeviceVerified": false
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-0.1.0",
+      "file": "Morph-IPTV-Legacy-0.1.0.apk",
+      "version": "0.1.0",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "edff23513735d47c18fdeacb053048a9f07723734d91ec3e23cdbae266bdf002",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
   }
 }
