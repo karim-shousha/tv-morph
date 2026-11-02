@@ -44,8 +44,8 @@ $('#contact-form').addEventListener('submit',e=>{
   const name=$('#contact-name').value.trim(),email=$('#contact-email').value.trim(),subject=$('#contact-subject').value.trim().replace(/[\r\n]+/g,' '),message=$('#contact-message').value.trim();
   if(!name||!email||!subject||!message){$('#contact-status').textContent='اكتب بياناتك ورسالتك الأول، من فضلك.';return;}
   const body=['الاسم: '+name,'البريد الإلكتروني: '+email,'','الرسالة:',message].join('\r\n');
-  const mailto='mailto:support@herroshetta.com?subject='+encodeURIComponent('Morph — '+subject)+'&body='+encodeURIComponent(body);
-  $('#contact-status').textContent='أكمل إرسال الرسالة من تطبيق البريد. لو ما فتحش، تقدر تراسلنا مباشرة على support@herroshetta.com.';
+  const mailto='mailto:support@morph-tv.com?subject='+encodeURIComponent('Morph — '+subject)+'&body='+encodeURIComponent(body);
+  $('#contact-status').textContent='أكمل إرسال الرسالة من تطبيق البريد. لو ما فتحش، تقدر تراسلنا مباشرة على support@morph-tv.com.';
   window.location.href=mailto;
 });
 window.addEventListener('hashchange',route);route();

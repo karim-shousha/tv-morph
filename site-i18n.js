@@ -229,7 +229,7 @@ MorphTV لتخصيص واجهة تلفزيونك، وmorph-IPTV لتشغيل م�
 يفتح تطبيق البريد برسالتك جاهزة.|Opens your email app with your message ready.
 أكمل الإرسال من هناك.|Complete sending from there.
 اكتب بياناتك ورسالتك الأول، من فضلك.|Please enter your details and message first.
-أكمل إرسال الرسالة من تطبيق البريد. لو ما فتحش، تقدر تراسلنا مباشرة على support@herroshetta.com.|Finish sending in your email app. If it doesn't open, email support@herroshetta.com directly.
+أكمل إرسال الرسالة من تطبيق البريد. لو ما فتحش، تقدر تراسلنا مباشرة على support@morph-tv.com.|Finish sending in your email app. If it doesn't open, email support@morph-tv.com directly.
 شاشتك، بطابعك.|Your screen. Your way.
 صُنع بشغف لتجربة تستحقها.|Made with care for an experience worth having.
 العودة للرئيسية ↖|Back to home ↖
