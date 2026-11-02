@@ -32,6 +32,8 @@ SECRET = secret_path.read_bytes()
 if len(SECRET) != 32:
     raise RuntimeError('Invalid persistent site secret')
 DB = DATA / 'community.sqlite3'
+from matches_free import FreeMatches
+MATCHES = FreeMatches(DATA)
 from plus import Plus
 import qr_link
 PLUS = Plus(DATA, SECRET, ORIGIN)
@@ -130,7 +132,7 @@ def backup_loop():
 
 class Handler(BaseHTTPRequestHandler):
     def end_headers(self):
-        if self.path.startswith('/api/plus/'):
+        if self.path.startswith(('/api/plus/', '/api/matches')):
             self.send_header('Access-Control-Allow-Origin', '*')
             self.send_header('Vary', 'Origin')
         super().end_headers()
@@ -213,6 +215,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         try:
+            if MATCHES.handle(self, urlsplit(self.path).path):
+                return
             if qr_link.handle(self, urlsplit(self.path).path):
                 return
             if PLUS.handle(self, urlsplit(self.path).path):
