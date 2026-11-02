@@ -16,7 +16,7 @@ from urllib.parse import urlsplit, parse_qs
 
 DATA = Path(os.environ.get('MORPH_DATA_DIR', '/data'))
 ROOT = Path(os.environ.get('MORPH_SITE_ROOT', '/usr/share/nginx/html'))
-ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://morphtv.herroshetta.com').rstrip('/')
+ORIGIN = os.environ.get('MORPH_PUBLIC_ORIGIN', 'https://morph-tv.com').rstrip('/')
 SECURE = ORIGIN.startswith('https://')
 DATA.mkdir(parents=True, exist_ok=True)
 os.chmod(DATA, 0o700)
@@ -34,7 +34,7 @@ if len(SECRET) != 32:
 DB = DATA / 'community.sqlite3'
 from matches_free import FreeMatches
 MATCHES = FreeMatches(DATA)
-from plus import Plus
+from plus import Plus, WEBSITE_ORIGINS
 import qr_link
 PLUS = Plus(DATA, SECRET, ORIGIN)
 
@@ -335,7 +335,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(503, {'error': 'temporarily_unavailable'})
 
     def post(self):
-        if self.headers.get('Origin', '') != ORIGIN:
+        if self.headers.get('Origin', '') not in WEBSITE_ORIGINS | {ORIGIN}:
             return self.send_json(403, {'error': 'origin_rejected'})
         if self.headers.get('Content-Type', '').split(';')[0].strip() != 'application/json':
             return self.send_json(415, {'error': 'json_required'})

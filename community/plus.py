@@ -15,6 +15,13 @@ ANNUAL_SECONDS = 365 * 24 * 60 * 60
 GRANT_PLANS = dict(PLANS, owner={'devices': None})
 FREE = ['islamic-makkah', 'islamic-madinah', 'islamic-quds', 'ac-milan-legends', 'gta6', 'blue-cinema', 'blue', 'night', 'emerald', 'violet', 'ahly', 'zamalek', 'ismaily', 'saudi-national', 'egypt-national', 'madrid', 'barcelona']
 
+# Both public sites share the same persistent data during the domain transition.
+WEBSITE_ORIGINS = frozenset({
+    'https://morph-tv.com',
+    'https://www.morph-tv.com',
+    'https://morphtv.herroshetta.com',
+})
+
 class Plus:
     def __init__(self, data, secret, origin):
         self.path, self.secret, self.origin = Path(data)/'plus.sqlite3', secret, origin
@@ -65,7 +72,7 @@ class Plus:
         return 'MT-'+base64.b32encode(hmac.new(self.secret, ('license-short:'+order).encode(), hashlib.sha256).digest()).decode()[:12]
 
     def client_origin_allowed(self, origin, path):
-        if origin in ['', 'null', self.origin]:return True
+        if origin in WEBSITE_ORIGINS or origin in ['', 'null', self.origin]:return True
         value=urlsplit(origin)
         if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
         # Packaged TV runtimes serialize file origins differently. Only the

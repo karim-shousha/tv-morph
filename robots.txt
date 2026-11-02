@@ -5,4 +5,4 @@ Disallow: /plus-admin
 Disallow: /community-admin
 Disallow: /web-tv.html
 Disallow: /_artifacts/
-Sitemap: https://morphtv.herroshetta.com/sitemap.xml
+Sitemap: https://morph-tv.com/sitemap.xml
