@@ -1,0 +1,157 @@
+{
+  "version": "0.8.299",
+  "tv": {
+    "version": "0.8.299",
+    "versionCode": 300
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "0.8.302",
+    "download": "/download/phone",
+    "noteAr": "تحديث المشغّل وإعدادات الشبكة وWireGuard المدمج، مع الريموت وحزم التلفزيون الحالية.",
+    "noteEn": "Shared player and network settings, embedded WireGuard engine, integrated remote and current TV packages.",
+    "channel": "preview",
+    "versionCode": 306
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "0.1.9",
+    "versionCode": 10,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-0.1.9",
+        "file": "Morph-IPTV-LG-0.1.9.ipk",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5808732,
+        "sha256": "89ff9e3a1fa297e0fb5f002af4f18810f4a0bcf60615967cb8e7c355fd0aff4b",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-0.1.9",
+        "file": "Morph-IPTV-tizen4-0.1.9.wgt",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5828364,
+        "sha256": "8b01da8d1d05ba7a00865b088286a24be10f8552720a56177a252ae29f3a910c",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-0.1.9",
+        "file": "Morph-IPTV-tizen5-0.1.9.wgt",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5828364,
+        "sha256": "0943edd3aa36a45792953f7415b9d269fbcf3b5070f53cdf79d51275814916d7",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-0.1.9",
+        "file": "Morph-IPTV-tizen2-0.1.9.wgt",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5907919,
+        "sha256": "8563c03af6070be187cdb11ba21b6c2f4292a93906d9b518536e49eec4d81693",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-0.1.9",
+        "file": "Morph-IPTV-tizen3-0.1.9.wgt",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5906966,
+        "sha256": "b7940fed0de07a1c9dbe6d07ebb233ff7a935a75596795d8c3c77ecfdf2d6b0a",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-0.1.9",
+        "file": "Morph-IPTV-Android-TV-0.1.9.apk",
+        "version": "0.1.9",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16933419,
+        "sha256": "f9b4d912d46ef438cc4e385ffeabd0d454123b5931e40895185114a28df065a1",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-0.1.0",
+      "file": "Morph-IPTV-Legacy-0.1.0.apk",
+      "version": "0.1.0",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "8c1030208b33bde49663c9a644ddcc2095c2dfe730fc447a5ad9126f108d2a9b",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.1.apk",
+    "version": "1.1.1",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56804740,
+    "sha256": "b66bb9dddc82dd48e7b541814b01b033202c07ab816190a9c350791a5a1023ab",
+    "download": "/download/remote",
+    "versionCode": 12,
+    "minAndroid": "7.0",
+    "minSdk": 24,
+    "available": true
+  },
+  "changes": [
+    "Shared IPTV and local-file player, clear -10/+10 controls and responsive transport layout.",
+    "Live, Movies and Series open on Favourites; a unified category list keeps provider categories visible in Recently added and Continue watching, with thin separators and deliberate Right navigation.",
+    "Automatic Adhan while Launcher or IPTV is foreground: pauses playing video and resumes after Adhan; does not run over HDMI or another app.",
+    "Local media opens a file directly; previous/next traverse the selected folder.",
+    "Compact Launcher settings, focus-only highlights, combined prayer/match summary and lower slider pager.",
+    "Direct Parent Control settings entry; Speed Test with measured download/upload/HTTP latency and animated progress.",
+    "User-owned WireGuard profiles: embedded Android engine; Windows/macOS use installed OS tunnel tools and require system consent. Samsung/LG cannot run a device-wide tunnel through this web app; device/router VPN remains separate.",
+    "Windows installer uses the approved Morph Launcher wordmark banner; support opens the website payment options.",
+    "Samsung/LG input handoff releases the old player before opening a TV source. Physical HDMI validation remains outstanding.",
+    "LG packages target Chromium53 for webOS4.x compatibility; LK5730PVC physical support remains unverified."
+  ],
+  "validation": [
+    "source receipts: 82 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix"
+}
