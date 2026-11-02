@@ -1,0 +1,4 @@
+Apple platform icon: Simple Icons 13.20.0, CC0-1.0.
+Source: https://github.com/simple-icons/simple-icons/blob/13.20.0/icons/apple.svg
+License: https://github.com/simple-icons/simple-icons/blob/13.20.0/LICENSE.md
+Platform trademarks remain the property of their respective owners.

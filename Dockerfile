@@ -4,6 +4,7 @@ COPY community/server.py community/plus.py community/qr_link.py community/matche
 RUN chmod 755 /opt/morph-community/start.sh
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY release-notes-phone-0.8.298.json SHA256SUMS.txt catalog.json remote-latest.json community-admin.html community-admin.js community.js gallery.js google7e2785317cb0458c.html index.html install-helper.css install-helper.html install-helper.js install.html landing.css landing.js launcher-guide.html launcher-help.js lg-install.html lg-preview-validation.json plus-admin.css plus-admin.html plus-offer.css plus-offer.js plus-purchase.js plus.html robots.txt samsung-computer.html samsung-pc-guide.js samsung-phone-install.html sitemap.xml support-links.json tvmorph.png web-tv.html device-compatibility.json release-notes-0.8.295.json site-theme.js site-style.css site-light.css site-navigation.css site-identity.css site-i18n.js site-review-form.js site-reviews.js site-remote.js site-app.js site-release-links.js site-stats.js site-navigation.js site-themes.css site-studio.css /usr/share/nginx/html/
+COPY site-desktop-downloads.js site-desktop-downloads.css /usr/share/nginx/html/
 COPY fitness-music/ /usr/share/nginx/html/fitness-music/
 COPY site-assets/ /usr/share/nginx/html/site-assets/
 COPY theme-packs/ /usr/share/nginx/html/theme-packs/

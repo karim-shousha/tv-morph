@@ -96,3 +96,6 @@ releases/*
 
 !Morph-TV-Adhan-Voices-v1.zip
 !release-notes-phone-0.8.298.json
+
+!site-desktop-downloads.js
+!site-desktop-downloads.css

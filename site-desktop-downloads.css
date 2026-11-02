@@ -1,0 +1,12 @@
+.desktop-quick-downloads{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:24px 28px;margin-top:28px;margin-bottom:8px;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:0 10px 35px #19335209}
+.desktop-download-copy{min-width:0}.desktop-download-kicker{display:block;color:var(--blue);font:600 10px/1.6 Arial,sans-serif;letter-spacing:1.7px;margin-bottom:7px}
+.desktop-download-copy h2{margin:0;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:-.5px}.desktop-download-copy p{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.7}
+.desktop-download-actions{display:flex;align-items:stretch;gap:12px;flex-shrink:0}
+.desktop-download-link{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:12px 18px;border:1px solid #4180ef;border-radius:12px;background:#2463eb;color:#fff;transition:background .15s,transform .15s;min-width:190px}
+.desktop-download-link:hover{background:#174fc9;transform:translateY(-2px)}
+.desktop-download-link img{flex:none;width:25px;height:25px;filter:brightness(0) invert(1)}
+.desktop-download-link strong{display:block;font-size:14px;font-weight:600;line-height:1.5;white-space:nowrap}
+.desktop-download-link small{display:block;font:11px/1.5 Arial,sans-serif;color:#e0eaff;margin-top:3px;text-align:start}
+.desktop-download-arrow{font-size:22px;margin-inline-start:7px}.desktop-download-mac{background:#1d2f49;border-color:#314865}.desktop-download-mac:hover{background:#2d4666}
+@media(max-width:1000px){.desktop-quick-downloads{flex-direction:column;align-items:stretch;gap:18px;padding:22px}.desktop-download-actions{align-items:stretch}.desktop-download-link{flex:1}}
+@media(max-width:550px){.desktop-quick-downloads{margin-top:18px;border-radius:15px;padding:18px;gap:16px}.desktop-download-copy h2{font-size:20px}.desktop-download-actions{flex-direction:column;gap:9px}.desktop-download-link{min-height:57px;justify-content:flex-start;padding:10px 16px}.desktop-download-arrow{margin-inline-start:auto}.desktop-download-link strong{font-size:14px}.desktop-download-copy p{font-size:12px}}
