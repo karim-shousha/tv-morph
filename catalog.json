@@ -147,8 +147,8 @@
       "version": "0.8.297",
       "product": "launcher",
       "target": "webos",
-      "bytes": 10261504,
-      "sha256": "c59b4102189a854e2adb28520f88c443aead176292b1fac1eea3f8795a528ba0",
+      "bytes": 10261554,
+      "sha256": "ae2341c24cc4066c007580bfda582773ef69eb86e88f450c6b70e0883823c29a",
       "download": "/download/lg"
     },
     {
@@ -157,8 +157,8 @@
       "version": "0.8.297",
       "product": "launcher",
       "target": "tizen2",
-      "bytes": 10721991,
-      "sha256": "0258e2fbd24d71259b3f2026a0c3984e4426ad05caa7a6b235fe35665b8c2437",
+      "bytes": 10721865,
+      "sha256": "2608f26f43480a7e51140539e5e46421dd8e42b74c63659284395f73df26d9ca",
       "download": "/download/samsung-tizen2"
     },
     {
@@ -167,8 +167,8 @@
       "version": "0.8.297",
       "product": "launcher",
       "target": "tizen3",
-      "bytes": 10720977,
-      "sha256": "09ebb4576eede304bae4f8f8941942a7eaf5401fdcd3c499ac56f4de7314b0f4",
+      "bytes": 10720859,
+      "sha256": "bc93bf6cdb61f09e763faae74b832ad9db2afb7bc96cc939249ac172910a0769",
       "download": "/download/samsung-tizen3"
     },
     {
@@ -177,8 +177,8 @@
       "version": "0.8.297",
       "product": "launcher",
       "target": "tizen4",
-      "bytes": 10629091,
-      "sha256": "a4940fc46f8c8b37f6db6b52e4ed4a030c1418491b8351d58eaead8922836e36",
+      "bytes": 10628944,
+      "sha256": "8f8037905e3cf81b8990343154309079f189e820dc06cdfc62800b2bad014d44",
       "download": "/download/samsung-tizen4"
     },
     {
@@ -187,8 +187,8 @@
       "version": "0.8.297",
       "product": "launcher",
       "target": "tizen5",
-      "bytes": 10626203,
-      "sha256": "3a8018b40830cda0abf0417bda76bc0df9e93c05ef895af2496ab12d60d4f7df",
+      "bytes": 10626311,
+      "sha256": "b0d9b4424a089dab43250758792408128b98b20a11fc8c74b99d5dbcd0594a86",
       "download": "/download/samsung-tizen5"
     },
     {
@@ -197,8 +197,8 @@
       "version": "0.1.7",
       "product": "iptv",
       "target": "webos",
-      "bytes": 5763954,
-      "sha256": "c66234d7cdaa05d4e8ce333080f1fce233252a8dad786cbf2c1f7f36092964fe",
+      "bytes": 5764180,
+      "sha256": "dad0b61dfac42cbde3b371937e2d917379649c054a3ad563caf1da4dae56ada6",
       "download": "/download/iptv/lg"
     },
     {
@@ -207,8 +207,8 @@
       "version": "0.1.7",
       "product": "iptv",
       "target": "tizen4",
-      "bytes": 5780806,
-      "sha256": "75465cc9e2253fe34152378641985d763b8dc388155731508fd60b0eb8d0bb0a",
+      "bytes": 5780911,
+      "sha256": "288168808f68e8e8a90cc166942ec0a575d4a7f216497f7aa6db27651f5d13ba",
       "download": "/download/iptv/tizen4"
     },
     {
@@ -217,8 +217,8 @@
       "version": "0.1.7",
       "product": "iptv",
       "target": "tizen5",
-      "bytes": 5780798,
-      "sha256": "4e7eed8529ea91a87ffa075b3ab531cf8ec631ec15e63a85474d3bc6d014fb83",
+      "bytes": 5780909,
+      "sha256": "ad58b454233fe03a632e26af80437f7dd710b61753cc5e6c83c43e192e2cbdeb",
       "download": "/download/iptv/tizen5"
     },
     {
@@ -227,8 +227,8 @@
       "version": "0.1.7",
       "product": "iptv",
       "target": "tizen2",
-      "bytes": 5862520,
-      "sha256": "17947cfd82ca4e6b2e4a2ace54bca8f9bda0f3a3dc3a5fc637e5fe30fca4a491",
+      "bytes": 5862628,
+      "sha256": "2529801176c37f918ea9006c9b890f87fd1269652bdb71afed33c951fb6a6393",
       "download": "/download/iptv/tizen2"
     },
     {
@@ -237,8 +237,8 @@
       "version": "0.1.7",
       "product": "iptv",
       "target": "tizen3",
-      "bytes": 5861564,
-      "sha256": "05ccf122e8bc87939dd14a9c7575eed99f3307abac5923b4d4fe8218b17ed153",
+      "bytes": 5861671,
+      "sha256": "0286c757bac5998c0b581ec458e96d5160c63f60d7a711163642e346d36382b4",
       "download": "/download/iptv/tizen3"
     },
     {
@@ -290,8 +290,8 @@
       "name": "Morph-TV-Install-Kit-0.8.297",
       "file": "Morph-TV-Install-Kit-0.8.297.zip",
       "version": "0.8.297",
-      "bytes": 81944162,
-      "sha256": "0e67a6a9db1786afa6a6efe0d07ba8c9d0d2b01a337847d5d7f85019281be11c"
+      "bytes": 81943712,
+      "sha256": "184bd5aac2389687e35934015e37f2b2f25ce6adc3fdd45ea0a1109409c31350"
     }
   ],
   "legacy": {
@@ -356,8 +356,8 @@
         "version": "0.1.7",
         "product": "iptv",
         "target": "webos",
-        "bytes": 5763954,
-        "sha256": "c66234d7cdaa05d4e8ce333080f1fce233252a8dad786cbf2c1f7f36092964fe",
+        "bytes": 5764180,
+        "sha256": "dad0b61dfac42cbde3b371937e2d917379649c054a3ad563caf1da4dae56ada6",
         "download": "/download/iptv/lg"
       },
       {
@@ -366,8 +366,8 @@
         "version": "0.1.7",
         "product": "iptv",
         "target": "tizen4",
-        "bytes": 5780806,
-        "sha256": "75465cc9e2253fe34152378641985d763b8dc388155731508fd60b0eb8d0bb0a",
+        "bytes": 5780911,
+        "sha256": "288168808f68e8e8a90cc166942ec0a575d4a7f216497f7aa6db27651f5d13ba",
         "download": "/download/iptv/tizen4"
       },
       {
@@ -376,8 +376,8 @@
         "version": "0.1.7",
         "product": "iptv",
         "target": "tizen5",
-        "bytes": 5780798,
-        "sha256": "4e7eed8529ea91a87ffa075b3ab531cf8ec631ec15e63a85474d3bc6d014fb83",
+        "bytes": 5780909,
+        "sha256": "ad58b454233fe03a632e26af80437f7dd710b61753cc5e6c83c43e192e2cbdeb",
         "download": "/download/iptv/tizen5"
       },
       {
@@ -386,8 +386,8 @@
         "version": "0.1.7",
         "product": "iptv",
         "target": "tizen2",
-        "bytes": 5862520,
-        "sha256": "17947cfd82ca4e6b2e4a2ace54bca8f9bda0f3a3dc3a5fc637e5fe30fca4a491",
+        "bytes": 5862628,
+        "sha256": "2529801176c37f918ea9006c9b890f87fd1269652bdb71afed33c951fb6a6393",
         "download": "/download/iptv/tizen2"
       },
       {
@@ -396,8 +396,8 @@
         "version": "0.1.7",
         "product": "iptv",
         "target": "tizen3",
-        "bytes": 5861564,
-        "sha256": "05ccf122e8bc87939dd14a9c7575eed99f3307abac5923b4d4fe8218b17ed153",
+        "bytes": 5861671,
+        "sha256": "0286c757bac5998c0b581ec458e96d5160c63f60d7a711163642e346d36382b4",
         "download": "/download/iptv/tizen3"
       },
       {
