@@ -112,3 +112,22 @@ releases/*
 !downloader-codes.json
 
 !release-notes-1.1.306.json
+
+# Current verified release; retain previous published packages above.
+!Morph-TV-Phone-1.1.308.apk
+!Morph-TV-Android-TV-1.1.308.apk
+!Morph-TV-LG-1.1.308.ipk
+!Morph-TV-Samsung-Tizen2-1.1.308.wgt
+!Morph-TV-Samsung-Tizen3-1.1.308.wgt
+!Morph-TV-Samsung-Tizen4-1.1.308.wgt
+!Morph-TV-Samsung-Tizen5-1.1.308.wgt
+!Morph-IPTV-LG-1.1.308.ipk
+!Morph-IPTV-tizen4-1.1.308.wgt
+!Morph-IPTV-tizen5-1.1.308.wgt
+!Morph-IPTV-tizen2-1.1.308.wgt
+!Morph-IPTV-tizen3-1.1.308.wgt
+!Morph-IPTV-Android-TV-1.1.308.apk
+!Morph-TV-Install-Kit-1.1.308.zip
+!release-notes-1.1.308.json
+!releases/1.1.308/
+!releases/1.1.308/**
