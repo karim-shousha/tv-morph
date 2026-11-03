@@ -1,0 +1,57 @@
+{
+  "version": "1.1.307",
+  "versionCode": 312,
+  "changes": [
+    "Favorites first on live/vod/series entry",
+    "All content below Continue watching",
+    "First real provider category visible",
+    "Flexbox TV catalog columns and bounded scrolling",
+    "Phone update alert official host validation",
+    "Plus and QR OPTIONS dispatch"
+  ],
+  "modernTVPackages": 12,
+  "phone": {
+    "file": "Morph-TV-Mobile-1.1.307-Final.apk",
+    "version": "1.1.307",
+    "versionCode": 312,
+    "bytes": 147936480,
+    "sha256": "2362792bd0f433b28c4aba067495be1d4f82a3fefd39ac818d7ac8d04ad5d836",
+    "sameSigner": "47cc6e1a0c9242e3c5bbc5a16b4d64c353ee5e8ef060b802459fbf0e74909fd8",
+    "onlyChanged": [
+      "AndroidManifest.xml",
+      "assets/ui/update-alert.js",
+      "assets/iptv/shared-source.json",
+      "assets/iptv/app.js",
+      "assets/iptv/tv-library.css",
+      "assets/iptv/library-layout.css",
+      "assets/android-tv.apk",
+      "assets/lg-preview.ipk",
+      "assets/tv-app.zip",
+      "assets/iptv-android.apk",
+      "assets/iptv-webos.ipk",
+      "assets/iptv-tizen4.wgt",
+      "assets/install-products.json",
+      "assets/ui/index.html"
+    ]
+  },
+  "sourceSha256": {
+    "android-tv/iptv/app.js": "05a357cfbd64f57eb905bd2ff6c3b4aca684e51b641da5a2ced1a662baa59669",
+    "android-tv/iptv/tv-library.css": "145f97ed4805ceb51d27995e5b17bdb0410f3d8803b9f51b927f96ed8e4501e6",
+    "android-tv/iptv/library-layout.css": "b72be6338697d9123e790713987e64dadff4dbe26134b461b7a9b47791f76bcf",
+    "mobile-app/phone-updates.js": "987aef1a7682da413a0ae9ba44e604f5b45ccee786748b712f81603b19777d63",
+    "distribution/community/server.py": "90b14190d3c340357ebd297eebf62fb5a2a23470015636f693c4d8a201e057c5"
+  },
+  "physicalSamsungAndLGVerified": false,
+  "published": false,
+  "tests": [
+    "output/all-content307-tests.log",
+    "output/sidebar307-tests.log",
+    "output/package307-cross-platform-audit.json",
+    "output/phone307-packaged-all.log",
+    "output/desktop307-packaged-tests.log",
+    "output/plus307-http-preflight.log",
+    "output/plus307-license-fixtures.log",
+    "output/desktop307-asar-audit.log",
+    "output/phone307-startup-update.log"
+  ]
+}

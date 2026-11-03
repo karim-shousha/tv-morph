@@ -1,0 +1,156 @@
+{
+  "version": "1.1.307",
+  "tv": {
+    "version": "1.1.307",
+    "versionCode": 312
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.307",
+    "download": "/download/phone",
+    "noteAr": "تحديث المشغّل وإعدادات الشبكة وWireGuard المدمج، مع الريموت وحزم التلفزيون الحالية.",
+    "noteEn": "Shared player and network settings, embedded WireGuard engine, integrated remote and current TV packages.",
+    "channel": "preview",
+    "versionCode": 312
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.307",
+    "versionCode": 312,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.307",
+        "file": "Morph-IPTV-LG-1.1.307.ipk",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5817930,
+        "sha256": "f5ad0f8b26437c95a35008c7b869f9836426efec74324ba44d3304a82eb1e020",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.307",
+        "file": "Morph-IPTV-tizen4-1.1.307.wgt",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5839698,
+        "sha256": "7cad25afba8c620236bb7c4fdfc95c16a6c10d0643b3e68a8e9a4e3b055e3bd5",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.307",
+        "file": "Morph-IPTV-tizen5-1.1.307.wgt",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5839696,
+        "sha256": "a8360ac3f5dcdbdcc98cee13f88852c29baf7bb8e6fc39caff9fa3038f5386fe",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.307",
+        "file": "Morph-IPTV-tizen2-1.1.307.wgt",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5919918,
+        "sha256": "06259b8f9a668ee881af56a7abf4069175923f94ba3a2f7fadaa261b7968bb1e",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.307",
+        "file": "Morph-IPTV-tizen3-1.1.307.wgt",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5918959,
+        "sha256": "76b572ca2217d809061bea09bc00a607b4fa23c7dcc50ec54521daf08929893f",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.307",
+        "file": "Morph-IPTV-Android-TV-1.1.307.apk",
+        "version": "1.1.307",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16941685,
+        "sha256": "b73fb461c2cd81413a88abe9c8df53b12e4aa363cd0fb7810f530524b51ba13a",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.305",
+      "file": "Morph-IPTV-Legacy-1.1.305.apk",
+      "version": "1.1.305",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "edb189fea017b2b7ac359e109ff4cc8f84cdec30105dd1e4229253ff42324aca",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.305.apk",
+    "version": "1.1.305",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "8368ee6dc29d7e0941ff26018c7b81c4f2094001109ae8decc96ab1134dd87fd",
+    "download": "/download/remote",
+    "versionCode": 310,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "IPTV opens Live TV, Movies and Series on Favorites. All content is available below Continue watching.",
+    "Restore the first provider category and remote access to the full sidebar.",
+    "Bounded Flexbox catalog columns also work without CSS Grid on older webOS/Tizen browsers.",
+    "Phone startup update alerts accept current and legacy official download hosts.",
+    "Server Plus preflight dispatches both Plus and QR link routes.",
+    "Retains 305 settings, player and Plus fixes across modern TV and desktop.",
+    "Physical Samsung/LG device verification remains outstanding. Reduced Android 4.4 and separate Remote retain their previous version."
+  ],
+  "validation": [
+    "source receipts: 83 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix"
+}
