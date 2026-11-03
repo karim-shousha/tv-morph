@@ -1,7 +1,7 @@
 {
   "file": "morph-desktop-runtime.zip",
-  "bytes": 12413641,
-  "sha256": "f7261833ba11572ca8c4bb1c14bdea9930415202f92e339142c66b447a4190d5",
+  "bytes": 12414445,
+  "sha256": "15a6a37f86f778bf64b059a931c17a2cb5ff2c59c19f2dde33ede6aa8bf14435",
   "version": "1.1.305",
   "canonicalLauncher": "published stable Home with scoped repairs and parental timer entry",
   "embeddedIptv": "android-tv/iptv",
