@@ -36,7 +36,7 @@
 !tvmorph.png
 !web-tv.html
 !device-compatibility.json
-!release-notes-1.1.303.json
+!release-notes-1.1.304.json
 !site-theme.js
 !site-style.css
 !site-light.css
@@ -52,23 +52,23 @@
 !site-navigation.js
 !site-themes.css
 !site-studio.css
-!Morph-TV-Phone-1.1.303.apk
-!Morph-TV-Legacy-1.1.303.apk
-!Morph-TV-Android-TV-1.1.303.apk
-!Morph-TV-LG-1.1.303.ipk
-!Morph-TV-Samsung-Tizen2-1.1.303.wgt
-!Morph-TV-Samsung-Tizen3-1.1.303.wgt
-!Morph-TV-Samsung-Tizen4-1.1.303.wgt
-!Morph-TV-Samsung-Tizen5-1.1.303.wgt
-!Morph-IPTV-LG-1.1.303.ipk
-!Morph-IPTV-tizen4-1.1.303.wgt
-!Morph-IPTV-tizen5-1.1.303.wgt
-!Morph-IPTV-tizen2-1.1.303.wgt
-!Morph-IPTV-tizen3-1.1.303.wgt
-!Morph-IPTV-Android-TV-1.1.303.apk
-!Morph-Remote-1.1.303.apk
-!Morph-IPTV-Legacy-1.1.303.apk
-!Morph-TV-Install-Kit-1.1.303.zip
+!Morph-TV-Phone-1.1.304.apk
+!Morph-TV-Legacy-1.1.304.apk
+!Morph-TV-Android-TV-1.1.304.apk
+!Morph-TV-LG-1.1.304.ipk
+!Morph-TV-Samsung-Tizen2-1.1.304.wgt
+!Morph-TV-Samsung-Tizen3-1.1.304.wgt
+!Morph-TV-Samsung-Tizen4-1.1.304.wgt
+!Morph-TV-Samsung-Tizen5-1.1.304.wgt
+!Morph-IPTV-LG-1.1.304.ipk
+!Morph-IPTV-tizen4-1.1.304.wgt
+!Morph-IPTV-tizen5-1.1.304.wgt
+!Morph-IPTV-tizen2-1.1.304.wgt
+!Morph-IPTV-tizen3-1.1.304.wgt
+!Morph-IPTV-Android-TV-1.1.304.apk
+!Morph-Remote-1.1.304.apk
+!Morph-IPTV-Legacy-1.1.304.apk
+!Morph-TV-Install-Kit-1.1.304.zip
 !community/
 !community/**
 !fitness-music/
@@ -92,11 +92,11 @@ community/*
 !community/matches_free.py
 !community/start.sh
 releases/*
-!releases/1.1.303/
-!releases/1.1.303/**
+!releases/1.1.304/
+!releases/1.1.304/**
 
 !Morph-TV-Adhan-Voices-v1.zip
-!release-notes-phone-1.1.303.json
+!release-notes-phone-1.1.304.json
 
 !site-desktop-downloads.js
 !site-desktop-downloads.css
@@ -105,6 +105,8 @@ releases/*
 
 !artifact-parts/
 !artifact-parts/**
-!release-notes-1.1.303.json
-!releases/1.1.303/
-!releases/1.1.303/**
+!release-notes-1.1.304.json
+!releases/1.1.304/
+!releases/1.1.304/**
+
+!downloader-codes.json

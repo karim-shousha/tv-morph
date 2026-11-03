@@ -77,10 +77,10 @@ class Plus:
         if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
         # Packaged TV runtimes serialize file origins differently. Only the
         # code/token authenticated client endpoints accept these app origins.
-        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device','/api/plus/parent-reset']:return False
+        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device','/api/plus/deactivate','/api/plus/parent-reset']:return False
         if value.username or value.password or value.query or value.fragment:return False
-        if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview']:return True
-        return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview']
+        if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview', 'com.morphtv.iptv']:return True
+        return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview','app://com.morphtv.iptv','http://com.morphtv.iptv','morph://app']
 
     def register_short(self, db, order):
         code=self.short_code(order);hashed=self.digest(code)
@@ -238,9 +238,25 @@ class Plus:
         with self.db() as db:
             valid=" AND (o.entitlement='lifetime' OR o.expires>?)"
             params=(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'),int(time.time()))
-            row=db.execute("SELECT o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
-            if not row:row=db.execute("SELECT o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
-        return {'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
+            row=db.execute("SELECT o.id,o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
+            if not row:row=db.execute("SELECT o.id,o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
+            if row:
+                used=db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(row['id'],)).fetchone()[0]
+                maximum=self.capacity(row)
+        result={'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
+        if row:result.update(maxDevices=maximum,usedDevices=used,remainingDevices=None if maximum is None else max(0,maximum-used))
+        return result
+
+    def deactivate(self, token, device):
+        if not isinstance(token,str) or not re.fullmatch(r'[A-Za-z0-9_-]{32,128}',token):raise ValueError('invalid_license')
+        if not isinstance(device,str) or not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',device):raise ValueError('invalid_device')
+        with self.db() as db:
+            db.execute('BEGIN IMMEDIATE')
+            removed=db.execute('DELETE FROM devices WHERE token=? AND device=?',(self.digest(token),device)).rowcount
+            if not removed:removed=db.execute('DELETE FROM studios WHERE token=? AND device=?',(self.digest(token),device)).rowcount
+            if not removed:raise ValueError('invalid_license')
+        return {'removed':True}
+
 
     @staticmethod
     def email(value):
@@ -324,6 +340,7 @@ class Plus:
                 elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
+                elif path=='/api/plus/deactivate':result=self.deactivate(data.get('token'),data.get('device'))
                 elif path=='/api/plus/parent-reset':result=self.verify_parent_reset(data.get('code'),data.get('token'))
                 elif path=='/api/plus/devices':
                     with self.db() as db:

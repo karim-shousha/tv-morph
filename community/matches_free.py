@@ -10,7 +10,8 @@ from pathlib import Path
 import threading
 import time
 import urllib.request
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, parse_qs
+from concurrent.futures import ThreadPoolExecutor
 
 TEAMS = (
     ('138995', 'Al Ahly', 'الأهلي'), ('138997', 'Zamalek', 'الزمالك'),
@@ -67,6 +68,7 @@ class FreeMatches:
         self.lock = threading.Lock()
         self.loading = False
         self.retry_at = 0
+        self.details_cache = {}
         self.cache = {'matches': [], 'updatedAt': 0}
         try:
             data = json.loads(self.path.read_text('utf-8'))
@@ -83,9 +85,9 @@ class FreeMatches:
             if len(raw) > 512 * 1024:
                 raise ValueError('feed_too_large')
             body = json.loads(raw)
-        if not isinstance(body, dict) or not any(k in body for k in ('events', 'results')):
+        if not isinstance(body, dict) or not any(k in body for k in ('events', 'results', 'teams', 'eventstats', 'lineup', 'timeline')):
             raise ValueError('invalid_feed')
-        return body.get('events') or body.get('results') or []
+        return next((body[k] for k in ('events','results','teams','eventstats','lineup','timeline') if isinstance(body.get(k), list)), [])
 
     def refresh(self):
         try:
@@ -111,7 +113,33 @@ class FreeMatches:
                         items.setdefault(item['id'], item)
                 oldest = self.clock() - 35 * 86400
                 values = [m for m in items.values() if dt.datetime.fromisoformat(m['kickoff']).timestamp() >= oldest]
-                data = {'matches': sorted(values, key=lambda m: m['kickoff'])[:32],
+                # Resolve artwork independently of the user's favourite teams.
+                teams = {side['id']: side for m in values for side in (m['home'], m['away']) if str(side.get('id', '')).isdigit()}
+                previous_badges = self.cache.get('badges', {})
+                for team_id, side in teams.items():
+                    if not side.get('badge') and previous_badges.get(team_id):
+                        side['badge'] = previous_badges[team_id]
+                missing = [i for i, side in teams.items() if not side.get('badge')][:16]
+                def artwork(team_id):
+                    try:
+                        rows = self.fetch('lookupteam.php', team_id)
+                        raw = rows[0] if rows else {}
+                        value = str(raw.get('strBadge') or raw.get('strTeamBadge') or '')
+                        url = urlsplit(value)
+                        if url.scheme == 'https' and url.netloc in ('r2.thesportsdb.com','www.thesportsdb.com') and url.path.startswith('/images/media/team/badge/') and len(value) < 350:
+                            return team_id, value
+                    except Exception:
+                        pass
+                    return team_id, ''
+                with ThreadPoolExecutor(max_workers=3) as pool:
+                    for team_id, badge in pool.map(artwork, missing):
+                        if badge:
+                            teams[team_id]['badge'] = badge
+                for match in values:
+                    for side in (match['home'], match['away']):
+                        if side.get('id') in teams:
+                            side['badge'] = teams[side['id']].get('badge', '')
+                data = {'badges': {i: side['badge'] for i, side in teams.items() if side.get('badge')}, 'matches': sorted(values, key=lambda m: m['kickoff'])[:32],
                         'updatedAt': self.clock(), 'partial': successes < len(TEAMS) * 2}
                 self.path.parent.mkdir(parents=True, exist_ok=True)
                 temp = self.path.with_suffix('.tmp')
@@ -135,14 +163,56 @@ class FreeMatches:
             badges = {side['id']: side.get('badge', '') for match in data['matches'] for side in (match['home'], match['away']) if side.get('badge')}
             data.update({'stale': stale, 'loading': self.loading, 'refreshAfter': TTL,
                          'source': 'TheSportsDB', 'limitedCoverage': True,
-                         'teams': [{'id': i, 'name': en, 'ar': ar, 'badge': badges.get(i, '')} for i, en, ar in TEAMS],
+                         'teams': self.team_catalog(data['matches'], badges),
                          'news': []})
             # Seven-day-old data must not masquerade as a current schedule.
             if self.clock() - data['updatedAt'] > 7 * 86400:
                 data['matches'] = []
             return data
 
+    def team_catalog(self, matches, badges):
+        teams = {i: {'id': i, 'name': en, 'ar': ar, 'badge': badges.get(i, '')} for i, en, ar in TEAMS}
+        for match in matches:
+            for side in (match['home'], match['away']):
+                if str(side.get('id', '')).isdigit():
+                    teams.setdefault(side['id'], dict(side, ar=side.get('name', '')))
+                    if side.get('badge'):
+                        teams[side['id']]['badge'] = side['badge']
+        return list(teams.values())[:32]
+
+    def details(self, event_id):
+        if not event_id.isdigit() or len(event_id) > 16:
+            return None
+        if not any(str(m['id']) == event_id for m in self.cache['matches']):
+            return None
+        cached = self.details_cache.get(event_id)
+        if cached and self.clock() - cached['at'] < 600:
+            return cached['data']
+        jobs = [('lookupeventstats.php', 'stats'), ('lookuplineup.php', 'lineup'), ('lookuptimeline.php', 'timeline')]
+        def load(job):
+            endpoint, key = job
+            try:
+                rows = self.fetch(endpoint, event_id)
+                return key, [r for r in rows[:50] if isinstance(r, dict) and (not r.get('idEvent') or str(r['idEvent']) == event_id)]
+            except Exception:
+                return key, None
+        with ThreadPoolExecutor(max_workers=3) as pool:
+            data = dict(pool.map(load, jobs))
+        data['source'] = 'TheSportsDB'
+        if len(self.details_cache) >= 32:
+            self.details_cache.pop(next(iter(self.details_cache)))
+        self.details_cache[event_id] = {'at': self.clock(), 'data': data}
+        return data
+
     def handle(self, handler, path):
+        if path == '/api/matches/details':
+            if handler.command not in ('GET', 'HEAD'):
+                handler.send_json(405, {'error': 'method_not_allowed'})
+            else:
+                event_id = parse_qs(urlsplit(handler.path).query).get('id', [''])[0]
+                data = self.details(event_id)
+                handler.send_json(200 if data is not None else 404, data or {'error': 'match_not_found'})
+            return True
         if path != '/api/matches':
             return False
         if handler.command not in ('GET', 'HEAD'):

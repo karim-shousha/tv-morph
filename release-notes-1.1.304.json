@@ -1,0 +1,159 @@
+{
+  "version": "1.1.304",
+  "tv": {
+    "version": "1.1.304",
+    "versionCode": 309
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.304",
+    "download": "/download/phone",
+    "noteAr": "تحديث المشغّل وإعدادات الشبكة وWireGuard المدمج، مع الريموت وحزم التلفزيون الحالية.",
+    "noteEn": "Shared player and network settings, embedded WireGuard engine, integrated remote and current TV packages.",
+    "channel": "preview",
+    "versionCode": 309
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.304",
+    "versionCode": 309,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.304",
+        "file": "Morph-IPTV-LG-1.1.304.ipk",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5811382,
+        "sha256": "50081891042b25ede2524da952e38d7f104452c2cd29d338b70e572d9efdc148",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.304",
+        "file": "Morph-IPTV-tizen4-1.1.304.wgt",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5831028,
+        "sha256": "eccea4b9b76b043390e0f2b11c0b20c9675a184e94fff282aac0dd25c7f5779e",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.304",
+        "file": "Morph-IPTV-tizen5-1.1.304.wgt",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5831029,
+        "sha256": "9fda0d94ac5f6ddcdd2d940b187280ff45c8aeeccf12ac7ba5f19ced225b5253",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.304",
+        "file": "Morph-IPTV-tizen2-1.1.304.wgt",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5910554,
+        "sha256": "a780c14b26e27573252e10a4f516e3499274a326c67d80b63b26296b6227786b",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.304",
+        "file": "Morph-IPTV-tizen3-1.1.304.wgt",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5909591,
+        "sha256": "81c32f1248e63754487f5381a6ae5c112386e6541a0d2d07991632309e3e9720",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.304",
+        "file": "Morph-IPTV-Android-TV-1.1.304.apk",
+        "version": "1.1.304",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16937515,
+        "sha256": "3388df1627ff61f4f78da99dbf342b4c4e50d6112fc6fdf2dd614a9a65269454",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.304",
+      "file": "Morph-IPTV-Legacy-1.1.304.apk",
+      "version": "1.1.304",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "c497ea9de7538f3ea8fed973a5ffc451acdbaac043e87b0a2c2d791d857fa65e",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.304.apk",
+    "version": "1.1.304",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "5abf7c40108e28ff0b3e19e5cf778c0b0361ea5fa4f0daf2accb52d3390e9fee",
+    "download": "/download/remote",
+    "versionCode": 309,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "Launcher Settings: persistent focus-driven categories, bounded panes, Plus state and corrected remote navigation.",
+    "Theme packs: pack list beside an always-visible preview; download, choose and remove remain available.",
+    "Plus: activation badge, saved identity, used and remaining TV seats, and explicit device deactivation for transfers.",
+    "Shared IPTV: normal catalog browsing independent of favourites, newest 30 additions only, red saved hearts and neighbour/sidebar focus after removal.",
+    "Search prefers the device keyboard on Android while keeping the library visible; TV fallback remains available.",
+    "Home header retains its text size with an icon-only Home button; Down reaches prayer and match cards. Only card surfaces are transparent.",
+    "Matches: expanded teams from available fixtures, badge lookup independent of favourites, and cached server-side details with honest unavailable-data states.",
+    "Install flow offers Morph Launcher or standalone Morph IPTV, with a separate IPTV Downloader code 6135788.",
+    "Loading credits raised, profile chooser compacted, and phone update-dialog contrast corrected without applying TV Settings layout to the phone.",
+    "Android 4.4 editions retain the reduced native M3U engine. Physical LG model-specific startup remains unverified."
+  ],
+  "validation": [
+    "source receipts: 82 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix"
+}
