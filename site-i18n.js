@@ -1,5 +1,6 @@
 'use strict';
 const englishCopy = `
+حمّل تطبيق الموبايل|Download the mobile app
 مواعيد المباريات والنتائج والإحصائيات|Live match schedules, results and statistics
 تابع مواعيد المباريات والنتائج والإحصائيات بتحديثات مباشرة على الموبايل والتلفزيون، من داخل التطبيق.|Follow match schedules, results and statistics with live updates on your phone and TV, right inside the app.
 مباشر على الموبايل والتلفزيون|Live on your phone and TV
