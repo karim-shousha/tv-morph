@@ -238,8 +238,8 @@ class Plus:
         with self.db() as db:
             valid=" AND (o.entitlement='lifetime' OR o.expires>?)"
             params=(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'),int(time.time()))
-            row=db.execute("SELECT o.id,o.plan,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
-            if not row:row=db.execute("SELECT o.id,o.plan,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
+            row=db.execute("SELECT o.id,o.plan,o.source,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
+            if not row:row=db.execute("SELECT o.id,o.plan,o.source,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
             if row:
                 used=db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(row['id'],)).fetchone()[0]
                 maximum=self.capacity(row)
