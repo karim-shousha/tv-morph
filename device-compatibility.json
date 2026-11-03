@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "release": "0.8.299",
+  "release": "1.1.303",
   "platforms": [
     {
       "id": "android",
-      "version": "0.8.299",
+      "version": "1.1.303",
       "minSdk": 26,
       "minAndroid": "8.0",
       "package": "/download/android",
@@ -13,7 +13,7 @@
     },
     {
       "id": "firetv",
-      "version": "0.8.299",
+      "version": "1.1.303",
       "minAndroidApi": 26,
       "package": "/download/firetv",
       "note": "Compatible Fire OS models only; input, codec and provider support depends on the device.",
@@ -23,7 +23,7 @@
     },
     {
       "id": "phone",
-      "version": "0.8.299",
+      "version": "1.1.303",
       "minSdk": 26,
       "package": "/download/phone",
       "versionCode": 302
@@ -37,7 +37,7 @@
     },
     {
       "id": "lg",
-      "version": "0.8.299",
+      "version": "1.1.303",
       "initialWebOS": "5.0+",
       "installMode": "Developer Mode / Key Server",
       "package": "/download/lg",
@@ -45,7 +45,7 @@
     },
     {
       "id": "samsung",
-      "version": "0.8.299",
+      "version": "1.1.303",
       "editions": [
         "Tizen 2.3/2.4 candidate",
         "Tizen 3.0 candidate",
@@ -58,7 +58,7 @@
     },
     {
       "id": "legacy",
-      "version": "0.1.7",
+      "version": "1.1.303",
       "minSdk": 19,
       "minAndroid": "4.4",
       "package": "/download/legacy",
@@ -75,7 +75,7 @@
     "Samsung/LG Portal is not advertised as supported."
   ],
   "standaloneIPTV": {
-    "version": "0.1.7",
+    "version": "1.1.303",
     "androidMinSdk": 26,
     "targets": [
       "Android TV",
@@ -92,7 +92,7 @@
     "physicalDeviceVerified": false,
     "sharedSourceFiles": 75,
     "legacy": {
-      "version": "0.1.0",
+      "version": "1.1.303",
       "versionCode": 1,
       "minSdk": 19,
       "minAndroid": "4.4",

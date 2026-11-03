@@ -1,32 +1,31 @@
 {
-  "version": "0.1.7",
+  "version": "1.1.303",
   "windowsVerified": true,
   "macAppleSiliconVerified": true,
   "macIntelVerified": true,
-  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41546474306",
-  "source": "8619526d4fd73fa88a9743157e789ad0531dd557",
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41560177226",
+  "source": "7fbcb1e9eec089d7423fbc0a8a68d56b394cac1a",
   "assets": [
     {
-      "file": "Morph-Launcher-PC-0.1.7-Setup.exe",
-      "bytes": 136358908,
-      "sha256": "8748dbb84d247be3d7b0f394fc2cdf8abdc3cf3281eeabb6980c78ff17897077",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v0.1.7/Morph-Launcher-PC-0.1.7-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.303-Setup.exe",
+      "bytes": 136360093,
+      "sha256": "ce48a062230930fabc470a2ed085d052ea06ebee95bd2f2b65861fc619651b32",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.303/Morph-Launcher-PC-1.1.303-Setup.exe"
     },
     {
-      "file": "Morph-Launcher-Mac-0.1.7-universal.dmg",
-      "bytes": 244280062,
-      "sha256": "b36bce777122f9095eb0b2b2e17007de7cc4d23d53d1de7aa9b0618715fe9a5c",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v0.1.7/Morph-Launcher-Mac-0.1.7-universal.dmg"
+      "file": "Morph-Launcher-Mac-1.1.303-universal.dmg",
+      "bytes": 244295613,
+      "sha256": "e3c916b6c7e51fcd6fd5308d0bd2b33850f01d70a58afb07cf05f7dd3421b42c",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.303/Morph-Launcher-Mac-1.1.303-universal.dmg"
     },
     {
-      "file": "Morph-Launcher-Mac-0.1.7-universal.zip",
-      "bytes": 235649397,
-      "sha256": "cf63863115f2824e007e921045ee37b0558c73c8bb3f6d037d80a225d73ee338",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v0.1.7/Morph-Launcher-Mac-0.1.7-universal.zip"
+      "file": "Morph-Launcher-Mac-1.1.303-universal.zip",
+      "bytes": 235651513,
+      "sha256": "9f05c2e5825bb17be494e05e3f47d2f73e35aae00ff4e88fbf88a870987077a5",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.303/Morph-Launcher-Mac-1.1.303-universal.zip"
     }
   ],
   "limitations": [
-    "VPN provider handshakes not verified; desktop VPN requires installed tunnel tools and OS permission.",
-    "Physical Samsung/LG HDMI unverified; LG webOS4 compatibility candidate is not a physical LK5730PVC certification."
+    "Physical LG/Samsung HDMI and provider VPN handshake not verified."
   ]
 }

@@ -1,0 +1,171 @@
+{
+  "version": "1.1.303",
+  "tv": {
+    "version": "1.1.303",
+    "versionCode": 308
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.303",
+    "download": "/download/phone",
+    "noteAr": "تحديث المشغّل وإعدادات الشبكة وWireGuard المدمج، مع الريموت وحزم التلفزيون الحالية.",
+    "noteEn": "Shared player and network settings, embedded WireGuard engine, integrated remote and current TV packages.",
+    "channel": "preview",
+    "versionCode": 308
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.303",
+    "versionCode": 308,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.303",
+        "file": "Morph-IPTV-LG-1.1.303.ipk",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5809032,
+        "sha256": "7604a5178222ef349e58f0a6776ccd7a2dfeba54a1f4dbdd2dbeec77450e953b",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.303",
+        "file": "Morph-IPTV-tizen4-1.1.303.wgt",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5828715,
+        "sha256": "8457fe50eda2ab84174abe998518dec3f5f586808876155a1518d4a4a5e9572f",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.303",
+        "file": "Morph-IPTV-tizen5-1.1.303.wgt",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5828711,
+        "sha256": "16393ba417447c894c9971da687a447ee4739fd5d6e0f410f36b577dae3fcc27",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.303",
+        "file": "Morph-IPTV-tizen2-1.1.303.wgt",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5908261,
+        "sha256": "3ce942af96f38a090d24bd3722090ea51870ded08b570b164244f48feaabbc25",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.303",
+        "file": "Morph-IPTV-tizen3-1.1.303.wgt",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5907298,
+        "sha256": "4b88b9d953f16382600ccadfa403935b6266d58afc4059bde3fb9833f14bfbec",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.303",
+        "file": "Morph-IPTV-Android-TV-1.1.303.apk",
+        "version": "1.1.303",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16933419,
+        "sha256": "b8265c8fb6db5a1eb7e064d151af2bb75d9038aba0d39effa148a995bea5a68c",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.303",
+      "file": "Morph-IPTV-Legacy-1.1.303.apk",
+      "version": "1.1.303",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "7216bc3e2b119224fbb0c4b6427b85cc3ad114ff4177a84e76433f9dc5ec725b",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.303.apk",
+    "version": "1.1.303",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "9695c9b98e78f78cf3cbd0c9bee957fed79c4e40e2fcc7b1d8727b64da6294f0",
+    "download": "/download/remote",
+    "versionCode": 308,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "Unified visible version 1.1.303 for Launcher, IPTV, phone, desktop, remote and Legacy, with monotonic Android versionCode308.",
+    "Fire TV/Android: one bounded prayer-and-matches card; gold entitlement marker never overlaps Settings text.",
+    "All current application download, update, relay, theme and support origins use https://morph-tv.com.",
+    "Phone: normal Movies/Series browsing leaves Favourites and loads the first category, with no duplicate type/filter strips; account switching stays in Settings.",
+    "Phone: Home-only top library tools, centered dark wordmark, unclipped update notice, themed category drawer, compact Apply action and restored remote artwork.",
+    "Shared IPTV and local-file player, clear -10/+10 controls and responsive transport layout.",
+    "Live, Movies and Series open on Favourites; a unified category list keeps provider categories visible in Recently added and Continue watching, with thin separators and deliberate Right navigation.",
+    "Automatic Adhan while Launcher or IPTV is foreground: pauses playing video and resumes after Adhan; does not run over HDMI or another app.",
+    "Local media opens a file directly; previous/next traverse the selected folder.",
+    "Compact Launcher settings, focus-only highlights, combined prayer/match summary and lower slider pager.",
+    "Direct Parent Control settings entry; Speed Test with measured download/upload/HTTP latency and animated progress.",
+    "User-owned WireGuard profiles: embedded Android engine; Windows/macOS use installed OS tunnel tools and require system consent. Samsung/LG cannot run a device-wide tunnel through this web app; device/router VPN remains separate.",
+    "Windows installer uses the approved Morph Launcher wordmark banner; support opens the website payment options.",
+    "Samsung/LG input handoff releases the old player before opening a TV source. Physical HDMI validation remains outstanding.",
+    "LG packages target Chromium53 for webOS4.x compatibility; LK5730PVC physical support remains unverified."
+  ],
+  "validation": [
+    "source receipts: 82 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix",
+  "startupFix": "Android local DOM readiness reveals Home without waiting for external page-finished; regression tested on Google TV Android 14, old build fails the same negative control.",
+  "faithUpdates": [
+    "Unified centered Morph TV wordmark and Back on every worship page",
+    "Lighter prayer artwork overlay; bounded Arabic Qibla verse and blue needle",
+    "Original Her tap audio asset and native vibration/sound channel restored"
+  ],
+  "mediaApp": "Visible Media Player app, pinned once for existing and new launcher profiles; opens direct local-file selection on Android and desktop."
+}
