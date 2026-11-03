@@ -1,0 +1,167 @@
+{
+  "version": "1.1.305",
+  "tv": {
+    "version": "1.1.305",
+    "versionCode": 310
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.305",
+    "download": "/download/phone",
+    "noteAr": "تحديث المشغّل وإعدادات الشبكة وWireGuard المدمج، مع الريموت وحزم التلفزيون الحالية.",
+    "noteEn": "Shared player and network settings, embedded WireGuard engine, integrated remote and current TV packages.",
+    "channel": "preview",
+    "versionCode": 310
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.305",
+    "versionCode": 310,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.305",
+        "file": "Morph-IPTV-LG-1.1.305.ipk",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5817780,
+        "sha256": "2c438474f4888675ae0c0446dca9fd1a6a401d08b423f5859503e6875ae78263",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.305",
+        "file": "Morph-IPTV-tizen4-1.1.305.wgt",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5839530,
+        "sha256": "2a40457771872f8008282a3cea5f8d38bb4045046d3503c871456dc2278fa5a9",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.305",
+        "file": "Morph-IPTV-tizen5-1.1.305.wgt",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5839521,
+        "sha256": "c65bea4d1b365aa22ba2a75054ea24d3cf2d64c1a3d92ba5b58bf07d784391f7",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.305",
+        "file": "Morph-IPTV-tizen2-1.1.305.wgt",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5919743,
+        "sha256": "d79a5f1d606d92016fec76351a637ca396155932a4b35a5f1bc4a43e352ffdf9",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.305",
+        "file": "Morph-IPTV-tizen3-1.1.305.wgt",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5918784,
+        "sha256": "2d0a4cec491faf8cd1403f40daf9484445909e3a47afa063577c2e0283204913",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.305",
+        "file": "Morph-IPTV-Android-TV-1.1.305.apk",
+        "version": "1.1.305",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16941685,
+        "sha256": "fb7a4e69d2b47eb19b7384354eb4ba30c43536f1dbe2bb3a36730b4da7f5e8d2",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.305",
+      "file": "Morph-IPTV-Legacy-1.1.305.apk",
+      "version": "1.1.305",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "843f503eadd21e1aa7e4db5c9626af95e26413a8eaa6b42a9202de0335f57531",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.305.apk",
+    "version": "1.1.305",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "8368ee6dc29d7e0941ff26018c7b81c4f2094001109ae8decc96ab1134dd87fd",
+    "download": "/download/remote",
+    "versionCode": 310,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "Fix Plus activation persistence: prefer verified current identity, isolate phone and TV scope, allow entering a new code when saved verification fails, and refresh paid features after returning to IPTV.",
+    "Settings: physical Up/Down/Left/Right movement, prayer opens on focus, scroll the focused control into view, and size the sidebar to its actual categories.",
+    "Plus dialog: bounded columns, visible activation form, used/remaining devices and explicit failures; restored activation unlocks category ordering.",
+    "Restore the original phone companion keyboard and remote, and connect the internal receiver after successful code pairing.",
+    "PIN and Plus input on Android TV uses a local remote-operated pad instead of invoking the system mobile-keyboard banner.",
+    "Install standalone IPTV through the authenticated Morph receiver on linked Android TVs, with package/signature checks and TV installation consent; do not route ordinary Android TVs through Fire TV ADB.",
+    "Phone IPTV: fourth Multi-view card with generated artwork; header wordmark matches the phone host in size and placement.",
+    "Phone Settings: compact four-shortcut layout with parental controls near the top, preserving existing handlers.",
+    "Matches: per-card dates, first-open artwork loading without Refresh, and a bounded scrollable team picker that retains focus at its last item.",
+    "Android 4.4 editions retain their reduced native M3U feature set. Physical TV models and provider coverage remain device/source dependent.",
+    "Samsung standalone installation follows the working package transfer/install commands without an unsupported POSIX mkdir shell command.",
+    "Samsung full-screen inputs use the front native video plane after releasing the previous player, preventing an opaque web surface from covering source video.",
+    "Shared search and account fields use the native editable field on Samsung, LG and Android; the previous full-screen replacement keyboard is not opened.",
+    "TV header geometry is independent of saved content font scaling; 540p, 720p, 1080p and 4K normalized header metrics match across Android, Samsung and LG.",
+    "Samsung player clears the loading state on preparation and hides controls automatically; TV local-media and IPTV controls use the current Android cinema canvas metrics, with direct audio/subtitle/settings access.",
+    "Samsung Cast searches for MediaRenderer receivers using the platform socket API on supported models, then sends the stream only to the selected receiver. Android Cast is unchanged. Unsupported Samsung models report discovery unavailable.",
+    "All 12 modern TV product/platform packages were audited for the current shared search, settings, header and player repairs. Android 4.4 remains the documented reduced native M3U edition.",
+    "Physical Samsung/LG HDMI and casting compatibility must still be checked on the television; API/browser/emulator tests do not establish every model."
+  ],
+  "validation": [
+    "source receipts: 83 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix"
+}
