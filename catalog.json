@@ -106,7 +106,7 @@
       "product": "phone",
       "target": "android",
       "bytes": 146580790,
-      "sha256": "bbfc0eace5897e514cdf53a2bef6c80685ae096dfd2f5ee35f693e54e2501db1",
+      "sha256": "1de5bc2190592f36b9046d53c98e9cee7fe6484cee86d5860eedf304987e2126",
       "download": "/download/phone",
       "versionCode": 317
     },
@@ -293,7 +293,7 @@
       "file": "Morph-TV-Install-Kit-1.1.312.zip",
       "version": "1.1.312",
       "bytes": 82513157,
-      "sha256": "6dbbfcb30ae34a2175c65d9de9eb63c23590d63ed2af604d3e49d658e07928c6"
+      "sha256": "b5e3c64deda0fa1ede89b554aa74bab7b68220bed31ae34b60468a589319449c"
     }
   ],
   "legacy": {
