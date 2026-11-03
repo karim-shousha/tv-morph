@@ -1,0 +1,9 @@
+{
+  "version": "1.1.306",
+  "product": "phone",
+  "fixes": [
+    "Startup update notification accepts current and legacy official download hosts.",
+    "Server Plus OPTIONS handler restored alongside QR-link preflight."
+  ],
+  "tvVersionUnchanged": "1.1.305"
+}

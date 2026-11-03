@@ -137,10 +137,6 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header('Vary', 'Origin')
         super().end_headers()
 
-    def do_OPTIONS(self):
-        if not PLUS.handle(self, urlsplit(self.path).path):
-            self.send_json(405, {'error': 'method_not_allowed'})
-
     server_version = 'MorphCommunity'
 
     def log_message(self, *_):
@@ -210,8 +206,10 @@ class Handler(BaseHTTPRequestHandler):
         self.do_GET()
 
     def do_OPTIONS(self):
-        if not qr_link.handle(self, urlsplit(self.path).path):
-            self.send_json(405, {'error': 'method'})
+        path = urlsplit(self.path).path
+        if PLUS.handle(self, path) or qr_link.handle(self, path):
+            return
+        self.send_json(405, {'error': 'method'})
 
     def do_GET(self):
         try:
