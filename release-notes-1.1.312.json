@@ -1,0 +1,164 @@
+{
+  "version": "1.1.312",
+  "tv": {
+    "version": "1.1.312",
+    "versionCode": 317
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.312",
+    "download": "/download/phone",
+    "noteAr": "إصلاح تفعيل Plus، وإزالة الريموت القديم، وتثبيت IPTV، وكارت الدعم، مع حزم التلفزيون الحالية.",
+    "noteEn": "Plus verification, obsolete remote removal, IPTV installation, support invitation and current TV packages.",
+    "channel": "preview",
+    "versionCode": 317
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.312",
+    "versionCode": 317,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.312",
+        "file": "Morph-IPTV-LG-1.1.312.ipk",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5823260,
+        "sha256": "17785b8e67f8a49cfc1d62454a0ac57c28cb170fa54b91b4b4539d792d66e169",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.312",
+        "file": "Morph-IPTV-tizen4-1.1.312.wgt",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5845270,
+        "sha256": "c4e3584ac6c2ecea91abd66f8a346633852642d107fd180f7a212162a42e2821",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.312",
+        "file": "Morph-IPTV-tizen5-1.1.312.wgt",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5845264,
+        "sha256": "7d0213d9c111fbbb240cce385e2e512c2674081dc580084f0edf7d079b9f0bad",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.312",
+        "file": "Morph-IPTV-tizen2-1.1.312.wgt",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5919358,
+        "sha256": "2b2ef89a2cb57dd39fbb39896d171084ee091935cac7873945b616da21ea785e",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.312",
+        "file": "Morph-IPTV-tizen3-1.1.312.wgt",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5918386,
+        "sha256": "d716fc0cf44410f2cc7ce694c316a31e50d501da4b304f00bb1d984cad349308",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.312",
+        "file": "Morph-IPTV-Android-TV-1.1.312.apk",
+        "version": "1.1.312",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16941685,
+        "sha256": "c8d4fde65b28fea2bc11220a3d5f339869b7764cc207b737a3a7b709bb0909bd",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.305",
+      "file": "Morph-IPTV-Legacy-1.1.305.apk",
+      "version": "1.1.305",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "843f503eadd21e1aa7e4db5c9626af95e26413a8eaa6b42a9202de0335f57531",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.305.apk",
+    "version": "1.1.305",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "8368ee6dc29d7e0941ff26018c7b81c4f2094001109ae8decc96ab1134dd87fd",
+    "download": "/download/remote",
+    "versionCode": 310,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "Keep IPTV favourites in the order added, independent of library sorting.",
+    "Persist launcher theme/settings across Android process restarts; loading artwork no longer overwrites selected settings.",
+    "Automatic foreground Adhan handles short scheduling gaps; missing saved volume defaults audibly; TV calculation methods expanded to12.",
+    "Manage saved IPTV accounts with editable server/name/credentials and stable account identity.",
+    "Fix asynchronous Samsung/LG USB browser discovery; Android local playback can try the alternate decoder once.",
+    "Improve4K track capability selection and bound first-picture recovery; unsupported customer codecs remain hardware-dependent.",
+    "LiveOK opens channels without pausing; show channel name in the playback dock; Android volume keys change one system step;10-second seeks retained.",
+    "Samsung dedicated Play/Pause acts even with hidden controls; LG starts the channel drawer on its categories.",
+    "Retry temporary provider authentication failures at most twice; retain explicit401/403 errors and desktop playback denial feedback.",
+    "Actual Windows and Android emulator playback tests passed for live/movie/episode controls. Physical TCL/Samsung/LG and the unknown customer4K source were not available.",
+    "Fix shared IPTV system keyboard activation on Android and editable system inputs on web TV/desktop. Real Android phone and TV typing and search submission verified.",
+    "Phone Adhan: persist per-prayer mute settings, respect them in scheduling/playback and provide a direct Stop Adhan button.",
+    "Phone Android TV remote no longer negotiates permanent remote IME; paired-phone text inside Morph keeps its independent authenticated path.",
+    "Android Media Player uses the system document picker directly where available; a bounded centered file-manager selector avoids OEM resolver clipping and excludes placeholder/photo-only handlers.",
+    "Series episodes: the latest resumable episode has a persistent contrasting background and Continue watching label, independent of remote focus; reopening uses current saved playback progress."
+  ],
+  "validation": [
+    "source receipts: 83 canonical shared files",
+    "Android native account persistence / real D-pad / IME / player instrumentation",
+    "Samsung and LG transport/player regression fixtures",
+    "Launcher 1GB / 2-core / CPU x4 simulation; no active blur or reflections"
+  ],
+  "physicalTVVerified": false,
+  "phoneUpdateUnderReview": false,
+  "hydraRealAccountVerified": false,
+  "sharedSourceReceipt": "current canonical source verified across the embedded and standalone TV matrix"
+}
