@@ -1,4 +1,4 @@
-Morph Launcher / Morph IPTV / Morph TV1.1.311
+Morph Launcher / Morph IPTV 1.1.311
 
 - Keep IPTV favourites in the order added, independent of library sorting.
 - Persist launcher theme/settings across Android process restarts; loading artwork no longer overwrites selected settings.
@@ -10,3 +10,5 @@ Morph Launcher / Morph IPTV / Morph TV1.1.311
 - Samsung dedicated Play/Pause acts even with hidden controls; LG starts the channel drawer on its categories.
 - Retry temporary provider authentication failures at most twice; retain explicit401/403 errors and desktop playback denial feedback.
 - Actual Windows and Android emulator playback tests passed for live/movie/episode controls. Physical TCL/Samsung/LG and the unknown customer4K source were not available.
+- Fix shared IPTV system keyboard activation on Android and editable system inputs on web TV/desktop. Real Android phone and TV typing and search submission verified.
+- Phone Adhan: persist per-prayer mute settings, respect them in scheduling/playback and provide a direct Stop Adhan button.

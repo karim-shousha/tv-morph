@@ -144,7 +144,9 @@
     "LiveOK opens channels without pausing; show channel name in the playback dock; Android volume keys change one system step;10-second seeks retained.",
     "Samsung dedicated Play/Pause acts even with hidden controls; LG starts the channel drawer on its categories.",
     "Retry temporary provider authentication failures at most twice; retain explicit401/403 errors and desktop playback denial feedback.",
-    "Actual Windows and Android emulator playback tests passed for live/movie/episode controls. Physical TCL/Samsung/LG and the unknown customer4K source were not available."
+    "Actual Windows and Android emulator playback tests passed for live/movie/episode controls. Physical TCL/Samsung/LG and the unknown customer4K source were not available.",
+    "Fix shared IPTV system keyboard activation on Android and editable system inputs on web TV/desktop. Real Android phone and TV typing and search submission verified.",
+    "Phone Adhan: persist per-prayer mute settings, respect them in scheduling/playback and provide a direct Stop Adhan button."
   ],
   "validation": [
     "Verified actual Windows Electron live/movie/episode decode, pause/resume,10-second seek and Back, including transient503 recovery and terminal403.",

@@ -9,8 +9,8 @@
       "available": true,
       "version": "1.1.311",
       "download": "/download/phone",
-      "noteAr": "إصلاحات المشغّل وحفظ المفضلة والثيم، وخيارات الصلاة، وتعديل السيرفر، وإعادة الربط عند فشل الاتصال المؤقت.",
-      "noteEn": "Playback controls, persistent favourites/theme settings, prayer options, account editing and bounded provider connection recovery.",
+      "noteAr": "إصلاح تفعيل Plus، وإزالة الريموت القديم، وتثبيت IPTV، وكارت الدعم، مع حزم التلفزيون الحالية.",
+      "noteEn": "Plus verification, obsolete remote removal, IPTV installation, support invitation and current TV packages.",
       "channel": "preview",
       "versionCode": 316
     },
@@ -20,8 +20,8 @@
       "available": true,
       "version": "1.1.311",
       "download": "/download/android",
-      "noteAr": "إصلاحات المشغّل وحفظ المفضلة والثيم، وخيارات الصلاة، وتعديل السيرفر، وإعادة الربط عند فشل الاتصال المؤقت.",
-      "noteEn": "Playback controls, persistent favourites/theme settings, prayer options, account editing and bounded provider connection recovery.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI أفقية في المنتصف، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, centred horizontal HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false,
@@ -33,8 +33,8 @@
       "available": true,
       "version": "1.1.311",
       "download": "/download/firetv",
-      "noteAr": "إصلاحات المشغّل وحفظ المفضلة والثيم، وخيارات الصلاة، وتعديل السيرفر، وإعادة الربط عند فشل الاتصال المؤقت.",
-      "noteEn": "Playback controls, persistent favourites/theme settings, prayer options, account editing and bounded provider connection recovery.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI أفقية في المنتصف، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, centred horizontal HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "channel": "preview",
       "versionCode": 316,
       "physicalDeviceVerified": false
@@ -43,8 +43,8 @@
       "id": "samsung",
       "name": "Samsung · Tizen",
       "available": false,
-      "noteAr": "إصلاحات المشغّل وحفظ المفضلة والثيم، وخيارات الصلاة، وتعديل السيرفر، وإعادة الربط عند فشل الاتصال المؤقت.",
-      "noteEn": "Playback controls, persistent favourites/theme settings, prayer options, account editing and bounded provider connection recovery.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI أفقية في المنتصف، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, centred horizontal HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "webPreview": "/web-tv.html",
       "version": "1.1.311",
       "minTizen": "5.0",
@@ -76,8 +76,8 @@
       "id": "lg",
       "name": "LG · webOS",
       "available": true,
-      "noteAr": "إصلاحات المشغّل وحفظ المفضلة والثيم، وخيارات الصلاة، وتعديل السيرفر، وإعادة الربط عند فشل الاتصال المؤقت.",
-      "noteEn": "Playback controls, persistent favourites/theme settings, prayer options, account editing and bounded provider connection recovery.",
+      "noteAr": "تشغيل Light افتراضيًا، بدون بلور أو انعكاسات، كروت HDMI أفقية في المنتصف، حذف حساب IPTV واحد وحفظ ترتيب الأقسام بضغطة OK.",
+      "noteEn": "Light startup, no blur or reflections, centred horizontal HDMI cards, individual IPTV account removal and instant OK to save category order.",
       "version": "1.1.311",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
@@ -105,8 +105,8 @@
       "version": "1.1.311",
       "product": "phone",
       "target": "android",
-      "bytes": 146572598,
-      "sha256": "0a8124b66dfb5c905aa700b1bd110b76e6fe86d5585b91b4ed9a9ec09f675aa6",
+      "bytes": 146576694,
+      "sha256": "d1d80a63b31b3f42af44f84541e1feba9d43032f4653b4b3d97afb1b47957a05",
       "download": "/download/phone",
       "versionCode": 316
     },
@@ -138,7 +138,7 @@
       "product": "launcher",
       "target": "android",
       "bytes": 21837180,
-      "sha256": "b52a93fc90a4bb2e37f4ecf1684bdbea0e2bf0e3998990aeb90a4f62e22f1efe",
+      "sha256": "05698e4cec8b90d142f01d0980caee08fd4fbbd7ed2d0743a5e8694e900936f9",
       "download": "/download/android"
     },
     {
@@ -147,8 +147,8 @@
       "version": "1.1.311",
       "product": "launcher",
       "target": "webos",
-      "bytes": 10320852,
-      "sha256": "9fcc1387d0cbf9f39c3388c7ab8da14237d68bf6a651a140a49a43fe296299e2",
+      "bytes": 10321048,
+      "sha256": "8969020d5f00a6aa2ed1aea97a547f109d83ca8500c3b3e4b2c439f9cf8464e7",
       "download": "/download/lg"
     },
     {
@@ -157,8 +157,8 @@
       "version": "1.1.311",
       "product": "launcher",
       "target": "tizen2",
-      "bytes": 10774242,
-      "sha256": "828f222443660331b4d09e62e6feeffafd24da2e25241c4e723a88e34cd8441e",
+      "bytes": 10774366,
+      "sha256": "bbe08a18b42b76d6ae68155649dc72423e5d913f212997adcfd67e893d7c9c02",
       "download": "/download/samsung-tizen2"
     },
     {
@@ -167,8 +167,8 @@
       "version": "1.1.311",
       "product": "launcher",
       "target": "tizen3",
-      "bytes": 10773211,
-      "sha256": "264f6a548689d852530187a976cbdeb63d2acd6c5791632773928d33351cc43b",
+      "bytes": 10773335,
+      "sha256": "8374be3feb32d9266c49932c1719000876c303b69ad2cc0621e0ffc00bfbcd68",
       "download": "/download/samsung-tizen3"
     },
     {
@@ -177,8 +177,8 @@
       "version": "1.1.311",
       "product": "launcher",
       "target": "tizen4",
-      "bytes": 10683338,
-      "sha256": "64f9c04e8afe81093f359ff34f2a2d3b5f2730997c0ac376724cf6f972302408",
+      "bytes": 10683455,
+      "sha256": "7d8f38365e4e20eba89e0bd2394d5917085b0a4717b7395b7ef0639764696511",
       "download": "/download/samsung-tizen4"
     },
     {
@@ -187,8 +187,8 @@
       "version": "1.1.311",
       "product": "launcher",
       "target": "tizen5",
-      "bytes": 10680421,
-      "sha256": "83b76bfdfb3d701dc97f963a8a8312f0ca40d0c9324c97a2ce8cd318fca97151",
+      "bytes": 10680539,
+      "sha256": "453db8ddb74e824916b47ed20c7020de9a474875c4764803c36f3faacc622865",
       "download": "/download/samsung-tizen5"
     },
     {
@@ -197,8 +197,8 @@
       "version": "1.1.311",
       "product": "iptv",
       "target": "webos",
-      "bytes": 5822806,
-      "sha256": "904e3bbcc1ca6c585f6cd84a6d7d3c9884887841826f5ba34f218bfbfeb1f585",
+      "bytes": 5822848,
+      "sha256": "898f657cf6a665909e94f31c960a80f69380293d5e30407d1613fd48ec40a9c7",
       "download": "/download/iptv/lg"
     },
     {
@@ -207,8 +207,8 @@
       "version": "1.1.311",
       "product": "iptv",
       "target": "tizen4",
-      "bytes": 5844837,
-      "sha256": "dee21f8d3b99b225f908f5c151c1f44ccad4a4687c492fadf67bf2a44b3d175a",
+      "bytes": 5844954,
+      "sha256": "91ebc02806b831b48ce5474d8eed60ad456486c24d60f3047a1f7ab9fa94e750",
       "download": "/download/iptv/tizen4"
     },
     {
@@ -217,8 +217,8 @@
       "version": "1.1.311",
       "product": "iptv",
       "target": "tizen5",
-      "bytes": 5844836,
-      "sha256": "bb215b8b61fdb778e0870337fbf2146a277e0a9d2311ad499483f8a241d28895",
+      "bytes": 5844952,
+      "sha256": "ff4f829155ab29d1e0425580eeb7593e8391f50deab227650265c97de91cf7fc",
       "download": "/download/iptv/tizen5"
     },
     {
@@ -227,8 +227,8 @@
       "version": "1.1.311",
       "product": "iptv",
       "target": "tizen2",
-      "bytes": 5918872,
-      "sha256": "726db3817bf37a6cadab1e77c935bb11e07f36181ba6e8922d6802c7ee4fd7a6",
+      "bytes": 5918989,
+      "sha256": "796f621e7a36509d422f96b5d442dc7e609d2ec3f28cf6953e985ecb08a9d01b",
       "download": "/download/iptv/tizen2"
     },
     {
@@ -237,8 +237,8 @@
       "version": "1.1.311",
       "product": "iptv",
       "target": "tizen3",
-      "bytes": 5917910,
-      "sha256": "c03ce7545e7ae72dd66ce4cc30643527e1bca035feb6dc08be61abb2191d3b97",
+      "bytes": 5918027,
+      "sha256": "80eb08733ecc7eb9288a672d182e1a0a18534add5f6e58e9bb7d903d9e7a4e84",
       "download": "/download/iptv/tizen3"
     },
     {
@@ -248,7 +248,7 @@
       "product": "iptv",
       "target": "android",
       "bytes": 16941685,
-      "sha256": "46a8b60bad7961de083ffb7ac9cd53a1cb337027282d86871950c7f4d469098e",
+      "sha256": "6681a71f0de13faa30aabeb9a5004eb09ce3a5ab2e66c4b09d3414ad6328f969",
       "download": "/download/iptv/android"
     },
     {
@@ -292,8 +292,8 @@
       "name": "Morph-TV-Install-Kit-1.1.311",
       "file": "Morph-TV-Install-Kit-1.1.311.zip",
       "version": "1.1.311",
-      "bytes": 82508543,
-      "sha256": "075369ec74bade77ddb75cdec28e8694f4b707738f49d9531ef205a0da8cd03d"
+      "bytes": 82509966,
+      "sha256": "63536c20602f4d8ed00d0eb1aadb0e7008d4bf5277017e5ecd6bd4a6ffa5fc09"
     }
   ],
   "legacy": {
@@ -360,8 +360,8 @@
         "version": "1.1.311",
         "product": "iptv",
         "target": "webos",
-        "bytes": 5822806,
-        "sha256": "904e3bbcc1ca6c585f6cd84a6d7d3c9884887841826f5ba34f218bfbfeb1f585",
+        "bytes": 5822848,
+        "sha256": "898f657cf6a665909e94f31c960a80f69380293d5e30407d1613fd48ec40a9c7",
         "download": "/download/iptv/lg"
       },
       {
@@ -370,8 +370,8 @@
         "version": "1.1.311",
         "product": "iptv",
         "target": "tizen4",
-        "bytes": 5844837,
-        "sha256": "dee21f8d3b99b225f908f5c151c1f44ccad4a4687c492fadf67bf2a44b3d175a",
+        "bytes": 5844954,
+        "sha256": "91ebc02806b831b48ce5474d8eed60ad456486c24d60f3047a1f7ab9fa94e750",
         "download": "/download/iptv/tizen4"
       },
       {
@@ -380,8 +380,8 @@
         "version": "1.1.311",
         "product": "iptv",
         "target": "tizen5",
-        "bytes": 5844836,
-        "sha256": "bb215b8b61fdb778e0870337fbf2146a277e0a9d2311ad499483f8a241d28895",
+        "bytes": 5844952,
+        "sha256": "ff4f829155ab29d1e0425580eeb7593e8391f50deab227650265c97de91cf7fc",
         "download": "/download/iptv/tizen5"
       },
       {
@@ -390,8 +390,8 @@
         "version": "1.1.311",
         "product": "iptv",
         "target": "tizen2",
-        "bytes": 5918872,
-        "sha256": "726db3817bf37a6cadab1e77c935bb11e07f36181ba6e8922d6802c7ee4fd7a6",
+        "bytes": 5918989,
+        "sha256": "796f621e7a36509d422f96b5d442dc7e609d2ec3f28cf6953e985ecb08a9d01b",
         "download": "/download/iptv/tizen2"
       },
       {
@@ -400,8 +400,8 @@
         "version": "1.1.311",
         "product": "iptv",
         "target": "tizen3",
-        "bytes": 5917910,
-        "sha256": "c03ce7545e7ae72dd66ce4cc30643527e1bca035feb6dc08be61abb2191d3b97",
+        "bytes": 5918027,
+        "sha256": "80eb08733ecc7eb9288a672d182e1a0a18534add5f6e58e9bb7d903d9e7a4e84",
         "download": "/download/iptv/tizen3"
       },
       {
@@ -411,7 +411,7 @@
         "product": "iptv",
         "target": "android",
         "bytes": 16941685,
-        "sha256": "46a8b60bad7961de083ffb7ac9cd53a1cb337027282d86871950c7f4d469098e",
+        "sha256": "6681a71f0de13faa30aabeb9a5004eb09ce3a5ab2e66c4b09d3414ad6328f969",
         "download": "/download/iptv/android"
       }
     ],
