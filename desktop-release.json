@@ -1,31 +1,31 @@
 {
-  "version": "1.1.308",
+  "version": "1.1.310",
   "windowsVerified": true,
   "macAppleSiliconVerified": true,
   "macIntelVerified": true,
-  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41672495287",
-  "source": "345ba7fb483c5b94e8955d031090525d2149511c",
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41709381883",
+  "source": "72f4032196e75ae195b0e165ae36d38c030c183e",
   "assets": [
     {
-      "file": "Morph-Launcher-PC-1.1.308-Setup.exe",
-      "bytes": 136368645,
-      "sha256": "d262752b34212ae9ea45523d9f71007686e43742210abec30db15766680d2d40",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.308/Morph-Launcher-PC-1.1.308-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.310-Setup.exe",
+      "bytes": 136368812,
+      "sha256": "fd7ab50f26b43ebfa60cd2a69349ffdd413f265db028bce9b530645a3a9a153f",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.310/Morph-Launcher-PC-1.1.310-Setup.exe"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.308-universal.dmg",
-      "bytes": 244275296,
-      "sha256": "a2e9bf75b88a2d6a7b3b14df1f693c7b9375f727257f196105281d2c1b665f57",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.308/Morph-Launcher-Mac-1.1.308-universal.dmg"
+      "file": "Morph-Launcher-Mac-1.1.310-universal.dmg",
+      "bytes": 244275720,
+      "sha256": "1b5348f6d86656a9f87ca65cd73b88ecbdcd9634ecc3ee46cd169c45a897e61d",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.310/Morph-Launcher-Mac-1.1.310-universal.dmg"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.308-universal.zip",
-      "bytes": 235662090,
-      "sha256": "61882e94ee499a512c203b1e0aaea099b2beb73fe6386a795ccbb9da197e62b8",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.308/Morph-Launcher-Mac-1.1.308-universal.zip"
+      "file": "Morph-Launcher-Mac-1.1.310-universal.zip",
+      "bytes": 235662283,
+      "sha256": "a3f90d07985cd2aadc80aaa51a820ed7e59d77321e2ff5000c7af96af08f2beb",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.310/Morph-Launcher-Mac-1.1.310-universal.zip"
     }
   ],
   "limitations": [
-    "Physical LG/Samsung HDMI and provider VPN handshake not verified."
+    "Physical Samsung/LG device validation remains outstanding."
   ]
 }

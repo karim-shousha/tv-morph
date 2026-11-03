@@ -1,5 +1,7 @@
 'use strict';
 const englishCopy = `
+اختار إصدار Tizen الموجود على شاشتك|Choose the Tizen version installed on your TV
+لو الشاشة Tizen 2.4، اختار ملف Tizen 2.3 / 2.4 فقط.|For a Tizen 2.4 TV, select only the Tizen 2.3 / 2.4 package.
 حمّل تطبيق الموبايل|Download the mobile app
 مواعيد المباريات والنتائج والإحصائيات|Live match schedules, results and statistics
 تابع مواعيد المباريات والنتائج والإحصائيات بتحديثات مباشرة على الموبايل والتلفزيون، من داخل التطبيق.|Follow match schedules, results and statistics with live updates on your phone and TV, right inside the app.
