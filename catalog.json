@@ -459,7 +459,7 @@
     }
   },
   "desktop": {
-    "version": "1.1.311",
+    "version": "1.1.312",
     "windows": "/download/windows",
     "mac": "/download/mac",
     "releaseManifest": "/desktop-release.json",
