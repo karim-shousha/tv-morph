@@ -131,3 +131,7 @@ releases/*
 !release-notes-1.1.308.json
 !releases/1.1.308/
 !releases/1.1.308/**
+
+!plus-manual-payments.js
+!release-notes-phone-1.1.309.json
+!Morph-TV-Phone-1.1.309.apk

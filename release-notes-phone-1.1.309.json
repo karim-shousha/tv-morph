@@ -1,0 +1,26 @@
+{
+  "version": "1.1.309",
+  "versionCode": 314,
+  "product": "phone",
+  "changes": [
+    "Phone Live, Movies and Series open their ordinary catalog from Home cards and bottom tabs. Favorites is opened only by its own action.",
+    "Remove the complete Source / Favourites / Recently added chip strip; retain the Categories drawer and subscription settings.",
+    "TV installer binaries embedded in the phone package remain byte-for-byte identical to1.1.308."
+  ],
+  "validation": [
+    "Native phone emulator:12 actual touch transitions in Arabic/English and missing strip assertion",
+    "Phone portrait/landscape fixture layout and catalog content regression",
+    "TV Favorites startup remains unchanged in shared source"
+  ],
+  "phone": {
+    "name": "Morph-TV-Phone-1.1.309",
+    "file": "Morph-TV-Phone-1.1.309.apk",
+    "version": "1.1.309",
+    "product": "phone",
+    "target": "android",
+    "bytes": 146548022,
+    "sha256": "255793c1fba4b5f4cf74a4689c6be7841449908d8335448e6de4c46b5fe9888a",
+    "download": "/download/phone",
+    "versionCode": 314
+  }
+}
