@@ -1,0 +1,149 @@
+{
+  "version": "1.1.313",
+  "tv": {
+    "version": "1.1.313",
+    "versionCode": 318
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.313",
+    "download": "/download/phone",
+    "noteAr": "واجهة الموبايل محفوظة.",
+    "noteEn": "Original phone presentation retained.",
+    "channel": "preview",
+    "versionCode": 318
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.313",
+    "versionCode": 318,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.313",
+        "file": "Morph-IPTV-LG-1.1.313.ipk",
+        "version": "1.1.313",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5833242,
+        "sha256": "f31318f23e15c5efd649ddaa496c087a76c6ac0fcb653f6856b83683062c5e9f",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.313",
+        "file": "Morph-IPTV-tizen4-1.1.313.wgt",
+        "version": "1.1.313",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5853941,
+        "sha256": "a668629b7fdc880dba9c7f5660de32695ef9a71312d586e4c90d27233397f472",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.313",
+        "file": "Morph-IPTV-tizen5-1.1.313.wgt",
+        "version": "1.1.313",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5853929,
+        "sha256": "c4d340289e0cab6fd23018b80566e8a18facaa7e28a185bebf5d4d4170ee380b",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.313",
+        "file": "Morph-IPTV-tizen2-1.1.313.wgt",
+        "version": "1.1.313",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5927641,
+        "sha256": "f4eb16e599a58a2ad334c8e25ec2ff4934b0a0a9b250ea13a386e1f95c5e2b0b",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.313",
+        "file": "Morph-IPTV-tizen3-1.1.313.wgt",
+        "version": "1.1.313",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5926679,
+        "sha256": "6213fe7197e215a5c08afdda613cecaf8b51656100fc2b36bd95681513d32ccd",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.313",
+        "file": "Morph-IPTV-Android-TV-1.1.313.apk",
+        "version": "1.1.313",
+        "versionCode": 318,
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16950103,
+        "sha256": "fa4f8233c2c78522c78dab2b903c1af6bcf1461a054d0196a13ff3ae3c56d684",
+        "download": "/download/iptv/android"
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.313",
+      "file": "Morph-IPTV-Legacy-1.1.313.apk",
+      "version": "1.1.313",
+      "versionCode": 318,
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 496264,
+      "sha256": "b3e4d15442a6445d54270ab315ba0c7b5d515bee7c3b492fc58a26063ab01f46",
+      "download": "/download/iptv/legacy",
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "remote": {
+    "name": "Morph Remote",
+    "file": "Morph-Remote-1.1.305.apk",
+    "version": "1.1.305",
+    "product": "remote",
+    "target": "android",
+    "bytes": 56855269,
+    "sha256": "8368ee6dc29d7e0941ff26018c7b81c4f2094001109ae8decc96ab1134dd87fd",
+    "download": "/download/remote",
+    "versionCode": 310,
+    "minSdk": 24,
+    "minAndroid": "7.0",
+    "available": true,
+    "sameSigner": "ae49f0d47aa9fb04fa23240a352c29049667e7733c94d11e850fdf135d04015e",
+    "versionMetadataOnly": true
+  },
+  "changes": [
+    "Three independent IPTV text sizes across shared TV/desktop products; phone presentation retained.",
+    "Larger IPTV section bar, centered on the screen; Accounts and Update are sidebar icons; matching weather/clock header.",
+    "Launcher menu order and profile artwork; adult/kids reuse existing parental controls.",
+    "Inline settings choices, working independent Arabic/English font controls, and launcher menu scaling.",
+    "Original 60-item IPTV pages and Previous/Next retained; no continuous scrolling or provider-loading changes.",
+    "Desktop uses the same current launcher sources; legacy desktop geometry no longer overrides the shared layout.",
+    "TV system keyboard and original phone text/send behavior retained.",
+    "Android4.4 editions retain their reduced native M3U feature set. Physical Samsung/LG model-specific validation remains outstanding."
+  ]
+}

@@ -1,31 +1,32 @@
 {
-  "version": "1.1.312",
+  "version": "1.1.313",
   "windowsVerified": true,
   "macAppleSiliconVerified": true,
   "macIntelVerified": true,
-  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41737433281",
-  "source": "d80b52ca7c9de060f5e260b89d829b56ac41d3de",
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/41771411419",
+  "source": "284ff0b9657e6eb2ed926c36ab25fa998bc0e215",
   "assets": [
     {
-      "file": "Morph-Launcher-PC-1.1.312-Setup.exe",
-      "bytes": 136260989,
-      "sha256": "d58a48d643d3d8361caa147bf585f21095b6a4c5bb7ac6f608743ba37c307a85",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.312/Morph-Launcher-PC-1.1.312-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.313-Setup.exe",
+      "bytes": 136381448,
+      "sha256": "a2e265fb3f58aaa937def774841b8692f562a3bf9dfc74a78b988421b3b5e05c",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.313/Morph-Launcher-PC-1.1.313-Setup.exe"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.312-universal.dmg",
-      "bytes": 244275971,
-      "sha256": "dc59abc08539bc69eb22c206c0546a641409aca103e51def0ff34dd02969a922",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.312/Morph-Launcher-Mac-1.1.312-universal.dmg"
+      "file": "Morph-Launcher-Mac-1.1.313-universal.dmg",
+      "bytes": 244335680,
+      "sha256": "30a457e5549d265eec0f5115dc46cf52d868aaf5cd92c448eb725ac5dbeb6507",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.313/Morph-Launcher-Mac-1.1.313-universal.dmg"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.312-universal.zip",
-      "bytes": 235663334,
-      "sha256": "ba41d6bad807af3432c0074994dbfae5cb5e001017bdfb89ae01b0586aab6afb",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.312/Morph-Launcher-Mac-1.1.312-universal.zip"
+      "file": "Morph-Launcher-Mac-1.1.313-universal.zip",
+      "bytes": 235719777,
+      "sha256": "5e1d270db7724f421cc9d44ac57e99ffa0e6f6054a2b39b2e591f96f9e4cab42",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.313/Morph-Launcher-Mac-1.1.313-universal.zip"
     }
   ],
   "limitations": [
-    "Physical Samsung/LG TV validation remains outstanding."
+    "Physical Samsung/LG TV validation remains outstanding.",
+    "Mac build is ad hoc signed, not Apple notarized."
   ]
 }

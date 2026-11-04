@@ -31,3 +31,10 @@ VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
 EXPOSE 80
 CMD ["/opt/morph-community/start.sh"]
+
+# Shared UI release 1.1.313; retain the previous published payloads.
+COPY Morph-TV-Android-TV-1.1.313.apk Morph-TV-LG-1.1.313.ipk Morph-TV-Samsung-Tizen2-1.1.313.wgt Morph-TV-Samsung-Tizen3-1.1.313.wgt Morph-TV-Samsung-Tizen4-1.1.313.wgt Morph-TV-Samsung-Tizen5-1.1.313.wgt Morph-IPTV-LG-1.1.313.ipk Morph-IPTV-tizen4-1.1.313.wgt Morph-IPTV-tizen5-1.1.313.wgt Morph-IPTV-tizen2-1.1.313.wgt Morph-IPTV-tizen3-1.1.313.wgt Morph-IPTV-Android-TV-1.1.313.apk Morph-TV-Legacy-1.1.313.apk Morph-IPTV-Legacy-1.1.313.apk Morph-TV-Install-Kit-1.1.313.zip /usr/share/nginx/html/
+COPY release-notes-1.1.313.json /usr/share/nginx/html/
+COPY releases/1.1.313/ /usr/share/nginx/html/releases/1.1.313/
+COPY artifact-parts/Morph-TV-Phone-1.1.313.apk.part-* /tmp/morph313-parts/
+RUN cat /tmp/morph313-parts/* > /usr/share/nginx/html/Morph-TV-Phone-1.1.313.apk && echo "a0155f63199e5d61a05b7558aca3b6d524cc83b965f92f8e6dcbcc06394bb94b  /usr/share/nginx/html/Morph-TV-Phone-1.1.313.apk" | sha256sum -c - && rm -rf /tmp/morph313-parts

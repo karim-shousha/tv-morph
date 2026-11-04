@@ -1,0 +1,18 @@
+{
+  "version": "1.1.313",
+  "readyToPublish": true,
+  "checksPassed": [
+    "15 packaged platform layout checks",
+    "Windows actual Electron UI and playback regression",
+    "Apple Silicon and Intel actual packaged Mac tests",
+    "Native Android launcher, IPTV header, phone UI and stock IME",
+    "Canonical shared receipts and paginated catalog equality",
+    "Package versions and signatures",
+    "Local nginx download routes and exact artifact hashes",
+    "Phone UI preservation and split payload reconstruction"
+  ],
+  "physicalSamsungLGVerified": false,
+  "legacyAndroid44PhysicalVerified": false,
+  "macNotarized": false,
+  "keyboardFixture": "Native TV input test passes at TV density160; unsupported phone-density run did not pass. Original probe restored before final passing run."
+}
