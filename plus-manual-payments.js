@@ -5,7 +5,7 @@
  panel.innerHTML='<h2></h2><p class="manual-plan"></p><p class="manual-term"></p><ol><li class="manual-transfer"></li><li class="manual-receipt"></li><li class="manual-activation"></li></ol><p class="manual-reference" dir="ltr"></p><div class="manual-actions"><a class="manual-pay" target="_blank" rel="noopener noreferrer"></a><a class="manual-email"></a></div><p class="manual-note"></p><p class="manual-address" dir="ltr">support@morph-tv.com</p>';
  grid.after(panel);
  function tr(ar,en,fr){return document.documentElement.lang==='ar'?ar:document.documentElement.lang==='fr'?fr:en;}
- function price(plan,method){return method==='instapay'?(plan==='family'?500:250):plans.plans[plan].usd/100;}
+ function price(plan,method){return method==='instapay'?(plan==='family'?250:120):plans.plans[plan].usd/100;}
  function title(plan){return plan==='family'?'Plus Family':'Plus';}
  function valid(){return !!(links&&plans&&plans.mode==='live'&&plans.enabled&&plans.offer&&plans.plans&&plans.plans.single&&plans.plans.family);}
  function reference(method,plan){var key='morph.plus.receipt-reference.'+method+'.'+plan,ref;try{ref=localStorage.getItem(key);}catch(e){}if(!ref){var bytes=new Uint8Array(6);crypto.getRandomValues(bytes);ref='MP-'+(method==='instapay'?'IP-':'PP-')+Array.from(bytes,function(b){return b.toString(16).padStart(2,'0');}).join('').toUpperCase();try{localStorage.setItem(key,ref);}catch(e){}}return ref;}
