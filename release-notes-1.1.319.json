@@ -1,0 +1,218 @@
+{
+  "version": "1.1.319",
+  "tv": {
+    "version": "1.1.319",
+    "versionCode": 346
+  },
+  "phone": {
+    "id": "phone",
+    "name": "Android Phone",
+    "available": true,
+    "version": "1.1.319",
+    "download": "/download/phone",
+    "noteAr": "واجهة الموبايل محفوظة.",
+    "noteEn": "Navy phone UI with separately scoped gold actions and current touch layouts.",
+    "channel": "preview",
+    "versionCode": 346
+  },
+  "iptv": {
+    "name": "Morph IPTV",
+    "version": "1.1.319",
+    "versionCode": 346,
+    "available": true,
+    "excluded": [
+      "VIDAA"
+    ],
+    "releases": [
+      {
+        "name": "Morph-IPTV-LG-1.1.319",
+        "file": "Morph-IPTV-LG-1.1.319.ipk",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "webos",
+        "bytes": 5471330,
+        "sha256": "9bbfd05fa1daf8e860b8b95dffd5d8bf6cb9429c7ab7eb069630b98272557ce9",
+        "download": "/download/iptv/lg"
+      },
+      {
+        "name": "Morph-IPTV-tizen4-1.1.319",
+        "file": "Morph-IPTV-tizen4-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "tizen4",
+        "bytes": 5497019,
+        "sha256": "f2f7922f1d0f4f423e1e13cc5dbd868903e00233c6e3aabb0147acc3d43d94d5",
+        "download": "/download/iptv/tizen4"
+      },
+      {
+        "name": "Morph-IPTV-tizen5-1.1.319",
+        "file": "Morph-IPTV-tizen5-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "tizen5",
+        "bytes": 5497020,
+        "sha256": "3bbd5289d0863c681c265342f21b378677fa398b6885f43b1eacd90a9ce448e7",
+        "download": "/download/iptv/tizen5"
+      },
+      {
+        "name": "Morph-IPTV-tizen2-1.1.319",
+        "file": "Morph-IPTV-tizen2-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "tizen2",
+        "bytes": 5570547,
+        "sha256": "a849399cefe4260e4fa6fda76947112986ec4f177dcb2c5b7e43c7bb529c6c6c",
+        "download": "/download/iptv/tizen2"
+      },
+      {
+        "name": "Morph-IPTV-tizen3-1.1.319",
+        "file": "Morph-IPTV-tizen3-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "tizen3",
+        "bytes": 5569582,
+        "sha256": "2337742a737674e7543615b3afe7205a894a1791048d4d36aef78b7a62b0ec46",
+        "download": "/download/iptv/tizen3"
+      },
+      {
+        "name": "Morph-IPTV-Android-TV-1.1.319",
+        "file": "Morph-IPTV-Android-TV-1.1.319.apk",
+        "version": "1.1.319",
+        "product": "iptv",
+        "target": "android",
+        "bytes": 16591437,
+        "sha256": "c4e86ffe871197e1bc1e43a5471454826df11cd5b9e223fd24cd67bfa788da7e",
+        "download": "/download/iptv/android",
+        "versionCode": 346
+      }
+    ],
+    "downloads": {
+      "webos": "/download/iptv/lg",
+      "tizen4": "/download/iptv/tizen4",
+      "tizen5": "/download/iptv/tizen5",
+      "tizen2": "/download/iptv/tizen2",
+      "tizen3": "/download/iptv/tizen3",
+      "android": "/download/iptv/android",
+      "android44": "/download/iptv/legacy"
+    },
+    "androidMinSdk": 26,
+    "physicalDeviceVerified": false,
+    "legacy": {
+      "name": "Morph-IPTV-Legacy-1.1.319",
+      "file": "Morph-IPTV-Legacy-1.1.319.apk",
+      "version": "1.1.319",
+      "product": "legacy-iptv",
+      "target": "android44",
+      "bytes": 369512,
+      "sha256": "4b8f40f3224b8c3127405e6c4bf62b4233fca8e1c4678171148d19e30cf05d9e",
+      "download": "/download/iptv/legacy",
+      "versionCode": 346,
+      "minSdk": 19,
+      "features": [
+        "M3U playlists",
+        "native playback",
+        "D-pad"
+      ],
+      "notIncluded": [
+        "Xtream account login",
+        "EPG",
+        "modern UI"
+      ]
+    }
+  },
+  "bridge": {
+    "version": "1.1.319",
+    "trialHours": 72,
+    "plusScope": "tv",
+    "phoneRequiresPlus": false,
+    "releases": [
+      {
+        "name": "Morph-Bridge-Android-TV-1.1.319",
+        "file": "Morph-Bridge-Android-TV-1.1.319.apk",
+        "version": "1.1.319",
+        "product": "bridge",
+        "target": "android",
+        "bytes": 1397581,
+        "sha256": "ed756a76b29733bb7d85b5703773d37e57666fd367c8d201bf71ecbbdf27b39b",
+        "download": "/download/bridge/android",
+        "versionCode": 5,
+        "trialHours": 72,
+        "plusScope": "tv",
+        "phoneRequiresPlus": false
+      },
+      {
+        "name": "Morph-Bridge-Samsung-1.1.319",
+        "file": "Morph-Bridge-Samsung-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "bridge",
+        "target": "samsung",
+        "bytes": 809326,
+        "sha256": "414625aa4aa607c7e727cad62aee3d02532f1b5106b0207a6fa1082e62b2bc46",
+        "download": "/download/bridge/samsung",
+        "trialHours": 72,
+        "plusScope": "tv",
+        "phoneRequiresPlus": false
+      },
+      {
+        "name": "Morph-Bridge-LG-1.1.319",
+        "file": "Morph-Bridge-LG-1.1.319.ipk",
+        "version": "1.1.319",
+        "product": "bridge",
+        "target": "webos",
+        "bytes": 808428,
+        "sha256": "dfd7aa5d21c59a5b40d87c55b67666436aa0b2d6b28b1f8ec3702cffdaa6e526",
+        "download": "/download/bridge/lg",
+        "trialHours": 72,
+        "plusScope": "tv",
+        "phoneRequiresPlus": false
+      }
+    ]
+  },
+  "cleaner": {
+    "version": "1.1.319",
+    "selectionRequired": true,
+    "reviewRequired": true,
+    "access": "operating-system permissions",
+    "releases": [
+      {
+        "name": "Cleaner-Android-1.1.319",
+        "file": "Cleaner-Android-1.1.319.apk",
+        "version": "1.1.319",
+        "product": "cleaner",
+        "target": "android",
+        "bytes": 29374,
+        "sha256": "94873569a67e2f4f920d8da54745767915d8ac263ac673e7008cf38fcbdb10d3",
+        "download": "/download/cleaner/android",
+        "versionCode": 346
+      },
+      {
+        "name": "Cleaner-Samsung-Tizen2-and-newer-1.1.319",
+        "file": "Cleaner-Samsung-Tizen2-and-newer-1.1.319.wgt",
+        "version": "1.1.319",
+        "product": "cleaner",
+        "target": "samsung",
+        "bytes": 40122,
+        "sha256": "716f22aade6901e573c419a997eaedeae120ed70db823a27186044b7f7324767",
+        "download": "/download/cleaner/samsung"
+      },
+      {
+        "name": "Cleaner-LG-1.1.319",
+        "file": "Cleaner-LG-1.1.319.ipk",
+        "version": "1.1.319",
+        "product": "cleaner",
+        "target": "webos",
+        "bytes": 27698,
+        "sha256": "82939498045e2b4182e1f925b2e51865461440631b667b23032090bf1fccac28",
+        "download": "/download/cleaner/lg"
+      }
+    ]
+  },
+  "changes": [
+    "Shared canonical IPTV frontend across embedded, standalone and phone editions; phone-only presentation remains separate.",
+    "Old-TV Bridge and Radio layout corrections, circular dock focus and opaque loading cover for Samsung and LG.",
+    "Cleaner: real accessible-file scans, hidden-file labels, manual selection, exact-file revalidation and explicit final confirmation; platform permissions apply.",
+    "Bridge phone trial/Plus notices use TV entitlement, not phone Studio Plus.",
+    "Six product pages: Launcher, IPTV, Bridge, Cleaner, Desktop and Morph TV for Android phones. Clear WGT download and installation steps.",
+    "Android 4.4 remains a reduced native M3U edition. Physical compatibility varies by TV model. VIDAA excluded."
+  ]
+}

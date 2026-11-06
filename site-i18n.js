@@ -496,7 +496,8 @@ Connected. واتحكم فورًا.|Connected. Start controlling.
 تحميل MorphTV للموبايل|Download MorphTV for mobile
 `;
 const legacyReleaseCopy=`نسخة خفيفة · قوائم M3U وتشغيل أساسي|Lightweight edition · M3U playlists and basic playback`;
-const translations=new Map((englishCopy+'\n'+legacyReleaseCopy).trim().split('\n').map(line=>line.split('|')).filter(([ar,en])=>ar.length>0&&typeof en==='string'));
+const productFeatureCopy='\nشغّل تطبيقات موبايلك على التلفزيون وتحكم بالريموت. تجربة ٣ أيام، ثم Plus على التلفزيون.|Run your phone apps on TV with remote controls. A 3-day trial, then TV Plus.\nراجع الملفات المتاحة وأحجامها، واختر ما تريد حذفه بعد مراجعة نهائية.|Review accessible files and sizes, then confirm exactly what you want to delete.';
+const translations=new Map((englishCopy+'\n'+legacyReleaseCopy+productFeatureCopy).trim().split('\n').map(line=>line.split('|')).filter(([ar,en])=>ar.length>0&&typeof en==='string'));
 const orderedTranslations=[...translations].sort((a,b)=>b[0].length-a[0].length);
 let siteLanguage=localStorage.getItem('morph.preview.language')==='en'?'en':'ar';
 const originalText=new WeakMap(),originalAttributes=new WeakMap();
