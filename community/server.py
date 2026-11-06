@@ -227,7 +227,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def get(self):
         path = urlsplit(self.path).path
-        if path.startswith('/download/') or re.fullmatch(r'/Morph-(?:TV|IPTV|Bridge)-[A-Za-z0-9.\-]+\.(apk|ipk|wgt)', path):
+        if path.startswith('/download/') or re.fullmatch(r'/(?:Morph-(?:TV|IPTV|Bridge)|Cleaner)-[A-Za-z0-9.\-]+\.(apk|ipk|wgt)', path):
             return self.download(path)
         if path == '/api/community/health':
             with database() as db:
@@ -289,7 +289,7 @@ class Handler(BaseHTTPRequestHandler):
         current_name = 'Morph-TV-' + platform + '-' + str(version) if platform and version else ''
         current_file = catalog.get('downloads', {}).get(route)
         entry = next((row for row in catalog['releases'] if (current_file and row['file'] == current_file) or (platform and row['name'] == current_name) or ('/' + row['file'] == path)), None)
-        if not entry or not re.fullmatch(r'Morph-(?:TV|IPTV|Bridge)-[A-Za-z0-9.\-]+\.(apk|ipk|wgt)', entry['file']):
+        if not entry or not re.fullmatch(r'(?:Morph-(?:TV|IPTV|Bridge)|Cleaner)-[A-Za-z0-9.\-]+\.(apk|ipk|wgt)', entry['file']):
             return self.send_json(404, {'error': 'not_found'})
         artifact = ROOT / entry['file']
         if not artifact.is_file() or artifact.stat().st_size != entry['bytes']:
