@@ -212,3 +212,19 @@ releases/*
 !releases/1.1.318/**
 
 !site-bridge-downloads.js
+
+# Only the current release is shipped; old payloads remain in Git history.
+Morph-*-1.1.*.apk
+Morph-*-1.1.*.wgt
+Morph-*-1.1.*.ipk
+Morph-*-1.1.*.zip
+artifact-parts/**
+releases/**
+!Morph-*-1.1.318.apk
+!Morph-*-1.1.318.wgt
+!Morph-*-1.1.318.ipk
+!Morph-*-1.1.318.zip
+!Morph-Remote-1.1.305.apk
+!artifact-parts/Morph-TV-Phone-1.1.318.apk.part-*
+!releases/1.1.318/
+!releases/1.1.318/**
