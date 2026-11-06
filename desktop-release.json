@@ -1,29 +1,30 @@
 {
-  "version": "1.1.319",
-  "reviewBuild": 346,
+  "version": "1.1.320",
+  "reviewBuild": 347,
   "windowsVerified": true,
   "macAppleSiliconVerified": true,
   "macIntelVerified": true,
-  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42181429838",
-  "source": "0e0f69dd1437bbdc14b33cf6ec42db44010f4744",
+  "cleanerPackagedNativeVerified": true,
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42184912617",
+  "source": "d9b2aa508e8e89afb850e7f44cccf3ffb7f686f5",
   "assets": [
     {
-      "file": "Morph-Launcher-PC-1.1.319-Setup.exe",
-      "bytes": 138981886,
-      "sha256": "567aa417694fa0c484180ee2853925ab37b3ea64dd023c4ec014563b2a394a97",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.319/Morph-Launcher-PC-1.1.319-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.320-Setup.exe",
+      "bytes": 138982432,
+      "sha256": "fdb3e1e82a9a681843f1a3d40c8641856949c3c61aea184f4b511bd541002886",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.320/Morph-Launcher-PC-1.1.320-Setup.exe"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.319-universal.dmg",
-      "bytes": 243480529,
-      "sha256": "58cb4e914f6b5e3051ab99ef5c177a93fe7c1ba2de90d85bc84ede1092f79cb5",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.319/Morph-Launcher-Mac-1.1.319-universal.dmg"
+      "file": "Morph-Launcher-Mac-1.1.320-universal.dmg",
+      "bytes": 243480466,
+      "sha256": "4d8c8b0770f9c9a31d07d7ce29ddd98fec27cbc2dbedaa7875d781143ead1364",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.320/Morph-Launcher-Mac-1.1.320-universal.dmg"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.319-universal.zip",
-      "bytes": 235844453,
-      "sha256": "68caf8e1c3e3a4bb9ee39007663b2f0c65a05c4a1a4bb3a7e6436c808faccc43",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.319/Morph-Launcher-Mac-1.1.319-universal.zip"
+      "file": "Morph-Launcher-Mac-1.1.320-universal.zip",
+      "bytes": 235844561,
+      "sha256": "520a66f58cdf83b24bb14662251e338f62d3af269333d8ede78cf94c429c7d8a",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.320/Morph-Launcher-Mac-1.1.320-universal.zip"
     }
   ]
 }

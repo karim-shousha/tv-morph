@@ -209,7 +209,7 @@ releases/*
 !Morph-Bridge-LG-1.1.318.ipk
 !Morph-TV-Install-Kit-1.1.318.zip
 !release-notes-1.1.318.json
-!releases/1.1.319/**
+!releases/1.1.320/**
 
 !site-bridge-downloads.js
 
@@ -220,14 +220,14 @@ Morph-*-1.1.*.ipk
 Morph-*-1.1.*.zip
 artifact-parts/**
 releases/**
-!Morph-*-1.1.319.apk
-!Morph-*-1.1.319.wgt
-!Morph-*-1.1.319.ipk
-!Morph-*-1.1.319.zip
+!Morph-*-1.1.320.apk
+!Morph-*-1.1.320.wgt
+!Morph-*-1.1.320.ipk
+!Morph-*-1.1.320.zip
 !Morph-Remote-1.1.305.apk
-!artifact-parts/Morph-TV-Phone-1.1.319.apk.part-*
-!releases/1.1.319/
-!releases/1.1.319/**
+!artifact-parts/Morph-TV-Phone-1.1.320.apk.part-*
+!releases/1.1.320/
+!releases/1.1.320/**
 
 !product-pages.js
 !product-pages.css
@@ -236,3 +236,13 @@ releases/**
 !Cleaner-Android-1.1.319.apk
 !Cleaner-Samsung-Tizen2-and-newer-1.1.319.wgt
 !Cleaner-LG-1.1.319.ipk
+
+!release-notes-1.1.320.json
+!Cleaner-Android-1.1.320.apk
+!Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt
+!Cleaner-LG-1.1.320.ipk
+
+!release-notes-1.1.320.json
+!Cleaner-Android-1.1.320.apk
+!Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt
+!Cleaner-LG-1.1.320.ipk

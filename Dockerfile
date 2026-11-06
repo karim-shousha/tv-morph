@@ -1,7 +1,7 @@
 FROM alpine:3.22 AS phone-artifact
 WORKDIR /parts
-COPY artifact-parts/Morph-TV-Phone-1.1.319.apk.part-* ./
-RUN cat ./* > /Morph-TV-Phone-1.1.319.apk && echo "7c728b48a813c5174c1a5a21fb42ac7c753ebbf55d3464593f845088ae5f7125  /Morph-TV-Phone-1.1.319.apk" | sha256sum -c -
+COPY artifact-parts/Morph-TV-Phone-1.1.320.apk.part-* ./
+RUN cat ./* > /Morph-TV-Phone-1.1.320.apk && echo "910d4a8e3408cacebc2fb860da6637128bed5e64db3c39ccdbd6a9866be28c0e  /Morph-TV-Phone-1.1.320.apk" | sha256sum -c -
 
 FROM nginx:stable-alpine
 RUN apk add --no-cache python3
@@ -22,7 +22,7 @@ COPY release-notes-1.1.308.json /usr/share/nginx/html/
 COPY plus-manual-payments.js release-notes-phone-1.1.309.json /usr/share/nginx/html/
 COPY release-notes-1.1.310.json /usr/share/nginx/html/
 COPY release-notes-1.1.312.json /usr/share/nginx/html/
-COPY --from=phone-artifact /Morph-TV-Phone-1.1.319.apk /usr/share/nginx/html/
+COPY --from=phone-artifact /Morph-TV-Phone-1.1.320.apk /usr/share/nginx/html/
 RUN nginx -t
 VOLUME /data
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s CMD python3 -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1/api/community/health', timeout=3).read()" || exit 1
@@ -31,9 +31,9 @@ CMD ["/opt/morph-community/start.sh"]
 
 COPY release-notes-1.1.313.json /usr/share/nginx/html/
 
-COPY Morph-TV-Android-TV-1.1.319.apk Morph-TV-LG-1.1.319.ipk Morph-TV-Samsung-Tizen2-1.1.319.wgt Morph-TV-Samsung-Tizen3-1.1.319.wgt Morph-TV-Samsung-Tizen4-1.1.319.wgt Morph-TV-Samsung-Tizen5-1.1.319.wgt Morph-IPTV-LG-1.1.319.ipk Morph-IPTV-tizen4-1.1.319.wgt Morph-IPTV-tizen5-1.1.319.wgt Morph-IPTV-tizen2-1.1.319.wgt Morph-IPTV-tizen3-1.1.319.wgt Morph-IPTV-Android-TV-1.1.319.apk Morph-TV-Legacy-1.1.319.apk Morph-IPTV-Legacy-1.1.319.apk Morph-Bridge-Android-TV-1.1.319.apk Morph-Bridge-Samsung-1.1.319.wgt Morph-Bridge-LG-1.1.319.ipk Cleaner-Android-1.1.319.apk Cleaner-Samsung-Tizen2-and-newer-1.1.319.wgt Cleaner-LG-1.1.319.ipk Morph-TV-Install-Kit-1.1.319.zip /usr/share/nginx/html/
-COPY release-notes-1.1.319.json /usr/share/nginx/html/
-COPY releases/1.1.319/ /usr/share/nginx/html/releases/1.1.319/
+COPY Morph-TV-Android-TV-1.1.320.apk Morph-TV-LG-1.1.320.ipk Morph-TV-Samsung-Tizen2-1.1.320.wgt Morph-TV-Samsung-Tizen3-1.1.320.wgt Morph-TV-Samsung-Tizen4-1.1.320.wgt Morph-TV-Samsung-Tizen5-1.1.320.wgt Morph-IPTV-LG-1.1.320.ipk Morph-IPTV-tizen4-1.1.320.wgt Morph-IPTV-tizen5-1.1.320.wgt Morph-IPTV-tizen2-1.1.320.wgt Morph-IPTV-tizen3-1.1.320.wgt Morph-IPTV-Android-TV-1.1.320.apk Morph-TV-Legacy-1.1.320.apk Morph-IPTV-Legacy-1.1.320.apk Morph-Bridge-Android-TV-1.1.320.apk Morph-Bridge-Samsung-1.1.320.wgt Morph-Bridge-LG-1.1.320.ipk Cleaner-Android-1.1.320.apk Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt Cleaner-LG-1.1.320.ipk Morph-TV-Install-Kit-1.1.320.zip /usr/share/nginx/html/
+COPY release-notes-1.1.320.json /usr/share/nginx/html/
+COPY releases/1.1.320/ /usr/share/nginx/html/releases/1.1.320/
 
 COPY site-bridge-downloads.js /usr/share/nginx/html/
 
