@@ -38,3 +38,12 @@ COPY release-notes-1.1.313.json /usr/share/nginx/html/
 COPY releases/1.1.313/ /usr/share/nginx/html/releases/1.1.313/
 COPY artifact-parts/Morph-TV-Phone-1.1.313.apk.part-* /tmp/morph313-parts/
 RUN cat /tmp/morph313-parts/* > /usr/share/nginx/html/Morph-TV-Phone-1.1.313.apk && echo "a0155f63199e5d61a05b7558aca3b6d524cc83b965f92f8e6dcbcc06394bb94b  /usr/share/nginx/html/Morph-TV-Phone-1.1.313.apk" | sha256sum -c - && rm -rf /tmp/morph313-parts
+
+# Shared UI release 1.1.318; retain the previous published payloads.
+COPY Morph-TV-Android-TV-1.1.318.apk Morph-TV-LG-1.1.318.ipk Morph-TV-Samsung-Tizen2-1.1.318.wgt Morph-TV-Samsung-Tizen3-1.1.318.wgt Morph-TV-Samsung-Tizen4-1.1.318.wgt Morph-TV-Samsung-Tizen5-1.1.318.wgt Morph-IPTV-LG-1.1.318.ipk Morph-IPTV-tizen4-1.1.318.wgt Morph-IPTV-tizen5-1.1.318.wgt Morph-IPTV-tizen2-1.1.318.wgt Morph-IPTV-tizen3-1.1.318.wgt Morph-IPTV-Android-TV-1.1.318.apk Morph-TV-Legacy-1.1.318.apk Morph-IPTV-Legacy-1.1.318.apk Morph-Bridge-Android-TV-1.1.318.apk Morph-Bridge-Samsung-1.1.318.wgt Morph-Bridge-LG-1.1.318.ipk Morph-TV-Install-Kit-1.1.318.zip /usr/share/nginx/html/
+COPY release-notes-1.1.318.json /usr/share/nginx/html/
+COPY releases/1.1.318/ /usr/share/nginx/html/releases/1.1.318/
+COPY artifact-parts/Morph-TV-Phone-1.1.318.apk.part-* /tmp/morph318-parts/
+RUN cat /tmp/morph318-parts/* > /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk && echo "c5381dc741e36eb7b9ccf610892debd19138a422be4790b6c810a6fb51fc93c6  /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk" | sha256sum -c - && rm -rf /tmp/morph318-parts
+
+COPY site-bridge-downloads.js /usr/share/nginx/html/
