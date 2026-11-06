@@ -44,6 +44,6 @@ COPY Morph-TV-Android-TV-1.1.318.apk Morph-TV-LG-1.1.318.ipk Morph-TV-Samsung-Ti
 COPY release-notes-1.1.318.json /usr/share/nginx/html/
 COPY releases/1.1.318/ /usr/share/nginx/html/releases/1.1.318/
 COPY artifact-parts/Morph-TV-Phone-1.1.318.apk.part-* /tmp/morph318-parts/
-RUN cat /tmp/morph318-parts/* > /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk && echo "c5381dc741e36eb7b9ccf610892debd19138a422be4790b6c810a6fb51fc93c6  /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk" | sha256sum -c - && rm -rf /tmp/morph318-parts
+RUN cat /tmp/morph318-parts/* > /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk && echo "43b21185d22f62442fc7761f3a1653716cb76cf7db1ce7db494ca9adb06c1b02  /usr/share/nginx/html/Morph-TV-Phone-1.1.318.apk" | sha256sum -c - && rm -rf /tmp/morph318-parts
 
 COPY site-bridge-downloads.js /usr/share/nginx/html/

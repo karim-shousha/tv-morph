@@ -2,7 +2,7 @@
   "version": "1.1.318",
   "tv": {
     "version": "1.1.318",
-    "versionCode": 341
+    "versionCode": 342
   },
   "phone": {
     "id": "phone",
@@ -13,12 +13,12 @@
     "noteAr": "واجهة الموبايل محفوظة.",
     "noteEn": "Navy phone UI with separately scoped gold actions and current touch layouts.",
     "channel": "preview",
-    "versionCode": 341
+    "versionCode": 342
   },
   "iptv": {
     "name": "Morph IPTV",
     "version": "1.1.318",
-    "versionCode": 341,
+    "versionCode": 342,
     "available": true,
     "excluded": [
       "VIDAA"
@@ -78,11 +78,11 @@
         "name": "Morph-IPTV-Android-TV-1.1.318",
         "file": "Morph-IPTV-Android-TV-1.1.318.apk",
         "version": "1.1.318",
-        "versionCode": 341,
+        "versionCode": 342,
         "product": "iptv",
         "target": "android",
         "bytes": 16587341,
-        "sha256": "b537b82d9debf3b99b86549c96a0e54364121eced1815b907cf9506a91a0eb65",
+        "sha256": "68536916f52103d28ebf0979a1f7718403971f4bd5b5223fca2975207d0a9f63",
         "download": "/download/iptv/android"
       }
     ],
