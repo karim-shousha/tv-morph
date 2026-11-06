@@ -1,9 +1,9 @@
 {
   "file": "morph-desktop-runtime.zip",
-  "bytes": 14459775,
-  "sha256": "68388236e7885ffdd11b01be3c619555cd0286c5ac8259af44ee812400b09902",
-  "version": "1.1.319",
+  "bytes": 14461051,
+  "sha256": "12e72c16cfe65cf38a8a2230bb3e9050a8fe77b00669f654f5f6aab7846bd1ff",
+  "version": "1.1.320",
   "canonicalLauncher": "tv-project/app",
   "embeddedIptv": "android-tv/iptv",
-  "cleaner": "shared real-file adapter and explicit selection/review"
+  "cleaner": "Native file scan and explicit selected delete; catalog boot-order and packaged native IPC regression"
 }
