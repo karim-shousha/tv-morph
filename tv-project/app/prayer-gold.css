@@ -1,5 +1,5 @@
 /* Gold mosque reference layout. Static light effects; all content remains live and localized. */
-html body section#prayer-screen#prayer-screen.prayer-gold{inset:0!important;width:100%!important;height:100%!important;overflow:hidden!important;background:#061a2e url("assets/prayer-courtyard-dusk-v2.webp") center/cover no-repeat!important;color:#f7f5ef!important;--prayer-gold:var(--prayer-theme-accent,#8aaeff);--prayer-unit:1}
+html body section#prayer-screen#prayer-screen.prayer-gold{inset:0!important;width:100%!important;height:100%!important;overflow:hidden!important;background:#061a2e url("assets/prayer-page-user-v1.webp") center/cover no-repeat!important;color:#f7f5ef!important;--prayer-gold:var(--prayer-theme-accent,#8aaeff);--prayer-unit:1}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-content{position:relative!important;width:100%!important;max-width:none!important;height:100%!important;max-height:none!important;padding:0!important;margin:0!important;overflow:hidden!important;box-sizing:border-box}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-header{position:static!important;display:block!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;background:none!important;border:0!important}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-topbar{display:block!important;height:0!important;min-height:0!important;margin:0!important}
@@ -105,7 +105,7 @@ html body section#prayer-screen#prayer-screen.prayer-gold #prayer-actions button
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-actions button>svg.prayer-action-icon{display:block!important;width:55%!important;height:55%!important;margin:auto!important;color:inherit;pointer-events:none}
 
 /* Approved glass mosque presentation: static vector frames and translucent fills. */
-html body section#prayer-screen#prayer-screen.prayer-gold{background:#061a2e url("assets/prayer-courtyard-dusk-v2.webp") center/cover no-repeat!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold{background:#061a2e url("assets/prayer-page-user-v1.webp") center/cover no-repeat!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-overview{left:11.5%!important;width:77%!important;top:22%!important;height:32.5%!important;background:url("assets/prayer-glass-overview.svg") center/100% 100% no-repeat!important;border:0!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-clock{flex-basis:39%!important;width:39%!important;height:79%!important;padding:calc(8px * var(--prayer-unit)) calc(28px * var(--prayer-unit))!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-upcoming{width:61%!important;padding:calc(16px * var(--prayer-unit)) calc(22px * var(--prayer-unit))!important;}
@@ -158,12 +158,12 @@ html body section#prayer-screen#prayer-screen.prayer-gold #prayer-hijri:before{c
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-next-adhan:before{content:""!important;display:inline-block!important;width:calc(25px * var(--prayer-unit))!important;height:calc(25px * var(--prayer-unit))!important;vertical-align:middle!important;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221.8%22%3E%3Cpath%20d%3D%22M4%209h4l5-5v16l-5-5H4ZM17%208c3%202%203%206%200%208%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat!important;}
 
 /* Approved Prayer reference: centered overview, vertical glass and gold next-prayer accent. */
-html body section#prayer-screen#prayer-screen.prayer-gold .prayer-overview{left:21%!important;width:58%!important;top:24%!important;height:27%!important;background:linear-gradient(180deg,rgba(27,47,68,.72),rgba(13,31,49,.62))!important;border:1px solid rgba(230,236,244,.64)!important;border-radius:calc(56px * var(--prayer-unit))!important;box-shadow:inset 0 -1px 0 rgba(239,204,138,.75)!important;overflow:hidden!important;}
-html body section#prayer-screen#prayer-screen.prayer-gold .prayer-clock{flex:0 0 50%!important;width:50%!important;height:78%!important;padding:0 calc(24px * var(--prayer-unit))!important;align-items:flex-end!important;text-align:right!important;border-right:1px solid rgba(255,255,255,.4)!important;}
-html body section#prayer-screen#prayer-screen.prayer-gold .prayer-upcoming{flex:1 1 50%!important;width:50%!important;height:100%!important;padding:calc(12px * var(--prayer-unit)) calc(20px * var(--prayer-unit))!important;}
-html body section#prayer-screen#prayer-screen.prayer-gold #prayer-clock{justify-content:flex-end!important;color:#ffffff!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold .prayer-overview{left:24%!important;width:52%!important;top:24%!important;height:27%!important;background:linear-gradient(180deg,rgba(27,47,68,.72),rgba(13,31,49,.62))!important;border:1px solid rgba(230,236,244,.64)!important;border-radius:calc(56px * var(--prayer-unit))!important;box-shadow:inset 0 -1px 0 rgba(239,204,138,.75)!important;overflow:hidden!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold .prayer-clock{flex:0 0 46%!important;width:46%!important;height:78%!important;padding:0 calc(16px * var(--prayer-unit))!important;align-items:center!important;text-align:center!important;border-right:1px solid rgba(255,255,255,.4)!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold .prayer-upcoming{flex:1 1 54%!important;width:54%!important;height:100%!important;padding:calc(12px * var(--prayer-unit)) calc(20px * var(--prayer-unit))!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold #prayer-clock{justify-content:center!important;color:#ffffff!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-clock-label{color:#ffffff!important;}
-html body section#prayer-screen#prayer-screen.prayer-gold #prayer-date,html body section#prayer-screen#prayer-screen.prayer-gold #prayer-hijri{justify-content:flex-end!important;text-align:right!important;color:#ffffff!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold #prayer-date,html body section#prayer-screen#prayer-screen.prayer-gold #prayer-hijri{justify-content:center!important;text-align:center!important;color:#ffffff!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-next,html body section#prayer-screen#prayer-screen.prayer-gold #prayer-next-name,html body section#prayer-screen#prayer-screen.prayer-gold .prayer-gold-next-icon{color:#a9c8ff!important;filter:none!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-countdown{width:88%!important;height:23%!important;background:linear-gradient(180deg,rgba(192,154,99,.9),rgba(82,68,48,.72))!important;border:1px solid #f2d3a0!important;color:#ffffff!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-countdown{color:#fff9e9!important;}
@@ -177,10 +177,14 @@ html body section#prayer-screen#prayer-screen.prayer-gold .prayer-time-heading{f
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-time-heading svg{color:#f1d8a3!important;flex:none!important;width:calc(54px * var(--prayer-unit))!important;height:calc(44px * var(--prayer-unit))!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-time-heading span{text-align:center!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-time strong{flex:1 1 auto!important;height:auto!important;}
-html body section#prayer-screen#prayer-screen.prayer-gold #prayer-dua{left:5.8%!important;width:88.4%!important;top:77%!important;height:16.5%!important;max-height:16.5%!important;background:linear-gradient(180deg,rgba(26,46,66,.75),rgba(13,31,49,.7))!important;border:1px solid rgba(219,232,243,.6)!important;border-radius:calc(38px * var(--prayer-unit))!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold #prayer-dua{left:5.8%!important;width:88.4%!important;top:77%!important;height:16.5%!important;max-height:16.5%!important;background:url("assets/prayer-gold-dua-frame.svg") center/100% 100% no-repeat!important;border:0!important;border-radius:0!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold *{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;}
 
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-content{background:none!important;text-shadow:none!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold #prayer-next{font-size:calc(26px * var(--prayer-font-unit,var(--prayer-unit)))!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-gold-next-icon{flex-basis:calc(92px * var(--prayer-unit))!important;width:calc(92px * var(--prayer-unit))!important;height:calc(84px * var(--prayer-unit))!important;}
 html body section#prayer-screen#prayer-screen.prayer-gold .prayer-upcoming-heading{height:36%!important;}
+
+/* Restore the dark mosque/wave setting and suppress only the routine cache notice. */
+html body section#prayer-screen#prayer-screen.prayer-gold{background-image:linear-gradient(180deg,rgba(3,12,24,.28),rgba(3,12,24,.36)),url("assets/prayer-page-user-v1.webp")!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;}
+html body section#prayer-screen#prayer-screen.prayer-gold #prayer-error[data-prayer-cache=true]{display:none!important;}
