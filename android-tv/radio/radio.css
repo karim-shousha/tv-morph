@@ -104,3 +104,8 @@ html#radio-root .radio-search input:focus{outline:none!important}
 html#radio-root .radio-search.radio-search-focused{border:3px solid var(--reference-accent-light,#f8eddc)!important;padding-inline:20px!important;outline:none!important}
 
 html,body,header,main,.now-playing,.station-library{animation:none!important;transition:none!important}
+
+/* Navigation uses the shared white ink; playback focus uses the shared action fill. */
+html#radio-root #filters button,html#radio-root #filters button.active,html#radio-root #filters button span,html#radio-root #filters button svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:var(--ui-navigation-text,#ffffff)!important;opacity:1!important;}
+html#radio-root #filters button.active{border-color:var(--ui-focus-ring,rgba(226,213,191,.8))!important;}
+html#radio-root .radio-player-transport #toggle:focus,html#radio-root .radio-player-transport #toggle:hover{background:var(--ui-button-gradient,var(--reference-action-gradient))!important;color:var(--ui-button-text,#ffffff)!important;-webkit-text-fill-color:var(--ui-button-text,#ffffff)!important;}
