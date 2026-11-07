@@ -1,5 +1,7 @@
 /* Preview-only geometry, on the same 1920 x 1080 launcher canvas as the reference. */
 html body#reference-preview#reference-preview#reference-preview{font-family:Arial,sans-serif!important;background:var(--reference-page-background) center/cover no-repeat,var(--reference-bg)!important;color:#f5f5f1!important;}
+/* Home artwork stays on Home; internal pages keep the shared dark backdrop. */
+html body#reference-preview#reference-preview#reference-preview[data-ui-home=true]{background:var(--reference-home-page-background,var(--reference-page-background)) center/cover no-repeat,var(--reference-bg)!important;}
 #reference-background{display:none!important;}
 body#reference-preview#reference-preview#reference-preview>.landscape,body#reference-preview#reference-preview#reference-preview>.club-watermark{display:none!important;}
 body#reference-preview#reference-preview#reference-preview main{position:relative!important;z-index:1!important;padding:0!important;background:transparent!important;}

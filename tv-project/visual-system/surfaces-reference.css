@@ -1,4 +1,9 @@
 /* Shared theme surfaces for prayer, informational cards and all launcher dialogs. */
+/* Theme packs use the same settings material, including its configured opacity. */
+html body#reference-preview#reference-preview#reference-preview #theme-packs-overlay .pack-dialog{background:var(--ui-glass-settings,var(--ui-glass-panel))!important;color:var(--ui-text)!important;border:1px solid rgba(var(--reference-rim-rgb),.18)!important;box-shadow:none!important;}
+html body#reference-preview#reference-preview#reference-preview #theme-packs-overlay .pack-row{background:var(--ui-glass-card,var(--reference-glass))!important;border-color:rgba(var(--reference-rim-rgb),.18)!important;}
+html body#reference-preview#reference-preview#reference-preview #theme-packs-overlay button{background:var(--ui-glass-control,var(--reference-glass))!important;color:var(--ui-text)!important;border-color:rgba(var(--reference-rim-rgb),.26)!important;}
+html body#reference-preview#reference-preview#reference-preview #theme-packs-overlay button:focus{background:var(--reference-focus)!important;outline-color:var(--reference-focus-stroke)!important;}
 html body#reference-preview#reference-preview#reference-preview #view-home #pc-home-summary{background:var(--ui-glass-card,var(--reference-glass))!important;}
 html body#reference-preview#reference-preview#reference-preview #view-settings#view-settings#view-settings{--ui-control-bg:rgba(var(--reference-surface-rgb),.36)!important;--ui-border:rgba(var(--reference-rim-rgb),.2)!important;--ui-card-bg:var(--reference-glass)!important;}
 html body#reference-preview#reference-preview#reference-preview #view-settings#view-settings#view-settings :is(.settings-inline-info,.settings-developer-names strong){position:relative!important;background:var(--ui-glass-card,var(--reference-glass))!important;border:1px solid rgba(var(--reference-rim-rgb),.18)!important;border-radius:18px!important;box-shadow:none!important;}
