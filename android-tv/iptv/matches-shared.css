@@ -71,3 +71,37 @@ html:not(#iptv-theme-root) body.matches-open #view-matches{top:115px;left:175px;
 #view-matches .matches-empty h2{font-size:30px;color:#fff;margin:0 0 14px;}
 #view-matches .matches-empty p{font-size:20px;line-height:1.5;color:#c4d5e8;margin:0;}
 #view-matches .matches-footer{font-size:16px;color:#bfcee0;}
+
+/* Sports reference presentation. Same semantic glass, white ink and shared focus controller. */
+html:not(#iptv-theme-root) body.matches-open #morph-header{display:none!important;}
+html:not(#iptv-theme-root) body.matches-open #view-matches#view-matches{inset:0!important;width:1920px!important;height:1080px!important;max-height:none!important;padding:34px 46px 28px!important;border:0!important;border-radius:0!important;}
+html body #view-matches#view-matches{background-color:var(--ui-bg,#07101e)!important;background-image:var(--ui-canvas-scrim,linear-gradient(transparent,transparent)),url("assets/matches-stadium-v1.webp")!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;color:var(--ui-navigation-text,#fff)!important;box-sizing:border-box!important;overflow:auto!important;}
+html body #view-matches#view-matches:not([hidden]){display:flex!important;flex-direction:column!important;gap:0!important;}
+html body #view-matches#view-matches .matches-heading{min-height:82px;flex:0 0 auto;gap:18px;margin:0 0 18px;}
+html body #view-matches#view-matches .matches-heading>div:first-of-type{flex:1;min-width:0;}
+html body #view-matches#view-matches .matches-heading h1{font-size:44px;line-height:1.2;margin:0 0 6px;}
+#view-matches .matches-symbol{display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;color:var(--ui-accent,#8aaeff);}
+#view-matches .matches-symbol svg{width:100%;height:100%;}
+#view-matches .matches-heading>.matches-symbol{flex-basis:66px;width:66px;height:66px;padding:12px;box-sizing:border-box;border:1px solid var(--ui-card-border);border-radius:18px;background:var(--ui-glass-control);color:#fff;}
+html body #view-matches#view-matches button:not(.match-row){background:var(--ui-glass-control)!important;color:var(--ui-navigation-text,#fff)!important;border:1px solid var(--ui-card-border)!important;border-radius:999px!important;box-shadow:none!important;}
+html body #view-matches#view-matches button[aria-pressed=true]{background:var(--ui-button-gradient)!important;color:var(--ui-button-text,#fff)!important;border-color:var(--ui-nav-focus-ring)!important;}
+html body #view-matches#view-matches .matches-overview{flex:0 0 auto;gap:18px;margin:0 0 18px;}
+html body #view-matches#view-matches .matches-overview>button{background:var(--ui-glass-panel)!important;border-radius:24px!important;min-width:280px;min-height:76px;padding:12px 22px;gap:18px;}
+html body #view-matches#view-matches .matches-overview strong{color:var(--ui-info-text,#fff);font-size:40px;}
+html body #view-matches#view-matches .matches-feed-status{flex:0 1 510px;color:var(--ui-text-muted);font-size:18px;}
+html body #view-matches#view-matches .matches-toolbar{flex:0 0 auto;margin:0 0 14px;min-height:58px;}
+html body #view-matches#view-matches .matches-teams{flex:0 0 auto;max-height:116px;overflow:auto;padding:6px 4px;gap:10px;margin:0 0 8px;scroll-padding:6px;}
+html body #view-matches#view-matches .matches-teams button{font-size:18px;min-height:44px;padding:8px 16px;}
+html body #view-matches#view-matches .matches-list{flex:1 0 440px;min-height:0;gap:12px;margin:12px 0 18px;}
+html body #view-matches#view-matches button.match-row{position:relative;isolation:isolate;overflow:hidden;flex:1 0 108px;min-height:108px;padding:10px 28px;background:linear-gradient(145deg,rgba(255,255,255,.045),transparent 42%),var(--ui-glass-panel)!important;border:1px solid var(--ui-card-border)!important;border-radius:22px!important;color:var(--ui-info-text,#fff)!important;}
+#view-matches button.match-row::before{content:'';position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,transparent,var(--ui-accent),transparent);opacity:.6;pointer-events:none;}
+html body #view-matches#view-matches .match-team{width:35%;gap:22px;font-size:26px;}
+html body #view-matches#view-matches .match-team:last-child{flex-direction:row-reverse;justify-content:flex-start;text-align:end;}
+html body #view-matches#view-matches .match-initial,html body #view-matches#view-matches .match-initial img{width:76px;height:76px;}
+html body #view-matches#view-matches .match-detail{width:30%;border-inline-start:1px solid var(--ui-card-border);border-inline-end:1px solid var(--ui-card-border);padding:0 12px;box-sizing:border-box;align-items:center;gap:4px;}
+html body #view-matches#view-matches .match-detail strong{min-width:100px;padding:2px 14px;line-height:1.2;font-size:27px;border:1px solid var(--ui-card-border);border-radius:999px;background:var(--ui-glass-control);color:var(--ui-info-text,#fff);}
+html body #view-matches#view-matches .match-detail small{font-size:17px;color:var(--ui-text);}
+html body #view-matches#view-matches .match-detail time{font-size:16px;color:var(--ui-text-muted);}
+html body #view-matches#view-matches .matches-footer{flex:0 0 auto;min-height:48px;color:var(--ui-text-muted);opacity:1;}
+html body #view-matches#view-matches .matches-favorite-panel{background:var(--ui-glass-dialog)!important;}
+@media(max-width:900px){html#iptv-theme-root body #view-matches#view-matches{padding:18px!important;}html#iptv-theme-root body #view-matches#view-matches .matches-heading{flex-wrap:wrap;}html#iptv-theme-root body #view-matches#view-matches .matches-heading h1{font-size:28px;}html#iptv-theme-root body #view-matches#view-matches .matches-heading>.matches-symbol{display:none;}html#iptv-theme-root body #view-matches#view-matches .matches-overview{flex-wrap:wrap;}html#iptv-theme-root body #view-matches#view-matches .matches-overview>button{min-width:0;flex:1;padding:8px 12px;}html#iptv-theme-root body #view-matches#view-matches .matches-tabs{flex-wrap:wrap;}html#iptv-theme-root body #view-matches#view-matches .matches-teams{max-height:150px;}html#iptv-theme-root body #view-matches#view-matches .match-initial,html#iptv-theme-root body #view-matches#view-matches .match-initial img{width:38px;height:38px;}html#iptv-theme-root body #view-matches#view-matches .match-team{font-size:16px;gap:6px;}html#iptv-theme-root body #view-matches#view-matches .match-detail{padding:0 6px;}html#iptv-theme-root body #view-matches#view-matches .match-detail strong{font-size:20px;min-width:0;}html#iptv-theme-root body #view-matches#view-matches .match-detail small{font-size:12px;}html#iptv-theme-root body #view-matches#view-matches .matches-toolbar{align-items:flex-start;flex-direction:column;}}

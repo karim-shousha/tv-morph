@@ -17,6 +17,7 @@
   var config=w.ClearTV&&ClearTV.settings||{},language=document.documentElement.lang||'en',custom=Number(config[language==='ar'?'fontScaleAr':'fontScaleEn']),preset=config[language==='ar'?'fontSizeAr':'fontSizeEn'],scale=w.IptvTextSize?IptvTextSize.factor():custom>=80&&custom<=130?custom/100:preset==='small'?.9:preset==='large'?1.1:1;root.style.setProperty('--prayer-font-unit',String(unit*scale));document.documentElement.style.setProperty('--prayer-font-unit',String(unit*scale));
   var status=document.getElementById('prayer-error'),place=document.getElementById('prayer-place');if(status&&place)status.classList.toggle('prayer-status-duplicate',status.textContent.trim()===place.textContent.trim());
   var title=document.getElementById('prayer-heading');if(title&&!title.querySelector('.prayer-title-main')){var words=title.textContent.trim().split(/\s+/),last=words.pop(),main=document.createElement('span'),accent=document.createElement('span');main.className='prayer-title-main';accent.className='prayer-title-accent';main.textContent=words.join(' ');accent.textContent=last;title.textContent='';title.appendChild(main);title.appendChild(document.createTextNode(' '));title.appendChild(accent);}
+  if(place&&place.textContent.split(' · ').length>2){place.title=place.textContent;place.textContent=place.textContent.split(' · ').slice(0,2).join(' · ');}
   var ar=document.getElementById('dua-arabic'),meaning=document.getElementById('dua-meaning'),lang=document.documentElement.lang||'en';
   root.classList.toggle('prayer-oled',document.documentElement.getAttribute('data-iptv-oled')==='true');
   var C=w.ClearTV,next=C&&C.Prayer&&C.Prayer.next(),name=next&&next.name||'',icon=root.querySelector('.prayer-gold-next-icon');if(icon&&icon.getAttribute('data-prayer')!==name){icon.setAttribute('data-prayer',name);icon.innerHTML=name==='Fajr'||name==='Isha'?moon:sun;}
@@ -24,10 +25,10 @@
   var key=[width,height,lang,scale,ar&&ar.textContent,meaning&&meaning.textContent,root.getAttribute('data-size')].join('|');if(signature===key)return;signature=key;
   fitText(document.getElementById('prayer-heading'),(lang==='ar'?72:lang==='fr'?60:66)*unit*scale,32*unit);
   fitText(document.getElementById('prayer-place'),28*unit*scale,20*unit);
-  fitText(document.getElementById('prayer-countdown'),68*unit*scale,46*unit);
-  fitText(document.getElementById('prayer-clock'),112*unit*scale,72*unit);
+  fitText(document.getElementById('prayer-countdown'),48*unit*scale,34*unit);
+  fitText(document.getElementById('prayer-clock'),88*unit*scale,62*unit);
   fitText(document.getElementById('prayer-clock-label'),22*unit*scale,16*unit);fitText(document.getElementById('prayer-date'),22*unit*scale,16*unit);fitText(document.getElementById('prayer-hijri'),21*unit*scale,16*unit);
-  fitText(document.getElementById('prayer-next-name'),(lang==='ar'?110:98)*unit*scale,62*unit);
+  fitText(document.getElementById('prayer-next-name'),(lang==='ar'?86:78)*unit*scale,52*unit);
   Array.prototype.forEach.call(root.querySelectorAll('.prayer-time'),function(card){fitText(card.querySelector('.prayer-time-heading span'),(lang==='fr'?25:30)*unit*scale,21*unit);fitText(card.querySelector('strong'),58*unit*scale,36*unit);fitText(card.querySelector('.prayer-iqama'),23*unit*scale,18*unit);});
   fitText(ar,(lang==='ar'?42:32)*unit*scale,24*unit);fitText(meaning,22*unit*scale,18*unit);
  }

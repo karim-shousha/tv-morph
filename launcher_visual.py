@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parent
 SOURCE=ROOT/'tv-project/visual-system'
 FILES='reference.css reference.js settings-reference.css settings-reference.js reference-theme.js surfaces-reference.css bridge-reference.css bridge-reference.js themes-reference.css themes-reference.js network-reference.css network-reference.js settings-expand.js focus-reference.css focus-reference.js'.split()
 # Keep editable references and retired card variants out of installed applications.
-RUNTIME_ASSETS=('bridge-background-v2.webp', 'bridge-devices-v2.webp', 'home-prayer-card-v1.webp', 'home-matches-card-v1.webp', 'program-card-iptv-v4.webp', 'program-card-media-v4.webp', 'program-card-bridge-v4.webp', 'program-card-radio-v4.webp', 'program-card-themes-v4.webp')
+RUNTIME_ASSETS=('main-mountains-wave-v1.webp','bridge-background-v2.webp', 'bridge-devices-v2.webp', 'home-prayer-card-v1.webp', 'home-matches-card-v1.webp', 'program-card-iptv-v4.webp', 'program-card-media-v4.webp', 'program-card-bridge-v4.webp', 'program-card-radio-v4.webp', 'program-card-themes-v4.webp')
 def stage_launcher_visual(destination, radio=None):
     DEST=Path(destination)
     if (DEST/'reference.js').exists():return

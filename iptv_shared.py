@@ -73,6 +73,9 @@ def sync_brand_assets():
     background=ROOT/'tv-project/visual-system/assets/bridge-background-v2.webp'
     target=SOURCE/'assets/launcher-background.webp';target.parent.mkdir(parents=True,exist_ok=True)
     if not target.exists() or target.read_bytes()!=background.read_bytes():shutil.copy2(background,target)
+    for name in ('matches-stadium-v1.webp','main-mountains-wave-v1.webp'):
+        source=ROOT/'tv-project/app/assets'/name
+        if source.exists():shutil.copy2(source,SOURCE/'assets'/name)
     sync_webp_artwork()
     sync_product_icons()
     source=ROOT/'tv-project/app/assets/morph-wordmark.webp'
