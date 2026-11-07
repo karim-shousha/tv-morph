@@ -164,3 +164,11 @@ html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #ci
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #cinema-header-tools>#stream-update{order:0!important;}
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #cinema-header-tools>#cinema-quick-nav{order:1!important;flex:0 0 auto!important;width:auto!important;}
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #cinema-header-tools>#stream-sources{order:2!important;}
+
+/* Account and refresh live above Search in the remote rail, never in the header. */
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar #stream-sources,
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar #stream-update{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:72px!important;min-width:72px!important;height:68px!important;flex:0 0 68px!important;min-height:68px!important;padding:7px 4px!important;gap:5px!important;border-radius:var(--ui-radius-sm,12px)!important;font-size:13px!important;white-space:normal!important;}
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar #stream-sources{height:84px!important;min-height:84px!important;flex-basis:84px!important;}
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar .cinema-rail-action svg{width:26px!important;height:26px!important;flex:0 0 26px!important;margin:0!important;}
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar .cinema-rail-action-label{display:block!important;font:500 13px/16px Arial,sans-serif!important;text-align:center!important;color:var(--iptv-text-1000)!important;white-space:normal!important;}
+html#iptv-theme-root#iptv-theme-root[data-stream-ui][data-cinema-shell] body #stream-sidebar .cinema-rail-action-label>span{display:block!important;}

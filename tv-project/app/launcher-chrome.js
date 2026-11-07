@@ -61,6 +61,6 @@
  var host=document.querySelector('#settings-category-appearance .settings-panel')||document.querySelector('#view-settings .settings-panel');if(host)host.appendChild(sizeButton);
  function labels(){sizeButton.textContent=t('حجم الشريط العلوي','Top bar size')+' · '+(C.settings.launcherHeaderSize==='largest'?t('كبير جدًا','Extra large'):C.settings.launcherHeaderSize==='large'?t('كبير','Large'):t('عادي','Normal'));settings.textContent=t('الإعدادات','Settings');settings.setAttribute('aria-label',settings.textContent);paint();headerSize();navigation();}
  var focus=C.Focus.focus;C.Focus.focus=function(node){return focus.call(C.Focus,node&&node.id==='nav-home'&&node.hidden?viewer:node);};
- C.openProfiles=open;w.MorphLauncherProfiles={open:open,authorized:function(token){var done=pending[token];delete pending[token];if(done)done();}};
+ C.openProfiles=open;w.MorphLauncherProfiles={open:open,close:close,authorized:function(token){var done=pending[token];delete pending[token];if(done)done();}};
  w.addEventListener('morphProfileArtwork',paint);w.addEventListener('morphViewer',labels);w.addEventListener('morphLanguage',function(){labels();(w.requestAnimationFrame||function(fn){setTimeout(fn,16);})(navigation);});w.addEventListener('load',function(){navigation();requestAnimationFrame(navigation);});labels();if(C.SettingsNav)C.SettingsNav.refresh();
 })(window,window.ClearTV);

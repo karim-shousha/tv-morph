@@ -11,9 +11,29 @@ function root() { return document.getElementById('view-fitness'); }
 function setS(v) { S = v; }
 function fmt(s) { s = Math.max(0, Math.round(s)); var m = Math.floor(s / 60), r = s % 60; return (m < 10 ? '0' : '') + m + ':' + (r < 10 ? '0' : '') + r; }
 function exIcon(e) { var m = { cardio: '❤️', hiit: '🔥', core: '🧱', upper_body: '💪', lower_body: '🦵', strength: '🏋️', stretching: '🧘', mobility: '🌊', low_impact: '🪶', warmup: '☀️', recovery: '🌙', full_body: '⚡' }; return m[e.cat] || '🏃'; }
-function thumb(e) { var d = el('div', 'fit-thumb'); d.textContent = exIcon(e);  d.setAttribute('aria-hidden', 'true'); return d; }
+function thumb(e) { var d = el('div', 'fit-thumb'); d.appendChild(fitGlyph(e.cat)); d.setAttribute('aria-hidden', 'true'); return d; }
 function cover(node,cat){var known=['full_body','lower_body','upper_body','stretching','cardio','core'];var alias={strength:'upper_body',hiit:'cardio',mobility:'stretching',low_impact:'full_body',warmup:'stretching',recovery:'stretching'};cat=alias[cat]||cat;if(known.indexOf(cat)<0)return;node.textContent='';var img=el('img','fit-cover');img.src='assets/fitness/categories/'+cat+'.webp';img.alt='';img.loading='lazy';img.decoding='async';node.appendChild(img);}
 function lvlName(n) { return C.FitnessI18n.lvl(n); }
+function fitGlyph(name) {
+  var paths = {
+    fitness: '<path d="M6 5v14M3 8v8M18 5v14M21 8v8M6 12h12"/>',
+    programs: '<rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/>',
+    builder: '<path d="m3 7 9-5 9 5-9 5ZM3 12l9 5 9-5M3 17l9 5 9-5"/>',
+    progress: '<path d="M3 21h18M4 21V13h4v8M10 21V8h4v13M16 21V3h4v18"/>',
+    settings: '<path d="M4 7h16M4 17h16M8 4v6M16 14v6"/>',
+    play: '<path d="m7 3 14 9-14 9Z"/>',
+    arrow: '<path d="m9 5 7 7-7 7"/>',
+    upper_body: '<path d="m3 17 3-7 4 2 2-7 4-2 3 4-2 3-3-1-1 7 6 1 2 4H9Z"/>',
+    lower_body: '<path d="m10 3 5 1-1 7 4 9-5 1-4-8-4 7-3-2 5-9Z"/>',
+    core: '<path d="M5 3q7 4 14 0l1 9-4 9H8l-4-9ZM12 5v16M5 10h14M6 15h12"/>',
+    cardio: '<path d="M20 5c-3-3-7-1-8 2C11 4 7 2 4 5c-4 5 2 10 8 15 6-5 12-10 8-15Z"/><path d="M3 12h5l2-4 4 8 2-4h5"/>',
+    stretching: '<path d="M12 21C5 19 2 15 3 9c5 0 8 4 9 12ZM12 21c7-2 10-6 9-12-5 0-8 4-9 12ZM12 17c-5-6-4-10 0-15 4 5 5 9 0 15Z"/>'
+  };
+  var mark = el('span', 'fit-glyph');
+  mark.setAttribute('aria-hidden', 'true');
+  mark.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + (paths[name] || paths.fitness) + '</svg>';
+  return mark;
+}
 
 function show(screen, params) {
   if(!w.MorphPlus||!w.MorphPlus.isActive()){if(w.MorphPlus)w.MorphPlus.open();return;}
@@ -24,17 +44,22 @@ function show(screen, params) {
   var r = root(); r.textContent = '';
   var wrap = el('div', 'fit-wrap fit-screen-' + screen); r.appendChild(wrap);
   ({ home: renderHome, programs: renderPrograms, builder: renderBuilder, active: renderActive, music: renderMusic, complete: renderComplete, progress: renderProgress, settings: renderSettings })[screen](wrap, UI.params);
+  try { var v = document.getElementById('view-fitness'); if (v) v.scrollTop = 0; } catch (e) {}
   var f = wrap.querySelector('[data-autofocus]') || wrap.querySelector('button');
   if (f) C.Focus.focus(f);
-  try { var v = document.getElementById('view-fitness'); if (v) v.scrollTop = 0; } catch (e) {}
 }
 UI.show = show;
 
 function crumb(wrap, title, sub) {
-  var row = el('div', 'fit-chiprow');
+  var row = el('nav', 'fit-chiprow fit-navigation');
+  row.setAttribute('aria-label', t('sportsHome'));
+  var homeBack=btn(t('back')+' · '+t('home'),'fit-chip fit-launcher-back',returnToLauncher);
+  homeBack.insertBefore(fitGlyph('arrow'),homeBack.firstChild);row.appendChild(homeBack);
   var items = [['home', t('sportsHome')], ['programs', t('programs')], ['builder', t('custom')], ['progress', t('progress')], ['settings', t('settings')]];
   items.forEach(function (it) {
     var b = btn(it[1], 'fit-chip' + (UI.screen === it[0] ? ' on' : ''), function () { if(running()){askExit(function(){UI.activeWrap=null;show(it[0]);});return;}show(it[0]); });
+    b.insertBefore(fitGlyph(it[0] === 'home' ? 'fitness' : it[0]), b.firstChild);
+    if (UI.screen === it[0]) b.setAttribute('aria-current', 'page');
     row.appendChild(b);
   });
   wrap.appendChild(row);
@@ -45,15 +70,17 @@ function crumb(wrap, title, sub) {
 /* ---------- SCREEN 1: HOME ---------- */
 function renderHome(wrap) {
   crumb(wrap);
-  var hero = el('div', 'fit-hero');var art=el('img','fit-hero-art');art.src='assets/fitness/hero/home.webp';art.alt='';art.decoding='async';hero.appendChild(art);
+  var hero = el('div', 'fit-hero');var art=el('img','fit-hero-art');art.src='assets/fitness/hero/home-wide-v2.webp';art.alt='';art.decoding='async';hero.appendChild(art);
   var main = el('div', 'fit-hero-main');
   main.appendChild(el('div', 'fit-eyebrow', t('sportsHome')));
   var h = el('h1', ''); h.innerHTML = ''; h.appendChild(document.createTextNode(t('workOut') + ' '));
   var g = el('span', 'grad', t('atHome')); h.appendChild(g); main.appendChild(h);
   main.appendChild(el('p', '', t('tagline')));
   var cta = el('div', 'fit-hero-cta');
-  cta.appendChild(btn('▶ ' + t('startTraining'), 'fit-btn-primary', function () { quickStart(); }, t('startTraining')));
-  var b = btn(t('browse'), 'fit-ctl', function () { show('programs'); }); b.setAttribute('data-autofocus', '1'); main.appendChild(cta); cta.appendChild(b);
+  var start = btn(t('startTraining'), 'fit-btn-primary', function () { quickStart(); }, t('startTraining'));
+  start.insertBefore(fitGlyph('play'), start.firstChild); cta.appendChild(start);
+  var b = btn(t('browse'), 'fit-ctl', function () { show('programs'); });
+  b.insertBefore(fitGlyph('programs'), b.firstChild); main.appendChild(cta); cta.appendChild(b);
   hero.appendChild(main);
   var side = el('div', 'fit-hero-side');
   var q = btn('', 'fit-side-card', function () { quickStart(); });
@@ -62,32 +89,35 @@ function renderHome(wrap) {
   gd.appendChild(el('span', 'ico', '🎯')); var g2 = el('div', ''); g2.appendChild(el('strong', '', t('guided'))); g2.appendChild(el('small', '', t('programs'))); gd.appendChild(g2);
   var cu = btn('', 'fit-side-card', function () { show('builder'); });
   cu.appendChild(el('span', 'ico', '🛠️')); var c3 = el('div', ''); c3.appendChild(el('strong', '', t('custom'))); c3.appendChild(el('small', '', t('selectAll'))); cu.appendChild(c3);
+  [q, gd, cu].forEach(function (shortcut) { shortcut.appendChild(fitGlyph('arrow')); });
   side.appendChild(q); side.appendChild(gd); side.appendChild(cu); hero.appendChild(side); wrap.appendChild(hero);
 
-  wrap.appendChild(el('h2', 'fit-row-title', t('categories')));
+  var heading = el('div', 'fit-category-heading');
+  heading.appendChild(el('h2', 'fit-row-title', t('categories')));
+  var seeAll = btn(t('seeAll'), 'fit-see-all', function () { show('programs'); });
+  seeAll.appendChild(fitGlyph('arrow')); heading.appendChild(seeAll); wrap.appendChild(heading);
   var rail = el('div', 'fit-rail fit-category-rail'); rail.setAttribute('data-scroll', 'horizontal');
-  C.FitnessData.CATEGORIES.filter(function(c){return ['full_body','lower_body','upper_body','stretching','cardio','core'].indexOf(c.id)>=0;}).forEach(function (c) {
+  ['full_body','upper_body','lower_body','core','cardio','stretching'].forEach(function (id) {
+    var c = C.FitnessData.CATEGORIES.filter(function (item) { return item.id === id; })[0];
+    if (!c) return;
     var card = btn('', 'fit-card', function () { show('programs', { cat: c.id }); }, L(c.name));
     var th = el('div', 'fit-thumb', c.icon === 'bolt' ? '⚡' : c.icon === 'heart' ? '❤️' : c.icon === 'flame' ? '🔥' : c.icon === 'leaf' ? '🧘' : c.icon === 'moon' ? '🌙' : c.icon === 'sun' ? '☀️' : '🏃');
     cover(th,c.id); card.appendChild(th);
-    card.appendChild(el('h3', '', L(c.name)));
+    var caption = el('div', 'fit-category-caption'); caption.appendChild(fitGlyph(c.id));
+    var copy = el('div', 'fit-category-copy'); copy.appendChild(el('h3', '', L(c.name)));
     var n = C.FitnessData.PROGRAMS.filter(function (p) { return p.cat === c.id || (c.id==='stretching'&&['mobility','recovery','warmup'].indexOf(p.cat)>=0); }).length;
-    card.appendChild(el('p', '', n ? n + ' ' + t('programs') : t('all')));
+    copy.appendChild(el('p', '', n ? n + ' ' + t(n === 1 ? 'program' : 'programs') : t('all')));
+    caption.appendChild(copy); card.appendChild(caption);
+    card.setAttribute('data-fitness-category', c.id);
+    if (id === 'full_body') card.setAttribute('data-autofocus', '1');
     rail.appendChild(card);
   });
   wrap.appendChild(rail);
 
-  wrap.appendChild(el('h2', 'fit-row-title', t('guided')));
-  var rail2 = el('div', 'fit-rail'); rail2.setAttribute('data-scroll', 'horizontal');
-  featured().forEach(function (p) { rail2.appendChild(progCard(p)); });
-  wrap.appendChild(rail2);
 }
-function featured() {
-  var ids = ['full_body_starter', 'quick_energy', 'fat_burn', 'deep_stretch'];
-  return ids.map(function (id) { return C.FitnessData.programById(id); }).filter(Boolean);
-}
-function progCard(p) {
-  var card = btn('', 'fit-card', function () { show('programs', { cat: p.cat, sel: p.id }); }, L(p.name));
+function progCard(p, category) {
+  var card = btn('', 'fit-card', function () { show('programs', { cat: category || p.cat, sel: p.id }); }, L(p.name));
+  card.setAttribute('data-program-id',p.id);
   var th = el('div', 'fit-thumb', '🏋️'); cover(th,p.cat); card.appendChild(th);
   card.appendChild(el('h3', '', L(p.name)));
   card.appendChild(el('p', '', '~' + p.targetMins + ' min · ' + lvlName(p.level)));
@@ -113,23 +143,29 @@ function renderPrograms(wrap, params) {
     if (S.difficulty !== 'all') { var want = S.difficulty === 'beginner' ? 1 : S.difficulty === 'intermediate' ? 2 : 3; if (p.level !== want) return false; }
     return true;
   });
-  var cols = el('div', 'fit-grid'); cols.setAttribute('data-scroll', 'vertical');
-  list.forEach(function (p) {
-    cols.appendChild(progCard(p));
-  });
-  wrap.appendChild(cols);
+  var layout = el('div','fit-library-layout');
+  var cols = el('div', 'fit-grid fit-program-library'); cols.setAttribute('data-scroll', 'vertical');
   var sel = params.sel ? C.FitnessData.programById(params.sel) : list[0];
-  if (sel) detailPanel(wrap, sel);
+  list.forEach(function (p) {
+    var card=progCard(p,cur);card.setAttribute('aria-pressed',String(sel&&p.id===sel.id));
+    if(sel&&p.id===sel.id)card.setAttribute('data-autofocus','1');cols.appendChild(card);
+  });
+  layout.appendChild(cols);
+  if (sel) detailPanel(layout, sel);else{var empty=el('div','fit-panel fit-program-detail');empty.appendChild(el('p','',t('empty')));layout.appendChild(empty);}
+  wrap.appendChild(layout);
 }
 function detailPanel(wrap, p) {
   var ex = p.exercises.map(function (id) { return C.FitnessData.byId(id); }).filter(Boolean);
-  var panel = el('div', 'fit-panel');
+  var panel = el('aside', 'fit-panel fit-program-detail');
+  panel.appendChild(el('span','fit-eyebrow',t('sessionOverview')));
   panel.appendChild(el('h2', '', L(p.name)));
-  var sub = el('p', '', (C.FitnessData.desc ? '' : '') + L(p.desc) + ' · ~' + p.targetMins + ' min · ' + ex.length + ' ' + t('exercises') + ' · ' + p.rounds + ' ' + t('rounds') + ' · ' + lvlName(p.level));
-  sub.style.opacity = '.8'; panel.appendChild(sub);
-  var seq = el('p', 'fit-toast-note', ex.map(function (e) { return L(e.name); }).join('  →  ')); panel.appendChild(seq);
+  panel.appendChild(el('p','fit-detail-description',L(p.desc)));
+  var metadata=el('div','fit-session-meta');
+  [p.targetMins+' min',lvlName(p.level),ex.length+' '+t('exercises'),p.rounds+' '+t('rounds')].forEach(function(value){metadata.appendChild(el('span','',value));});panel.appendChild(metadata);
+  var seq=el('ol','fit-exercise-sequence');seq.setAttribute('data-scroll','vertical');
+  ex.forEach(function(e){var item=el('li','');item.appendChild(el('span','',L(e.name)));item.appendChild(el('small','',(p.secs||e.secs)+'s'));seq.appendChild(item);});panel.appendChild(seq);
   var row = el('div', 'fit-ctls'); row.style.justifyContent = 'flex-start';
-  var st = btn('▶ ' + t('start'), 'fit-ctl main', function () { startProgram(p); }); st.setAttribute('data-autofocus', '1');
+  var st = btn(t('start'), 'fit-ctl main', function () { startProgram(p); });st.insertBefore(fitGlyph('play'),st.firstChild);
   row.appendChild(st);
   row.appendChild(btn(t('music'), 'fit-ctl', function () { UI.returnTo = { s: 'programs', p: { cat: p.cat, sel: p.id } }; show('music'); }));
   panel.appendChild(row); wrap.appendChild(panel);
@@ -176,10 +212,14 @@ function renderBuilder(wrap) {
     card.appendChild(el('p', '', e.secs + 's · ' + lvlName(e.level)));
     grid.appendChild(card);
   });
-  wrap.appendChild(grid);
+  var layout=el('div','fit-library-layout fit-builder-layout');layout.appendChild(grid);
   var secs = UI.builderSel.reduce(function (a, id) { var e = C.FitnessData.byId(id); return a + (e ? e.secs + e.rest : 0); }, 0);
-  var bar = el('div', 'fit-panel fit-builder-summary');
+  var bar = el('aside', 'fit-panel fit-builder-summary');
+  bar.appendChild(el('span','fit-eyebrow',t('yourSession')));
   bar.appendChild(el('strong', '', UI.builderSel.length + ' ' + t('exercises') + ' · ~' + Math.round(secs / 60) + ' min'));
+  var picked=el('ol','fit-exercise-sequence');picked.setAttribute('data-scroll','vertical');
+  UI.builderSel.forEach(function(id){var e=C.FitnessData.byId(id);if(!e)return;var item=el('li','');item.appendChild(el('span','',L(e.name)));var remove=btn('×','fit-remove-exercise',function(){UI.builderSel=UI.builderSel.filter(function(value){return value!==id;});show('builder');},t('deleteIt')+' '+L(e.name));item.appendChild(remove);picked.appendChild(item);});
+  if(!UI.builderSel.length)bar.appendChild(el('p','fit-detail-description',t('selectAll')));bar.appendChild(picked);
   var ctl = el('div', 'fit-ctls'); ctl.style.justifyContent = 'flex-start';
   ctl.appendChild(btn('▶ ' + t('start'), 'fit-ctl main', function () {
     if (!UI.builderSel.length) { C.toast(t('empty')); return; }
@@ -191,7 +231,7 @@ function renderBuilder(wrap) {
     var list = s.custom(); list.push({ id: 'c' + Date.now(), name: String(name).slice(0, 40), exercises: UI.builderSel.slice(), rounds: 1, rest: S.restSecs });
     s.saveCustom(list); C.toast(t('saved'));
   }));
-  bar.appendChild(ctl); wrap.insertBefore(bar,grid);
+  bar.appendChild(ctl);layout.appendChild(bar);wrap.appendChild(layout);
 }
 function startCustom(c4) {
   startProgram({ id: c4.id || 'custom', level: 2, targetMins: Math.round(c4.exercises.length * 1), cat: 'full_body', rounds: c4.rounds || 1, exercises: c4.exercises, rest: c4.rest || S.restSecs, name: { en: c4.name, ar: c4.name, fr: c4.name, zh: c4.name, ja: c4.name }, desc: { en: '', ar: '', fr: '', zh: '', ja: '' }, image: 'fitness/programs/custom', custom: true });
@@ -235,9 +275,9 @@ function bootActive(p, prepMs) {
   });
   eng.on('go', function () { C.FitnessAudio.beep.go(); say(t('go')); });
   eng.on('exercise', function (d) {
-    if (phaseEl) phaseEl.textContent = L(d.ex.name);
+    if (phaseEl) phaseEl.textContent = t('nowTraining');
     if (subEl) subEl.textContent = d.ex.cueEn ? (C.FitnessI18n.lang() === 'ar' ? d.ex.cueAr : d.ex.cueEn) : '';
-    if (exEl) { exEl.textContent = ''; exEl.appendChild(thumb(d.ex)); var h = el('h2', '', L(d.ex.name)); exEl.appendChild(h); exEl.appendChild(el('p', '', (d.ex.muscles || []).join(' · '))); }
+    if (exEl) { exEl.textContent = '';var position=el('span','fit-active-position',(d.index+1)+' / '+d.total+' · '+t('exercises'));exEl.appendChild(position);var title=el('div','fit-active-identity');title.appendChild(fitGlyph('fitness'));var copy=el('div','');copy.appendChild(el('h2','',L(d.ex.name)));copy.appendChild(el('p','fit-detail-description',(d.ex.muscles||[]).join(' · ')));title.appendChild(copy);exEl.appendChild(title); }
     if (nextEl) { var nx = eng.queue[d.index + 1]; nextEl.textContent = t('nextUp') + ': ' + (nx ? L(nx.ex.name) : '—'); }
     if (progEl) progEl.textContent = (d.index + 1) + '/' + d.total;
     if (roundEl) roundEl.textContent = t('round') + ' ' + d.round + ' ' + t('of') + ' ' + d.rounds;
@@ -267,7 +307,7 @@ function bootActive(p, prepMs) {
       if (a === 'next') eng.next();
       if (a === 'prev') eng.prev();
       if (a === 'music') { UI.returnTo = { s: 'active' }; pauseKeep(eng); show('music'); }
-      if (a === 'mute') { var st = C.FitnessStore.settings(); st.musicEnabled = !st.musicEnabled; C.FitnessStore.saveSettings(st); C.FitnessAudio.music.sync(!eng.paused); b.textContent = st.musicEnabled ? '🔊' : '🔇'; C.toast(st.musicEnabled ? t('unmuted') : t('muted')); }
+      if (a === 'mute') { var st = C.FitnessStore.settings(); st.musicEnabled = !st.musicEnabled; C.FitnessStore.saveSettings(st); C.FitnessAudio.music.sync(!eng.paused); b.textContent = t(st.musicEnabled?'muteSound':'unmuteSound'); C.toast(st.musicEnabled ? t('unmuted') : t('muted')); }
       if (a === 'exit') askExit(function(){show('home');});
     };
   });
@@ -275,24 +315,24 @@ function bootActive(p, prepMs) {
 function pauseKeep(eng) { try { if (eng && !eng.paused && eng.phase !== 'done') eng.pause(); } catch (e) {} }
 function renderActive(wrap) {
   var p = UI.activeProg;
-  wrap.appendChild(el('h1', '', L(p.name) + '  ·  ' + t('sportsHome')));
-  var cols = el('div', 'fit-cols');
-  var left = el('div', 'fit-panel'); left.appendChild(el('div', '', '')); left.firstChild.setAttribute('data-phase', '1'); left.firstChild.style.cssText = 'font-size:22px;color:var(--cinema-glow)';
-  var exd = el('div', ''); exd.setAttribute('data-ex', '1'); left.appendChild(exd);
-  left.appendChild(el('p', '', '')); left.lastChild.setAttribute('data-sub', '1'); left.lastChild.style.opacity = '.8';
-  var nx = el('p', 'fit-toast-note', ''); nx.setAttribute('data-next', '1'); left.appendChild(nx);
-  var right = el('div', 'fit-panel');
+  crumb(wrap);wrap.appendChild(el('h1', 'fit-active-title', L(p.name)));
+  var cols = el('div', 'fit-cols fit-active-layout');
+  var left = el('section', 'fit-panel fit-active-guidance');var phase=el('span','fit-eyebrow',t('getReady'));phase.setAttribute('data-phase','1');left.appendChild(phase);
+  var exd = el('div', 'fit-active-exercise'); exd.setAttribute('data-ex', '1'); left.appendChild(exd);
+  var instructions=el('div','fit-instruction-card');instructions.appendChild(el('h3','',t('instructions')));var cue=el('p','','');cue.setAttribute('data-sub','1');instructions.appendChild(cue);left.appendChild(instructions);
+  var nx = el('p', 'fit-next-exercise', ''); nx.setAttribute('data-next', '1'); left.appendChild(nx);
+  var right = el('section', 'fit-panel fit-active-timer');right.appendChild(el('h2','',t('sessionTimer')));
   var ringW = el('div', 'fit-timer-ring');
-  ringW.innerHTML = '<svg viewBox="0 0 220 220"><defs><linearGradient id="fit-ring-gradient"><stop stop-color="#27caff"/><stop offset="1" stop-color="#944dff"/></linearGradient></defs><circle cx="110" cy="110" r="100" fill="none" stroke="#ffffff22" stroke-width="12"/><circle data-ring="1" cx="110" cy="110" r="100" fill="none" stroke="url(#fit-ring-gradient)" stroke-width="12" stroke-linecap="round" stroke-dasharray="628" stroke-dashoffset="0"/></svg>';
+  ringW.innerHTML = '<svg viewBox="0 0 220 220"><circle class="fit-timer-track" cx="110" cy="110" r="100" fill="none" stroke-width="12"/><circle class="fit-timer-value" data-ring="1" cx="110" cy="110" r="100" fill="none" stroke-width="12" stroke-linecap="round" stroke-dasharray="628" stroke-dashoffset="0"/></svg>';
   var num = el('div', 'fit-timer-num'); num.innerHTML = '<strong data-num="1">00:00</strong><span data-prog="1"></span><span data-round="1"></span>';
   ringW.appendChild(num); right.appendChild(ringW);
-  var ctl = el('div', 'fit-ctls');
-  [['prev', '⏮ ' + t('prev')], ['pause', '⏸ ' + t('pause')], ['next', t('next') + ' ⏭'], ['music', '🎵'], ['mute', '🔊'], ['exit', '✕ ' + t('exit')]].forEach(function (x, i) {
+  var ctl = el('div', 'fit-ctls fit-playback-controls'),secondary=el('div','fit-ctls fit-secondary-controls');
+  [['prev', t('prev')], ['pause', t('pause')], ['next', t('next')], ['music', t('music')], ['mute', t(S.musicEnabled?'muteSound':'unmuteSound')], ['exit', t('exit')]].forEach(function (x, i) {
     var b = el('button', 'fit-ctl' + (i === 1 ? ' main' : ''), x[1]); b.setAttribute('data-act', x[0]);
     if (i === 1) {b.setAttribute('data-pause', '1');b.setAttribute('data-autofocus','1');}
-    ctl.appendChild(b);
+    (i<3?ctl:secondary).appendChild(b);
   });
-  right.appendChild(ctl); cols.appendChild(left); cols.appendChild(right); wrap.appendChild(cols);
+  right.appendChild(ctl);right.appendChild(secondary); cols.appendChild(left); cols.appendChild(right); wrap.appendChild(cols);
 }
 
 /* ---------- finish + SCREEN 6 ---------- */
@@ -316,7 +356,9 @@ function saveIncomplete(p, eng) {
 }
 function renderComplete(wrap) {
   var s = UI.lastSession || { programName: '', activeSecs: 0, exercisesDone: 0, exercisesTotal: 0, rounds: 1, kcal: 0 };
-  wrap.appendChild(el('div', 'fit-count', '🏆'));
+  var surface=el('section','fit-panel fit-complete-summary');wrap.appendChild(surface);wrap=surface;
+  wrap.appendChild(el('span','fit-eyebrow',t('sessionComplete')));
+  var mark=el('div','fit-complete-mark');mark.appendChild(fitGlyph('fitness'));wrap.appendChild(mark);
   var h = el('h1', '', t('greatJob')); h.style.textAlign = 'center'; wrap.appendChild(h);
   var p = el('p', '', t('completedMsg') + ': ' + (s.programName || '')); p.style.textAlign = 'center'; wrap.appendChild(p);
   var k = el('div', 'fit-kpi');
@@ -337,7 +379,7 @@ function renderComplete(wrap) {
 function renderMusic(wrap) {
   crumb(wrap, t('music'));
   var st = C.FitnessStore.settings();
-  var panel = el('div', 'fit-panel');
+  var panel = el('div', 'fit-panel fit-music-panel'),options=el('div','fit-music-options');panel.appendChild(options);
   C.FitnessAudio.PACKS.forEach(function (pk) {
     var row = el('div', 'fit-setrow');
     var nm = C.FitnessAudio.packTitle(pk.id, C.FitnessI18n.lang()) + (pk.status === 'unavailable' ? ' · ⚠️' : pk.status === 'built-in' ? ' · ✓' : '');
@@ -345,7 +387,7 @@ function renderMusic(wrap) {
       if (pk.status === 'unavailable') { C.toast(t('unavailable')); return; }
       C.FitnessAudio.music.select(pk.id); show('music');var selected=root().querySelector('[data-music-pack="'+pk.id+'"]');if(selected)C.Focus.focus(selected);
     });
-    b.setAttribute('data-music-pack',pk.id);b.style.minWidth = '320px'; b.style.textAlign = 'start'; row.appendChild(b);if(pk.status!=='off'){var listen=btn(t('listen'),'fit-ctl',function(){C.FitnessAudio.music.preview(pk.id);});listen.setAttribute('data-music-preview',pk.id);row.appendChild(listen);}panel.appendChild(row);
+    b.setAttribute('data-music-pack',pk.id);b.setAttribute('aria-pressed',String(st.musicPack===pk.id));row.appendChild(b);if(pk.status!=='off'){var listen=btn(t('listen'),'fit-ctl',function(){C.FitnessAudio.music.preview(pk.id);});listen.setAttribute('data-music-preview',pk.id);row.appendChild(listen);}options.appendChild(row);
   });
   panel.appendChild(el('p','fit-toast-note',t('musicOnline')));var status=el('p','fit-toast-note',C.FitnessAudio.music.statusText());status.setAttribute('data-fit-music-status','');status.setAttribute('role','status');panel.appendChild(status);
   var ctl = el('div', 'fit-ctls'); ctl.style.justifyContent = 'flex-start';
@@ -372,6 +414,7 @@ function renderProgress(wrap) {
     var d = el('div', ''); d.appendChild(el('strong', '', String(x[0]))); d.appendChild(el('span', '', x[1])); k.appendChild(d);
   });
   wrap.appendChild(k);
+  var layout=el('div','fit-progress-layout');wrap.appendChild(layout);
   var panel = el('div', 'fit-panel');
   panel.appendChild(el('h2', '', t('weekly')));
   var bars = el('div', 'fit-bars');
@@ -379,22 +422,21 @@ function renderProgress(wrap) {
   var max = 1; for (var i = 0; i < 7; i++) max = Math.max(max, (st.days[(i + 1) % 7] || 0));
   for (var j = 0; j < 7; j++) {
     var v = st.days[(j + 1) % 7] || 0;
-    var bcol = el('div', ''); bcol.style.height = Math.round((v / max) * 130 + 8) + 'px'; bcol.title = names[j] + ': ' + v; bars.appendChild(bcol);
+    var day=el('div','fit-bar-day'),bcol = el('div', 'fit-bar-value');bcol.style.height = Math.round((v / max) * 130) + 'px';day.setAttribute('aria-label',names[j]+': '+v);day.appendChild(el('small','',String(v)));day.appendChild(bcol);day.appendChild(el('span','',new Date(2026,10,2+j).toLocaleDateString(C.FitnessI18n.lang(),{weekday:'short'})));bars.appendChild(day);
   }
-  panel.appendChild(bars); wrap.appendChild(panel);
+  panel.appendChild(bars); layout.appendChild(panel);
+  var historyPanel=el('section','fit-panel fit-history-panel');historyPanel.appendChild(el('h2','',t('recent')));layout.appendChild(historyPanel);
   var hist = C.FitnessStore.history().slice(0, 8);
   if (!hist.length) {
-    var emp = el('div', 'fit-panel'); emp.appendChild(el('p', '', t('empty')));
-    emp.appendChild(btn(t('startFirst'), 'fit-ctl main', function () { quickStart(); }));
-    wrap.appendChild(emp);
+    historyPanel.appendChild(el('p', 'fit-detail-description', t('empty')));
+    historyPanel.appendChild(btn(t('startFirst'), 'fit-ctl main', function () { quickStart(); }));
   } else {
-    wrap.appendChild(el('h2', 'fit-row-title', t('recent')));
     hist.forEach(function (h) {
       var r2 = el('div', 'fit-setrow');
       r2.appendChild(el('span', '', (h.incomplete ? '○ ' : '✓ ') + (h.programName || '') + ' · ' + fmt(h.activeSecs || 0) + ' · ' + new Date(h.completedAt).toLocaleDateString()));
-      wrap.appendChild(r2);
+      historyPanel.appendChild(r2);
     });
-    wrap.appendChild(btn(t('clearHistory'), 'fit-ctl', function () {
+    historyPanel.appendChild(btn(t('clearHistory'), 'fit-ctl', function () {
       if (!confirm(t('confirmClear'))) return;
       C.FitnessStore.clearHistory(); show('progress');
     }));
@@ -405,47 +447,56 @@ function renderProgress(wrap) {
 function renderSettings(wrap) {
   crumb(wrap, t('settings'));
   setS(C.FitnessStore.settings());
-  var panel = el('div', 'fit-panel');
+  var grid=el('div','fit-settings-layout');wrap.appendChild(grid);
+  function group(title){var section=el('section','fit-panel fit-settings-group');section.appendChild(el('h2','',title));grid.appendChild(section);return section;}
+  function redraw(){var active=document.activeElement,row=active&&active.closest('[data-fitness-setting]'),key=row&&row.getAttribute('data-fitness-setting'),index=row?Array.prototype.indexOf.call(row.querySelectorAll('button'),active):0;show('settings');var target=key&&root().querySelector('[data-fitness-setting="'+key+'"]');if(target){var button=target.querySelectorAll('button')[Math.max(0,index)];if(button)C.Focus.focus(button);}}
+  var audio=group(t('audioSettings')),panel=audio;
   function togRow(label, key) {
     var r = el('div', 'fit-setrow');
+    r.setAttribute('data-fitness-setting',key);
     r.appendChild(el('span', 'lab', label));
-    var b = btn(S[key] ? '● '+t('on') : '○ '+t('off'), 'fit-ctl', function () { S[key] = !S[key]; C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); show('settings'); });
+    var b = btn(S[key] ? t('on') : t('off'), 'fit-ctl', function () { S[key] = !S[key]; C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); redraw(); });b.setAttribute('aria-pressed',String(S[key]));b.setAttribute('aria-label',label);
     r.appendChild(b); panel.appendChild(r);
   }
   togRow(t('musicEnabled'), 'musicEnabled'); togRow(t('voice'), 'voice'); togRow(t('beeps'), 'beeps');
+  panel=group(t('timingSettings'));
   togRow(t('starting'), 'countdown'); togRow(t('autoNext'), 'autoNext');
   /* rest */
   var rr = el('div', 'fit-setrow'); rr.appendChild(el('span', 'lab', t('restSecs') + ': ' + S.restSecs + 's'));
+  rr.setAttribute('data-fitness-setting','restSecs');
   [[-5, '−5'], [5, '+5']].forEach(function (x) {
-    rr.appendChild(btn(x[1], 'fit-ctl', function () { S.restSecs = Math.max(5, Math.min(120, S.restSecs + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); show('settings'); }));
+    rr.appendChild(btn(x[1], 'fit-ctl', function () { S.restSecs = Math.max(5, Math.min(120, S.restSecs + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); redraw(); }));
   });
   panel.appendChild(rr);
   /* volume */
   var vr = el('div', 'fit-setrow'); vr.appendChild(el('span', 'lab', t('musicVolume') + ': ' + S.musicVolume));
+  vr.setAttribute('data-fitness-setting','musicVolume');
   [[-10, '−'], [10, '+']].forEach(function (x) {
-    vr.appendChild(btn(x[1], 'fit-ctl', function () { S.musicVolume = Math.max(0, Math.min(100, S.musicVolume + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); show('settings'); }));
+    vr.appendChild(btn(x[1], 'fit-ctl', function () { S.musicVolume = Math.max(0, Math.min(100, S.musicVolume + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); redraw(); }));
   });
-  panel.appendChild(vr);
+  audio.appendChild(vr);panel=group(t('personalSettings'));
   /* difficulty */
   var dr = el('div', 'fit-setrow'); dr.appendChild(el('span', 'lab', t('difficulty')));
+  dr.setAttribute('data-fitness-setting','difficulty');
   [['all', t('all')], ['beginner', t('beginner')], ['intermediate', t('intermediate')], ['advanced', t('advanced')]].forEach(function (x) {
-    dr.appendChild(btn(x[1], 'fit-chip' + (S.difficulty === x[0] ? ' on' : ''), function () { S.difficulty = x[0]; C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); show('settings'); }));
+    dr.appendChild(btn(x[1], 'fit-chip' + (S.difficulty === x[0] ? ' on' : ''), function () { S.difficulty = x[0]; C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); redraw(); }));
   });
   panel.appendChild(dr);
   /* weight */
   var wr = el('div', 'fit-setrow'); wr.appendChild(el('span', 'lab', t('weight') + ': ' + (S.weightKg || '—')));
+  wr.setAttribute('data-fitness-setting','weightKg');
   [[-5, '−5'], [5, '+5']].forEach(function (x) {
-    wr.appendChild(btn(x[1], 'fit-ctl', function () { S.weightKg = Math.max(0, Math.min(250, (Number(S.weightKg) || 0) + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); show('settings'); }));
+    wr.appendChild(btn(x[1], 'fit-ctl', function () { S.weightKg = Math.max(0, Math.min(250, (Number(S.weightKg) || 0) + x[0])); C.FitnessStore.saveSettings(S); C.FitnessAudio.music.sync(false); redraw(); }));
   });
   panel.appendChild(wr);
   panel.appendChild(el('p', 'fit-toast-note', t('safety')));
+  panel=group(t('contactUs'));
   /* contact */
   var cp = el('div', 'fit-setrow');
   var mail = el('a', '', 'support@morph-tv.com'); mail.href = 'mailto:support@morph-tv.com'; mail.dir = 'ltr';
   mail.style.cssText = 'font-size:20px;font-weight:bold';
   cp.appendChild(el('span', 'lab', t('contactUs') + ': ')); cp.appendChild(mail); panel.appendChild(cp);
   panel.appendChild(el('p', 'fit-toast-note', t('contactMsg')));
-  wrap.appendChild(panel);
 }
 
 /* ---------- MorphTV view and sidebar integration ---------- */
@@ -453,7 +504,7 @@ function askExit(done){if(document.getElementById('fit-exit-dialog'))return;var 
 function running(){return UI.engine&&UI.engine.phase!=='done'&&UI.engine.state!=='IDLE';}
 UI.leave=function(){
   if(running()){
-    askExit(function(){C.showView('home');});return false;
+    askExit(returnToLauncher);return false;
   }
   C.FitnessAudio.music.stop();UI.engine=null;UI.activeWrap=null;
   try{if(w.speechSynthesis)w.speechSynthesis.cancel();}catch(e){}
@@ -462,17 +513,21 @@ UI.leave=function(){
 UI.open=function(source){
   if(!w.MorphPlus||!w.MorphPlus.isActive()){if(w.MorphPlus)w.MorphPlus.open();return;}
   UI.returnFocus=source&&source.id==='home-fitness'?source:document.getElementById('home-fitness');
-  root().style.height=Math.max(300,Math.min(850,document.querySelector('main').clientHeight-root().offsetTop-60))+'px';
+  fitPage();
   show('home');
 };
+function fitPage(){var page=root(),main=document.querySelector('main');if(page&&main&&!page.hidden)page.style.height=Math.max(300,main.clientHeight-page.offsetTop-24)+'px';}
+function returnToLauncher(){var target=UI.returnFocus||document.getElementById('home-fitness');C.showView('home',target);if(root().hidden&&target)C.Focus.focus(target);}
+UI.goHome=returnToLauncher;
+w.addEventListener('resize',fitPage);
 UI.back=function(){
   if(document.getElementById('fit-exit-dialog')){UI.dismissExit();return;}
   if(UI.screen==='music'&&UI.activeWrap){show('active');bootActiveResume();return;}
   if(running()){
-    var target=UI.returnFocus;C.showView('home');if(root().hidden&&target)C.Focus.focus(target);return;
+    returnToLauncher();return;
   }
   if(UI.screen!=='home'){show('home');return;}
-  var target=UI.returnFocus;C.showView('home');if(target)C.Focus.focus(target);
+  returnToLauncher();
 };
 function placeFitnessSidebar(){var sidebar=document.getElementById('home-fitness'),tools=document.querySelector('#view-home .home-tools');if(!sidebar||!tools)return;var old=document.getElementById('nav-fitness');if(old)old.remove();if(C.settings.fitnessSidebarOnly!==true){C.settings.fitnessSidebarOnly=true;C.settings.showFitnessApp=true;C.saveSettings();}sidebar.hidden=C.settings.showFitnessApp!==true;var prayer=document.getElementById('open-prayer'),before=prayer&&prayer.parentNode===tools?prayer:tools.firstChild;if(before!==sidebar&&sidebar.nextElementSibling!==before)tools.insertBefore(sidebar,before);if(C.Focus&&C.Focus.invalidate)C.Focus.invalidate();if(C.refreshRecentSection)C.refreshRecentSection();}
 function mount(){
@@ -489,6 +544,7 @@ function mount(){
   sidebar.hidden=C.settings.showFitnessApp!==true;sidebar.onclick=function(){C.showView('fitness',sidebar);};
   w.addEventListener('morphPlus',labels);function labels(){sidebar.textContent=t('fitness');var suffix=w.MorphPlus&&w.MorphPlus.isActive()?'':' · Plus';sidebar.setAttribute('aria-label',t('fitness')+suffix);sidebar.title=t('fitness')+suffix;root().setAttribute('aria-label',t('sportsHome'));}
   placeFitnessSidebar();setTimeout(placeFitnessSidebar,0);labels();w.addEventListener('morphLanguage',function(){labels();if(!root().hidden&&UI.screen!=='active')show(UI.screen,UI.params);});
+  document.addEventListener('keydown',function(e){if(root().hidden||e.defaultPrevented||[4,461].indexOf(e.keyCode)<0)return;e.preventDefault();e.stopImmediatePropagation();if(!e.repeat)C.back();},true);
   w.addEventListener('morphAudioExclusive',function(){if(running())pauseKeep(UI.engine);});
   document.addEventListener('visibilitychange',function(){if(document.hidden){C.FitnessAudio.music.pause();if(running())pauseKeep(UI.engine);}});
 }

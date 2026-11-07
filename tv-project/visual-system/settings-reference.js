@@ -9,6 +9,7 @@
 
   var kinds={appearance:'text',themes:'palette',home:'apps',parental:'shield',prayer:'moon',time:'clock',performance:'speed',launcher:'screen',system:'network',iptv:'screen',plus:'plus',about:'info'};
   Object.keys(kinds).forEach(function(key){var button=document.getElementById('settings-category-'+key+'-entry');if(!button||button.querySelector('.reference-settings-icon'))return;var mark=document.createElement('span');mark.className='reference-settings-icon';mark.setAttribute('aria-hidden','true');mark.innerHTML=icon(kinds[key]);button.insertBefore(mark,button.firstChild);});
+  Array.prototype.forEach.call(root.querySelectorAll('.settings-category-entry'),function(button){if(button.querySelector('.settings-menu-divider'))return;var divider=document.createElement('span');divider.className='settings-menu-divider';divider.setAttribute('aria-hidden','true');button.appendChild(divider);});
   var header=root.querySelector('.settings-readable-header');
   if(header&&!document.getElementById('reference-settings-back')){var back=document.createElement('button');back.id='reference-settings-back';back.type='button';back.innerHTML=icon('back');back.onclick=function(){w.ClearTV.back();};header.insertBefore(back,header.firstChild);}
   var b=document.getElementById('reference-settings-back');if(b){var label=language()==='ar'?'رجوع':language()==='fr'?'Retour':'Back';b.title=label;b.setAttribute('aria-label',label);}

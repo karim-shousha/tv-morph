@@ -13,7 +13,23 @@ function save(key, v) { try { if (C.write) C.write(key, v); else localStorage.se
 var Store = {
   settings: function () { var s = load(SKEY, null); if (!s || typeof s !== 'object') s = defSettings(); Object.keys(defSettings()).forEach(function (k) { if (typeof s[k] === 'undefined') s[k] = defSettings()[k]; }); return s; },
   saveSettings: function (s) { save(SKEY, s); },
-  custom: function () { var c = load(CKEY, []); return Array.isArray(c) ? c : []; },
+  custom: function () {
+    var c = load(CKEY, []), resolve = C.FitnessData && C.FitnessData.resolveExerciseId;
+    if (!Array.isArray(c)) return [];
+    if (!resolve) return c;
+    return c.map(function (item) {
+      if (!item || !Array.isArray(item.exercises)) return item;
+      var exercises = [], seen = {}, changed = false;
+      item.exercises.forEach(function (id) {
+        var current = resolve(id);
+        if (current !== id || seen[current]) changed = true;
+        if (!seen[current]) { seen[current] = true; exercises.push(current); }
+      });
+      if (!changed) return item;
+      var copy = {}; Object.keys(item).forEach(function (key) { copy[key] = item[key]; });
+      copy.exercises = exercises; return copy;
+    });
+  },
   saveCustom: function (list) { save(CKEY, list); },
   history: function () { var h = load(HKEY, []); return Array.isArray(h) ? h : []; },
   addSession: function (s) { var h = Store.history(); h.unshift(s); h = h.slice(0, 200); save(HKEY, h); return h; },

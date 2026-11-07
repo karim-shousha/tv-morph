@@ -85,7 +85,7 @@ html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #morph
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #cinema-quick-slot{position:absolute!important;left:calc(50vw - var(--cinema-rail))!important;top:50%!important;transform:translate(-50%,-50%)!important;width:max-content!important;max-width:calc(100vw - 2 * var(--cinema-rail) - 48px)!important;min-width:0!important;}
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-header-stacked] #cinema-quick-slot{top:auto!important;bottom:12px!important;transform:translateX(-50%)!important;}
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-header-stacked] #morph-header{align-content:flex-start!important;align-items:flex-start!important;}
-html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar .cinema-nav-stack #stream-sources,html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar .cinema-nav-stack #stream-update{display:flex!important;align-items:center!important;justify-content:center!important;width:52px!important;height:52px!important;min-height:52px!important;flex:0 0 52px!important;padding:12px!important;font-size:0!important;}
+html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar .cinema-nav-stack #stream-sources,html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar .cinema-nav-stack #stream-update{display:flex!important;align-items:center!important;justify-content:center!important;width:72px!important;height:68px!important;min-height:68px!important;flex:0 0 68px!important;padding:7px 4px!important;font-size:13px!important;}
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar #stream-sources svg,html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar #stream-update svg{width:26px!important;height:26px!important;margin:0!important;}
 
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #morph-header .header-status{gap:12px!important;}
@@ -100,3 +100,5 @@ html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #morph
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #morph-header .header-status #iptv-header-weather{margin:0 12px 0 0!important;}
 
 html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #cinema-quick-nav .cinema-section-icon{width:38px!important;height:38px!important;flex-basis:38px!important;}
+
+html#iptv-theme-root#iptv-theme-root#iptv-theme-root[data-iptv-text-size] #stream-sidebar .cinema-nav-stack #stream-sources{height:84px!important;min-height:84px!important;flex-basis:84px!important;}

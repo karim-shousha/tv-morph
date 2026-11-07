@@ -20,7 +20,7 @@ var pass = 0, fail = 0;
 function ok(cond, name) { if (cond) { pass++; console.log('  ok - ' + name); } else { fail++; console.log('  FAIL - ' + name); } }
 
 /* 1-5: library */
-ok(D.EXERCISES.length >= 60, 'exercise count >= 60 (' + D.EXERCISES.length + ')');
+ok(D.EXERCISES.length === 32, 'curated exercise count is 32 (' + D.EXERCISES.length + ')');
 ok(D.PROGRAMS.length >= 15, 'program count >= 15 (' + D.PROGRAMS.length + ')');
 var ids = {}, dup = false; D.EXERCISES.forEach(function (e) { if (ids[e.id]) dup = true; ids[e.id] = 1; });
 ok(!dup, 'exercise ids unique');
@@ -29,6 +29,9 @@ ok(needCats.every(function (c) { return D.EXERCISES.some(function (e) { return e
 ok(D.EXERCISES.every(function (e) { return e.name && e.name.en && e.id && e.image === 'fitness/exercises/' + e.id; }), 'exercise asset ids stable');
 /* programs meaningful */
 ok(D.PROGRAMS.every(function (p) { return p.exercises.length >= 5 && p.rounds >= 1 && p.targetMins >= 5; }), 'programs have real sequences');
+ok(D.PROGRAMS.every(function (p) { return p.exercises.every(function (id) { return !!D.byId(id); }); }), 'all program movements exist in the smaller library');
+ok(D.PROGRAMS.every(function (p) { return p.exercises.every(function (id, i) { return p.exercises.indexOf(id) === i; }); }), 'programs do not repeat replacement variants');
+ok(D.EXERCISES.every(function (e) { return D.PROGRAMS.some(function (p) { return p.exercises.indexOf(e.id) >= 0; }); }), 'all 32 exercises are used by the programs');
 var fb = D.programById('full_body_starter');
 var estMin = D.estimateSecs(fb) / 60;
 ok(Math.abs(estMin - fb.targetMins) <= 6, 'program duration estimate sane (~' + estMin.toFixed(1) + ' vs ' + fb.targetMins + ')');
@@ -41,12 +44,18 @@ var s0 = C.FitnessStore.settings(); s0.weightKg = 80; C.FitnessStore.saveSetting
 ok(C.FitnessStore.settings().weightKg === 80, 'settings persist');
 C.FitnessStore.saveCustom([{ id: 'c1', name: 'My Mix', exercises: ['bodyweight_squat', 'push_up'], rounds: 2, rest: 20 }]);
 ok(C.FitnessStore.custom().length === 1 && C.FitnessStore.custom()[0].exercises.length === 2, 'custom workout persists');
+C.FitnessStore.saveCustom([{id:'old',name:'Saved routine',rounds:2,exercises:['sumo_squat','bodyweight_squat','cobra_stretch','hip_circle']}]);
+var migrated = C.FitnessStore.custom()[0];
+ok(migrated.exercises.join(',') === 'bodyweight_squat,cat_cow,hip_circle' && migrated.id === 'old' && migrated.rounds === 2, 'saved routines resolve retired variations and deduplicate movements');
+ok(C.read('fitness.custom.v1',[])[0].exercises[0] === 'sumo_squat', 'reading older routines does not overwrite saved user data');
 /* calories */
 var cal = C.FitnessCalories(8, 600, 80); ok(cal.kcal > 100 && cal.kcal < 120 && !cal.assumed, 'calorie math sane (' + cal.kcal.toFixed(1) + ')');
 var cal2 = C.FitnessCalories(8, 600, 0); ok(cal2.assumed && cal2.assumedKg === 70, 'missing weight honest default');
 /* manifest */
 var man = require(path + 'fitness_assets_manifest.json');
-ok(man.total >= 150 && man.assets.length === man.total, 'manifest complete (' + man.total + ')');
+ok(man.total === 92 && man.assets.length === man.total, 'curated manifest complete (' + man.total + ')');
+var exerciseArt = man.assets.filter(function (a) { return a.type === 'exercise'; });
+ok(exerciseArt.length === 32 && exerciseArt.every(function (a) { return !!D.byId(a.ref); }) && D.EXERCISES.every(function (e) { return exerciseArt.some(function (a) { return a.ref === e.id; }); }), 'image plan covers exactly the 32 active movements');
 ok(man.assets.every(function (a) { return a.id && a.path && a.aspect && a.resolution; }), 'manifest entries have spec');
 
 /* engine: async state machine */

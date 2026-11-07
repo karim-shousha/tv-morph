@@ -8,7 +8,7 @@
   "scripts": {
     "stage": "python stage.py",
     "start": "electron .",
-    "test": "node tests/desktop.cjs && node tests/cleaner.cjs",
+    "test": "node tests/local-media-response.cjs && node tests/desktop.cjs && node tests/cleaner.cjs",
     "dist": "python stage.py && electron-builder --win nsis --x64 --publish never",
     "dist:mac": "python3 stage.py && electron-builder --mac dmg zip --universal --publish never"
   },
@@ -36,7 +36,8 @@
       "updater.cjs",
       "build/ui/**/*",
       "package.json",
-      "cleaner-files.cjs"
+      "cleaner-files.cjs",
+      "local-media-response.cjs"
     ],
     "asar": true,
     "win": {

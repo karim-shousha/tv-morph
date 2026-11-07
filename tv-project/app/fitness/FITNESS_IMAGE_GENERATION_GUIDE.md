@@ -6,7 +6,7 @@ This guide guarantees zero layout/engine changes when swapping placeholders for 
 ## Manifest
 
 - Source of truth: `tv-project/app/fitness/fitness_assets_manifest.json`
-- Total slots: **154** (12 categories + 15 programs + 1 hero + 63 exercises + 63 motion demos)
+- Total slots: **92** (12 categories + 15 programs + 1 hero + 32 exercises + 32 motion demos)
 - Asset IDs are stable, e.g. `fitness/exercises/push_up`, `fitness/programs/full_body_starter`.
 
 ## How placeholders resolve today

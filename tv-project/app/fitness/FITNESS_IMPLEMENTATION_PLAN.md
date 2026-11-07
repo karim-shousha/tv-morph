@@ -11,7 +11,7 @@
 - Tests/build: no npm suite in tv-project; `tools/build.py` packages `ClearTV.wgt`; checks in `tools/check-*.cjs`.
 
 ## Approach (no app rewrite)
-- New self-contained module `tv-project/app/fitness/`: `fitness-data.js` (63 ex / 15 prog / 12 cat),
+- New self-contained module `tv-project/app/fitness/`: `fitness-data.js` (32 ex / 15 prog / 12 cat),
   `fitness-i18n.js` (5-locale chrome), `fitness-store.js` (settings/custom/history/stats + MET calories),
   `fitness-audio.js` (WebAudio beeps, speechSynthesis voice, honest pack metadata),
   `fitness-engine.js` (monotonic state machine, pause-safe), `fitness-ui.js` (8 screens),

@@ -62,7 +62,7 @@ async function route(request){try{
   const upstream=await net.fetch(target.href,{method:request.method,headers,body,redirect:(relayPost||speedPost||plusAsset)?'error':'follow',signal:request.signal,credentials:'omit'});
   const responseHeaders=new Headers(upstream.headers);responseHeaders.delete('set-cookie');responseHeaders.set('Access-Control-Allow-Origin','*');responseHeaders.set('Access-Control-Expose-Headers','*');responseHeaders.set('X-Morph-Upstream-URL',upstream.url||target.href);return new Response(upstream.body,{status:upstream.status,statusText:upstream.statusText,headers:responseHeaders});
  }
- if(u.pathname.startsWith('/__file/')){const token=u.pathname.split('/')[2],target=files.get(token);if(!target)return new Response('Unknown file',{status:404});return net.fetch(pathToFileURL(target).href,{headers:request.headers});}
+ if(u.pathname.startsWith('/__file/')){const token=u.pathname.split('/')[2],target=files.get(token);if(!target)return new Response('Unknown file',{status:404});return require('./local-media-response.cjs').localMediaResponse(request,target,mime[path.extname(target).toLowerCase()]);}
  const relative=decodeURIComponent(u.pathname).replace(/^\/+/,''),target=path.resolve(UI,relative||'index.html');if(!within(UI,target))return new Response('Forbidden',{status:403});
  if(!fs.existsSync(target)||!fs.statSync(target).isFile())return new Response('Not found',{status:404});
  const headers={'Content-Type':mime[path.extname(target).toLowerCase()]||'application/octet-stream','Content-Security-Policy':csp,'X-Content-Type-Options':'nosniff','Cache-Control':'no-store'};
