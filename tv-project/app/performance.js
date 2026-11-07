@@ -1,5 +1,5 @@
 (function(C){'use strict';
- // Light is the first-run default; explicit user choices survive navigation and restart.
+ // Balanced is the first-run default; explicit user choices survive navigation and restart.
  // Blur and reflections stay disabled.
  // Prayer/adhan timing and playback quality are never throttled.
  var modes=['quality','balanced','performance'];
