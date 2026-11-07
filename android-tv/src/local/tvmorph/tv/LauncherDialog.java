@@ -16,7 +16,7 @@ import java.util.WeakHashMap;
 /** Presentation for launcher-owned native menus. System settings and playback keep their owners. */
 final class LauncherDialog {
  private static final WeakHashMap<View,Boolean> styled=new WeakHashMap<>();
- static int accent(Context c){return UiSettings.color(c,"uiAction",0xff006bce);}
+ static int accent(Context c){return UiSettings.color(c,"uiAction",0xff07549b);}
  static int base(Context c){return "night".equals(UiSettings.prefs(c).getString("theme","night"))?0xff07101e:UiSettings.color(c,"uiBg",0xff07101e);}
  private static int alpha(int color,int a){return color&0xffffff|a<<24;}
  private static int dp(Context c,int value){return Math.max(1,Math.round(c.getResources().getDisplayMetrics().density*value));}
