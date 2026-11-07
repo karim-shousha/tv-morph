@@ -349,6 +349,14 @@
       "bytes": 245694417,
       "sha256": "ffc4d7e84e95c1bd1a5f57722a3e95038e1d32dfe3564dd8dd393f7f440ca507",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-Mac-1.1.325-universal.dmg"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.327.apk",
+      "version": "1.1.327",
+      "versionCode": 354,
+      "bytes": 169977315,
+      "sha256": "5965e376e412fe37943ab6910284ed03a16bdc4fd726864fb9f78d77f2d2aada",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.327/Morph-TV-Phone-1.1.327.apk"
     }
   ]
 }

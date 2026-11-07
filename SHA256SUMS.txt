@@ -87,3 +87,5 @@ ecece0ecae9ada5b87bfc37dd2a5fd97551bf0bf2e0da40e6bcb284c21787c96  Morph-TV-Samsu
 19bbeee10d3d12d413b53a28e5be3090a8c6d80a9ddca18862ccba5d16143696  Morph-TV-Samsung-Tizen5-1.1.325.wgt
 53fe18b2a144735d9cfe645fddaae7c22903c68f4fde1001475fcb07e0169b15  Morph-Launcher-Mac-1.1.325-universal.zip
 ffc4d7e84e95c1bd1a5f57722a3e95038e1d32dfe3564dd8dd393f7f440ca507  Morph-Launcher-Mac-1.1.325-universal.dmg
+
+5965e376e412fe37943ab6910284ed03a16bdc4fd726864fb9f78d77f2d2aada  Morph-TV-Phone-1.1.327.apk
