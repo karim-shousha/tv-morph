@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.327",
+      "version": "1.1.331",
       "download": "/download/phone",
-      "noteAr": "اتصال سريع بالتلفزيون الحالي من الهيرو باستخدام بيانات الربط المحفوظة، مع الحفاظ على إصلاحات Plus وBridge وتحريك صورة الثيم.",
-      "noteEn": "Reconnect to the saved current TV directly from Home, preserving Plus layout, Bridge and theme artwork fixes.",
+      "noteAr": "تحسين الهيرو واتصال التلفزيون الحالي، مع بار سفلي ثابت بنفس الجريدياند في التطبيق وIPTV.",
+      "noteEn": "Refined Home hero and saved-TV connection, with matching fixed-bottom navigation in the app and phone IPTV.",
       "channel": "preview",
-      "versionCode": 354
+      "versionCode": 358
     },
     {
       "id": "android",
@@ -226,15 +226,15 @@
       "versionCode": 351
     },
     {
-      "name": "Morph-TV-Phone-1.1.327",
-      "file": "Morph-TV-Phone-1.1.327.apk",
-      "version": "1.1.327",
+      "name": "Morph-TV-Phone-1.1.331",
+      "file": "Morph-TV-Phone-1.1.331.apk",
+      "version": "1.1.331",
       "product": "phone",
       "target": "android",
-      "bytes": 169977315,
-      "sha256": "5965e376e412fe37943ab6910284ed03a16bdc4fd726864fb9f78d77f2d2aada",
+      "bytes": 169981411,
+      "sha256": "609d48fcb7e4e2196d1e9bf82e88914aed5d86fe5ad54261af6be9bcaa850d99",
       "download": "/download/phone",
-      "versionCode": 354
+      "versionCode": 358
     },
     {
       "name": "Morph-TV-Legacy-1.1.325",
@@ -417,7 +417,7 @@
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.324.wgt",
     "iptv/tizen3": "Morph-IPTV-tizen3-1.1.324.wgt",
     "iptv/android": "Morph-IPTV-Android-TV-1.1.324.apk",
-    "phone": "Morph-TV-Phone-1.1.327.apk",
+    "phone": "Morph-TV-Phone-1.1.331.apk",
     "legacy": "Morph-TV-Legacy-1.1.325.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-1.1.325.apk",
     "bridge/android": "Morph-Bridge-Android-TV-1.1.325.apk",

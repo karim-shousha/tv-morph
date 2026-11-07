@@ -357,6 +357,14 @@
       "bytes": 169977315,
       "sha256": "5965e376e412fe37943ab6910284ed03a16bdc4fd726864fb9f78d77f2d2aada",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.327/Morph-TV-Phone-1.1.327.apk"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.331.apk",
+      "version": "1.1.331",
+      "versionCode": 358,
+      "bytes": 169981411,
+      "sha256": "609d48fcb7e4e2196d1e9bf82e88914aed5d86fe5ad54261af6be9bcaa850d99",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.331/Morph-TV-Phone-1.1.331.apk"
     }
   ]
 }
