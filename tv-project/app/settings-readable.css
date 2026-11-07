@@ -135,28 +135,28 @@ html body #view-settings#view-settings#view-settings .settings-theme-layout>.set
 html body #view-settings#view-settings#view-settings .settings-theme-details{flex:1;min-height:0;overflow:auto;padding:3px;scroll-padding:8px}
 
 /* Category identity stays visible across selected and focused states. */
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-appearance-entry svg{color:#92bbff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-appearance-entry .ui-section-icon{color:#92bbff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-themes-entry svg{color:#f3b7e7!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-themes-entry .ui-section-icon{color:#f3b7e7!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-home-entry svg{color:#7fe0c0!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-home-entry .ui-section-icon{color:#7fe0c0!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-parental-entry svg{color:#c5b0ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-parental-entry .ui-section-icon{color:#c5b0ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-time-entry svg{color:#83deec!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-time-entry .ui-section-icon{color:#83deec!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-performance-entry svg{color:#ffc783!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-performance-entry .ui-section-icon{color:#ffc783!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-launcher-entry svg{color:#93b8ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-launcher-entry .ui-section-icon{color:#93b8ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-system-entry svg{color:#81dfca!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-system-entry .ui-section-icon{color:#81dfca!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-iptv-entry svg{color:#cfb0ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-iptv-entry .ui-section-icon{color:#cfb0ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-plus-entry svg{color:#f3d17f!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-plus-entry .ui-section-icon{color:#f3d17f!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-about-entry svg{color:#9bc8ff!important;-webkit-text-fill-color:currentColor!important}
-html body #view-settings#view-settings#view-settings#view-settings #settings-category-about-entry .ui-section-icon{color:#9bc8ff!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-appearance-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-appearance-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-themes-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-themes-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-home-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-home-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-parental-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-parental-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-time-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-time-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-performance-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-performance-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-launcher-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-launcher-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-system-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-system-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-iptv-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-iptv-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-plus-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-plus-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-about-entry svg{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
+html body #view-settings#view-settings#view-settings#view-settings #settings-category-about-entry .ui-section-icon{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:currentColor!important}
 
 /* Keep every label aligned to the language start, independently of button defaults. */
 html body #view-settings#view-settings#view-settings .settings-category-entry strong,html body #view-settings#view-settings#view-settings .settings-category-entry small{text-align:start!important}

@@ -26,10 +26,12 @@ final class LauncherDialog {
   if((v instanceof android.widget.Button||v instanceof EditText)&&!styled.containsKey(v)){styled.put(v,true);v.setBackground(surface(c,v.hasFocus()));View.OnFocusChangeListener prior=v.getOnFocusChangeListener();v.setOnFocusChangeListener((node,focus)->{node.setBackground(surface(node.getContext(),focus));if(prior!=null)prior.onFocusChange(node,focus);});}
   if(v instanceof ViewGroup){ViewGroup g=(ViewGroup)v;for(int i=0;i<g.getChildCount();i++)views(g.getChildAt(i));}
  }
- private static void apply(AlertDialog dialog){Window w=dialog.getWindow();if(w==null)return;Context c=dialog.getContext();w.setElevation(0);w.setBackgroundDrawable(surface(c,false));views(w.getDecorView());int width=Math.min(dp(c,760),(int)(c.getResources().getDisplayMetrics().widthPixels*.90f));w.setLayout(width,ViewGroup.LayoutParams.WRAP_CONTENT);}
+ private static void apply(AlertDialog dialog,int preferredWidth){Window w=dialog.getWindow();if(w==null)return;Context c=dialog.getContext();w.setElevation(0);w.setBackgroundDrawable(surface(c,false));views(w.getDecorView());int width=Math.min(dp(c,preferredWidth),(int)(c.getResources().getDisplayMetrics().widthPixels*.90f));w.setLayout(width,ViewGroup.LayoutParams.WRAP_CONTENT);}
  static final class Builder extends AlertDialog.Builder {
+  private int preferredWidth=760;
+  Builder compact(int width){preferredWidth=width;return this;}
   Builder(Context c){super(new ContextThemeWrapper(c,android.R.style.Theme_Material_Dialog_Alert));}
-  @Override public AlertDialog create(){AlertDialog dialog=super.create();dialog.getWindow().getDecorView().post(()->apply(dialog));return dialog;}
-  @Override public AlertDialog show(){AlertDialog dialog=create();dialog.show();apply(dialog);return dialog;}
+  @Override public AlertDialog create(){AlertDialog dialog=super.create();dialog.getWindow().getDecorView().post(()->apply(dialog,preferredWidth));return dialog;}
+  @Override public AlertDialog show(){AlertDialog dialog=create();dialog.show();apply(dialog,preferredWidth);return dialog;}
  }
 }
