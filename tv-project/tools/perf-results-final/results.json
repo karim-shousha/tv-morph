@@ -1,0 +1,120 @@
+{
+  "failures": [],
+  "checks": [
+    {
+      "name": "boot-no-pageerrors",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "boot-under-30s",
+      "ok": true,
+      "extra": "2679ms (desktop Chrome, file://)"
+    },
+    {
+      "name": "dpad-up-to-nav",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "dpad-right-stays-dock",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "nav-paint-measured",
+      "ok": true,
+      "extra": "p50=33.3ms p95=33.5ms (desktop Chrome)"
+    },
+    {
+      "name": "settings-visible",
+      "ok": true,
+      "extra": "22 .setting rows"
+    },
+    {
+      "name": "settings-clock-toggle",
+      "ok": true,
+      "extra": "24 hour -> 12 hour"
+    },
+    {
+      "name": "settings-clock-persist",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "settings-clock-persist-value",
+      "ok": true,
+      "extra": "12 hour"
+    },
+    {
+      "name": "settings-7-visible-2-hidden",
+      "ok": true,
+      "extra": "{\"appearance\":true,\"performance\":true,\"home\":true,\"livetv\":true,\"prayer\":true,\"time\":true,\"system\":true,\"launcher\":false,\"iptv\":false}"
+    },
+    {
+      "name": "settings-placement",
+      "ok": true,
+      "extra": "{\"hdmi\":true,\"sys\":true,\"home\":true,\"perf\":true,\"sub\":true}"
+    },
+    {
+      "name": "motion-label",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "kids-label",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "theme-switch",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "perf-tier-api",
+      "ok": true,
+      "extra": "tier API present"
+    },
+    {
+      "name": "showview-apps",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "dom-census",
+      "ok": true,
+      "extra": "678 nodes"
+    }
+  ],
+  "navPaint": {
+    "p50": 33.30000001192093,
+    "p95": 33.5,
+    "all": [
+      18.19999998807907,
+      31.399999976158142,
+      33.19999998807907,
+      33.299999952316284,
+      33.299999952316284,
+      33.299999952316284,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.39999997615814,
+      33.39999997615814,
+      33.40000003576279,
+      33.40000003576279,
+      33.40000003576279,
+      33.5
+    ]
+  },
+  "census": {
+    "nodes": 678
+  },
+  "errors": []
+}

@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "C:/Users/Admin/AppData/Local/Temp/codex-clipboard-02b73863-da9c-46a5-91d7-ae7a60904522.png",
+  "assets": [
+    {
+      "kind": "background",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-d2c33843-d529-45eb-9ea1-eba5e63d0f27.png",
+      "prompt": "Use case: stylized-concept. Reconstruct ONLY the full-screen background of the supplied Morph Bridge UI reference, without any interface. Wide 16:9 canvas: extremely dark navy almost black center and upper field; fine luminous flowing blue and cyan ribbons entering at far left mid-height and curling into lower right, subtle gold ribbon along the bottom. Keep the central 70% very quiet and dark for real UI cards and text. Precisely match the reference palette and restrained lighting. No words, no logos, no phone, no TV, no cards, no borders, no fake UI. This will be the shared backdrop for Bridge and Settings.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\bridge-background-v2.webp"
+    },
+    {
+      "kind": "hero",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-f21ee130-e6b3-4d53-966d-a544330f8d1b.png",
+      "prompt": "Use case: stylized-concept. Reconstruct ONLY the phone and television product illustration in the upper left of the supplied Morph Bridge UI reference. A gold-edged slim smartphone tilted very slightly at left and larger slim television with gold stand at right. The same flowing luminous blue cyan white and gold waves on both dark blue screens, with a small folded M-shaped blue-white-gold emblem centered on each screen. Three cyan wireless arcs between the devices. Match the reference object geometry, proportions, perspective, restrained blue-gold lighting and premium materials as closely as possible. Transparent background, no UI panels, no borders, no words, no title, no caption, no watermark, no giant background shape. Wide 3:2 canvas; keep the complete devices and stands inside the frame.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\bridge-devices-v2.webp"
+    }
+  ]
+}

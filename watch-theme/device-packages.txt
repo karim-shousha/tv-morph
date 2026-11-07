@@ -1,0 +1,310 @@
+system apps	pkg_type [rpm]	pkgid [com.samsung.unit-test-sensor]	name [Unit Test sensor Applications]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.bluetooth-testmode]	name [Bluetooth Testmode]	version [0.0.14]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-clock-viewer]	name [W-Clock-Viewer]	version [0.2.15]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.chromium-efl]	name [Tizen Web Engine based on Chromium]	version [69.0.3497.106]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.net-popup]	name [Network popup]	version [3.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.inputmethod-setting]	name [Keyboard setting]	version [0.5.44]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [health-data-service]	name [Health Data Service]	version [1.2.12.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.heremaps-uc]	name [HereMaps UC]	version [1.1.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.daily-briefing]	name [Daily briefing]	version [2.0.69]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.stt-engine-default]	name [org.tizen.stt-engine-default]	version [1.0.16]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.windicator]	name [Controls]	version [4.0.7]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.dpm-syspopup]	name [dpm-syspopup]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.wnotification2]	name [Notifications]	version [2.3.25]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.contacts-backup-service]	name [contacts-backup-service]	version [1.0.3]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.autofill-setting-wearable]	name [Autofill setting]	version [0.1.10]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.app-list-backup-service]	name [Samsung Cloud App List backup service application ]	version [1.2.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.ciss]	name [ciss]	version [2.0.5]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.nfc-setting-app]	name [NFC Setting]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [csc-app]	name [CSC App]	version [1.1.4]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.watchface-fresh-s]	name [Fresh]	version [2.0.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-music-player]	name [Music]	version [2.4.56]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.ime-backup-service]	name [Samsung Cloud IME backup service application ]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.askuser-popup]	name [askuser popup]	version [0.0.10]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.screen-reader-profile_wearable]	name [screen-reader]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.watch-utils]	name [Watch utils]	version [2.0.3]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.sdbd-syspopup]	name [Sdbd syspopup]	version [0.1.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.widget_viewer_sdk]	name [Widget Viewer SDK]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.idle-clock-emergency]	name [idle-clock-emergency]	version [1.1.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.mapcontrol]	name [Map control]	version [2.0.5]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-lockscreen]	name [w-lockscreen]	version [0.1.9]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.tts-engine-default]	name [tts-engine-default]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.tizenseckeystring]	name [Tizen Keystring]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.system-syspopup]	name [System popup]	version [0.3.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.worldclock]	name [World clock]	version [22.0.47]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.wis-backup-service]	name [Samsung Cloud WIS backup service application ]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.runestone-setting]	name [Customization Service]	version [2.9.7]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [net.wc-syspopup]	name [Weconn System Popup]	version [2.0.25]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.wemail]	name [Email]	version [1.6.24]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.tethering-testmode]	name [Tethering Testmode Toolkit]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.ambient-setting]	name [Ambient Setting]	version [0.0.5]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.fota-consumer]	name [fota-consumer]	version [1.1.3]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.tizen.bixby-wakeup-service]	name [Bixby Wakeup Service]	version [0.0.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-taskmanager]	name [Recent apps]	version [1.2.14]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.watchface]	name [Watch faces]	version [1.1.410]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-logs2]	name [Phone]	version [3.0.52]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.samsung-analytics]	name [samsung-analytics]	version [2.6.22]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [w-secure-element]	name [Secure Element for Gear]	version [0.1.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [nfc-test]	name [NFC Test]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.dqagent]	name [dqagent]	version [1.4.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.update-service]	name [update-service]	version [1.3.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-contacts2]	name [Contacts]	version [2.6.61]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.testmode]	name [Keystring Application]	version [1.0.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.bt-syspopup]	name [Bluetooth System Popup]	version [2.0.26]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.cmc]	name [cmc-service]	version [1.0.35]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.fmg]	name [fmg-watch]	version [5.0.28]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-lockscreen-setting]	name [w-lockscreen-setting]	version [0.1.8]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.factory-nfchce]	name [factory-nfchce]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-calendar2]	name [Calendar]	version [2.0.41]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-samsung-cloud]	name [samsung-cloud]	version [3.1.37]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.samsung-account-front]	name [SamsungAccountFront]	version [1.3.30]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.b2-setup-wizard]	name [Setup wizard]	version [1.0.6]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.fmm]	name [Find My Phone]	version [5.0.17]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.shealth_gear]	name [Samsung Health]	version [4.17.300]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.skmsa]	name [SKMS Agent]	version [2.4.13]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.nfc-syspopup]	name [NFC System Popup]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.alarm-solis]	name [Alarm]	version [2.0.59]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.samsung-account.ui]	name [Samsung account]	version [3.5.22]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.unit-test-mm]	name [Unit Test Multimedia Applications]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.crash-syspopup]	name [Crash popup]	version [0.3.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.iva-service]	name [Iva Service]	version [1.5.201]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.samsung-pay-guide-app]	name [Samsung Pay]	version [0.0.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.clocksetting]	name [Settings]	version [1.1.30]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.accessibility-setting]	name [Accessibility Setting]	version [0.0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.samsung-service-manager]	name [samsung-service-manager]	version [1.5.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-eas-it-policy]	name [W EAS IT POLICY]	version [0.0.26]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.scs]	name [com.samsung.scs]	version [1.3.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-input-selector]	name [Watch Input]	version [1.1.3]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.setting-location]	name [Location]	version [1.1.50]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-manager-service]	name [w-manager-service]	version [1.0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.bixby-voice]	name [Bixby Voice]	version [3.106.12]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [net.wc-popup]	name [wc-popup]	version [1.1.32]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.screen-capture]	name [screen capture]	version [0.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-magazine-wc1]	name [News Briefing]	version [2.0.6]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.fdam]	name [fdam]	version [2.0.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.knoxcustom-exitui]	name [Custom ExitUI]	version [2.3.8]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [org.tizen.tzdata]	name [Time Zone Data]	version [22.2.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-call-settings]	name [call-settings]	version [3.1.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.app-widget]	name [Apps]	version [2.0.15]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [nfc-manager]	name [NFC Manager]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.sketch]	name [sketch]	version [5.0.9]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.bixby]	name [bixby]	version [3.106.5]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.unit-test-input]	name [unit-test-input]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.fido-syspopup]	name [fido-syspopup]	version [0.0.5]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.unit-test-network]	name [unit test network applications]	version [1.0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.emergency-message]	name [Safety assistance]	version [2.0.50]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.update-client]	name [updateclient]	version [1.5.28]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.aurum-bootstrap]	name [aurum-bootstrap]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.privacy-setting-popup]	name [privacy-setting popup]	version [0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.idle-clock-ups]	name [Power saving]	version [1.3.4]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.app-version-sync-popup]	name [app-version-sync-popup]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.runestone-core]	name [Customization Service]	version [2.9.7]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.bixby-provisioning]	name [Bixby provisioning]	version [3.106.8]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-home]	name [Home]	version [3.1.89]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [ise-engine]	name [Default keyboard]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.autofilld]	name [autofilld]	version [1.0.29]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.tts-setting]	name [TTS Setting]	version [5.3.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.knoxenrollmentservice-efl]	name [knoxenrollmentservice-efl]	version [0.6.19]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-media-controller]	name [Media Controller]	version [5.0.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.ppt-controller]	name [PPT Controller]	version [1.5.75]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.ime-companion-service]	name [Samsung IME companion service application ]	version [1.1.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.watchface-neon-o]	name [Neon]	version [2.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [csc-manager]	name [CSC Manager]	version [1.1.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.weather]	name [Weather]	version [5.0.63]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.idle-service]	name [Toast]	version [0.1.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.app-selector]	name [Application Selection Popup]	version [0.1.9]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.watch-system-update-popup]	name [WatchSystemUpdatePopup]	version [1.0.4]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.runestone-gear]	name [Customization Service]	version [2.9.7]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.sticker-receiver]	name [sticker-receiver]	version [1.0.64]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.bluetooth]	name [iW bluetooth]	version [2.0.25]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tzdata-update-popup]	name [tzdata-update-popup]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.w-emergency-keypad]	name [Dialler]	version [2.0.10]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.knox.license-viewer]	name [EULA License Viewer]	version [1.5.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.imssettings]	name [IMS Settings]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.message]	name [Messages]	version [2.51.35]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.iap-galaxyapps-consumer]	name [iap-galaxyapps-consumer]	version [1.1.6]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.pwlock]	name [Pwlock]	version [1.0.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.wifi]	name [wifi-efl]	version [1.2.29]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.factory-clientw]	name [factory-client]	version [1.0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.watch-system-update]	name [WatchSystemUpdate]	version [1.1.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.logdump-uploader]	name [logdump-uploader]	version [1.0.8]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [smartreply-service]	name [SmartReply Service]	version [1.3.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.supl-syspopup]	name [supl-syspopup]	version [0.0.2]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [sem_daemon]	name [SEM Daemon]	version [2.5.7]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [gps-log-service]	name [gps-log-service]	version [0.0.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.wifi-test]	name [Keystring Application]	version [1.0.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.unit-test-device]	name [Unit test device Applications]	version [5.5.47]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.flash-light]	name [Flashlight]	version [2.0.12]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.power-monitor-service]	name [power-monitor-service]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [ise-languagepack-mgr]	name [Languagepack Manager]	version [1.2.1]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.isf-kbd-mode-changer]	name [isf-kbd-mode-changer]	version [0.0.1]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.tizen.samsung-account]	name [SamsungAccountService]	version [1.5.51]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [ise-multilingual]	name [Samsung keyboard]	version [1.0.0]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [com.samsung.safetyvolume-syspopup]	name [safetyvolume-syspopup]	version [0.3.2]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.mdec-consumer]	name [mdec.consumer]	version [1.0.22]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-reminder]	name [Reminder]	version [2.0.43]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.message-backup-service]	name [Messages BNR]	version [1.2.5]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-call]	name [Call]	version [3.0.72]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-gallery]	name [Gallery]	version [1.5.79]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.gearstore]	name [Galaxy Store]	version [5.0.67]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.alarm-mobile-alert-solis]	name [alarm-mobile-alert-solis]	version [2.0.13]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.w-music-acr]	name [w-music-acr]	version [1.0.3]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.alti-barometer]	name [Alti-Barometer]	version [2.0.6]	storage [internal]
+
+system apps	pkg_type [rpm]	pkgid [org.tizen.powerkey-syspopup]	name [Power key system popup]	version [0.3.0]	storage [internal]
+
+system apps	pkg_type [tpk]	pkgid [com.samsung.samsung-pay-app]	name [Samsung Pay]	version [2.0.5506]	storage [internal]
+
+spend time for pkgcmd is [4541]ms
+

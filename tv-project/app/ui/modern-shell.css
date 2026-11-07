@@ -1,13 +1,16 @@
 /* Phase 2: physical composition stays LTR; text direction follows the locale. */
+/* The backdrop must stay outside document flow on Inputs and every subpage. */
+body[data-ui-mode=modern]>#cinema-background{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;pointer-events:none;z-index:0}
+body[data-ui-mode=modern][data-ui-home=false]>#cinema-background>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main{padding:24px 40px 0 178px!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme]:after{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header{position:absolute;left:40px;right:40px;top:24px;height:82px;z-index:20;display:flex;align-items:center;direction:ltr}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand{font-size:29px;min-width:200px;max-width:220px;flex-shrink:0;letter-spacing:-1px;margin-right:22px}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img:not(#personal-brand){width:62px!important;height:52px!important;margin-right:8px!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img:not(#personal-brand):not([src*="morph-wordmark"]){width:62px!important;height:52px!important;margin-right:8px!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav{display:flex;align-items:center;flex:0 1 auto;min-width:0;max-width:1090px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:none;margin:0 18px 0 0;padding:6px;border-radius:40px;background:var(--ui-dock-bg);border:1px solid var(--ui-dock-border);height:68px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav::-webkit-scrollbar{display:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav{flex:0 0 auto;min-height:48px;margin:0 1px!important;padding:10px 15px!important;font-size:20px;border-radius:28px;line-height:26px;background:transparent;color:var(--ui-text);white-space:nowrap}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav.active{background:var(--ui-button-gradient)!important;color:var(--ui-bg)!important;box-shadow:0 0 18px var(--ui-focus-glow)}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav.active{background:linear-gradient(120deg,#153b61,#172c4a)!important;color:#fff!important;box-shadow:0 0 0 2px #142d53,0 0 14px #369bff66!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header button:focus{outline:3px solid var(--ui-focus-ring)!important;outline-offset:2px!important;box-shadow:0 0 18px var(--ui-focus-glow)}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .header-status{margin-left:auto;flex:0 0 auto;display:flex;align-items:center;width:auto;max-width:none;gap:0}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .header-clock{min-width:124px;max-width:160px;padding-left:18px;margin-left:12px;border-left:1px solid var(--ui-card-border);color:var(--ui-text);text-align:right}
@@ -24,7 +27,8 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header #network{di
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header #network span{display:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header #network i{margin:0}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .nav-wifi .wifi-symbol{width:24px;height:24px}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .nav-wifi .wifi-label{font-size:16px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .nav-wifi .wifi-label{font-size:20px}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav,body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav .nav *{font-size:20px!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .ui-home-search{display:flex;align-items:center;justify-content:center;border:1px solid var(--ui-card-border);border-radius:50%;width:52px;height:52px;min-width:52px;padding:12px;margin-right:12px;background:var(--ui-card-bg);color:var(--ui-text)}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .ui-home-search svg{width:27px;height:27px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-feed{height:700px;overflow:hidden!important;padding:0}
@@ -41,7 +45,7 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-logo{left:18px;top:0;width:84px!important;max-width:84px!important;height:96px;margin:0;filter:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme]:not(.has-hero-logo) #view-home .hero .intro .club-hero-copy{top:64px!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-title-accent{background:none;-webkit-text-fill-color:var(--ui-focus-ring);color:var(--ui-focus-ring)}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] #cinema-background{left:0;top:0;right:0;bottom:0;width:1920px;height:1080px;background:linear-gradient(120deg,var(--ui-bg),var(--ui-bg-raised));overflow:hidden}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #cinema-background{position:absolute;z-index:0;pointer-events:none;left:0;top:0;right:0;bottom:0;width:1920px;height:1080px;background:linear-gradient(120deg,var(--ui-bg),var(--ui-bg-raised));overflow:hidden}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #cinema-background>img{position:absolute;left:auto!important;right:0!important;top:0!important;bottom:auto;width:var(--ui-art-width)!important;max-width:none!important;height:100%!important;object-fit:var(--ui-art-fit)!important;object-position:var(--ui-art-position)!important;opacity:1;mask-image:none!important;-webkit-mask-image:none!important;filter:none!important;transform-origin:right center}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #cinema-background:after{content:'';position:absolute;left:0;right:0;top:0;bottom:0;background:var(--ui-art-scrim),linear-gradient(0deg,var(--ui-bg),transparent 57%);pointer-events:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{position:absolute;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;left:24px;top:138px;bottom:auto;width:110px;height:auto;max-height:898px;padding:10px 5px!important;margin:0;overflow-y:auto;overflow-x:hidden;background:linear-gradient(180deg,var(--ui-card-bg),transparent)!important;border:0!important;border-radius:32px;scrollbar-width:none}
@@ -69,7 +73,7 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .last-hdmi-c
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .section-heading{right:44px;bottom:236px;margin:0}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .section-heading button{font-size:19px;padding:7px 12px;color:var(--ui-text-muted)}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock{position:absolute;left:178px;right:40px;bottom:18px;transform:none;width:auto;max-width:none;height:254px;padding:57px 24px 44px!important;display:flex;align-items:flex-start;border:1px solid transparent;border-radius:var(--ui-radius-lg);background:transparent!important;box-shadow:none;overflow-x:auto;overflow-y:hidden;direction:ltr;isolation:isolate;scrollbar-width:none}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{position:relative;flex:0 0 142px!important;width:142px!important;min-width:142px!important;max-width:142px!important;height:148px!important;min-height:148px!important;margin:0 10px!important;padding:8px 19px!important;border:0!important;border-radius:38px;background:transparent!important;background-image:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important;color:var(--ui-text);transform:none!important;transform-origin:50% 55%;transition:transform var(--ui-focus-duration) var(--ui-ease),box-shadow var(--ui-focus-duration) ease!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{position:relative;flex:0 0 142px!important;width:142px!important;min-width:142px!important;max-width:142px!important;height:148px!important;min-height:148px!important;margin:0 10px!important;padding:8px 19px!important;border:0!important;border-radius:38px;background:transparent!important;background-image:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none!important;color:var(--ui-text);transform:none!important;transform-origin:50% 55%;transition:transform var(--ui-focus-duration) var(--ui-ease),box-shadow var(--ui-focus-duration) ease!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus{transform:translateY(-11px) scale(1.14)!important;border:0!important;outline:none!important;background:transparent!important;box-shadow:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:hover:not(:focus),body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button.dock-neighbor:not(:focus){transform:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-icon,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .plus-icon{display:flex;align-items:center;justify-content:center;position:relative;width:104px!important;height:104px!important;min-width:104px!important;min-height:104px!important;border-radius:46% 48% 30% 42%;margin:0!important;border:1px solid var(--ui-card-border);background-color:var(--ui-bg-raised);background-image:radial-gradient(ellipse at 65% 110%,var(--ui-icon-light,var(--ui-focus-surface-b)),transparent 60%),linear-gradient(145deg,var(--ui-icon-sheen),transparent 48%,var(--ui-icon-shade))!important;box-shadow:var(--ui-icon-shadow)!important;filter:none}
@@ -80,7 +84,7 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock h3,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-name{display:block;position:absolute;top:145px;left:-7px;width:156px;margin:0;font-size:19px;line-height:22px;max-height:2.4em;font-weight:500;text-align:center;white-space:normal;overflow:hidden;overflow-wrap:break-word;opacity:1!important;color:var(--ui-text)}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .tag,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock p,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .arrow{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .dock-reflection{top:174px;left:19px;width:104px;height:40px;opacity:.28;filter:none;pointer-events:none}
-body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{right:48px;top:140px;width:260px;min-height:146px;padding:16px 20px;border:1px solid var(--ui-card-border)!important;background:var(--ui-card-bg)!important;box-shadow:none!important;color:var(--ui-text);border-radius:var(--ui-radius-md);backdrop-filter:none!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{right:48px;top:140px;width:260px;min-height:146px;padding:16px 20px;border:1px solid var(--ui-card-border)!important;background:var(--ui-card-bg)!important;box-shadow:none!important;color:var(--ui-text);border-radius:var(--ui-radius-md);backdrop-filter:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer small{font-size:20px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer strong{font-size:25px}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer time{font-size:39px}
@@ -88,7 +92,6 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #home-usb-rail{left:178
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .cinema-credit,body[data-ui-mode=modern][data-ui-home=true][data-theme] main>footer{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] .ui-sidebar-icon{display:none}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=full] #favourites.app-dock{backdrop-filter:none;-webkit-backdrop-filter:none}
-body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus,body[data-ui-mode=modern][data-ui-home=true][data-theme].light-mode #view-home #favourites.app-dock>button:focus{transform:none!important;box-shadow:none!important;outline:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home .dock-reflection{display:none!important}
 body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home .recent-app-card:focus{transform:none!important;box-shadow:none!important}
 html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy{direction:rtl;text-align:right!important}
@@ -122,8 +125,6 @@ body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi .ui-dock-icon{background-image:radial-gradient(ellipse at 65% 110%,var(--ui-focus-surface-b),transparent 65%)!important;color:var(--ui-neon-a)}
 
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .dock-reflection>.app-icon,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .dock-reflection>.plus-icon{top:36px;transform:scaleY(-.35)!important;transform-origin:center top}
-body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus:before{box-shadow:none; background:linear-gradient(var(--ui-bg-raised),var(--ui-bg-raised)) padding-box,linear-gradient(var(--ui-neon-a),var(--ui-neon-b)) border-box}
-body[data-ui-mode=modern][data-ui-home=true][data-theme][data-ui-effects=light] #view-home #favourites.app-dock>button:focus:after{display:none!important}
 
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus):before,body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus):after{display:none!important}
 
@@ -143,3 +144,90 @@ body[data-ui-mode=modern] .ui-owned-app{color:var(--ui-neon-a,var(--ui-accent))}
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app>svg{width:57px;height:57px}
 
 body[data-ui-mode=modern][data-ui-home=true][data-theme] #favourites>button:focus .ui-owned-app{color:var(--ui-text)}
+
+/* Author display rules must not resurrect the retired bitmap beside its SVG. */
+body[data-ui-mode=modern] #favourites.app-dock .app-icon[hidden],body[data-ui-mode=modern] #favourites.app-dock .ui-dock-icon[hidden]{display:none!important}
+/* One focus surface for HDMI: suppress the inner duplicate badge and light rings. */
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>#dock-hdmi:focus .ui-dock-icon{background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;outline:0!important}
+
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img[src*="morph-wordmark"]{display:block!important;width:210px!important;height:64px!important;margin:0!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img[src*="morph-wordmark"]{width:280px!important;height:84px!important}
+@media(max-width:1400px){body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img[src*="morph-wordmark"]{width:210px!important;height:64px!important}}
+
+/* Home shares the compact continuous header used on internal launcher pages. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] main>header{height:78px!important;background:linear-gradient(100deg,#071324e6,#101d30bf)!important;border:1px solid #9ac7ff24;border-radius:40px;padding:0 14px!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand{min-width:280px;max-width:280px;margin-right:14px}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav{position:relative!important;left:auto!important;top:auto!important;transform:none!important;width:auto!important;max-width:none!important;flex:1 1 auto!important;background:transparent!important;border:0!important;height:68px!important;margin:0 10px 0 0!important}
+
+body[data-ui-mode=modern][data-theme] main>header button:focus{outline:2px solid #83b8ff!important;outline-offset:3px!important;box-shadow:0 0 0 2px #142d53,0 0 14px #369bff66!important;background:linear-gradient(120deg,#153b61,#172c4a)!important;color:#fff!important}
+
+body[data-ui-mode=modern][data-theme] main>header{height:78px!important;min-height:78px!important;display:flex!important;align-items:center!important;direction:ltr!important;background:linear-gradient(100deg,#071324e6,#101d30bf)!important;border:1px solid #9ac7ff24!important;border-radius:40px!important;padding:0 14px!important}
+body[data-ui-mode=modern][data-theme] main>header .brand{min-width:280px!important;max-width:280px!important;flex:0 0 280px!important;margin-right:14px!important}
+body[data-ui-mode=modern][data-theme] main>header .brand>img[src*="morph-wordmark"]{display:block!important;width:280px!important;height:78px!important;object-fit:contain!important;margin:0!important}
+body[data-ui-mode=modern][data-theme] main>header nav{position:relative!important;left:auto!important;top:auto!important;transform:none!important;width:auto!important;max-width:none!important;flex:1 1 auto!important;background:transparent!important;border:0!important;height:68px!important;margin:0 10px 0 0!important;padding:6px!important;border-radius:40px!important}
+body[data-ui-mode=modern][data-theme] main>header nav .nav{min-height:48px!important;padding:10px 15px!important;border-radius:28px!important;line-height:26px!important;font-size:20px}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header .brand>img:not(#personal-brand)[src*="morph-wordmark"]{width:280px!important;height:78px!important;display:block!important;margin:0!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] main>header button:focus,body[data-ui-mode=modern][data-theme] main>header nav .nav.active{outline:2px solid #83b8ff!important;outline-offset:3px!important;box-shadow:0 0 0 2px #142d53,0 0 14px #369bff66!important;background:linear-gradient(120deg,#153b61,#172c4a)!important;color:#fff!important}
+
+/* Shared compact navigation geometry and focus surface. ID prevents legacy/theme rules winning. */
+#morph-header{--header-accent:var(--ui-focus-ring,var(--media-accent,#79bdff));box-sizing:border-box!important;border-radius:40px!important;height:78px!important;min-height:78px!important;max-height:78px!important;padding:0 14px!important;gap:8px!important;background:linear-gradient(100deg,#071324e6,#101d30e0)!important;border:1px solid #9ac7ff30!important}
+#morph-header nav{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;margin:0!important;background:transparent!important;border:0!important;padding:6px!important;height:68px!important;min-width:0!important;overflow-x:auto!important;overflow-y:hidden!important}
+#morph-header nav button{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;flex:0 0 auto!important;min-height:48px!important;height:48px!important;line-height:26px!important;padding:10px 15px!important;margin:0!important;border:1px solid transparent!important;border-radius:28px!important;font-size:20px!important;color:#fff!important;white-space:nowrap!important;background:transparent!important;box-shadow:none!important;outline:none!important}
+#morph-header nav button.active{background:#122b44!important;color:#fff!important;border-color:var(--header-accent)!important;box-shadow:inset 0 -2px var(--header-accent)!important}
+#morph-header button:focus,#morph-header nav button:focus{background:linear-gradient(120deg,#153b61,#172c4a)!important;color:#fff!important;border-color:var(--header-accent)!important;outline:2px solid var(--header-accent)!important;outline-offset:2px!important;box-shadow:0 0 0 2px #142d53,0 0 14px var(--header-accent)!important}
+#morph-header .brand{box-sizing:border-box!important;min-width:280px!important;max-width:280px!important;flex:0 0 280px!important;height:78px!important;margin:0!important;padding:0!important}
+#morph-header .brand img[src*="wordmark"]{width:280px!important;height:78px!important;object-fit:contain!important}
+
+body[data-fixed-layout=true][data-ui-mode=modern][data-ui-home=false] #morph-header{position:relative!important;left:-138px!important;top:-48px!important;width:calc(100% + 136px)!important;margin:0!important}
+
+/* Preserve icon size, scroll only at the edges, and use one focused surface. */
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock{width:auto!important;max-width:none!important;left:150px!important;right:28px!important;transform:none!important;direction:ltr!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-behavior:auto!important;padding-left:38px!important;padding-right:38px!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock[data-overflow=true]{justify-content:flex-start!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus .app-icon:not(img),body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus .ui-dock-icon{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;outline:none!important}
+
+/* Explicit logo clearance also works on projector WebViews without flex gap. */
+#morph-header .brand{margin-right:20px!important}
+
+/* Rounded launcher header focus also on TV engines with square outlines. */
+html body[data-ui-mode=modern][data-theme] main>#morph-header button:focus{outline:none!important;outline-offset:0!important;border-radius:999px!important;border:1px solid var(--ui-focus-ring,#83b8ff)!important;box-shadow:0 0 0 2px var(--ui-focus-ring,#83b8ff)!important}
+
+/* Canonical home composition: natural text flow, one shared surface system. */
+html body[data-ui-mode=modern][data-theme] main>#morph-header{background:var(--ui-dock-bg)!important;border-color:var(--ui-card-border)!important;padding-right:24px!important}
+html body[data-ui-mode=modern][data-theme] main>#morph-header .brand{margin-right:32px!important}
+html body[data-ui-mode=modern][data-theme] main>#morph-header .header-status{margin-left:auto!important;flex:0 0 auto!important;padding-right:6px!important;box-sizing:border-box!important}
+html body[data-ui-mode=modern][data-theme] #modern-search{display:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy{position:absolute!important;left:15px!important;right:auto!important;top:65px!important;width:690px!important;max-width:690px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;direction:ltr!important;text-align:left!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-overline{display:block!important;width:100%!important;font-size:20px!important;line-height:1.5!important;margin:0 0 12px!important;letter-spacing:1px}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero h1{display:block!important;visibility:visible!important;position:static!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0 0 14px!important;padding:0!important;line-height:1.25!important;font-size:calc(var(--ui-hero-title-size,80px) * .8)!important;overflow:visible!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy>p{display:block!important;width:100%!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;margin:0!important;line-height:1.5!important;font-size:var(--ui-hero-subtitle-size,30px)!important;overflow:visible!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-continue{position:static!important;display:inline-flex!important;align-self:flex-start!important;width:auto!important;max-width:100%!important;margin:20px 0 0!important;direction:ltr!important;border-radius:999px!important;outline:none!important;flex:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-continue>span:first-child{display:inline-block!important;margin-right:12px!important;flex:none!important}
+html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy{direction:ltr!important;text-align:left!important}
+html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy h1,html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero-copy>p,html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-overline{direction:rtl!important;text-align:left!important;letter-spacing:0!important}
+html[lang=ar] body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .hero .intro .club-hero h1{font-size:var(--ui-hero-title-size,64px)!important;line-height:1.4!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool{background:var(--ui-idle-surface)!important;border:1px solid var(--ui-card-border)!important;box-shadow:var(--ui-icon-shadow)!important;color:var(--ui-text)!important;border-radius:28px!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:focus{background:var(--ui-focused-surface)!important;outline:none!important;border-color:var(--ui-focus-ring)!important;box-shadow:inset 0 0 0 1px var(--ui-focus-ring),0 0 12px var(--ui-focus-glow)!important;transform:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi:focus .ui-dock-icon{background:transparent!important;background-image:none!important;box-shadow:none!important;border:0!important;outline:none!important}
+
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus) .app-icon{background:var(--ui-idle-surface)!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before{background:var(--ui-focused-surface)!important;border-color:var(--ui-focus-ring)!important;box-shadow:inset 0 0 0 1px var(--ui-focus-ring),0 0 12px var(--ui-focus-glow)!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{display:none!important}
+
+/* A shared physical gap keeps both icon rails consistent on older flex engines. */
+html body[data-ui-mode=modern][data-ui-home=true][data-theme]{--ui-icon-gap:16px}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{gap:0!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool{margin:0 0 var(--ui-icon-gap)!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:last-child{margin-bottom:0!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock{gap:0!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{margin:0 calc(var(--ui-icon-gap) / 2)!important}
+
+/* Translucent dock selection; icon, label, geometry and motion remain unchanged. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before{opacity:.22!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{opacity:.18!important}
+
+/* Center the launcher shortcuts as a group, independently of their count. */
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{top:50%!important;bottom:auto!important;transform:translateY(-50%)!important;max-height:calc(100% - 220px)!important}

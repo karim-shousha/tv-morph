@@ -1,0 +1,10 @@
+{
+  "tool": "Built-in image_gen",
+  "reference": "User supplied 1000155768.jpg",
+  "prompt": "Enhance supplied Egyptian flag and Sisi banner; preserve identity, suit, red tie and composition; waving flag; crisp natural details; landscape TV background; no text or UI.",
+  "size": [
+    1672,
+    941
+  ],
+  "asset": "egypt-patriotic-banner-v2.webp"
+}

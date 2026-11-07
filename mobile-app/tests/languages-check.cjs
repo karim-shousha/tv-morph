@@ -1,0 +1,7 @@
+const {chromium}=require('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const path=require('path'),{pathToFileURL}=require('url'),assert=require('assert');
+(async()=>{const b=await chromium.launch({headless:true,channel:'msedge'});try{const p=await b.newPage({viewport:{width:1920,height:1080}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.route(/^https?:/,r=>r.abort());await p.goto(pathToFileURL(path.resolve('mobile-app/tests/samsung-ui/index.html')).href);
+for(const [code,name,home] of [['fr','Français','Accueil'],['zh','简体中文','主页'],['ja','日本語','ホーム'],['en','English','Home'],['ar','العربية','الرئيسية']]){
+ await p.locator('#samsung-language').click();await p.locator('#language-dialog').getByRole('button',{name,exact:true}).click();assert.equal(await p.locator('html').getAttribute('lang'),code);await p.waitForFunction(value=>document.getElementById('nav-home').textContent===value,home);assert.equal(await p.locator('#nav-home').textContent(),home);await p.reload();assert.equal(await p.locator('html').getAttribute('lang'),code);assert.equal(await p.locator('#nav-home').textContent(),home);
+}
+await p.evaluate(()=>MorphLocale.set('ja'));await p.screenshot({path:'mobile-app/japanese-preview.png'});assert.deepEqual(errors,[]);console.log('PASS: 5-language picker, translations, switching back, persistence and no page errors.');}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

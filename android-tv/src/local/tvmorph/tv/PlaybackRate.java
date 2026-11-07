@@ -10,12 +10,12 @@ final class PlaybackRate {
   if(!allowed||player==null)throw new IllegalArgumentException("Unsupported playback rate");
   boolean playing=player.isPlaying();float previous=player.getPlaybackParams().getSpeed();if(previous<=0||Float.isNaN(previous)||Float.isInfinite(previous))previous=1f;
   try{
-   player.setPlaybackParams(new PlaybackParams().allowDefaults().setSpeed(rate).setPitch(1f));
+   player.setPlaybackParams(new PlaybackParams().allowDefaults().setAudioFallbackMode(PlaybackParams.AUDIO_FALLBACK_MODE_FAIL).setSpeed(rate).setPitch(1f));
    float actual=player.getPlaybackParams().getSpeed();
    if(Float.isNaN(actual)||Float.isInfinite(actual)||Math.abs(actual-rate)>0.02f)throw new IllegalStateException("Playback rate was not accepted");
    return actual;
   }catch(RuntimeException rejected){
-   try{player.setPlaybackParams(new PlaybackParams().allowDefaults().setSpeed(previous).setPitch(1f));}catch(RuntimeException ignored){}
+   try{player.setPlaybackParams(new PlaybackParams().allowDefaults().setAudioFallbackMode(PlaybackParams.AUDIO_FALLBACK_MODE_FAIL).setSpeed(previous).setPitch(1f));}catch(RuntimeException ignored){}
    throw rejected;
   }finally{if(!playing)try{player.pause();}catch(RuntimeException ignored){}}
  }

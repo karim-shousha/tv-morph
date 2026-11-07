@@ -1,0 +1,22 @@
+#morph-brand-loader{position:fixed;inset:0;z-index:2147483000;overflow:hidden;background:#07101e var(--morph-boot-background) center/cover no-repeat;color:#f5f8ff;font-family:Arial,sans-serif;visibility:visible!important;opacity:1!important;pointer-events:auto}
+#morph-brand-loader .morph-boot-stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center;direction:ltr}
+#morph-brand-loader .morph-boot-experience{position:absolute;left:92px;top:78px;font-size:18px;letter-spacing:4px;color:#b8d5e5}
+#morph-brand-loader .morph-boot-product{position:absolute;right:92px;top:80px;font-size:16px;letter-spacing:1.5px;color:#a3c1d5}
+#morph-brand-loader .morph-boot-product:before{content:"";display:inline-block;width:8px;height:8px;margin-right:15px;border-radius:50%;background:#63dfef;box-shadow:0 0 12px rgba(99,223,239,.3)}
+#morph-brand-loader .morph-boot-brand{position:absolute;left:240px;right:240px;top:300px;height:260px;display:flex;align-items:center;justify-content:center;direction:ltr}
+#morph-brand-loader .morph-boot-logo{position:static;flex:0 0 260px;width:260px;height:260px;object-fit:contain;filter:none}
+#morph-brand-loader .morph-boot-name{font:700 112px/1.1 Arial,sans-serif;color:#f4f5f8;margin-left:8px;white-space:nowrap}
+
+#morph-brand-loader .morph-boot-rule{position:absolute;left:360px;top:585px;width:1200px;height:1px;background:linear-gradient(90deg,transparent,rgba(147,187,218,.28),transparent)}
+#morph-brand-loader .morph-boot-slogan{position:absolute;left:120px;right:120px;top:610px;margin:0;text-align:center;font-size:32px;line-height:1.5;color:#d8e5f4}
+#morph-brand-loader .morph-boot-progress{position:absolute;left:836px;top:710px;width:248px;height:3px;background:rgba(131,171,206,.17);overflow:hidden;border-radius:3px}
+#morph-brand-loader .morph-boot-progress i{position:absolute;left:0;top:0;width:90px;height:3px;background:linear-gradient(90deg,transparent,#62e7f3,#8bbdff);animation:morph-boot-progress 1.6s ease-in-out infinite}
+#morph-brand-loader .morph-boot-status{position:absolute;left:120px;right:120px;top:742px;margin:0;text-align:center;font-size:24px;line-height:1.5;color:#a9bbd0}
+#morph-brand-loader .morph-boot-credit,#morph-brand-loader .morph-boot-website{position:absolute;bottom:64px;margin:0;font-size:18px;color:#8ba5bd;line-height:1.4;direction:ltr}
+#morph-brand-loader .morph-boot-credit{left:92px}#morph-brand-loader .morph-boot-website{right:92px}
+#morph-brand-loader .morph-loading-actions{position:absolute;left:120px;right:120px;top:906px;display:flex;justify-content:center;gap:20px}
+#morph-brand-loader .morph-loading-actions button{padding:12px 22px;border:1px solid #7186a2;border-radius:12px;background:#182b46;color:#fff;font:26px Arial}
+@keyframes morph-boot-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes morph-boot-progress{0%{transform:translateX(-90px)}100%{transform:translateX(248px)}}
+#morph-brand-loader[data-no-motion] .morph-boot-brand,#morph-brand-loader[data-no-motion] .morph-boot-progress i{animation:none}#morph-brand-loader[data-no-motion] .morph-boot-progress i{left:79px}
+@media(prefers-reduced-motion:reduce){#morph-brand-loader .morph-boot-brand,#morph-brand-loader .morph-boot-progress i{animation:none}#morph-brand-loader .morph-boot-progress i{left:79px}}

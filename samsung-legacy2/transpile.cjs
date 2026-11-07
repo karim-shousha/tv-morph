@@ -1,0 +1,4 @@
+const fs=require('fs'),path=require('path'),babel=require('../.tools/tizen3-build/node_modules/@babel/core'),acorn=require('../.tools/tizen3-build/node_modules/acorn');
+const root=path.resolve(__dirname,'build/app');let files=0;
+function walk(dir){for(const name of fs.readdirSync(dir)){const f=path.join(dir,name);if(fs.statSync(f).isDirectory())walk(f);else if(name.endsWith('.js')){const source=fs.readFileSync(f,'utf8');const output=babel.transformSync(source,{filename:f,sourceType:'script',babelrc:false,configFile:false,comments:false,compact:true,presets:[[require.resolve('../.tools/tizen3-build/node_modules/@babel/preset-env'),{targets:{ie:'11'},modules:false,bugfixes:true,useBuiltIns:false}]]}).code;acorn.parse(output,{ecmaVersion:5,allowReserved:true});fs.writeFileSync(f,output);files++;}}}
+walk(root);console.log('PASS '+files+' JavaScript files transformed and parsed as ES5');

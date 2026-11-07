@@ -1,0 +1,9 @@
+package local.morph.presentationcheck;
+import android.app.*;import android.os.*;import android.content.*;import android.webkit.*;import java.lang.reflect.*;import java.util.concurrent.*;
+public class PresentationInstrumentation extends Instrumentation {
+ public void onCreate(Bundle b){super.onCreate(b);start();}
+ public void onStart(){Bundle out=new Bundle();try{
+ Activity main=startActivitySync(new Intent().setClassName(getTargetContext().getPackageName(),"local.cleartv.mobile.MainActivity").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));Field field=main.getClass().getDeclaredField("web");field.setAccessible(true);WebView web=(WebView)field.get(main);
+ Thread.sleep(1800);CountDownLatch done=new CountDownLatch(1);runOnMainSync(()->web.evaluateJavascript("(function(){function s(e){var c=getComputedStyle(e);return {id:e.id,tag:e.tagName,cls:e.className,opacity:c.opacity,filter:c.filter,bg:c.backgroundColor,bgStart:c.backgroundImage.slice(0,80),bgEnd:c.backgroundImage.slice(-200),z:c.zIndex,font:c.fontFamily};}return {fontReady:document.fonts.check('14px MorphSans','العربية'),introGlass:getComputedStyle(document.querySelector('#mobile-service-map>.pm-page-intro')).backdropFilter,textSizeVisible:Array.from(document.querySelectorAll('.font-size-panel')).some(function(e){return e.getClientRects().length>0;}),width:innerWidth,appearance:document.documentElement.dataset.appAppearance,html:s(document.documentElement),body:s(document.body),overlays:Array.from(document.body.children).filter(function(e){return getComputedStyle(e).position==='fixed';}).map(s)};})()",v->{out.putString("styles",v);done.countDown();}));if(!done.await(10,TimeUnit.SECONDS))throw new Exception("Style query timed out");finish(Activity.RESULT_OK,out);
+ }catch(Throwable e){out.putString("error",android.util.Log.getStackTraceString(e));finish(Activity.RESULT_CANCELED,out);}}
+}

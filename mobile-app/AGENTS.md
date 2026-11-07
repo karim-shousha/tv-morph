@@ -1,3 +1,9 @@
+# Current phone direction — 2026-11-05
+
+The user explicitly reapproved the navy phone design and the edits in the active chat, superseding the prior white 1.1.316 review direction. Finish the sports page, phone navigation, original remote layout recoloured navy/gold, new shared symbol, lighter launcher navy background, and approved IPTV presentation. Build the integrated Morph TV phone APK. Preserve package ID, signing identity, user data, and unrelated changes.
+
+Previous instructions (superseded by the explicit user answer):
+
 # Approved phone application
 
 The user cancelled the dark/gold redesign and full-layout rebuild. The approved

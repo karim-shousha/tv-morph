@@ -12,7 +12,7 @@
   var signature=theme+'|'+source;if(signature!==last){last=signature;root.style.setProperty('--media-art',source?'url('+JSON.stringify(source)+')':'none');root.dataset.mediaTheme=theme;}var image=document.querySelector('.cinematic-hero-art');if(image&&!image.hasAttribute('data-category-art')){image.hidden=!source;if(source&&image.getAttribute('src')!==source)image.src=source;}
  }
  w.MediaTheme={apply:apply};apply();w.addEventListener('load',apply);w.addEventListener('focus',apply);w.addEventListener('morphPacks',apply);w.addEventListener('storage',apply);
- if(parent!==w){try{parent.addEventListener('morphPacks',apply);parent.addEventListener('morphViewer',apply);}catch(e){}}
+ if(parent!==w){try{parent.addEventListener('morphPacks',apply);parent.addEventListener('morphViewer',apply);function detachParentCinema(){parent.removeEventListener('morphPacks',apply);parent.removeEventListener('morphViewer',apply);}w.addEventListener('pagehide',detachParentCinema);w.addEventListener('unload',detachParentCinema);}catch(e){}}
  else {var script=document.createElement('script');script.src=base+'theme-packs-manifest.js';script.onload=function(){var loader=document.createElement('script');loader.src=base+'theme-packs.js';loader.onload=function(){Promise.resolve(w.ThemePacks.ready).then(apply);};document.head.appendChild(loader);};document.head.appendChild(script);}
  var shared=document.createElement('script');shared.src=base+'ui/media-theme.js';document.head.appendChild(shared);
 })(window);

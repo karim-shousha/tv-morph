@@ -1,0 +1,21 @@
+package local.cleartv.mobile;
+import java.io.*;import java.nio.*;import java.nio.charset.*;import java.security.*;import java.security.cert.X509Certificate;import java.util.*;import javax.xml.parsers.*;import org.w3c.dom.*;import org.xml.sax.InputSource;import org.json.JSONObject;
+/** Privilege selection informed by Apps2Samsung (MIT, Copyright 2025 Patrick Stel).
+ * License: bundled assets/apps2samsung-LICENSE.txt.
+ * A local TV widget. Reading/previewing never contacts the TV or Samsung. */
+final class SamsungWidget {
+ final byte[] archive;final String name,appId,packageId,version,level,sha256;
+ private SamsungWidget(byte[] data,String title,String app,String pkg,String ver,String privilege)throws Exception{archive=data;name=title;appId=app;packageId=pkg;version=ver;level=privilege;StringBuilder hash=new StringBuilder();for(byte b:MessageDigest.getInstance("SHA-256").digest(data))hash.append(String.format(Locale.US,"%02x",b&255));sha256=hash.toString();}
+ static SamsungWidget read(InputStream source)throws Exception{
+  byte[] data=Network.read(source,32*1024*1024);Map<String,byte[]> files=WidgetSigner.readFiles(new ByteArrayInputStream(data));byte[] manifest=files.get("config.xml");if(manifest.length>1024*1024)throw new IOException("WGT config.xml is too large");
+  String xml=StandardCharsets.UTF_8.newDecoder().onMalformedInput(CodingErrorAction.REPORT).decode(ByteBuffer.wrap(manifest)).toString();if(xml.indexOf(0)>=0||xml.toUpperCase(Locale.US).contains("<!DOCTYPE")||xml.toUpperCase(Locale.US).contains("<!ENTITY"))throw new IOException("WGT manifest must be UTF-8 without a DTD");
+  DocumentBuilderFactory factory=DocumentBuilderFactory.newInstance();factory.setNamespaceAware(true);factory.setExpandEntityReferences(false);DocumentBuilder builder=factory.newDocumentBuilder();builder.setEntityResolver((publicId,systemId)->new InputSource(new StringReader("")));Document document=builder.parse(new InputSource(new StringReader(xml)));
+  Element root=document.getDocumentElement();if(!"widget".equals(root.getLocalName()))throw new IOException("Not a WGT widget manifest");String ns="http://tizen.org/ns/widgets";NodeList apps=document.getElementsByTagNameNS(ns,"application");if(apps.getLength()!=1)throw new IOException("WGT must declare one Tizen application");Element app=(Element)apps.item(0);String id=app.getAttribute("id"),pkg=app.getAttribute("package");if(!id.matches("[A-Za-z0-9_.-]{1,150}")||!pkg.matches("[A-Za-z0-9]{1,64}"))throw new IOException("Invalid WGT application/package identifier");
+  NodeList profiles=document.getElementsByTagNameNS(ns,"profile");for(int i=0;i<profiles.getLength();i++){String profile=((Element)profiles.item(i)).getAttribute("name");if(!profile.isEmpty()&&!profile.equals("tv-samsung"))throw new IOException("Choose a Samsung TV WGT, not a mobile or wearable package");}
+  boolean partner=false;NodeList privileges=document.getElementsByTagNameNS(ns,"privilege");for(int i=0;i<privileges.getLength();i++){String value=((Element)privileges.item(i)).getAttribute("name").trim().toLowerCase(Locale.US);if(value.endsWith(".partner")||value.equals("http://tizen.org/privilege/vpnservice")||value.equals("http://developer.samsung.com/privilege/drminfo"))partner=true;}
+  NodeList elements=document.getElementsByTagName("*");for(int i=0;i<elements.getLength();i++){Element e=(Element)elements.item(i);if("true".equalsIgnoreCase(e.getAttribute("on-boot"))||"true".equalsIgnoreCase(e.getAttribute("auto-restart")))partner=true;}
+  NodeList titles=document.getElementsByTagNameNS("http://www.w3.org/ns/widgets","name");String title=titles.getLength()>0?titles.item(0).getTextContent().trim():id;if(title.isEmpty())title=id;if(title.length()>120)title=title.substring(0,120);String version=root.getAttribute("version");if(version.length()>64)version=version.substring(0,64);return new SamsungWidget(data,title,id,pkg,version,partner?"partner":"public");
+ }
+ JSONObject info()throws Exception{return new JSONObject().put("name",name).put("appId",appId).put("packageId",packageId).put("version",version).put("certificateLevel",level).put("sha256",sha256).put("bytes",archive.length);}
+ byte[] sign(Certificates.Bundle certificate)throws Exception{return WidgetSigner.build(new ByteArrayInputStream(archive),null,certificate.key,certificate.author,certificate.key,certificate.distributor);}
+}

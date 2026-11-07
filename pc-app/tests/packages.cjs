@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto'),asar=require('@electron/asar');
+const root=path.resolve(__dirname,'..'),windows=path.join(root,'dist/win-unpacked/resources/app.asar'),mac=path.join(root,'dist/mac-app.asar');
+const files=['main.cjs','preload.cjs','lan.cjs','matches.cjs','build/ui/matches.js','build/ui/matches.css','build/ui/desktop.js','build/ui/desktop.css','build/ui/network.js','build/ui/media-engine.js','build/ui/player-chrome.css','build/ui/iptv/index.html'];
+for(const name of files){const actual=fs.readFileSync(path.join(root,name)),member=path.normalize(name);assert(asar.extractFile(windows,member).equals(actual),'Windows source mismatch: '+name);assert(asar.extractFile(mac,member).equals(actual),'Mac source mismatch: '+name);}
+assert(!asar.extractFile(mac,path.normalize('build/ui/iptv/index.html')).toString().includes('MorphIptvStandalone=true'));
+const result={passed:true,sameSharedRuntime:files.length,embeddedIptv:true,macAsar:crypto.createHash('sha256').update(fs.readFileSync(mac)).digest('hex')};fs.writeFileSync(path.join(root,'test-output/package-parity.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));

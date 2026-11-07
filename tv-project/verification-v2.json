@@ -1,0 +1,26 @@
+{
+  "remoteUp": true,
+  "pinRoundTrip": true,
+  "catalogScroll": {
+    "top": 831,
+    "bottom": 977,
+    "screen": 1080,
+    "windowScroll": 0
+  },
+  "native": {
+    "version": "0.2.0",
+    "apps": 14,
+    "weatherCity": "Saint-Eustache",
+    "weatherError": "",
+    "weatherLoading": false,
+    "credit": "Open YouTubeBrowser previewDeveloped by Karim Aboushousha",
+    "settings": {
+      "theme": "blue",
+      "motion": true,
+      "clock24": true,
+      "units": "celsius",
+      "locationMode": "auto",
+      "manualLocation": null
+    }
+  }
+}

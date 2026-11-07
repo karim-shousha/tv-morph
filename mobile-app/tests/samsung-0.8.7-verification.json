@@ -1,0 +1,39 @@
+{
+  "version": "0.8.7",
+  "sharedScreens": [
+    "IPTV library",
+    "pre-play details",
+    "radio"
+  ],
+  "defaultHomeApps": [
+    "TV Morph Play",
+    "TV Morph Radio"
+  ],
+  "heroTests": {
+    "themes": 10,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "explicitMargins": true,
+    "maxCardWidth": 1040
+  },
+  "regressions": [
+    "full viewport details bounds",
+    "full viewport player bounds",
+    "header restores home scroll",
+    "phone encrypted profile restore"
+  ],
+  "physicalSamsung": {
+    "Tizen": "5.0",
+    "preFinalBuildInstalled": true,
+    "localGeneratedVideo": {
+      "AVPlayState": "PLAYING",
+      "currentTimeMs": 2244
+    },
+    "radioAVPlayState": "PLAYING",
+    "audibleRadioNotConfirmed": true,
+    "finalInstall": "not completed: phone battery died",
+    "providerFilmPlayback": "user reported failure in pre-final build; final explicit-bound/cleanup fixes await retest"
+  }
+}

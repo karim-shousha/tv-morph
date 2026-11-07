@@ -13,7 +13,7 @@ final class AndroidInputs {
  static String provider(TvInputInfo input){return input.getServiceInfo()==null?"":input.getServiceInfo().packageName;}
  static boolean hardware(Context c,TvInputInfo input){try{return c.getPackageManager().checkPermission("android.permission.TV_INPUT_HARDWARE",provider(input))==PackageManager.PERMISSION_GRANTED;}catch(RuntimeException e){return false;}}
  static String kind(Context c,TvInputInfo input,Set<String> physicalProviders){
-  String base=label(c,input),id=input.getId();int raw=input.getType();
+  String base=label(c,input),id=input.getId();try{CharSequence custom=input.loadCustomLabel(c);if(custom!=null)base+=" "+custom;}catch(RuntimeException ignored){}int raw=input.getType();
   if(raw==TvInputInfo.TYPE_HDMI)return "HDMI";
   if(raw==TvInputInfo.TYPE_COMPOSITE||raw==TvInputInfo.TYPE_SVIDEO||raw==TvInputInfo.TYPE_SCART)return "AV";
   if(raw==TvInputInfo.TYPE_COMPONENT)return "COMP";
@@ -25,11 +25,13 @@ final class AndroidInputs {
   if("HDMI".equals(inferred)&&(HdmiPort.number(0,base)>0||HdmiPort.number(0,id)>0||input.isPassthroughInput()||hardware(c,input)))return "HDMI";
   if(base.matches("(?i)^\\s*(AV|COMPOSITE|COMPONENT|SCART)(\\s*[-:#]?\\s*[0-9]{1,2})?(\\s|$).*"))return "AV";
   if(raw==TvInputInfo.TYPE_TUNER&&(hardware(c,input)||physicalProviders.contains(provider(input))||id.matches(".*/HW[0-9]+$")))return "TV";
+  if(input.isPassthroughInput())return "EXTERNAL";
+  if(raw==TvInputInfo.TYPE_TUNER){try{android.content.pm.ApplicationInfo app=c.getPackageManager().getApplicationInfo(provider(input),0);if((app.flags&android.content.pm.ApplicationInfo.FLAG_SYSTEM)!=0&&base.trim().matches("(?i)(live\\s*tv|tv|dtv|atv|digital\\s*tv|analog\\s*tv|tuner|antenna|تلفزيون|التلفزيون|قنوات)(?:\\s.*)?"))return "TV";}catch(Exception ignored){}}
   return "";
  }
  static JSONArray collect(Context c)throws Exception{
   TvInputManager manager=(TvInputManager)c.getSystemService(Context.TV_INPUT_SERVICE);JSONArray result=new JSONArray();if(manager==null)return result;
-  List<TvInputInfo> inputs=manager.getTvInputList();Set<String> physicalProviders=new HashSet<>();
+  List<TvInputInfo> inputs;try{inputs=manager.getTvInputList();}catch(RuntimeException blocked){inputs=Collections.emptyList();}Set<String> physicalProviders=new HashSet<>();
   for(TvInputInfo input:inputs)if((input.getType()>=TvInputInfo.TYPE_COMPOSITE&&input.getType()<=TvInputInfo.TYPE_HDMI&&input.isPassthroughInput())||HdmiPort.number(0,label(c,input))>0||HdmiPort.number(0,input.getId())>0)physicalProviders.add(provider(input));
   LinkedHashMap<String,JSONObject> rows=new LinkedHashMap<>();
   for(TvInputInfo input:inputs){try{
@@ -39,7 +41,7 @@ final class AndroidInputs {
    String title=custom.isEmpty()?base:custom;
    if(type.equals("HDMI")&&custom.isEmpty())title=port>0?"HDMI "+port:"HDMI";
    if(type.equals("TV")&&(title.isEmpty()||title.equalsIgnoreCase("Tuner")))title="Live TV";
-   int state=manager.getInputState(input.getId());
+   int state=-1;try{state=manager.getInputState(input.getId());}catch(RuntimeException ignored){}
    JSONObject row=new JSONObject().put("id",input.getId()).put("type",type).put("number",port).put("title",title).put("nativeTitle",base).put("parentId",input.getParentId()==null?"":input.getParentId()).put("passthrough",!type.equals("TV")).put("connected",state==TvInputManager.INPUT_STATE_CONNECTED||state==TvInputManager.INPUT_STATE_CONNECTED_STANDBY).put("inputState",state);
    rows.put(input.getId(),row);
   }catch(RuntimeException invalid){/* One inaccessible provider must not hide the others. */}}

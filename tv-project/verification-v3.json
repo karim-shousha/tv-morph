@@ -1,0 +1,15 @@
+{
+  "version": "0.3.0",
+  "installed": true,
+  "nativeHDMI2Playback": true,
+  "nativeRemoteBackVerified": true,
+  "liveTVNativeLaunchAccepted": true,
+  "theme": "ahly",
+  "themeCount": 6,
+  "programmeMetadata": "Current programme API returned null on this TV channel; UI shows availability message. External HDMI/IPTV guides remain in source apps.",
+  "sourceDocumentation": [
+    "https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/tvwindow-api.html",
+    "https://www.alahlyegypt.com/ar"
+  ],
+  "logoSource": "https://board.alahlyegypt.com/storage/sports/kiO6C2o3T7T2Sl3h5mVo5guRTl4iTh49zl1gWeaR.png"
+}

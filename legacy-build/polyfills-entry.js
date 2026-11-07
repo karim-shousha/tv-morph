@@ -1,0 +1,1 @@
+require('../.tools/tizen3-build/node_modules/core-js/stable');require('../.tools/tizen3-build/node_modules/whatwg-fetch');window.cssVars=require('../.tools/tizen3-build/node_modules/css-vars-ponyfill');

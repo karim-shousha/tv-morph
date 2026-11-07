@@ -1,1 +1,255 @@
-<!doctype html><html lang="ar"><head><meta charset="utf-8"><meta name="viewport" content="width=1920"><title>Morph Radio</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="radio-layout.css"><link rel="stylesheet" href="cinematic-radio.css"><meta name="tvm-media-root" content="../tv/"></head><body data-fixed-layout="true"><header><div class="brand"><img src="radio-mark.svg" alt=""><span>Morph Radio</span></div><label class="radio-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg><input id="station-search" type="search" autocomplete="off" aria-label="Search stations"></label><button id="back">رجوع</button></header><main><aside class="library-sidebar"><h2 id="browse-label">المكتبة</h2><div id="filters"></div><p id="favorite-hint"></p></aside><div class="library-content"><section class="radio-hero"><div><span class="eyebrow">LIVE AUDIO · YOUR MOMENT</span><h1 id="headline">صوت يرافق يومك.</h1><p id="intro">قرآن كريم ومحطات FM، في مكان واحد.</p></div><div class="hero-orbit">◉<span>ON AIR</span></div></section><section class="station-library"><div class="section-head"><h2 id="list-title">اختار محطتك</h2><span id="count"></span></div><div id="stations"></div></section></div></main><aside class="now-playing"><div class="station-art"><img src="radio-mark.svg" alt=""></div><div class="now-copy"><span id="now-label">جاهز للاستماع</span><h2 id="now-title">Morph Radio</h2><p id="status" role="status">اختار محطة لبدء التشغيل</p></div><div class="equalizer"><i></i><i></i><i></i><i></i><i></i></div><button id="toggle">تشغيل / إيقاف</button><button id="stop-radio">Stop</button><button id="retry">إعادة المحاولة</button></aside><audio id="audio" preload="none" crossorigin="anonymous"></audio><script src="locale.js"></script><script src="media-theme.js"></script><script src="media-performance.js"></script><script src="app.js"></script><script src="cinematic-theme.js"></script><script src="text-size.js"></script></body></html>
+<!doctype html>
+<html lang="en" id="radio-root" data-radio-layout="current">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920">
+<title>Morph Radio</title>
+<meta name="tvm-media-root" content="../tv/">
+<link rel="stylesheet" href="radio.css">
+<link rel="stylesheet" href="screen-off.css">
+</head>
+<body data-fixed-layout="true" class="reference-radio">
+<header>
+<div class="radio-header-actions">
+<button id="back" aria-label="Back" title="Back">
+<svg class="reference-radio-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m14 5-7 7 7 7">
+</path>
+</svg>
+</button>
+<button id="radio-screen-off" type="button" title="Hides the picture while radio continues. Press any key to return." aria-label="Black screen; keep audio playing">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect x="3" y="4" width="18" height="14" rx="2">
+</rect>
+<path d="m2 2 20 20M8 22h8M12 18v4">
+</path>
+</svg>
+</button>
+<button class="radio-icon-button" id="radio-player-settings" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Player options">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M3 7h18M3 17h18M8 3v8M16 13v8">
+</path>
+</svg>
+</button>
+<div class="radio-header-clock">
+<time>--:--</time>
+<span>
+</span>
+</div>
+</div>
+</header>
+<section class="radio-page-heading">
+<div class="radio-page-copy">
+<h1 id="headline">Qur’an &amp; Radio</h1>
+<p id="intro">A little stillness. Your favourite voices.</p>
+</div>
+</section>
+<div id="filters" class="radio-category-tabs">
+</div>
+<main>
+<aside class="now-playing">
+<div class="radio-player-top">
+<span>NOW PLAYING</span>
+<span class="radio-live-state">RADIO</span>
+</div>
+<div class="radio-playing-summary">
+<span class="reference-radio-logo" aria-hidden="true">
+<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<rect x="3" y="11" width="26" height="18" rx="4">
+</rect>
+<path d="m8 11 16-7M8 16h16M21 21h4M21 25h4">
+</path>
+<circle cx="11" cy="23" r="4">
+</circle>
+</svg>
+</span>
+<div class="station-art">
+<img src="radio-mark.svg" alt="">
+</div>
+<div class="now-copy">
+<span id="now-label">جاهز للاستماع</span>
+<h2 id="now-title">Your moment of calm</h2>
+<small class="radio-current-category">CHOOSE YOUR STATION</small>
+</div>
+</div>
+<div class="radio-waveform" aria-hidden="true">
+<i style="height:9.600000000000001px">
+</i>
+<i style="height:19.200000000000003px">
+</i>
+<i style="height:30.400000000000002px">
+</i>
+<i style="height:16.0px">
+</i>
+<i style="height:38.400000000000006px">
+</i>
+<i style="height:25.6px">
+</i>
+<i style="height:46.400000000000006px">
+</i>
+<i style="height:35.2px">
+</i>
+<i style="height:22.400000000000002px">
+</i>
+<i style="height:41.6px">
+</i>
+<i style="height:54.400000000000006px">
+</i>
+<i style="height:32.0px">
+</i>
+<i style="height:19.200000000000003px">
+</i>
+<i style="height:40.0px">
+</i>
+<i style="height:28.8px">
+</i>
+<i style="height:48.0px">
+</i>
+<i style="height:22.400000000000002px">
+</i>
+<i style="height:38.400000000000006px">
+</i>
+<i style="height:27.200000000000003px">
+</i>
+<i style="height:51.2px">
+</i>
+<i style="height:32.0px">
+</i>
+<i style="height:16.0px">
+</i>
+<i style="height:38.400000000000006px">
+</i>
+<i style="height:25.6px">
+</i>
+<i style="height:48.0px">
+</i>
+<i style="height:30.400000000000002px">
+</i>
+<i style="height:19.200000000000003px">
+</i>
+<i style="height:43.2px">
+</i>
+<i style="height:28.8px">
+</i>
+<i style="height:52.800000000000004px">
+</i>
+<i style="height:35.2px">
+</i>
+<i style="height:20.8px">
+</i>
+<i style="height:40.0px">
+</i>
+<i style="height:27.200000000000003px">
+</i>
+<i style="height:44.800000000000004px">
+</i>
+<i style="height:30.400000000000002px">
+</i>
+<i style="height:14.4px">
+</i>
+<i style="height:28.8px">
+</i>
+<i style="height:19.200000000000003px">
+</i>
+<i style="height:11.200000000000001px">
+</i>
+</div>
+<div class="radio-player-transport">
+<button class="radio-icon-button" id="radio-current-favorite" type="button" disabled="" aria-label="Add or remove favorite" aria-pressed="false">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 21 3 12C-3 4 8-1 12 6c4-7 15-2 9 6Z">
+</path>
+</svg>
+</button>
+<button class="radio-icon-button" id="radio-previous" type="button" aria-label="Previous station">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 4v16m14-16L7 12l12 8Z">
+</path>
+</svg>
+</button>
+<button id="toggle" aria-label="Play" aria-pressed="false">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m8 4 12 8-12 8Z">
+</path>
+</svg>
+</button>
+<button class="radio-icon-button" id="radio-next" type="button" aria-label="Next station">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M19 4v16M5 4l12 8-12 8Z">
+</path>
+</svg>
+</button>
+</div>
+<div class="radio-player-bottom">
+<label class="radio-volume">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m3 9 5 0 5-5v16l-5-5H3ZM17 8q5 4 0 8m3-11q8 7 0 14">
+</path>
+</svg>
+<input id="radio-volume" type="range" min="0" max="100" step="5" aria-label="Volume">
+<span>100%</span>
+</label>
+<button class="radio-icon-button" id="radio-sleep" type="button" aria-label="Set sleep timer">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M20 14A9 9 0 0 1 10 3a9 9 0 1 0 10 11Z">
+</path>
+</svg>
+<span>Sleep timer</span>
+</button>
+</div>
+</aside>
+<section class="station-library">
+<div class="section-head">
+<h2 id="list-title">All stations</h2>
+<span id="count">0 stations</span>
+</div>
+<div id="stations" data-empty="No stations in this category.">
+</div>
+</section>
+</main>
+<div id="radio-dark-screen" hidden="" tabindex="-1" role="button" aria-label="Audio continues. Press any key to show the screen.">
+</div>
+<section class="radio-player-tools" id="radio-player-tools" hidden="" aria-label="Player options">
+<button id="stop-radio">Stop</button>
+<button id="retry" disabled="">Reconnect</button>
+</section>
+<footer class="radio-page-footer">
+<p id="status" role="status">اختار محطة لبدء التشغيل</p>
+<span>Use arrows to browse · OK to listen · Hold OK to favorite</span>
+</footer>
+<small class="reference-radio-credit">Developed by Karim Aboushousha &amp; Hassan Shehata · morph-tv.com</small>
+<label class="radio-search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="10" cy="10" r="7">
+</circle>
+<path d="m15 15 6 6">
+</path>
+</svg>
+<input id="station-search" type="search" readonly="" inputmode="none" autocomplete="off" aria-label="Search stations" placeholder="Find a station or reciter" aria-haspopup="true">
+</label>
+<span id="browse-label" hidden>
+</span>
+<span id="favorite-hint" hidden>
+</span>
+<audio id="audio" preload="none" crossorigin="anonymous">
+</audio>
+<script src="locale.js">
+</script>
+<script src="media-performance.js">
+</script>
+<script src="screen-off.js">
+</script>
+<script src="../tv/screen-fit.js"></script>
+<script src="app.js">
+</script>
+<script src="text-size.js">
+</script>
+
+<script src="../tv/clock-adjust.js">
+</script>
+<script src="radio-player.js">
+</script>
+<script src="navigation.js">
+</script>
+</body>
+</html>

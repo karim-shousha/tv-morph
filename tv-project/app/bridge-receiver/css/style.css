@@ -1,0 +1,51 @@
+/* Morph Bridge: fixed 1920x1080 TV layout, compatible with older TV engines. */
+@font-face{font-family:"Morph Arabic";src:url("../fonts/IBMPlexSansArabic-Regular.ttf") format("truetype");font-weight:400}
+@font-face{font-family:"Morph Arabic";src:url("../fonts/IBMPlexSansArabic-Medium.ttf") format("truetype");font-weight:500}
+html,body{font-family:"Morph Arabic",Tahoma,sans-serif}
+html,body{width:100%;height:100%;min-height:1080px;margin:0;color:#f5f4ff;font-family:"Morph Arabic",Tahoma,sans-serif}
+body{background:radial-gradient(ellipse at 85% 115%,#332052 0%,transparent 58%),radial-gradient(ellipse at 0 0,#211632 0%,transparent 48%),#0c0e19;background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed}
+*{box-sizing:border-box}.hidden{display:none!important}
+#app{position:relative;width:1920px;min-height:1080px;padding:26px 80px 80px;margin:0 auto}
+#header{height:142px;display:flex;align-items:center;justify-content:space-between}
+#logo{display:flex;align-items:center;font-family:sans-serif;font-size:35px;font-weight:bold;letter-spacing:-1px}
+#logo img{width:153px;height:102px;object-fit:contain;margin-right:23px;border-radius:14px}
+#logo b{font-weight:normal;color:#c5a4ff}
+#conn{display:flex;align-items:center;font-size:24px;color:#b7b5c9;direction:rtl}
+.dot{display:inline-block;width:13px;height:13px;border-radius:50%;margin-left:14px;background:#6d687f}
+.dot.on{background:#63dca3;box-shadow:0 0 17px rgba(99,220,163,.25)}
+h1{font-size:48px;font-weight:500;margin:12px 0 21px}.eyebrow{font-size:22px;color:#ba99e0;margin-bottom:8px}
+.screen:not(#screen-play){direction:rtl}.muted{color:#aaa8bd;font-size:27px;line-height:1.8;margin:16px 0}
+.form{margin:34px 0}.row{display:flex;align-items:center;margin:22px 0;font-size:28px}.row label{width:300px;color:#bab4cd}
+input{font-family:inherit;background:#191a2a;color:#f5f4ff;border:2px solid #343049;border-radius:16px;padding:15px 22px;font-size:28px}
+.row input{width:490px;direction:ltr}input::placeholder{color:#87829a}
+input.focus,.btn.focus{border-color:#cdb1ff!important;box-shadow:0 0 0 4px #875bff,0 0 26px rgba(135,91,255,.4);outline:none}
+.btn{font-family:inherit;font-size:27px;padding:17px 35px;margin:12px 0 12px 18px;border:2px solid #39304c;border-radius:16px;background:#211c35;color:#f5f4ff}
+.btn.primary{background:#8051ee;border-color:#a67aff}.error{color:#ffaaa9;font-size:24px;min-height:38px}#screen-pair{padding-top:44px}
+.apps-toolbar{display:flex;align-items:center;justify-content:space-between;min-height:119px;padding-top:6px}#screen-apps h1{font-size:40px;margin:5px 0 0}
+.search-box{display:flex;align-items:center}.search-box label{font-size:23px;color:#a69ab7;margin-left:18px}.search-box input{width:400px;font-size:25px;height:65px}
+#grid{display:flex;flex-wrap:wrap;direction:ltr;align-content:flex-start;margin:24px -5px 0;padding:10px 5px;max-height:548px;overflow-y:auto}
+.card{display:flex;flex-direction:column;align-items:center;justify-content:center;width:416px;height:246px;margin:0 25px 28px 0;padding:25px 20px;border:2px solid #39334d;border-radius:24px;background:linear-gradient(140deg,#242238,#171a2a);color:#f5f4ff;text-align:center;font-family:inherit;font-size:29px;overflow:hidden;flex-shrink:0}
+.card:nth-child(4n){margin-right:0}.card.focus{border-color:#ebddff!important;box-shadow:0 0 0 5px #875bff,0 0 31px rgba(135,91,255,.6);background:linear-gradient(140deg,#352446,#20162f)}
+.card .app-label{width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl}.app-icon{width:112px;height:112px;display:block;margin:0 auto 17px;object-fit:contain;border-radius:21px}
+.app-fallback{width:100px;height:112px;line-height:104px;font-size:60px;color:#c9adf0;margin-bottom:17px}
+.card.youtube{background:linear-gradient(140deg,#731c2b,#351c2c)}.card.netflix{background:linear-gradient(140deg,#151017,#08090e)}.card.shahid{background:linear-gradient(140deg,#14453e,#112a2d)}.card.ostora{background:linear-gradient(140deg,#1c3b54,#18273e)}.card.spotify{background:linear-gradient(140deg,#193e2c,#16291f)}.card.vlc{background:linear-gradient(140deg,#614222,#35271e)}.card.prime{background:linear-gradient(140deg,#075887,#17324a)}
+.card.add-app{border-style:dashed;background:#211c32;color:#bbadd0}.card.add-app .add-symbol{font-size:75px;font-weight:normal;line-height:105px;margin-bottom:17px}
+.launcher-bottom{display:flex;align-items:center;justify-content:space-between;font-size:27px;min-height:61px;margin-top:6px}#appsCount{color:#a79ab9;font-size:22px}
+.hint{display:flex;align-items:center;direction:rtl;color:#c4b9d4;font-size:23px;border-top:1px solid #3c2d4a;margin:13px 0 0;padding-top:20px}.hint>span{display:flex;align-items:center;margin-left:35px}.hint .phone-note{margin-right:auto;margin-left:0;color:#a090af;font-size:21px}.ok-key{border:2px solid #826e99;border-radius:50%;width:39px;height:39px;text-align:center;font:18px/35px sans-serif}
+#brandFooter{position:absolute;bottom:17px;left:80px;right:80px;display:flex;flex-direction:column;align-items:center;font-family:sans-serif;font-size:18px;line-height:1.5;color:#9e8daf}#brandFooter span:last-child{color:#c2a4ec;order:-1}
+#screen-diag{padding-top:22px}#screen-diag pre{direction:ltr;text-align:left;background:#151424;border:1px solid #342b42;padding:28px;font:22px/1.6 monospace;border-radius:16px;white-space:pre-wrap;min-height:350px;max-height:590px;overflow:auto}
+/* Preserve the validated hardware-plane/cursor geometry during playback. */
+#screen-play{position:fixed;left:0;top:0;width:1920px;height:1080px;z-index:10;background:#000}#videoWrap{position:relative;width:1920px;height:1080px;margin:0;background:#000;overflow:hidden}#video{width:1920px;height:1080px;background:#000;display:block;object-fit:contain}
+#appCursor{display:none;position:absolute;width:24px;height:24px;margin:-12px 0 0 -12px;border:3px solid white;border-radius:50%;background:rgba(111,65,255,.8);box-shadow:0 0 16px #000;pointer-events:none;box-sizing:border-box}#playBar,#screen-play .hint{display:none}
+/* Light Morph theme affects launcher chrome only, never streamed app pixels. */
+body.light{background:radial-gradient(ellipse at 85% 115%,#dceaff 0%,transparent 58%),#f2f5ff;color:#14263e}
+.light #logo b,.light .eyebrow{color:#0765c4}.light #conn,.light .muted,.light .row label{color:#566b84}
+.light input{background:#fff;color:#14263e;border-color:#ccd8e9}.light input::placeholder{color:#687b93}
+.light .btn{background:#fff;border-color:#d0ddee;color:#23405e}.light .btn.primary{background:#0878e8;border-color:#0878e8;color:#fff}
+.light input.focus,.light .btn.focus{border-color:#0878e8!important;box-shadow:0 0 0 4px #80baff,0 0 22px rgba(8,120,232,.18)}
+.light .card{background:linear-gradient(140deg,#fff,#edf3fc);border-color:#d3dfef;color:#14263e}
+.light .card.focus{background:#e4efff;border-color:#0878e8!important;box-shadow:0 0 0 5px #87bfff,0 0 28px rgba(8,120,232,.22)}
+.light .card.add-app{background:#e7f0ff;color:#2368ac;border-color:#96b6de}.light .app-fallback{color:#0878e8}
+.light #appsCount,.light .hint,.light .hint .phone-note{color:#566b84}.light .hint{border-color:#d1ddee}.light .ok-key{border-color:#6f92bb}
+.light #brandFooter{color:#566b84}.light #brandFooter span:last-child{color:#0765c4}.light .error{color:#b4233b}
+.light #screen-diag pre{background:#fff;border-color:#d3dfef;color:#14263e}

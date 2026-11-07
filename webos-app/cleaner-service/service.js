@@ -1,0 +1,8 @@
+'use strict';
+var Service=require('webos-service'),name=require('./package.json').name,service=new Service(name),adapter=require('./files.cjs').create(),activity=null,timer=null,expires=0;
+function own(message){if(message.sender===name.replace(/\.cleaner$/,''))return true;message.respond({returnValue:false,errorText:'This method is only available to its Cleaner app.'});return false;}
+function release(){if(timer)clearTimeout(timer);timer=null;expires=0;if(activity){service.activityManager.complete(activity,function(){});activity=null;}}
+function hold(done){if(timer)clearTimeout(timer);expires=Date.now()+600000;timer=setTimeout(release,600000);if(activity){done();return;}service.activityManager.create('cleaner-review',function(value){activity=value;done();});}
+service.register('scan',function(message){if(!own(message))return;var scope=message.payload.scope;if(['files','cache','installers'].indexOf(scope)<0){message.respond({returnValue:false,errorText:'Unknown scan scope'});return;}hold(function(){var roots=scope==='cache'?['/media/internal/'+name+'/cache']:['/media/internal','/media/usb'];adapter.scan(scope,roots,function(e,result){if(e)message.respond({returnValue:false,errorText:String(e.message)});else{result.returnValue=true;message.respond(result);}});});});
+service.register('remove',function(message){if(!own(message))return;if(Date.now()>expires){message.respond({returnValue:false,errorText:'Selection expired. Scan again.'});return;}adapter.remove(message.payload.ids,function(e,result){if(e)message.respond({returnValue:false,errorText:String(e.message)});else{result.returnValue=true;message.respond(result);}});});
+service.register('close',function(message){if(!own(message))return;release();message.respond({returnValue:true});});

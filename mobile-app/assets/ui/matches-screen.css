@@ -1,0 +1,41 @@
+/* Standalone sports screen consumes the same phone palette and navigation. */
+html body[data-sports-page]{margin:0!important;padding:0!important;min-width:0;background:linear-gradient(155deg,var(--phone-background-top,#0b1a2e),#030c17 55%,#010911)!important;color:#f6f5f1!important;}
+html body[data-sports-page] .matches-screen-header{height:68px!important;min-height:68px!important;position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:16px;padding:12px 16px!important;background:rgba(3,13,25,.97);border-bottom:1px solid rgba(54,81,110,.35);direction:ltr;}
+html body[data-sports-page] .matches-app-wordmark{width:116px!important;max-width:116px!important;height:36px!important;max-height:36px!important;object-fit:contain;}
+html body[data-sports-page] #matches-back{width:42px;height:42px;min-width:42px;padding:9px;border:1px solid #36516e;border-radius:13px;background:rgba(18,38,61,.6);color:#fff;}
+html body[data-sports-page] #page-matches{width:100%!important;max-width:600px!important;margin:0 auto!important;padding:16px 16px 108px!important;--mp-ink:#f6f5f1;--mp-sub:#b9c0cd;--mp-panel:#0b192b;--mp-soft:#12263d;--mp-line:#36516e99;--mp-blue:#eac778;--mp-on-blue:#141b25;}
+html body[data-sports-page] #page-matches .mp-hero{min-height:170px!important;padding:20px 18px!important;margin:0 0 24px!important;border:1px solid #36516e!important;border-radius:22px!important;background:linear-gradient(135deg,#10263f,#05101f)!important;}
+html body[data-sports-page] #page-matches .mp-hero-copy{width:58%!important;}
+html body[data-sports-page] #page-matches .mp-eyebrow{font-size:10px!important;letter-spacing:1.2px;color:#eac778!important;margin-bottom:8px;}
+html body[data-sports-page] #page-matches .mp-hero h1{font-size:24px!important;line-height:1.3!important;margin-bottom:10px!important;}
+html body[data-sports-page] #page-matches .mp-hero p{font-size:12px!important;line-height:1.65!important;}
+html body[data-sports-page] #page-matches .mp-hero-art{width:48%!important;right:-3%!important;height:145px!important;bottom:8px!important;object-fit:contain!important;}
+html body[data-sports-page] #page-matches .mp-section-heading{gap:10px;margin-bottom:14px;}
+html body[data-sports-page] #page-matches h2{font-size:18px!important;line-height:1.4!important;}
+html body[data-sports-page] #page-matches .mp-refresh{font-size:12px!important;min-width:84px!important;min-height:40px!important;padding:8px 10px!important;}
+html body[data-sports-page] #page-matches .mp-tabs{border:1px solid #36516e99;background:rgba(18,38,61,.65);padding:5px;gap:6px;margin-bottom:14px;border-radius:16px;}
+html body[data-sports-page] #page-matches .mp-tabs button[aria-pressed=true]{background:linear-gradient(120deg,#f5d58f,#c29140)!important;color:#141b25!important;}
+html body[data-sports-page] #page-matches .mp-days{display:flex!important;flex-wrap:nowrap!important;gap:8px;overflow-x:auto;padding:2px 1px 8px;scrollbar-width:none;}
+html body[data-sports-page] #page-matches .mp-days button{flex:0 0 auto;font-size:12px!important;white-space:nowrap;min-height:40px!important;border-radius:12px!important;}
+html body[data-sports-page] #page-matches .mp-days button[aria-pressed=true]{border-color:#eac778!important;background:rgba(245,213,143,.1)!important;color:#eac778!important;}
+html body[data-sports-page] #page-matches .mp-team-picker{gap:12px;font-size:12px!important;}
+html body[data-sports-page] #page-matches .mp-favorite-picker{padding:12px 14px!important;border-radius:16px;background:linear-gradient(145deg,#0d2038,#05101f);}
+html body[data-sports-page] #page-matches .mp-favorite-picker summary{font-size:13px!important;}
+html body[data-sports-page] #page-matches .mp-match{background:linear-gradient(145deg,#0d2038,#05101f);border-radius:18px;margin-bottom:12px;}
+html body[data-sports-page] #page-matches .mp-competition{font-size:11px!important;padding:8px 12px!important;background:rgba(18,38,61,.6);}
+html body[data-sports-page] #page-matches .mp-matchup{padding:16px 10px!important;grid-template-columns:minmax(0,1fr) 80px minmax(0,1fr);}
+html body[data-sports-page] #page-matches .mp-team-mark{width:44px!important;height:44px!important;max-width:44px!important;max-height:44px!important;}
+html body[data-sports-page] #page-matches .mp-team-mark img{width:34px!important;height:34px!important;max-width:34px!important;max-height:34px!important;object-fit:contain!important;}
+html body[data-sports-page] #page-matches .mp-team-name{font-size:12px!important;line-height:1.5!important;}
+html body[data-sports-page] #page-matches .mp-kickoff strong{font-size:22px!important;color:#f5d58f!important;}
+html body[data-sports-page] .bottom-nav{position:fixed!important;left:10px!important;right:10px!important;bottom:calc(7px + env(safe-area-inset-bottom,0px))!important;z-index:40;display:flex;gap:2px;padding:6px!important;height:auto!important;min-height:64px!important;border:1px solid #36516e99!important;border-radius:18px!important;background:linear-gradient(145deg,#0d2038f2,#05101fef)!important;}
+html body[data-sports-page] .bottom-nav button{display:flex!important;flex:1;min-width:0;min-height:50px;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:5px 1px;border:0!important;background:transparent!important;color:#b9c0cd!important;font-size:10px!important;border-radius:12px;}
+html body[data-sports-page] .bottom-nav button.active{color:#eac778!important;background:rgba(245,213,143,.10)!important;}
+html body[data-sports-page] .bottom-nav svg{width:21px!important;height:21px!important;flex:none;}
+@media(min-width:650px){html body[data-sports-page] .bottom-nav{max-width:580px;left:50%!important;right:auto!important;width:calc(100% - 20px)!important;transform:translateX(-50%);}}
+
+/* Same host header geometry, palette and symbol as every phone surface. */
+html#morph-phone-ui body[data-sports-page] .matches-screen-header{height:var(--phone-header-height,72px)!important;min-height:var(--phone-header-height,72px)!important;padding:8px 14px!important;gap:8px!important;background:linear-gradient(100deg,var(--phone-background-base,#0b1a2c),var(--phone-background-top,#142d4a))!important;border:0!important;max-width:600px!important;margin:auto!important;}
+html#morph-phone-ui body[data-sports-page] #matches-back{width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;flex:0 0 40px!important;padding:8px!important;border:0!important;background:transparent!important;border-radius:12px!important;}
+html#morph-phone-ui body[data-sports-page] .matches-screen-header .phone-symbol-brand{margin:0!important;height:42px!important;font-size:24px!important;}
+html#morph-phone-ui body[data-sports-page] .matches-screen-header .phone-symbol-brand img{width:42px!important;max-width:42px!important;height:42px!important;max-height:42px!important;}

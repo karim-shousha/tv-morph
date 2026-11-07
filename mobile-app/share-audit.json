@@ -1,0 +1,13 @@
+{
+  "artifact": "TV-Morph-Tester.apk",
+  "signature_verified_by_build": true,
+  "personal_network_identifiers_found": false,
+  "private_key_files_found": false,
+  "webview_debugging": "disabled in tester build",
+  "support": {
+    "android_tv": "preview; actual provider playback requires device test",
+    "samsung": "experimental, full phone installation not verified on TU7000",
+    "lg": "discovery only",
+    "other_tv_systems": "not supported"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.8.4",
+  "themesTested": 10,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "checks": [
+    "crest-copy-art physical column separation",
+    "minimum readable copy width",
+    "duplicate overlay removed",
+    "default art visibility",
+    "signed phone embeds exact TV binary",
+    "Samsung source bundle contains shared layout fix"
+  ],
+  "physicalTVTested": false
+}

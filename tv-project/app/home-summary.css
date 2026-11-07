@@ -1,0 +1,60 @@
+/* One owner for the summary geometry, including fixed-canvas Fire TV themes. */
+body #view-home.pc-summary #pc-home-summary{position:fixed;right:42px;top:190px;width:578px;height:220px;box-sizing:border-box;display:flex;align-items:stretch;gap:12px;padding:14px 12px;border:1px solid var(--cinema-border,#ffffff30);border-radius:24px;background:rgba(32,41,64,.64);z-index:3;pointer-events:auto;box-shadow:none;direction:ltr}
+body #view-home.pc-summary #pc-home-summary[data-content=prayer]{width:196px}
+body #view-home.pc-summary #pc-home-summary[data-content=matches]{width:376px}
+body #view-home.pc-summary #pc-home-summary[hidden],body #view-home.pc-summary #pc-home-summary-divider[hidden]{display:none!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer,
+body #view-home.pc-summary #pc-home-summary #home-matches{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;box-sizing:border-box!important;height:100%!important;min-height:0!important;max-height:100%!important;margin:0!important;padding:12px!important;border:0!important;border-radius:14px!important;background:transparent!important;transform:none!important;box-shadow:none!important;overflow:hidden!important;z-index:auto!important;flex-shrink:0!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;width:170px!important;flex-basis:170px!important;text-align:start!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>svg{display:none!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>small{font-size:18px!important;line-height:1.3!important;margin:0!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>strong{font-size:27px!important;line-height:1.3!important;margin:0!important;width:100%!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-at{font-size:26px!important;line-height:1.3!important;margin:0!important;width:100%!important;letter-spacing:0!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-remaining-label{font-size:16px!important;line-height:1.3!important;margin:4px 0 0!important;padding:0!important;border:0!important;width:100%!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-remaining{font-size:22px!important;line-height:1.3!important;margin:0!important;padding:0!important;border:0!important;letter-spacing:0!important;width:100%!important}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer[data-ready=false]>.prayer-at,body #view-home.pc-summary #pc-home-summary #home-next-prayer[data-ready=false]>.prayer-remaining-label,body #view-home.pc-summary #pc-home-summary #home-next-prayer[data-ready=false]>.prayer-remaining{display:none!important}
+body #view-home.pc-summary #pc-home-summary #home-matches{display:flex!important;flex-direction:column!important;justify-content:center!important;gap:12px!important;min-width:0!important;width:350px!important;flex:1 1 350px!important}
+body #view-home.pc-summary #pc-home-summary-divider{position:relative;top:auto;right:auto;align-self:center;flex:0 0 1px;width:1px;height:110px;background:currentColor;opacity:.3;font-size:0;pointer-events:none}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer:focus,body #view-home.pc-summary #pc-home-summary #home-matches:focus{background:#ffffff14!important}
+
+/* Transparency belongs to the surface, never the information. */
+body #view-home.pc-summary #pc-home-summary,body #view-home.pc-summary #pc-home-summary button,body #view-home.pc-summary #pc-home-summary button *{opacity:1!important;filter:none!important} body #view-home.pc-summary #pc-home-summary button{color:var(--cinema-text,#fff)!important} body #view-home.pc-summary #pc-home-summary button img{mix-blend-mode:normal!important}
+
+/* Keep the shared surface above the themed hero and obsolete desktop placeholder rules. */
+body#morph-desktop #view-home.pc-summary #pc-home-summary{display:flex!important;z-index:12!important}
+body#morph-desktop #view-home.pc-summary #pc-home-summary[hidden]{display:none!important}
+
+body #view-home.pc-summary #pc-home-summary #home-next-prayer[hidden],body #view-home.pc-summary #pc-home-summary #home-matches[hidden]{display:none!important}
+
+/* Keep the prayer column compact and center its content without a vacant left gutter. */
+body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer{align-items:center!important;text-align:center!important}
+body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer>*{text-align:center!important}
+
+/* Shared themed summary: a compact prayer column and a schedule column. */
+body #view-home.pc-summary #pc-home-summary{width:610px;gap:22px;padding:22px 24px;border-radius:28px;border:1px solid var(--ui-card-border);background:var(--ui-summary-background,linear-gradient(125deg,var(--ui-bg),var(--ui-bg-raised)));box-shadow:inset 0 1px 0 var(--ui-card-border);}
+body #view-home.pc-summary #pc-home-summary[data-content=prayer]{width:250px}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer{position:relative!important;flex:0 0 210px!important;width:210px!important;padding:0 0 0 44px!important;align-items:flex-start!important;justify-content:flex-start!important;text-align:left!important;gap:0!important;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>*{text-align:left!important;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>svg{display:block!important;position:absolute;top:0;left:0;width:32px;height:32px;color:var(--ui-accent);}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer:before{content:"";position:absolute;left:3px;top:48px;bottom:0;width:8px;border-radius:8px;background:var(--ui-hero-button-gradient,var(--ui-button-gradient));}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>small{font-size:18px!important;line-height:32px!important;margin:0 0 6px!important;white-space:nowrap;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>strong{font-size:26px!important;line-height:30px!important;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-at{font-size:24px!important;line-height:29px!important;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-remaining-label{font-size:16px!important;line-height:22px!important;margin:6px 0 0!important;color:var(--ui-text-muted)!important;}
+body #view-home.pc-summary #pc-home-summary #home-next-prayer>.prayer-remaining{font-size:22px!important;line-height:26px!important;}
+body #view-home.pc-summary #pc-home-summary-divider{height:100%;background:var(--ui-card-border);opacity:1;}
+body #view-home.pc-summary #pc-home-summary #home-matches{padding:0!important;gap:0!important;justify-content:flex-start!important;width:auto!important;flex:1 1 0!important;}
+body #view-home.pc-summary #pc-home-summary #home-matches .home-match-heading{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:12px!important;height:54px!important;flex:0 0 54px!important;width:100%!important;border-bottom:1px solid var(--ui-card-border);padding:0 0 14px!important;box-sizing:border-box;}
+body #view-home.pc-summary #pc-home-summary #home-matches .home-match-heading small{font-size:19px!important;white-space:nowrap!important;line-height:28px!important;}
+body #view-home.pc-summary #pc-home-summary .summary-match-symbol{display:block;flex:0 0 30px;width:30px;height:30px;color:var(--ui-text);}
+body #view-home.pc-summary #pc-home-summary .summary-match-symbol svg{width:100%;height:100%;}
+body #view-home.pc-summary #pc-home-summary .summary-match-arrow{margin-left:auto;font:32px/1 Arial,sans-serif;}
+body #view-home.pc-summary #pc-home-summary #home-matches .summary-match-link{display:block!important;position:static!important;margin:14px 0 8px!important;font-size:17px!important;line-height:24px!important;color:var(--ui-accent)!important;text-align:start!important;}
+body #view-home.pc-summary #pc-home-summary #home-matches>strong{font-size:17px!important;line-height:1.5!important;text-align:start!important;}
+html[lang=ar] body #view-home.pc-summary #pc-home-summary #home-next-prayer{align-items:flex-end!important;text-align:right!important;}
+html[lang=ar] body #view-home.pc-summary #pc-home-summary #home-next-prayer>*{text-align:right!important;}
+
+body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer{align-items:flex-start!important;text-align:left!important;}
+body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer>*{text-align:left!important;}
+html[lang=ar] body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer{align-items:flex-end!important;text-align:right!important;}
+html[lang=ar] body #view-home.pc-summary #pc-home-summary[data-content=both] #home-next-prayer>*{text-align:right!important;}

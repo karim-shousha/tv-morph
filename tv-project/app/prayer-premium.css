@@ -1,0 +1,57 @@
+/* Prayer focus: static theme surfaces, existing scheduler and real device data. */
+html body[data-theme] section#prayer-screen{background:var(--ui-bg,#202940)!important;color:var(--ui-text,#f7f9ff)!important;}
+html body[data-theme=night] section#prayer-screen{background:#202940 url(assets/premium-reference-background.svg) center/cover no-repeat!important;}html body[data-theme=blue] section#prayer-screen{background:#202940 url(assets/premium-reference-background.svg) center/cover no-repeat!important;}
+html body[data-theme] section#prayer-screen .prayer-content{padding:40px 90px 24px;background:transparent!important;text-shadow:none!important;overflow-y:auto;}
+html body[data-theme] section#prayer-screen .prayer-header{display:block!important;margin:0 0 18px;}
+.prayer-topbar{display:flex;align-items:center;justify-content:space-between;}.prayer-heading-row{display:flex;align-items:center;justify-content:space-between;}
+.prayer-topbar{margin-bottom:18px;}
+.prayer-wordmark{width:230px;height:64px;object-fit:contain;}
+html body[data-theme] section#prayer-screen h1{font-size:48px;line-height:1.15;margin:0 0 8px;font-weight:600;}
+html body[data-theme] section#prayer-screen #prayer-place{font-size:22px;line-height:1.5;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen #prayer-error{font-size:19px;min-height:0;line-height:1.4;margin:0 0 12px;}
+html body[data-theme] section#prayer-screen #prayer-error:empty{display:none;}
+html body[data-theme] section#prayer-screen .prayer-weather{height:auto;width:auto;max-width:400px;padding:0;display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:10px;background:none;border:0;text-align:end;}
+html body[data-theme] section#prayer-screen .prayer-weather[hidden]{display:none!important;}
+html body[data-theme] section#prayer-screen .prayer-weather svg{width:38px;height:38px;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen #prayer-weather-temp{font-size:34px;line-height:1.2;}
+html body[data-theme] section#prayer-screen #prayer-weather-description{width:100%;font-size:19px;line-height:1.4;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-glass{background:var(--ui-idle-surface,rgba(67,80,107,.42))!important;border:1px solid var(--ui-card-border,rgba(231,238,255,.25))!important;border-radius:var(--morph-radius-xl,20px);box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;text-shadow:none!important;color:inherit;}html body[data-theme] section#prayer-screen #prayer-dua{background:var(--ui-idle-surface,rgba(67,80,107,.42))!important;border:1px solid var(--ui-card-border,rgba(231,238,255,.25))!important;border-radius:var(--morph-radius-xl,20px);box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none;text-shadow:none!important;color:inherit;}
+html body[data-theme] section#prayer-screen .prayer-overview{display:flex;align-items:center;gap:0;margin:0 0 22px;padding:22px 36px;min-height:250px;}
+.prayer-upcoming{flex:1.25;min-width:0;padding-right:42px;padding-inline-end:42px;}
+html body[data-theme] section#prayer-screen[dir=rtl] .prayer-upcoming{padding-right:0;padding-left:42px;}
+.prayer-upcoming>small{font-size:21px;line-height:1.4;color:var(--ui-text-muted,#d0d9ec);}#prayer-clock-label{font-size:21px;line-height:1.4;color:var(--ui-text-muted,#d0d9ec);}
+.prayer-upcoming-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:8px 0 10px;}
+#prayer-next-name{font-size:68px;line-height:1.1;font-weight:500;}
+#prayer-next-time{font-size:44px;font-variant-numeric:tabular-nums;white-space:nowrap;direction:ltr;}
+html body[data-theme] section#prayer-screen .prayer-countdown{display:flex;justify-content:space-between;gap:24px;margin:0;padding:0;background:transparent!important;border:0;box-shadow:none;}
+html body[data-theme] section#prayer-screen .prayer-countdown span{font-size:22px;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen #prayer-countdown{font-size:44px;line-height:1.2;font-weight:400;letter-spacing:2px;}
+#prayer-next-adhan{font-size:20px;color:var(--ui-text-muted,#d0d9ec);margin:12px 0 0;}
+html body[data-theme] section#prayer-screen .prayer-clock{flex:1;min-width:0;height:auto;border:0;border-left:1px solid var(--ui-card-border,rgba(231,238,255,.25));background:none!important;padding:0 0 0 42px;box-shadow:none;}
+html body[data-theme] section#prayer-screen[dir=rtl] .prayer-clock{border-left:0;border-right:1px solid var(--ui-card-border,rgba(231,238,255,.25));padding:0 42px 0 0;}
+html body[data-theme] section#prayer-screen #prayer-clock{font-size:102px;line-height:1.05;letter-spacing:-3px;font-weight:400;margin:4px 0 6px;white-space:nowrap;text-align:start;}
+html body[data-theme] section#prayer-screen .prayer-clock p{margin:4px 0;font-size:20px;line-height:1.3;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-times{display:flex;gap:0;margin:0 -9px 20px;}
+html body[data-theme] section#prayer-screen .prayer-time{flex:1;min-width:0;min-height:152px;margin:0 9px;padding:18px 24px;}
+.prayer-time-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;}
+.prayer-time-heading svg{width:30px;height:30px;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-time span{font-size:22px;line-height:1.4;font-weight:400;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-time strong{font-size:38px;line-height:1.2;font-weight:500;text-shadow:none;margin:12px 0 8px;white-space:nowrap;}
+.prayer-adhan-status{display:block;font-size:16px;line-height:1.4;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-time.next{background:var(--ui-selected-bg,rgba(220,231,250,.18))!important;border:2px solid var(--ui-focus-ring,#f7f9ff)!important;box-shadow:none!important;}
+html body[data-theme] section#prayer-screen #prayer-dua{margin-top:0;padding:18px 28px;}
+html body[data-theme] section#prayer-screen .dua-meta{font-size:20px;color:var(--ui-text-muted,#d0d9ec);gap:20px;align-items:center;}
+html body[data-theme] section#prayer-screen .dua-meta small{flex:1;font-size:17px;color:var(--ui-text-muted,#d0d9ec);text-align:end;}
+html body[data-theme] section#prayer-screen #dua-arabic{font-family:Tahoma,Arial,sans-serif;font-size:32px;font-weight:400;line-height:1.55;margin:8px 0;}
+html body[data-theme] section#prayer-screen #dua-meaning{font-size:18px;line-height:1.5;margin:4px 0;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen footer{margin-top:14px!important;font-size:15px!important;line-height:1.4;color:var(--ui-text-muted,#d0d9ec);}
+html body[data-theme] section#prayer-screen .prayer-button{font-size:21px;line-height:1.4;padding:14px 20px;border:1px solid var(--ui-card-border,rgba(231,238,255,.25));border-radius:16px;background:var(--ui-idle-surface,rgba(67,80,107,.42));color:inherit;box-shadow:none!important;transition:none;}
+html body[data-theme] section#prayer-screen .prayer-button:focus{outline:3px solid var(--ui-focus-ring,#f7f9ff);outline-offset:3px;box-shadow:none!important;transform:none;}
+
+html body[data-theme] section#prayer-screen #prayer-dua-next{font-size:20px;line-height:1.3;padding:10px 16px;min-height:48px;flex:0 0 auto;}
+/* Flex gap and logical alignment are missing on older LG/Tizen engines. */
+html body[data-theme] section#prayer-screen #prayer-actions{gap:0;margin:0 -7px;}
+html body[data-theme] section#prayer-screen #prayer-actions .prayer-button{margin:0 7px;}
+html body[data-theme] section#prayer-screen .prayer-clock{text-align:left;text-align:start;}html body[data-theme] section#prayer-screen .prayer-time{text-align:left;text-align:start;}html body[data-theme] section#prayer-screen #prayer-dua{text-align:left;text-align:start;}
+html body[data-theme] section#prayer-screen[dir=rtl] .prayer-clock{text-align:right;}html body[data-theme] section#prayer-screen[dir=rtl] .prayer-time{text-align:right;}html body[data-theme] section#prayer-screen[dir=rtl] #prayer-dua{text-align:right;}
+html body[data-theme] section#prayer-screen #dua-arabic{text-align:right;}

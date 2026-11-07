@@ -1,0 +1,8 @@
+package local.morph.remote297check;
+import android.app.*;import android.os.*;import android.content.*;import android.view.accessibility.*;
+/** Native launch and accessibility verification; no screenshots or saved-device changes. */
+public class RemoteLayoutInstrumentation extends Instrumentation {
+ public void onCreate(Bundle args){super.onCreate(args);start();}
+ boolean contains(AccessibilityNodeInfo node,String text){if(node==null)return false;String value=String.valueOf(node.getText())+" "+String.valueOf(node.getContentDescription());if(value.contains(text))return true;for(int i=0;i<node.getChildCount();i++)if(contains(node.getChild(i),text))return true;return false;}
+ public void onStart(){Bundle out=new Bundle();try{for(String locale:new String[]{"ar","en"}){Activity page=startActivitySync(new Intent().setClassName(getTargetContext().getPackageName(),"local.cleartv.mobile.RemoteActivity").putExtra("appearance","light").putExtra("locale",locale).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));long until=SystemClock.uptimeMillis()+20000;boolean controls=false;while(SystemClock.uptimeMillis()<until){AccessibilityNodeInfo root=getUiAutomation().getRootInActiveWindow();controls=contains(root,locale.equals("ar")?"الكيبورد":"KEYBOARD");if(controls)break;Thread.sleep(200);}if(!controls)throw new AssertionError("Native remote layout missing: "+locale);runOnMainSync(page::finish);Thread.sleep(250);}out.putString("result","PASS installed APK opens full remote controls in Arabic and English without the welcome/discovery gate. No screenshots or data changes.");finish(Activity.RESULT_OK,out);}catch(Throwable e){out.putString("error",android.util.Log.getStackTraceString(e));finish(Activity.RESULT_CANCELED,out);}}
+}

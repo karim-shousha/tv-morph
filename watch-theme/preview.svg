@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="450" viewBox="0 0 450 450">
+ <defs><clipPath id="face"><circle cx="225" cy="225" r="224"/></clipPath></defs>
+ <g clip-path="url(#face)">
+ <rect width="450" height="450" fill="#080b09"/>
+ <g fill="none" stroke="#354132"><circle cx="225" cy="225" r="211"/><circle cx="225" cy="225" r="197" stroke-dasharray="1 12"/><path d="M40 225h45m280 0h45M225 40v35m0 300v35"/></g>
+ <g fill="none" stroke="#b4d574" stroke-width="4"><path d="M85 88a195 195 0 0 1 280 0M65 320a195 195 0 0 0 108 91"/></g>
+ <g font-family="Arial,sans-serif" text-anchor="middle">
+ <text x="225" y="105" fill="#b4d574" font-size="12" letter-spacing="5">TASK FORCE / 141</text>
+ <text x="225" y="135" fill="#899484" font-size="11" letter-spacing="3">MODERN WARFARE</text>
+ <text x="225" y="240" fill="#edf0e6" font-family="Consolas,monospace" font-size="83" font-weight="bold" letter-spacing="-6">10:08</text>
+ <text x="225" y="273" fill="#b4d574" font-size="14" letter-spacing="3">THU / 22 OCT</text>
+ <path d="M103 296h244" stroke="#354132"/>
+ <text x="141" y="327" fill="#899484" font-size="10" letter-spacing="2">BATTERY</text>
+ <text x="141" y="352" fill="#edf0e6" font-family="Consolas,monospace" font-size="23">76%</text>
+ <text x="307" y="327" fill="#899484" font-size="10" letter-spacing="2">STEPS</text>
+ <text x="307" y="352" fill="#edf0e6" font-family="Consolas,monospace" font-size="23">6,420</text>
+ <text x="225" y="389" fill="#899484" font-size="9" letter-spacing="2">DESIGN PREVIEW / SAMPLE DATA</text>
+ </g></g>
+</svg>

@@ -1,14 +1,14 @@
 {
   "id": "com.zainbot.morphtv.preview",
-  "version": "0.8.155",
+  "version": "1.1.320",
   "vendor": "Morph TV",
   "type": "web",
   "main": "index.html",
-  "title": "Morph TV",
+  "title": "Morph Launcher",
   "icon": "icon.png",
   "largeIcon": "large-icon.png",
   "resolution": "1920x1080",
-  "bgColor": "#071323",
+  "bgColor": "#202940",
   "disableBackHistoryAPI": true,
   "requiredACG": []
 }

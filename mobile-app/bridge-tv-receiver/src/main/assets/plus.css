@@ -1,0 +1,87 @@
+.morph-plus-overlay{position:fixed;top:0;right:0;bottom:0;left:0;z-index:100000;background:#020817dc;display:flex;align-items:center;justify-content:center;font:22px/1.5 Arial,sans-serif;color:#f6f8ff;}.morph-plus-dialog{box-sizing:border-box;width:900px;max-width:94vw;padding:32px 40px;background:linear-gradient(135deg,#15223b,#17132e);border:1px solid #a3bfff66;border-radius:28px;box-shadow:none;}.morph-plus-dialog>small{color:#b8b1ff;}.morph-plus-dialog h2{margin:12px 0;font-size:36px;}.morph-plus-dialog p{margin:12px 0;}.morph-plus-dialog input{box-sizing:border-box;width:100%;font:22px monospace;padding:14px;background:#080f22;color:#fff;border:1px solid #a1b4d7;border-radius:12px;}.plus-plans{display:flex;gap:16px;}.plus-plans article{flex:1;padding:16px;border:1px solid #7977e7;border-radius:16px;background:#8373ff13;}.plus-plans span{display:block;font-size:19px;}.plus-address{direction:ltr;color:#8edaff;}.plus-actions{display:flex;gap:16px;}.plus-actions button{padding:14px 28px;border-radius:12px;background:#6357e8;color:white;font:inherit;border:1px solid #b2c4f5;}.plus-actions button:focus{outline:4px solid #75e5ff;outline-offset:3px;}.morph-plus-dialog input:focus{outline:4px solid #75e5ff;outline-offset:3px;}.plus-note{display:block;margin-top:16px;font-size:17px;}.plus-status{min-height:28px;}.theme-option.plus-locked{position:relative;}.theme.plus-locked{position:relative;}.theme-option.plus-locked:after{content:"🔒";position:absolute;right:8px;top:8px;font:700 14px/1.3 Arial;color:#fff2b8;background:#32294ce8;border-radius:8px;padding:5px 9px;}.theme-option.plus-locked{padding-top:36px;}.morph-plus-setting{color:#c3bbff!important;}.theme-options{max-height:58vh;}@media(max-width:700px){.morph-plus-dialog{font-size:16px;padding:20px;}.morph-plus-dialog h2{font-size:26px;}.plus-plans{display:block;}.plus-plans article{margin-bottom:10px;}.plus-actions button{padding:12px 18px;}.plus-note{font-size:14px;}}
+
+.morph-plus-overlay .morph-plus-dialog input{background:#080f22!important;color:#fff!important;}
+
+.plus-purchase{display:flex;align-items:center;gap:20px;margin:16px 0;}.plus-purchase-qr{flex-shrink:0;border:8px solid white;border-radius:12px;background:#fff;}.plus-buy{font:inherit;padding:12px 20px;border:1px solid #a8b9ff;border-radius:12px;background:#6255d3;color:#fff;}.support-actions button{font:inherit;padding:12px 20px;border:1px solid #a8b9ff;border-radius:12px;background:#6255d3;color:#fff;}.plus-buy:focus{outline:4px solid #75e5ff;}.support-actions button:focus{outline:4px solid #75e5ff;}.plus-purchase-hint{font-size:17px;}.support-actions{display:flex;justify-content:center;gap:14px;}@media(max-width:700px){.plus-purchase{gap:12px;}.plus-purchase-qr{width:105px;height:105px;}.plus-buy{padding:10px;font-size:14px;}.plus-purchase-hint{font-size:12px;}}
+
+.theme-options{overflow-x:hidden;overflow-y:auto;padding:8px;scroll-padding:12px;box-sizing:border-box;}.theme-options .theme-option:focus{outline-offset:-4px;}
+
+.plus-is-active .plus-status{padding:18px 20px;border:1px solid #60d6aa;border-radius:14px;background:#164d3d;color:#effff7;font-size:26px;font-weight:bold;line-height:1.5;}.plus-is-active input:disabled{opacity:.7;cursor:default;}.plus-is-activated .plus-activate:disabled{background:#245747;opacity:1;color:#e4fff4;}.plus-is-active [hidden]{display:none!important;}@media(max-width:700px){.plus-is-active .plus-status{font-size:18px;padding:14px;}}
+
+.morph-plus-active-badge{display:inline-block;position:static;margin:0 14px;padding:4px 10px;border:1px solid #7de3bb;border-radius:20px;background:#123c37;color:#d8fff0;font-size:17px;line-height:1.3;letter-spacing:0;white-space:nowrap;}.morph-plus-active-badge[hidden]{display:none!important;}
+
+/* Keep activation actions visible while long translated content scrolls. */
+.morph-plus-dialog{display:flex;flex-direction:column;overflow:hidden;max-height:92vh;}.plus-dialog-body{min-height:0;overflow-y:auto;overflow-x:hidden;padding:6px 8px 16px;scroll-padding:16px;}.morph-plus-dialog>.plus-actions{flex-shrink:0;padding:16px 8px 4px;border-top:1px solid #a3bfff44;background:#161930;}.plus-dialog-body .plus-address{overflow-wrap:break-word;}.plus-dialog-body>small:first-child{color:#b8b1ff;}html[data-tv-canvas=true] .morph-plus-dialog{width:1040px;max-width:1800px;max-height:984px;}html[data-tv-canvas=true] .morph-plus-overlay{padding:48px;box-sizing:border-box;}
+
+.plus-device-manager{margin:20px 0;padding:18px;border:1px solid #7da8e8;border-radius:16px;background:#101c32;color:#f4f8ff;}.plus-device-manager>div{padding:10px 0;border-top:1px solid #6585ad55;}.plus-device-manager button{display:block;width:100%;min-height:58px;padding:12px 18px;margin:10px 0;background:#254369;color:#fff;border:1px solid #a4c9f4;border-radius:12px;font:inherit;}.plus-device-manager button:focus{outline:3px solid #88e6ff;outline-offset:3px;}
+
+/* Physical spacing works on TV engines without flex-gap support. */
+html body[data-ui-mode=modern] .morph-plus-overlay{background:var(--ui-overlay-bg)!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog{background:var(--ui-panel-bg,var(--ui-bg-raised))!important;border-color:var(--ui-card-border)!important;color:var(--ui-text)!important;padding:28px 36px!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-plans{gap:0!important;margin:18px 0!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-plans article{background:var(--ui-control-bg)!important;border-color:var(--ui-card-border)!important;min-width:0;box-sizing:border-box;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-plans article+article{margin-left:18px!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-purchase{gap:0!important;margin:20px 0!important;align-items:center!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-purchase-qr{width:144px;height:144px;min-width:144px;margin-right:24px!important;box-sizing:border-box;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-buy{display:inline-block;margin:0 0 12px!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-actions{gap:0!important;padding:18px 8px 6px!important;background:var(--ui-panel-bg,var(--ui-bg-raised))!important;border-color:var(--ui-card-border)!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-actions button+button{margin-left:20px!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog button{background:var(--ui-control-bg)!important;color:var(--ui-control-text)!important;border-color:var(--ui-card-border)!important;}html body[data-ui-mode=modern] .morph-plus-dialog input{background:var(--ui-control-bg)!important;color:var(--ui-control-text)!important;border-color:var(--ui-card-border)!important;}
+html body[data-ui-mode=modern] .morph-plus-dialog button:focus{background:var(--ui-selected-bg)!important;color:var(--ui-selected-text)!important;outline:none!important;border-color:var(--ui-focus-ring)!important;box-shadow:none;}html body[data-ui-mode=modern] .morph-plus-dialog input:focus{background:var(--ui-selected-bg)!important;color:var(--ui-selected-text)!important;outline:none!important;border-color:var(--ui-focus-ring)!important;box-shadow:none;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-description{line-height:1.6;margin-bottom:20px;}
+html body[data-ui-mode=modern] .morph-plus-dialog .plus-purchase-hint{color:var(--ui-text-muted)!important;line-height:1.6;}html body[data-ui-mode=modern] .morph-plus-dialog .plus-note{color:var(--ui-text-muted)!important;line-height:1.6;}
+/* A standalone, lightweight Plus card on the main Settings page. */
+#view-settings .settings-plus-card{box-sizing:border-box;margin:24px 0 28px;padding:16px 24px;border:1px solid var(--ui-control-border,rgba(227,235,255,.25));border-radius:24px;background:var(--ui-card-bg,rgba(69,81,108,.3));color:var(--ui-text,#f7f9ff);text-align:start;}
+#view-settings .settings-plus-card[hidden]{display:none!important;}
+.settings-plus-heading{display:flex;align-items:center;justify-content:space-between;}
+.settings-plus-heading small{font-size:16px;letter-spacing:2px;color:var(--ui-text-muted,#d2def4);}
+#view-settings .settings-plus-heading h2{margin:7px 0 0;font-size:30px;line-height:1.3;color:inherit;}
+.settings-plus-intro{font-size:21px;line-height:1.5;margin:12px 0;}
+.settings-plus-benefits{display:flex;list-style:none;padding:0;margin:14px -10px;}
+.settings-plus-benefits li{flex:1;min-width:0;margin:0 10px;padding:12px 16px;border:1px solid var(--ui-control-border,rgba(227,235,255,.2));border-radius:14px;background:var(--ui-control-bg,rgba(221,231,255,.06));font-size:20px;line-height:1.5;}
+.settings-plus-note{font-size:18px;line-height:1.5;color:var(--ui-text-muted,#d2def4);margin:15px 0;}
+#view-settings .settings-plus-action{display:inline-block;min-height:54px;padding:12px 24px;border:1px solid var(--ui-control-border,rgba(227,235,255,.4));border-radius:16px;background:var(--ui-control-bg,rgba(221,231,255,.12));color:inherit;font:inherit;font-size:21px;}
+#view-settings .settings-plus-action:focus{outline:3px solid var(--ui-focus-ring,#f7f9ff);outline-offset:3px;background:var(--ui-selected-bg,rgba(221,231,255,.18));}
+.settings-plus-card .morph-plus-active-badge{color:#b6ffd3!important;background:rgba(103,209,151,.15);border:1px solid rgba(182,255,211,.4);padding:16px 24px;border-radius:12px;font-size:20px;white-space:nowrap;}
+
+#view-settings .settings-plus-details>summary{cursor:pointer;min-height:52px;padding:12px 0;font-size:22px;line-height:1.3;}
+
+#view-settings .settings-plus-details>summary>button{padding:12px 16px;min-height:52px;font-size:22px;border:1px solid var(--ui-card-border);border-radius:12px;background:var(--ui-card-bg);color:var(--ui-text)}
+
+.plus-feature-list{font-size:17px;line-height:1.6;padding-inline-start:24px;margin:14px 0}.plus-feature-list li{margin:7px 0}
+
+/* A bounded account view keeps activation and device state beside the benefits. */
+.plus-tv-account .morph-plus-dialog{width:1440px!important;max-width:calc(100% - 80px)!important;height:860px!important;max-height:calc(100% - 80px)!important;display:flex!important;flex-direction:column!important;padding:26px!important;overflow:hidden!important;background:var(--ui-card-bg,#18263c)!important;color:var(--ui-text,#f1f6ff)!important;border:1px solid var(--ui-card-border,#8da7ca66)!important;}
+.plus-tv-account .morph-plus-dialog .plus-account-header{position:static!important;display:flex!important;align-items:center!important;flex:0 0 auto!important;gap:16px!important;height:auto!important;margin:0 0 20px!important;padding:0!important;}
+.plus-tv-account .morph-plus-dialog .plus-account-header>small{font-size:17px!important;color:#d5b35e!important;}
+.plus-tv-account .morph-plus-dialog .plus-account-header h2{font-size:31px!important;line-height:1.3!important;margin:0!important;flex:1!important;}
+.plus-tv-account .morph-plus-dialog .plus-account-state{border:1px solid #6edab288;border-radius:12px;padding:9px 14px;background:#16835924;color:#7cf1bd;font-size:20px;white-space:nowrap;}
+.plus-tv-account .morph-plus-dialog .plus-dialog-body{display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(380px,.8fr)!important;gap:24px!important;flex:1 1 0!important;min-height:0!important;overflow:hidden!important;padding:0!important;}
+.plus-tv-account .morph-plus-dialog .plus-benefit-pane,.plus-tv-account .morph-plus-dialog .plus-activation-pane{min-width:0;min-height:0;overflow:auto;padding:18px;box-sizing:border-box;border:1px solid var(--ui-card-border,#8da7ca44);border-radius:18px;scroll-padding:14px;}
+.plus-tv-account .morph-plus-dialog .plus-activation-pane h3{font-size:25px;line-height:1.3;margin:0 0 16px;}
+.plus-tv-account .morph-plus-dialog .plus-activation-pane label{display:block;font-size:20px;line-height:1.5;margin:18px 0 10px;}
+.plus-tv-account .morph-plus-dialog .plus-license-summary{font-size:21px;line-height:1.6;padding:14px;background:var(--ui-selected-bg,#2a415e);border-radius:13px;}
+.plus-tv-account .morph-plus-dialog .plus-transfer-hint{font-size:19px;line-height:1.6;opacity:.9;margin:20px 0;}
+.plus-tv-account .morph-plus-dialog .plus-activate,.plus-tv-account .morph-plus-dialog .plus-deactivate{display:block;width:100%;padding:13px 18px;border:1px solid #8faacf;border-radius:13px;background:var(--ui-control-bg,#294463);color:inherit;font:inherit;font-size:21px;line-height:1.5;min-height:54px;box-sizing:border-box;}
+.plus-tv-account .morph-plus-dialog .plus-activate{background:#2861c9;color:#fff;}
+.plus-tv-account .morph-plus-dialog .plus-deactivate{border-color:#d59191;background:#b6434320;}
+.plus-tv-account .morph-plus-dialog [hidden]{display:none!important;}
+.plus-tv-account .morph-plus-dialog .plus-actions{flex:0 0 auto!important;margin-top:16px!important;}
+.plus-tv-account .morph-plus-dialog .plus-benefit-pane .plus-feature-list{font-size:19px;line-height:1.6;}
+.plus-tv-account .morph-plus-dialog .plus-benefit-pane .plus-description{font-size:21px;line-height:1.5;}
+.plus-tv-account .morph-plus-dialog .plus-purchase-qr{width:112px;height:112px;}
+.plus-tv-account .morph-plus-dialog .plus-activate:focus,.plus-tv-account .morph-plus-dialog .plus-deactivate:focus{outline:3px solid var(--ui-focus-ring,#c9e2ff);outline-offset:2px;}
+@media(max-width:700px){.plus-tv-account .morph-plus-dialog{width:100%!important;max-width:calc(100% - 24px)!important;max-height:calc(100% - 24px)!important;padding:16px!important;}.plus-tv-account .morph-plus-dialog .plus-account-header{gap:10px!important;flex-wrap:wrap!important;}.plus-tv-account .morph-plus-dialog .plus-account-header>small{display:none!important;}.plus-tv-account .morph-plus-dialog .plus-account-header h2{font-size:23px!important;}.plus-tv-account .morph-plus-dialog .plus-dialog-body{display:flex!important;flex-direction:column!important;overflow:auto!important;gap:16px!important;}.plus-tv-account .morph-plus-dialog .plus-activation-pane{order:-1;flex:0 0 auto;overflow:visible;}.plus-tv-account .morph-plus-dialog .plus-benefit-pane{flex:0 0 auto;overflow:visible;}.plus-tv-account .morph-plus-dialog .plus-license-summary,.plus-tv-account .morph-plus-dialog .plus-transfer-hint{font-size:16px;}.plus-tv-account .morph-plus-dialog .plus-activation-pane h3{font-size:21px;}}
+
+/* Full-width form controls must shrink with the activation column. */
+.plus-tv-account .morph-plus-dialog,.plus-tv-account .morph-plus-dialog *{box-sizing:border-box}
+.plus-tv-account .morph-plus-dialog{width:min(1440px,calc(100% - 64px))!important;min-width:0!important}
+.plus-tv-account .morph-plus-dialog .plus-dialog-body{grid-template-columns:minmax(0,1fr) minmax(0,.8fr)!important}
+.plus-tv-account .morph-plus-dialog .plus-activation-pane input{width:100%!important;max-width:100%!important;min-width:0!important;display:block!important}
+.plus-tv-account .morph-plus-dialog .plus-activation-pane *{max-width:100%!important;overflow-wrap:anywhere}
+.plus-tv-account .morph-plus-dialog .plus-benefit-pane,.plus-tv-account .morph-plus-dialog .plus-activation-pane{overflow-x:hidden!important}
+
+.plus-tv-account .morph-plus-dialog .plus-activation-pane input[hidden]{display:none!important}
+
+/* Verified activation stays legible even when its action is disabled. */
+html body .morph-plus-overlay.plus-is-activated .plus-activate:disabled{background:#245747!important;color:#e4fff4!important;-webkit-text-fill-color:#e4fff4!important;opacity:1!important;}

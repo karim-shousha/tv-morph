@@ -1,0 +1,48 @@
+/* Local network uses the same fitted canvas and theme variables as the launcher. */
+html#reference-network{overflow:hidden!important;background:var(--reference-bg)!important}
+html#reference-network body{width:1920px!important;height:1080px!important;overflow:hidden!important;background:var(--reference-page-background,url(reference-assets/bridge-background-v2.webp)) center/cover,var(--reference-bg)!important;color:#f2f4f8!important}
+html#reference-network #network-main{position:relative!important;box-sizing:border-box!important;width:1920px!important;height:1080px!important;padding:0!important;margin:0!important;max-width:none!important;overflow:hidden!important;background:none!important}
+html#reference-network header{position:absolute;inset:22px 64px auto;height:82px;display:flex;gap:18px;padding:10px 22px;border:1px solid rgba(var(--reference-rim-rgb),.25);border-radius:24px;background:var(--reference-glass)!important}
+html#reference-network header>span{display:flex;align-items:center;gap:8px;margin-inline-end:auto;font-size:30px;font-weight:600}
+html#reference-network header>span img{width:58px;height:62px;object-fit:contain;filter:sepia(.8) saturate(1.5)}
+html#reference-network button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--reference-glass)!important;border:1px solid rgba(var(--reference-rim-rgb),.3)!important;border-radius:20px!important;color:#eef2f7!important;font-size:22px!important;min-height:58px!important;padding:12px 22px!important;box-shadow:inset 0 -2px 7px rgba(var(--reference-accent-rgb),.12)!important;transition:background 160ms ease,transform 160ms ease!important}
+html#reference-network button:is(:focus,:hover,[aria-current=page]){background:var(--reference-focus)!important;border-color:var(--reference-accent)!important;color:var(--reference-accent-light)!important;outline:none!important;box-shadow:0 0 0 1px rgba(var(--reference-accent-rgb),.25),inset 0 1px 2px rgba(var(--reference-accent-light-rgb),.25)!important}
+html#reference-network #scan{background:var(--reference-action-gradient)!important;color:#10151c!important;font-weight:600}
+html#reference-network svg{width:28px;height:28px;flex-shrink:0;color:var(--reference-accent-light)}
+html#reference-network .network-hero{position:absolute!important;left:80px!important;right:80px!important;top:143px!important;margin:0!important;padding:0!important;height:200px!important;background:transparent!important}
+html#reference-network .network-hero small{color:var(--reference-accent-light);font-size:19px;letter-spacing:1px}
+html#reference-network h1{font-size:43px!important;line-height:1.2;margin:12px 0 16px!important}
+html#reference-network .network-hero p{font-size:22px!important;margin:0 0 26px!important;color:#c3cedd!important}
+html#reference-network .network-hero button{margin-inline-end:18px}
+html#reference-network .network-guide{position:absolute!important;left:64px!important;right:64px!important;top:390px!important;height:185px!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;margin:0!important}
+html#reference-network article{position:relative;background:var(--reference-glass)!important;border:1px solid rgba(var(--reference-rim-rgb),.25)!important;border-radius:24px!important;padding:24px!important;min-width:0!important;box-shadow:inset 0 1px 1px rgba(var(--reference-rim-rgb),.2),inset 0 -1px 1px rgba(var(--reference-accent-rgb),.5)!important}
+html#reference-network .network-guide article{padding-inline-start:116px!important}
+html#reference-network .network-guide article>svg{position:absolute;left:24px;top:32px;width:64px;height:64px;padding:12px;border:1px solid rgba(var(--reference-accent-rgb),.35);border-radius:18px;background:var(--reference-glass)}
+html#reference-network .network-guide strong{font-size:25px!important}
+html#reference-network .network-guide p{font-size:20px!important;line-height:1.5!important;margin:12px 0 0!important;color:#c3cedd!important}
+html#reference-network #tabs{position:absolute;left:64px;right:64px;top:615px;padding:4px!important;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;overflow:visible}
+html#reference-network #tabs button{font-size:19px!important;padding:14px!important;min-width:0!important;white-space:normal!important}
+html#reference-network #status,html#reference-network #capabilities{position:absolute;left:80px;right:80px;font-size:19px!important;line-height:1.5!important;margin:0!important;color:#bcc9d9!important}
+html#reference-network #status{top:711px}html#reference-network #capabilities{top:750px}
+html#reference-network #browser{position:absolute;top:802px;left:64px;right:64px;bottom:42px;overflow:auto;padding:4px 12px;min-height:0;background:none!important}
+html#reference-network #devices{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+html#reference-network #devices:empty{display:none}
+html#reference-network #overlay{inset:0!important;background:rgba(2,7,15,.8)!important}
+html#reference-network #dialog{width:850px!important;max-width:calc(100% - 100px)!important;max-height:calc(100% - 100px)!important;padding:28px!important;background:linear-gradient(135deg,rgba(var(--reference-base-rgb),.97),rgba(var(--reference-surface-rgb),.96))!important;border:1px solid rgba(var(--reference-accent-rgb),.4)!important;border-radius:24px!important;color:#eef2f7}
+html#reference-network :is(input,select){background:var(--reference-glass)!important;border:1px solid rgba(var(--reference-rim-rgb),.3)!important;color:#eef2f7!important;border-radius:14px!important}
+html#reference-network #network-main>header{left:auto!important;right:64px!important;width:auto!important;background:none!important;border:0!important;padding:0!important}
+html#reference-network #network-main>header>span,html#reference-network #exit{display:none!important}
+
+html#reference-network #network-main>header{direction:ltr!important;}html#reference-network #network-main>header>#network-return{order:-1!important;flex:0 0 auto!important;margin:0 14px 0 0!important;max-width:240px!important;}
+
+/* Physical offsets also work on Tizen 5, whose engine has no inset shorthand. */
+html#reference-network #network-main>header{left:64px!important;right:64px!important;top:22px!important;bottom:auto!important;width:auto!important;max-width:none!important;box-sizing:border-box!important;direction:ltr!important;}
+html#reference-network #network-main>header>span{display:flex!important;visibility:visible!important;flex:0 0 240px!important;min-width:240px!important;margin:0 auto 0 0!important;direction:ltr!important;}
+
+/* Match the canonical launcher brand; Help then Back remain on the right. */
+html#reference-network #network-main>header>span.brand{flex:0 0 auto!important;min-width:320px!important;width:auto!important;max-width:none!important;gap:0!important;white-space:nowrap!important;margin:0 auto 0 0!important;font:600 37px/1 Arial,Tahoma,sans-serif!important;letter-spacing:-1px!important;}
+html#reference-network #network-main>header>span.brand .morph-header-symbol{width:74px!important;height:74px!important;flex:0 0 74px!important;object-fit:contain!important;filter:none!important;}
+html#reference-network #network-main>header>span.brand>span{display:block!important;white-space:nowrap!important;font:inherit!important;color:#f4f5f8!important;}
+html#reference-network #network-main>header>#network-help{order:1!important;}
+html#reference-network #network-main>header>#network-return{order:2!important;flex:0 0 auto!important;max-width:none!important;margin:0 0 0 14px!important;white-space:nowrap!important;background:none!important;border:0!important;box-shadow:none!important;outline:none!important;}
+html#reference-network #network-main>header>#network-return:focus,html#reference-network #network-main>header>#network-return:hover{background:none!important;box-shadow:none!important;outline:none!important;color:var(--reference-accent-light)!important;text-decoration:underline!important;transform:scale(1.04)!important;}

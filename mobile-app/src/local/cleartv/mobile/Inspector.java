@@ -10,11 +10,13 @@ import org.json.*;
 public final class Inspector implements Closeable {
     private Socket socket;private InputStream in;private OutputStream out;private int sequence=0;
     public Inspector(String target)throws Exception{
+        try{
         URI u=new URI(target);socket=new Socket();socket.connect(new InetSocketAddress(u.getHost(),u.getPort()),5000);socket.setSoTimeout(15000);in=socket.getInputStream();out=socket.getOutputStream();byte[] nonce=new byte[16];new SecureRandom().nextBytes(nonce);String key=Base64.getEncoder().encodeToString(nonce);
         out.write(("GET "+u.getRawPath()+(u.getRawQuery()==null?"":"?"+u.getRawQuery())+" HTTP/1.1\r\nHost: "+u.getHost()+":"+u.getPort()+"\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Key: "+key+"\r\n\r\n").getBytes(StandardCharsets.US_ASCII));out.flush();
         ByteArrayOutputStream headers=new ByteArrayOutputStream();int tail=0;while(headers.size()<16384){int c=in.read();if(c<0)throw new EOFException();headers.write(c);tail=(tail<<8)|c;if(tail==0x0d0a0d0a)break;}
         String h=headers.toString("US-ASCII"),accept=Base64.getEncoder().encodeToString(MessageDigest.getInstance("SHA-1").digest((key+"258EAFA5-E914-47DA-95CA-C5AB0DC85B11").getBytes(StandardCharsets.US_ASCII)));
         if(!h.startsWith("HTTP/1.1 101")||!h.toLowerCase(Locale.US).contains("sec-websocket-accept: "+accept.toLowerCase(Locale.US)))throw new IOException("Inspector handshake rejected");
+        }catch(Exception failure){close();throw failure;}
     }
     public void sendJson(JSONObject value)throws Exception{send(1,value.toString().getBytes(StandardCharsets.UTF_8));}
     public JSONObject readJson()throws Exception{return new JSONObject(receive());}

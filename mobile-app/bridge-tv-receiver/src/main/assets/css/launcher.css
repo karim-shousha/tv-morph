@@ -1,0 +1,131 @@
+/* Receiver chrome consumes the launcher's resolved theme. Playback coordinates stay unchanged. */
+body{--bridge-bg:#171e32;--bridge-surface:#2c374e;--bridge-control:#354057;--bridge-text:#f7f9ff;--bridge-muted:#c8d2e3;--bridge-accent:#8ab4ff;--bridge-focus:#9ddfff;--bridge-border:rgba(255,255,255,.2)}
+html,body{min-height:100%;height:100%;overflow:auto}
+body,body.light{background:var(--bridge-bg);color:var(--bridge-text)}
+#app{width:100%;min-height:100%;padding:28px 5vw 24px;display:flex;flex-direction:column}
+#header{height:auto;min-height:74px;border-bottom:1px solid var(--bridge-border);gap:24px}
+.bridge-title{font:600 30px Arial,sans-serif;letter-spacing:-.5px}
+#conn{font-size:20px;color:var(--bridge-muted)}
+.dot.on{box-shadow:none}
+#screen-pair{display:flex;align-items:center;justify-content:center;gap:6vw;max-width:1480px;width:100%;margin:auto;padding:44px 0}
+.pair-copy{flex:1;min-width:0;max-width:660px}
+#screen-pair h1{font-size:clamp(32px,3.1vw,52px);line-height:1.4;margin:12px 0 18px}
+.eyebrow{font-size:20px;color:var(--bridge-accent)}
+.muted{font-size:23px;line-height:1.7;color:var(--bridge-muted)}
+.pair-steps{font-size:21px;line-height:1.8;margin:26px 0 0;padding:0 25px 0 0;color:var(--bridge-muted)}
+.pair-steps li{padding:0 10px 16px 0}
+html[dir="ltr"] .pair-steps{padding:0 0 0 25px}
+html[dir="ltr"] .pair-steps li{padding:0 0 16px 10px}
+html[dir="ltr"] .hint{direction:ltr}
+html[dir="ltr"] .screen:not(#screen-play),html[dir="ltr"] #conn{direction:ltr}
+html[dir="ltr"] .card .app-label{direction:ltr}
+.pair-card{flex:0 1 560px;min-width:360px;background:var(--bridge-surface);border:1px solid var(--bridge-border);border-radius:24px;padding:30px}
+.pair-card h2{font-size:29px;margin:0 0 10px;font-weight:500}
+.pair-note{font-size:18px;line-height:1.7;color:var(--bridge-muted);margin:0 0 24px}
+.form{margin:0}.row{display:block;margin:18px 0;font-size:20px}.row label{display:block;width:auto;margin-bottom:10px;color:var(--bridge-muted)}
+.row input{width:100%;height:64px;font-size:25px}
+input,.light input{background:var(--bridge-control);color:var(--bridge-text);border:1px solid var(--bridge-border);border-radius:12px}
+input::placeholder,.light input::placeholder{color:var(--bridge-muted);opacity:.8}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn,.light .btn{font-size:21px;min-height:58px;padding:12px 20px;margin:0;background:var(--bridge-control);color:var(--bridge-text);border:1px solid var(--bridge-border);border-radius:12px}
+.btn.primary,.light .btn.primary{background:var(--bridge-accent);border-color:var(--bridge-accent);color:#101b2e;font-weight:500}
+input.focus,.btn.focus,.light input.focus,.light .btn.focus,input:focus-visible,.btn:focus-visible{outline:3px solid var(--bridge-focus);outline-offset:4px;border-color:var(--bridge-focus)!important;box-shadow:none}
+.error,.light .error{font-size:18px;line-height:1.6;min-height:30px;color:#ffb4ab;margin:18px 0 0}
+#brandFooter{position:static;flex-direction:row;justify-content:space-between;gap:20px;margin-top:auto;padding-top:18px;border-top:1px solid var(--bridge-border);font-size:14px;color:var(--bridge-muted)}
+#brandFooter span:last-child{order:0;color:var(--bridge-muted)}
+.card,.light .card,.card.add-app{background:var(--bridge-surface);color:var(--bridge-text);border-color:var(--bridge-border)}
+.card.focus,.light .card.focus{background:var(--bridge-control);border-color:var(--bridge-focus)!important;box-shadow:none}
+#screen-diag pre,.light #screen-diag pre{background:var(--bridge-surface);border-color:var(--bridge-border);color:var(--bridge-text);font-size:19px;min-height:180px;max-height:48vh}
+#appsCount,.search-box label,.hint,.launcher-bottom{color:var(--bridge-muted)}
+#grid{max-height:54vh}.card{width:calc(25% - 22px);height:210px;font-size:23px}.app-icon{width:88px;height:88px}
+@media(max-width:1100px){#app{padding:20px 4vw}.pair-card{flex-basis:460px;padding:24px;min-width:320px}#screen-pair{gap:4vw;padding:32px 0}.pair-steps{font-size:18px}.muted{font-size:20px}.pair-note{font-size:16px}.btn{font-size:18px!important}.eyebrow{font-size:18px}#conn{font-size:18px}}
+@media(max-width:760px){#screen-pair{flex-direction:column;align-items:stretch;gap:24px}.pair-copy{max-width:none}.pair-card{flex:auto;min-width:0}.pair-steps{margin-top:16px}.pair-steps li{padding-bottom:10px}.card{width:calc(50% - 16px);margin-right:16px}.card:nth-child(4n){margin-right:16px}.card:nth-child(2n){margin-right:0}#brandFooter{flex-wrap:wrap;font-size:12px}}
+
+.bridge-title.morph-symbol-brand{display:flex;align-items:center;direction:ltr;gap:0;white-space:nowrap}
+.bridge-title.morph-symbol-brand img{margin:0;padding:0;flex:0 0 64px;min-width:64px;max-width:64px;width:64px;height:64px;object-fit:contain}
+.bridge-title.morph-symbol-brand span{margin:0;padding:0;color:#fff!important;-webkit-text-fill-color:#fff!important;font:600 30px/1 Arial,sans-serif;letter-spacing:-1px}
+
+/* Use IPTV's tonal background asset, independently of launcher landscape photos. */
+body,body.light{background:linear-gradient(125deg,var(--bridge-bg),var(--bridge-surface));background-attachment:fixed;background-size:cover;}
+body[data-launcher-host],body[data-launcher-host].light{background:var(--bridge-page-bg,linear-gradient(110deg,var(--bridge-bg),var(--bridge-surface))) fixed;background-size:cover;}
+
+/* Bridge connection composition: device illustration, brief steps, compact form. */
+#app{padding:20px 4vw 18px;}
+#header{min-height:76px;border-bottom:1px solid var(--bridge-border);}
+#conn{gap:9px;font-size:16px;padding:9px 14px;border:1px solid var(--bridge-border);border-radius:30px;background:var(--bridge-panel,var(--bridge-surface));}
+#conn .dot{margin:0;width:8px;height:8px;}
+#screen-pair{max-width:1320px;gap:72px;padding:26px 0;margin:auto;width:100%;}
+.pair-copy{max-width:650px;display:flex;flex-direction:column;align-items:flex-start;}
+.bridge-connect-art{display:block;width:100%;max-width:530px;height:280px;object-fit:contain;align-self:center;margin:0 0 22px;}
+.pair-copy .eyebrow{font-size:15px;line-height:1.4;color:var(--bridge-accent);margin-bottom:8px;}
+#screen-pair h1{font-size:clamp(30px,2.7vw,42px);line-height:1.2;font-weight:600;letter-spacing:-.7px;margin:0 0 12px;max-width:620px;}
+.pair-copy>.muted{font-size:18px;line-height:1.5;margin:0 0 22px;}
+.pair-steps{list-style:none;counter-reset:bridge-step;display:flex;flex-direction:column;gap:12px;padding:0!important;margin:0;font-size:16px;line-height:1.5;}
+.pair-steps li{counter-increment:bridge-step;display:flex;align-items:center;gap:12px;padding:0!important;}
+.pair-steps li:before{content:counter(bridge-step);display:flex;align-items:center;justify-content:center;flex:0 0 27px;width:27px;height:27px;border:1px solid var(--bridge-accent-border,var(--bridge-border));border-radius:50%;font:500 13px/1 Arial,sans-serif;color:var(--bridge-accent);background:var(--bridge-accent-soft,var(--bridge-control));}
+.pair-card{flex:0 0 440px;min-width:0;padding:28px;border-radius:22px;background:var(--bridge-panel,var(--bridge-surface));border:1px solid var(--bridge-border);box-shadow:none;}
+.pair-card h2{font-size:27px;line-height:1.3;margin:0 0 10px;font-weight:600;}
+.pair-note{font-size:15px;line-height:1.6;margin:0 0 24px;}
+.row{font-size:15px;margin:18px 0;}.row label{margin-bottom:8px;}
+.row input{height:54px;font-size:21px;padding:10px 14px;}
+.pair-card .btnrow{margin-top:22px;gap:10px;display:flex;flex-wrap:nowrap;}
+.pair-card .btn{flex:1 1 auto;font-size:16px;min-height:48px;padding:10px 12px;border-radius:11px;white-space:nowrap;}
+.pair-card .btn.primary{background:var(--bridge-primary,var(--bridge-accent));border-color:var(--bridge-accent);color:var(--bridge-primary-text,var(--bridge-text));}
+.pair-card .error{font-size:14px;line-height:1.5;margin:14px 0 0;min-height:20px;}
+#brandFooter{font-size:12px;padding-top:14px;margin-top:auto;}
+@media(max-width:1200px){#screen-pair{gap:38px}.pair-card{flex-basis:380px;padding:24px}.bridge-connect-art{height:230px}.pair-steps{font-size:14px}#screen-pair h1{font-size:32px}.pair-copy>.muted{font-size:16px}}
+@media(max-height:800px) and (min-width:761px){#screen-pair{padding:16px 0}.bridge-connect-art{height:200px;margin-bottom:12px}#screen-pair h1{font-size:32px}.pair-copy>.muted{margin-bottom:14px}.pair-steps{gap:8px;font-size:14px}.pair-card{padding:24px}.pair-note{margin-bottom:16px}.row{margin:14px 0}}
+@media(max-width:760px){#screen-pair{flex-direction:column;align-items:stretch;gap:24px}.pair-copy{max-width:none}.bridge-connect-art{height:200px;margin-bottom:16px}.pair-card{flex:auto;width:100%;padding:24px}.pair-copy>.muted{font-size:17px}#conn{font-size:13px;padding:8px 10px}.bridge-title.morph-symbol-brand span{font-size:24px}.bridge-title.morph-symbol-brand img{width:52px;height:52px}}
+
+/* Product mark stays upper-left; the Arabic content has its own RTL flow. */
+#header{direction:ltr;}
+html[lang="ar"] #screen-pair{direction:rtl;}
+html[lang="ar"] .pair-copy{align-items:stretch;text-align:right;}
+html[lang="ar"] #screen-pair h1{letter-spacing:0;line-height:1.5;font-size:36px;}
+html[lang="ar"] .pair-copy>.muted,html[lang="ar"] .pair-steps,html[lang="ar"] .pair-card{direction:rtl;text-align:right;}
+html[lang="ar"] .pair-card h2{line-height:1.5;}
+@media(max-height:800px) and (min-width:761px){html[lang="ar"] #screen-pair h1{font-size:30px;line-height:1.45;}}
+
+/* Normal connection is phone-driven. Android code entry only appears during phone setup. */
+.bridge-tv-address{padding:20px 0;margin:12px 0;border-top:1px solid var(--bridge-border,#344458);border-bottom:1px solid var(--bridge-border,#344458)}
+.bridge-tv-address span{display:block;font-size:18px;line-height:1.6}
+.bridge-tv-address strong{display:block;font-size:32px;line-height:1.6;letter-spacing:1px;text-align:center}
+#screen-setup{display:flex;align-items:center;justify-content:center;flex:1;min-height:0}
+#screen-setup.hidden{display:none!important}
+#screen-setup .phone-setup-card{width:820px;max-width:90%;flex:0 1 820px;padding:24px 36px}
+#screen-setup h1{font-size:30px;line-height:1.5;margin:0 0 12px}
+#screen-setup .pair-note{font-size:19px;line-height:1.6;margin:10px 0}
+#screen-setup input{direction:ltr;letter-spacing:12px;text-align:center;font-size:28px}
+#screen-setup .bridge-tv-address{padding:6px 0;margin:8px 0}
+
+@media(max-height:600px){#screen-setup .phone-setup-card{padding:12px 20px}#screen-setup h1{font-size:23px;margin-bottom:6px}#screen-setup .pair-note{font-size:15px;line-height:1.4;margin:6px 0}#screen-setup .bridge-tv-address{padding:2px 0;margin:4px 0}#screen-setup .bridge-tv-address span,#screen-setup label{font-size:15px}#screen-setup .bridge-tv-address strong{font-size:24px;line-height:1.3}#screen-setup .row{margin:8px 0}#screen-setup input{height:42px;font-size:24px}#screen-setup .btnrow{margin-top:10px}#screen-setup .btn{min-height:40px;font-size:14px;padding:8px}}
+
+.phone-setup-spinner{display:inline-block;width:28px;height:28px;margin:14px;border:4px solid rgba(255,255,255,.25);border-top-color:var(--bridge-accent,#f2d18f);border-radius:50%;animation:bridge-setup-spin .8s linear infinite;vertical-align:middle}
+.phone-setup-spinner[hidden]{display:none!important}
+@keyframes bridge-setup-spin{to{transform:rotate(360deg)}}
+#app .btn.focus,#app .btn:focus,#app .btn:hover{background:var(--bridge-control,#193550)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;outline:3px solid var(--bridge-focus,#f2d18f)!important;box-shadow:none}
+#app .btn.primary.focus,#app .btn.primary:focus,#app .btn.primary:hover{background:var(--bridge-primary,#efce8c)!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important}
+#app .btn.focus *,#app .btn:focus *,#app .btn:hover *{color:inherit!important;-webkit-text-fill-color:inherit!important}
+#screen-apps #appsError.connection-success{border-color:#72d5a1;background:#103b30;color:#f5fff8}
+
+#app #btnPhoneSetupSubmit,#app #btnPhoneSetupSubmit.focus,#app #btnPhoneSetupSubmit:focus,#app #btnPhoneSetupSubmit:hover{background:#f4d58c!important;border-color:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important}
+#phoneSetupEntry[hidden],#btnPhoneSetupSubmit[hidden],#btnDisconnect[hidden]{display:none!important}
+#screen-setup.connecting .phone-setup-spinner{display:block;width:54px;height:54px;margin:36px auto 20px}
+#screen-setup.connecting #phoneSetupStatus{text-align:center;font-size:24px}
+#btnDisconnect{margin-inline-start:18px;font-size:18px;padding:8px 18px;min-height:42px}
+
+/* Connection details: explicit TV contrast, independent of launcher theme variables. */
+#app #screen-diag{position:absolute!important;inset:140px 180px 100px!important;padding:36px!important;border:1px solid #526980!important;border-radius:24px!important;background:#0c2138!important;color:#f5f8fc!important;overflow:auto!important}
+#app #screen-diag h1{font-size:36px!important;color:#fff!important;margin:0 0 14px!important}
+#app #screen-diag #diagSummary{color:#dce6f2!important;font-size:24px!important;line-height:1.6!important;margin:0 0 24px!important}
+#app #screen-diag .bridge-diag-cards{display:flex!important;margin-bottom:24px!important;gap:18px!important}
+#app #screen-diag .bridge-diag-cards>section{flex:1!important;min-width:0!important;margin:0!important;padding:24px!important;background:#152f4a!important;border:1px solid #46627c!important;border-radius:18px!important}
+#app #screen-diag small{display:block!important;font-size:20px!important;color:#bdcfe1!important;margin-bottom:12px!important}
+#app #screen-diag strong{display:block!important;font-size:28px!important;color:#fff!important;line-height:1.5!important;overflow-wrap:break-word!important}
+#app #screen-diag .btnrow{display:flex!important;gap:18px!important;margin-top:26px!important;flex-wrap:wrap!important}
+#app #screen-diag .btn{flex:1 1 240px!important;min-height:66px!important;margin:0!important;padding:14px 20px!important;background:#193b5a!important;border:2px solid #6c87a1!important;border-radius:16px!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:22px!important}
+#app #screen-diag .btn.primary{background:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important;border-color:#f4d58c!important}
+#app #screen-diag .btn.focus,#app #screen-diag .btn:focus,#app #screen-diag .btn:hover{background:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important;outline:3px solid white!important;outline-offset:4px!important;border-color:#f4d58c!important}
+#app #screen-diag .btn:disabled{background:#193047!important;color:#a7bacb!important;-webkit-text-fill-color:#a7bacb!important;border-color:#41586e!important;opacity:1!important}
+#app #screen-diag #diagText{min-height:0!important;max-height:200px!important;margin:20px 0!important;padding:18px!important;background:#071726!important;border-color:#4b647d!important;color:#dce8f6!important;font:18px/1.5 monospace!important;overflow:auto!important;white-space:pre-wrap!important;overflow-wrap:break-word!important}
+#app #header #btnDisconnect{flex:0 0 auto!important;min-width:160px!important;min-height:48px!important;margin-inline-start:18px!important;padding:8px 18px!important;font-size:18px!important;background:#193b5a!important;color:white!important;-webkit-text-fill-color:white!important}

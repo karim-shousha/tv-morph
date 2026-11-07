@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://local.example/taskforcewatch" version="0.1.0" viewmodes="maximized">
+ <tizen:application id="Tf141Watch.Tactical" package="Tf141Watch" required_version="5.5"/>
+ <content src="index.html"/>
+ <name>Task Force 141</name>
+ <tizen:profile name="wearable"/>
+ <tizen:category name="http://tizen.org/category/wearable_clock"/>
+ <tizen:setting screen-orientation="portrait" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+ <tizen:privilege name="http://tizen.org/privilege/systeminfo"/>
+ <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="circular"/>
+ <tizen:metadata key="http://tizen.org/metadata/ambient_support" value="enable"/>
+</widget>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "quran_cairo",
+    "name": "إذاعة القرآن الكريم من القاهرة",
+    "category": "قرآن كريم",
+    "streamUrl": "https://stream.radiojar.com/8s5u5tpdtwzuv",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "nagham_fm_1053",
+    "name": "Nagham FM 105.3",
+    "category": "FM",
+    "streamUrl": "https://ahmsamir.radioca.st/stream",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "nogoum_fm",
+    "name": "Nogoum FM",
+    "category": "FM",
+    "streamUrl": "https://stream-159.zeno.fm/qb1zvsykm98uv",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "elradio_9090",
+    "name": "El Radio 9090",
+    "category": "FM",
+    "streamUrl": "https://9090streaming.mobtada.com/9090FMEGYPT",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "groove_salad",
+    "name": "SomaFM · Groove Salad",
+    "category": "FM",
+    "streamUrl": "https://ice5.somafm.com/groovesalad-128-mp3",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "secret_agent",
+    "name": "SomaFM · Secret Agent",
+    "category": "FM",
+    "streamUrl": "https://ice5.somafm.com/secretagent-128-mp3",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "indie_pop",
+    "name": "SomaFM · Indie Pop Rocks!",
+    "category": "FM",
+    "streamUrl": "https://ice5.somafm.com/indiepop-130-mp3",
+    "verified": false,
+    "error": "HTTPError"
+  },
+  {
+    "id": "quran_mishary_alafasy",
+    "name": "إذاعة مشاري العفاسي",
+    "category": "قرآن كريم",
+    "streamUrl": "https://qurango.net/radio/mishary_alafasi",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  },
+  {
+    "id": "quran_tafsir",
+    "name": "إذاعة تفسير القرآن الكريم",
+    "category": "قرآن كريم",
+    "streamUrl": "https://radio.quranradiotafsir.com/9992/stream",
+    "verified": true,
+    "contentType": "audio/mpeg"
+  }
+]

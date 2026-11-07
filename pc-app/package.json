@@ -1,0 +1,69 @@
+{
+  "name": "morph-launcher-pc",
+  "version": "1.1.320",
+  "private": true,
+  "description": "Morph Launcher for Windows with shared IPTV, radio and launcher features",
+  "author": "Morph TV",
+  "main": "main.cjs",
+  "scripts": {
+    "stage": "python stage.py",
+    "start": "electron .",
+    "test": "node tests/desktop.cjs && node tests/cleaner.cjs",
+    "dist": "python stage.py && electron-builder --win nsis --x64 --publish never",
+    "dist:mac": "python3 stage.py && electron-builder --mac dmg zip --universal --publish never"
+  },
+  "dependencies": {
+    "hls.js": "1.6.16",
+    "mpegts.js": "1.8.0"
+  },
+  "devDependencies": {
+    "electron": "45.2.1",
+    "electron-builder": "26.18.0",
+    "playwright": "^1.62.1"
+  },
+  "build": {
+    "appId": "local.morph.launcher.pc",
+    "productName": "Morph Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "lan.cjs",
+      "matches.cjs",
+      "vpn.cjs",
+      "updater.cjs",
+      "build/ui/**/*",
+      "package.json",
+      "cleaner-files.cjs"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "Morph-Launcher-PC-${version}-Setup.${ext}"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icon.icns",
+      "category": "public.app-category.entertainment",
+      "hardenedRuntime": true,
+      "artifactName": "Morph-Launcher-Mac-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Morph Launcher",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

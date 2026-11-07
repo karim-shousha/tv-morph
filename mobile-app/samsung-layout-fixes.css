@@ -1,0 +1,37 @@
+/* Samsung-only layouts. No Grid, display:contents, logical padding or mask compositing required. */
+html.morph-samsung-compat button:focus{outline:none!important}
+html.morph-samsung-compat #favourites .app-card:focus{outline:none!important;background-color:transparent!important}
+html.morph-samsung-compat #favourites .app-card:before{border-radius:50%!important}
+html.morph-samsung-compat #favourites .app-card:focus:before{border:3px solid #d8edff!important}
+html.morph-samsung-compat #app .pair-card:after{display:none!important}
+html.morph-samsung-compat #app #screen-pair{display:block!important;left:120px!important;right:120px!important;top:150px!important;bottom:110px!important}
+html.morph-samsung-compat #app #screen-pair .pair-copy{position:absolute!important;left:0!important;top:0!important;width:760px!important;max-width:760px!important;display:block!important}
+html.morph-samsung-compat #app #screen-pair .pair-card{position:absolute!important;left:auto!important;right:0!important;top:90px!important;width:730px!important;max-width:730px!important;min-width:0!important;background:rgba(12,32,54,.94)!important;border:2px solid #4b91bd!important}
+html.morph-samsung-compat #app .pair-card h2,html.morph-samsung-compat #app .pair-note{padding-left:120px!important;padding-right:0!important}
+html.morph-samsung-compat[lang=ar] #app .pair-card h2,html.morph-samsung-compat[lang=ar] #app .pair-note{padding-left:0!important;padding-right:120px!important}
+html.morph-samsung-compat[lang=ar] #app .reference-connect-symbol{left:auto!important;right:36px!important}
+html.morph-samsung-compat #app .pair-steps{display:block!important;position:relative!important;width:100%!important;height:200px!important;margin-top:28px!important}
+html.morph-samsung-compat #app .pair-steps li{display:block!important;position:absolute!important;top:0!important;width:225px!important;margin:0!important;padding:91px 0 0 32px!important;font-size:18px!important;line-height:1.5!important}
+html.morph-samsung-compat #app .pair-steps li:nth-child(1){left:0!important}
+html.morph-samsung-compat #app .pair-steps li:nth-child(2){left:255px!important}
+html.morph-samsung-compat #app .pair-steps li:nth-child(3){left:510px!important}
+html.morph-samsung-compat #app .bridge-connect-art{height:320px!important;margin-bottom:18px!important}
+html.morph-samsung-compat #app .btnrow{display:flex!important;margin-top:28px!important}
+html.morph-samsung-compat #app .btnrow .btn{margin:0!important;background:#142e4a!important;color:#fff!important;border:2px solid #5193bd!important}
+html.morph-samsung-compat #app .btnrow .btn:first-child{margin-right:18px!important}
+html.morph-tizen2 #app .btnrow{gap:0!important}
+html.morph-tizen2[dir=rtl] #app .btnrow .btn:first-child{margin-right:0!important;margin-left:18px!important}
+html.morph-tizen2 #app .btn .reference-button-symbol{margin-right:12px}
+html.morph-tizen2[dir=rtl] #app .btn .reference-button-symbol{margin-right:0;margin-left:12px}
+html.morph-tizen2 #app .row label .reference-label-symbol{margin-right:12px}
+html.morph-tizen2[dir=rtl] #app .row label .reference-label-symbol{margin-right:0;margin-left:12px}
+html.morph-samsung-compat #app .btnrow .btn.focus{background:#2069a8!important;border-color:#d8edff!important;color:#fff!important}
+html.morph-samsung-compat #app .row input{background:#102943!important;color:#fff!important}
+html.morph-samsung-compat#radio-root#radio-root #stations{display:block!important;overflow-x:hidden!important;overflow-y:auto!important}
+html.morph-samsung-compat#radio-root#radio-root #stations .station-group,html.morph-samsung-compat#radio-root#radio-root #stations .station-grid{display:block!important;width:100%!important;margin:0!important;padding:0!important}
+html.morph-samsung-compat#radio-root#radio-root #stations .station{position:relative!important;display:block!important;min-height:112px!important;height:112px!important;width:100%!important;margin:0 0 16px!important}
+html.morph-samsung-compat#radio-root#radio-root .station .icon{position:absolute!important;left:20px!important;top:27px!important;margin:0!important}
+html.morph-samsung-compat#radio-root#radio-root .station strong{position:absolute!important;left:94px!important;right:44px!important;top:24px!important;display:block!important;margin:0!important;white-space:nowrap!important;text-overflow:ellipsis!important;overflow:hidden!important}
+html.morph-samsung-compat#radio-root#radio-root .station small{position:absolute!important;left:94px!important;right:44px!important;top:64px!important;margin:0!important}
+html.morph-samsung-compat#radio-root#radio-root .station:after,html.morph-samsung-compat#radio-root#radio-root .now-playing:after{display:none!important}
+html.morph-samsung-compat #morph-brand-loader{background-color:#07101e!important;top:0!important;right:0!important;bottom:0!important;left:0!important;z-index:2147483647!important}

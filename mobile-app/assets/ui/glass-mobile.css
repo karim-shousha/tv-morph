@@ -1,0 +1,111 @@
+/* Approved product-card reference: one calm slate glass mood. */
+
+@font-face{font-family:MorphSans;src:url("fonts/morph-sans-02609c5ef845.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:MorphSans;src:url("fonts/morph-sans-9e8b030f3326.ttf") format("truetype");font-weight:500 900;font-style:normal;font-display:swap}
+html[data-app-appearance=dark]{background:#2a3852!important;font-size:16px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile]{background:linear-gradient(145deg,#3a4a68 0%,#2c3b57 55%,#26324b 100%)!important;background-attachment:fixed!important;min-height:100vh!important;font-family:var(--morph-font)!important;color:#f4f7ff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile]:before,html[data-app-appearance=dark] body[data-approved-mobile]:after{display:none!important;content:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.panel,.connect-step,.manual,.install-card,.pm-remote-info,.pm-remote-showcase,.pm-iptv-feature,.iptv-source-card,.iptv-form,.app-row,.approved-preview-card,.studio-personal-group>details,#m30-status,#mobile-service-map>.pm-page-intro){background:var(--m-card)!important;border:1px solid var(--m-border)!important;border-radius:16px!important;backdrop-filter:blur(12px) saturate(1.08)!important;-webkit-backdrop-filter:blur(12px) saturate(1.08)!important;box-shadow:inset 0 1px 0 #ffffff0c,0 7px 20px #0b162514!important;color:var(--m-text)!important;min-height:96px!important;padding:12px 16px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.pm-page-intro h1,h1,h2,h3){font-family:var(--morph-font)!important;font-weight:600!important;letter-spacing:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(button,input,select,textarea,p,span,small,label,summary,strong){font-family:var(--morph-font)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(p,.fine,.pm-overline){color:#d9e6f8!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.primary,#apply,#navy-connect-start){background:var(--morph-primary)!important;color:var(--morph-on-primary)!important;-webkit-text-fill-color:var(--morph-on-primary)!important;border:1px solid #85baff70!important;min-height:48px!important;grid-column:1!important;grid-row:auto!important;border-radius:12px!important;box-shadow:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .connect-step :is(.connection-card,.panel){background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(input:not([type=range]):not([type=checkbox]):not([type=color]),select,textarea,.secondary){background:#14283d40!important;color:#f4f7ff!important;border:1px solid #a6c1de40!important;}
+
+
+
+/* Explicit action identity beats disabled/glass/install-card presentation. */
+html[data-app-appearance=dark] body[data-approved-mobile] #install-card #smart-install{background:#1263ed!important;background-image:none!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #7cafff88!important;box-shadow:inset 0 1px #ffffff20!important;opacity:1!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] .font-size-panel{display:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .morph-plus-dialog{max-width:460px!important;padding:22px!important;border-radius:22px!important;background:linear-gradient(145deg,#354863f5,#26364ef5)!important;border:1px solid #adc7e044!important;font-family:var(--morph-font)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .morph-plus-dialog h2{font-size:1.4375rem!important;line-height:1.5!important;margin:8px 0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-description{font-size:0.8125rem!important;line-height:1.8!important;margin:0 0 16px!important;color:#c4d2e7!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-plans{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-plans article{padding:12px!important;background:#dceaff0c!important;border:1px solid #adc7e033!important;border-radius:14px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-plan-details{margin-top:8px!important;font-size:0.875rem!important;color:#c4d2e7!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-plan-details summary{font-size:0.875rem!important;color:#b1d9ff!important;cursor:pointer;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-plan-details span{display:block!important;margin-top:8px!important;font-size:0.875rem!important;line-height:1.7!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-purchase{gap:12px!important;margin:16px 0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-purchase-qr{width:88px!important;height:88px!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-card{display:flex!important;align-items:center!important;gap:12px!important;width:100%!important;min-height:76px!important;padding:14px 16px!important;margin:16px 0!important;border:1px solid #aac5e044!important;border-radius:18px!important;background:linear-gradient(135deg,#dceaff17,#182a4444)!important;color:#f5f8ff!important;text-align:start!important;box-shadow:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-symbol{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border-radius:13px;background:#b89bff18;font-size:1.5rem;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-copy{display:block;flex:1;min-width:0;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-copy strong{display:block;font-size:0.9375rem;font-weight:600;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-copy small{display:block;font-size:0.875rem;line-height:1.6;color:#c2d2e8!important;margin-top:3px;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-arrow{font-size:1.375rem;color:#a7d7ff!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] #install-card #smart-install:disabled{background:#1263ed!important;color:#e6f0ff!important;-webkit-text-fill-color:#e6f0ff!important;border-style:dashed!important;opacity:1!important;}
+
+/* Semantic UI states stay cobalt/cyan; team previews keep their own colours. */
+html[data-app-appearance] body[data-approved-mobile]{--m-ok:#7cd6ff;--success:#7cd6ff;}
+html[data-app-appearance] body[data-approved-mobile] .connect-step .connect-number,html[data-app-appearance] body[data-approved-mobile] .connect-step.is-complete .connect-number{background:#1263ed!important;background-image:none!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:0!important;font-size:1.0rem!important;font-weight:700!important;box-shadow:0 3px 12px #1263ed26!important;}
+
+html[data-app-appearance] body[data-approved-mobile] .m30-dot,html[data-app-appearance] body[data-approved-mobile] .device-chip[data-mstatus=connected]>i{background:#7cd6ff!important;box-shadow:0 0 10px #7cd6ff44!important;}
+
+html[data-app-appearance] body[data-approved-mobile] #connection-state[data-status=connected]{background:#28395499!important;border-color:#91bded44!important;}
+html[data-app-appearance] body[data-approved-mobile] #connection-state[data-status=connected] #connection-title{color:#7cd6ff!important;-webkit-text-fill-color:#7cd6ff!important;}
+html[data-app-appearance] body[data-approved-mobile] .plus-entry-card{min-height:66px!important;padding:12px 16px!important;gap:12px!important;text-align:start!important;}
+html[data-app-appearance] body[data-approved-mobile] .plus-entry-symbol{width:34px!important;height:34px!important;flex-basis:34px!important;border-radius:10px!important;font-size:1.25rem!important;background:#bba4ff15!important;color:#c8b4ff!important;}
+html[data-app-appearance] body[data-approved-mobile] .plus-entry-copy small{font-size:0.875rem!important;line-height:1.2!important;letter-spacing:1.5px!important;margin:0 0 4px!important;color:#b3c5df!important;}
+html[data-app-appearance] body[data-approved-mobile] .plus-entry-copy strong{font-size:0.9375rem!important;line-height:1.3!important;font-weight:600!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-control-segment{gap:6px!important;padding:6px!important;background:#d3e6ff08!important;border:1px solid #b9d1ef20!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-control-segment button{min-height:40px!important;border-radius:11px!important;color:#c2d2e8!important;-webkit-text-fill-color:#c2d2e8!important;background:transparent!important;border:1px solid transparent!important;box-shadow:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-control-segment button[aria-selected=true]{background:#b3d7ff24!important;border-color:#b3d7ff2c!important;color:#fff!important;-webkit-text-fill-color:#fff!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-control-segment button[aria-selected=true] *{color:#fff!important;-webkit-text-fill-color:#fff!important;}
+html[data-app-appearance] body[data-approved-mobile] header #device-chip{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;color:#c4ddff!important;-webkit-text-fill-color:#c4ddff!important;}
+html[data-app-appearance] body[data-approved-mobile] header #m30-gear-btn{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;color:#c4ddff!important;-webkit-text-fill-color:#c4ddff!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;}
+html[data-app-appearance] body[data-approved-mobile] header #m30-gear-btn svg{color:#c4ddff!important;stroke:currentColor!important;background:transparent!important;}
+
+html[data-app-appearance] body[data-approved-mobile] header .studio-reconnect{background:transparent!important;background-image:none!important;border-color:transparent!important;box-shadow:none!important;color:#c4ddff!important;-webkit-text-fill-color:#c4ddff!important;}
+html[data-app-appearance] body[data-approved-mobile] header .studio-reconnect:before{color:#c4ddff!important;}
+
+/* Connection hub: one card, no second dark status card. */
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map>.pm-page-intro{display:grid!important;grid-template-columns:minmax(0,1fr) 94px!important;gap:12px!important;padding:18px!important;align-items:center!important;min-height:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map .connect-tv-picture{display:none!important;width:94px!important;height:76px!important;object-fit:contain!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map .connect-intro-copy h1{font-size:1.625rem!important;line-height:1.25!important;margin:5px 0 7px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map .connect-intro-copy p{font-size:0.875rem!important;line-height:1.6!important;color:var(--m-muted)!important;-webkit-text-fill-color:var(--m-muted)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map .pm-overline{font-size:0.5625rem!important;letter-spacing:.8px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map #m30-status{grid-column:1/-1!important;margin:0!important;padding:0!important;background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;min-height:0!important;height:auto!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map #m30-status h2{font-size:1.0625rem!important;color:var(--m-text)!important;-webkit-text-fill-color:var(--m-text)!important;line-height:1.4!important;text-shadow:0 0 10px #7cd6ff24!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map #m30-status p{font-size:0.875rem!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #navy-connect-start{grid-column:1!important;min-height:48px!important;margin:0!important;font-size:0.875rem!important;grid-row:auto!important;border-radius:12px!important;box-shadow:none!important;background:var(--morph-primary)!important;color:var(--morph-on-primary)!important;-webkit-text-fill-color:var(--morph-on-primary)!important;}
+/* Matching theme-library and customisation tiles, including the locked Plus state. */
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch){background:linear-gradient(135deg,#dfedff0c,#1020394d)!important;overflow:hidden!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch)>summary{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;position:relative!important;gap:7px!important;padding:16px 12px!important;background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important;text-align:center!important;box-sizing:border-box!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch)>summary:before{display:none!important;min-height:60px!important;height:auto!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch)>summary:after{position:absolute!important;inset-inline-end:10px!important;top:12px!important;color:#b9d8ff!important;font-size:1.0rem!important;min-height:60px!important;height:auto!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch)>summary :is(h2,strong){flex:0 0 auto!important;min-height:60px!important;display:flex!important;align-items:center!important;justify-content:center!important;margin:0!important;font-size:0.875rem!important;line-height:1.3!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;width:100%!important;height:auto!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #personal-touch>summary>span:not(.approved-photo-art){flex:0 0 auto!important;min-height:34px!important;width:100%!important;max-width:100%!important;font-size:0.6875rem!important;line-height:1.5!important;margin:0!important;color:#bdcee5!important;-webkit-text-fill-color:#bdcee5!important;text-align:center!important;}html[data-app-appearance=dark] body[data-approved-mobile] .approved-library-note{flex:0 0 auto!important;min-height:34px!important;width:100%!important;max-width:100%!important;font-size:0.875rem!important;line-height:1.5!important;margin:0!important;color:#bdcee5!important;-webkit-text-fill-color:#bdcee5!important;text-align:center!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-photo-art{flex:0 0 36px!important;width:46px!important;height:36px!important;margin:0!important;background:transparent!important;color:#acccff!important;}
+/* Main settings is an opaque full-screen page; Back keeps the existing saved controls. */
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet{position:fixed!important;inset:0!important;transform:none!important;width:100%!important;max-width:none!important;height:100%!important;max-height:none!important;margin:0!important;padding:18px 18px 24px!important;border:0!important;border-radius:0!important;background:#2c3c57!important;background-image:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important;box-sizing:border-box!important;overflow-y:auto!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet .m30-grab{display:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet .m30-sheet-heading{position:sticky!important;top:-18px!important;padding:14px 0!important;background:#2c3c57!important;z-index:2!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-settings-close{background:transparent!important;border:0!important;box-shadow:none!important;color:#d5e7ff!important;font-size:1.5rem!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] .studio-personal-group>:is(#theme-library,#personal-touch)>summary{height:auto!important;min-height:60px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-photo-art:before,html[data-app-appearance=dark] body[data-approved-mobile] .approved-photo-art:after{display:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-swatch-art{height:36px!important;min-height:36px!important;flex:0 0 36px!important;margin:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-swatch-art i:nth-child(1){background:#7eaaff88!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-swatch-art i:nth-child(2){background:#af91ee88!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-swatch-art i:nth-child(3){background:#9fb5db88!important;}
+
+html[data-app-appearance] body[data-approved-mobile] #iptv-tv-controls .section-title{display:flex!important;align-items:center!important;gap:12px!important;justify-content:space-between!important;}
+html[data-app-appearance] body[data-approved-mobile] #iptv-refresh{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;flex:0 0 auto!important;width:auto!important;min-width:92px!important;min-height:44px!important;height:auto!important;padding:10px 14px!important;margin:0!important;background:#1263ed!important;border:1px solid #86b7ff55!important;border-radius:12px!important;color:white!important;-webkit-text-fill-color:white!important;font-size:0.8125rem!important;line-height:1.4!important;}
+html[data-app-appearance] body[data-approved-mobile] #iptv-refresh:before{content:"↻";font-size:1.125rem!important;line-height:1!important;}
+
+html[data-app-appearance] body[data-approved-mobile] .iptv-destinations>button{min-height:88px!important;gap:8px!important;padding:14px 12px!important;align-items:center!important;border-radius:12px!important;box-shadow:none!important;display:flex!important;flex-direction:row!important;text-align:start!important;font-family:var(--morph-font)!important;}
+html[data-app-appearance] body[data-approved-mobile] .iptv-destination-art{display:block!important;width:28px!important;min-width:62px!important;height:44px!important;object-fit:contain!important;flex:0 0 28px!important;margin:0!important;background:transparent!important;border:0!important;}
+html[data-app-appearance] body[data-approved-mobile] .iptv-destinations>button>span{min-width:0!important;flex:1!important;}
+html[data-app-appearance] body[data-approved-mobile] .iptv-destinations>button strong,html[data-app-appearance] body[data-approved-mobile] .iptv-destinations>button small{font-size:0.875rem!important;line-height:1.4!important;font-family:var(--morph-font)!important;}
+
+
+/* Contrast corrections retained in the optional dark appearance. */
+html[data-app-appearance=dark] body[data-approved-mobile] #install-title{color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #slide-count{color:white!important;-webkit-text-fill-color:white!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #iptv-source-current{background:#263a55!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .plus-entry-symbol{color:#e0ceff!important;-webkit-text-fill-color:#e0ceff!important;}
+

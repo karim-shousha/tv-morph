@@ -1,0 +1,1 @@
+class LocalAccountRepository {static final instance=LocalAccountRepository();Future<void> syncCurrentData()async{}}

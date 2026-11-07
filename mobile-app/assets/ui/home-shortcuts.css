@@ -1,0 +1,6 @@
+#phone-home-shortcuts{display:flex;align-items:center;justify-content:center;gap:12px;margin:0 0 18px;padding:0;flex-wrap:wrap}
+#phone-home-shortcuts button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border-radius:24px;background:var(--surface,#fff);color:inherit;border:1px solid rgba(115,139,180,.28);font:inherit;font-weight:650}
+#phone-home-shortcuts button:focus-visible{outline:3px solid #669bff;outline-offset:3px}
+#phone-bridge-open .m30-nav-ic svg{display:block;width:24px;height:24px}
+#phone-shortcuts-status{margin:0 0 14px;text-align:center;color:inherit;overflow-wrap:anywhere}
+html[data-app-appearance=dark] #phone-home-shortcuts button{background:rgba(55,74,103,.7)}

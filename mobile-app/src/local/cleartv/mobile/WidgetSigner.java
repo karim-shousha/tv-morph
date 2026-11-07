@@ -14,6 +14,7 @@ public final class WidgetSigner {
     static byte[] utf(String s){return s.getBytes(StandardCharsets.UTF_8);}
     static String b64(byte[] b){return Base64.getEncoder().encodeToString(b);}
     static String esc(String s){return s.replace("&","&amp;").replace("\"","&quot;").replace("<","&lt;").replace(">","&gt;");}
+    static String uri(String path){StringBuilder value=new StringBuilder();char[] hex="0123456789ABCDEF".toCharArray();for(byte octet:utf(path)){int c=octet&255;if(c>='a'&&c<='z'||c>='A'&&c<='Z'||c>='0'&&c<='9'||"-._~/".indexOf(c)>=0)value.append((char)c);else value.append('%').append(hex[c>>>4]).append(hex[c&15]);}return value.toString();}
     static String hash(byte[] b)throws Exception{return b64(MessageDigest.getInstance("SHA-512").digest(b));}
     private static byte[] signature(String id,Map<String,byte[]> files,PrivateKey key,List<X509Certificate> chain)throws Exception{
         String role=id.equals("AuthorSignature")?"author":"distributor";
@@ -22,18 +23,22 @@ public final class WidgetSigner {
         for(int i=0;i<3;i++)props.append("<SignatureProperty Id=\"").append(names[i]).append("\" Target=\"#").append(id).append("\"><dsp:").append(children[i]).append(uris[i].isEmpty()?"":" URI=\""+uris[i]+"\"").append("></dsp:").append(children[i]).append("></SignatureProperty>");
         props.append("</SignatureProperties></Object>");
         StringBuilder info=new StringBuilder("<SignedInfo xmlns=\""+NS+"\"><CanonicalizationMethod Algorithm=\""+EXC+"\"></CanonicalizationMethod><SignatureMethod Algorithm=\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha512\"></SignatureMethod>");
-        for(Map.Entry<String,byte[]> f:files.entrySet())info.append("<Reference URI=\"").append(esc(f.getKey())).append("\"><DigestMethod Algorithm=\"").append(SHA).append("\"></DigestMethod><DigestValue>").append(hash(f.getValue())).append("</DigestValue></Reference>");
+        for(Map.Entry<String,byte[]> f:files.entrySet())info.append("<Reference URI=\"").append(esc(uri(f.getKey()))).append("\"><DigestMethod Algorithm=\"").append(SHA).append("\"></DigestMethod><DigestValue>").append(hash(f.getValue())).append("</DigestValue></Reference>");
         info.append("<Reference URI=\"#prop\"><Transforms><Transform Algorithm=\"").append(CAN).append("\"></Transform></Transforms><DigestMethod Algorithm=\"").append(SHA).append("\"></DigestMethod><DigestValue>").append(hash(utf(props.toString()))).append("</DigestValue></Reference></SignedInfo>");
         Signature rsa=Signature.getInstance("SHA512withRSA");rsa.initSign(key);rsa.update(utf(info.toString()));
         StringBuilder xml=new StringBuilder("<Signature xmlns=\""+NS+"\" Id=\""+id+"\">").append(info).append("<SignatureValue>").append(b64(rsa.sign())).append("</SignatureValue><KeyInfo><X509Data>");
         for(X509Certificate c:chain)xml.append("<X509Certificate>").append("\n").append(Base64.getMimeEncoder(76,new byte[]{10}).encodeToString(c.getEncoded())).append("\n</X509Certificate>");
         return utf(xml.append("</X509Data></KeyInfo>").append(props).append("</Signature>").toString());
     }
-    public static byte[] build(InputStream source,byte[] initial,PrivateKey author,List<X509Certificate> authorChain,PrivateKey distributor,List<X509Certificate> distributorChain)throws Exception{
-        Map<String,byte[]> files=new TreeMap<>();ZipInputStream zip=new ZipInputStream(source);ZipEntry e;int total=0;
-        while((e=zip.getNextEntry())!=null){String n=e.getName();if(e.isDirectory()||n.equals("signature1.xml")||n.equals("author-signature.xml"))continue;if(n.contains("..")||n.startsWith("/")||files.containsKey(n))throw new IOException("Unsafe application package");ByteArrayOutputStream bytes=new ByteArrayOutputStream();byte[] buf=new byte[8192];int count;while((count=zip.read(buf))!=-1){total+=count;if(total>32*1024*1024)throw new IOException("Application too large");bytes.write(buf,0,count);}files.put(n,bytes.toByteArray());}
+    static SortedMap<String,byte[]> readFiles(InputStream source)throws Exception{
+        SortedMap<String,byte[]> files=new TreeMap<>();ZipInputStream zip=new ZipInputStream(source);ZipEntry e;int total=0;
+        while((e=zip.getNextEntry())!=null){String n=e.getName();if(e.isDirectory()||n.matches("signature[0-9]+\\.xml")||n.equals("author-signature.xml"))continue;if(n.contains("..")||n.startsWith("/")||files.containsKey(n)||n.contains("\\")||files.size()>=10000)throw new IOException("Unsafe application package");ByteArrayOutputStream bytes=new ByteArrayOutputStream();byte[] buf=new byte[8192];int count;while((count=zip.read(buf))!=-1){total+=count;if(total>32*1024*1024)throw new IOException("Application too large");bytes.write(buf,0,count);}files.put(n,bytes.toByteArray());}
         zip.close();if(!files.containsKey("config.xml"))throw new IOException("Application manifest missing");
-        files.put("initial-config.js",utf("window.ClearTVInitial="+new String(initial,StandardCharsets.UTF_8)+";"));
+        return files;
+    }
+    public static byte[] build(InputStream source,byte[] initial,PrivateKey author,List<X509Certificate> authorChain,PrivateKey distributor,List<X509Certificate> distributorChain)throws Exception{
+        Map<String,byte[]> files=readFiles(source);
+        if(initial!=null)files.put("initial-config.js",utf("window.ClearTVInitial="+new String(initial,StandardCharsets.UTF_8)+";"));
         byte[] a=signature("AuthorSignature",files,author,authorChain);files.put("author-signature.xml",a);files.put("signature1.xml",signature("DistributorSignature",files,distributor,distributorChain));
         ByteArrayOutputStream result=new ByteArrayOutputStream();ZipOutputStream out=new ZipOutputStream(result);for(Map.Entry<String,byte[]> f:files.entrySet()){out.putNextEntry(new ZipEntry(f.getKey()));out.write(f.getValue());out.closeEntry();}out.close();return result.toByteArray();
     }

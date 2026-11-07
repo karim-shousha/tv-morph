@@ -1,0 +1,129 @@
+{
+  "media3": "1.9.3",
+  "repositories": [
+    "https://dl.google.com/dl/android/maven2/",
+    "https://repo.maven.apache.org/maven2/"
+  ],
+  "files": [
+    {
+      "file": "annotation-experimental-1.3.1.aar",
+      "sha256": "e4d49dc3880b7b7437ea54ce71461e02897faa4e1ecc53e63ecadb1a14c20c9c"
+    },
+    {
+      "file": "annotation-jvm-1.6.0.jar",
+      "sha256": "60b10b5ef5769b79570172e015b8159405c92f034ba88b9391a977589c9deb4e"
+    },
+    {
+      "file": "annotations-13.0.jar",
+      "sha256": "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478"
+    },
+    {
+      "file": "collection-1.2.0.jar",
+      "sha256": "16d77e8c443fa55fe9a6074d00445d520ca5c9f913cefdbf4828356255214e42"
+    },
+    {
+      "file": "concurrent-futures-1.0.0.jar",
+      "sha256": "5595a40e278a7b39fa78a09490e3d7f3faa95c7b01447148bd38b5ade0605c35"
+    },
+    {
+      "file": "core-1.8.0.aar",
+      "sha256": "48c64a15ec3eb11bfb33339e5ceb70ec7f821bd2dfa2eb8675ebd5353317e792"
+    },
+    {
+      "file": "core-common-2.1.0.jar",
+      "sha256": "fe1237bf029d063e7f29fe39aeaf73ef74c8b0a3658486fc29d3c54326653889"
+    },
+    {
+      "file": "core-ktx-1.5.0.aar",
+      "sha256": "5964cfe7a4882da2a00fb6ca3d3a072d04139208186f7bc4b3cb66022764fc42"
+    },
+    {
+      "file": "core-runtime-2.1.0.aar",
+      "sha256": "dd77615bd3dd275afb11b62df25bae46b10b4a117cd37943af45bdcbf8755852"
+    },
+    {
+      "file": "customview-1.0.0.aar",
+      "sha256": "20e5b8f6526a34595a604f56718da81167c0b40a7a94a57daa355663f2594df2"
+    },
+    {
+      "file": "customview-poolingcontainer-1.0.0.aar",
+      "sha256": "3584102fc49bf399c56e3b7be4bfe12000c46112320cd8cf85cc0a8f93f3e752"
+    },
+    {
+      "file": "exifinterface-1.3.6.aar",
+      "sha256": "1804105e9e05fdd8f760413bad5de498c381aa329f4f9d94c851bc891ac654c6"
+    },
+    {
+      "file": "failureaccess-1.0.2.jar",
+      "sha256": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064"
+    },
+    {
+      "file": "guava-33.3.1-android.jar",
+      "sha256": "2c3e41d1b380f2044d257947a3aa82dabf3ae4b978622745254aa18b6cf89ab0"
+    },
+    {
+      "file": "kotlin-stdlib-2.0.20.jar",
+      "sha256": "fb169596659a518357c4b2c16f43dc75ab1c4980565ed4b4a317a050e5e39006"
+    },
+    {
+      "file": "lifecycle-common-2.3.1.jar",
+      "sha256": "15848fb56db32f4c7cdc72b324003183d52a4884d6bf09be708ac7f587d139b5"
+    },
+    {
+      "file": "lifecycle-runtime-2.3.1.aar",
+      "sha256": "dd294f4a689c71ff877fd41f3b67a3a62f7760d44ce420e6130f1fc3569d8f00"
+    },
+    {
+      "file": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+    },
+    {
+      "file": "media3-common-1.9.3.aar",
+      "sha256": "b7650e8aef0cdfe1846c04901c9b4bffa3eae8fbbc62a883618340b4b217df4b"
+    },
+    {
+      "file": "media3-container-1.9.3.aar",
+      "sha256": "f73cea4fe8a2bf9eb6462bfb7a547d1aaf55395d0007eed6fadb129b56927c0d"
+    },
+    {
+      "file": "media3-database-1.9.3.aar",
+      "sha256": "de88a2ca8fd1efb1dbe7d8cd4c728fca15fafb629442514a689dea1788817637"
+    },
+    {
+      "file": "media3-datasource-1.9.3.aar",
+      "sha256": "ccaf5530a31e64dffe2a803feeeb654e7e81fc4a2597f6d929ce7a9aba7ff13e"
+    },
+    {
+      "file": "media3-decoder-1.9.3.aar",
+      "sha256": "2337461b4ed4ec3cd32330cd530d9b471d5d45b76410f6e0d66f1331c9a0bc08"
+    },
+    {
+      "file": "media3-exoplayer-1.9.3.aar",
+      "sha256": "a2631802546642085cb449eec02d646784f9bd4fb3a10a948b35993897c0d1a7"
+    },
+    {
+      "file": "media3-exoplayer-dash-1.9.3.aar",
+      "sha256": "4ca85490b83d81c38cbe86db3313784d2f7fc5d8d0810c42210fc56ae328e7a5"
+    },
+    {
+      "file": "media3-exoplayer-hls-1.9.3.aar",
+      "sha256": "f8540171a92c61b3725166a946e9935dd7d083ef5c1f4da8131c74472ab84c36"
+    },
+    {
+      "file": "media3-extractor-1.9.3.aar",
+      "sha256": "fb1d260cea679efd3568b4b4b02c9aa1dd84cef847cd50f93f50ca02e59cb20b"
+    },
+    {
+      "file": "media3-ui-1.9.3.aar",
+      "sha256": "09219a66900a0c76fa4f20a5a99329977ae42d4e715791b10a3efe72c346dc03"
+    },
+    {
+      "file": "recyclerview-1.3.0.aar",
+      "sha256": "d65928a00f63589a49e21925412e0f48852f89254b07b03c030d560f91effc88"
+    },
+    {
+      "file": "versionedparcelable-1.1.1.aar",
+      "sha256": "57e8d93260d18d5b9007c9eed3c64ad159de90c8609ebfc74a347cbd514535a4"
+    }
+  ]
+}

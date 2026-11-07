@@ -12,6 +12,7 @@ final class AdhanPlayback {
   public void onActivityCreated(Activity a,Bundle b){}public void onActivityStarted(Activity a){}public void onActivityStopped(Activity a){}public void onActivitySaveInstanceState(Activity a,Bundle b){}public void onActivityDestroyed(Activity a){if(interrupted==a)stop(false);}
  });handler.post(tick);}
  void update(String value){try{JSONObject next=new JSONObject(value);handler.post(()->{schedule=next;if(!next.optBoolean("enabled"))stop(true);});}catch(JSONException ignored){}}
+ void stopForInput(){if(Looper.myLooper()==Looper.getMainLooper())stop(false);else handler.post(()->stop(false));}
  void cancel(){handler.post(()->stop(true));}
  private final Runnable tick=new Runnable(){public void run(){long now=System.currentTimeMillis();if(schedule.optBoolean("enabled")&&foreground!=null&&!(foreground instanceof TimeUpActivity)){JSONArray items=schedule.optJSONArray("items");if(items!=null)for(int i=0;i<items.length();i++){JSONObject p=items.optJSONObject(i);if(p==null||!p.optBoolean("adhan")||!AdhanWindow.due(p.optLong("at"),previous,now,true))continue;String key=p.optString("name")+"|"+p.optLong("at");SharedPreferences prefs=app.getSharedPreferences("morph-adhan",0);if(key.equals(prefs.getString("last","")))continue;prefs.edit().putString("last",key).apply();start(p.optString("name"));break;}}previous=now;handler.postDelayed(this,1000);}};
  private void start(String prayer){stop(true);Activity owner=foreground;if(owner==null||owner.isFinishing())return;try{

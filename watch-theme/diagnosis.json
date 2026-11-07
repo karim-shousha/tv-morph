@@ -1,0 +1,16 @@
+{
+  "model": "SM-R800",
+  "platform": "Tizen 5.5.0.2",
+  "serial": "10.0.0.23:26101",
+  "connection": "authorized SDB connection verified",
+  "installationFailure": "Non trusted certificate is used. Register valid certificate <-32>; pkgcmd -12",
+  "certificateRequest": "Samsung login succeeded; current CA issued VD certificate containing exact watch DUID, but watch rejected its certificate chain",
+  "fallbackImage": "/opt/usr/media/Images/TaskForce141.jpg",
+  "fallbackImageTransferred": true,
+  "galleryLaunchAccepted": true,
+  "galleryImageVisible": "not confirmed",
+  "customLauncherInstalled": false,
+  "officialSupportSource": "https://forum.developer.samsung.com/t/detail?id=10203-Request-a-Tizen-development-certificate-%E2%80%93-SM-R800",
+  "currentInstallFailure": "Invalid certificate chain with certificate in signature <-3>; pkgcmd -12",
+  "legacyWearableEndpoints": "Connection timed out at dev.tizen.samsung.com/apis/v2/authors and distributors"
+}

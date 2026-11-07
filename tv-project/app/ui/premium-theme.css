@@ -1,0 +1,111 @@
+/* Premium reference material: translucent paint, no backdrop sampling. */
+html body[data-ui-mode=modern] *,
+html body[data-ui-mode=modern] *::before,
+html body[data-ui-mode=modern] *::after{backdrop-filter:none;-webkit-backdrop-filter:none}
+html body[data-ui-mode=modern][data-theme=blue],
+html body[data-ui-mode=modern][data-theme=night]{background:#202940 url("../assets/premium-reference-background.svg") center / cover no-repeat!important}
+html body[data-ui-mode=modern][data-theme=blue]>.landscape,
+html body[data-ui-mode=modern][data-theme=night]>.landscape{background:#202940 url("../assets/premium-reference-background.svg") center / cover no-repeat!important}
+html body[data-ui-mode=modern][data-theme=blue]>.landscape>*,
+html body[data-ui-mode=modern][data-theme=night]>.landscape>*{display:none!important}
+html body[data-ui-mode=modern] #morph-header{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+html body[data-ui-mode=modern] #morph-header nav button.active{background:rgba(213,224,255,.18)!important;border-color:transparent!important;box-shadow:none!important}
+html body[data-ui-mode=modern] #morph-header button:focus,
+html body[data-ui-mode=modern] #morph-header nav button:focus{background:rgba(213,224,255,.22)!important;border-color:rgba(255,255,255,.32)!important;outline:3px solid #f7f9ff!important;box-shadow:none!important}
+html body[data-ui-mode=modern] .favourites:not(.app-dock) .favourite,
+html body[data-ui-mode=modern] .catalog-tile,
+html body[data-ui-mode=modern] .shelf-card,
+html body[data-ui-mode=modern] .recent-app-card,
+html body[data-ui-mode=modern] .last-hdmi-card,
+html body[data-ui-mode=modern] #weather-card,
+html body[data-ui-mode=modern] #view-settings .settings-panel,
+html body[data-ui-mode=modern] #view-settings .settings-category-entry,
+html body[data-ui-mode=modern] #view-settings .setting,
+html body[data-ui-mode=modern] #view-apps .app,
+html body[data-ui-mode=modern] #modal,
+html body[data-ui-mode=modern] .family-dialog{background:var(--ui-card-bg)!important;border:1px solid var(--ui-card-border)!important;border-radius:24px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important}
+html body[data-ui-mode=modern] button:focus,
+html body[data-ui-mode=modern] input:focus{outline:3px solid #f7f9ff!important;outline-offset:4px!important;box-shadow:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{background:transparent!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool{background:var(--ui-idle-surface)!important;border-color:var(--ui-card-border)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important;border-radius:24px!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:focus{background:var(--ui-focused-surface)!important;outline:3px solid #f7f9ff!important;outline-offset:4px!important;box-shadow:none!important}
+/* Dock geometry, focus decoration and animation stay with the existing dock styles. */
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock{--ui-card-border:var(--ui-dock-card-border);--ui-focus-ring:var(--ui-dock-focus-ring);--ui-focus-glow:var(--ui-dock-focus-glow);--ui-focused-surface:var(--ui-dock-focused-surface)}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus) .app-icon,
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:not(:focus) .plus-icon{background:var(--ui-idle-surface)!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{border:0!important;box-shadow:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:not(:focus){background:var(--ui-idle-surface)!important;border-color:var(--ui-card-border)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important}
+html body[data-ui-mode=modern][data-theme] main>#morph-header button:focus,
+html body[data-ui-mode=modern][data-theme] main>#morph-header nav button:focus{background:var(--ui-focused-surface)!important;outline:3px solid #f7f9ff!important;outline-offset:3px!important;box-shadow:none!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{background:var(--ui-card-bg)!important;border-color:var(--ui-card-border)!important;border-radius:24px!important}
+/* The weather control shares the same compact header in every launcher view. */
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header .header-status{display:flex;align-items:center;margin-left:auto}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-card{position:relative!important;box-sizing:border-box;width:150px!important;min-width:150px!important;max-width:150px!important;height:70px!important;margin:0!important;padding:8px 6px!important;text-align:left;direction:ltr;border-radius:18px!important}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-card .weather-top{position:static;display:block;font-size:15px;line-height:18px;padding-top:33px}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-location{display:block;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-icon{position:absolute;top:4px;left:6px;width:34px;height:34px}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-icon svg{width:34px;height:34px}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-temp{position:absolute;left:46px;top:6px;font-size:28px;line-height:32px;letter-spacing:0;margin:0}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #weather-condition,
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header .weather-bottom{display:none!important}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header .header-clock{min-width:124px;max-width:160px;padding-left:18px;margin-left:12px;text-align:right}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header .header-clock time{font-size:36px;line-height:42px}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #network{width:12px;min-width:12px;margin:0 5px}
+html body[data-ui-mode=modern][data-ui-home=false] #morph-header #network span{display:none}
+/* Bare sidebar actions: keep labels, icons and a lightweight remote focus cue. */
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool,
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:not(:focus),
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:focus{background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:focus{outline:2px solid var(--ui-focus-ring)!important;outline-offset:2px!important}
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:before,
+html body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool:after{background:transparent!important;box-shadow:none!important}
+/* Remove legacy trailing glyphs; retain the large sidebar icons and labels. */
+html body[data-ui-mode=modern] #view-home .home-tools>#home-inputs>span,
+html body[data-ui-mode=modern] #view-home .home-tools>#home-store>span,
+html body[data-ui-mode=modern] #view-home .home-tools>#home-internet>span,
+html body[data-ui-mode=modern] #view-home .home-tools>#home-appearance>span,
+html body[data-ui-mode=modern] #view-home .home-tools>#home-help>span{display:none!important}
+/* Home shortcuts share the header capsule material and theme. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{background:var(--ui-card-bg)!important;border:1px solid var(--ui-card-border)!important;border-radius:36px!important;box-shadow:inset 0 1px 0 var(--ui-card-border)!important;box-sizing:border-box!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools:before,
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools:after{display:none!important;background:none!important;box-shadow:none!important}
+/* Keep optional Home rows below Continue Watching, and HDMI in a compact second row. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps{top:580px!important;bottom:auto!important;height:150px!important;left:182px!important;right:42px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps h2{font-size:26px!important;line-height:34px!important;margin:0 0 10px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps .recent-apps-rail{margin:0!important;padding:6px 6px 12px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps .recent-app-card{height:98px!important;min-width:210px!important;max-width:240px!important;padding:16px!important;border-radius:22px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row{top:746px!important;bottom:auto!important;height:76px!important;min-height:0!important;left:182px!important;right:42px!important;align-items:center!important;gap:16px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row #home-hdmi-shortcuts{height:76px!important;min-height:0!important;padding:4px 6px!important;align-items:center!important;gap:14px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut{min-width:144px!important;width:auto!important;height:64px!important;min-height:64px!important;padding:12px 18px!important;border-radius:18px!important;font-size:20px!important;gap:10px!important;flex-direction:row!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut svg{width:28px!important;height:28px!important;min-width:28px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut span{font-size:20px!important;line-height:1.25!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row #home-last-hdmi{height:64px!important;min-height:64px!important;flex:0 0 250px!important;width:250px!important;padding:10px 16px!important;border-radius:18px!important;gap:12px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi>svg{width:30px!important;height:30px!important;flex:0 0 30px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi strong{font-size:21px!important;line-height:1.3!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi small{font-size:14px!important;line-height:1.3!important}
+/* Weather and city sit directly on the wallpaper, beside the clock. */
+html body[data-ui-mode=modern][data-theme] #morph-header #weather-card{background:transparent!important;background-image:none!important;border:0!important;box-shadow:none!important;width:175px!important;min-width:175px!important;max-width:175px!important;padding:8px!important}
+html body[data-ui-mode=modern][data-theme] #morph-header #network{display:none!important}
+html body[data-ui-mode=modern][data-theme] #morph-header .header-clock{border:0!important;border-left:0!important;margin-left:18px!important;padding-left:0!important}
+html body[data-ui-mode=modern][data-theme] #morph-header #weather-location{max-width:159px!important;font-size:16px!important}
+/* Give prayer time and its countdown more breathing room on the right. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{top:210px!important;right:42px!important;width:330px!important;padding:22px 24px!important;border-radius:26px!important;gap:10px 14px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>small{font-size:20px!important;line-height:1.3!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>strong{font-size:29px!important;line-height:1.3!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-at{font-size:34px!important;line-height:1.3!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining-label{font-size:18px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining{font-size:24px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut{flex:0 0 210px!important;max-width:230px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-input-icon{width:38px!important;height:38px!important;flex:0 0 38px!important;border-radius:12px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-input-copy{gap:2px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-input-copy strong{font-size:20px!important;line-height:1.25!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-input-copy small{font-size:13px!important;line-height:1.25!important}
+/* The last input lives inside the HDMI rail and shares its one visibility control. */
+/* Keep the last-input caption clear of its border and the neighbouring input card. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row{height:88px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row #home-hdmi-shortcuts{height:88px!important;gap:22px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut{height:auto!important;min-height:76px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row #home-last-hdmi{flex:0 0 210px!important;width:210px!important;min-width:210px!important;height:auto!important;min-height:76px!important;padding:12px 16px!important;margin:0!important;background:var(--ui-idle-surface)!important;border:1px solid var(--ui-card-border)!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi>span{display:flex!important;flex-direction:column!important;gap:7px!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi small,html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-last-hdmi strong{margin:0!important;line-height:1.2!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts .home-hdmi-shortcut{background:var(--ui-idle-surface)!important;border-color:var(--ui-card-border)!important}

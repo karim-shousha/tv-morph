@@ -1,0 +1,16 @@
+(function(C){'use strict';
+ var builtin=[{id:'local.tvmorph.tv.play',name:'Morph IPTV'},{id:'local.tvmorph.tv.radio',name:'Morph Radio'},{id:'local.tvmorph.tv.bridge',name:'Morph Bridge'},{id:'local.tvmorph.tv.prayer',name:'Prayer times'}];
+ var rows=builtin.slice();
+ C.Catalog.preview=false;
+ C.Catalog.load=function(done){var self=this;MorphPC.apps().then(function(apps){rows=builtin.concat(apps);C.AppCatalog.commit(self,rows,'windows','Start menu');done(null,self.apps);},function(error){C.AppCatalog.commit(self,builtin,'windows','Built-in apps');done(null,self.apps);C.toast(error.message);});};
+ C.Catalog.launch=function(app){if(!app)return;/* Shared app-lock wrapper and each internal player own their PIN gate. */if(C.Prayer&&!C.Prayer.allowLaunch())return;
+  if(app.id==='local.tvmorph.tv.bridge'){C.BridgeReceiver.open();return;}if(app.id==='local.tvmorph.tv.play')SamsungMedia.open('iptv');
+  else if(app.id==='local.tvmorph.tv.radio')SamsungMedia.open('radio');
+  else if(app.id==='local.tvmorph.tv.prayer')C.Prayer.open();
+  else if(app.id==='local.tvmorph.tv.kids')C.Kids.open();
+  else MorphPC.launch(app.id).catch(function(error){C.toast(error.message);});
+  var recent=C.read('recent',[]).filter(function(id){return id!==app.id;});recent.unshift(app.id);C.write('recent',recent.slice(0,5));
+ };
+ C.Inputs.platform='windows';C.Inputs.load=function(){this.state.sources=[];this.state.loading=false;this.state.error=MorphLocale.t('مداخل HDMI تخص التلفزيون. الكمبيوتر يفتح الملفات والبث من IPTV.','HDMI input switching belongs to the TV. On PC, open media files or IPTV.');if(C.inputsChanged)C.inputsChanged(this.state);};
+ C.AppStore={open:function(){MorphPC.settings('store').catch(function(e){C.toast(e.message);});}};
+})(window.ClearTV);

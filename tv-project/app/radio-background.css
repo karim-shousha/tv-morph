@@ -1,1 +1,7 @@
-#radio-mini[hidden]{display:none!important}#radio-mini{position:fixed;right:34px;top:118px;z-index:30;display:flex;align-items:center;max-width:650px;padding:8px;border:1px solid #7bdcf6;border-radius:18px;background:#0a1838ed;box-shadow:0 5px 22px #0007;color:#fff}#radio-mini button{font:inherit;font-size:18px;min-height:44px;padding:8px 14px;margin:0 3px;color:inherit;background:#ffffff0c;border:1px solid #ffffff30;border-radius:12px}#radio-mini .radio-mini-open{max-width:330px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#radio-mini button:focus,#radio-mini button.focused{outline:3px solid #78edff;background:#28629a}
+#radio-mini[hidden]{display:none!important}
+#radio-mini{position:fixed;right:45px;top:145px;z-index:30;display:flex;align-items:center;gap:6px;width:360px;padding:8px;border:1px solid var(--cinema-border,#ffffff38);border-radius:20px;background:var(--cinema-glass,#ffffff18);box-shadow:none;color:var(--cinema-text,#fff);backdrop-filter:none}
+#radio-mini button{font:inherit;font-size:18px;min-height:46px;padding:9px 12px;margin:0;color:inherit;background:transparent;border:1px solid #ffffff20;border-radius:12px;flex-shrink:0}
+#radio-mini .radio-mini-open{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:start}
+#radio-mini .radio-mini-toggle,#radio-mini .radio-mini-stop{width:46px;padding:10px}
+#radio-mini button svg{display:block;width:24px;height:24px}
+#radio-mini button:focus{outline:3px solid var(--cinema-text,#fff);outline-offset:2px;background:#ffffff18;box-shadow:none}

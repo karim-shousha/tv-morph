@@ -3,20 +3,22 @@ import android.content.Context;import java.io.*;import java.net.*;import org.jso
 /** Installs only our bundled signed receiver through the TV's authorised ADB service. */
 final class FireTvInstaller {
  static JSONObject probe(String ip)throws Exception{if(!Network.local(ip))throw new IOException("Enter a local Fire TV IP address");try{return AndroidTv.probe(ip).put("fireTV",true);}catch(Exception ignored){}try(Socket socket=new Socket()){socket.connect(new InetSocketAddress(ip,5555),1800);}catch(Exception e){throw new IOException("فعّل ADB Debugging في Fire TV وتأكد إن الجهازين على نفس الشبكة، أو ثبّت APK باستخدام Downloader أول مرة.");}return new JSONObject().put("ip",ip).put("brand","android").put("fireTV",true).put("name","Fire TV").put("model","ADB network service detected").put("developerReady",false).put("hint","خدمة ADB ظاهرة. اضغط تثبيت على Fire TV ووافق على رسالة السماح على الشاشة؛ التثبيت لم يتم بعد.");}
- static JSONObject install(Context context,String ip,SdbClient.Progress progress)throws Exception{
+ static JSONObject install(Context context,String ip,SdbClient.Progress progress)throws Exception{return install(context,ip,progress,"launcher");}
+ static JSONObject install(Context context,String ip,SdbClient.Progress progress,String product)throws Exception{
+  if(!product.equals("launcher")&&!product.equals("iptv"))throw new IOException("Unknown product");
   if(!Network.local(ip))throw new IOException("Enter the TV local IP and connect both devices to the same router.");
   Vault vault=new Vault(context);byte[] saved=vault.get("fire-adb-identity");AdbIdentity identity=new AdbIdentity(saved);if(saved==null)vault.put("fire-adb-identity",identity.encoded());
   String path="/data/local/tmp/tvmorph-receiver-install.apk";
   try(SdbClient adb=new SdbClient(ip,5555,identity)){
    int sdk;try{sdk=Integer.parseInt(adb.shell("getprop ro.build.version.sdk").trim());}catch(Exception e){throw new IOException("Could not read the TV Android version.");}
    if(sdk<26)throw new IOException("This TV needs Android 8 or later; its system version is too old.");
-   byte[] apk=ReceiverApk.read(context.getAssets().open("android-tv.apk"));
+   byte[] apk=product.equals("iptv")?InstallPackage.iptv(context,"android").data:ReceiverApk.read(context.getAssets().open("android-tv.apk"));
    try{
     adb.push(apk,path,progress);
     adb.timeout(60000);String reply=adb.shell("pm install -r --user 0 "+path);
     if(!reply.matches("(?s).*\\bSuccess\\b.*"))throw new IOException("TV installation was not confirmed: "+reply.substring(Math.max(0,reply.length()-400)));
-    String launch=adb.shell("am start -n local.tvmorph.tv/.TvActivity");
-    return new JSONObject().put("installed",true).put("launched",!launch.contains("Error")).put("pairingRequired",true);
+    String launch=adb.shell("am start -n "+(product.equals("iptv")?"local.morph.iptv/local.morph.iptv.MainActivity":"local.tvmorph.tv/.TvActivity"));
+    return new JSONObject().put("installed",true).put("launched",!launch.contains("Error")).put("pairingRequired",product.equals("launcher")).put("product",product);
    }finally{try{adb.shell("rm -f "+path);}catch(Exception ignored){}}
   }catch(java.net.SocketTimeoutException e){throw new IOException("Approve Allow USB debugging on the TV, then retry.");}
  }

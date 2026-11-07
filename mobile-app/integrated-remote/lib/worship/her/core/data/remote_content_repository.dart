@@ -1,0 +1,1 @@
+class RemoteContentRepository {static final instance=RemoteContentRepository();Future<List<Map<String,dynamic>>?> loadItems(String kind)async=>null;}

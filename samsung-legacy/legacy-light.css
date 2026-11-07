@@ -1,0 +1,7 @@
+/* Legacy review: retain canonical artwork and geometry, reduce compositing. */
+html.morph-tizen3 *,html.morph-tizen3 *:before,html.morph-tizen3 *:after{animation:none!important;transition:none!important;filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;text-shadow:none!important}
+html.morph-tizen3 [hidden]{display:none!important}
+html.morph-tizen3 .app-card:focus,html.morph-tizen3 button:focus{outline:none;box-shadow:0 0 0 2px #ead6b5}
+html.morph-tizen3 .landscape,html.morph-tizen3 .sun,html.morph-tizen3 .ridge{display:none!important}
+html.morph-tizen3 #cinema-background>img{object-fit:cover!important}
+html.morph-tizen3 .cleaner-confirm{overflow-x:hidden!important;overflow-y:auto!important}

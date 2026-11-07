@@ -1,0 +1,11 @@
+/* Preserve focused colors/shadows; interpolate only compositor-friendly properties. */
+html body[data-ui-mode=modern][data-ui-home=true] #view-home button,
+html body[data-ui-mode=modern][data-ui-home=true] main>header button{
+  transition-property:transform,opacity!important;
+}
+
+/* Keep the approved 1.14x dock zoom even when other effects are disabled. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button{transition:transform 120ms ease-out!important;transform:none!important;}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button:focus,
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button:hover{transform:translateY(-11px) scale(1.14)!important;}
+@media(prefers-reduced-motion:reduce){html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button{transition:none!important;transform:none!important}}

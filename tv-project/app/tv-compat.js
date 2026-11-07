@@ -2,7 +2,12 @@
 (function(){'use strict';
  var oldGrid=!(window.CSS&&CSS.supports&&CSS.supports('display','grid'));
  if(oldGrid)document.documentElement.classList.add('morph-legacy-layout');
- window.MorphTVCompatibility={legacyLayout:oldGrid};
+ // Grid support does not imply flex-gap support (Tizen 5 has Grid but no flex gap).
+ var gapProbe=document.createElement('div');gapProbe.style.cssText='position:absolute;visibility:hidden;display:flex;flex-direction:column;row-gap:1px;padding:0;border:0';
+ gapProbe.appendChild(document.createElement('div'));gapProbe.appendChild(document.createElement('div'));
+ document.documentElement.appendChild(gapProbe);var noFlexGap=gapProbe.scrollHeight!==1;gapProbe.parentNode.removeChild(gapProbe);
+ if(noFlexGap)document.documentElement.classList.add('morph-no-flex-gap');
+ window.MorphTVCompatibility={legacyLayout:oldGrid,noFlexGap:noFlexGap};
  function define(target,name,value){if(!target[name])Object.defineProperty(target,name,{value:value,configurable:true,writable:true});}
  define(Object,'values',function(o){return Object.keys(o).map(function(k){return o[k];});});
  define(Object,'entries',function(o){return Object.keys(o).map(function(k){return [k,o[k]];});});
@@ -13,6 +18,10 @@
  define(String.prototype,'startsWith',function(value,start){return this.substr(start||0,String(value).length)===String(value);});
  define(String.prototype,'endsWith',function(value){value=String(value);return this.slice(-value.length)===value;});
  define(String.prototype,'padStart',function(length,value){var s=String(this),pad=value===undefined?' ':String(value);if(!pad)return s;while(s.length<length)s=pad+s;return s.slice(-Math.max(length,String(this).length));});
+ define(String.prototype,'padEnd',function(length,value){var s=String(this),pad=value===undefined?' ':String(value);if(!pad)return s;while(s.length<length)s+=pad;return s.slice(0,Math.max(length,String(this).length));});
+ if(window.Promise){define(Promise.prototype,'finally',function(fn){var P=this.constructor;return this.then(function(value){return P.resolve(typeof fn==='function'?fn():undefined).then(function(){return value;});},function(error){return P.resolve(typeof fn==='function'?fn():undefined).then(function(){throw error;});});});}
+ function nodes(args){var f=document.createDocumentFragment();for(var i=0;i<args.length;i++)f.appendChild(args[i] instanceof Node?args[i]:document.createTextNode(String(args[i])));return f;}
+ if(window.Element){define(Element.prototype,'before',function(){if(this.parentNode)this.parentNode.insertBefore(nodes(arguments),this);});define(Element.prototype,'after',function(){if(this.parentNode)this.parentNode.insertBefore(nodes(arguments),this.nextSibling);});define(Element.prototype,'replaceWith',function(){if(this.parentNode)this.parentNode.replaceChild(nodes(arguments),this);});define(Element.prototype,'replaceChildren',function(){while(this.firstChild)this.removeChild(this.firstChild);this.appendChild(nodes(arguments));});define(Element.prototype,'toggleAttribute',function(name,force){var on=arguments.length>1?!!force:!this.hasAttribute(name);if(on)this.setAttribute(name,'');else this.removeAttribute(name);return on;});}
  if(window.NodeList)define(NodeList.prototype,'forEach',Array.prototype.forEach);
  if(window.Element){
   define(Element.prototype,'matches',Element.prototype.webkitMatchesSelector||Element.prototype.msMatchesSelector);

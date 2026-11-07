@@ -1,0 +1,100 @@
+{
+  "failures": [],
+  "checks": [
+    {
+      "name": "boot-no-pageerrors",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "boot-under-30s",
+      "ok": true,
+      "extra": "2671ms (desktop Chrome, file://)"
+    },
+    {
+      "name": "dpad-up-to-nav",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "dpad-right-stays-dock",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "nav-paint-measured",
+      "ok": true,
+      "extra": "p50=33.3ms p95=33.4ms (desktop Chrome)"
+    },
+    {
+      "name": "settings-visible",
+      "ok": true,
+      "extra": "21 .setting rows"
+    },
+    {
+      "name": "settings-clock-toggle",
+      "ok": true,
+      "extra": "24 hour -> 12 hour"
+    },
+    {
+      "name": "settings-clock-persist",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "settings-clock-persist-value",
+      "ok": true,
+      "extra": "12 hour"
+    },
+    {
+      "name": "theme-switch",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "perf-tier-api",
+      "ok": true,
+      "extra": "legacy light/full only"
+    },
+    {
+      "name": "showview-apps",
+      "ok": true,
+      "extra": ""
+    },
+    {
+      "name": "dom-census",
+      "ok": true,
+      "extra": "674 nodes"
+    }
+  ],
+  "navPaint": {
+    "p50": 33.30000001192093,
+    "p95": 33.400000005960464,
+    "all": [
+      18,
+      33.19999998807907,
+      33.29999998211861,
+      33.29999998211861,
+      33.29999998211861,
+      33.29999998211861,
+      33.29999998211861,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.30000001192093,
+      33.39999997615814,
+      33.400000005960464,
+      33.400000005960464,
+      33.400000005960464,
+      33.400000005960464
+    ]
+  },
+  "census": {
+    "nodes": 674
+  },
+  "errors": []
+}

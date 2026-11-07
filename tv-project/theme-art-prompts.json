@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "format": "PNG with alpha",
+  "composition": "Landscape cinematic photorealistic sports team fan-art collage, compact triangular group for right half of TV background. Clean silhouette, no stadium, no captions or watermark. Not an official current roster photograph.",
+  "assets": {
+    "ahly": "Five Al Ahly SC footballers in red shirts and white shorts, subtle gold accents.",
+    "madrid": "Five Real Madrid footballers in white kits with gold/navy accents.",
+    "barcelona": "Five FC Barcelona footballers in blue/garnet striped kits.",
+    "zamalek": "Five Zamalek SC footballers in white shirts with two red chest stripes.",
+    "basketball": "Three unbranded basketball athletes, orange/black/ivory palette, ball handling poses.",
+    "baseball": "Three unbranded baseball athletes: batter, pitcher and catcher. Cream/navy/red.",
+    "montreal": "Three Montreal Canadiens ice hockey players including a padded goalie, red/blue/white uniforms.",
+    "toronto": "Three Toronto Maple Leafs ice hockey players including a padded goalie, blue/white uniforms."
+  },
+  "portugal-2026": {
+    "tool": "built-in image_gen",
+    "prompt": "A premium photorealistic football fan artwork, transparent PNG cutout, six Portugal national football team players celebrating together in red jerseys and green accents. Cristiano Ronaldo recognizable as the captain in the central foreground, teammates behind and beside him, compact waist-up group composition, all heads and arms fully visible, natural realistic faces and hands, cinematic studio lighting. Isolated on genuinely transparent background, no stadium, no backdrop rectangle, no text or captions, wide 3:2 composition with breathing room at edges. Intended for a Portugal-themed television home background. Generated fan artwork, not an official current roster photograph.",
+    "asset": "app/assets/portugal-team.png"
+  },
+  "argentina-2022": {
+    "tool": "Wikimedia Commons licensed photo (generation failed)",
+    "asset": "app/assets/argentina-team.jpg",
+    "credit": "Argentina celebration: Sebas, CC BY 3.0. Source: https://commons.wikimedia.org/wiki/File:Argentina_3-3_Francia_-_Copa_Mundial_2022_-_Argentina_campe%C3%B3n_(cropped).jpg License: https://creativecommons.org/licenses/by/3.0/ Unmodified image, displayed with CSS fade."
+  }
+}

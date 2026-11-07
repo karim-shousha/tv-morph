@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Netflix",
+    "app_id": "3201907018807",
+    "output": "closed\n"
+  },
+  {
+    "title": "Prime Video",
+    "app_id": "3201512006785",
+    "output": "closed\n"
+  },
+  {
+    "title": "Disney+",
+    "app_id": "3201901017640",
+    "output": "closed\n"
+  },
+  {
+    "title": "Apple TV",
+    "app_id": "3201807016597",
+    "output": "closed\n"
+  },
+  {
+    "title": "Apple Music",
+    "app_id": "3201908019041",
+    "output": "closed\n"
+  },
+  {
+    "title": "dailymotion",
+    "app_id": "11101302013",
+    "output": "closed\n"
+  },
+  {
+    "title": "Google Play Movies \u00ef\u00bc\u2020 TV",
+    "app_id": "3201601007250",
+    "output": "closed\n"
+  },
+  {
+    "title": "Spotify - Music and Podcasts",
+    "app_id": "3201606009684",
+    "output": "closed\n"
+  }
+]

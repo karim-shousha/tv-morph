@@ -1,0 +1,81 @@
+{
+  "model": "one_time_themes",
+  "subscriptions": false,
+  "currency": "USD",
+  "products": [
+    {
+      "theme": "ahly",
+      "productId": "theme_ahly",
+      "type": "INAPP_NON_CONSUMABLE",
+      "priceUSD": "1.00",
+      "trialHours": 72,
+      "status": "not_configured_in_play"
+    },
+    {
+      "theme": "zamalek",
+      "productId": "theme_zamalek",
+      "type": "INAPP_NON_CONSUMABLE",
+      "priceUSD": "1.00",
+      "trialHours": 72,
+      "status": "not_configured_in_play"
+    },
+    {
+      "theme": "barcelona",
+      "productId": "theme_barcelona",
+      "type": "INAPP_NON_CONSUMABLE",
+      "priceUSD": "1.00",
+      "trialHours": 72,
+      "status": "not_configured_in_play"
+    },
+    {
+      "theme": "madrid",
+      "productId": "theme_madrid",
+      "type": "INAPP_NON_CONSUMABLE",
+      "priceUSD": "1.00",
+      "trialHours": 72,
+      "status": "not_configured_in_play"
+    },
+    {
+      "theme": "egypt",
+      "productId": "theme_egypt",
+      "type": "INAPP_NON_CONSUMABLE",
+      "priceUSD": "1.00",
+      "trialHours": 72,
+      "status": "not_configured_in_play"
+    }
+  ],
+  "collections": [
+    {
+      "id": "egyptian",
+      "priceUSD": null,
+      "status": "unpriced"
+    },
+    {
+      "id": "european",
+      "priceUSD": null,
+      "status": "unpriced"
+    },
+    {
+      "id": "champions",
+      "priceUSD": null,
+      "status": "unpriced"
+    },
+    {
+      "id": "hockey",
+      "priceUSD": null,
+      "status": "unpriced"
+    },
+    {
+      "id": "basketball",
+      "priceUSD": null,
+      "status": "unpriced"
+    },
+    {
+      "id": "football",
+      "priceUSD": null,
+      "status": "unpriced"
+    }
+  ],
+  "paymentsEnabled": false,
+  "trialEnforcementEnabled": false
+}

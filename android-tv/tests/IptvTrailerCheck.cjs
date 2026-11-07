@@ -1,0 +1,18 @@
+const {chromium}=require('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const {pathToFileURL}=require('url'),path=require('path'),assert=require('assert');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true});try{const p=await b.newPage({viewport:{width:1920,height:1080}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
+await p.addInitScript(()=>{window.trailerCalls=[];window.IptvNative={settingsJson:()=>'{}',openTrailer(v){window.trailerCalls.push(v);},request(id,action,payload){const data=JSON.parse(payload);let r={};const films=[{id:'7',name:'Fixture Film',year:'2024',icon:'',kind:'vod',category:'1',ext:'mp4'},{id:'8',name:'Second Film',year:'',icon:'',kind:'vod',category:'1',ext:'mp4'}];if(action==='summary')r={name:'Cinema',profileId:'fixture',viewerId:'default',live:true,vod:true,series:true};else if(action==='settings')r={language:'en'};else if(action==='categories')r={items:[{category_id:'1',category_name:'Films'}]};else if(action==='list')r={items:films,total:films.length};else if(action==='details'){const f=films.find(x=>x.id===data.id);r={...f,plot:'A plot.',rating:'8.1'};if(data.id==='7')r.trailerYoutubeId='dQw4w9WgXcQ';}setTimeout(()=>iptvResult(id,true,r),5);}};});
+await p.goto(pathToFileURL(path.resolve('android-tv/build/assets/iptv/index.html')).href);
+await p.locator('#kind-vod').click();await p.waitForFunction(()=>document.querySelectorAll('.tile').length===2);
+await p.locator('.tile').first().click();await p.waitForSelector('#tv-detail-trailer:not([hidden])');
+assert((await p.locator('#tv-detail-trailer').textContent()).includes('Trailer'));
+await p.locator('#tv-detail-trailer').click();
+assert.deepEqual(await p.evaluate(()=>window.trailerCalls),['dQw4w9WgXcQ']);
+await p.keyboard.press('Escape');await p.waitForFunction(()=>document.getElementById('details-panel').hidden);
+await p.locator('.tile').nth(1).click();await p.waitForSelector('#tv-detail-trailer:not([hidden])');
+assert((await p.locator('#tv-detail-trailer').textContent()).includes('🔎'));
+await p.locator('#tv-detail-trailer').click();
+const fallback=await p.evaluate(()=>window.trailerCalls[1]);
+assert(fallback.includes('Second Film'),fallback);
+assert(await p.locator('#tv-detail-trailer').isVisible());
+assert.deepEqual(errors,[]);console.log('PASS: details trailer button shows provider trailer id, falls back to name search, forwards exact id/query to native opener. Transport mocked.');
+await p.screenshot({path:'output/iptv-trailer-button-preview.png'});}finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1});

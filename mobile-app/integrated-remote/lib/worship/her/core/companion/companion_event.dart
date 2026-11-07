@@ -1,0 +1,1 @@
+enum CompanionEventType{prayerUpdated,tasbihUpdated,dhikrUpdated,challengeProgress,readingProgress} class CompanionEventTracker{static final instance=CompanionEventTracker();Future<void> record({required CompanionEventType type,String source='',String? referenceId,Map<String,dynamic> metadata=const{}})async{}}

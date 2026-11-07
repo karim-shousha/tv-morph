@@ -1,0 +1,13 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),path=require('node:path');
+const BASE=process.env.MORPH_LANDING_TEST_URL||'http://127.0.0.1:8798/',LABEL=process.env.MORPH_LANDING_LABEL||'preview';
+const PUBLIC=new URL(BASE).hostname!=='127.0.0.1';
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.route(/^https?:\/\//,route=>{const url=new URL(route.request().url());return url.origin===new URL(BASE).origin||PUBLIC&&(url.hostname==='github.com'||url.hostname.endsWith('.githubusercontent.com'))?route.continue():route.abort();});
+if(!PUBLIC){
+await page.route('**/download/windows',route=>route.fulfill({status:200,body:'desktop-download-test',headers:{'Content-Type':'application/octet-stream','Content-Disposition':'attachment; filename="Morph-Launcher-PC-0.1.0-Setup.exe"'}}));
+await page.route('**/download/mac',route=>route.fulfill({status:200,body:'desktop-download-test',headers:{'Content-Type':'application/octet-stream','Content-Disposition':'attachment; filename="Morph-Launcher-Mac-0.1.0-universal.dmg"'}}));
+}
+for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto(BASE,{waitUntil:'domcontentloaded'});await page.locator('#desktop-downloads').waitFor();assert((await page.locator('#desktop-downloads').boundingBox()).y<200);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.waitForFunction(()=>[...document.querySelectorAll('#desktop-downloads img')].every(image=>image.complete&&image.naturalWidth>0));await page.screenshot({path:path.join(__dirname,'../test-output/landing-'+LABEL+'-'+width+'.png')});}
+await page.setViewportSize({width:1280,height:900});for(const platform of ['windows','mac']){const before=await page.evaluate(()=>location.hash);const download=page.waitForEvent('download');await page.locator('#download-launcher-'+platform).click();const result=await download;assert(result.suggestedFilename().endsWith(platform==='windows'?'.exe':'.dmg'));if(PUBLIC)await result.path();assert.equal(await page.evaluate(()=>location.hash),before);}
+await page.locator('#language-toggle').click();assert((await page.locator('#desktop-downloads').innerText()).includes('Download for Windows'));assert.deepEqual(errors,[]);console.log('PASS: direct EXE/DMG downloads without hash navigation, desktop/mobile layout, platform logos and English labels.');
+}finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

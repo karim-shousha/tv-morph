@@ -1,0 +1,106 @@
+/* Premium material follows the active theme. No blur or change to library actions. */
+html#iptv-theme-root[data-stream-ui] body{color:var(--iptv-text)!important;background:var(--media-bg)!important}
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body,
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body{background:#07101e url("assets/launcher-background.webp") center / cover no-repeat!important}
+html#iptv-theme-root[data-stream-ui] body *,html#iptv-theme-root[data-stream-ui] body *:before,html#iptv-theme-root[data-stream-ui] body *:after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header]{position:absolute!important;left:calc(40 * var(--header-unit,1px))!important;right:calc(40 * var(--header-unit,1px))!important;top:calc(24 * var(--header-unit,1px))!important;width:auto!important;margin:0!important;z-index:40!important;flex:none!important}
+html#iptv-theme-root[data-stream-ui] #morph-header[data-shared-header] .stream-nav-icon{display:none!important}
+html#iptv-theme-root[data-stream-ui] #morph-header[data-shared-header] .header-clock{display:flex!important;flex-direction:column!important;align-items:flex-end!important;justify-content:center!important;text-align:right!important;min-width:calc(124 * var(--header-unit,1px))!important;padding-left:calc(18 * var(--header-unit,1px))!important;margin-left:calc(12 * var(--header-unit,1px))!important;color:#f7f9ff!important}
+html#iptv-theme-root[data-stream-ui] #morph-header[data-shared-header] #stream-clock{position:static!important;display:block!important;width:auto!important;margin:0!important;padding:0!important;font:400 calc(36 * var(--header-unit,1px))/calc(42 * var(--header-unit,1px)) Arial,Tahoma,sans-serif!important;color:#f7f9ff!important}
+html#iptv-theme-root[data-stream-ui] #morph-header[data-shared-header] #stream-header-date{display:block!important;margin-top:calc(3 * var(--header-unit,1px))!important;font:400 calc(17 * var(--header-unit,1px))/1.2 Arial,Tahoma,sans-serif!important;color:#dce1ef!important;white-space:nowrap}
+html#iptv-theme-root[data-stream-ui] #dashboard{box-sizing:border-box!important;height:100vh!important;max-height:100vh!important;padding:calc(130 * var(--header-unit,1px)) 0 0!important;margin:0!important;overflow:hidden!important;background:transparent!important}
+html#iptv-theme-root[data-stream-ui] #stream-home{padding:0 calc(40 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero{overflow:hidden!important;isolation:isolate!important;border-radius:calc(24 * var(--header-unit,1px))!important;background:transparent!important;--hero-art-bleed:0px!important;margin-bottom:calc(16 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art,
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art.portrait{position:absolute!important;top:0!important;bottom:0!important;right:0!important;left:auto!important;width:75%!important;height:100%!important;max-width:none!important;max-height:none!important;margin:0!important;object-fit:cover!important;object-position:center top!important;-webkit-mask-image:none!important;mask-image:none!important;z-index:-2!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero:after{inset:0!important;background:linear-gradient(90deg,var(--media-bg) 4%,transparent 74%),linear-gradient(0deg,var(--media-bg),transparent 42%)!important}
+html#iptv-theme-root[data-stream-ui] body #stream-rows{background:transparent!important;padding:8px 0 20px!important}
+html#iptv-theme-root[data-stream-ui] body #stream-title{font-family:Arial,Tahoma,sans-serif!important;font-size:calc(52 * var(--header-unit,1px))!important;font-weight:700!important;line-height:1.15!important;white-space:nowrap!important;text-overflow:ellipsis!important;overflow:hidden!important;max-width:100%!important}
+html#iptv-theme-root[data-stream-ui] .stream-hero-copy{padding:calc(24 * var(--header-unit,1px))!important;width:49%!important;max-width:760px!important}
+html#iptv-theme-root[data-stream-ui] body .stream-card,
+html#iptv-theme-root[data-stream-ui] body .stream-empty-state,
+html#iptv-theme-root[data-stream-ui] body .settings-dialog,
+html#iptv-theme-root[data-stream-ui] body .details-dialog,
+html#iptv-theme-root[data-stream-ui] body main .tile{background:linear-gradient(135deg,rgba(213,224,255,.13),var(--iptv-surface-533))!important;border:1px solid rgba(255,255,255,.26)!important;border-radius:calc(24 * var(--header-unit,1px))!important;box-shadow:inset 0 1px rgba(255,255,255,.08)!important}
+html#iptv-theme-root[data-stream-ui] body .stream-card:focus,
+html#iptv-theme-root[data-stream-ui] body main button:focus,
+html#iptv-theme-root[data-stream-ui] body .stream-actions button:focus{outline:calc(3 * var(--header-unit,1px)) solid #f7f9ff!important;outline-offset:calc(3 * var(--header-unit,1px))!important;box-shadow:none!important}
+html#iptv-theme-root[data-stream-ui] body .stream-actions button{font:400 calc(22 * var(--header-unit,1px))/1.3 Arial,Tahoma,sans-serif!important;background:rgba(213,224,255,.16)!important;border:1px solid rgba(255,255,255,.26)!important;border-radius:calc(20 * var(--header-unit,1px))!important;color:#f7f9ff!important;min-height:calc(48 * var(--header-unit,1px))!important;padding:calc(10 * var(--header-unit,1px)) calc(20 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body:not(.cinema-home)>main{padding-top:calc(130 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body #stream-utility[hidden]{display:none!important}
+
+html#iptv-theme-root[data-stream-ui] body.cinema-home #stream-backdrop{display:none!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero{height:34vh!important;flex:0 0 34vh!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art{display:block!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero:after{display:block!important}
+html#iptv-theme-root[data-stream-ui] body #stream-rows{width:100%!important;align-self:stretch!important;padding-left:0!important;padding-right:0!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status{gap:calc(12 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status>button{display:flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;flex:0 0 calc(54 * var(--header-unit,1px))!important;width:calc(54 * var(--header-unit,1px))!important;height:calc(54 * var(--header-unit,1px))!important;min-height:calc(54 * var(--header-unit,1px))!important;padding:calc(12 * var(--header-unit,1px))!important;margin:0!important;border:1px solid rgba(255,255,255,.26)!important;border-radius:50%!important;background:rgba(213,224,255,.12)!important;color:#f7f9ff!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status>button svg{display:block!important;width:calc(28 * var(--header-unit,1px))!important;height:calc(28 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status>button:focus{outline:calc(3 * var(--header-unit,1px)) solid #f7f9ff!important;outline-offset:calc(3 * var(--header-unit,1px))!important;background:rgba(213,224,255,.22)!important;box-shadow:none!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] #stream-clock:before,
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] #stream-clock:after{display:none!important}
+
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status{direction:ltr!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-status>button{position:static!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;order:0!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] .header-clock{order:3!important;direction:ltr!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] #stream-clock{order:0!important}
+html#iptv-theme-root[data-stream-ui] body #morph-header[data-shared-header] #stream-header-date{order:1!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero:after{background:linear-gradient(90deg,var(--media-bg) 24%,transparent 76%),linear-gradient(0deg,var(--media-bg),transparent 42%)!important}
+html#iptv-theme-root[data-stream-ui] body .stream-shelf>.stream-row-note{position:static!important;display:block!important;inset:auto!important;float:none!important;max-width:100%!important;margin:8px 0 0!important;font-size:calc(16 * var(--header-unit,1px))!important;line-height:1.4!important;text-align:start!important;color:var(--iptv-muted)!important}
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body:not(.cinema-home),
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body:not(.cinema-home){background:#07101e url("assets/launcher-background.webp") center / cover no-repeat!important}
+html#iptv-theme-root[data-stream-ui] body:not(.cinema-home) main{background:transparent!important}
+html#iptv-theme-root[data-stream-ui] body:not(.cinema-home) main>aside{background:rgba(23,30,50,.42)!important;border-color:rgba(255,255,255,.2)!important}
+/* Basic-theme cards borrow the wallpaper's slate tones with lighter opacity. */
+html#iptv-theme-root[data-iptv-theme=night],
+html#iptv-theme-root[data-iptv-theme=blue]{--premium-card-fill:linear-gradient(135deg,rgba(110,107,128,.28),rgba(55,66,95,.42));--premium-card-caption:linear-gradient(180deg,rgba(55,66,95,0),rgba(55,66,95,.54) 42%,rgba(39,49,73,.76) 100%)}
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body .stream-card,
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body .stream-card{background:var(--premium-card-fill)!important;border-color:rgba(224,231,247,.3)!important}
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body #stream-rows .stream-card img,
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body #stream-rows .stream-card img{background:transparent!important}
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body #stream-rows .stream-card-copy,
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body #stream-rows .stream-card-copy{background:var(--premium-card-caption)!important}
+/* Hero copy stacks title, one facts/rating row, synopsis, and actions. */
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-hero-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:calc(12 * var(--header-unit,1px))!important;min-height:0!important;height:auto!important;padding:calc(24 * var(--header-unit,1px))!important;direction:ltr!important;text-align:left!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-title{margin:0!important;height:auto!important;min-height:0!important;max-height:1.2em!important;flex:none!important;width:100%!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta{display:flex!important;flex-wrap:wrap!important;align-items:center!important;justify-content:flex-start!important;gap:calc(8 * var(--header-unit,1px)) calc(12 * var(--header-unit,1px))!important;width:100%!important;max-width:100%!important;flex:none!important;margin:0!important;height:auto!important;min-height:0!important;max-height:none!important;white-space:normal!important;overflow:visible!important;font:400 calc(20 * var(--header-unit,1px))/1.3 Arial,Tahoma,sans-serif!important;direction:ltr!important;text-align:left!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-kind,
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-year,
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-duration{flex:0 1 auto!important;min-width:0!important;max-width:70%!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-year:before,
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-duration:before{content:'·';margin-right:calc(12 * var(--header-unit,1px))}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-meta>.stream-meta-rating{display:flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:flex-start!important;gap:calc(8 * var(--header-unit,1px))!important;white-space:nowrap!important;direction:ltr!important;margin:0!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero #stream-description{display:-webkit-box!important;-webkit-box-orient:vertical!important;-webkit-line-clamp:3!important;overflow:hidden!important;height:auto!important;min-height:0!important;max-height:4.35em!important;line-height:1.45!important;font-size:calc(20 * var(--header-unit,1px))!important;flex:none!important;width:100%!important;margin:0!important;text-align:start!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-actions{display:flex!important;align-items:center!important;justify-content:flex-start!important;flex-wrap:wrap!important;gap:calc(12 * var(--header-unit,1px))!important;flex:none!important;width:100%!important;margin:calc(4 * var(--header-unit,1px)) 0 0!important;padding:0!important}
+html#iptv-theme-root #iptv-exit-hint{position:fixed;bottom:32px;left:50%;transform:translateX(-50%);z-index:100000;padding:16px 26px;border:1px solid rgba(228,235,255,.3);border-radius:22px;background:var(--ui-panel-bg,#2c374e);color:#f5f7ff;font:400 22px/1.4 Arial,Tahoma,sans-serif;text-align:center;max-width:80vw;box-shadow:none}
+html#iptv-theme-root #iptv-exit-hint[hidden]{display:none!important}
+/* Focused artwork fills the hero; cover crops without distorting the image. */
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art,
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art.portrait{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center top!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-header-art.portrait{object-position:center 30%!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-hero-pager[hidden]{display:none!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-hero-pager{background:transparent!important;border:0!important;box-shadow:none!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-hero-pager i{box-shadow:none!important}
+html#iptv-theme-root[data-stream-ui] body #stream-hero .stream-hero-pager button[data-slide]{border:0!important;background:transparent!important;box-shadow:none!important}
+
+/* First source choice uses the active theme, with no blur or animation cost. */
+#iptv-first-source{position:fixed;inset:0;z-index:21000;display:flex;align-items:center;justify-content:center;background:rgba(8,13,25,.72);padding:24px;box-sizing:border-box}
+#iptv-first-source section{width:740px;max-width:88vw;max-height:90vh;overflow:auto;padding:40px;box-sizing:border-box;border:1px solid var(--iptv-border-1000);border-radius:28px;background:var(--iptv-surface-1000);color:var(--iptv-text-1000)}
+#iptv-first-source img{display:block;width:240px;max-width:65%;height:auto;margin:0 0 28px}
+#iptv-first-source h2{font-size:36px;line-height:1.3;margin:0 0 14px}
+#iptv-first-source p{font-size:22px;line-height:1.5;margin:0 0 26px}
+#iptv-first-source small{display:block;font-size:20px;line-height:1.5;margin:24px 0 12px}
+#iptv-first-source button{display:block;width:100%;min-height:60px;white-space:normal;font-size:23px;padding:14px 20px;border:1px solid var(--iptv-border-1000);border-radius:16px;background:rgba(155,177,210,.18);color:var(--iptv-text-1000)}
+#iptv-first-source button:focus{outline:3px solid var(--iptv-text-1000);outline-offset:4px;background:rgba(155,177,210,.3)}
+.source-form-row .account-password-toggle{display:inline-flex;align-items:center;justify-content:center;min-width:40px;padding:6px 10px}
+@media(max-height:500px){#iptv-first-source section{padding:24px}#iptv-first-source img{width:170px;margin-bottom:14px}#iptv-first-source h2{font-size:26px}#iptv-first-source p,#iptv-first-source small{font-size:17px;margin:10px 0 16px}#iptv-first-source button{min-height:42px;font-size:18px;padding:9px 14px}}
+
+#iptv-first-source[dir="ltr"] section{text-align:left}#iptv-first-source[dir="rtl"] section{text-align:right}
+
+/* One static generated hero. Keep controls anchored when a source has fewer content kinds. */
+html#iptv-theme-root[data-stream-ui] #stream-hero .stream-header-art{object-fit:cover!important;object-position:center!important;transition:none!important;animation:none!important}
+html#iptv-theme-root[data-stream-ui] header nav button:disabled{opacity:.48!important;cursor:default!important}
+
+/* Default backdrop matches the launcher; the existing hero art and cards remain intact. */
+html#iptv-theme-root[data-stream-ui][data-iptv-theme=night] body:before,html#iptv-theme-root[data-stream-ui][data-iptv-theme=blue] body:before{background:none!important;}

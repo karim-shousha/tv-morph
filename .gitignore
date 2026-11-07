@@ -1,3 +1,15 @@
-# Source checkpoint; assets, runtime, credentials and release outputs stay local.
-*
-!.gitignore
+**/build/
+**/node_modules/
+**/.gradle/
+**/.dart_tool/
+.tools/
+.private/
+output/
+**/test-output/
+*.apk
+*.wgt
+*.ipk
+*.exe
+*.dmg
+*.jks
+**/local.properties

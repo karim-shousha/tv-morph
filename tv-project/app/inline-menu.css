@@ -1,0 +1,40 @@
+.settings-inline-menu,html body .settings-anchored-overlay{position:absolute!important;z-index:13000!important;display:block!important;box-sizing:border-box!important;height:auto!important;min-height:0!important;padding:12px!important;overflow:auto!important;overscroll-behavior:contain;background:var(--ui-panel-bg,#192d48)!important;color:var(--ui-text,#fff)!important;border:1px solid var(--ui-card-border,#8fa7c8)!important;border-radius:14px!important;backdrop-filter:none!important;}
+html body .settings-anchored-overlay[hidden]{display:none!important;}
+html body .settings-anchored-overlay>.modal,html body .settings-anchored-overlay>.text-size-dialog{width:100%!important;max-width:100%!important;max-height:none!important;padding:10px!important;margin:0!important;overflow:visible!important;border:0!important;background:transparent!important;box-shadow:none!important;}
+.settings-inline-menu button{display:block;box-sizing:border-box;width:100%;min-height:44px;margin:5px 0;padding:10px 14px;border:1px solid transparent;border-radius:8px;text-align:start;background:var(--ui-control-bg,#26435e);color:inherit;font-size:22px;line-height:1.4;white-space:normal;overflow-wrap:break-word;}
+.settings-inline-menu button[aria-pressed=true]{background:#315dab;border-color:#9ac8ff;}
+.settings-inline-menu button:focus{outline:3px solid #9edcff;outline-offset:-3px;}
+.settings-inline-menu h2{font-size:24px;line-height:1.4;margin:4px 0 12px;}
+.settings-inline-menu input[type=range]{display:block;box-sizing:border-box;width:100%;margin:12px 0;}
+.settings-inline-menu .text-size-preview{font-size:22px;line-height:1.5;margin:8px 0;white-space:normal;overflow-wrap:break-word;}
+html body #view-settings .setting{height:auto;white-space:normal;overflow-wrap:break-word;}
+
+html body .settings-anchored-overlay>section{width:100%!important;max-width:100%!important;box-sizing:border-box!important;padding:10px!important;margin:0!important;border:0!important;background:transparent!important;}
+html body .settings-anchored-overlay>section button{width:100%!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:break-word!important;}
+html body .settings-anchored-overlay h2{font-size:24px;line-height:1.4;}
+
+html body .settings-anchored-overlay .plus-dialog-body,html body .settings-anchored-overlay .theme-packs-grid{display:block!important;max-height:none!important;overflow:visible!important;}
+html body .settings-anchored-overlay .plus-benefit-pane,html body .settings-anchored-overlay .plus-activation-pane{width:100%!important;max-width:100%!important;max-height:none!important;overflow:visible!important;}
+html body .settings-anchored-overlay img{max-width:100%;object-fit:contain;}
+
+html body .settings-anchored-overlay .theme-options{display:flex!important;flex-direction:column!important;gap:8px!important;width:100%!important;}
+html body .settings-anchored-overlay .tv-theme-categories{display:flex!important;flex-wrap:wrap!important;gap:6px!important;}
+html body .settings-anchored-overlay .theme-option{width:100%!important;min-width:0!important;height:auto!important;min-height:44px!important;white-space:normal!important;overflow-wrap:break-word!important;}
+
+/* Informational cards take part in the Settings flow and never trap focus. */
+html body #view-settings .settings-inline-info{display:block;box-sizing:border-box;max-width:100%;min-width:0;margin:10px 0 18px;padding:22px;border:1px solid var(--ui-border,#ffffff30);border-radius:18px;background:var(--ui-card-bg,#25354c);color:var(--ui-text,#fff);overflow-wrap:anywhere}
+html body #view-settings .settings-inline-info h3{font-size:24px;line-height:1.4;margin:0 0 16px;color:inherit}
+html body #view-settings .settings-developer-names{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:18px}
+html body #view-settings .settings-developer-names strong{flex:1 1 250px;min-width:0;font-size:26px;line-height:1.4;padding:14px;border:1px solid var(--ui-border,#ffffff25);border-radius:12px;background:var(--ui-control-bg,#ffffff08)}
+html body #view-settings .settings-info-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid var(--ui-border,#ffffff25)}
+html body #view-settings .settings-info-row span{font-size:21px;line-height:1.4}
+html body #view-settings .settings-info-row strong{font-size:24px;line-height:1.4;max-width:100%;user-select:text;overflow-wrap:anywhere}
+html body #view-settings .settings-info-version{font-size:19px;line-height:1.5;margin:16px 0 0;color:inherit}
+html body #view-settings .setting.settings-info-open{border-color:var(--ui-focus-ring,#a9c8ff)!important}
+html body #view-settings .settings-inline-info{background:transparent;border:0;border-radius:0;padding:16px 20px;margin:0 0 12px;border-bottom:1px solid var(--ui-border,#ffffff25)}
+html body #view-settings .settings-inline-info p{font-size:22px;line-height:1.5;margin:8px 0 16px;color:inherit}
+.settings-support-codes{display:flex;justify-content:center;flex-wrap:wrap;gap:28px;margin:18px 0}
+.settings-support-codes>div{display:flex;flex-direction:column;align-items:center;gap:10px;min-width:0}
+.settings-support-codes img{display:block;width:220px;height:220px;max-width:100%;border-radius:12px}
+.settings-support-actions{display:flex;flex-wrap:wrap;gap:12px}
+.settings-support-actions button{flex:1 1 220px;min-width:0;min-height:48px;white-space:normal;overflow-wrap:break-word}

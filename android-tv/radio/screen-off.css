@@ -1,0 +1,7 @@
+html.radio-screen-dark,html.radio-screen-dark body{background:#000!important;background-image:none!important}
+html.radio-screen-dark body>*{visibility:hidden!important}
+html.radio-screen-dark *,html.radio-screen-dark *:before,html.radio-screen-dark *:after{animation-play-state:paused!important;transition:none!important}
+html.radio-screen-dark #radio-dark-screen{visibility:visible!important;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%;z-index:2147483647;background:#000!important;outline:none!important;border:0!important;box-shadow:none!important;cursor:none}
+#radio-dark-screen[hidden]{display:none!important}
+#radio-screen-off{white-space:nowrap;flex:0 0 auto;min-height:50px;font-size:20px;padding:12px 18px;border:1px solid #b9dfff77;border-radius:14px;background:#152b43;color:white}
+#radio-screen-off:focus{outline:3px solid #71d7ff;outline-offset:3px}

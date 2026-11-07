@@ -1,0 +1,160 @@
+/* Keep the dock inside the TV safe area, including focus enlargement. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock{left:164px;right:32px;transform:none;width:auto;max-width:none;padding-left:30px!important;padding-right:30px!important;box-sizing:border-box}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{width:var(--dock-item-size,104px)!important;min-width:var(--dock-item-size,104px)!important;max-width:var(--dock-item-size,104px)!important;flex:0 0 var(--dock-item-size,104px)!important;margin-left:8px!important;margin-right:8px!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-icon,body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .plus-icon{width:calc(var(--dock-item-size,104px) - 16px)!important;height:calc(var(--dock-item-size,104px) - 16px)!important;min-width:0!important;min-height:0!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus,body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:hover{transform:translateY(-12px) scale(1.12)!important}
+#view-home .section-heading{display:none!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer{display:grid!important;grid-template-columns:1fr auto;grid-template-rows:auto auto auto;align-items:center;gap:4px 12px;right:42px;top:140px;width:260px;min-height:0;height:auto;padding:12px 16px;border-radius:16px;background:rgba(7,18,32,.42)!important;border:1px solid rgba(255,255,255,.24)!important;box-shadow:none!important;backdrop-filter:none;text-align:start}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>svg{display:none}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>small{grid-column:1/3;margin:0;width:auto;font-size:17px}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>strong{grid-column:1;margin:0;width:auto;font-size:23px}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-at{grid-column:2;margin:0;width:auto;font-size:26px;white-space:nowrap}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining-label{grid-column:1;margin:3px 0 0;padding:5px 0 0;width:auto;border:0;font-size:16px}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer>.prayer-remaining{grid-column:2;margin:3px 0 0;padding:5px 0 0;width:auto;font-size:20px}
+body.dock-home #view-home #home-last-hdmi{top:auto;bottom:275px;right:42px;width:285px;height:105px}
+body.dock-home #view-home .recent-apps-rail{margin-right:310px}
+body.dock-home #view-home .recent-app-card{min-width:170px;max-width:230px;height:100px}
+body.dock-home #view-home #home-hdmi-shortcuts{position:absolute;left:180px;right:360px;bottom:455px;display:flex;gap:14px;overflow-x:auto;padding:8px}
+.home-hdmi-shortcut{min-width:150px;padding:14px 20px;border-radius:18px;background:var(--ui-card-bg);color:var(--ui-text);border:1px solid var(--ui-card-border)}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #favourites>[data-favourite-id="local.tvmorph.tv.play"] .app-icon{color:#fff!important;background:linear-gradient(145deg,#ff9340,#d93675 60%,#8426c8)!important;border:1px solid #ffc87a!important;box-shadow:inset 0 1px #ffe4b0,0 4px 14px #5b173b66!important}
+
+#view-home #home-recent-apps[hidden],#view-home #home-last-hdmi[hidden],#view-home #home-hdmi-shortcuts[hidden]{display:none!important}
+
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock h3{left:50%;transform:translateX(-50%);width:calc(var(--dock-item-size,104px) + 20px);max-width:calc(var(--dock-item-size,104px) + 20px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{height:calc(var(--dock-item-size,104px) + 12px)!important;min-height:calc(var(--dock-item-size,104px) + 12px)!important;padding:8px!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before{height:calc(var(--dock-item-size,104px) + 8px)!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock h3,body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .app-name{top:calc(var(--dock-item-size,104px) + 16px);left:50%;transform:translateX(-50%);width:calc(var(--dock-item-size,104px) + 20px);font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer[data-ready=false]>strong{grid-column:1/3;font-size:20px;line-height:1.4}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer[data-ready=false]>.prayer-at,body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer[data-ready=false]>.prayer-remaining-label,body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-next-prayer[data-ready=false]>.prayer-remaining{display:none}
+
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] main>header nav{position:absolute;left:50%;top:7px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 620px);margin:0!important}
+
+/* Keep the dock inexpensive: no reflected images or reflection paint. */
+#favourites .dock-reflection{display:none!important}
+#favourites,#favourites .app-icon,#favourites>button{-webkit-box-reflect:none!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-hdmi-shortcuts{left:180px;right:360px;bottom:455px;gap:18px;padding:12px;min-height:140px;box-sizing:border-box;align-items:stretch}
+body.dock-home #view-home .home-hdmi-shortcut{display:flex;align-items:center;gap:18px;flex:1 0 220px;min-width:220px;max-width:320px;min-height:116px;padding:20px;border-radius:20px;text-align:start;background:var(--ui-bg-raised,#132439);border:1px solid var(--ui-card-border,#57708c);color:var(--ui-text,#fff);box-sizing:border-box}
+.home-input-icon{display:flex;align-items:center;justify-content:center;flex:0 0 64px;width:64px;height:64px;border-radius:18px;background:linear-gradient(140deg,#d27b17,#974211);color:#fff}
+.home-input-icon svg{width:38px;height:38px}.home-input-copy{display:flex;flex-direction:column;gap:6px;min-width:0}.home-input-copy strong{font-size:25px;line-height:1.3}.home-input-copy small{font-size:17px;line-height:1.4;color:var(--ui-text-muted,#c7d5e7)}
+body.dock-home #view-home #home-last-hdmi{width:300px;height:124px;padding:20px;border-radius:20px;display:flex;align-items:center;gap:18px;text-align:start;background:var(--ui-bg-raised,#132439);border:1px solid var(--ui-card-border,#57708c);box-sizing:border-box}
+#home-last-hdmi>svg{flex:0 0 48px;width:48px;height:48px;color:#ffc46b}#home-last-hdmi small{font-size:17px;line-height:1.5}#home-last-hdmi strong{font-size:26px;line-height:1.4}
+body[data-ui-mode=modern][data-theme] .ui-owned-app[data-owned-app="local.tvmorph.tv.kids"],body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app="local.tvmorph.tv.kids"]{background:linear-gradient(145deg,#a779ff,#6535bc)!important;background-image:linear-gradient(145deg,#a779ff,#6535bc)!important;color:#fff!important;border-color:#c8acff!important}
+body[data-ui-mode=modern][data-theme] .ui-owned-app[data-owned-app="local.tvmorph.tv.radio"],body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app="local.tvmorph.tv.radio"]{background:linear-gradient(145deg,#18bba8,#086c73)!important;background-image:linear-gradient(145deg,#18bba8,#086c73)!important;color:#fff!important;border-color:#7ce5d6!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi .ui-dock-icon{background:linear-gradient(145deg,#f0a42b,#b65616)!important;background-image:linear-gradient(145deg,#f0a42b,#b65616)!important;color:#fff!important;border-color:#ffd68d!important}
+
+/* Optional Home sections share aligned rows above the fixed-size launcher. */
+body.dock-home #view-home #home-input-row{position:absolute;left:180px;right:42px;bottom:270px;height:148px;display:flex;align-items:center;gap:22px;z-index:4}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row #home-hdmi-shortcuts{position:static;left:auto;right:auto;bottom:auto;flex:1 1 0;min-width:0;height:140px;min-height:140px;padding:12px;box-sizing:border-box}
+body.dock-home #view-home #home-input-row #home-last-hdmi{position:static;top:auto;right:auto;bottom:auto;flex:0 0 300px;width:300px;height:116px;margin:0}
+body.dock-home #view-home #home-recent-apps{left:182px;right:42px;bottom:430px;height:155px}
+body.dock-home #view-home #home-recent-apps .recent-apps-rail{margin-right:0;padding-top:7px;padding-bottom:12px}
+body.dock-home #view-home #home-recent-apps h2{font-size:23px;margin-bottom:8px}
+#view-home #home-input-row[hidden]{display:none!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme=ahly]>.club-watermark{display:none!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme=ahly] #cinema-background{background:radial-gradient(ellipse at 85% 18%,#db485044,transparent 55%),radial-gradient(ellipse 130% 85% at 115% 125%,transparent 45%,#bd335044 45.4%,#a61d3f22 47%,transparent 49%),radial-gradient(ellipse 120% 85% at -20% 100%,transparent 55%,#ce8c852e 55.4%,transparent 57%),linear-gradient(115deg,#160a15 0%,#450e20 43%,#7e142c 78%,#9b333d 100%)}
+body[data-ui-mode=modern][data-ui-home=true][data-theme=ahly] #view-home .hero .intro .club-hero-logo{left:12px;top:95px;width:120px!important;max-width:120px!important;height:145px!important;margin:0}
+body[data-ui-mode=modern][data-ui-home=true][data-theme=ahly] #view-home .hero .intro .club-hero-copy{left:155px;top:65px!important;width:600px;max-width:600px}
+
+/* These selectors must outrank the modern dock's important focus transitions. */
+body.dock-home.effect-motion-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button,
+body.dock-home.effect-motion-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus,
+body.dock-home.effect-motion-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:hover,
+body.dock-home.reduce-motion[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button{transform:none!important;transition:none!important;animation:none!important}
+body[data-ui-mode=modern][data-ui-effects=light] #cinema-background .slide-layer{transition:none!important}
+
+/* Morph actions use the same glass shell as installed-app icons. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app="local.tvmorph.tv.radio"],body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi .ui-dock-icon{background-color:var(--ui-bg-raised)!important;background-image:radial-gradient(ellipse at 65% 110%,var(--ui-focus-surface-b),transparent 60%),linear-gradient(145deg,var(--ui-icon-sheen),transparent 48%,var(--ui-icon-shade))!important;border-color:var(--ui-card-border)!important;border-radius:46% 48% 30% 42%;padding:20px}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app="local.tvmorph.tv.radio"]{color:#71e5d8!important}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi .ui-dock-icon{color:#ffd18a!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools>.tool[hidden]{display:none!important}
+
+/* The normal preset keeps the existing geometry; larger presets reserve room for labels and focus. */
+body.dock-home[data-dock-icon-size=large] #view-home #favourites.app-dock,body.dock-home[data-dock-icon-size=larger] #view-home #favourites.app-dock{height:calc(var(--dock-item-size,112px) + 142px)!important}
+body.dock-home[data-dock-icon-size=large] #favourites.app-dock .app-icon svg,body.dock-home[data-dock-icon-size=larger] #favourites.app-dock .app-icon svg{transform:scale(var(--dock-glyph-scale,1));transform-origin:center}
+body.dock-home[data-dock-icon-size=large] #view-home #favourites.app-dock h3,body.dock-home[data-dock-icon-size=large] #view-home #favourites.app-dock .app-name{font-size:19px!important}
+body.dock-home[data-dock-icon-size=larger] #view-home #favourites.app-dock h3,body.dock-home[data-dock-icon-size=larger] #view-home #favourites.app-dock .app-name{font-size:21px!important}
+body.dock-home[data-dock-icon-size=large] #view-home #home-input-row,body.dock-home[data-dock-icon-size=larger] #view-home #home-input-row{bottom:calc(270px + var(--dock-size-extra,0px))}
+body.dock-home[data-dock-icon-size=large] #view-home #home-recent-apps,body.dock-home[data-dock-icon-size=larger] #view-home #home-recent-apps{bottom:calc(430px + var(--dock-size-extra,0px))}
+.dock-size-options{gap:0}.dock-size-options>button:not(:last-child){margin-right:12px}
+/* Main-home hero Continue Watching entry: theme-aware pill CTA below the intro text. */
+#view-home .hero .intro #home-continue{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:14px 28px;font-size:22px;font-weight:700;line-height:1.3;color:var(--ui-text,#fff);background:var(--ui-button-gradient,linear-gradient(120deg,#168af0,#163968));border:1px solid var(--ui-card-border,rgba(255,255,255,.25));border-radius:999px;box-shadow:var(--ui-shadow,0 12px 30px rgba(0,0,0,.3));text-align:start}
+#view-home .hero .intro #home-continue:focus{outline:none;border-color:var(--ui-focus-ring,#9ddfff);box-shadow:0 0 0 3px var(--ui-bg,#080e1d),0 0 18px var(--ui-focus-glow,rgba(102,207,255,.36))}
+html[dir=rtl] #view-home .hero .intro #home-continue,html[lang=ar] #view-home .hero .intro #home-continue{flex-direction:row}
+
+/* No decorative underline under the primary Continue Watching action. */
+html body #view-home #home-continue:before,html body #view-home #home-continue:after{content:none!important;display:none!important}
+
+html body #view-home .hero-slide-dot:only-child{display:none!important}
+
+/* Floating wallpaper controls, matching the IPTV carousel without a backing panel. */
+body[data-ui-mode=modern][data-ui-home=true] #hero-slide-indicators{left:auto;right:22px;bottom:18px;align-items:center;gap:9px;background:transparent;border:0;box-shadow:none;padding:0}
+body[data-ui-mode=modern][data-ui-home=true] #hero-slide-indicators[hidden]{display:none!important}
+body[data-ui-mode=modern][data-ui-home=true] #hero-slide-indicators .hero-slide-dot{width:20px;height:30px;min-width:20px;border-radius:50%;background:transparent}
+body[data-ui-mode=modern][data-ui-home=true] #hero-slide-indicators .hero-slide-dot:after{left:6px;right:auto;top:11px;width:8px;height:8px;border-radius:50%;background:#f5f8ff;box-shadow:none;opacity:.4}
+body[data-ui-mode=modern][data-ui-home=true] #hero-slide-indicators .hero-slide-dot[aria-current=true]:after{opacity:1;background:#fff;box-shadow:none}
+body[data-ui-mode=modern][data-ui-home=true] .hero-slide-arrow{width:34px;height:34px;min-width:34px;padding:0;border:1px solid rgba(240,245,255,.38);border-radius:50%;background:transparent;color:#fff;font:32px/26px Arial;box-shadow:none}
+body[data-ui-mode=modern][data-ui-home=true] .hero-slide-arrow:focus{outline:2px solid var(--ui-focus-ring,#c4dfff);outline-offset:3px}
+
+/* Compact optional rows fit between Continue Watching and the dock. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps#home-recent-apps{height:calc(102px * var(--home-extra-scale,1))!important;left:182px;right:42px}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps#home-recent-apps h2{font-size:calc(20px * var(--home-extra-scale,1))!important;line-height:calc(26px * var(--home-extra-scale,1))!important;margin:0!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps#home-recent-apps .recent-apps-rail{padding:calc(5px * var(--home-extra-scale,1)) 5px!important;margin:0!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps#home-recent-apps .recent-app-card{flex:0 0 220px!important;min-width:220px!important;max-width:220px!important;height:calc(66px * var(--home-extra-scale,1))!important;padding:calc(9px * var(--home-extra-scale,1)) 12px!important;margin-right:12px!important;border-radius:14px!important;box-sizing:border-box;gap:10px}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-recent-apps#home-recent-apps .recent-app-card .app-icon{width:calc(42px * var(--home-extra-scale,1))!important;height:calc(42px * var(--home-extra-scale,1))!important;min-width:calc(42px * var(--home-extra-scale,1))!important;border-radius:11px!important}
+#home-recent-apps .recent-app-copy strong{font-size:calc(18px * var(--home-extra-scale,1))!important;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Approved square HDMI cards: fit as one row between the CTA and dock. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row{height:calc(156px * var(--home-extra-scale,1))!important;left:182px;right:42px}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row #home-hdmi-shortcuts{height:100%!important;min-height:0!important;padding:4px!important;gap:14px!important;align-items:stretch}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row .home-hdmi-shortcut,html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row #home-last-hdmi{height:calc(148px * var(--home-extra-scale,1))!important;min-height:0!important;flex:0 0 calc(148px * var(--home-extra-scale,1))!important;min-width:calc(148px * var(--home-extra-scale,1))!important;width:calc(148px * var(--home-extra-scale,1))!important;max-width:calc(148px * var(--home-extra-scale,1))!important;padding:calc(16px * var(--home-extra-scale,1)) 10px!important;gap:calc(10px * var(--home-extra-scale,1))!important;border-radius:20px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;text-align:center!important;box-sizing:border-box}
+html body #view-home #home-input-row#home-input-row .home-input-icon{flex:0 0 calc(44px * var(--home-extra-scale,1));width:calc(44px * var(--home-extra-scale,1));height:calc(44px * var(--home-extra-scale,1));border-radius:12px}
+html body #view-home #home-input-row#home-input-row .home-input-icon svg{width:28px;height:28px}
+html body #view-home #home-input-row#home-input-row .home-input-copy{gap:3px;align-items:center}
+html body #view-home #home-input-row#home-input-row .home-input-copy strong,html body #view-home #home-input-row#home-input-row #home-last-hdmi strong{font-size:calc(18px * var(--home-extra-scale,1))!important;line-height:1.2}
+html body #view-home #home-input-row#home-input-row .home-input-copy small,html body #view-home #home-input-row#home-input-row #home-last-hdmi small{font-size:calc(12px * var(--home-extra-scale,1))!important;line-height:1.25}
+html body #view-home #home-input-row#home-input-row #home-last-hdmi>svg{width:30px;height:30px;flex:0 0 30px}
+html body #view-home #home-input-row#home-input-row #home-last-hdmi>span{display:flex;flex-direction:column;gap:7px}
+html body #view-home #home-input-row#home-input-row #home-last-hdmi{margin-left:16px!important}
+/* Compact horizontal input cards, centred above the dock. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row{height:calc(112px * var(--home-extra-scale,1))!important}
+html body #view-home #home-input-row#home-input-row #home-hdmi-shortcuts{justify-content:center!important}
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row .home-hdmi-shortcut,html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-input-row#home-input-row #home-last-hdmi{height:calc(100px * var(--home-extra-scale,1))!important;width:calc(220px * var(--home-extra-scale,1))!important;min-width:calc(220px * var(--home-extra-scale,1))!important;max-width:calc(220px * var(--home-extra-scale,1))!important;flex-basis:calc(220px * var(--home-extra-scale,1))!important;flex-direction:row!important;justify-content:flex-start!important;text-align:start!important;padding:12px 16px!important}
+html body #view-home #home-input-row#home-input-row .home-input-copy{align-items:flex-start!important}
+html body #view-home #home-input-row#home-input-row #home-last-hdmi>span{align-items:flex-start;text-align:start}
+
+/* Bridge belongs to the same glass action family, with its own violet glyph. */
+body[data-ui-mode=modern][data-theme] .ui-owned-app[data-owned-app="local.tvmorph.tv.bridge"],body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app="local.tvmorph.tv.bridge"]{background-color:var(--ui-bg-raised)!important;background-image:radial-gradient(ellipse at 65% 110%,var(--ui-focus-surface-b),transparent 60%),linear-gradient(145deg,var(--ui-icon-sheen),transparent 48%,var(--ui-icon-shade))!important;border-color:var(--ui-card-border)!important;border-radius:46% 48% 30% 42%;padding:20px;color:#c4a0ff!important;}
+
+/* Preview refinement of Morph's own dock actions; installed app artwork is untouched. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-dock-icon,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .plus-icon,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #add-folder .folder-glyph{box-sizing:border-box!important;border-radius:25%!important;padding:18px!important;background:linear-gradient(145deg,rgba(255,255,255,.12),transparent 48%),linear-gradient(160deg,var(--ui-bg-raised),var(--ui-bg))!important;border:1px solid var(--ui-card-border)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),inset 0 -1px 0 rgba(0,0,0,.18)!important;}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app svg,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-dock-icon svg{width:100%!important;height:100%!important;stroke-width:1.5;}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus .ui-owned-app,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus .ui-dock-icon{border-color:currentColor!important;box-shadow:inset 0 0 0 1px currentColor!important;}
+
+/* Saturated icon material, with a single symbol and no dock-wide backdrop. */
+body #favourites #dock-hdmi .ui-dock-icon{--dock-ink:#ffd268;--dock-wash:rgba(255,180,40,.65);}
+body #favourites [data-owned-app="local.tvmorph.tv.play"]{--dock-ink:#a7c5ff;--dock-wash:rgba(65,116,255,.65);}
+body #favourites [data-owned-app="local.tvmorph.tv.radio"]{--dock-ink:#3cf1d0;--dock-wash:rgba(0,211,189,.65);}
+body #favourites [data-owned-app="local.tvmorph.tv.media"]{--dock-ink:#24d5ff;--dock-wash:rgba(0,145,242,.65);}
+body #favourites [data-owned-app="local.tvmorph.tv.bridge"]{--dock-ink:#c99aff;--dock-wash:rgba(129,59,255,.65);}
+body #favourites .plus-icon{--dock-ink:#f5f8ff;--dock-wash:rgba(52,126,255,.5);}
+body #favourites #add-folder .folder-glyph{--dock-ink:#8bd7ff;--dock-wash:rgba(27,156,255,.6);}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .ui-owned-app[data-owned-app],
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #dock-hdmi .ui-dock-icon,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock .plus-icon,
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock #add-folder .folder-glyph{color:var(--dock-ink,var(--ui-accent))!important;background:radial-gradient(ellipse at 110% 110%,var(--dock-wash,transparent),transparent 65%),linear-gradient(145deg,rgba(116,156,224,.4),rgba(9,22,47,.75) 65%)!important;border-color:rgba(160,195,245,.35)!important;box-shadow:inset 0 1px 0 rgba(220,235,255,.22),inset 0 -1px 0 var(--dock-wash,transparent)!important;}
+/* Continue watching shares the theme's accessible primary gradient. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-continue{background:var(--ui-button-gradient)!important;background-image:var(--ui-button-gradient)!important;color:var(--ui-button-text,#fff)!important;border:1px solid var(--ui-card-border)!important;}
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-continue:focus{border-color:var(--ui-focus-ring)!important;outline:2px solid var(--ui-focus-ring)!important;outline-offset:3px!important;}
+
+/* The hero action is luminous in the selected theme, with no animation. */
+body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #home-continue{background:var(--ui-hero-button-gradient,var(--ui-button-gradient))!important;background-image:var(--ui-hero-button-gradient,var(--ui-button-gradient))!important;border:1px solid var(--ui-accent)!important;border-radius:40px!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.48),0 0 16px var(--ui-hero-button-glow)!important;color:var(--ui-button-text,#fff)!important;}
+
+/* Launcher shortcuts share the navigation capsule's translucent material. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home .home-tools{background:var(--ui-card-bg)!important;border:1px solid var(--ui-card-border)!important;border-radius:36px!important;box-shadow:inset 0 1px 0 var(--ui-card-border)!important;box-sizing:border-box!important;}

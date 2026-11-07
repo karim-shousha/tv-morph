@@ -1,0 +1,4 @@
+/* Keep transient profile dialogs compact without changing other settings panels. */
+(function(){var modal=document.getElementById('modal');if(!modal)return;function fit(){modal.classList.toggle('profiles-modal',!!modal.querySelector('#viewer-name'));}fit();new MutationObserver(fit).observe(document.getElementById('modal-content')||modal,{childList:true,subtree:true});})();
+
+(function(){function label(){var button=document.getElementById('nav-home');if(!button)return;button.setAttribute('data-no-translate','');button.setAttribute('aria-label',window.MorphLocale?MorphLocale.t('الرئيسية','Home'):'Home');button.innerHTML='<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 10 9-7 9 7v10H15v-7H9v7H3Z"/></svg>';}window.addEventListener('load',label);window.addEventListener('morphLanguage',label);})();

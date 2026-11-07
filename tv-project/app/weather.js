@@ -1,4 +1,4 @@
-(function(C){
+(function(w){function attach(C){if(!C)return;
  'use strict';
  var generation=0,active=[],timer=null;
  function emit(){if(C.weatherChanged){C.weatherChanged(C.Weather.state);}}
@@ -47,8 +47,8 @@
   if(C.settings.locationMode==='manual'&&validLocation(C.settings.manualLocation)){forecast(C.settings.manualLocation,seq,force);return;}
   auto(seq,!!relocate,!!force);
  },search:function(term,callback){
-  term=term.trim();if(term.length<2){callback(new Error('Enter at least two characters.'));return;}
-  return C.request(C.config.geocodingURL+'?name='+encodeURIComponent(term)+'&count=6&language=en&format=json',function(error,data){
+  term=String(term||'').replace(/[\u200e\u200f\u202a-\u202e\u2066-\u2069]/g,'').trim();if(term.length<2){callback(new Error('Enter at least two characters.'));return;}
+  return C.request(C.config.geocodingURL+'?name='+encodeURIComponent(term)+'&count=20&language='+encodeURIComponent(window.MorphLocale?MorphLocale.get():'en')+'&format=json',function(error,data){
    if(error){callback(error);return;}
    var results=data&&Array.isArray(data.results)?data.results:[];
    callback(null,results.map(function(r){return {name:r.name,country:r.country||'',region:r.admin1||'',latitude:r.latitude,longitude:r.longitude,timezone:r.timezone||'',approximate:false};}).filter(validLocation));
@@ -64,4 +64,6 @@
  }};
  document.addEventListener('visibilitychange',function(){if(document.hidden){clearTimeout(timer);}else{C.Weather.load(false);}});
  window.addEventListener('online',function(){C.Weather.load(true);});
-})(window.ClearTV);
+}
+w.MorphWeatherEngine=attach;attach(w.ClearTV);
+})(window);

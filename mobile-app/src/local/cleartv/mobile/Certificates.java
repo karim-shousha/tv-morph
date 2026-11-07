@@ -32,9 +32,9 @@ final class Certificates {
         }
     }
     static void respond(Socket s,String status,String body)throws IOException{byte[] b=body.getBytes(StandardCharsets.UTF_8);s.getOutputStream().write(("HTTP/1.1 "+status+"\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: "+b.length+"\r\nConnection: close\r\n\r\n").getBytes(StandardCharsets.US_ASCII));s.getOutputStream().write(b);s.getOutputStream().flush();}
-    private String post(String endpoint,JSONObject auth,String csr,boolean distributor,boolean vd)throws Exception{
+    private String post(String endpoint,JSONObject auth,String csr,boolean distributor,boolean vd,String level)throws Exception{
         String boundary="ClearTV"+UUID.randomUUID().toString().replace("-","");ByteArrayOutputStream body=new ByteArrayOutputStream();
-        Map<String,String> fields=new LinkedHashMap<>();fields.put("access_token",auth.getString("access_token"));fields.put("user_id",auth.getString("userId"));if(vd)fields.put("platform","VD");if(distributor){fields.put("privilege_level","Public");fields.put("developer_type","Individual");}
+        Map<String,String> fields=new LinkedHashMap<>();fields.put("access_token",auth.getString("access_token"));fields.put("user_id",auth.getString("userId"));if(vd)fields.put("platform","VD");if(distributor){fields.put("privilege_level",level);fields.put("developer_type","Individual");}
         for(Map.Entry<String,String> e:fields.entrySet())body.write(("--"+boundary+"\r\nContent-Disposition: form-data; name=\""+e.getKey()+"\"\r\n\r\n"+e.getValue()+"\r\n").getBytes(StandardCharsets.UTF_8));
         body.write(("--"+boundary+"\r\nContent-Disposition: form-data; name=\"csr\"; filename=\"request.csr\"\r\nContent-Type: application/octet-stream\r\n\r\n"+csr+"\r\n--"+boundary+"--\r\n").getBytes(StandardCharsets.UTF_8));
         HttpURLConnection c=(HttpURLConnection)new URL(CA+endpoint).openConnection();c.setConnectTimeout(15000);c.setReadTimeout(45000);c.setInstanceFollowRedirects(false);c.setRequestMethod("POST");c.setDoOutput(true);c.setRequestProperty("Content-Type","multipart/form-data; boundary="+boundary);c.setFixedLengthStreamingMode(body.size());
@@ -42,13 +42,17 @@ final class Certificates {
     }
     static X509Certificate certificate(byte[] data)throws Exception{return (X509Certificate)CertificateFactory.getInstance("X.509").generateCertificate(new ByteArrayInputStream(data));}
     List<X509Certificate> chain(byte[] leaf,String ca)throws Exception{return Arrays.asList(certificate(leaf),certificate(Network.read(activity.getAssets().open(ca),100000)));}
-    Bundle get(String duid)throws Exception{
+    Bundle get(String duid)throws Exception{return get(duid,"public");}
+    Bundle get(String duid,String level)throws Exception{
+        if(!Arrays.asList("public","partner").contains(level))throw new IOException("Unsupported certificate level");
+        String distCA=level.equals("partner")?"ca-distributor-partner.crt":"ca-distributor.crt";
+        String distKey="distributor-"+level+"-"+WidgetSigner.hash(duid.getBytes(StandardCharsets.UTF_8)).replaceAll("[^A-Za-z0-9]", "").substring(0,24)+".bin";
         Bundle b=new Bundle();byte[] key=vault.get("author-key.bin");KeyPair pair;if(key==null){pair=WidgetSigner.newKey();vault.put("author-key.bin",pair.getPrivate().getEncoded());}else{PrivateKey k=KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(key));RSAPrivateCrtKey r=(RSAPrivateCrtKey)k;pair=new KeyPair(KeyFactory.getInstance("RSA").generatePublic(new RSAPublicKeySpec(r.getModulus(),r.getPublicExponent())),k);}b.key=pair.getPrivate();
-        byte[] author=vault.get("author-cert.bin"),dist=vault.get("distributor-cert.bin");boolean authorOK=valid(author),distOK=valid(dist);if(distOK){String san=String.valueOf(certificate(dist).getSubjectAlternativeNames());distOK=san.contains("URN:tizen:deviceid="+duid);}
+        byte[] author=vault.get("author-cert.bin"),dist=vault.get(distKey);if(dist==null&&level.equals("public"))dist=vault.get("distributor-cert.bin");boolean authorOK=valid(author),distOK=valid(dist);if(distOK){String san=String.valueOf(certificate(dist).getSubjectAlternativeNames());distOK=san.contains("URN:tizen:deviceid="+duid);if(distOK)try{certificate(dist).verify(certificate(Network.read(activity.getAssets().open(distCA),100000)).getPublicKey());}catch(Exception invalid){distOK=false;}}
         JSONObject auth=null;if(!authorOK||!distOK)auth=login();
-        if(!authorOK){status.update("جاري إصدار شهادة مالك التطبيق من سامسونج…");author=post("/apis/v3/authors",auth,WidgetSigner.csr(pair,"Morph TV Mobile",null),false,true).getBytes(StandardCharsets.US_ASCII);certificate(author).verify(certificate(Network.read(activity.getAssets().open("ca-author.cer"),100000)).getPublicKey());vault.put("author-cert.bin",author);}
-        if(!distOK){status.update("جاري ربط شهادة التثبيت بالتلفزيون…");String csr=WidgetSigner.csr(pair,"TizenSDK",duid);post("/apis/v1/distributors",auth,csr,true,true);dist=post("/apis/v3/distributors",auth,csr,true,false).getBytes(StandardCharsets.US_ASCII);X509Certificate leaf=certificate(dist);leaf.verify(certificate(Network.read(activity.getAssets().open("ca-distributor.crt"),100000)).getPublicKey());if(!String.valueOf(leaf.getSubjectAlternativeNames()).contains("URN:tizen:deviceid="+duid))throw new IOException("The certificate is not registered for this TV");vault.put("distributor-cert.bin",dist);}
-        b.author=chain(author,"ca-author.cer");b.distributor=chain(dist,"ca-distributor.crt");return b;
+        if(!authorOK){status.update("جاري إصدار شهادة مالك التطبيق من سامسونج…");author=post("/apis/v3/authors",auth,WidgetSigner.csr(pair,"Morph TV Mobile",null),false,true,level).getBytes(StandardCharsets.US_ASCII);certificate(author).verify(certificate(Network.read(activity.getAssets().open("ca-author.cer"),100000)).getPublicKey());vault.put("author-cert.bin",author);}
+        if(!distOK){status.update("جاري ربط شهادة التثبيت بالتلفزيون…");String csr=WidgetSigner.csr(pair,"TizenSDK",duid);post("/apis/v1/distributors",auth,csr,true,true,level);dist=post("/apis/v3/distributors",auth,csr,true,true,level).getBytes(StandardCharsets.US_ASCII);X509Certificate leaf=certificate(dist);leaf.verify(certificate(Network.read(activity.getAssets().open(distCA),100000)).getPublicKey());if(!String.valueOf(leaf.getSubjectAlternativeNames()).contains("URN:tizen:deviceid="+duid))throw new IOException("The certificate is not registered for this TV");vault.put(distKey,dist);}
+        b.author=chain(author,"ca-author.cer");b.distributor=chain(dist,distCA);return b;
     }
     boolean valid(byte[] data){try{if(data==null)return false;certificate(data).checkValidity(new Date(System.currentTimeMillis()+24*60*60*1000));return true;}catch(Exception e){return false;}}
 }

@@ -1,0 +1,43 @@
+{
+  "version": "0.8.6",
+  "physicalTV": "connected Samsung Tizen",
+  "installedAndLaunched": true,
+  "runtimeTitle": "TV Morph",
+  "appCards": 14,
+  "homeFeed": true,
+  "fixedHomeTools": true,
+  "languageSwitch": true,
+  "nativePhoneThemeChanges": [
+    {
+      "theme": "madrid",
+      "ms": 100
+    },
+    {
+      "theme": "barcelona",
+      "ms": 77
+    },
+    {
+      "theme": "zamalek",
+      "ms": 332
+    },
+    {
+      "theme": "blue",
+      "ms": 355
+    },
+    {
+      "theme": "madrid",
+      "ms": 239
+    }
+  ],
+  "allChangesApplied": true,
+  "screenCaptureUnavailable": true,
+  "samsungIptvRadioImplemented": false,
+  "finalPhonePackage": "0.8.6-tester",
+  "androidReceiverUnchanged": "0.8.4",
+  "checks": [
+    "installed signed Samsung widget from phone",
+    "verified runtime version and modern home DOM after installation",
+    "five sequential native phone apply requests completed",
+    "verified public APK contains modern Samsung files"
+  ]
+}

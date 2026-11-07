@@ -1,7 +1,29 @@
 body[data-ui-mode=modern][data-ui-home=true] #view-home button,body[data-ui-mode=modern][data-ui-home=true] main>header button{transition:transform var(--ui-focus-duration) var(--ui-ease),box-shadow var(--ui-focus-duration) var(--ui-ease),background-color var(--ui-focus-duration) ease}
 body[data-ui-mode=modern][data-ui-home=true] #cinema-background .slide-layer{transition:opacity var(--ui-theme-duration) ease!important}
-body[data-ui-mode=modern][data-ui-home=true].light-mode #view-home *,body[data-ui-mode=modern][data-ui-home=true].reduce-motion #view-home *,body[data-ui-mode=modern][data-ui-effects=light] #view-home *,body[data-ui-mode=modern][data-ui-effects=light] main>header *{transition:none!important;animation:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body[data-ui-mode=modern][data-ui-home=true].reduce-motion #view-home *,body[data-ui-mode=modern][data-ui-home=true].reduce-motion main>header *{transition:none!important;animation:none!important}
 @media(prefers-reduced-motion:reduce){body[data-ui-mode=modern][data-ui-home=true] #view-home *,body[data-ui-mode=modern][data-ui-home=true] main>header *{transition:none!important;animation:none!important}}
 
 @keyframes morph-focus-gleam{from{opacity:0;transform:translateX(-14px)}45%{opacity:.85}to{opacity:1;transform:translateX(0)}}
 body[data-ui-mode=modern][data-ui-home=true] #favourites .app:focus:before{animation:morph-focus-gleam 180ms ease-out both}
+
+/* Independent switches win over decorative theme rules. Focus always retains a clear outline. */
+html body.effect-blur-off *,html body.effect-blur-off *:before,html body.effect-blur-off *:after{backdrop-filter:none;-webkit-backdrop-filter:none}
+html body.effect-glow-off *,html body.effect-glow-off *:before,html body.effect-glow-off *:after{box-shadow:none!important;text-shadow:none!important;filter:none!important}
+html body.effect-glow-off #view-home #favourites.app-dock>button:focus:before{display:none!important}
+html body.effect-motion-off *,html body.effect-motion-off *:before,html body.effect-motion-off *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html body.effect-motion-off #view-home #favourites.app-dock>button,html body.effect-motion-off #view-home #favourites.app-dock>button:focus,html body.effect-motion-off #view-home #favourites.app-dock>button:hover{transform:none!important}
+
+html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus{outline:3px solid var(--ui-focus-ring,#8edbff)!important;outline-offset:4px!important;background:var(--ui-card-bg,#153148)!important}
+html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button .app-icon,html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button .app-icon:before,html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button .app-icon:after{box-shadow:none!important;filter:none!important}
+
+html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before,html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{display:none!important}
+
+/* Keep the asymmetric dock selection in Light without blur or glow. */
+html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus{outline:none!important;background:transparent!important}
+html body.dock-home.effect-glow-off[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before{display:block!important;box-shadow:none!important;filter:none!important}
+
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:before{background:radial-gradient(ellipse at 95% 95%,var(--ui-neon-a),transparent 65%) padding-box,repeating-radial-gradient(ellipse at 120% -20%,transparent 0,transparent 13px,var(--ui-focus-surface-a) 14px,transparent 16px) padding-box,linear-gradient(var(--ui-bg-raised),var(--ui-bg-raised)) padding-box,linear-gradient(130deg,var(--ui-neon-a),var(--ui-text),var(--ui-neon-b) 58%,var(--ui-neon-a)) border-box!important}
+body[data-ui-mode=modern][data-ui-home=true][data-theme] #view-home #favourites.app-dock>button:focus:after{display:none!important}
+
+/* Page navigation is instantaneous on every performance preset. */
+#view-home,#view-apps,#view-settings,#view-inputs,#view-fitness,#prayer-screen,#prayer-settings-overlay,#prayer-settings-dialog,#morph-bridge-receiver,#morph-media-frame{animation:none!important;transition:none!important}

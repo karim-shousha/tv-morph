@@ -1,0 +1,20 @@
+{
+  "Clear TV": {
+    "name": "Clear TV",
+    "running": false,
+    "version": "0.1.1",
+    "visible": false
+  },
+  "YouTube": {
+    "name": "YouTube",
+    "running": true,
+    "version": "2.1.493",
+    "visible": false
+  },
+  "IPTV Smarters Pro": {
+    "name": "IPTV Smarters Pro",
+    "running": false,
+    "version": "1.0.4",
+    "visible": false
+  }
+}

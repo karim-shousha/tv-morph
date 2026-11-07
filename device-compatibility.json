@@ -1,0 +1,68 @@
+{
+  "checked": "2026-10-22",
+  "families": [
+    {
+      "id": "android",
+      "family": "Android TV / Google TV",
+      "vendors": [
+        "Hisense",
+        "Sony",
+        "TCL",
+        "Philips",
+        "Xiaomi",
+        "other Android TV manufacturers"
+      ],
+      "minimumAndroid": 8,
+      "discovery": [
+        "TV Morph receiver",
+        "Android TV mDNS",
+        "SSDP evidence"
+      ],
+      "install": "APK first install with TV confirmation; paired receiver updates",
+      "tested": "One Hisense Android 12 reported by user; browser/native fixtures",
+      "package": "TV-Morph-Android-TV-0.8.2.apk"
+    },
+    {
+      "id": "samsung",
+      "family": "Samsung Tizen",
+      "vendors": [
+        "Samsung"
+      ],
+      "discovery": [
+        "Samsung API v2",
+        "SSDP"
+      ],
+      "install": "Experimental per-device signed WGT through Developer Mode",
+      "tested": "Existing Samsung workflow; broad model certification pending",
+      "package": null
+    },
+    {
+      "id": "lg",
+      "family": "LG webOS",
+      "vendors": [
+        "LG"
+      ],
+      "discovery": [
+        "SSDP renderer descriptors"
+      ],
+      "install": "Not implemented; webOS receiver and developer/store deployment required",
+      "tested": "Descriptor fixtures only",
+      "package": null
+    },
+    {
+      "id": "vidaa",
+      "family": "VIDAA",
+      "vendors": [
+        "Hisense",
+        "Toshiba and other VIDAA licensees"
+      ],
+      "discovery": [
+        "Explicit VIDAA evidence in SSDP descriptors"
+      ],
+      "install": "VIDAA 0.1 hosted web build; developer-page installation requires supported firmware. Physical TV test and production distribution pending; no phone pairing.",
+      "tested": "Descriptor fixtures only",
+      "package": null
+    }
+  ],
+  "identityPolicy": "Use explicit network evidence, not manufacturer alone. No guessed OS versions or control/installation claims based on discovery."
+}

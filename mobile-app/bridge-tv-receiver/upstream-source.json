@@ -1,0 +1,6 @@
+{
+  "source": "E:/AppBridgeTV/android-host/tv-receiver/src/main",
+  "frontend": "tv-project/app/bridge-receiver",
+  "platformWrapperOnly": true,
+  "originalSourceModified": false
+}

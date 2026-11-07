@@ -1,0 +1,41 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "C:/Users/Admin/AppData/Local/Temp/codex-clipboard-2b5ae866-2dd1-4090-8a62-503e7db298f7.png",
+  "assets": [
+    {
+      "name": "iptv",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-f4767b29-ef19-4a0c-9d24-a8ef207f3b69.png",
+      "prompt": "Use case: stylized-concept. Asset type: exact-reference launcher card illustration, one individual card artwork. Input image is the user's authoritative visual reference, a strip of five cards. Reconstruct ONLY the illustration within the FIRST card: the small thin television monitor angled in perspective, dark blue screen with a small pale cyan-white play triangle, slim silver bezel and warm gold stand, blue light ribbon sweeping upward at left and a warm gold ribbon along lower right. Match the provided card's object geometry, object size, placement, perspective, subtle materials, lighting and palette as closely as possible. Do not invent an alternative design. Canvas aspect ratio 7:5 landscape. Full bleed deep navy gradient backdrop, subtle soft light at top left. The object and ribbons must occupy the UPPER 68 percent, matching the reference; bottom 32 percent is calm dark navy negative space for live application captions. No words, no letters, no UI, no card outline, no border, no outer frame, no carousel controls, no watermark. Match the restrained reference, not oversized objects, not heavily saturated neon, not photorealistic oversized TV.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\iptv-v2.webp",
+      "master_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\output\\gold-reference-assets\\masters-v2\\iptv.png"
+    },
+    {
+      "name": "media",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-460fabb5-3bde-4753-849a-0049074b75a6.png",
+      "prompt": "Use case: stylized-concept. Asset type: exact-reference launcher card illustration, one individual card artwork. Input image is the user's authoritative visual reference, a strip of five cards. Reconstruct ONLY the illustration within the SECOND card: the small cinema clapperboard tilted slightly, muted warm gold metallic and charcoal striped raised clapper, dark face with a small warm pale play triangle, a thin gold-orange light ribbon passing behind the object from left to lower right. Match the provided card's object geometry, object size, placement, perspective, subtle materials, lighting and palette as closely as possible. Do not invent an alternative design. Canvas aspect ratio 7:5 landscape. Full bleed deep navy gradient backdrop, subtle soft light at top left. The object and ribbons must occupy the UPPER 68 percent, matching the reference; bottom 32 percent is calm dark navy negative space for live application captions. No words, no letters, no UI, no card outline, no border, no outer frame, no carousel controls, no watermark. Match the restrained reference, not oversized objects, not heavily saturated neon, not photorealistic oversized TV.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\media-v2.webp",
+      "master_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\output\\gold-reference-assets\\masters-v2\\media.png"
+    },
+    {
+      "name": "bridge",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-d5fdba09-1de2-4b04-97ef-930030fc684d.png",
+      "prompt": "Use case: stylized-concept. Asset type: exact-reference launcher card illustration, one individual card artwork. Input image is the user's authoritative visual reference, a strip of five cards. Reconstruct ONLY the illustration within the THIRD card: precisely four small glossy rounded square tiles in a 2 by 2 formation floating in perspective, upper-left magenta, upper-right cyan-blue, lower-left violet, lower-right indigo, thin magenta and cyan light ribbons sweeping behind them. Match the provided card's object geometry, object size, placement, perspective, subtle materials, lighting and palette as closely as possible. Do not invent an alternative design. Canvas aspect ratio 7:5 landscape. Full bleed deep navy gradient backdrop, subtle soft light at top left. The object and ribbons must occupy the UPPER 68 percent, matching the reference; bottom 32 percent is calm dark navy negative space for live application captions. No words, no letters, no UI, no card outline, no border, no outer frame, no carousel controls, no watermark. Match the restrained reference, not oversized objects, not heavily saturated neon, not photorealistic oversized TV.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\bridge-v2.webp",
+      "master_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\output\\gold-reference-assets\\masters-v2\\bridge.png"
+    },
+    {
+      "name": "radio",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-6342b4c6-7a2c-4f9a-8df1-57dc83f73598.png",
+      "prompt": "Use case: stylized-concept. Asset type: exact-reference launcher card illustration, one individual card artwork. Input image is the user's authoritative visual reference, a strip of five cards. Reconstruct ONLY the illustration within the FOURTH card: a thin circular gold-to-violet ring enclosing a delicate magenta and purple vertical audio equalizer waveform, small glowing bars, thin blue-violet light ribbon passing behind and below the circle. Match the provided card's object geometry, object size, placement, perspective, subtle materials, lighting and palette as closely as possible. Do not invent an alternative design. Canvas aspect ratio 7:5 landscape. Full bleed deep navy gradient backdrop, subtle soft light at top left. The object and ribbons must occupy the UPPER 68 percent, matching the reference; bottom 32 percent is calm dark navy negative space for live application captions. No words, no letters, no UI, no card outline, no border, no outer frame, no carousel controls, no watermark. Match the restrained reference, not oversized objects, not heavily saturated neon, not photorealistic oversized TV.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\radio-v2.webp",
+      "master_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\output\\gold-reference-assets\\masters-v2\\radio.png"
+    },
+    {
+      "name": "themes",
+      "path": "C:\\Users\\Admin\\.codex\\generated_images\\01a1a760-fdbb-7151-8951-a2f6c1438b33\\exec-1a1beca5-eaa3-4102-9cfb-cc73064874bb.png",
+      "prompt": "Use case: stylized-concept. Asset type: exact-reference launcher card illustration, one individual card artwork. Input image is the user's authoritative visual reference, a strip of five cards. Reconstruct ONLY the illustration within the FIFTH card: three thin overlapping display/art panels angled in perspective, primary front panel with magenta and violet-blue aurora landscape, two panels behind to the right in cool blue and teal, faint warm gold glint at bottom right and a thin blue-violet ribbon. Match the provided card's object geometry, object size, placement, perspective, subtle materials, lighting and palette as closely as possible. Do not invent an alternative design. Canvas aspect ratio 7:5 landscape. Full bleed deep navy gradient backdrop, subtle soft light at top left. The object and ribbons must occupy the UPPER 68 percent, matching the reference; bottom 32 percent is calm dark navy negative space for live application captions. No words, no letters, no UI, no card outline, no border, no outer frame, no carousel controls, no watermark. Match the restrained reference, not oversized objects, not heavily saturated neon, not photorealistic oversized TV.",
+      "runtime_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\pc-app\\reference-preview\\assets\\themes-v2.webp",
+      "master_path": "C:\\Users\\Admin\\Documents\\Codex\\2026-10-22\\ui-ux\\output\\gold-reference-assets\\masters-v2\\themes.png"
+    }
+  ]
+}

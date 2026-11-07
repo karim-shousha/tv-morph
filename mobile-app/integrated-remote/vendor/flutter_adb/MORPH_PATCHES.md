@@ -1,0 +1,1 @@
+Based on flutter_adb 1.0.0 (BSD license retained). Local change: serialize shell writes and wake on ADB OKAY instead of polling at 100 ms. Closing a stream releases pending writers. No protocol or authorization changes.

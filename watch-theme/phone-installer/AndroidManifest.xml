@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.taskforce141.installer" android:versionCode="2" android:versionName="0.2-gold-test">
+ <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30"/>
+ <uses-permission android:name="com.samsung.wmanager.APP"/>
+ <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Integrated"/>
+ <queries><package android:name="com.samsung.android.app.watchmanager"/></queries>
+ <application android:label="141 Watch Installer (Test)" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:supportsRtl="true">
+  <meta-data android:name="gear_app_packagename" android:value="Tf141Tools"/>
+  <meta-data android:name="GearAppType" android:value="wgt"/>
+  <activity android:name=".MainActivity" android:exported="true">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+  </activity>
+ </application>
+</manifest>

@@ -1,0 +1,14 @@
+(function(){'use strict';if(!document.body.id)document.body.id='reference-controls';
+// Clear legacy visual trackers when focus leaves their group. CSS :focus owns selection.
+document.addEventListener('focusin',function(){document.querySelectorAll('.reference-nav-current,.reference-side-current').forEach(function(n){n.classList.remove('reference-nav-current','reference-side-current');});},true);
+})();
+(function(w){'use strict';w.addEventListener('load',function(){if(!w.ClearTV||!document.getElementById('view-settings')||!w.TVNative||!TVNative.startupOptionsJson)return;var opened=null,C=w.ClearTV;
+function t(ar,en){return w.MorphLocale?MorphLocale.t(ar,en):en;}function state(){try{return JSON.parse(TVNative.startupOptionsJson());}catch(e){return {};}}
+var groups={"setting-startup":[['home','اختيار واجهة التلفزيون','Choose Home app'],['override','تجاوز الواجهة الأصلية','Override current launcher','override'],['accessibility','إذن تسهيلات الاستخدام','Accessibility permission','accessibility'],['tools','أدوات إعدادات أندرويد','Android settings tools']],"setting-boot":[['boot','التشغيل عند بدء التلفزيون','Launch when TV starts','boot'],['background','إذن الفتح من الخلفية','Background launch permission','background'],['help','طريقة التشغيل','How it works']],"setting-quick-return":[['quick','الرجوع السريع إلى اللانشر','Quick return to launcher','quick']]};
+function close(){if(!opened)return;opened.panel.hidden=true;opened.anchor.setAttribute('aria-expanded','false');opened=null;C.Focus.invalidate();}
+Object.keys(groups).forEach(function(id){var anchor=document.getElementById(id);if(!anchor)return;var panel=document.createElement('div');panel.className='reference-startup-options';panel.hidden=true;anchor.after(panel);anchor.setAttribute('aria-expanded','false');
+function refresh(){var settings=state();groups[id].forEach(function(row,i){var button=panel.children[i];if(!button){button=document.createElement('button');button.type='button';button.innerHTML='<span></span><strong></strong>';button.onclick=function(){TVNative.startupAction(row[0]);setTimeout(refresh,100);};panel.appendChild(button);}button.firstChild.textContent=t(row[1],row[2]);button.lastChild.textContent=row[3]?settings[row[3]]?t('مفعّل','On'):t('متوقف','Off'):'›';});}
+anchor.onclick=function(){if(opened&&opened.anchor===anchor){close();return;}close();refresh();panel.hidden=false;anchor.setAttribute('aria-expanded','true');opened={anchor:anchor,panel:panel};C.Focus.invalidate();};w.addEventListener('morphLanguage',refresh);w.addEventListener('morphStorageChanged',function(){if(!panel.hidden)refresh();});});
+var back=C.back;C.back=function(){if(opened&&!document.getElementById('view-settings').hidden&&opened.panel.getBoundingClientRect().height){var anchor=opened.anchor;close();C.Focus.focus(anchor);return;}return back.apply(this,arguments);};
+});})(window);
+

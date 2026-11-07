@@ -1,1 +1,0 @@
-window.TVArtCredits = "Argentina celebration: Sebas, CC BY 3.0. Source: https://commons.wikimedia.org/wiki/File:Argentina_3-3_Francia_-_Copa_Mundial_2022_-_Argentina_campe%C3%B3n_(cropped).jpg License: https://creativecommons.org/licenses/by/3.0/ Unmodified image, displayed with CSS fade.";

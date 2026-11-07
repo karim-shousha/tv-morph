@@ -1,0 +1,841 @@
+/* Approved slate/navy presentation. Layout and behavior are retained. */
+html{background:#19283f!important;color:#f5f8ff!important;font-size:16px!important;}body{background:#19283f!important;color:#f5f8ff!important;}
+.ambient{background:radial-gradient(ellipse at 10% 0,#19283f,transparent 48%)!important;}
+
+
+.logo{color:#f5f8ff!important;background:#273953a8!important;}
+
+
+
+
+h1>span{color:#b9cbe6!important;}
+
+.preview{background:linear-gradient(125deg,#19283f,#19283f)!important;color:#f5f8ff!important;}
+.preview-ridge{background:#19283f!important;}
+.preview-main>div>span,.preview-main #preview-weather{color:#b9cbe6!important;}
+
+#preview-slides i{background:#273953a8!important;border:1px solid #7287a566!important;}
+
+
+.theme-swatch:before{background:#19283f!important;}
+
+
+.panel{background:linear-gradient(135deg,#273953a8,#273953a8)!important;border:1px solid #7287a566!important;}
+
+
+
+
+
+
+.switch-row{border-top:1px solid #7287a566!important;}
+.primary{background:#273953a8!important;}
+
+
+
+
+
+
+
+.radar{border:1px solid #7287a566!important;color:#b9cbe6!important;}
+
+
+
+
+
+
+.setup li{color:#b9cbe6!important;}
+.setup b{color:#f5f8ff!important;}
+
+
+.app-row,.app-row button{border:1px solid #7287a566!important;}
+
+
+
+
+.operation-card{background:linear-gradient(135deg,#19283f,#19283f)!important;}
+
+.spinner{border:2px solid #7287a566!important;}
+
+.brand-logo{background:#273953a8!important;}
+.lg-setup p,.manual-type summary{color:#b9cbe6!important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.remote-pad button{border:1px solid #7287a566!important;background:#273953a8!important;}.remote-row button{border:1px solid #7287a566!important;}
+.remote-pad button:nth-child(3){background:#273953a8!important;color:#f5f8ff!important;}
+
+
+.remote-pad{background:radial-gradient(circle,#19283f,#19283f)!important;}
+#touchpad{background:radial-gradient(ellipse at center,#19283f,#19283f)!important;}
+
+
+
+.iptv-tabs button{background:#273953a8!important;border:1px solid #7287a566!important;}
+.iptv-tabs .selected{border-color:#7287a566!important;}
+.iptv-item{background:linear-gradient(135deg,#19283f,#19283f)!important;}
+
+.compatibility{border:1px solid #7287a566!important;}
+
+
+
+
+
+.install-card{background:linear-gradient(125deg,#34435e,#273953a8)!important;}
+.compatibility-list dt,.compatibility-list dd,.phone-pack-list article{border-bottom:1px solid #7287a566!important;}
+
+#theme-search{border:1px solid #7287a566!important;background:var(--panel,#19283f)!important;}
+html[data-app-appearance=dark] #theme-search{background:#273953a8!important;border-color:#7287a566!important;}
+
+html[data-app-appearance=dark] #theme-search{color:#f5f8ff!important;}
+html[data-app-appearance=dark] #theme-search::placeholder{color:#b9cbe6!important;}
+.ambient{background:radial-gradient(ellipse at 100% 0,#273953a8,transparent 35%)!important;}
+.brand{color:#f5f8ff!important;}
+.brand>div>span{color:#a9d9ff!important;}
+.brand small{color:#b9cbe6!important;}
+.device-chip{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+
+.device-chip.connected{background:#273953a8!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+.device-chip.connected i{background:#273a5b!important;}
+.language-row{color:#b9cbe6!important;}
+.language-row select{background:#273953a8!important;color:#f5f8ff!important;}
+.eyebrow{color:#a9d9ff!important;}
+h1,.section-title h2{color:#f5f8ff!important;}
+
+.section-title>span{color:#b9cbe6!important;}
+.panel{background:#273953a8!important;}
+
+.secondary{background:#273953a8!important;border:1px solid #7287a566!important;color:#a9d9ff!important;}
+.text-button{color:#a9d9ff!important;}
+
+.editor>label,.manual>label,.type-picker>label,.android-pair>label,.panel h2{color:#f5f8ff!important;}
+
+.switch-row{border-color:#7287a566!important;}
+input:not([type=checkbox]):not([type=color]):not([type=range]),textarea,select{background:#273953a8!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+input::placeholder,textarea::placeholder{color:#b9cbe6!important;}
+input:focus,textarea:focus,select:focus{border-color:#7287a566!important;}
+input[type=color]{border:3px solid #7287a566!important;}
+.custom-colors h3{color:#f5f8ff!important;}
+.custom-colors{background:#273953a8!important;}
+.badge{background:#273953a8!important;color:#a9d9ff!important;}
+.preview{border:5px solid #7287a566!important;}
+.preview-heading>span{color:#b9cbe6!important;}
+.theme{background:#273953a8!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+.theme-swatch{color:#f5f8ff!important;}
+.theme.selected{border-color:#7287a566!important;}
+.theme.selected:after{background:#2463eb!important;color:#f5f8ff!important;}
+
+
+
+
+
+
+
+.connection-card{border:0!important;background:transparent!important;padding:0!important;margin:0!important;box-shadow:none!important;}
+.connection-card .eyebrow{color:#a9d9ff!important;padding:0!important;margin:0!important;border:0!important;background:transparent!important;box-shadow:none!important;}
+
+.connection-state{background:#273953a8!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+.connection-state p{color:#b9cbe6!important;}
+.connection-state[data-status=connected],.connection-state[data-status=error],.connection-state[data-status=checking]{border-color:#7287a566!important;background:#273953a8!important;}
+
+
+.devices>button{background:#273953a8!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+
+.manual-type>#manual-type-toggle{background:#273953a8!important;border:1px solid #7287a566!important;color:#a9d9ff!important;}
+.install-card{background:linear-gradient(120deg,#273953a8,#273953a8)!important;border-color:#7287a566!important;}
+.install-card .eyebrow{color:#a9d9ff!important;}
+.install-card h2{color:#f5f8ff!important;}
+.install-card #smart-install{background:#273a5b!important;color:#f5f8ff!important;}
+.type-picker{background:#273953a8!important;}
+.guide h2{color:#f5f8ff!important;}
+.guide #guide-text{color:#b9cbe6!important;}
+.guide-note{border-color:#7287a566!important;}
+.guide-dots i{background:#273953a8!important;}
+.guide-dots .done{background:#34435e!important;}
+.compatibility,.troubleshoot summary,.compatibility summary{color:#b9cbe6!important;}
+
+.compatibility{background:#273953a8!important;border-color:#7287a566!important;}
+
+.phone-ip{background:#273953a8!important;border:1px solid #7287a566!important;color:#b9cbe6!important;}
+.phone-ip span,.phone-ip strong,#connected-device{color:#b9cbe6!important;}
+
+
+.empty-state{border:1px dashed #7287a566!important;background:#273953a8!important;color:#b9cbe6!important;}
+.empty-state>span{color:#b9cbe6!important;}
+.app-row{background:#273953a8!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+.app-row button{background:#273953a8!important;border-color:#7287a566!important;color:#a9d9ff!important;}
+.operation{background:#19283f!important;}
+.operation-card{background:#273953a8!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+.operation-card p{color:#b9cbe6!important;}
+.spinner{border-color:#7287a566!important;}
+#toast{background:#19283f!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+.remote-pad{background:radial-gradient(circle,#273953a8,#273953a8)!important;border:1px solid #7287a566!important;}
+.remote-pad button{color:#b9cbe6!important;}
+.remote-pad .remote-ok{background:linear-gradient(135deg,#34435e,#34435e)!important;}
+.remote-row button,.remote-row button[data-volume]{background:#273953a8!important;border-color:#7287a566!important;color:#b9cbe6!important;}
+
+#touchpad{background:radial-gradient(ellipse at 50% 40%,#273953a8,#273953a8)!important;border:1px solid #7287a566!important;color:#b9cbe6!important;}
+#touchpad strong,.touch-orbit{color:#b9cbe6!important;}
+
+#touch-dot,.iptv-tabs{background:#273953a8!important;}
+
+.iptv-tabs button{color:#b9cbe6!important;}
+.iptv-tabs .selected{background:#273953a8!important;color:#b9cbe6!important;}
+.iptv-item{background:linear-gradient(140deg,#273953a8,#273953a8)!important;border:1px solid #7287a566!important;color:#b9cbe6!important;}
+.iptv-item span,#page-iptv details summary{color:#b9cbe6!important;}
+
+.about-us{background:#273953a8!important;color:#b9cbe6!important;}
+.about-us p,footer,footer span{color:#b9cbe6!important;}
+
+
+.studio-banner{background:linear-gradient(125deg,#2463eb,#19283f)!important;color:#f5f8ff!important;}
+.studio-banner:before{background:#273953a8!important;}
+.studio-banner .eyebrow,.studio-banner h1,.studio-banner h1 span,.studio-banner p{color:#f5f8ff!important;}
+
+
+
+.banner-action{background:#273953a8!important;}
+.art-tv{background:#273953a8!important;border:6px solid #7287a566!important;}
+.art-screen{background:linear-gradient(135deg,#2463eb,#273953a8)!important;}
+.art-screen>span{background:#273953a8!important;color:#a9d9ff!important;}
+.art-screen>i,.art-screen>i:last-child,.art-foot,.art-foot:before{background:#273953a8!important;}
+
+
+
+.art-spark{color:#cfb4ff!important;}
+.art-orbit{border:2px solid #7287a566!important;}
+
+.studio-shortcuts span{background:#273953a8!important;color:#a9d9ff!important;}
+.studio-shortcuts button:nth-child(2) span{background:#273953a8!important;color:#cfb4ff!important;}
+.studio-shortcuts button:nth-child(3) span{background:#273953a8!important;color:#b9cbe6!important;}
+.studio-shortcuts button:nth-child(4) span{background:#273953a8!important;color:#cfb4ff!important;}
+.theme-library>.section-title .eyebrow{color:#b9cbe6!important;}
+
+.theme-collections button{border:1px solid #7287a566!important;background:#273953a8!important;}
+.theme-collections button.selected{background:#2463eb!important;border-color:#7287a566!important;}
+
+.collection-empty{border:1px dashed #7287a566!important;background:#273953a8!important;}
+.collection-empty>span,.collection-empty strong,.collection-empty p{color:#b9cbe6!important;}
+
+
+.theme-pricing{border:1px solid #7287a566!important;background:linear-gradient(120deg,#273953a8,#273953a8)!important;}
+.price-mark{color:#cfb4ff!important;}
+
+
+
+
+.club-details{background:#273953a8!important;border:1px solid #7287a566!important;}
+.fine,.library-intro,.guide-note,.compatibility p,.troubleshoot,.devices button small,.theme-price,.club-details,.studio-shortcuts button,.theme-collections button,.panel>label,.field-row,.connection-card p,.intro{color:#b9cbe6!important;}
+
+
+
+
+.connection-state[data-status=unsupported]{background:#273953a8!important;border-color:#7287a566!important;}
+.connection-state[data-status=unsupported] strong{color:#cfb4ff!important;}
+.connection-state[data-status=unsupported] p{color:#b9cbe6!important;}
+.hero-size-controls{border-top:1px solid #7287a566!important;border-bottom:1px solid #7287a566!important;}
+.customization-menu{border:1px solid #7287a566!important;background:#273953a8!important;}
+.customization-menu>summary{color:#f5f8ff!important;}
+.customization-menu>summary>span{color:#b9cbe6!important;}
+.customization-menu[open]>summary{border-bottom:1px solid #7287a566!important;}
+.theme-pricing .price-mark,.theme-pricing strong,.theme-pricing p,.theme-pricing small{color:#f5f8ff!important;}
+
+.theme-pricing .secondary{color:#cfb4ff!important;background:#273953a8!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] body{background:#19283f!important;}
+html[data-app-appearance=dark] .ambient{background:radial-gradient(ellipse at 100% 0,#19283f,transparent 50%)!important;}
+html[data-app-appearance=dark] .brand{color:#f5f8ff!important;}
+
+
+html[data-app-appearance=dark] .brand-logo{background:#273953a8!important;}
+html[data-app-appearance=dark] .device-chip{background:#19283f!important;}
+
+
+
+html[data-app-appearance=dark] h1,html[data-app-appearance=dark] .section-title h2,html[data-app-appearance=dark] .panel h2{color:#f5f8ff!important;}
+html[data-app-appearance=dark] h1>span{color:#a9d9ff!important;}
+
+
+html[data-app-appearance=dark] .panel{background:#19283f!important;}
+html[data-app-appearance=dark] .manual>label,html[data-app-appearance=dark] .android-pair>label{color:#b9cbe6!important;}
+
+
+
+
+
+html[data-app-appearance=dark] .preview{border-color:#7287a566!important;outline-color:#7287a566!important;}
+
+html[data-app-appearance=dark] .theme{background:#19283f!important;}
+
+
+
+html[data-app-appearance=dark] .theme-pricing{background:linear-gradient(120deg,#19283f,#19283f)!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .theme-pricing .price-mark,html[data-app-appearance=dark] .theme-pricing strong,html[data-app-appearance=dark] .theme-pricing p,html[data-app-appearance=dark] .theme-pricing small{color:#cfb4ff!important;}
+
+html[data-app-appearance=dark] .theme-pricing .secondary{background:#19283f!important;color:#b9cbe6!important;border-color:#7287a566!important;}
+
+
+
+
+html[data-app-appearance=dark] .customization-menu{background:#19283f!important;}
+
+
+
+
+
+html[data-app-appearance=dark] .switch-row{border-color:#7287a566!important;}
+
+
+
+
+
+
+
+
+html[data-app-appearance=dark] .devices>button{background:#19283f!important;}
+
+
+
+html[data-app-appearance=dark] .connection-state[data-status=connected]{background:#273a5b!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .connection-state[data-status=error],html[data-app-appearance=dark] .connection-state[data-status=unsupported]{background:#19283f!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .connection-state[data-status=unsupported] strong,html[data-app-appearance=dark] .connection-state[data-status=unsupported] p{color:#cfb4ff!important;}
+html[data-app-appearance=dark] .install-card{background:linear-gradient(125deg,#273a5b,#273a5b)!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .install-card h2{color:#b9cbe6!important;}
+html[data-app-appearance=dark] .install-card #smart-install{background:#273a5b!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .guide h2{color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] .guide-dots i{background:#19283f!important;}
+html[data-app-appearance=dark] .guide-dots .done{background:#273953a8!important;}
+
+
+
+
+html[data-app-appearance=dark] .app-row{background:#19283f!important;}
+html[data-app-appearance=dark] .app-row button{background:#19283f!important;border-color:#7287a566!important;color:#b9cbe6!important;}
+
+html[data-app-appearance=dark] .remote-pad{background:radial-gradient(circle,#19283f,#19283f)!important;}
+
+
+
+html[data-app-appearance=dark] #touchpad{background:radial-gradient(ellipse,#19283f,#19283f)!important;}
+
+
+
+
+
+html[data-app-appearance=dark] .iptv-item{background:linear-gradient(135deg,#19283f,#19283f)!important;}
+
+
+html[data-app-appearance=dark] .operation{background:#19283f!important;}
+
+
+
+
+html:not([data-app-appearance=dark]) .intro,html:not([data-app-appearance=dark]) .fine,html:not([data-app-appearance=dark]) .library-intro,html:not([data-app-appearance=dark]) .guide-note,html:not([data-app-appearance=dark]) .compatibility p,html:not([data-app-appearance=dark]) .troubleshoot,html:not([data-app-appearance=dark]) .devices button small,html:not([data-app-appearance=dark]) .theme-price,html:not([data-app-appearance=dark]) .club-details,html:not([data-app-appearance=dark]) .connection-card p,html:not([data-app-appearance=dark]) .connection-state p,html:not([data-app-appearance=dark]) .guide #guide-text,html:not([data-app-appearance=dark]) footer{color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .panel,html:not([data-app-appearance=dark]) .theme,html:not([data-app-appearance=dark]) .devices>button,html:not([data-app-appearance=dark]) .app-row{border-color:#7287a566!important;}
+html:not([data-app-appearance=dark]) .primary{background:#2463eb!important;color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .secondary{background:#273953a8!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+
+
+
+
+
+html:not([data-app-appearance=dark]) .studio-shortcuts button,html:not([data-app-appearance=dark]) .theme-collections button{color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .theme-collections button.selected{color:#f5f8ff!important;background:#2463eb!important;}
+html:not([data-app-appearance=dark]) .studio-shortcuts span{color:#a9d9ff!important;background:#273953a8!important;}
+html:not([data-app-appearance=dark]) .studio-shortcuts button:nth-child(2) span,html:not([data-app-appearance=dark]) .studio-shortcuts button:nth-child(3) span{color:#f5f8ff!important;background:#273953a8!important;}
+
+html:not([data-app-appearance=dark]) .studio-shortcuts button:nth-child(4) span{color:#cfb4ff!important;background:#273953a8!important;}
+html:not([data-app-appearance=dark]) .panel>label,html:not([data-app-appearance=dark]) .field-row,html:not([data-app-appearance=dark]) .language-row,html:not([data-app-appearance=dark]) .type-picker>label{color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) input:not([type=color]):not([type=checkbox]):not([type=range]),html:not([data-app-appearance=dark]) select{color:#f5f8ff!important;border-color:#7287a566!important;background:#273953a8!important;}
+html:not([data-app-appearance=dark]) input::placeholder{color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .customization-menu{border-color:#7287a566!important;}
+html:not([data-app-appearance=dark]) .customization-menu>summary,html:not([data-app-appearance=dark]) .customization-menu>summary>span,html:not([data-app-appearance=dark]) .theme-pricing .price-mark,html:not([data-app-appearance=dark]) .theme-pricing strong,html:not([data-app-appearance=dark]) .theme-pricing p,html:not([data-app-appearance=dark]) .theme-pricing small,html:not([data-app-appearance=dark]) .eyebrow,html:not([data-app-appearance=dark]) .brand small,html:not([data-app-appearance=dark]) .preview-heading>span,html:not([data-app-appearance=dark]) .section-title>span,html:not([data-app-appearance=dark]) .about-us,html:not([data-app-appearance=dark]) .about-us p,html:not([data-app-appearance=dark]) .phone-ip span,html:not([data-app-appearance=dark]) .phone-ip strong,html:not([data-app-appearance=dark]) .empty-state,html:not([data-app-appearance=dark]) .empty-state>span,html:not([data-app-appearance=dark]) .iptv-item span{color:#f5f8ff!important;}
+
+
+
+html:not([data-app-appearance=dark]) .device-chip{color:#f5f8ff!important;border-color:#7287a566!important;background:#273953a8!important;}
+html:not([data-app-appearance=dark]) .device-chip.connected{color:#f5f8ff!important;background:#273953a8!important;border-color:#7287a566!important;}
+html:not([data-app-appearance=dark]) .studio-banner .eyebrow,html:not([data-app-appearance=dark]) .remote-pad button,html:not([data-app-appearance=dark]) .remote-row button,html:not([data-app-appearance=dark]) #touchpad strong{color:#f5f8ff!important;}
+
+html:not([data-app-appearance=dark]) .remote-pad .remote-ok{background:#2463eb!important;color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .remote-row button[data-volume]{color:#f5f8ff!important;background:#273953a8!important;}
+html:not([data-app-appearance=dark]) .iptv-tabs button{color:#f5f8ff!important;}
+html:not([data-app-appearance=dark]) .iptv-tabs .selected{color:#f5f8ff!important;border:1px solid #7287a566!important;}
+html:not([data-app-appearance=dark]) .operation-card p{color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] body{background:linear-gradient(145deg,#19283f 0%,#19283f 58%,#2463eb 100%)!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .ambient{background:radial-gradient(ellipse at 100% 0,#2463eb,transparent 55%)!important;}
+html[data-app-appearance=dark] .studio-banner{background:linear-gradient(125deg,#2463eb,#19283f 55%,#19283f)!important;border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] .studio-banner h1,html[data-app-appearance=dark] .studio-banner h1>span,html[data-app-appearance=dark] .studio-banner .eyebrow,html[data-app-appearance=dark] .studio-banner p,html[data-app-appearance=dark] .brand>div>span,html[data-app-appearance=dark] .brand small,html[data-app-appearance=dark] .eyebrow{color:#f5f8ff!important;}
+
+
+
+html[data-app-appearance=dark] .device-chip{background:#19283f!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .device-chip i{background:#273953a8!important;}
+html[data-app-appearance=dark] .device-chip.connected{background:#273a5b!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .panel,html[data-app-appearance=dark] .theme,html[data-app-appearance=dark] .devices>button,html[data-app-appearance=dark] .app-row,html[data-app-appearance=dark] .customization-menu{background:#19283f!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .fine,html[data-app-appearance=dark] .intro,html[data-app-appearance=dark] .library-intro,html[data-app-appearance=dark] .theme-price,html[data-app-appearance=dark] .language-row,html[data-app-appearance=dark] .devices button small,html[data-app-appearance=dark] .guide-note,html[data-app-appearance=dark] .compatibility p,html[data-app-appearance=dark] .troubleshoot,html[data-app-appearance=dark] footer,html[data-app-appearance=dark] footer span,html[data-app-appearance=dark] .panel>label,html[data-app-appearance=dark] .editor>label,html[data-app-appearance=dark] .field-row,html[data-app-appearance=dark] .type-picker>label{color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] .primary{background:#273953a8!important;}
+html[data-app-appearance=dark] .secondary,html[data-app-appearance=dark] .theme-collections button,html[data-app-appearance=dark] .language-row select{background:#2463eb!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .theme-collections button.selected{background:#273953a8!important;}
+html[data-app-appearance=dark] .theme.selected{border-color:#7287a566!important;}
+html[data-app-appearance=dark] input:not([type=checkbox]):not([type=color]):not([type=range]),html[data-app-appearance=dark] textarea,html[data-app-appearance=dark] select{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] input::placeholder,html[data-app-appearance=dark] textarea::placeholder{color:#b9cbe6!important;}
+
+
+
+
+html[data-app-appearance=dark] .studio-shortcuts button{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .studio-shortcuts span,html[data-app-appearance=dark] .studio-shortcuts button:nth-child(2) span{background:#2463eb!important;color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] .studio-shortcuts button:nth-child(3) span{background:#273a5b!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .studio-shortcuts button:nth-child(4) span{background:#2463eb!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .customization-menu>summary,html[data-app-appearance=dark] .customization-menu>summary>span,html[data-app-appearance=dark] .text-button{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .customization-menu[open]>summary{border-color:#7287a566!important;}
+html[data-app-appearance=dark] .custom-colors,html[data-app-appearance=dark] .about-us,html[data-app-appearance=dark] .club-details,html[data-app-appearance=dark] .phone-ip{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .custom-colors h3,html[data-app-appearance=dark] .about-us p,html[data-app-appearance=dark] .phone-ip strong{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .connection-card{background:transparent!important;border-color:#7287a566!important;padding:0!important;margin:0!important;border:0!important;box-shadow:none!important;}
+html[data-app-appearance=dark] .connection-card h2,html[data-app-appearance=dark] .connection-card p{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .connection-state,html[data-app-appearance=dark] .compatibility{background:#19283f!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .connection-state p,html[data-app-appearance=dark] .guide #guide-text,html[data-app-appearance=dark] .compatibility summary,html[data-app-appearance=dark] .troubleshoot summary{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .manual-type>#manual-type-toggle{background:#2463eb!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .remote-pad{background:radial-gradient(circle,#2463eb,#19283f)!important;border-color:#7287a566!important;}
+
+html[data-app-appearance=dark] .remote-pad .remote-ok{background:#273953a8!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .remote-row button{background:#2463eb!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] #touchpad{background:radial-gradient(ellipse,#2463eb,#19283f)!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] #touchpad strong,html[data-app-appearance=dark] .touch-orbit{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .iptv-tabs{background:#19283f!important;}
+html[data-app-appearance=dark] .iptv-tabs button{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .iptv-tabs .selected{background:#2463eb!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .iptv-item{background:linear-gradient(135deg,#2463eb,#19283f)!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .iptv-item span,html[data-app-appearance=dark] #page-iptv details summary{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .operation-card{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .operation-card p,html[data-app-appearance=dark] .preview-heading>span,html[data-app-appearance=dark] .section-title>span,html[data-app-appearance=dark] .phone-ip span{color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] .empty-state,html[data-app-appearance=dark] .collection-empty{background:#19283f!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .collection-empty strong,html[data-app-appearance=dark] .collection-empty p,html[data-app-appearance=dark] .empty-state>span{color:#f5f8ff!important;}
+.guide-phone-card{border:2px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+.guide-phone-card>p{color:#f5f8ff!important;}
+.guide-phone-card button{color:#f5f8ff!important;border:1px solid #7287a566!important;background:#273953a8!important;}
+html[data-app-appearance=dark] .guide-phone-card{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .guide-phone-card>p{color:#f5f8ff!important;}
+#page-remote #touchpad{background:radial-gradient(circle at 50% 50%,#273953a8,transparent 65%),var(--remote-surface)!important;}
+
+#reconnect-notice{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] #reconnect-notice{background:#19283f!important;color:#cfb4ff!important;}
+.layout-custom,.slideshow-controls{border-top:1px solid #7287a566!important;}
+.layout-custom output{color:#a9d9ff!important;}
+.layout-custom input[type=color]{border:1px solid #7287a566!important;}
+.layout-custom button,.slideshow-controls button{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .layout-custom button,html[data-app-appearance=dark] .slideshow-controls button{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+.upload-symbol{color:#a9d9ff!important;}
+.slideshow-controls .image-upload-button{border:2px dashed #7287a566!important;background:linear-gradient(135deg,#2463eb,#2463eb)!important;color:#a9d9ff!important;}
+#slide-count{background:#2463eb!important;color:#a9d9ff!important;}
+#slide-thumbs button:after{background:#19283f!important;color:#f5f8ff!important;}
+.slideshow-controls .switch-row{border-top:1px solid #7287a566!important;}
+.connect-step{border:1px solid #7287a566!important;background:#19283f!important;min-height:0!important;padding:0!important;border-radius:16px!important;margin:12px 0!important;box-shadow:none!important;}
+.connect-number{background:#273953a8!important;}
+.connect-step[open]{border-color:#7287a566!important;}
+.connect-step-note{color:#b9cbe6!important;}
+.setup-phone-ip{border:2px solid #7287a566!important;background:#19283f!important;}
+.setup-phone-ip>strong{color:#f5f8ff!important;}
+.setup-account-note,.is-complete .connect-number{background:#273953a8!important;}
+
+html[data-app-appearance=dark] .connect-step{background:#273953a8!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .connect-step-note{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .setup-phone-ip{background:#273953a8!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .setup-phone-ip>strong{color:#f5f8ff!important;}
+html[data-app-appearance=dark] .setup-account-note{background:#273953a8!important;}
+.library-clean{background:linear-gradient(125deg,#2463eb,#19283f)!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+.library-clean>span:first-child{background:#273a5b!important;color:#a9d9ff!important;}
+.library-clean small{color:#b9cbe6!important;}
+.library-tabs button{border:1px solid #7287a566!important;background:#273953a8!important;}
+.library-tabs [aria-pressed=true]{background:#273953a8!important;border-color:#7287a566!important;}
+.library-app{border:1px solid #7287a566!important;background:#273953a8!important;}
+.library-app-icon{background:linear-gradient(135deg,#2463eb,#2463eb)!important;color:#f5f8ff!important;}
+.library-app-icon img{background:#19283f!important;}
+.library-app-icon[data-icon=youtube]{background:#34435e!important;}
+.library-app-icon[data-icon=netflix]{background:#19283f!important;color:#cfb4ff!important;}
+.library-app-icon[data-icon=iptv]{background:linear-gradient(135deg,#273a5b,#2463eb)!important;}
+.library-app-icon[data-icon=radio]{background:linear-gradient(135deg,#273953a8,#34435e)!important;}
+.library-app-icon[data-icon=prayer]{background:linear-gradient(135deg,#273a5b,#2463eb)!important;}
+.library-app-icon[data-icon=spotify]{background:#273a5b!important;color:#f5f8ff!important;}
+.library-app-icon[data-icon=disney]{background:linear-gradient(135deg,#2463eb,#2463eb)!important;}
+.library-app-icon[data-icon=prime]{background:#2463eb!important;}
+.library-pin{background:#273953a8!important;color:#b9cbe6!important;}
+.library-pin[aria-pressed=true]{color:#cfb4ff!important;background:#273953a8!important;}
+.library-order button{border:1px solid #7287a566!important;}
+.library-app:focus-within{border-color:#7287a566!important;}
+html[data-app-appearance=dark] .library-app{background:#273953a8!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .library-tabs button{border-color:#7287a566!important;background:#273953a8!important;}
+html[data-app-appearance=dark] .library-tabs [aria-pressed=true]{background:#273953a8!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .library-pin{background:#273953a8!important;color:#b9cbe6!important;}
+html[data-app-appearance=dark] .library-pin[aria-pressed=true]{color:#cfb4ff!important;background:#273953a8!important;}
+html[data-app-appearance=dark] .library-order button{border-color:#7287a566!important;}
+#phone-parental,#family-panel,#phone-theme-packs,details#theme-library{border:1px solid var(--line,#7287a566)!important;}
+#family-panel>summary:before,#phone-theme-packs>summary:before,details#theme-library>summary:before{background:#273953a8!important;color:#a9d9ff!important;}
+#phone-parental>summary:before{background:#273a5b!important;color:#a9d9ff!important;}
+#family-select{border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] #phone-parental,html[data-app-appearance=dark] #family-panel,html[data-app-appearance=dark] #phone-theme-packs,html[data-app-appearance=dark] details#theme-library{background:#273953a8!important;border-color:#7287a566!important;}
+#personal-touch.plus-locked>summary{border:0!important;background:transparent!important;}
+.iptv-source-card{border:2px solid var(--border,#7287a566)!important;background:var(--panel,#273953a8)!important;}
+.iptv-source-card.source-active{border-color:#7287a566!important;}
+.iptv-source-current{background:#2463eb!important;}
+html[data-app-appearance=dark] .iptv-source-card{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .iptv-source-card h2,html[data-app-appearance=dark] .iptv-source-card>p{color:#f5f8ff!important;}
+.morph-progress{color:var(--accent,#a9d9ff)!important;}
+html[data-app-appearance=dark] .ring-host .morph-progress{color:#a9d9ff!important;}
+.morph-plus-overlay{background:#19283f!important;color:#f5f8ff!important;}
+.morph-plus-dialog{background:linear-gradient(135deg,#19283f,#19283f)!important;border:1px solid #7287a566!important;}
+.morph-plus-dialog>small{color:#a9d9ff!important;}
+.morph-plus-dialog input{background:#19283f!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+.plus-plans article{border:1px solid #7287a566!important;background:#2463eb!important;}
+.plus-address{color:#a9d9ff!important;}
+.plus-actions button{background:#2463eb!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+.theme-option.plus-locked:after{color:#cfb4ff!important;background:#19283f!important;}
+.morph-plus-setting{color:#b9cbe6!important;}
+.morph-plus-overlay .morph-plus-dialog input{background:#19283f!important;color:#f5f8ff!important;}
+[data-theme="ismaily"] .landscape{background:linear-gradient(125deg,#19283f,#2463eb)!important;}
+[data-theme="ismaily"] .club-hero{background:linear-gradient(120deg,#2463eb,#34435e)!important;}
+[data-theme="ismaily"] .nav.active{background:#34435e!important;}
+[data-theme="ismaily"] .favourite{border-color:#7287a566!important;}
+[data-theme="king-salman"] .landscape{background:linear-gradient(125deg,#19283f,#273a5b)!important;}
+[data-theme="king-salman"] .club-hero{background:linear-gradient(120deg,#273a5b,#34435e)!important;}
+[data-theme="king-salman"] .nav.active{background:#34435e!important;}
+[data-theme="king-salman"] .favourite{border-color:#7287a566!important;}
+[data-theme="crown-prince"] .landscape{background:linear-gradient(125deg,#19283f,#273a5b)!important;}
+[data-theme="crown-prince"] .club-hero{background:linear-gradient(120deg,#273a5b,#34435e)!important;}
+[data-theme="crown-prince"] .nav.active{background:#34435e!important;}
+[data-theme="crown-prince"] .favourite{border-color:#7287a566!important;}
+[data-theme="nassr"] .landscape{background:linear-gradient(125deg,#19283f,#19283f)!important;}
+[data-theme="nassr"] .club-hero{background:linear-gradient(120deg,#19283f,#34435e)!important;}
+[data-theme="nassr"] .nav.active{background:#34435e!important;}
+[data-theme="nassr"] .favourite{border-color:#7287a566!important;}
+[data-theme="hilal"] .landscape{background:linear-gradient(125deg,#19283f,#19283f)!important;}
+[data-theme="hilal"] .club-hero{background:linear-gradient(120deg,#19283f,#2463eb)!important;}
+[data-theme="hilal"] .nav.active{background:#2463eb!important;}
+[data-theme="hilal"] .favourite{border-color:#7287a566!important;}
+[data-theme="ittihad"] .landscape{background:linear-gradient(125deg,#19283f,#19283f)!important;}
+[data-theme="ittihad"] .club-hero{background:linear-gradient(120deg,#19283f,#34435e)!important;}
+[data-theme="ittihad"] .nav.active{background:#34435e!important;}
+[data-theme="ittihad"] .favourite{border-color:#7287a566!important;}
+[data-theme="ahli-saudi"] .landscape{background:linear-gradient(125deg,#19283f,#273a5b)!important;}
+[data-theme="ahli-saudi"] .club-hero{background:linear-gradient(120deg,#273a5b,#273a5b)!important;}
+[data-theme="ahli-saudi"] .nav.active{background:#273a5b!important;}
+[data-theme="ahli-saudi"] .favourite{border-color:#7287a566!important;}
+[data-theme="king-salman"] #cinema-background,[data-theme="crown-prince"] #cinema-background{background:radial-gradient(ellipse at 65% 30%,#273a5b,#273a5b 70%)!important;}
+#preview[data-theme=ismaily] #preview-title,#preview[data-theme=ismaily] #preview-club,#preview[data-theme=ismaily] #preview-subtitle{color:#cfb4ff!important;}
+
+[data-theme="inter-miami"] .landscape{background:radial-gradient(ellipse at 90% 15%,#273953a8,transparent 60%),linear-gradient(125deg,#19283f,#19283f)!important;}
+[data-theme="inter-miami"] .club-hero{background:linear-gradient(120deg,#19283f,#273953a8)!important;}
+[data-theme="inter-miami"] .nav.active{background:#273953a8!important;}
+[data-theme="inter-miami"] .favourite{border-color:#7287a566!important;}
+[data-theme="saudi-national"] .landscape{background:radial-gradient(ellipse at 80% 30%,#273a5b,#273a5b 75%)!important;}
+[data-theme="egypt-national"] .landscape{background:radial-gradient(ellipse at 85% 25%,#19283f,#19283f 70%)!important;}
+body[data-theme="egypt-national"] .royal-vision-mark{border:2px solid #7287a566!important;}
+body[data-theme="saudi-national"] #cinema-background{background:#273a5b!important;}
+body[data-theme="saudi-national"] #cinema-background:after{background:linear-gradient(90deg,#273a5b,transparent 75%),linear-gradient(0deg,#273a5b,transparent 50%)!important;}
+body[data-theme="egypt-national"] #cinema-background{background:#19283f!important;}
+body[data-theme="egypt-national"] #cinema-background:after{background:linear-gradient(90deg,#19283f,transparent 75%),linear-gradient(0deg,#19283f,transparent 50%)!important;}
+#page-remote .remote-input-tabs button.selected{background:#2463eb!important;color:#f5f8ff!important;}
+#page-remote .remote-pad{background:radial-gradient(circle at 50% 40%,#273953a8,transparent 70%),var(--remote-surface)!important;}
+#page-remote .remote-pad .remote-ok{border:1px solid #7287a566!important;background:linear-gradient(145deg,#2463eb,#2463eb)!important;color:#f5f8ff!important;}
+#page-remote .remote-key-icon{color:#f5f8ff!important;background:linear-gradient(145deg,#2463eb,#2463eb)!important;}
+#page-remote [data-remote-tone=cyan] .remote-key-icon{background:linear-gradient(145deg,#273a5b,#2463eb)!important;}
+#page-remote [data-remote-tone=orange] .remote-key-icon{background:linear-gradient(145deg,#34435e,#34435e)!important;}
+#page-remote [data-remote-tone=violet] .remote-key-icon{background:linear-gradient(145deg,#2463eb,#2463eb)!important;}
+#page-remote [data-remote-tone=green] .remote-key-icon{background:linear-gradient(145deg,#273a5b,#273a5b)!important;}
+#page-remote [data-remote-tone=rose] .remote-key-icon{background:linear-gradient(145deg,#34435e,#34435e)!important;}
+#page-remote [data-remote-tone=teal] .remote-key-icon{background:linear-gradient(145deg,#273a5b,#273a5b)!important;}
+#page-remote [data-remote-tone=amber] .remote-key-icon{background:linear-gradient(145deg,#34435e,#19283f)!important;}
+#page-remote [data-remote-tone=indigo] .remote-key-icon{background:linear-gradient(145deg,#2463eb,#2463eb)!important;}
+#page-remote #remote-connect,#page-remote #remote-send{background:linear-gradient(110deg,#2463eb,#2463eb)!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+#page-remote #remote-connect:disabled,#page-remote #remote-send:disabled{background:#2463eb!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+#page-remote #touchpad{background:radial-gradient(circle at center,#2463eb,transparent 75%),var(--remote-surface)!important;}
+
+
+
+
+
+#page-remote .remote-pad .remote-ok .remote-key-label{color:#f5f8ff!important;}
+.morph-support{border:1px solid #7287a566!important;background:linear-gradient(125deg,#19283f,#19283f)!important;color:#f5f8ff!important;}
+.morph-support p{color:#f5f8ff!important;}
+.morph-support a{background:linear-gradient(100deg,#2463eb,#2463eb)!important;border:1px solid #7287a566!important;color:#f5f8ff!important;}
+.morph-support .support-paypal{background:linear-gradient(110deg,#2463eb,#2463eb)!important;}
+#morph-welcome-support{background:#273953a8!important;color:#f5f8ff!important;}
+#morph-welcome-support .welcome-card{border:1px solid #7287a566!important;background:linear-gradient(135deg,#19283f,#19283f)!important;}
+#morph-welcome-support p,#morph-welcome-support .welcome-note{color:#f5f8ff!important;}
+
+#morph-welcome-support .welcome-heart{color:#cfb4ff!important;}
+#morph-welcome-support button{color:#f5f8ff!important;background:#2463eb!important;border:1px solid #7287a566!important;}
+#morph-welcome-support button[data-start],#morph-welcome-support button:focus,#morph-welcome-support button[data-start]:focus{background:#2463eb!important;}
+
+
+.image-customization>summary span{color:#f5f8ff!important;background:#273953a8!important;}
+.free-image-preview img{background:#273953a8!important;}
+.image-position{border:1px solid #7287a566!important;}
+.local-image-note{background:#273953a8!important;color:#f5f8ff!important;}
+.font-size-panel{border:1px solid #7287a566!important;background:var(--panel,#273953a8)!important;}
+.font-size-panel select,.advanced-subsection{border:1px solid #7287a566!important;}
+
+.theme-image-empty{background:linear-gradient(135deg,#273953a8,#273953a8)!important;border:1px dashed #7287a566!important;color:#f5f8ff!important;}
+.font-size-panel{background:var(--paper,#273953a8)!important;color:var(--ink,#f5f8ff)!important;}
+html[data-app-appearance=dark] .theme-image-empty{background:#19283f!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+
+body{background:radial-gradient(1100px 300px at 50% -120px, #273953a8, transparent 60%),
+    var(--m-bg)!important;font-size:.9375rem!important;}
+.device-chip i{background:#34435e!important;}
+.device-chip[data-mstatus="connected"] i{background:#273a5b!important;}
+.device-chip[data-mstatus="checking"] i,.device-chip[data-mstatus="error"] i{background:#34435e!important;}
+
+
+
+html[data-app-appearance="dark"] .primary{color:#f5f8ff!important;}
+.m30-status .m30-dot{background:#34435e!important;}
+.m30-status[data-mstatus="connected"]{border-color:color-mix(in srgb,#7287a566 55%,transparent)!important;}
+.m30-status[data-mstatus="connected"] .m30-dot{background:#273a5b!important;}
+.m30-status[data-mstatus="checking"] .m30-dot{background:#34435e!important;}
+.m30-status[data-mstatus="error"]{border-color:color-mix(in srgb,#7287a566 55%,transparent)!important;}
+.m30-status[data-mstatus="error"] .m30-dot{background:#34435e!important;}
+.m30-ip-tv{border-color:color-mix(in srgb,#7287a566 60%,transparent)!important;}
+.m30-ip-tv .m30-ip-icon{background:linear-gradient(135deg,#273953a8,#273953a8)!important;color:#a9d9ff!important;}
+.m30-ip-phone{border-color:color-mix(in srgb,#7287a566 60%,transparent)!important;}
+.m30-ip-phone .m30-ip-icon{background:linear-gradient(135deg,#273953a8,#273953a8)!important;color:#a9d9ff!important;}
+html[data-app-appearance="dark"] .m30-ip-tv .m30-ip-icon,html[data-app-appearance="dark"] .m30-ip-phone .m30-ip-icon{color:#a9d9ff!important;}
+
+
+.connect-step.is-complete .connect-number{background:linear-gradient(120deg,#273a5b,#273a5b)!important;}
+.m30-segment button[aria-selected="true"],html[data-app-appearance="dark"] .m30-segment button[aria-selected="true"],.remote-pad .remote-ok,html[data-app-appearance="dark"] .remote-pad .remote-ok,.remote-row button:active:not(:disabled),html[data-app-appearance="dark"] .theme-collections button.selected{color:#f5f8ff!important;}
+
+
+
+
+
+
+.m30-badge.is-plus{background:linear-gradient(120deg,#273953a8,#273953a8)!important;border-color:#7287a566!important;}
+.iptv-destinations button.m30-active,html[data-app-appearance="dark"] .iptv-destinations button.m30-active{color:#f5f8ff!important;}
+
+.m30-scrim,.m30-onboard{background:#273953a8!important;}
+
+.m30-onboard-card .m30-ob-icon,html[data-app-appearance="dark"] .m30-onboard-card .m30-ob-icon{color:#f5f8ff!important;}
+
+.connection-state[data-status="connected"]{border-color:#7287a566!important;background:color-mix(in srgb,#273a5b 10%,var(--m-card))!important;}
+.connection-state[data-status="checking"]{border-color:#7287a566!important;}
+.connection-state[data-status="error"]{border-color:#7287a566!important;background:color-mix(in srgb,#34435e 8%,var(--m-card))!important;}
+.banner-action,html[data-app-appearance="dark"] .banner-action,.primary,.connect-number,html[data-app-appearance=dark] .connect-number,.theme-collections button.selected,html[data-app-appearance=dark] .theme-collections button.selected,.m30-segment button[aria-selected=true],html[data-app-appearance=dark] .m30-segment button[aria-selected=true]{color:#f5f8ff!important;}
+
+
+
+
+
+
+
+
+
+#connection-state[data-status=connected]{background:#273a5b!important;border-color:#7287a566!important;}
+#connection-state[data-status=connected] #connection-title{color:#f5f8ff!important;}
+#connection-state[data-status=connected] #connection-detail{color:#b9cbe6!important;}
+html[data-app-appearance=dark] #connection-state[data-status=connected]{background:#273953a8!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] #connection-state[data-status=connected] #connection-title,html[data-app-appearance=dark] #connection-state[data-status=connected] #connection-detail,html[data-app-appearance] .m30-segment button[aria-selected=true],html[data-app-appearance] .m30-segment button[aria-selected=true] svg{color:#f5f8ff!important;}
+
+
+html[data-app-appearance] #free-theme-image p.local-image-note{background:#273953a8!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] #free-theme-image p.local-image-note{background:#273a5b!important;color:#f5f8ff!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] #guide-count{background:#19283f!important;color:#f5f8ff!important;border:1px solid #7287a566!important;}
+html:not([data-app-appearance=dark]) #guide-count{background:#273953a8!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] body{background:radial-gradient(ellipse at 100% 2%,#19283f,transparent 45%),radial-gradient(ellipse at 0 24%,#19283f,transparent 50%),#19283f!important;}
+html[data-app-appearance=dark] .brand>div{background:linear-gradient(100deg,#273953a8,#273953a8 65%,#273a5b)!important;}
+html[data-app-appearance=dark] .brand-logo{border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] .device-chip{background:linear-gradient(140deg,#19283f,#19283f)!important;border-color:#7287a566!important;}html[data-app-appearance=dark] .m30-gear{background:linear-gradient(140deg,#19283f,#19283f)!important;border-color:#7287a566!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;border-radius:12px!important;}
+.device-chip[data-mstatus=connected]>i{background:#273a5b!important;}
+.device-chip[data-mstatus=connected]>#mc-chip-status{color:#a9d9ff!important;}
+html[data-app-appearance=dark] .primary{color:#f5f8ff!important;border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] .panel{background:linear-gradient(130deg,#19283f,#19283f 70%,#19283f)!important;border-color:#7287a566!important;}html[data-app-appearance=dark] .connect-step{background:linear-gradient(130deg,#19283f,#19283f 70%,#19283f)!important;border-color:#7287a566!important;min-height:0!important;padding:0!important;border-radius:16px!important;margin:12px 0!important;box-shadow:none!important;}html[data-app-appearance=dark] .customization-menu,html[data-app-appearance=dark] .advanced-subsection,html[data-app-appearance=dark] .theme-library{background:linear-gradient(130deg,#19283f,#19283f 70%,#19283f)!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .theme,html[data-app-appearance=dark] .app-row,html[data-app-appearance=dark] .iptv-item,html[data-app-appearance=dark] .devices>button{background:linear-gradient(145deg,#19283f,#19283f)!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .m30-status{background:linear-gradient(110deg,#19283f,#19283f)!important;border-color:#7287a566!important;min-height:0!important;height:auto!important;padding:0!important;margin:0!important;}
+html[data-app-appearance=dark] .m30-sheet{background:linear-gradient(155deg,#19283f,#19283f)!important;border-color:#7287a566!important;}
+html[data-app-appearance=dark] .m30-applybar{background:#19283f!important;bottom:calc(var(--studio-nav-height,64px) + 24px + env(safe-area-inset-bottom,0px))!important;}
+
+
+
+html[data-app-appearance=dark] .remote-pad{background:linear-gradient(145deg,#273a5b,#19283f)!important;border:1px solid #7287a566!important;}
+html[data-app-appearance=dark] .remote-pad button{background:#19283f!important;color:#a9d9ff!important;border-color:#7287a566!important;}
+.mobile-welcome,.mc-copy>.mc-welcome,.mc-copy h2{color:#f5f8ff!important;}
+
+
+.mc-copy h2 span{background:linear-gradient(100deg,#273953a8,#273953a8)!important;}
+.mc-copy>.mc-description{color:#f5f8ff!important;}
+.mc-orbit{border:1px solid #7287a566!important;background:radial-gradient(ellipse,#2463eb,transparent 70%)!important;color:#a9d9ff!important;}
+html[data-app-appearance=dark] .mc-design{background:linear-gradient(135deg,#19283f,#19283f)!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .mc-control{background:linear-gradient(135deg,#273a5b,#273a5b)!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .mc-apps{background:linear-gradient(135deg,#19283f,#19283f)!important;border-color:#7287a566!important;color:#f5f8ff!important;}
+html[data-app-appearance=dark] .home-support{background:linear-gradient(120deg,#19283f,#19283f)!important;border-color:#7287a566!important;}
+body[data-studio-shell] .brand .studio-app-icon{border:1px solid #7287a566!important;}
+body[data-studio-shell] .studio-wordmark>span{color:#a9d9ff!important;}
+body[data-studio-shell] #preview{border:1px solid #7287a566!important;}
+body[data-studio-shell] #preview[data-studio-default-preview]{background:linear-gradient(154deg,transparent 55%,#19283f 55.4%,#19283f 100%),radial-gradient(ellipse at 90% 0,#34435e,#19283f 40%,#19283f 85%)!important;}
+body[data-studio-shell] #preview .preview-top{color:#f5f8ff!important;}
+body[data-studio-shell] .studio-theme-name:before{background:#2463eb!important;border:2px solid #7287a566!important;}
+body[data-studio-shell] #apply{border:1px solid #7287a566!important;color:var(--morph-on-primary)!important;}
+body[data-studio-shell] .mobile-welcome{background:linear-gradient(145deg,#34435e,#19283f 58%,#19283f)!important;border-color:#7287a566!important;}
+body[data-studio-shell] .mc-copy h2 span{color:#a9d9ff!important;-webkit-text-fill-color:#a9d9ff!important;}
+html[data-app-appearance=dark] body[data-premium-mobile]{background:#273953a8!important;}
+body[data-premium-mobile] .primary{color:#f5f8ff!important;}body[data-premium-mobile] #apply{color:var(--morph-on-primary)!important;}
+html[data-app-appearance=dark] body[data-premium-mobile] .primary{color:#f5f8ff!important;}html[data-app-appearance=dark] body[data-premium-mobile] #apply{color:var(--morph-on-primary)!important;}
+body[data-premium-mobile] .pm-remote-dot{background:#273953a8!important;}
+body[data-premium-mobile] #iptv-phone-open,html[data-app-appearance=dark] body[data-premium-mobile] #iptv-phone-open{color:#f5f8ff!important;}
+
+
+html[data-app-appearance=dark] body[data-approved-mobile]{background:#273953a8!important;}
+body[data-approved-mobile] .approved-logo-ink{background:linear-gradient(to right,transparent 34.5%,#19283f 34.5% 75%,transparent 75%)!important;}
+body[data-approved-mobile] .studio-reconnect{background:#273953a8!important;color:#a9d9ff!important;}
+body[data-approved-mobile] .studio-reconnect:before{color:#a9d9ff!important;}
+body[data-approved-mobile] .m30-gear{color:#b9cbe6!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;border-radius:12px!important;}
+body[data-approved-mobile] .studio-kicker{color:#a9d9ff!important;}
+body[data-approved-mobile] .approved-preview-card{background:#273953a8!important;border:1px solid #7287a566!important;}
+body[data-approved-mobile] .preview-heading>span{background:#273953a8!important;color:#b9cbe6!important;}
+body[data-approved-mobile] #preview{border:1px solid #7287a566!important;}
+body[data-approved-mobile] #preview[data-studio-default-preview]{background:linear-gradient(135deg,#273953a8,#273953a8 55%,#273953a8)!important;color:#f5f8ff!important;}
+body[data-approved-mobile] #preview[data-studio-default-preview]:after{background:linear-gradient(110deg,#273953a8,#2463eb)!important;}
+body[data-approved-mobile] #preview[data-studio-default-preview]:before{background:linear-gradient(140deg,#273953a8,#273953a8)!important;}
+body[data-approved-mobile] #preview[data-studio-default-preview] .preview-top,body[data-approved-mobile] #preview[data-studio-default-preview] .preview-main,body[data-approved-mobile] #preview[data-studio-default-preview] #preview-slides,body[data-approved-mobile] #preview[data-studio-default-preview] #preview-title{color:#f5f8ff!important;}
+
+body[data-approved-mobile] #preview[data-studio-default-preview] #preview-subtitle,body[data-approved-mobile] #preview[data-studio-default-preview] #preview-club{color:#a9d9ff!important;}
+body[data-approved-mobile] #preview[data-studio-default-preview] #preview-slides i{background:#273953a8!important;color:#a9d9ff!important;border-color:#7287a566!important;}
+body[data-approved-mobile] .studio-theme-name:before{background:#273953a8!important;}
+body[data-approved-mobile] .studio-theme-line button{color:#a9d9ff!important;min-height:44px!important;}
+body[data-approved-mobile] .studio-quick-actions button,body[data-approved-mobile] .studio-quick-actions button>svg{background:#273953a8!important;min-height:64px!important;padding:12px 8px!important;border-radius:12px!important;font-size:0.875rem!important;}
+
+body[data-approved-mobile] .studio-quick-actions [data-studio-destination=cast]>svg{background:#273953a8!important;}
+body[data-approved-mobile] .approved-personal-icon{color:#b9cbe6!important;}
+body[data-approved-mobile] .studio-personal-group>details{background:#273953a8!important;}
+body[data-approved-mobile] .studio-personal-group>details>summary:after{color:#b9cbe6!important;min-height:60px!important;height:auto!important;}
+body[data-approved-mobile] .approved-swatch-art i{border:2px solid #7287a566!important;background:#273953a8!important;}
+body[data-approved-mobile] .approved-swatch-art i+i,body[data-approved-mobile] .approved-swatch-art i+i+i{background:#273953a8!important;}
+
+body[data-approved-mobile] .approved-photo-art{border:2px solid #7287a566!important;background:#273953a8!important;color:#a9d9ff!important;}
+body[data-approved-mobile] .approved-photo-art:after{border:2px solid #7287a566!important;background:#273a5b!important;}
+body[data-approved-mobile] #apply{color:var(--morph-on-primary)!important;background:#2463eb!important;}
+body[data-approved-mobile] #apply:disabled{background:#273953a8!important;color:#f5f8ff!important;}
+body[data-approved-mobile] .primary,body[data-approved-mobile] #iptv-phone-open{background:#2463eb!important;color:#f5f8ff!important;}
+body[data-approved-mobile] .secondary{background:#273953a8!important;}
+
+
+
+
+
+
+
+body[data-approved-mobile] .pm-remote-showcase{background:var(--m-card)!important;min-height:96px!important;padding:12px 16px!important;border-radius:16px!important;border:1px solid var(--m-border)!important;}
+body[data-approved-mobile] .pm-remote-dot{background:#273a5b!important;}
+body[data-approved-mobile] .m30-sheet,body[data-approved-mobile] .operation-card{background:#273953a8!important;}
+body[data-approved-mobile] input:not([type=checkbox]):not([type=range]):not([type=color]),body[data-approved-mobile] textarea,body[data-approved-mobile] select{background:#273953a8!important;border-color:#7287a566!important;}
+body[data-approved-mobile] input::placeholder,body[data-approved-mobile] textarea::placeholder{color:#b9cbe6!important;}
+body[data-approved-mobile] #iptv-personal-actions button,body[data-approved-mobile] #iptv-save-phone{background:#2463eb!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+body[data-approved-mobile] #iptv-personal-title{color:#f5f8ff!important;}
+body[data-approved-mobile] #iptv-personal-card{border-color:#7287a566!important;}
+body[data-approved-mobile] #iptv-refresh,body[data-approved-mobile] #phone-update-alert button,body[data-approved-mobile] #update-check,html body[data-approved-mobile] #page-iptv #iptv-personal-actions button{background:#2463eb!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+
+
+
+
+html body[data-approved-mobile] #page-iptv .iptv-destinations button{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #page-iptv .iptv-destinations strong,html body[data-approved-mobile] #page-iptv .iptv-destinations small{color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;font-family:var(--morph-font)!important;}
+
+html body[data-approved-mobile] #page-iptv #iptv-phone-open,html body[data-approved-mobile] #page-iptv #iptv-tv-show{background:#273953a8!important;}
+html body[data-approved-mobile] #page-iptv #iptv-phone-open svg,html body[data-approved-mobile] #page-iptv #iptv-tv-show svg{color:#a9d9ff!important;}
+
+html body[data-approved-mobile] #m30-control-segment button,html body[data-approved-mobile] #m30-control-segment button span{color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #devices>button{background:#273953a8!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;border:1px solid #7287a566!important;}
+html body[data-approved-mobile] #devices>button small{color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #connection-state[data-status=connected]{background:#273953a8!important;border-color:#7287a566!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #connection-state[data-status=connected] *{color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #setup-downloader,html body[data-approved-mobile] #setup-samsung-wgt{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+html body[data-approved-mobile] #setup-downloader h3,html body[data-approved-mobile] #setup-samsung-wgt h3,html body[data-approved-mobile] #setup-downloader p,html body[data-approved-mobile] #setup-samsung-wgt p{color:#f5f8ff!important;}
+
+html body[data-approved-mobile] .setup-code{background:#273953a8!important;}
+html body[data-approved-mobile] .setup-code strong{color:#a9d9ff!important;}
+html body[data-approved-mobile] #setup-copy-downloader{background:#2463eb!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #setup-downloader li{color:#f5f8ff!important;}
+html body[data-approved-mobile] #setup-wgt-pick{background:#273953a8!important;color:#a9d9ff!important;-webkit-text-fill-color:#a9d9ff!important;border:1px solid #7287a566!important;}
+html body[data-approved-mobile] #setup-wgt-install{background:#2463eb!important;color:#f5f8ff!important;-webkit-text-fill-color:#f5f8ff!important;}
+html body[data-approved-mobile] #setup-wgt-preview{background:#273953a8!important;}
+html body[data-approved-mobile] #setup-wgt-preview small{color:#f5f8ff!important;}
+#morph-first-run{background:#273953a8!important;color:#f5f8ff!important;}
+#morph-first-run .fr-intro,#morph-first-run .fr-language>p{color:#f5f8ff!important;}
+
+#morph-first-run .fr-language-options button{border:1px solid #7287a566!important;background:#273953a8!important;color:#f5f8ff!important;}
+#morph-first-run .fr-language-options span{color:#f5f8ff!important;}
+#morph-first-run .fr-language-options button[aria-pressed=true]{border:2px solid #7287a566!important;background:#273953a8!important;color:#a9d9ff!important;}
+#morph-first-run .fr-service{border:1px solid #7287a566!important;background:#273953a8!important;}
+#morph-first-run .fr-service-icon,#morph-first-run .fr-remote .fr-service-icon,#morph-first-run .fr-iptv .fr-service-icon,#morph-first-run .fr-devices .fr-service-icon{background:#273953a8!important;color:#a9d9ff!important;}
+
+
+
+#morph-first-run .fr-service p{color:#f5f8ff!important;}
+#morph-first-run #fr-start{background:#2463eb!important;color:#f5f8ff!important;}
+#morph-first-run #fr-start:disabled{background:#273953a8!important;color:#f5f8ff!important;}
+#morph-first-run .fr-note{color:#f5f8ff!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile]{background:radial-gradient(ellipse at 110% 0%,#74758c 0%,#35415e 32%,transparent 65%),linear-gradient(145deg,#0a1224 10%,#1c2942 62%,#091426 100%)!important;color:#f5f8ff!important;--a-purple:#b18aff;--a-teal:#70d4ff;--a-cyan:#79c9ff;}
+html[data-app-appearance=dark] body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:#14223b;clip-path:ellipse(130% 50% at 97% 99%);}
+html[data-app-appearance=dark] body[data-approved-mobile]>header{background:transparent!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .approved-logo-ink{display:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .primary{background:#2463eb!important;color:white!important;-webkit-text-fill-color:white!important;}html[data-app-appearance=dark] body[data-approved-mobile] #apply{background:#2463eb!important;color:var(--morph-on-primary)!important;-webkit-text-fill-color:var(--morph-on-primary)!important;}
+
+
+html[data-app-appearance=dark] body[data-approved-mobile] .panel{backdrop-filter:blur(12px);box-shadow:0 8px 24px #00000014!important;}html[data-app-appearance=dark] body[data-approved-mobile] .connect-step{backdrop-filter:blur(12px);}html[data-app-appearance=dark] body[data-approved-mobile] .pm-remote-info{backdrop-filter:blur(12px);box-shadow:0 8px 24px #00000014!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .connection-status.ready{background:#183c5c!important;color:#b7e5ff!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile]{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20390%20844%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%20650%20C117%20490%20312%20540%20390%20304%20L390%20844%20H0Z%22%20fill%3D%22%2316243d%22/%3E%3Cpath%20d%3D%22M0%20743%20C136%20607%20312%20650%20390%20523%20L390%20844%20H0Z%22%20fill%3D%22%23101c31%22/%3E%3C/svg%3E"),radial-gradient(ellipse at 110% 0%,#74758c 0%,#35415e 32%,transparent 65%),linear-gradient(145deg,#0a1224 10%,#1c2942 62%,#091426 100%)!important;background-size:100% 100%!important;background-attachment:fixed!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.fine,.credits,footer,.app-footer){color:#b9cbe6!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] :is(button,input,select):focus-visible{outline:2px solid #8bdcff!important;outline-offset:2px!important;}
+
+
+
+/* Opaque canvas under the glass: Android WebView must never blend with white. */
+html[data-app-appearance=dark]{background:#0a1224!important;background-color:#0a1224!important;color-scheme:dark!important;font-size:16px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile]{min-height:100vh!important;background-color:#101b2e!important;font-family:var(--morph-font)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(h1,h2,h3,p,button,input,label,summary,strong,small,span){font-family:var(--morph-font)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile]>.ambient{display:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.panel,.connect-step,.manual,.install-card,.pm-remote-info){background-color:#23344ee8!important;border-color:#6f85a34d!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .connect-step .connection-card{border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;margin:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .pm-page-intro{margin:8px 0 18px!important;min-height:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .connect-step{margin:12px 0!important;border-width:1px!important;min-height:0!important;padding:0!important;border-radius:16px!important;box-shadow:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .connect-step>summary{min-height:56px!important;padding:12px 16px!important;}
+
+
+
+/* Compact floating navigation, using the same slate glass as the remote. */
+
+
+
+
+
+
+
+/* No backdrop compositing over the actual Android phone canvas. */
+html[data-app-appearance=dark] body[data-approved-mobile],html[data-app-appearance=dark] body[data-approved-mobile] *,html[data-app-appearance=dark] body[data-approved-mobile] *:before,html[data-app-appearance=dark] body[data-approved-mobile] *:after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;mix-blend-mode:normal!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map>.pm-page-intro{position:relative!important;padding:20px!important;margin:8px 0 22px!important;border:1px solid #7c93b34d!important;border-radius:22px!important;background:linear-gradient(135deg,#30415c,#1b2e49)!important;box-shadow:0 8px 22px #0000001c!important;min-height:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map>.pm-page-intro h1{font-size:1.5625rem!important;line-height:1.5!important;margin:4px 0 8px!important;color:#f7f9ff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map>.pm-page-intro p{font-size:0.8125rem!important;line-height:1.85!important;color:#c5d6eb!important;margin:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map #m30-status{padding:0!important;margin:0!important;border:1px solid #7b94b533!important;border-radius:13px!important;background:#162941!important;box-shadow:none!important;min-height:0!important;height:auto!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #navy-connect-start{width:100%!important;min-height:48px!important;margin-top:0!important;border-radius:12px!important;font-size:0.875rem!important;opacity:1!important;grid-column:1!important;grid-row:auto!important;box-shadow:none!important;background:var(--morph-primary)!important;color:var(--morph-on-primary)!important;-webkit-text-fill-color:var(--morph-on-primary)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map .pm-setup-title{display:none!important;}
+
+/* Keep the complete shared credit readable, with natural spacing on narrow phones. */
+footer .phone-developer-credit{display:block;direction:ltr;max-width:100%;margin:4px auto;padding:0 8px;font-size:12px!important;line-height:1.5;letter-spacing:normal;white-space:normal;overflow-wrap:normal;word-break:normal;box-sizing:border-box;}

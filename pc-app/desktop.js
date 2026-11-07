@@ -1,0 +1,51 @@
+(function(C){'use strict';
+ function t(ar,en){return MorphLocale.t(ar,en);}
+ function error(e){C.toast(e.message||String(e));}
+ function back(){if(window.MorphCleaner&&MorphCleaner.isOpen()){MorphCleaner.close();return;}if(C.NetworkScreen&&C.NetworkScreen.isOpen()){C.NetworkScreen.back();return;}if(C.BridgeReceiver&&C.BridgeReceiver.back())return;const player=document.getElementById('morph-player');if(player){const close=player.querySelector('.morph3-back,.morph2-top button');if(close){close.click();return;}}const frame=document.getElementById('morph-media-frame');if(frame&&frame.style.display!=='none'){const w=frame.contentWindow;if(w.IptvUI){w.IptvUI.back();return;}SamsungMedia.exit(false);return;}if(C.USB&&C.USB.close&&document.getElementById('pc-media-browser')){closeBrowser();return;}const fromSettings=!document.getElementById('view-settings').hidden;C.back();if(fromSettings&&document.getElementById('view-settings').hidden)requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!document.getElementById('view-home').hidden)document.getElementById('nav-settings').focus();}));}
+ function home(){if(window.MorphCleaner&&MorphCleaner.isOpen()){MorphCleaner.close();if(MorphCleaner.isOpen())return;}if(C.NetworkScreen)C.NetworkScreen.close();if(C.BridgeReceiver)C.BridgeReceiver.close();if(window.SamsungMedia)SamsungMedia.exit(true);if(C.Kids&&C.Kids.close)C.Kids.close();closeBrowser();if(C.showView)C.showView('home');}
+ let browser=null,cleanup=null;
+ function closeBrowser(){if(cleanup){cleanup();cleanup=null;}if(browser){browser.remove();browser=null;C.Focus.setScope(document);}}
+ async function browse(root,relative='',selected=''){
+  closeBrowser();browser=C.el('div','overlay');browser.id='pc-media-browser';const panel=C.el('section','modal');panel.setAttribute('role','dialog');panel.setAttribute('aria-label',t('ملفات الكمبيوتر وUSB','PC and USB media'));const title=C.el('h2','',root.name);panel.appendChild(title);const actions=C.el('div','actions');panel.appendChild(actions);
+  function button(label,fn){const b=C.el('button','tool',label);b.onclick=fn;actions.appendChild(b);return b;}
+  button(t('إغلاق','Close'),closeBrowser);if(relative)button(t('المجلد السابق','Parent folder'),()=>browse(root,relative.split(/[\\/]/).slice(0,-1).join('/')));
+  const list=C.el('div','usb-file-list');list.dataset.scroll='vertical';panel.appendChild(list);browser.appendChild(panel);document.body.appendChild(browser);C.Focus.setScope(browser);
+  const current=browser;try{const rows=await MorphPC.directory(root.id,relative);if(current!==browser)return;const supported=rows.filter(row=>row.directory||C.USBMedia.kind(row.name));if(!supported.length)list.appendChild(C.el('p','',t('لا توجد ملفات وسائط مدعومة.','No supported media files.')));let at=0;function more(){for(const end=Math.min(at+100,supported.length);at<end;at++){const row=supported[at],b=C.el('button','usb-button',(row.directory?'▣ ':'▶ ')+row.name);b.onclick=()=>{if(row.directory){browse(root,row.relative);return;}if(cleanup)cleanup();panel.hidden=true;const queue=supported.filter(x=>!x.directory&&C.USBMedia.kind(x.name)===C.USBMedia.kind(row.name));let playing=queue.indexOf(row);function startFile(entry){cleanup=C.USBMedia.open(browser,entry.url,entry.name,C.USBMedia.kind(entry.name),()=>browse(root,relative),queue.length>1?step=>{if(cleanup)cleanup();playing=(playing+step+queue.length)%queue.length;startFile(queue[playing]);}:null);}startFile(row);};list.appendChild(b);if(selected===row.name){selected='';setTimeout(()=>b.click(),0);}}if(at<supported.length){const b=C.el('button','tool',t('عرض المزيد','Show more'));b.onclick=()=>{b.remove();more();};list.appendChild(b);}}more();C.Focus.first();}catch(e){error(e);}
+ }
+ function mediaFiles(){MorphPC.pickMedia().then(root=>{if(root)browse(root,'',root.selected);}).catch(error);}
+ window.addEventListener('load',function(){
+  // Prayer and matches share the canonical home-summary container.
+  document.body.dataset.platform='windows';
+  document.getElementById('preview-badge').hidden=true;
+  document.getElementById('focus-hint').textContent=t('ماوس وكيبورد · F11 ملء الشاشة','Mouse & keyboard · F11 fullscreen');
+  document.getElementById('version-note').textContent='MORPH LAUNCHER · WINDOWS '+document.body.dataset.buildVersion;
+  const internet=document.getElementById('home-internet');internet.onclick=()=>MorphPC.external('https://www.google.com/').catch(error);
+  ['home-store','apps-store'].forEach(id=>{document.getElementById(id).onclick=()=>MorphPC.settings('store').catch(error);document.getElementById(id).textContent='Microsoft Store ↗';});
+  ['nav-wifi','setting-wifi'].forEach(id=>{const b=document.getElementById(id);if(b)b.onclick=()=>MorphPC.settings('wifi').catch(error);});
+  const device=document.getElementById('setting-device-settings');if(device)device.onclick=()=>MorphPC.settings('system').catch(error);
+  const hdmi=document.getElementById('home-inputs');if(hdmi){hdmi.hidden=false;hdmi.textContent=t('ملفات الكمبيوتر وUSB','PC & USB media');hdmi.onclick=mediaFiles;}
+  C.USB.open=mediaFiles;
+  const nav=C.el('nav','pc-toolbar');nav.setAttribute('aria-label',t('تنقل الكمبيوتر','Desktop navigation'));
+  const group=C.el('div','pc-nav-actions');nav.appendChild(group);
+  function tool(id,label,icon,fn,host){const b=C.el('button','');b.id=id;b.type='button';b.innerHTML=icon;const text=C.el('span','',label);b.appendChild(text);b.onclick=fn;(host||group).appendChild(b);return b;}
+  const homeIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>';
+  const fullIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M8 3H4a1 1 0 0 0-1 1v4m13-5h4a1 1 0 0 1 1 1v4M3 16v4a1 1 0 0 0 1 1h4m8 0h4a1 1 0 0 0 1-1v-4"/></svg>';
+  tool('pc-back',t('رجوع','Back'),C.icon('back'),back);tool('pc-home',t('الرئيسية','Home'),homeIcon,home);
+  const identity=C.el('div','pc-nav-identity');identity.innerHTML='<span class="pc-nav-brand">Morph <span>Launcher</span></span><span class="pc-nav-platform">WINDOWS</span>';nav.appendChild(identity);
+  const full=tool('pc-fullscreen',t('ملء الشاشة','Fullscreen'),fullIcon,()=>MorphPC.fullscreen().catch(error),nav);full.title='F11';full.appendChild(C.el('kbd','','F11'));full.setAttribute('aria-label',t('ملء الشاشة','Fullscreen'));document.documentElement.appendChild(nav);
+  const target=document.querySelector('#view-settings .settings-panel');
+  function setting(id,label,fn){const b=C.el('button','setting',label);b.id=id;b.dataset.noTranslate='';b.onclick=fn;target.appendChild(b);return b;}
+  setting('pc-files',t('ملفات الكمبيوتر وUSB →','PC & USB media →'),mediaFiles);
+
+  setting('pc-display',t('إعدادات شاشة ويندوز →','Windows display settings →'),()=>MorphPC.settings('display').catch(error));
+  setting('pc-sound',t('إعدادات صوت ويندوز →','Windows sound settings →'),()=>MorphPC.settings('sound').catch(error));
+  let startup=false;const startupButton=setting('pc-startup','',()=>MorphPC.startup(!startup).then(value=>{startup=value;paintStartup();}).catch(error));
+  function paintStartup(){startupButton.textContent=t('تشغيل مع ويندوز','Start with Windows')+' · '+(startup?t('مفعل','On'):t('متوقف','Off'));}
+  MorphPC.info().then(info=>{startup=info.startup;paintStartup();if(info.platform==='darwin'){document.body.dataset.platform='macos';nav.querySelector('.pc-nav-platform').textContent='macOS';document.getElementById('version-note').textContent='MORPH LAUNCHER · macOS '+info.version;['home-store','apps-store'].forEach(id=>document.getElementById(id).textContent='App Store ↗');document.getElementById('pc-display').textContent=t('إعدادات شاشة macOS →','macOS display settings →');document.getElementById('pc-sound').textContent=t('إعدادات صوت macOS →','macOS sound settings →');startupButton.onclick=()=>MorphPC.startup(!startup).then(value=>{startup=value;startupButton.textContent=t('تشغيل مع macOS','Start with macOS')+' · '+(startup?t('مفعل','On'):t('متوقف','Off'));}).catch(error);startupButton.textContent=t('تشغيل مع macOS','Start with macOS')+' · '+(startup?t('مفعل','On'):t('متوقف','Off'));}});paintStartup();
+  if(C.SettingsNav)C.SettingsNav.refresh();
+  function desktopInputs(){const dock=document.getElementById('dock-hdmi');if(!dock)return;const label=t('ملفات الكمبيوتر وUSB','PC & USB media');dock.setAttribute('aria-label',label);dock.dataset.noTranslate='';const span=dock.querySelector('.app-name');if(span&&span.textContent!==label)span.textContent=label;}
+  desktopInputs();new MutationObserver(desktopInputs).observe(document.getElementById('favourites'),{childList:true});window.addEventListener('morphLanguage',desktopInputs);
+  document.addEventListener('click',function(e){const b=e.target.closest('#dock-hdmi,[data-dock-action="inputs"],[data-action="inputs"]');if(b){e.preventDefault();e.stopImmediatePropagation();mediaFiles();}},true);
+  document.addEventListener('auxclick',e=>{if(e.button===3){e.preventDefault();back();}});
+ });
+})(window.ClearTV);

@@ -1,0 +1,7 @@
+<resources>
+    <style name="MorphBridgeTheme" parent="MorphInstantTheme">
+        <item name="android:windowBackground">@drawable/bridge_entry_background</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

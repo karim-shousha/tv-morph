@@ -441,7 +441,7 @@ function renderSettings(wrap) {
   panel.appendChild(el('p', 'fit-toast-note', t('safety')));
   /* contact */
   var cp = el('div', 'fit-setrow');
-  var mail = el('a', '', 'support@herroshetta.com'); mail.href = 'mailto:support@herroshetta.com'; mail.dir = 'ltr';
+  var mail = el('a', '', 'support@morph-tv.com'); mail.href = 'mailto:support@morph-tv.com'; mail.dir = 'ltr';
   mail.style.cssText = 'font-size:20px;font-weight:bold';
   cp.appendChild(el('span', 'lab', t('contactUs') + ': ')); cp.appendChild(mail); panel.appendChild(cp);
   panel.appendChild(el('p', 'fit-toast-note', t('contactMsg')));
@@ -474,6 +474,7 @@ UI.back=function(){
   if(UI.screen!=='home'){show('home');return;}
   var target=UI.returnFocus;C.showView('home');if(target)C.Focus.focus(target);
 };
+function placeFitnessSidebar(){var sidebar=document.getElementById('home-fitness'),tools=document.querySelector('#view-home .home-tools');if(!sidebar||!tools)return;var old=document.getElementById('nav-fitness');if(old)old.remove();if(C.settings.fitnessSidebarOnly!==true){C.settings.fitnessSidebarOnly=true;C.settings.showFitnessApp=true;C.saveSettings();}sidebar.hidden=C.settings.showFitnessApp!==true;var prayer=document.getElementById('open-prayer'),before=prayer&&prayer.parentNode===tools?prayer:tools.firstChild;if(before!==sidebar&&sidebar.nextElementSibling!==before)tools.insertBefore(sidebar,before);if(C.Focus&&C.Focus.invalidate)C.Focus.invalidate();if(C.refreshRecentSection)C.refreshRecentSection();}
 function mount(){
   setS(C.FitnessStore.settings());
   if(!root()){
@@ -482,19 +483,17 @@ function mount(){
     var main=document.querySelector('main'),footer=main.querySelector('footer');
     main.insertBefore(sec,footer&&footer.parentNode===main?footer:null);
   }
-  var nav=document.getElementById('nav-fitness');
-  if(!nav){nav=C.el('button','nav');nav.id='nav-fitness';nav.setAttribute('data-view','fitness');nav.hidden=true;document.querySelector('header nav').appendChild(nav);}
-  nav.setAttribute('data-no-translate','');nav.onclick=function(){C.showView('fitness',nav);};
+  var nav=document.getElementById('nav-fitness');if(nav)nav.remove();
   var sidebar=document.getElementById('home-fitness');
   if(!sidebar){sidebar=C.el('button','tool');sidebar.id='home-fitness';sidebar.setAttribute('data-no-translate','');var tools=document.querySelector('#view-home .home-tools');tools.insertBefore(sidebar,tools.firstChild);}
-  sidebar.onclick=function(){C.showView('fitness',sidebar);};
-  function labels(){nav.textContent=t('fitness');sidebar.textContent=t('fitness');sidebar.setAttribute('aria-label',t('fitness')+' · Plus');sidebar.title=t('fitness')+' · Plus';root().setAttribute('aria-label',t('sportsHome'));}
-  labels();w.addEventListener('morphLanguage',function(){labels();if(!root().hidden&&UI.screen!=='active')show(UI.screen,UI.params);});
+  sidebar.hidden=C.settings.showFitnessApp!==true;sidebar.onclick=function(){C.showView('fitness',sidebar);};
+  w.addEventListener('morphPlus',labels);function labels(){sidebar.textContent=t('fitness');var suffix=w.MorphPlus&&w.MorphPlus.isActive()?'':' · Plus';sidebar.setAttribute('aria-label',t('fitness')+suffix);sidebar.title=t('fitness')+suffix;root().setAttribute('aria-label',t('sportsHome'));}
+  placeFitnessSidebar();setTimeout(placeFitnessSidebar,0);labels();w.addEventListener('morphLanguage',function(){labels();if(!root().hidden&&UI.screen!=='active')show(UI.screen,UI.params);});
   w.addEventListener('morphAudioExclusive',function(){if(running())pauseKeep(UI.engine);});
   document.addEventListener('visibilitychange',function(){if(document.hidden){C.FitnessAudio.music.pause();if(running())pauseKeep(UI.engine);}});
 }
 w.addEventListener('morphFitnessMusic',function(){var label=document.querySelector('[data-fit-music-status]');if(label)label.textContent=C.FitnessAudio.music.statusText();var snap=C.FitnessAudio.music.snapshot();document.querySelectorAll('[data-music-preview]').forEach(function(b){var playing=snap.mode==='preview'&&snap.track===b.getAttribute('data-music-preview')&&!snap.paused;b.textContent=t(playing?'stopPreview':'listen');b.setAttribute('aria-pressed',String(playing));});});
 C.FitnessUI = UI;
 w.addEventListener('load', mount);
-w.addEventListener('morphViewer', function () { setS(C.FitnessStore.settings()); });
+w.addEventListener('morphViewer', function () { setS(C.FitnessStore.settings());placeFitnessSidebar(); });
 })(window);

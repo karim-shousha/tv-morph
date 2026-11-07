@@ -33,9 +33,9 @@ function speak(text, lang) {
 }
 /* The three original HER sports tracks are streamed from Morph TV on demand. */
 var PACKS=[
- {id:'motivation',title:{ar:'طاقة الصباح',en:'Morning Energy',fr:'Énergie du matin',zh:'晨间活力',ja:'朝のエネルギー'},status:'streaming',url:'https://morphtv.herroshetta.com/fitness-music/v1/Sport1.mp3'},
- {id:'energy',title:{ar:'إيقاع الحركة',en:'Rhythm of Movement',fr:'Rythme du mouvement',zh:'运动节奏',ja:'動きのリズム'},status:'streaming',url:'https://morphtv.herroshetta.com/fitness-music/v1/Sport2.mp3'},
- {id:'focus',title:{ar:'دفعة قوية',en:'Power Boost',fr:'Coup de boost',zh:'强劲动力',ja:'パワーブースト'},status:'streaming',url:'https://morphtv.herroshetta.com/fitness-music/v1/Sport3.mp3'},
+ {id:'motivation',title:{ar:'طاقة الصباح',en:'Morning Energy',fr:'Énergie du matin',zh:'晨间活力',ja:'朝のエネルギー'},status:'streaming',url:'https://morph-tv.com/fitness-music/v1/Sport1.mp3'},
+ {id:'energy',title:{ar:'إيقاع الحركة',en:'Rhythm of Movement',fr:'Rythme du mouvement',zh:'运动节奏',ja:'動きのリズム'},status:'streaming',url:'https://morph-tv.com/fitness-music/v1/Sport2.mp3'},
+ {id:'focus',title:{ar:'دفعة قوية',en:'Power Boost',fr:'Coup de boost',zh:'强劲动力',ja:'パワーブースト'},status:'streaming',url:'https://morph-tv.com/fitness-music/v1/Sport3.mp3'},
  {id:'none',title:{ar:'بدون موسيقى',en:'No Music',fr:'Sans musique',zh:'无音乐',ja:'音楽なし'},status:'off'}
 ];
 var words={

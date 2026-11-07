@@ -14,6 +14,8 @@ import java.util.*;
 final class AppMaintenance {
  private static String t(TvActivity a,String ar,String en){return UiSettings.text(a,ar,en);}
  static boolean removable(TvActivity a,ApplicationInfo info){return !info.packageName.equals(a.getPackageName())&&(info.flags&(ApplicationInfo.FLAG_SYSTEM|ApplicationInfo.FLAG_UPDATED_SYSTEM_APP))==0;}
+ static boolean canUninstall(TvActivity a,String id){try{return id!=null&&removable(a,a.getPackageManager().getApplicationInfo(id,0));}catch(Exception e){return false;}}
+ static void uninstall(TvActivity a,String id){if(!canUninstall(a,id))return;open(a,new Intent(Intent.ACTION_DELETE,Uri.parse("package:"+id)));}
  static void show(TvActivity a){
   PackageManager pm=a.getPackageManager();Map<String,ApplicationInfo> found=new HashMap<>();
   for(String category:new String[]{Intent.CATEGORY_LEANBACK_LAUNCHER,Intent.CATEGORY_LAUNCHER})for(ResolveInfo r:pm.queryIntentActivities(new Intent(Intent.ACTION_MAIN).addCategory(category),0)){ApplicationInfo info=r.activityInfo.applicationInfo;if(!info.packageName.equals(a.getPackageName()))found.put(info.packageName,info);}

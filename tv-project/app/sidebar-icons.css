@@ -11,6 +11,6 @@
 #view-home .home-tools>#home-appearance:before{background-image:url(assets/tvm-appearance.svg)}
 #view-home .home-tools>#home-help:before{background-image:url(assets/tvm-help.svg)}
 
-#view-home .home-tools>.tool{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+#view-home .home-tools>.tool{backdrop-filter:none;-webkit-backdrop-filter:none}
 
 #view-home .home-tools>#home-fitness:before{background-image:url(assets/tvm-fitness.svg)}

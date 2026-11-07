@@ -1,0 +1,1 @@
+import 'package:flutter/widgets.dart';class HerBannerAd extends StatelessWidget{const HerBannerAd({super.key,this.inline=false,this.placement=''});final bool inline;final String placement;@override Widget build(BuildContext c)=>const SizedBox.shrink();}

@@ -1,0 +1,59 @@
+/* Shared TV/desktop settings canvas; scroll content inside a bounded page. */
+html body #view-settings{position:absolute!important;left:120px!important;right:120px!important;top:132px!important;bottom:58px!important;width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;max-width:none!important;margin:0!important;padding:18px 30px 30px!important;box-sizing:border-box!important;overflow-y:auto!important;overflow-x:hidden!important;scroll-padding:18px;}
+html body #view-settings>h1,html body #view-settings>h2{font-size:34px!important;margin:6px 0 10px!important}html body #view-settings>p{font-size:20px!important;margin:8px 0 20px!important}
+html body #view-settings .settings-category-menu{display:flex!important;flex-wrap:wrap!important;gap:0!important;width:100%!important;margin:0!important;padding:4px!important;box-sizing:border-box!important}
+html body #view-settings .settings-category-entry{flex:0 0 calc(33.333% - 16px)!important;width:calc(33.333% - 16px)!important;height:92px!important;min-height:92px!important;margin:8px!important;padding:14px 20px!important;border-radius:18px!important;transform:none!important;box-sizing:border-box!important}
+html body #view-settings .settings-category-entry strong{font-size:22px!important;line-height:1.3!important}html body #view-settings .settings-category-entry .ui-section-icon{width:44px!important;height:44px!important;flex:0 0 44px!important;margin:0 14px 0 0!important;box-shadow:none!important}html body #view-settings .settings-category-entry svg{width:30px!important;height:30px!important;flex:0 0 30px!important}
+html body #view-settings .settings-panel{width:100%!important;max-width:100%!important;padding:18px 24px!important;margin:10px 0!important;box-sizing:border-box!important}html body #view-settings .settings-panel h2{font-size:25px!important;margin:6px 0 14px!important}html body #view-settings .setting,html body #view-settings .prayer-button{min-height:50px!important;padding:12px 16px!important;font-size:20px!important;line-height:1.35!important;box-sizing:border-box!important}html body #view-settings .setting small{font-size:16px!important}html body #view-settings input,html body #view-settings select{font-size:20px!important;max-width:100%!important;box-sizing:border-box!important}
+html body #view-settings button:not(:focus){outline:none!important;box-shadow:none!important;transform:none!important;border-color:var(--ui-card-border,#b8c9df35)!important;background:var(--ui-control-bg,#22324b70)!important}html body #view-settings button:focus{outline:2px solid var(--ui-focus-ring,#bdd7ff)!important;outline-offset:2px!important;border-color:var(--ui-focus-ring,#bdd7ff)!important;box-shadow:none!important;transform:none!important;background:var(--ui-selected-bg,#385477)!important}
+html body #morph-header nav button{font-size:19px!important;padding:9px 12px!important;white-space:nowrap!important;min-width:0!important}html body #morph-header nav{gap:4px!important;flex:1 1 auto!important;min-width:0!important}html body #morph-header .brand{flex-shrink:1!important;min-width:160px!important;max-width:230px!important}
+
+/* A persistent category rail and one independently scrolling settings pane. */
+html body #view-settings.settings-sidebar-layout{display:flex!important;gap:24px!important;padding:14px!important;overflow:hidden!important;align-items:stretch!important;}
+html body #view-settings.settings-sidebar-layout[hidden]{display:none!important;}
+html body #view-settings.settings-sidebar-layout>.page-title,html body #view-settings.settings-sidebar-layout>.settings-note{display:none!important;}
+html body #view-settings.settings-sidebar-layout #settings-categories-menu{display:flex!important;flex:0 0 318px!important;width:318px!important;min-width:0!important;flex-direction:column!important;flex-wrap:nowrap!important;gap:5px!important;padding:8px!important;margin:0!important;overflow:auto!important;scroll-padding:8px;background:var(--ui-card-bg,rgba(23,40,65,.55));border:1px solid var(--ui-card-border,#b8c9df35);border-radius:22px;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry{flex:0 0 auto!important;width:100%!important;min-height:65px!important;height:auto!important;margin:0!important;padding:13px 14px!important;gap:12px!important;border-radius:13px!important;border-color:transparent!important;background:transparent!important;text-align:start!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry[hidden]{display:none!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry strong{font-size:22px!important;font-weight:600!important;min-width:0!important;flex:1!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry .ui-section-icon,html body #view-settings.settings-sidebar-layout .settings-category-entry svg{width:29px!important;height:29px!important;flex:0 0 29px!important;margin:0!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry.is-selected{background:var(--ui-selected-bg,#385477)!important;border-color:var(--ui-focus-ring,#bdd7ff)!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-entry:focus{outline:2px solid var(--ui-focus-ring,#bdd7ff)!important;outline-offset:-3px!important;}
+html body #view-settings.settings-sidebar-layout>.settings-grid{flex:1 1 0!important;width:auto!important;min-width:0!important;min-height:0!important;height:100%!important;overflow:hidden!important;margin:0!important;padding:0!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-panel{height:100%!important;box-sizing:border-box!important;overflow:auto!important;padding:4px 8px 28px!important;scroll-padding:10px;}
+html body #view-settings.settings-sidebar-layout .settings-panel{margin:0 0 16px!important;padding:22px 24px!important;}
+html body #view-settings.settings-sidebar-layout .settings-category-panel>button,#view-settings.settings-sidebar-layout #prayer-settings-entry{display:none!important;}
+html body #view-settings.settings-sidebar-layout #settings-plus-card{width:100%!important;min-height:0!important;margin:0!important;padding:20px!important;box-sizing:border-box!important;}
+html body #view-settings.settings-sidebar-layout #settings-plus-card h2{font-size:28px!important;line-height:1.3!important;}
+html body #view-settings.settings-sidebar-layout .settings-plus-benefits{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;padding:0!important;}
+html body #view-settings.settings-sidebar-layout .settings-plus-benefits li{width:auto!important;min-width:0!important;min-height:0!important;padding:14px!important;box-sizing:border-box!important;line-height:1.5!important;font-size:18px!important;}
+html body #view-settings.settings-sidebar-layout .settings-plus-intro,html body #view-settings.settings-sidebar-layout .settings-plus-note{font-size:20px!important;line-height:1.5!important;}
+html body #view-settings.settings-sidebar-layout #settings-category-plus-entry small{font-size:15px!important;line-height:1.3!important;max-width:92px;color:var(--ui-text-muted,#c3d1e5);}
+html body #view-settings.settings-sidebar-layout #settings-category-plus-entry svg{color:#edc568!important;}
+html body #view-settings.settings-sidebar-layout #settings-category-plus-entry.plus-is-active small{color:#63dcad!important;}
+html body.light-mode #view-settings.settings-sidebar-layout #settings-category-plus-entry.plus-is-active small{color:#126748!important;}
+/* Every top-level destination stays in the visible bar without horizontal clipping. */
+html body[data-ui-mode][data-ui-home][data-theme] main>#morph-header nav{gap:3px!important;padding:4px!important;overflow:visible!important;min-width:0!important;}
+html body[data-ui-mode][data-ui-home][data-theme] main>#morph-header nav button.nav{font-size:26px!important;line-height:32px!important;min-height:54px!important;height:54px!important;padding:9px 10px!important;flex:0 0 auto!important;min-width:max-content!important;}
+html body[data-ui-mode][data-ui-home][data-theme] main>#morph-header .brand{min-width:170px!important;max-width:200px!important;flex:0 0 200px!important;}
+html body[data-ui-mode][data-ui-home][data-theme] main>#morph-header .brand img{max-width:100%!important;}
+
+html body #modal.profiles-modal{width:720px!important;max-width:calc(100% - 80px)!important;min-height:0!important;max-height:80%!important;height:auto!important;padding:24px 28px!important;box-sizing:border-box!important;border-radius:22px!important;overflow:auto!important;}
+html body #modal.profiles-modal .modal-heading{margin-bottom:18px!important;}
+html body #modal.profiles-modal h2{font-size:28px!important;line-height:1.3!important;margin:4px 0!important;}
+html body #modal.profiles-modal .viewer-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin:0 0 16px!important;}
+html body #modal.profiles-modal .viewer-card{min-height:52px!important;padding:12px 16px!important;font-size:21px!important;border-radius:13px!important;}
+html body #modal.profiles-modal label{display:block!important;font-size:19px!important;line-height:1.4!important;margin:12px 0 8px!important;}
+html body #modal.profiles-modal #viewer-name{display:block!important;width:100%!important;min-width:0!important;min-height:52px!important;font-size:21px!important;padding:10px 14px!important;box-sizing:border-box!important;}
+html body #modal.profiles-modal #modal-content>.primary{display:block!important;min-height:52px!important;padding:12px 20px!important;font-size:21px!important;margin-top:14px!important;}
+
+html body[data-ui-mode][data-ui-home][data-theme] main>#morph-header nav #nav-home{width:48px!important;min-width:48px!important;flex:0 0 48px!important;padding:10px!important;}
+
+/* Keep the category rail in the Settings layout while the prayer pane is open. */
+html body #view-settings.settings-sidebar-layout.prayer-settings-mode #settings-categories-menu{display:flex!important}
+html body #view-settings.settings-sidebar-layout #settings-categories-menu{height:auto!important;max-height:100%!important;align-self:flex-start!important;flex-shrink:0!important}
+html body #view-settings.settings-sidebar-layout #settings-category-prayer #prayer-settings{display:block!important;width:100%!important;box-sizing:border-box!important;margin:0!important;position:static!important}
+html body #view-settings.settings-sidebar-layout #prayer-settings-back,html body #view-settings.settings-sidebar-layout #prayer-settings-title{display:none!important}
+html body #view-settings.settings-sidebar-layout .settings-category-panel{scroll-padding-bottom:32px!important}
+html body #view-settings.settings-sidebar-layout .settings-plus-benefits{display:block!important}
+html body #view-settings.settings-sidebar-layout .settings-plus-benefits li{min-height:0!important;margin:8px 0!important}

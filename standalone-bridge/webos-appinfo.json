@@ -1,0 +1,11 @@
+{
+  "id": "tv.appbridge.webos",
+  "version": "0.6.2",
+  "vendor": "Karim Aboushousha",
+  "type": "web",
+  "main": "index.html",
+  "title": "Morph Bridge",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "requiredMemory": 50
+}

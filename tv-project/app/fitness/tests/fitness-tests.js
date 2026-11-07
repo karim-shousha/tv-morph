@@ -35,7 +35,7 @@ ok(Math.abs(estMin - fb.targetMins) <= 6, 'program duration estimate sane (~' + 
 /* i18n: 5 locales chrome */
 ['en', 'ar', 'fr', 'zh', 'ja'].forEach(function (l) { ok(!!(C.FitnessI18n.all[l] && C.FitnessI18n.all[l].fitness), 'locale ' + l + ' has chrome strings'); });
 ok(C.FitnessAudio.PACKS.length === 4, 'music packs listed');
-ok(C.FitnessAudio.PACKS.filter(function (p) { return p.status === 'streaming' && /^https:\/\/morphtv.herroshetta.com\/fitness-music\/v1\/Sport[123]\.mp3$/.test(p.url); }).length === 3, 'three original HER sports tracks have real streaming URLs');
+ok(C.FitnessAudio.PACKS.filter(function (p) { return p.status === 'streaming' && /^https:\/\/morph-tv.com\/fitness-music\/v1\/Sport[123]\.mp3$/.test(p.url); }).length === 3, 'three original HER sports tracks have real streaming URLs');
 /* store */
 var s0 = C.FitnessStore.settings(); s0.weightKg = 80; C.FitnessStore.saveSettings(s0);
 ok(C.FitnessStore.settings().weightKg === 80, 'settings persist');

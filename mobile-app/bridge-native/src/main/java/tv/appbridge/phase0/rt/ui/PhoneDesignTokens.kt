@@ -1,0 +1,62 @@
+// Generated from mobile-app/design-system.json.
+package tv.appbridge.phase0.rt.ui
+
+object PhoneDesignTokens {
+ val backgroundTop=0xFF132B49.toInt()
+ val backgroundMiddle=0xFF0C1C32.toInt()
+ val backgroundBottom=0xFF071222.toInt()
+ val backgroundBase=0xFF0B192B.toInt()
+ val glassTop=0xF20D2038.toInt()
+ val glassBottom=0xEF05101F.toInt()
+ val surface=0xFF0B192B.toInt()
+ val soft=0xFF12263D.toInt()
+ val border=0x9936516E.toInt()
+ val text=0xFFF6F5F1.toInt()
+ val muted=0xFFB9C0CD.toInt()
+ val accent=0xFFF5D58F.toInt()
+ val accentEnd=0xFFC29140.toInt()
+ val link=0xFFEAC778.toInt()
+ val shadow=0x40000000.toInt()
+ val success=0xFF88D9BB.toInt()
+ val danger=0xFFFFB9B9.toInt()
+ val onAccent=0xFF141B25.toInt()
+ val borderHighlight=0xAA789DC2.toInt()
+ val borderWarm=0x708B713E.toInt()
+ val lightBackgroundTop=0xFF132B49.toInt()
+ val lightBackgroundMiddle=0xFF0C1C32.toInt()
+ val lightBackgroundBottom=0xFF071222.toInt()
+ val lightBackgroundBase=0xFF0B192B.toInt()
+ val lightGlassTop=0xF20D2038.toInt()
+ val lightGlassBottom=0xEF05101F.toInt()
+ val lightSurface=0xFF0B192B.toInt()
+ val lightSoft=0xFF12263D.toInt()
+ val lightBorder=0x9936516E.toInt()
+ val lightText=0xFFF6F5F1.toInt()
+ val lightMuted=0xFFB9C0CD.toInt()
+ val lightAccent=0xFFF5D58F.toInt()
+ val lightAccentEnd=0xFFC29140.toInt()
+ val lightLink=0xFFEAC778.toInt()
+ val lightShadow=0x40000000.toInt()
+ val lightSuccess=0xFF88D9BB.toInt()
+ val lightDanger=0xFFFFB9B9.toInt()
+ val lightOnAccent=0xFF141B25.toInt()
+ val lightBorderHighlight=0xAA789DC2.toInt()
+ val lightBorderWarm=0x708B713E.toInt()
+ const val headerHeight=72
+ const val logoWidth=128
+ const val logoHeight=36
+ const val backIcon=18
+ const val touchTarget=44
+ const val screenPadding=14
+ const val cardPadding=12
+ const val cardRadius=13
+ const val inputRadius=10
+ const val gap=10
+ const val titleSize=22
+ const val sectionSize=17
+ const val labelSize=13
+ const val bodySize=13
+ const val captionSize=11
+ const val readingSize=24
+ const val compactTileMinHeight=96
+}

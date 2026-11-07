@@ -1,0 +1,173 @@
+/* Shared player geometry for Samsung Tizen and LG webOS. Colors are resolved from the active theme in JS. */
+#morph-player.morph252 .morph2-top,#morph-player.morph252 .morph2-topgrad,#morph-player.morph252 .morph2-botgrad{display:none!important}
+#morph-player.morph252 [hidden]{display:none!important}
+#morph-player.morph252 .morph2-left,#morph-player.morph252 .morph2-right{position:absolute;top:22px;bottom:22px;width:22.5%;max-height:none;box-sizing:border-box;border:1px solid;border-radius:20px;overflow:auto;padding:16px;box-shadow:none;display:block}
+#morph-player.morph252 .morph2-left{left:20px;right:auto;display:flex;flex-direction:column}
+#morph-player.morph252 .morph2-right{right:20px;left:auto}
+#morph-player.morph252 .morph2-lefthead{font-size:24px;padding:8px 8px 18px;min-height:30px}
+#morph-player.morph252 .morph2-lefthead button{display:none!important}
+#morph-player.morph252 .morph2-cats{display:block;max-height:32%;overflow:auto;padding:0 0 12px;flex-shrink:0}
+#morph-player.morph252 .morph2-cats button{display:block;box-sizing:border-box;width:100%;margin:3px 0;padding:10px 14px;min-height:44px;font-size:20px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:start}
+#morph-player.morph252 .morph2-chanlist{overflow:auto;flex:1;min-height:0;padding:2px}
+#morph-player.morph252 .morph2-chan{box-sizing:border-box;min-height:58px;font-size:20px;line-height:1.45;padding:8px;margin:3px 0}
+#morph-player.morph252 .morph2-chan .n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+#morph-player.morph252 .morph2-chan img{width:42px;height:38px;object-fit:contain}
+#morph-player.morph252 .morph2-dockwrap{position:absolute;left:25%;right:auto;width:50%;bottom:22px;height:120px;box-sizing:border-box;border:1px solid;border-radius:18px;padding:10px 16px;box-shadow:none}
+#morph-player.morph252 .morph2-tlrow{height:26px;margin:0 0 3px;display:flex;align-items:center;position:relative}
+#morph-player.morph252 .morph2-track{position:relative}
+#morph-player.morph252 .morph2-tlrow small{font-size:16px;min-width:54px}
+#morph-player.morph252 .morph2-btnrow{height:70px;display:flex;align-items:center;justify-content:space-around;margin:0}
+#morph-player.morph252 .morph2-btn{width:48px;height:48px;min-width:48px;min-height:48px;margin:0;padding:12px;box-sizing:border-box;border-radius:50%;border:1px solid}
+#morph-player.morph252 .morph2-btn.main{width:68px;height:68px;min-width:68px;min-height:68px;padding:18px}
+#morph-player.morph252 .morph2-btn svg{width:100%;height:100%;display:block}
+#morph-player.morph252 .morph2-meta{position:absolute;left:25%;right:auto;width:50%;bottom:154px;box-sizing:border-box;min-height:110px;border:1px solid;border-radius:18px;padding:12px 16px;display:flex;align-items:center;box-shadow:none}
+#morph-player.morph252 .morph2-meta>img{width:56px;height:76px;margin-right:16px;object-fit:contain}
+#morph-player.morph252 .morph2-meta .t{min-width:0;flex:1}
+#morph-player.morph252 .morph2-meta .t>b{font-size:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+#morph-player.morph252 .morph2-meta .s,#morph-player.morph252 .morph2-meta .r{font-size:16px;line-height:1.4;margin:3px 0}
+#morph-player.morph252 .morph2-meta .side{font-size:15px;max-width:30%;margin-left:12px}
+#morph-player.morph252 .morph2-meta .hd,#morph-player.morph252 .morph2-meta .bar{display:none}
+#morph-player.morph252 .morph252-plot{font-size:15px;line-height:1.4;max-height:42px;overflow:hidden;opacity:.72;margin-top:3px}
+#morph-player.morph252 .morph252-heading{font-size:24px;margin:8px 10px 28px}
+#morph-player.morph252 .morph252-section{margin-bottom:10px}
+#morph-player.morph252 .morph252-title,#morph-player.morph252 .morph252-choice{display:block;box-sizing:border-box;width:100%;text-align:start;white-space:normal;line-height:1.4;padding:14px 16px;min-height:58px;border:1px solid;border-radius:12px;font-size:20px;margin:3px 0;color:inherit}
+#morph-player.morph252 .morph252-title:after{content:'›';float:right;opacity:.65}
+#morph-player.morph252 .morph252-title[aria-expanded=true]:after{content:'⌄'}
+#morph-player.morph252 .morph252-choice{min-height:46px;font-size:18px;padding:10px 16px}
+#morph-player.morph252 .morph252-choice.sel:after{content:'✓';float:right;width:20px;height:20px;line-height:20px;text-align:center;border-radius:50%;color:#071018}
+#morph-player.morph252 .morph252-message{padding:12px;font-size:17px;line-height:1.5;white-space:pre-wrap;opacity:.8}
+#morph-player.morph252 .morph2-status{left:26%;right:26%;top:44%;font-size:20px}
+
+#morph-player.morph252.morph2-hidden .morph2-left,#morph-player.morph252.morph2-hidden .morph2-right{display:none!important}
+
+/* Compact transparent playback chrome, without a separate information card. */
+#morph-player.morph252 .morph2-meta{display:none!important}
+#morph-player.morph252 .morph2-dockwrap{height:96px;padding:6px 14px}
+#morph-player.morph252 .morph2-btnrow{height:52px}
+#morph-player.morph252 .morph2-btn{width:40px;height:40px;min-width:40px;min-height:40px;padding:10px}
+#morph-player.morph252 .morph2-btn.main{width:50px;height:50px;min-width:50px;min-height:50px;padding:13px}
+
+
+#morph-player.morph252 .morph2-left,#morph-player.morph252 .morph2-right{top:0;bottom:0;border-radius:0}
+#morph-player.morph252 .morph2-left{left:0}
+#morph-player.morph252 .morph2-right{right:0}
+#morph-player.morph252 .morph2-lefthead button:not([hidden]){display:block!important;min-width:100px;font-size:16px}
+#morph-player.morph252 .morph2-left[data-browse=categories] .morph2-cats{max-height:none;flex:1}
+
+/* Round only the inner edges facing the dock. Screen edges stay flush. */
+#morph-player.morph252 .morph2-left{border-radius:0 18px 18px 0}
+#morph-player.morph252 .morph2-right{border-radius:18px 0 0 18px}
+
+#morph-player.morph252 .morph252-message{color:#fff!important;text-shadow:0 1px 3px #071222}
+
+/* Current premium player geometry shared by every packaged web TV engine. */
+#morph-player.morph252 .morph2-dockwrap{left:2%;right:2%;width:auto;bottom:22px;height:112px;padding:10px 18px;border-radius:24px}
+#morph-player.morph252 .morph2-left,#morph-player.morph252 .morph2-right{top:24px;bottom:146px;width:28%;border-radius:22px;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none}
+#morph-player.morph252 .morph2-left{left:24px}
+#morph-player.morph252 .morph2-right{right:24px}
+#morph-player.morph252 .morph2-btnrow{height:62px}
+#morph-player.morph252 .morph2-btn{width:48px;height:48px;min-width:48px;min-height:48px;padding:12px;border-radius:14px;box-shadow:none!important}
+#morph-player.morph252 .morph2-btn.main{width:58px;height:58px;min-width:58px;min-height:58px;padding:16px;border-radius:16px}
+#morph-player.morph252 .morph252-heading{margin:8px 10px 22px}
+#morph-player.morph252 .morph252-title{background:transparent;border-color:rgba(227,235,255,.20)}
+#morph-player.morph252 .morph2-chan:focus,#morph-player.morph252 .morph2-chan.on{background:rgba(219,230,255,.17);color:#f7f9ff;outline:2px solid #f7f9ff;box-shadow:none}
+#morph-player.morph252 .morph2-meta,#morph-player.morph252 .morph2-clock{display:none!important}
+#morph-player.morph252 .morph2-status:empty{display:none!important}
+#morph-player.morph252 .morph2-status{transform:none}
+
+/* Shared cinema controls. Existing engine buttons keep their handlers. */
+#morph-player.morph252.morph3 .morph2-top{display:none!important}
+#morph-player.morph252.morph3 .morph3-top{position:absolute;left:3.2%;right:3.2%;top:3%;height:70px;display:flex;align-items:center;gap:28px;z-index:6;direction:ltr;color:#f7f9ff}
+#morph-player.morph252.morph3 .morph3-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:30px;font-weight:500;text-shadow:0 2px 6px rgba(0,0,0,.6)}
+#morph-player.morph252.morph3 .morph3-tools{display:flex;align-items:center;gap:18px}
+#morph-player.morph252.morph3 .morph3-tools .morph2-btn{width:62px;height:62px;min-width:62px;flex:none;border-radius:50%;background:rgba(230,238,255,.08);font-size:22px}
+#morph-player.morph252.morph3 .morph3-shades{position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0;background:linear-gradient(to bottom,rgba(2,7,16,.6),transparent 19%,transparent 67%,rgba(2,7,16,.72))}
+#morph-player.morph252.morph3>video{z-index:0}
+#morph-player.morph252.morph3 .morph3-shades{z-index:1}
+#morph-player.morph252.morph3 .morph2-dockwrap{left:3.2%!important;right:3.2%!important;width:auto!important;bottom:3%!important;height:132px!important;padding:0!important;transform:none!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;display:flex!important;flex-direction:column!important;z-index:5!important}
+#morph-player.morph252.morph3 .morph2-tlrow{display:flex!important;flex-wrap:wrap!important;align-items:center!important;height:48px!important;gap:8px!important;padding:0!important;background:transparent!important}
+#morph-player.morph252.morph3 .morph2-track{order:-1!important;flex:0 0 100%!important;height:10px!important;margin:0!important}
+#morph-player.morph252.morph3 .morph2-tlrow small{flex:1!important;margin:0!important;font-size:20px!important;line-height:24px!important}
+#morph-player.morph252.morph3 .morph2-tlrow small:last-child{text-align:right!important}
+#morph-player.morph252.morph3 .morph2-btnrow{height:72px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:26px!important;padding:10px 20%!important;position:relative!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph2-btn{width:62px!important;height:62px!important;min-width:62px!important;flex:none!important;border:1px solid transparent!important;background:transparent!important;border-radius:50%!important;color:#f7f9ff!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph2-btn.main{background:rgba(232,240,255,.18)!important;color:#f7f9ff!important;border-color:rgba(232,240,255,.3)!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph3-browse{position:absolute!important;left:0!important;width:190px!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:14px!important;padding:10px 14px!important;border:1px solid rgba(232,240,255,.25)!important;border-radius:32px!important;background:rgba(232,240,255,.07)!important;font-size:22px!important}
+#morph-player.morph252.morph3 .morph3-browse span{display:inline!important;font-size:22px!important}
+#morph-player.morph252.morph3 .morph2-btnrow [data-player-tool=heart]{position:absolute!important;left:210px!important}
+#morph-player.morph252.morph3 .morph2-left{top:125px!important;bottom:190px!important;left:3.2%!important;right:auto!important;width:44%!important;max-width:none!important;padding:22px!important;display:flex;flex-direction:row!important;flex-wrap:wrap!important;align-content:stretch;box-sizing:border-box;border-radius:25px!important;box-shadow:none!important;animation:morph3-drawer-in 170ms ease-out}
+#morph-player.morph252.morph3 .morph2-left[hidden]{display:none!important}
+#morph-player.morph252.morph3 .morph2-lefthead{flex:0 0 100%!important;height:52px!important;min-height:0!important;padding:0 0 14px!important;font-size:24px!important}
+#morph-player.morph252.morph3 .morph2-cats{flex:0 0 42%!important;width:42%!important;height:calc(100% - 52px)!important;box-sizing:border-box!important;display:flex!important;flex-direction:column!important;overflow-y:auto!important;overflow-x:hidden!important;gap:7px!important;padding:4px 12px 4px 2px!important;min-height:0!important;max-height:none!important;border-right:1px solid rgba(232,240,255,.14)}
+#morph-player.morph252.morph3 .morph2-cats button{flex:none!important;width:100%!important;text-align:left!important;min-height:48px!important;font-size:20px!important;border:0!important;background:transparent!important;border-radius:12px!important;white-space:normal!important}
+#morph-player.morph252.morph3 .morph2-chanlist{flex:0 0 58%!important;width:58%!important;height:calc(100% - 52px)!important;box-sizing:border-box!important;display:block!important;overflow-y:auto!important;min-height:0!important;padding:4px 4px 4px 18px!important}
+#morph-player.morph252.morph3 .morph2-right{top:125px!important;bottom:auto!important;right:3.2%!important;left:auto!important;width:350px!important;height:auto!important;max-height:calc(100% - 315px)!important;padding:18px!important;border-radius:24px!important;box-shadow:none!important;overflow-y:auto!important;animation:morph3-menu-in 140ms ease-out;z-index:7!important}
+#morph-player.morph252.morph3 .morph2-right button{min-height:48px!important;font-size:20px!important;line-height:1.25!important}
+#morph-player.morph252.morph3 .morph252-heading{font-size:25px!important;margin:4px 4px 16px!important}
+#morph-player.morph252.morph3 .morph252-title{border:0!important;background:transparent!important;border-radius:12px!important}
+#morph-player.morph252.morph3 .morph252-section+.morph252-section{margin-top:6px!important}
+#morph-player.morph252.morph3 .morph2-btn:focus{background:rgba(232,240,255,.18)!important;outline:2px solid #f7f9ff!important;outline-offset:3px!important;box-shadow:none!important}
+@keyframes morph3-drawer-in{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:translateX(0)}}
+@keyframes morph3-menu-in{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){#morph-player.morph252.morph3 .morph2-left,#morph-player.morph252.morph3 .morph2-right{animation:none}}
+body.media-effect-motion-off #morph-player.morph3 .morph2-left,body.media-effect-motion-off #morph-player.morph3 .morph2-right{animation:none!important}
+
+/* Browse one narrow column at a time; category selection replaces it in place. */
+#morph-player.morph252.morph3 .morph2-left{width:25%!important;min-width:300px!important;max-width:480px!important;flex-direction:column!important;flex-wrap:nowrap!important}
+#morph-player.morph252.morph3 .morph2-cats,#morph-player.morph252.morph3 .morph2-chanlist{width:100%!important;flex:1!important;height:auto!important;padding:4px!important;border:0!important}
+#morph-player.morph252.morph3 .morph2-left[data-browse=categories] .morph2-chanlist,#morph-player.morph252.morph3 .morph2-left[data-browse=content] .morph2-cats{display:none!important}
+#morph-player.morph252.morph3 .morph2-lefthead{flex:0 0 auto!important}
+#morph-player.morph252.morph3 .morph3-browse svg{width:30px!important;height:30px!important;flex:0 0 30px!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph3-browse{width:205px!important}
+#morph-player.morph252.morph3 .morph3-browse span{white-space:nowrap!important}
+
+/* Bounded menu rows stay readable and scrollable on smaller/older TV viewports. */
+#morph-player.morph252.morph3 .morph2-cats button,#morph-player.morph252.morph3 .morph2-right button{box-sizing:border-box!important;min-height:44px!important;font-size:18px!important;line-height:1.3!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+#morph-player.morph252.morph3 .morph2-lefthead{min-width:0!important}
+#morph-player.morph252.morph3 .morph2-cats,#morph-player.morph252.morph3 .morph2-chanlist{min-height:0!important;overflow-y:auto!important;overscroll-behavior:contain}
+#morph-player.morph252.morph3 .morph2-right{box-sizing:border-box!important;max-height:calc(100% - 240px)!important;min-height:0!important;overflow-y:auto!important}
+
+#morph-player.morph252.morph3 .morph2-catback{width:40px!important;min-width:40px!important;height:40px!important;min-height:40px!important;flex:0 0 40px!important;padding:0!important;font-size:26px!important;margin-inline-end:8px}
+#morph-player.morph252.morph3 .morph2-lefthead>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* The old row-layout 100% flex basis consumes the entire drawer after switching to one column. */
+#morph-player.morph252.morph3 .morph2-lefthead{flex:0 0 auto!important}
+
+#morph-player.morph252.morph3 .morph2-cats{flex-wrap:nowrap!important;align-content:stretch!important}
+
+/* Compact, centered playback status in every shared player. */
+#morph-player.morph252 .morph2-status{left:50%!important;right:auto!important;top:50%!important;bottom:auto!important;transform:translate(-50%,-50%)!important;width:max-content!important;max-width:80%!important;margin:0!important;padding:10px 18px!important;font-size:16px!important;line-height:1.4!important;text-align:center!important;box-sizing:border-box;border-radius:12px}
+
+/* Keep the five transport buttons centered independently of desktop volume. */
+#morph-player.morph252.morph3 .morph2-btnrow .pc-player-volume{position:absolute!important;right:10px!important;left:auto!important;margin:0!important;}
+
+/* TV-safe controls: one 1080p canvas, with room for the seek row and focus rings. */
+#morph-player.morph252.morph3 .morph2-dockwrap{bottom:4.5%!important;height:180px!important}
+#morph-player.morph252.morph3 .morph2-tlrow{height:64px!important;flex:0 0 64px!important;gap:12px!important}
+#morph-player.morph252.morph3 .morph2-track{height:18px!important}
+#morph-player.morph252.morph3 .morph2-btnrow{height:96px!important;flex:0 0 96px!important;padding:10px 20%!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph2-btn{width:76px!important;height:76px!important;min-width:76px!important}
+#morph-player.morph252.morph3 .morph2-left{bottom:260px!important}
+#morph-player.morph252.morph3.morph2-hidden .morph2-chrome{opacity:0!important;pointer-events:none!important;visibility:hidden!important}
+
+/* Match the Android TV cinema canvas metrics; local files and IPTV share these rules. */
+#morph-player.morph252.morph3 .morph3-top{left:2.291667%;right:2.291667%;top:3.148148%;height:88px}
+#morph-player.morph252.morph3 .morph3-title{font-size:34px}
+#morph-player.morph252.morph3 .morph3-tools .morph2-btn{width:76px;height:76px;min-width:76px}
+#morph-player.morph252.morph3 .morph2-dockwrap{left:2.291667%!important;right:2.291667%!important;bottom:2.592593%!important}
+#morph-player.morph252.morph3 .morph2-btnrow{height:104px!important;flex:0 0 104px!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph2-btn{width:78px!important;height:78px!important;min-width:78px!important}
+#morph-player.morph252.morph3 .morph2-btnrow .morph2-btn.main{width:90px!important;height:90px!important;min-width:90px!important}
+
+/* One centered action group, with the timeline kept on its own row. */
+#morph-player.morph3 .morph2-btnrow{justify-content:center!important;gap:14px!important;max-width:100%;box-sizing:border-box}
+#morph-player.morph3 .morph2-btnrow .morph2-btn{flex-shrink:0}
+#morph-player[data-iptv-oled=true] .morph2-dockwrap,#morph-player[data-iptv-oled=true] .morph2-left,#morph-player[data-iptv-oled=true] .morph2-right{background:#080808!important;box-shadow:none!important}
+
+/* Live channels retain the same transport layout; seek requires on-demand media. */
+#morph-player.morph252.morph3 [data-player-tool=back10]:disabled,#morph-player.morph252.morph3 [data-player-tool=fwd10]:disabled{opacity:.35;pointer-events:none}
+
+/* Explicit list return for every shared IPTV/local-media player. */
+#morph-player.morph252.morph3 .morph3-top .morph3-back{display:flex;align-items:center;justify-content:center;gap:12px;flex:0 0 auto;width:auto;min-width:170px;height:76px;padding:0 18px;border-radius:18px;font:26px Arial,sans-serif;background:rgba(15,25,43,.65);color:#fff;border:1px solid rgba(255,255,255,.4)}
+#morph-player.morph252.morph3 .morph3-back svg{width:30px;height:30px;flex:none}
+#morph-player.morph252.morph3 .morph3-back:focus{outline:3px solid white;outline-offset:3px;background:rgba(40,65,95,.9)}

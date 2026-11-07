@@ -1,0 +1,32 @@
+{
+  "name": "Morph Bridge",
+  "version": "1.1.320",
+  "android": {
+    "id": "com.morphtv.bridge.receiver",
+    "versionCode": 347,
+    "minSdk": 26
+  },
+  "frontend": "tv-project/app/bridge-receiver",
+  "presentation": "tv-project/visual-system/bridge-reference.css",
+  "trialHours": 72,
+  "plusScope": "tv",
+  "phoneRequiresPlus": false,
+  "targets": [
+    "android",
+    "samsung",
+    "webos"
+  ],
+  "excluded": [
+    "vidaa"
+  ],
+  "samsung": {
+    "id": "AppBridge1.TV",
+    "package": "AppBridge1",
+    "requiredVersion": "4.0",
+    "profile": "appbridge"
+  },
+  "webos": {
+    "id": "tv.appbridge.webos",
+    "minWebOS": "4.0"
+  }
+}

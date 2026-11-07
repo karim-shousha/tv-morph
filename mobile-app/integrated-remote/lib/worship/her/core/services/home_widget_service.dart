@@ -1,0 +1,1 @@
+class HomeWidgetService {static final instance=HomeWidgetService();bool get supported=>false;Future<void> syncContent({dynamic settings})async{} Future<Map<String,dynamic>?> incrementTasbih()async=>null;Future<bool> writeTasbih(Map<String,dynamic> fields)async=>false;Future<List<String>> tasbihDays()async=>[];}

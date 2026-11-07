@@ -4,9 +4,11 @@
  function apply(video,rate){
   if(values.indexOf(rate)<0)throw Error('Invalid playback rate');
   var previous=video.playbackRate,paused=video.paused;
-  try{video.playbackRate=rate;if(!isFinite(video.playbackRate)||Math.abs(video.playbackRate-rate)>0.02)throw Error('Rate rejected');return video.playbackRate;}
+  try{if('preservesPitch' in video)video.preservesPitch=true;if('webkitPreservesPitch' in video)video.webkitPreservesPitch=true;if('mozPreservesPitch' in video)video.mozPreservesPitch=true;video.playbackRate=rate;if(!isFinite(video.playbackRate)||Math.abs(video.playbackRate-rate)>0.02)throw Error('Rate rejected');return video.playbackRate;}
   catch(error){try{video.playbackRate=previous;}catch(ignore){}throw error;}
   finally{if(paused&&!video.paused)video.pause();}
  }
- C.PlaybackRate={values:values,words:words,apply:apply};
+ // AVPlay.setSpeed takes an integer trick-play multiplier, not an audio time-stretch rate.
+ function nativeNotice(){return window.MorphLocale&&window.MorphLocale.get()==='ar'?'مشغل سامسونج الأصلي لا يدعم 1.25× و1.5×. تظل السرعة 1× للحفاظ على الصوت.':'Samsung native playback does not support 1.25x or 1.5x. Keeping 1x to preserve audio.';}
+ C.PlaybackRate={values:values,words:words,apply:apply,nativeNotice:nativeNotice};
 })(window.ClearTV);

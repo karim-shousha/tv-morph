@@ -1,0 +1,28 @@
+/* Same wallpaper, slate materials and foregrounds as the TV's blue/night base. */
+html[data-app-appearance=dark]{--m-bg:#202940;--m-bg2:rgba(213,224,255,.12);--m-card:linear-gradient(135deg,rgba(213,224,255,.13),rgba(44,55,78,.52));--m-card-solid:#2c374e;--m-text:#f7f9ff;--m-muted:#d3dbea;--m-faint:#c5cede;--m-border:rgba(255,255,255,.26);--m-border-strong:rgba(231,238,255,.42);--m-accent:#b8dcf8;--m-accent2:#c7bee3;--m-grad:linear-gradient(110deg,#407b99,#675590);--m-nav-bg:#273149f5;--m-shadow:none}
+html[data-app-appearance=dark]{background:#202940!important}
+html[data-app-appearance=dark] body[data-premium-mobile]{min-height:100vh;background:#202940 url(premium-reference-background.svg) center/cover fixed no-repeat!important;color:#f7f9ff!important}
+html[data-app-appearance=dark] body[data-premium-mobile] *,html[data-app-appearance=dark] body[data-premium-mobile] *:before,html[data-app-appearance=dark] body[data-premium-mobile] *:after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;text-shadow:none!important}
+html[data-app-appearance=dark] body[data-premium-mobile]>header{background:transparent!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .primary,html[data-app-appearance=dark] body[data-premium-mobile] #apply,html[data-app-appearance=dark] body[data-premium-mobile] #iptv-phone-open{background:var(--m-grad)!important;color:#fff!important;border:1px solid rgba(255,255,255,.27)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .secondary,html[data-app-appearance=dark] body[data-premium-mobile] .pm-service-cards button,html[data-app-appearance=dark] body[data-premium-mobile] .pm-remote-info,html[data-app-appearance=dark] body[data-premium-mobile] .pm-iptv-feature,html[data-app-appearance=dark] body[data-premium-mobile] .studio-personal-group{background:var(--m-card)!important;border-color:var(--m-border)!important;box-shadow:inset 0 1px rgba(255,255,255,.08)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #iptv-tv-show{background:var(--m-card)!important;color:#f7f9ff!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #m30-control-segment{background:rgba(23,30,50,.42)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #m30-control-segment button.m30-active{background:rgba(213,224,255,.18)!important;color:#fff!important;box-shadow:none!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #iptv-account-state{background:var(--m-card)!important;color:var(--m-muted)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #iptv-phone-note{color:var(--m-muted)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .iptv-source-current{background:rgba(213,224,255,.1)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-iptv-icon{background:rgba(213,224,255,.16)!important;color:#dcecff}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-iptv-badge{color:#fff;opacity:.08}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-remote-showcase{background:rgba(23,30,50,.18) url(premium-reference-background.svg) center/cover!important;border-color:var(--m-border)}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-remote-device{background:linear-gradient(135deg,rgba(213,224,255,.3),rgba(44,55,78,.78));border-color:var(--m-border-strong);box-shadow:inset 0 1px rgba(255,255,255,.18)}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-mini-pad{background:rgba(213,224,255,.13);color:#f7f9ff}
+html[data-app-appearance=dark] body[data-premium-mobile] .pm-remote-copy>strong{color:#fff}
+html[data-app-appearance=dark] body[data-premium-mobile] .m30-sheet{background:#2c374e url(premium-reference-background.svg) center/cover!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .m30-applybar{background:#202940f2!important;border-top:1px solid rgba(255,255,255,.13)}
+
+
+html[data-app-appearance=dark] body[data-premium-mobile] .studio-reconnect,html[data-app-appearance=dark] body[data-premium-mobile] .m30-gear{background:rgba(213,224,255,.1)!important;color:#fff;border-color:var(--m-border)}
+html[data-app-appearance=dark] body[data-premium-mobile] input:not([type=checkbox]):not([type=range]):not([type=color]),html[data-app-appearance=dark] body[data-premium-mobile] select,html[data-app-appearance=dark] body[data-premium-mobile] textarea{background:#273149!important;color:#f7f9ff!important;border-color:var(--m-border)!important}
+html[data-app-appearance=dark] body[data-premium-mobile] #preview[data-studio-default-preview]{background:#202940 url(premium-reference-background.svg) center/cover!important}
+html[data-app-appearance=dark] body[data-premium-mobile] .operation-card{background:#2c374e!important;color:#f7f9ff}

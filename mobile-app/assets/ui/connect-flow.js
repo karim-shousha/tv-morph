@@ -1,54 +1,71 @@
-(function(){
- 'use strict';
- const $=id=>document.getElementById(id),page=$('page-connect');
- const t=(ar,en)=>window.MorphLocale?MorphLocale.t(ar,en):ar;
- const intro=page.querySelector('.intro');
- const labels=[['ابحث عن التلفزيون','Find your TV'],['اختار جهازك','Choose your device'],['جهّز الاتصال','Prepare the connection'],['ثبّت التطبيق واربطه','Install and pair']];
- const notes=[['وصّل الموبايل والتلفزيون بنفس شبكة Wi-Fi، ثم ابدأ البحث.','Connect your phone and TV to the same Wi-Fi, then search.'],['اضغط على تلفزيونك من النتائج. مش ظاهر؟ اختار نظامه واكتب عنوان التلفزيون يدويًا.','Select your TV below. Missing? Choose its system and enter the TV address manually.'],['الخطوات هنا بتتغيّر حسب نظام التلفزيون اللي اخترته.','These instructions match the TV system you selected.'],['بعد التجهيز اضغط التثبيت، واتبع النتيجة الظاهرة هنا.','After setup, press install and follow the result shown here.']];
- const flow=document.createElement('div');flow.className='connect-flow';intro.after(flow);
- const steps=labels.map((_,i)=>{const section=document.createElement('details');section.className='connect-step';section.id='connect-step-'+(i+1);section.open=i===0;section.innerHTML='<summary><span class="connect-number">'+(i+1)+'</span><span class="connect-step-title"></span><span class="connect-chevron" aria-hidden="true">⌄</span></summary><div class="connect-step-body"><p class="connect-step-note"></p></div>';flow.appendChild(section);section.addEventListener('toggle',()=>{if(section.open)steps.forEach(other=>{if(other!==section)other.open=false;});});return section;});
- const bodies=steps.map(s=>s.querySelector('.connect-step-body'));
- const guide=page.querySelector('.guide'),guideHeading=$('guide-count').parentElement;
- bodies[0].appendChild(page.querySelector('.connection-card'));
- bodies[1].appendChild($('devices'));
- const empty=document.createElement('p');empty.id='connect-results-note';empty.className='fine';bodies[1].appendChild(empty);
- bodies[1].appendChild(page.querySelector('.manual-type'));
- bodies[1].appendChild(page.querySelector('.manual'));
- const tvHelp=document.createElement('p');tvHelp.id='setup-tv-help';tvHelp.className='fine';page.querySelector('.manual').prepend(tvHelp);
- const phone=page.querySelector('.phone-ip');phone.classList.add('setup-phone-ip');
- const phoneHelp=document.createElement('p');phoneHelp.id='setup-phone-help';phone.appendChild(phoneHelp);
- bodies[2].appendChild(phone);bodies[2].appendChild(guideHeading);bodies[2].appendChild(guide);bodies[2].appendChild($('connection-state'));
- const proceed=document.createElement('button');proceed.className='primary full';proceed.id='setup-continue';bodies[2].appendChild(proceed);
- bodies[3].appendChild($('install-card'));bodies[3].appendChild($('android-pair'));
- const account=document.createElement('p');account.id='setup-account-note';account.className='setup-account-note';$('smart-install').before(account);
- const tools=document.createElement('details');tools.className='connection-extras';const toolTitle=document.createElement('summary');tools.appendChild(toolTitle);page.appendChild(tools);
- tools.appendChild($('download-center'));tools.appendChild(page.querySelector('.troubleshoot'));tools.appendChild(page.querySelector('.compatibility'));
- if($('compatibility-panel'))tools.appendChild($('compatibility-panel'));
- tools.appendChild($('platform-disclaimer'));
- function open(n,scroll){steps[n-1].open=true;steps.forEach((s,i)=>{if(i!==n-1)s.open=false;});if(scroll)steps[n-1].scrollIntoView({behavior:'smooth',block:'start'});}
+/* Device setup is a sequence of pages; native discovery and installers own transport. */
+(function(w,d){'use strict';
+ const $=id=>d.getElementById(id),page=$('page-connect'),t=(ar,en)=>w.MorphLocale?MorphLocale.t(ar,en):ar;
+ if(!page)return;
+ let step=1,reached=1,device=null,file=null,engaged=false,busy=false,manualTarget='';
+ const paths={search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/>',download:'<path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/>',scan:'<path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12h10m-5-5v10"/>',upload:'<path d="M12 16V4m-5 5 5-5 5 5M4 17v4h16v-4"/>',done:'<circle cx="12" cy="12" r="9"/><path d="m7 12 3 3 7-7"/>',tv:'<rect x="2" y="3" width="20" height="14" rx="3"/><path d="M8 21h8m-4-4v4"/>'};
+ const icon=key=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[key]+'</svg>';
+ const labels=[['البحث والتجهيز','Find & prepare'],['اختيار النسخة','Choose a version'],['فحص الملفات','Review old files'],['الرفع والتثبيت','Upload & install'],['جاهز على التلفزيون','Ready on your TV']];
+ const notes=[['وصّل الموبايل والتلفزيون بنفس Wi-Fi. جهّز وضع المطوّر، ثم ابحث واختار تلفزيونك.','Use the same Wi-Fi on your phone and TV. Prepare Developer Mode, then find and select your TV.'],['نزّل النسخة المطابقة لنظام التلفزيون، وبعدها اختار الملف من التنزيلات على الموبايل.','Download the version matching your TV, then choose that file from Downloads on your phone.'],['خطوة اختيارية: افحص بقايا ملفات التثبيت، وراجع القائمة قبل أي حذف. تقدر تكمل من غير تنظيف.','Optional: scan leftover installation files and review the list before deleting. You can continue without cleanup.'],['راجع التلفزيون والملف المختار، ثم ابدأ الرفع. سيب الموبايل على نفس الشبكة لحد ما تظهر نتيجة التثبيت.','Check your TV and selected file, then start uploading. Keep your phone on the same network until installation is confirmed.'],['ارجع بص على تلفزيونك. افتح التطبيق من قائمة Apps واستمتع بواجهتك.','Look at your TV now. Open the app from Apps and enjoy your setup.']];
+ page.dataset.setupWizard='true';
+ const intro=page.querySelector('.intro'),flow=d.createElement('div');flow.className='connect-flow setup-wizard';intro.after(flow);
+ const chosen=d.createElement('section');chosen.id='setup-selected-tv';chosen.className='wizard-device';chosen.hidden=true;chosen.innerHTML='<span class="wizard-device-icon">'+icon('tv')+'</span><div><strong id="wizard-device-name"></strong><span id="wizard-device-system"></span><small id="wizard-device-ip" dir="ltr"></small></div><button type="button" id="wizard-change-device"></button>';flow.appendChild(chosen);
+ const nav=d.createElement('nav');nav.className='wizard-progress';nav.setAttribute('aria-label','Setup steps');flow.appendChild(nav);
+ const panels=[],navButtons=[];
+ ['search','download','scan','upload','done'].forEach((key,i)=>{
+  const button=d.createElement('button');button.type='button';button.innerHTML=icon(key)+'<span></span>';button.onclick=()=>{if(i+1<=reached&&!busy)open(i+1,true);};nav.appendChild(button);navButtons.push(button);
+  const section=d.createElement('section');section.className='connect-step wizard-panel';section.id='connect-step-'+(i+1);section.hidden=i!==0;section.innerHTML='<header class="wizard-heading"><span class="wizard-stage-icon">'+icon(key)+'</span><div><small class="wizard-counter"></small><h2 class="connect-step-title"></h2></div></header><p class="connect-step-note"></p><div class="connect-step-body"></div>';flow.appendChild(section);panels.push(section);
+ });
+ const bodies=panels.map(n=>n.querySelector('.connect-step-body'));
+ const phone=page.querySelector('.phone-ip');phone.classList.add('setup-phone-ip');bodies[0].appendChild(phone);
+ const prep=d.createElement('section');prep.id='wizard-developer-help';prep.className='wizard-instructions';prep.innerHTML='<h3></h3><ol></ol><details id="wizard-other-developer-help"><summary>LG / Android TV / Fire TV</summary><p style="white-space:pre-line"></p></details>';bodies[0].appendChild(prep);
+ bodies[0].appendChild(page.querySelector('.connection-card'));bodies[0].appendChild($('devices'));
+ const empty=d.createElement('p');empty.id='connect-results-note';empty.className='fine';bodies[0].appendChild(empty);
+ const manualBox=d.createElement('details');manualBox.className='wizard-manual';manualBox.innerHTML='<summary></summary>';bodies[0].appendChild(manualBox);manualBox.appendChild(page.querySelector('.manual-type'));manualBox.appendChild(page.querySelector('.manual'));bodies[0].appendChild($('connection-state'));bodies[0].insertBefore(prep,manualBox);
+ manualBox.querySelector('summary').textContent=t('الشاشة مش ظاهرة؟ أدخل عنوانها يدويًا','TV missing? Enter its address manually');
+ const guide=page.querySelector('.guide'),guideHeading=$('guide-count').parentElement; bodies[1].appendChild(guideHeading);bodies[1].appendChild(guide);
+ const version=d.createElement('section');version.id='wizard-version';version.className='wizard-version';version.innerHTML='<label for="wizard-tizen-version"></label><select id="wizard-tizen-version"><option value=""></option><option value="tizen2">Samsung · Tizen 2.3 / 2.4</option><option value="tizen3">Samsung · Tizen 3</option><option value="tizen4">Samsung · Tizen 4</option><option value="tizen5">Samsung · Tizen 5+</option></select><p class="fine" id="wizard-version-note"></p>';bodies[1].appendChild(version);
+ const installCard=$('install-card');bodies[3].appendChild(installCard);bodies[3].appendChild($('android-pair'));
+ const upload=d.createElement('section');upload.id='wizard-upload-card';upload.innerHTML='<div class="wizard-file-review"><span>'+icon('upload')+'</span><strong id="wizard-file-name" dir="auto"></strong><small id="wizard-file-size"></small></div><p id="wizard-upload-note"></p>';bodies[3].appendChild(upload);
+ const uploadStatus=d.createElement('p');uploadStatus.id='wizard-upload-status';uploadStatus.setAttribute('role','status');upload.appendChild(uploadStatus);
+ const done=d.createElement('div');done.className='wizard-success';done.innerHTML='<span>'+icon('done')+'</span><h3 id="wizard-success-title"></h3><p id="wizard-success-note"></p>';bodies[4].appendChild(done);
+ const foot=d.createElement('div');foot.className='wizard-actions';foot.innerHTML='<button id="wizard-back" type="button" class="secondary"></button><button id="setup-continue" type="button" class="primary"></button>';flow.appendChild(foot);
+ const tools=d.createElement('details');tools.className='connection-extras';const toolTitle=d.createElement('summary');tools.appendChild(toolTitle);page.appendChild(tools);
+ ['download-center','compatibility-panel','platform-disclaimer'].forEach(id=>{if($(id))tools.appendChild($(id));});['.troubleshoot','.compatibility'].forEach(sel=>{const n=page.querySelector(sel);if(n)tools.appendChild(n);});
+ function type(){return w.MorphGuide?MorphGuide.type():'auto';}
+ function inferredTarget(){if(!device||device.brand!=='samsung')return '';let value=String(device.osVersion||'');if(!/^\d+(\.\d+)*$/.test(value)){const match=String(device.os||'').match(/Tizen\s*(?:OS\s*)?(\d+(?:\.\d+)?)/i);value=match?match[1]:'';}const major=parseInt(value,10);return major>=5?'tizen5':major===4?'tizen4':major===3?'tizen3':major===2?'tizen2':'';}
+ function target(){return manualTarget||inferredTarget();}
+ function targetLabel(){const key=target();return key?$('wizard-tizen-version').querySelector('[value='+key+']').textContent:t('Samsung · إصدار Tizen غير معلن','Samsung · Tizen version not reported');}
+ function resetFile(){file=null;if(w.MorphSetupOptions)MorphSetupOptions.resetFile();}
+ function open(n,scroll){if(busy)return;step=Math.max(1,Math.min(5,n));reached=Math.max(reached,step);render();if(scroll){requestAnimationFrame(()=>{const panel=panels[step-1];if(panel)panel.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});});}}
+ function attachHelpers(){const widget=$('setup-samsung-wgt'),cleanup=$('setup-samsung-cleanup');if(widget)bodies[1].appendChild(widget);if(cleanup)bodies[2].appendChild(cleanup);if($('setup-wgt-install'))upload.insertBefore($('setup-wgt-install'),uploadStatus);if($('setup-downloader'))bodies[1].appendChild($('setup-downloader'));render();}
  function render(){
-  intro.textContent=t('٤ خطوات واضحة، من البحث لحد التثبيت. افتح أي خطوة للرجوع لها.','Four clear steps from discovery to installation. Reopen any step to review it.');
-  page.querySelector('h1').textContent=t('وصّل تلفزيونك','Connect your TV');
-  steps.forEach((s,i)=>{s.querySelector('.connect-step-title').textContent=t(...labels[i]);s.querySelector('.connect-step-note').textContent=t(...notes[i]);});
-  const type=MorphGuide.type(),samsung=type==='samsung';phone.hidden=!samsung;
-  phone.querySelector('span').textContent=t('عنوان الموبايل — اكتبه على تلفزيون Samsung','Phone address — enter this on your Samsung TV');
-  phoneHelp.textContent=t('ده IP الموبايل، مش التلفزيون. في التلفزيون افتح Apps واكتب 12345، فعّل Developer Mode، واكتب الرقم ده في Host PC IP. احفظ وأعد تشغيل التلفزيون.','This is the phone IP, not the TV IP. On the TV open Apps, enter 12345, enable Developer Mode, and enter this number in Host PC IP. Save and restart the TV.');
-  tvHelp.textContent=t('هنا عنوان التلفزيون نفسه من إعدادات الشبكة، مش عنوان الموبايل. اختيار نتيجة البحث بيملأه تلقائيًا.','This is the TV address from its network settings, not the phone address. Selecting a search result fills it automatically.');
-  account.hidden=!samsung;account.textContent=t('حساب Samsung: زر التثبيت هيفتح تسجيل الدخول الرسمي لو الشهادة محتاجاه. سجّل دخول، وبعدها ارجع هنا؛ التجهيز هيكمل قبل إرسال التطبيق.','Samsung account: installation opens the official sign-in if your certificate needs it. Sign in and return here; preparation continues before the app is sent.');
-  proceed.textContent=t('كمّلت التجهيز · انتقل للتثبيت','Setup reviewed · continue to installation');
-  toolTitle.textContent=t('مساعدة وروابط تنزيل بديلة','Help and alternative downloads');
-  empty.hidden=$('devices').children.length>0;empty.textContent=t('نتائج البحث هتظهر هنا. تقدر كمان تدخل الجهاز يدويًا.','Search results appear here. You can also enter the device manually.');
-  const ready=$('connection-state').dataset.status==='connected';steps[2].classList.toggle('is-complete',ready);
+  const samsung=type()==='samsung',lang=w.MorphLocale?MorphLocale.get():'ar';page.dir=lang==='ar'?'rtl':'ltr';page.dataset.wizardStep=String(step);intro.textContent=t('خطوة واحدة في كل مرة، لحد ما التطبيق يجهز على تلفزيونك.','One step at a time, until the app is ready on your TV.');page.querySelector('h1').textContent=t('جهّز تلفزيونك','Set up your TV');
+  panels.forEach((panel,i)=>{panel.hidden=i+1!==step;panel.querySelector('.connect-step-title').textContent=t(...labels[i]);panel.querySelector('.connect-step-note').textContent=t(...notes[i]);panel.querySelector('.wizard-counter').textContent=t('الخطوة '+(i+1)+' من 5','Step '+(i+1)+' of 5');navButtons[i].querySelector('span').textContent=t(...labels[i]);navButtons[i].setAttribute('aria-current',i+1===step?'step':'false');navButtons[i].disabled=busy||i+1>reached||i===4&&step!==5;navButtons[i].classList.toggle('is-complete',i+1<step);});
+  manualBox.querySelector('summary').textContent=t('الشاشة مش ظاهرة؟ أدخل عنوانها يدويًا','TV missing? Enter its address manually');navButtons[2].hidden=!!device&&!samsung;
+  chosen.hidden=!device;$('wizard-device-name').textContent=device?(device.name||device.model||'TV'):'';$('wizard-device-system').textContent=device?(samsung?targetLabel():[device.model,device.os].filter(Boolean).join(' · ')):'';$('wizard-device-ip').textContent=device?device.ip||'':'';$('wizard-change-device').textContent=t('تغيير','Change');
+  $('setup-phone-label').textContent=t('IP الموبايل · اكتبه في Host PC IP على التلفزيون','Phone IP · enter it in Host PC IP on the TV');phone.hidden=!!device&&!samsung;prep.hidden=!!device&&!samsung;prep.querySelector('h3').textContent=t('قبل البحث: جهّز Samsung من التلفزيون','Before searching: prepare your Samsung TV');
+  const instructions=[t('افتح Apps على التلفزيون، واكتب 12345 بالريموت علشان تظهر نافذة Developer Mode.','Open Apps on the TV and enter 12345 with the remote to show Developer Mode.'),t('فعّل Developer Mode، واكتب IP الموبايل الظاهر فوق في Host PC IP، ثم احفظ.','Enable Developer Mode, enter the phone IP above in Host PC IP, then save.'),t('أعد تشغيل التلفزيون بالكامل، وخليه على نفس Wi-Fi، وبعدها اضغط البحث هنا. IP التلفزيون موجود في إعدادات الشبكة؛ ده مختلف عن IP الموبايل.','Restart the TV fully, keep it on the same Wi-Fi, then search here. Find the TV IP in its network settings; it is different from your phone IP.')];const list=prep.querySelector('ol');if(list.textContent!==instructions.join('')){list.textContent='';instructions.forEach(text=>{const li=d.createElement('li');li.textContent=text;list.appendChild(li);});}
+  $('wizard-other-developer-help').querySelector('p').textContent=t('LG: ثبّت Developer Mode من متجر التلفزيون، سجّل بحساب LG Developer وفعّل Dev Mode. أعد التشغيل وافتح التطبيق وفعّل Key Server.\n\nAndroid TV / Google TV: الإعدادات ← النظام / تفضيلات الجهاز ← حول ← اضغط Android TV OS Build سبع مرات. ارجع لخيارات المطوّر وفعّل USB / Network debugging لو متاح، ووافق على الاتصال.\n\nFire TV: الإعدادات ← My Fire TV ← About ← اضغط اسم الجهاز ٧ مرات. ارجع إلى Developer Options وفعّل ADB Debugging ووافق على رسالة الاتصال وقت التثبيت.','LG: Install Developer Mode from the TV store, sign in with an LG Developer account and enable Dev Mode. Restart, reopen the app and enable Key Server.\n\nAndroid TV / Google TV: Settings → System / Device Preferences → About → select Android TV OS Build seven times. Return to Developer options, enable USB / Network debugging if available, and approve the connection.\n\nFire TV: Settings → My Fire TV → About → select the device name seven times. Return to Developer Options, enable ADB Debugging and approve the connection during installation.');
+  $('scan').textContent=t('ابحث عن التلفزيون','Find your TV');$('wizard-change-device').disabled=busy;$('connection-state').hidden=!device&&!['checking','error'].includes($('connection-state').dataset.status);
+  empty.hidden=$('devices').children.length>0;empty.textContent=t('نتائج البحث هتظهر هنا. تقدر كمان تدخل IP التلفزيون يدويًا.','Search results appear here. You can also enter the TV IP manually.');
+  version.hidden=!samsung;guide.hidden=samsung;guideHeading.hidden=samsung;installCard.hidden=samsung;upload.hidden=!samsung;tools.hidden=samsung||step!==1;
+  version.querySelector('label').textContent=t('النسخة المناسبة للتلفزيون','Version for this TV');$('wizard-tizen-version').options[0].textContent=t('اختار إصدار Tizen','Choose the Tizen version');$('wizard-tizen-version').value=target();$('wizard-version-note').textContent=inferredTarget()&&!manualTarget?t('الإصدار ده حسب النظام اللي التلفزيون أعلنه. هيفتح تنزيل النسخة المطابقة.','This matches the system version reported by your TV. The download opens the matching package.'):t('لو رقم الإصدار مش ظاهر، راجعه من معلومات التلفزيون واختاره هنا. مش هنخمّنه من اسم الموديل.','If the version is missing, check your TV information and select it here. We do not guess it from the model name.');
+  if($('setup-tizen-download')){$('setup-tizen-download').disabled=busy||!target();$('setup-tizen-download').textContent=t('تنزيل النسخة المناسبة','Download matching version')+(target()?' · '+targetLabel():'');}
+  $('wizard-file-name').textContent=file?file.name:t('اختار ملف النسخة الأول','Choose the package first');$('wizard-file-size').textContent=file?[(file.bytes/1048576).toFixed(1)+' MB',file.version].filter(Boolean).join(' · '):'';$('wizard-upload-note').textContent=t('هنجهّز توقيع الملف ونرفعه للتلفزيون المختار. لو حساب Samsung مطلوب، هتفتح صفحته الرسمية؛ سجّل دخول وارجع للتطبيق علشان يكمل.','We will prepare the signature and upload to the selected TV. If Samsung sign-in is needed, its official page opens; sign in and return here to continue.');
+  $('wizard-success-title').textContent=t('التثبيت اكتمل','Installation complete');$('wizard-success-note').textContent=t('ارجع بص على تلفزيونك، وافتح التطبيق من Apps. لو رسالة سماح ظهرت على الشاشة، اتبعها بالريموت.','Look at your TV and open the app from Apps. Follow any permission prompt on the TV using its remote.');
+  $('wizard-back').hidden=step===1;$('wizard-back').disabled=busy;$('wizard-back').textContent=t('السابق','Back');const next=$('setup-continue');next.hidden=step===1||step===4;next.disabled=busy||step===2&&samsung&&!file;next.textContent=step===2?t('الملف جاهز · فحص الملفات القديمة','File ready · review old files'):step===3?t('متابعة إلى الرفع','Continue to upload'):t('تم · أراجع التلفزيون','Done · check my TV');
  }
- proceed.onclick=()=>open(4,true);
- // Keep the existing transport handlers; only advance after their real state changes.
- new MutationObserver(()=>{render();if($('devices').children.length)open(2,true);}).observe($('devices'),{childList:true});
- new MutationObserver(()=>{render();const status=$('connection-state').dataset.status;if(status==='detected'||status==='connected'||status==='error')open(3,true);}).observe($('connection-state'),{attributes:true,attributeFilter:['data-status']});
- window.addEventListener('morphPlatform',()=>{render();open(3,true);});
- window.addEventListener('morphDiscovery',()=>open(2,true));
- window.addEventListener('morphLanguage',render);
- // Guide's last check needs the IP field in step 2 to be visible.
- $('guide-check').addEventListener('click',()=>{open(2,false);$('tv-ip').focus();},true);
- $('smart-install').addEventListener('click',()=>{if(MorphGuide.type()==='samsung'&&$('connection-state').dataset.status!=='connected')open(3,false);},true);
- window.MorphConnectFlow={open,render};render();
-})();
+ $('wizard-back').onclick=()=>open(step===4&&type()!=='samsung'?2:step-1,true);$('setup-continue').onclick=()=>open(step===5?1:step===2&&type()!=='samsung'?4:step+1,true);$('wizard-change-device').onclick=()=>{manualTarget='';resetFile();reached=1;device=null;open(1,true);};
+ $('wizard-tizen-version').onchange=()=>{manualTarget=$('wizard-tizen-version').value;resetFile();render();};
+ page.addEventListener('pointerdown',()=>{engaged=true;},true);page.addEventListener('keydown',()=>{engaged=true;},true);
+ $('guide-check').addEventListener('click',()=>{manualBox.open=true;open(1,false);},true);
+ w.addEventListener('morphDeviceConnected',event=>{if(event.detail&&event.detail.ip){const changed=!device||device.ip!==event.detail.ip;device=event.detail;if(changed){manualTarget='';resetFile();reached=2;}render();if(engaged&&!page.hidden)open(2,true);}});
+ w.addEventListener('morphSetupFile',event=>{file=event.detail||null;if(file)open(3,true);else render();});
+ w.addEventListener('morphSetupInstall',event=>{busy=!!event.detail.busy;if(event.detail.installed){busy=false;open(5,true);}else render();});
+ w.addEventListener('morphPlatform',()=>{manualTarget='';resetFile();device=null;reached=1;open(1,false);});
+ new MutationObserver(()=>{$('connection-state').hidden=!device&&!['checking','error'].includes($('connection-state').dataset.status);}).observe($('connection-state'),{attributes:true,attributeFilter:['data-status']});
+ w.addEventListener('morphDiscovery',render);w.addEventListener('morphLanguage',render);
+ const oldBack=w.handleBack;w.handleBack=function(){if(!page.hidden&&$('operation').hidden&&step>1){if(!busy)open(step-1,true);return true;}return oldBack?oldBack():false;};
+ w.MorphConnectFlow={open,render,target,attachHelpers,showManual:function(){manualBox.open=true;open(1,false);$('tv-ip').focus();},back:function(){if(page.hidden||!$('operation').hidden||step===1)return false;if(!busy)open(step===4&&type()!=='samsung'?2:step-1,true);return true;}};render();
+})(window,document);

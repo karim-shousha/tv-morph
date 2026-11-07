@@ -1,0 +1,102 @@
+/* Phone surfaces load after every shared/legacy sheet. TV assets stay separate. */
+
+html[data-app-appearance=dark]{font-size:16px;}
+html[data-app-appearance] body{background:var(--m-bg)!important;background-image:none!important;color:var(--m-text)!important;font-family:var(--morph-font);font-size:0.875rem;line-height:1.7;}
+html[data-app-appearance]{background:var(--m-bg)!important;}
+.ambient{display:none;}
+header{height:88px;padding:18px 20px;gap:10px;max-width:680px;margin:auto;}
+.brand{font-size:23px;flex-shrink:0;}.brand-logo{width:48px;height:48px;border-radius:14px;}.brand small{font-size:9px;line-height:1.5;color:var(--m-muted)!important;letter-spacing:0;}
+.m30-head-actions{gap:8px;min-width:0;}.device-chip{box-shadow:none;max-width:150px;background:var(--m-card)!important;color:var(--m-text)!important;font-size:0.875rem;padding:8px 10px;border-color:var(--m-border-strong);}
+.device-chip span{max-width:105px;}.m30-gear{box-shadow:none;background:var(--m-card);color:var(--m-text);width:44px;height:44px;min-width:44px;min-height:44px;border-radius:12px;}
+main{padding:16px 20px 125px;max-width:680px;}body[data-mobile-page=page-studio] main{padding-bottom:205px;}
+.page>.intro,.m30-page-heading p{font-size:0.875rem;line-height:1.8;color:var(--m-muted)!important;margin:8px 0 22px;}
+.page>h1,.m30-page-heading h1{font-size:1.6875rem;line-height:1.45;margin:4px 0 10px;color:var(--m-text)!important;}
+.page>h1>span{color:var(--m-accent2)!important;}.m30-page-heading p{margin-bottom:16px;}
+.panel,.theme-library{background:var(--m-card)!important;border:1px solid var(--m-border)!important;color:var(--m-text);box-shadow:none;}.connect-step{background:var(--m-card)!important;border:1px solid var(--m-border)!important;color:var(--m-text);box-shadow:none;min-height:0!important;padding:0!important;border-radius:16px!important;margin:12px 0!important;}.customization-menu,.advanced-subsection{background:var(--m-card)!important;border:1px solid var(--m-border)!important;color:var(--m-text);box-shadow:none;}
+.panel h2,.panel h3,.panel>strong,.section-title h2,.connect-step summary,.theme-library summary,.advanced-subsection summary,.customization-menu>summary strong,.custom-colors h3,.image-customization summary{color:var(--m-text)!important;}
+.panel p,.panel label,.fine,.intro,.customization-menu p,.guide-note,.compatibility p,.connection-card p,.connection-state p{color:var(--m-muted)!important;}
+.eyebrow{color:var(--m-accent)!important;letter-spacing:.4px;font-size:0.6875rem;}
+.primary,.secondary{min-height:48px;border-radius:14px;font-size:0.875rem;line-height:1.5;padding:13px 16px;white-space:normal;}
+.primary{background:var(--m-grad)!important;color:#fff!important;box-shadow:none;}
+html[data-app-appearance=dark] .primary{color:#102039!important;}
+.secondary{background:var(--m-bg2)!important;color:var(--m-text)!important;border:1px solid var(--m-border-strong)!important;box-shadow:none;}
+button:disabled{opacity:.65!important;cursor:default;}.text-button{font-size:0.8125rem;color:var(--m-accent)!important;}
+input:not([type=checkbox]):not([type=color]):not([type=range]),textarea,select{min-width:0;max-width:100%;min-height:48px;background:var(--m-bg)!important;color:var(--m-text)!important;border:1px solid var(--m-border-strong)!important;font-size:0.875rem;border-radius:12px;}
+input::placeholder,textarea::placeholder{color:var(--m-muted)!important;opacity:.85;}
+.m30-status{padding:0;border-radius:20px;background:var(--m-card);border-color:var(--m-border);box-shadow:none;min-height:0;height:auto;margin:0;}.m30-status h2{font-size:1.125rem;color:var(--m-text);}
+.connect-step summary{min-height:58px;}.connect-step-body{padding:0 16px 16px;}.connect-step-title{font-size:0.875rem;}.connect-number{background:var(--m-grad);color:#fff;}html[data-app-appearance=dark] .connect-number{color:#102039;}
+.connect-step-body .panel{padding:14px;}.m30-ip-card{flex-wrap:wrap;gap:10px;}.m30-ip-card label{flex:1;min-width:150px;}.m30-ip-card .input-row{flex-basis:100%;}
+.phone-ip{flex-wrap:wrap;color:var(--m-text)!important;background:var(--m-bg2)!important;}.phone-ip span,.phone-ip strong{color:var(--m-text)!important;}.phone-ip strong{font:600 1.0625rem/1.5 var(--morph-font);}
+.m30-copy{background:var(--m-bg2);border-color:var(--m-border-strong);color:var(--m-text);}
+.preview-heading{margin:8px 0 10px;}.preview-heading h2{font-size:16px;}.preview-heading>span{font-size:10px;color:var(--m-muted)!important;letter-spacing:0;}
+#preview{margin-bottom:18px;box-shadow:none;}
+#theme-library{padding:14px;margin:12px 0 18px;border-radius:20px;}#theme-library>summary{margin:0 0 12px;min-height:48px;gap:10px;}#theme-library>summary .eyebrow{display:none;}
+#theme-library>summary h2{font-size:1.125rem;font-weight:700;}#selected-theme{font-size:0.875rem;color:var(--m-muted);}
+.theme-collections{gap:8px;padding-bottom:12px;}.theme-collections button{background:var(--m-bg2);border-color:var(--m-border);color:var(--m-text);font-size:0.875rem;padding:8px 13px;}
+.theme-collections button.selected{background:var(--m-grad);color:#fff;}html[data-app-appearance=dark] .theme-collections button.selected{color:#102039;}
+.themes{gap:10px;}.theme{background:var(--m-bg2)!important;border-color:var(--m-border)!important;}.theme strong{color:var(--m-text)!important;font-size:0.875rem;line-height:1.5;padding:10px 8px;}.theme-price{font-size:0.625rem!important;padding-bottom:8px;color:var(--m-muted)!important;}
+#phone-theme-packs,#family-panel,#phone-parental,#free-theme-image{margin:14px 0;}#phone-theme-packs summary,#family-panel summary,#phone-parental summary{min-height:48px;font-size:0.9375rem;font-weight:700;cursor:pointer;}
+.m30-applybar{position:fixed;inset-inline:0;z-index:12;max-width:680px;margin-inline:auto;padding:10px 20px;background:var(--m-bg);border-top:1px solid var(--m-border);}
+.m30-applybar #apply{margin:0!important;width:100%;min-height:50px;bottom:calc(var(--studio-nav-height,64px) + 24px + env(safe-area-inset-bottom,0px))!important;}.m30-applybar[hidden]{display:none!important;bottom:calc(var(--studio-nav-height,64px) + 24px + env(safe-area-inset-bottom,0px))!important;}
+
+
+.m30-segment{background:var(--m-bg2);border-color:var(--m-border);}.m30-segment button{color:var(--m-muted);font-size:0.8125rem;}.m30-segment button[aria-selected=true]{box-shadow:none;background:var(--m-grad);color:#fff;}html[data-app-appearance=dark] .m30-segment button[aria-selected=true]{color:#fff;}
+.iptv-source-card,.iptv-private-card,.iptv-public-card,#page-iptv .panel{color:var(--m-text)!important;background:var(--m-card)!important;border-color:var(--m-border)!important;}
+#page-remote .remote-pad{background:var(--m-bg2);border-color:var(--m-border-strong);box-shadow:none;width:260px;height:260px;}.remote-pad .remote-ok,.remote-row button{box-shadow:none;}
+.m30-cap{background:var(--m-bg2);border-color:var(--m-border);font-size:0.875rem;color:var(--m-muted);}
+.m30-sheet{padding:12px 20px calc(24px + env(safe-area-inset-bottom));background:var(--m-card-solid)!important;color:var(--m-text);max-height:88vh;border-color:var(--m-border-strong);}
+.m30-sheet[hidden]{display:none!important;}.m30-modal-open{overflow:hidden;}.m30-sheet-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;}
+.m30-sheet-heading h2{font-size:1.3125rem;}.m30-sheet-heading button{width:44px;height:44px;font:1.75rem Arial;border-radius:50%;border:1px solid var(--m-border);background:var(--m-bg2);color:var(--m-text);flex-shrink:0;}
+.m30-sheet .language-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 12px;align-items:center;width:100%;margin:0 0 18px;padding:0;border:0;}
+.m30-sheet .language-row label{font-size:0.8125rem;color:var(--m-muted);}.m30-sheet .language-row select{width:100%;min-width:0;}
+.m30-sheet .font-size-panel{background:var(--m-bg2)!important;padding:16px!important;border-radius:16px;}.m30-sheet .font-size-panel h2{font-size:1.0625rem;}.m30-sheet .font-size-panel p{font-size:0.875rem;}
+.m30-sheet .font-size-panel label{display:block;margin:12px 0 6px;color:var(--m-text);}.m30-sheet .font-size-panel select{width:100%;}
+.m30-sheet .panel,.m30-sheet details,.m30-sheet .contact-card{margin-top:16px;border-radius:16px;}.m30-sheet .morph-support{margin-top:20px;padding:18px;background:var(--m-bg2)!important;color:var(--m-text)!important;border:1px solid var(--m-border);}
+.m30-sheet .morph-support strong{font-size:1.0625rem;}.m30-sheet .morph-support p{font-size:0.875rem;color:var(--m-muted)!important;}.m30-sheet .morph-support a{background:var(--m-card)!important;color:var(--m-accent)!important;border-color:var(--m-border-strong);}
+#operation .operation-card{background:var(--m-card-solid)!important;color:var(--m-text)!important;}#operation .operation-card p{color:var(--m-muted)!important;}
+.m30-onboard-card{background:var(--m-card-solid)!important;color:var(--m-text);}.m30-onboard-card h2{color:var(--m-text)!important;}
+@media(max-width:360px){header{padding-inline:16px;}.brand{font-size:20px;}.brand-logo{width:42px;height:42px;}.device-chip{max-width:115px;padding:8px;font-size:0.875rem;}.device-chip span{max-width:75px;}.m30-gear{width:44px;height:44px;min-width:44px;min-height:44px;border-radius:12px;}main,.m30-sheet{padding-inline:16px;}.m30-applybar{padding-inline:16px;bottom:calc(var(--studio-nav-height,64px) + 24px + env(safe-area-inset-bottom,0px));}.m30-sheet .language-row{grid-template-columns:1fr;}}
+
+.m30-sheet #app-language,.m30-sheet #app-appearance{width:100%!important;min-width:0!important;max-width:100%!important;margin:0!important;justify-self:stretch;font-size:0.875rem!important;}
+#preview .preview-main>div:first-of-type{min-width:0;direction:rtl;text-align:right;}
+#preview .preview-main strong{font-size:22px;line-height:1.4;white-space:normal;text-overflow:clip;max-height:2.8em;overflow:hidden;unicode-bidi:plaintext;overflow-wrap:break-word;}
+html[dir=ltr] #preview .preview-main>div:first-of-type{direction:ltr;text-align:left;}
+
+#preview{width:100%;min-width:0;min-height:0;aspect-ratio:16/9;box-sizing:border-box;}
+
+.m30-sheet{left:0;right:0;}.m30-applybar{left:0;right:0;bottom:calc(var(--studio-nav-height,64px) + 24px + env(safe-area-inset-bottom,0px));}
+
+/* Connection feedback belongs beside the next action, never on a white legacy surface. */
+#connection-state{background:var(--m-bg2)!important;color:var(--m-text)!important;border:1px solid var(--m-border-strong)!important;border-radius:16px;padding:16px;margin:0 0 16px;box-shadow:none;}
+#connection-state #connection-title{display:block;color:var(--m-text)!important;font-size:1.125rem;line-height:1.6;}
+#connection-state #connection-detail{color:var(--m-muted)!important;line-height:1.8;}
+#connection-state[data-status=connected]{background:#283954!important;border-color:#91bded!important;}
+#connection-state[data-status=connected] #connection-title{color:#d9ffed!important;}
+#connection-state[data-status=connected] #connection-detail{color:#c4d6ed!important;}
+html[data-app-appearance=light] #connection-state[data-status=connected]{background:#e8f0ff!important;border-color:#1263ed!important;}
+html[data-app-appearance=light] #connection-state[data-status=connected] #connection-title{color:#194373!important;}
+html[data-app-appearance=light] #connection-state[data-status=connected] #connection-detail{color:#29445f!important;}
+.setup-release{padding:12px;border-radius:12px;background:var(--m-bg2);border:1px solid var(--m-border-strong);font-weight:700;unicode-bidi:plaintext;color:var(--m-text)!important;}
+.home-support{margin:0 0 18px!important;padding:14px!important;border-radius:16px;background:var(--m-card)!important;border:1px solid var(--m-border)!important;box-shadow:none!important;color:var(--m-text)!important;text-align:start!important;}
+.home-support strong{font-size:0.9375rem!important;color:var(--m-text)!important;}.home-support p{font-size:0.875rem!important;line-height:1.6!important;margin:4px 0 10px!important;color:var(--m-muted)!important;}
+.home-support a{display:inline-flex!important;align-items:center;justify-content:center;min-height:44px;max-width:100%;box-sizing:border-box;padding:8px 12px!important;margin:0 0 4px 5px!important;font-size:0.875rem!important;border-radius:12px!important;background:var(--m-bg2)!important;border:1px solid var(--m-border-strong)!important;color:var(--m-accent)!important;text-decoration:none;}
+
+/* Keep selected control tabs legible over their saturated gradient. */
+html[data-app-appearance] .m30-segment button[aria-selected=true],html[data-app-appearance] .m30-segment button[aria-selected=true] svg{color:#fff!important;}
+html[data-app-appearance] #free-theme-image p.local-image-note{background:#dceaff14!important;color:#c5d9f2!important;border:1px solid #adc7e044;line-height:1.8;}
+html[data-app-appearance=dark] #free-theme-image p.local-image-note{background:#283954!important;color:#e6f1ff!important;border-color:#91bded;}
+
+/* Supplied transparent brand mark: no white badge, inset frame or clipping. */
+html body .brand .brand-logo{width:58px;height:58px;padding:0;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;object-fit:contain;flex-shrink:0;}
+
+@media(max-width:360px){html body .brand .brand-logo{width:48px;height:48px;}}
+
+/* Keep the setup address in normal flow, independent of the decorative icon. */
+#page-connect .setup-phone-ip.m30-ip-card{display:flex;flex-direction:column;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;height:auto;min-width:0;gap:14px;}
+#page-connect .setup-phone-ip>.m30-ip-icon{align-self:flex-start;width:44px;height:44px;flex:0 0 auto;}
+#page-connect #setup-phone-label{display:block;position:static;width:auto;height:auto;min-width:0;font-size:1.0rem;line-height:1.7;font-weight:700;white-space:normal;overflow-wrap:break-word;}
+#page-connect .setup-phone-ip>#phone-ip{display:block;position:static;direction:ltr;unicode-bidi:isolate;flex:none;width:100%;font:700 1.875rem/1.4 var(--morph-font)!important;text-align:center;letter-spacing:0;white-space:normal;overflow-wrap:anywhere;}
+#page-connect .setup-phone-ip>#setup-phone-help{display:block;position:static;flex:none;width:100%;font-size:0.9375rem;line-height:1.9;white-space:normal;margin:0;}
+#page-connect .setup-phone-ip>.m30-copy{align-self:flex-start;margin:0!important;}
+html[data-app-appearance=dark] #guide-count{background:#263e60;color:#f0f6ff;border:1px solid #708bb5;}
+html:not([data-app-appearance=dark]) #guide-count{background:#e7e0f4;color:#36214f;}

@@ -1,0 +1,21 @@
+/* Settings presentation only; existing actions, persistence and navigation remain authoritative. */
+(function(w){'use strict';
+ var root,queued=false;
+ var paths={text:'<path d="m3 15 4-11 4 11M4.5 11h5M14 5h7M14 10h5M3 20h18M14 15h7"/>',palette:'<path d="M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 0-4h-1a2 2 0 0 1 0-4h4a4 4 0 0 0 4-4c0-4-5-6-9-6Z"/><circle cx="7" cy="10" r=".8"/><circle cx="10" cy="6.5" r=".8"/><circle cx="15" cy="7" r=".8"/>',apps:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',shield:'<path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z"/><circle cx="12" cy="9" r="2.5"/><path d="M7 16a5 5 0 0 1 10 0"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',speed:'<path d="M4 19a9 9 0 1 1 16 0M12 12l5-5M5 13H3m18 0h-2M7 6 5 4m12 2 2-2"/><circle cx="12" cy="12" r="1.8"/>',screen:'<rect x="2" y="3" width="20" height="14" rx="3"/><path d="M8 22h8m-4-5v5m-2-12 5 3-5 3Z"/>',network:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/>',plus:'<path d="m12 2 3 6 7 1-5 5 1 8-6-4-6 4 1-8-5-5 7-1Z"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/>',moon:'<path d="M18 3a9 9 0 1 0 3 14A8 8 0 0 1 18 3Z"/>',back:'<path d="m14 5-7 7 7 7"/>'};
+ function icon(key){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+paths[key]+'</svg>';}
+ function language(){return w.MorphLocale?MorphLocale.get():'en';}
+ function decorate(){queued=false;if(!root)return;
+  if(w.MorphSettingsReadable&&!MorphSettingsReadable.referencePalette){var original=MorphSettingsReadable.preview;MorphSettingsReadable.preview=function(config){var result=original.apply(this,arguments);if(w.ReferenceTheme)ReferenceTheme.apply(config);return result;};MorphSettingsReadable.referencePalette=true;}
+
+  var kinds={appearance:'text',themes:'palette',home:'apps',parental:'shield',prayer:'moon',time:'clock',performance:'speed',launcher:'screen',system:'network',iptv:'screen',plus:'plus',about:'info'};
+  Object.keys(kinds).forEach(function(key){var button=document.getElementById('settings-category-'+key+'-entry');if(!button||button.querySelector('.reference-settings-icon'))return;var mark=document.createElement('span');mark.className='reference-settings-icon';mark.setAttribute('aria-hidden','true');mark.innerHTML=icon(kinds[key]);button.insertBefore(mark,button.firstChild);});
+  var header=root.querySelector('.settings-readable-header');
+  if(header&&!document.getElementById('reference-settings-back')){var back=document.createElement('button');back.id='reference-settings-back';back.type='button';back.innerHTML=icon('back');back.onclick=function(){w.ClearTV.back();};header.insertBefore(back,header.firstChild);}
+  var b=document.getElementById('reference-settings-back');if(b){var label=language()==='ar'?'رجوع':language()==='fr'?'Retour':'Back';b.title=label;b.setAttribute('aria-label',label);}
+ }
+ function schedule(){if(!queued){queued=true;requestAnimationFrame(decorate);}}
+ function mount(){root=document.getElementById('view-settings');if(!root)return;root.classList.add('reference-settings');decorate();new MutationObserver(schedule).observe(root,{childList:true,subtree:true});w.addEventListener('morphLanguage',schedule);}
+ if(document.readyState==='complete')mount();else w.addEventListener('load',mount);
+})(window);
+(function(){function align(){var aside=document.querySelector('.settings-readable-preview'),note=document.querySelector('.settings-save-note');if(!aside||!note)return;var copy=note.cloneNode(true);copy.classList.add('reference-save-note');note.style.display='none';aside.insertBefore(copy,aside.firstChild);new MutationObserver(function(){copy.textContent=note.textContent;}).observe(note,{childList:true,characterData:true,subtree:true});}window.addEventListener('load',align);})();
+(function(){window.addEventListener('load',function(){var b=document.getElementById('setting-favourites');if(b){b.hidden=true;b.tabIndex=-1;}if(typeof ClearTV.settings.showHomeHdmi!=='boolean'){ClearTV.settings.showHomeHdmi=false;ClearTV.settings.showLastHdmi=false;}if(ClearTV.refreshHomeInputs)ClearTV.refreshHomeInputs();});})();

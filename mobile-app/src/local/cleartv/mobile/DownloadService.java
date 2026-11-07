@@ -12,7 +12,7 @@ public class DownloadService extends Service {
   PendingIntent stopIntent=PendingIntent.getService(this,0,new Intent(this,DownloadService.class).setAction("stop"),PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
   startForeground(42,new Notification.Builder(this,"tv-download").setSmallIcon(android.R.drawable.stat_sys_download).setContentTitle(MobileStrings.t(this,"Morph TV · تحميل التلفزيون جاهز")).setContentText(MobileStrings.t(this,"الرابط متاح على شبكتك لمدة ١٠ دقائق، حتى لو خرجت من التطبيق.")).setOngoing(true).addAction(new Notification.Action.Builder(null,MobileStrings.t(this,"إيقاف التحميل"),stopIntent).build()).build());
   expires=System.currentTimeMillis()+600000;timer.removeCallbacks(stop);timer.postDelayed(stop,600000);
-  if(server==null)try{final byte[] apk=ReceiverApk.read(getAssets().open("android-tv.apk"));server=new LanHttp(8788,(method,path,headers,body)->System.currentTimeMillis()>expires?new LanHttp.Response(410,"text/plain",new byte[0]):ApkDownload.response(apk,method,path,headers));}catch(Exception e){stopSelf();}
+  if(server==null)try{final byte[] apk=ReceiverApk.read(getAssets().open("android-tv.apk")),iptv=InstallPackage.iptv(this,"android").data;server=new LanHttp(8788,(method,path,headers,body)->System.currentTimeMillis()>expires?new LanHttp.Response(410,"text/plain",new byte[0]):ApkDownload.response(path.equals("/morph-iptv.apk")?iptv:apk,method,path.equals("/morph-iptv.apk")?"/tv-morph.apk":path,headers));}catch(Exception e){stopSelf();}
   return START_NOT_STICKY;
  }
  @Override public void onDestroy(){timer.removeCallbacks(stop);if(server!=null)server.close();stopForeground(true);super.onDestroy();}

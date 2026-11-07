@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=1920, height=1080"/>
+<title>Morph Bridge</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="css/launcher.css?v=host-language-1" type="text/css"/>
+<script src="tv-compat.js"></script><script src="reference-theme.js"></script><link rel="stylesheet" href="bridge-reference.css"><link rel="stylesheet" href="plus.css"><style>.bridge-license-pending #app{visibility:hidden!important}#bridge-access-gate[hidden]{display:none!important}#bridge-access-gate{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vw;text-align:center;color:white;font:26px/1.6 Arial,sans-serif}#bridge-access-gate button{font:inherit;color:white;padding:16px 28px;border:1px solid #e8c48a;border-radius:18px;background:#10233c}#bridge-access-gate button:focus{outline:3px solid #e8c48a}.morph-plus-dialog{background:#081a2ef0!important;max-height:90vh;overflow:auto}</style></head>
+<body>
+<div id="app" data-no-translate>
+  <div id="header">
+    <div class="bridge-title morph-symbol-brand" data-no-translate aria-label="Morph Bridge"><img class="morph-header-symbol" src="assets/morph-header-symbol.webp" alt=""><span>orph Bridge</span></div>
+    <button id="bridge-back" type="button" aria-label="Back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>
+    <div id="conn" role="status" aria-live="polite"><span id="connDot" class="dot off"></span><span id="connText">غير متصل</span></div>
+    <button id="btnDisconnect" class="btn" hidden>قطع الاتصال</button>
+  </div>
+
+  <div id="screen-pair" class="screen">
+    <div class="pair-copy"><img class="bridge-connect-art" src="reference-assets/bridge-devices-v2.webp" alt="" width="1000" height="563"><div class="eyebrow">من موبايلك للشاشة الكبيرة</div>
+    <h1>تطبيقات موبايلك، على الشاشة الكبيرة.</h1>
+    <p class="muted">تطبيقات موبايلك على التلفزيون، والتحكّم بالريموت.</p>
+    <ol class="pair-steps"><li>نفس شبكة Wi-Fi على الجهازين.</li><li>اختار تطبيقاتك والتلفزيون من Bridge على الموبايل.</li><li>اضغط اتصال من الموبايل. مش محتاج تكتب حاجة هنا أثناء الربط.</li></ol></div>
+    <div class="pair-card"><h2>الاتصال من الموبايل</h2><p class="pair-note">افتح Bridge على الموبايل واختار هذا التلفزيون. بيانات الاتصال بتوصل تلقائيًا.</p>
+    <div class="bridge-tv-address"><span>عنوان IP التلفزيون</span><strong id="tvLocalIp" dir="ltr">—</strong></div>
+    <p class="pair-note">لا تكتب كود أندرويد هنا. خانة تجهيز الموبايل بتظهر بعد الربط، لما تبدأ التجهيز من الموبايل.</p><div class="form" hidden aria-hidden="true" style="display:none">
+      <div class="row"><label for="inIp">عنوان IP الموبايل</label><input id="inIp" disabled tabindex="-1" type="text" value="" placeholder="10.0.0.64"/></div>
+      <div class="row"><label for="inCode">كود Bridge من الموبايل</label><input id="inCode" disabled tabindex="-1" type="text" value="" placeholder="000000"/></div>
+    </div>
+    <div class="btnrow">
+      <button id="btnConnect" disabled hidden style="display:none" class="btn primary">اتصال بالموبايل</button>
+      <button id="btnDiag" class="btn">تفاصيل الاتصال</button>
+    </div>
+    <p id="pairError" class="error" role="status" aria-live="polite"></p></div>
+  </div>
+
+  <div id="screen-setup" class="screen hidden">
+    <div class="pair-card phone-setup-card"><h1>تجهيز الموبايل من التلفزيون</h1>
+      <p class="pair-note">على الموبايل: افتح التصحيح اللاسلكي ← إقران الجهاز باستخدام رمز، وسيب نافذة الكود مفتوحة.</p>
+      <div class="bridge-tv-address"><span>عنوان IP الموبايل · متصل تلقائيًا</span><strong id="phoneSetupIp" dir="ltr">—</strong></div>
+      <div class="row" id="phoneSetupEntry"><label for="inPhoneSetupCode">كود أندرويد الظاهر على الموبايل · 6 أرقام</label><input id="inPhoneSetupCode" type="text" inputmode="numeric" enterkeyhint="done" maxlength="6" autocomplete="off" placeholder="000000" /></div>
+      <span id="phoneSetupSpinner" class="phone-setup-spinner" aria-hidden="true" hidden></span><p id="phoneSetupStatus" class="pair-note" role="status" aria-live="polite"></p>
+      <div class="btnrow"><button id="btnPhoneSetupSubmit" class="btn primary">اتصال</button><button id="btnPhoneSetupCancel" class="btn">إلغاء والرجوع للتطبيقات</button></div>
+    </div>
+  </div>
+
+  <div id="screen-apps" class="screen hidden">
+    <div class="apps-toolbar"><div><div class="eyebrow">شاشتك. تطبيقاتك. براحتك.</div><h1 id="appsTitle">كل تطبيقاتك، في مكان واحد.</h1></div>
+      <div class="search-box"><label for="inSearch">بحث</label><input id="inSearch" type="text" value="" placeholder="ابحث عن تطبيق"/></div>
+    </div>
+    <p id="appsError" role="status" aria-live="polite" hidden></p><div id="grid"></div>
+    <div class="launcher-bottom"><span id="selectedApp">اختار تطبيق بالريموت</span><span id="appsCount">تطبيقاتك من الموبايل</span></div>
+    <p class="hint"><span>✥ &nbsp; تنقّل بالأسهم</span><span><b class="ok-key">OK</b> &nbsp; افتح التطبيق</span><span>↩ &nbsp; رجوع</span><span class="phone-note">موبايلك متاح لاستخدامك عادي</span></p>
+  </div>
+
+  <div id="screen-play" class="screen hidden">
+    <div id="videoWrap"><video id="video" muted playsinline></video><div id="appCursor" aria-hidden="true"></div></div>
+    <audio id="appAudio" autoplay></audio>
+    <div id="playBar">
+      <span id="playTitle">-</span>
+      <span id="playState" class="muted">connecting…</span>
+    </div>
+    <p class="hint">ضغطة سهم: حركة دقيقة • ضغط مستمر: حركة سلسة • OK: ضغط • Back: رجوع • Back مرتين: اللانشر</p>
+  </div>
+
+  <div id="screen-diag" class="screen hidden">
+    <h1 id="diagTitle">تفاصيل الاتصال</h1>
+    <p id="diagSummary" class="muted"></p><div class="bridge-diag-cards"><section><small>الاتصال</small><strong id="diagConnection">—</strong></section><section><small>عنوان الموبايل</small><strong id="diagPhoneIP" dir="ltr">—</strong></section><section><small>تشغيل التطبيقات</small><strong id="diagStream">—</strong></section></div><pre id="diagText" hidden></pre>
+    <div class="btnrow"><button id="btnTestOutput" class="btn">اختبار الصورة والصوت</button><button id="btnDiagTechnical" class="btn">بيانات تقنية</button><button id="btnDiagBack" class="btn primary">رجوع</button></div>
+  </div>
+  <div id="screen-help" class="screen hidden">
+    <div class="eyebrow">تطبيقاتك من الموبايل</div><h1>ضيف اللي تحبّه.</h1>
+    <p class="muted">١. افتح Morph Bridge على الموبايل.<br/>٢. علّم على التطبيقات اللي عايزها.<br/>٣. هتظهر هنا تلقائيًا، وافتحها بريموت التلفزيون.</p>
+    <button id="btnHelpBack" class="btn primary">رجوع للتطبيقات</button>
+  </div>
+  <footer id="brandFooter" dir="ltr"><span>Developed by Karim Aboushousha &amp; Hassan Shehata</span><span>morph-tv.com</span></footer>
+</div>
+<script>if(window.MorphDevice&&MorphDevice.bridgeTrialJson)window.TVNative=MorphDevice;</script><script src="plus-locale.js"></script><script src="plus.js"></script><script src="bridge-access.js"></script><script src="host.js"></script>
+<script src="locale.js"></script>
+<script src="js/platform.js"></script>
+<script src="js/pointer-motion.js"></script>
+<script src="standalone-license.js"></script>
+<script src="bridge-reference.js"></script></body>
+</html>
+

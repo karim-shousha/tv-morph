@@ -1,0 +1,2485 @@
+{
+ "version": 1,
+ "generated": "2026-10-26",
+ "total": 154,
+ "assets": [
+  {
+   "id": "fitness/categories/full_body",
+   "type": "category",
+   "ref": "full_body",
+   "en": "Full Body",
+   "pose": "Athletic model representing Full Body training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/full_body.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/upper_body",
+   "type": "category",
+   "ref": "upper_body",
+   "en": "Upper Body",
+   "pose": "Athletic model representing Upper Body training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/upper_body.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/lower_body",
+   "type": "category",
+   "ref": "lower_body",
+   "en": "Lower Body",
+   "pose": "Athletic model representing Lower Body training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/lower_body.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/core",
+   "type": "category",
+   "ref": "core",
+   "en": "Core & Abs",
+   "pose": "Athletic model representing Core & Abs training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/core.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/cardio",
+   "type": "category",
+   "ref": "cardio",
+   "en": "Cardio",
+   "pose": "Athletic model representing Cardio training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/cardio.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/hiit",
+   "type": "category",
+   "ref": "hiit",
+   "en": "HIIT",
+   "pose": "Athletic model representing HIIT training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/hiit.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/strength",
+   "type": "category",
+   "ref": "strength",
+   "en": "Strength",
+   "pose": "Athletic model representing Strength training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/strength.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/stretching",
+   "type": "category",
+   "ref": "stretching",
+   "en": "Stretching",
+   "pose": "Athletic model representing Stretching training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/stretching.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/mobility",
+   "type": "category",
+   "ref": "mobility",
+   "en": "Mobility",
+   "pose": "Athletic model representing Mobility training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/mobility.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/low_impact",
+   "type": "category",
+   "ref": "low_impact",
+   "en": "Low Impact",
+   "pose": "Athletic model representing Low Impact training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/low_impact.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/warmup",
+   "type": "category",
+   "ref": "warmup",
+   "en": "Warm-Up",
+   "pose": "Athletic model representing Warm-Up training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/warmup.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/categories/recovery",
+   "type": "category",
+   "ref": "recovery",
+   "en": "Recovery",
+   "pose": "Athletic model representing Recovery training",
+   "composition": "Centered figure, dark studio, teal rim light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/categories/recovery.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/quick_energy",
+   "type": "program",
+   "ref": "quick_energy",
+   "en": "Quick Energy",
+   "pose": "Group or hero pose for Quick Energy",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/quick_energy.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/morning_activation",
+   "type": "program",
+   "ref": "morning_activation",
+   "en": "Morning Activation",
+   "pose": "Group or hero pose for Morning Activation",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/morning_activation.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/full_body_starter",
+   "type": "program",
+   "ref": "full_body_starter",
+   "en": "Full Body Starter",
+   "pose": "Group or hero pose for Full Body Starter",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/full_body_starter.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/core_abs",
+   "type": "program",
+   "ref": "core_abs",
+   "en": "Core & Abs",
+   "pose": "Group or hero pose for Core & Abs",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/core_abs.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/upper_strength",
+   "type": "program",
+   "ref": "upper_strength",
+   "en": "Upper Body Strength",
+   "pose": "Group or hero pose for Upper Body Strength",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/upper_strength.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/lower_power",
+   "type": "program",
+   "ref": "lower_power",
+   "en": "Lower Body Power",
+   "pose": "Group or hero pose for Lower Body Power",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/lower_power.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/fat_burn",
+   "type": "program",
+   "ref": "fat_burn",
+   "en": "Fat Burn",
+   "pose": "Group or hero pose for Fat Burn",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/fat_burn.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/low_impact_cardio",
+   "type": "program",
+   "ref": "low_impact_cardio",
+   "en": "Low Impact Cardio",
+   "pose": "Group or hero pose for Low Impact Cardio",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/low_impact_cardio.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/mobility_recovery",
+   "type": "program",
+   "ref": "mobility_recovery",
+   "en": "Mobility & Recovery",
+   "pose": "Group or hero pose for Mobility & Recovery",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/mobility_recovery.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/full_body_strength",
+   "type": "program",
+   "ref": "full_body_strength",
+   "en": "Full Body Strength",
+   "pose": "Group or hero pose for Full Body Strength",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/full_body_strength.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/hiit_blast",
+   "type": "program",
+   "ref": "hiit_blast",
+   "en": "HIIT Blast",
+   "pose": "Group or hero pose for HIIT Blast",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/hiit_blast.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/cardio_endurance",
+   "type": "program",
+   "ref": "cardio_endurance",
+   "en": "Cardio Endurance",
+   "pose": "Group or hero pose for Cardio Endurance",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/cardio_endurance.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/strength_tone",
+   "type": "program",
+   "ref": "strength_tone",
+   "en": "Strength & Tone",
+   "pose": "Group or hero pose for Strength & Tone",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/strength_tone.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/full_body_challenge",
+   "type": "program",
+   "ref": "full_body_challenge",
+   "en": "Full Body Challenge",
+   "pose": "Group or hero pose for Full Body Challenge",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/full_body_challenge.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/programs/deep_stretch",
+   "type": "program",
+   "ref": "deep_stretch",
+   "en": "Deep Stretch & Recovery",
+   "pose": "Group or hero pose for Deep Stretch & Recovery",
+   "composition": "Cinematic wide, blue-orange accent light",
+   "aspect": "16:10",
+   "resolution": "960x600",
+   "path": "assets/fitness/programs/deep_stretch.webp",
+   "usedIn": [
+    "fitness-home",
+    "programs",
+    "complete"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/hero/home",
+   "type": "hero",
+   "ref": "home",
+   "en": "Fitness home hero — athlete training in dark gym",
+   "pose": "Full-body training action, sweat detail",
+   "composition": "Wide 21:9 cinematic, teal + violet glow",
+   "aspect": "21:9",
+   "resolution": "1680x720",
+   "path": "assets/fitness/hero/home.webp",
+   "usedIn": [
+    "fitness-home"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/bodyweight_squat",
+   "type": "exercise",
+   "ref": "bodyweight_squat",
+   "en": "Bodyweight Squat",
+   "pose": "Feet shoulder-width. Chest up, knees track over toes.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bodyweight_squat.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/bodyweight_squat_demo",
+   "type": "demo",
+   "ref": "bodyweight_squat",
+   "en": "Bodyweight Squat — motion demo",
+   "pose": "Feet shoulder-width. Chest up, knees track over toes.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bodyweight_squat_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/sumo_squat",
+   "type": "exercise",
+   "ref": "sumo_squat",
+   "en": "Sumo Squat",
+   "pose": "Wide stance, toes out. Push knees out.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/sumo_squat.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/sumo_squat_demo",
+   "type": "demo",
+   "ref": "sumo_squat",
+   "en": "Sumo Squat — motion demo",
+   "pose": "Wide stance, toes out. Push knees out.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/sumo_squat_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/wall_sit",
+   "type": "exercise",
+   "ref": "wall_sit",
+   "en": "Wall Sit",
+   "pose": "Back flat on wall, thighs parallel to floor.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/wall_sit.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/wall_sit_demo",
+   "type": "demo",
+   "ref": "wall_sit",
+   "en": "Wall Sit — motion demo",
+   "pose": "Back flat on wall, thighs parallel to floor.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/wall_sit_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/forward_lunge",
+   "type": "exercise",
+   "ref": "forward_lunge",
+   "en": "Forward Lunge",
+   "pose": "Step forward, both knees to 90 degrees.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/forward_lunge.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/forward_lunge_demo",
+   "type": "demo",
+   "ref": "forward_lunge",
+   "en": "Forward Lunge — motion demo",
+   "pose": "Step forward, both knees to 90 degrees.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/forward_lunge_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/reverse_lunge",
+   "type": "exercise",
+   "ref": "reverse_lunge",
+   "en": "Reverse Lunge",
+   "pose": "Step back softly, torso tall.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/reverse_lunge.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/reverse_lunge_demo",
+   "type": "demo",
+   "ref": "reverse_lunge",
+   "en": "Reverse Lunge — motion demo",
+   "pose": "Step back softly, torso tall.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/reverse_lunge_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/glute_bridge",
+   "type": "exercise",
+   "ref": "glute_bridge",
+   "en": "Glute Bridge",
+   "pose": "Feet flat, lift hips and squeeze.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/glute_bridge.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/glute_bridge_demo",
+   "type": "demo",
+   "ref": "glute_bridge",
+   "en": "Glute Bridge — motion demo",
+   "pose": "Feet flat, lift hips and squeeze.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/glute_bridge_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/calf_raise",
+   "type": "exercise",
+   "ref": "calf_raise",
+   "en": "Calf Raise",
+   "pose": "Rise tall on toes, pause, lower slowly.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/calf_raise.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/calf_raise_demo",
+   "type": "demo",
+   "ref": "calf_raise",
+   "en": "Calf Raise — motion demo",
+   "pose": "Rise tall on toes, pause, lower slowly.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/calf_raise_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/side_lunge",
+   "type": "exercise",
+   "ref": "side_lunge",
+   "en": "Side Lunge",
+   "pose": "Sit back to one side, other leg straight.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_lunge.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/side_lunge_demo",
+   "type": "demo",
+   "ref": "side_lunge",
+   "en": "Side Lunge — motion demo",
+   "pose": "Sit back to one side, other leg straight.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_lunge_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/push_up",
+   "type": "exercise",
+   "ref": "push_up",
+   "en": "Push-Up",
+   "pose": "Body straight from head to heels. Chest to floor.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/push_up.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/push_up_demo",
+   "type": "demo",
+   "ref": "push_up",
+   "en": "Push-Up — motion demo",
+   "pose": "Body straight from head to heels. Chest to floor.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/push_up_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/knee_push_up",
+   "type": "exercise",
+   "ref": "knee_push_up",
+   "en": "Knee Push-Up",
+   "pose": "Knees down, core tight, full range.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/knee_push_up.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/knee_push_up_demo",
+   "type": "demo",
+   "ref": "knee_push_up",
+   "en": "Knee Push-Up — motion demo",
+   "pose": "Knees down, core tight, full range.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/knee_push_up_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/wall_push_up",
+   "type": "exercise",
+   "ref": "wall_push_up",
+   "en": "Wall Push-Up",
+   "pose": "Hands on wall, lean and press.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/wall_push_up.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/wall_push_up_demo",
+   "type": "demo",
+   "ref": "wall_push_up",
+   "en": "Wall Push-Up — motion demo",
+   "pose": "Hands on wall, lean and press.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/wall_push_up_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/pike_push_up",
+   "type": "exercise",
+   "ref": "pike_push_up",
+   "en": "Pike Push-Up",
+   "pose": "Hips high in inverted V, lower head.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/pike_push_up.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/pike_push_up_demo",
+   "type": "demo",
+   "ref": "pike_push_up",
+   "en": "Pike Push-Up — motion demo",
+   "pose": "Hips high in inverted V, lower head.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/pike_push_up_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/shoulder_tap",
+   "type": "exercise",
+   "ref": "shoulder_tap",
+   "en": "Shoulder Tap",
+   "pose": "Plank position, tap opposite shoulder.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/shoulder_tap.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/shoulder_tap_demo",
+   "type": "demo",
+   "ref": "shoulder_tap",
+   "en": "Shoulder Tap — motion demo",
+   "pose": "Plank position, tap opposite shoulder.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/shoulder_tap_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/plank_up_down",
+   "type": "exercise",
+   "ref": "plank_up_down",
+   "en": "Plank Up-Down",
+   "pose": "Forearms to hands without rotating hips.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_up_down.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/plank_up_down_demo",
+   "type": "demo",
+   "ref": "plank_up_down",
+   "en": "Plank Up-Down — motion demo",
+   "pose": "Forearms to hands without rotating hips.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_up_down_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/superman_pull",
+   "type": "exercise",
+   "ref": "superman_pull",
+   "en": "Superman Pull",
+   "pose": "Lift chest and legs, squeeze shoulder blades.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/superman_pull.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/superman_pull_demo",
+   "type": "demo",
+   "ref": "superman_pull",
+   "en": "Superman Pull — motion demo",
+   "pose": "Lift chest and legs, squeeze shoulder blades.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/superman_pull_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/tricep_dip_chair",
+   "type": "exercise",
+   "ref": "tricep_dip_chair",
+   "en": "Chair Dip",
+   "pose": "Hands on chair, lower body with control.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/tricep_dip_chair.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/tricep_dip_chair_demo",
+   "type": "demo",
+   "ref": "tricep_dip_chair",
+   "en": "Chair Dip — motion demo",
+   "pose": "Hands on chair, lower body with control.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/tricep_dip_chair_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/forearm_plank",
+   "type": "exercise",
+   "ref": "forearm_plank",
+   "en": "Forearm Plank",
+   "pose": "Elbows under shoulders, body one line.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/forearm_plank.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/forearm_plank_demo",
+   "type": "demo",
+   "ref": "forearm_plank",
+   "en": "Forearm Plank — motion demo",
+   "pose": "Elbows under shoulders, body one line.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/forearm_plank_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/side_plank",
+   "type": "exercise",
+   "ref": "side_plank",
+   "en": "Side Plank",
+   "pose": "Stack feet, hips high, per side.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_plank.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/side_plank_demo",
+   "type": "demo",
+   "ref": "side_plank",
+   "en": "Side Plank — motion demo",
+   "pose": "Stack feet, hips high, per side.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_plank_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/dead_bug",
+   "type": "exercise",
+   "ref": "dead_bug",
+   "en": "Dead Bug",
+   "pose": "Back pressed to floor, alternate limbs.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/dead_bug.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/dead_bug_demo",
+   "type": "demo",
+   "ref": "dead_bug",
+   "en": "Dead Bug — motion demo",
+   "pose": "Back pressed to floor, alternate limbs.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/dead_bug_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/bird_dog",
+   "type": "exercise",
+   "ref": "bird_dog",
+   "en": "Bird Dog",
+   "pose": "Extend opposite arm and leg, hips level.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bird_dog.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/bird_dog_demo",
+   "type": "demo",
+   "ref": "bird_dog",
+   "en": "Bird Dog — motion demo",
+   "pose": "Extend opposite arm and leg, hips level.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bird_dog_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/bicycle_crunch",
+   "type": "exercise",
+   "ref": "bicycle_crunch",
+   "en": "Bicycle Crunch",
+   "pose": "Elbow to opposite knee, slow twist.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bicycle_crunch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/bicycle_crunch_demo",
+   "type": "demo",
+   "ref": "bicycle_crunch",
+   "en": "Bicycle Crunch — motion demo",
+   "pose": "Elbow to opposite knee, slow twist.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/bicycle_crunch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/reverse_crunch",
+   "type": "exercise",
+   "ref": "reverse_crunch",
+   "en": "Reverse Crunch",
+   "pose": "Curl hips off floor, lower slowly.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/reverse_crunch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/reverse_crunch_demo",
+   "type": "demo",
+   "ref": "reverse_crunch",
+   "en": "Reverse Crunch — motion demo",
+   "pose": "Curl hips off floor, lower slowly.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/reverse_crunch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/heel_touch",
+   "type": "exercise",
+   "ref": "heel_touch",
+   "en": "Heel Touch",
+   "pose": "Side bend to touch each heel.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/heel_touch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/heel_touch_demo",
+   "type": "demo",
+   "ref": "heel_touch",
+   "en": "Heel Touch — motion demo",
+   "pose": "Side bend to touch each heel.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/heel_touch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/leg_raise",
+   "type": "exercise",
+   "ref": "leg_raise",
+   "en": "Leg Raise",
+   "pose": "Legs straight up, lower without arching.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/leg_raise.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/leg_raise_demo",
+   "type": "demo",
+   "ref": "leg_raise",
+   "en": "Leg Raise — motion demo",
+   "pose": "Legs straight up, lower without arching.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/leg_raise_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/mountain_climber",
+   "type": "exercise",
+   "ref": "mountain_climber",
+   "en": "Mountain Climber",
+   "pose": "Drive knees fast under chest.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/mountain_climber.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/mountain_climber_demo",
+   "type": "demo",
+   "ref": "mountain_climber",
+   "en": "Mountain Climber — motion demo",
+   "pose": "Drive knees fast under chest.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/mountain_climber_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/jumping_jack",
+   "type": "exercise",
+   "ref": "jumping_jack",
+   "en": "Jumping Jack",
+   "pose": "Jump feet out, arms overhead.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/jumping_jack.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/jumping_jack_demo",
+   "type": "demo",
+   "ref": "jumping_jack",
+   "en": "Jumping Jack — motion demo",
+   "pose": "Jump feet out, arms overhead.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/jumping_jack_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/step_jack",
+   "type": "exercise",
+   "ref": "step_jack",
+   "en": "Step Jack",
+   "pose": "Step side to side, no jumping.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/step_jack.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/step_jack_demo",
+   "type": "demo",
+   "ref": "step_jack",
+   "en": "Step Jack — motion demo",
+   "pose": "Step side to side, no jumping.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/step_jack_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/skater",
+   "type": "exercise",
+   "ref": "skater",
+   "en": "Skater Hop",
+   "pose": "Lateral hop, land softly on one foot.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/skater.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/skater_demo",
+   "type": "demo",
+   "ref": "skater",
+   "en": "Skater Hop — motion demo",
+   "pose": "Lateral hop, land softly on one foot.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/skater_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/high_knee",
+   "type": "exercise",
+   "ref": "high_knee",
+   "en": "High Knees",
+   "pose": "Run in place, knees to hip height.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/high_knee.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/high_knee_demo",
+   "type": "demo",
+   "ref": "high_knee",
+   "en": "High Knees — motion demo",
+   "pose": "Run in place, knees to hip height.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/high_knee_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/butt_kick",
+   "type": "exercise",
+   "ref": "butt_kick",
+   "en": "Butt Kick",
+   "pose": "Jog kicking heels to glutes.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/butt_kick.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/butt_kick_demo",
+   "type": "demo",
+   "ref": "butt_kick",
+   "en": "Butt Kick — motion demo",
+   "pose": "Jog kicking heels to glutes.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/butt_kick_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/march_place",
+   "type": "exercise",
+   "ref": "march_place",
+   "en": "March in Place",
+   "pose": "Lift knees gently, swing arms.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/march_place.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/march_place_demo",
+   "type": "demo",
+   "ref": "march_place",
+   "en": "March in Place — motion demo",
+   "pose": "Lift knees gently, swing arms.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/march_place_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/burpee",
+   "type": "exercise",
+   "ref": "burpee",
+   "en": "Burpee",
+   "pose": "Squat, plank, jump up explosively.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/burpee.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/burpee_demo",
+   "type": "demo",
+   "ref": "burpee",
+   "en": "Burpee — motion demo",
+   "pose": "Squat, plank, jump up explosively.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/burpee_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/squat_thrust",
+   "type": "exercise",
+   "ref": "squat_thrust",
+   "en": "Squat Thrust",
+   "pose": "Squat to plank and back, no jump.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/squat_thrust.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/squat_thrust_demo",
+   "type": "demo",
+   "ref": "squat_thrust",
+   "en": "Squat Thrust — motion demo",
+   "pose": "Squat to plank and back, no jump.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/squat_thrust_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/inchworm",
+   "type": "exercise",
+   "ref": "inchworm",
+   "en": "Inchworm",
+   "pose": "Walk hands to plank, walk feet in.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/inchworm.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/inchworm_demo",
+   "type": "demo",
+   "ref": "inchworm",
+   "en": "Inchworm — motion demo",
+   "pose": "Walk hands to plank, walk feet in.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/inchworm_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/jumping_squat",
+   "type": "exercise",
+   "ref": "jumping_squat",
+   "en": "Jump Squat",
+   "pose": "Squat then jump, land soft.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/jumping_squat.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/jumping_squat_demo",
+   "type": "demo",
+   "ref": "jumping_squat",
+   "en": "Jump Squat — motion demo",
+   "pose": "Squat then jump, land soft.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/jumping_squat_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/lunge_jump",
+   "type": "exercise",
+   "ref": "lunge_jump",
+   "en": "Jump Lunge",
+   "pose": "Alternate lunge in the air.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/lunge_jump.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/lunge_jump_demo",
+   "type": "demo",
+   "ref": "lunge_jump",
+   "en": "Jump Lunge — motion demo",
+   "pose": "Alternate lunge in the air.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/lunge_jump_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/plank_jack",
+   "type": "exercise",
+   "ref": "plank_jack",
+   "en": "Plank Jack",
+   "pose": "Plank, jump feet out and in.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_jack.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/plank_jack_demo",
+   "type": "demo",
+   "ref": "plank_jack",
+   "en": "Plank Jack — motion demo",
+   "pose": "Plank, jump feet out and in.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_jack_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/hip_circle",
+   "type": "exercise",
+   "ref": "hip_circle",
+   "en": "Hip Circle",
+   "pose": "Big slow circles each direction.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/hip_circle.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/hip_circle_demo",
+   "type": "demo",
+   "ref": "hip_circle",
+   "en": "Hip Circle — motion demo",
+   "pose": "Big slow circles each direction.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/hip_circle_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/cat_cow",
+   "type": "exercise",
+   "ref": "cat_cow",
+   "en": "Cat-Cow",
+   "pose": "Arch and round spine with breath.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/cat_cow.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/cat_cow_demo",
+   "type": "demo",
+   "ref": "cat_cow",
+   "en": "Cat-Cow — motion demo",
+   "pose": "Arch and round spine with breath.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/cat_cow_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/child_pose",
+   "type": "exercise",
+   "ref": "child_pose",
+   "en": "Child's Pose",
+   "pose": "Knees wide, arms long, breathe deep.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/child_pose.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/child_pose_demo",
+   "type": "demo",
+   "ref": "child_pose",
+   "en": "Child's Pose — motion demo",
+   "pose": "Knees wide, arms long, breathe deep.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/child_pose_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/hamstring_stretch",
+   "type": "exercise",
+   "ref": "hamstring_stretch",
+   "en": "Hamstring Stretch",
+   "pose": "Hinge at hips, gentle pull.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/hamstring_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/hamstring_stretch_demo",
+   "type": "demo",
+   "ref": "hamstring_stretch",
+   "en": "Hamstring Stretch — motion demo",
+   "pose": "Hinge at hips, gentle pull.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/hamstring_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/shoulder_stretch",
+   "type": "exercise",
+   "ref": "shoulder_stretch",
+   "en": "Shoulder Stretch",
+   "pose": "Pull arm across chest gently.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/shoulder_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/shoulder_stretch_demo",
+   "type": "demo",
+   "ref": "shoulder_stretch",
+   "en": "Shoulder Stretch — motion demo",
+   "pose": "Pull arm across chest gently.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/shoulder_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/spinal_rotation",
+   "type": "exercise",
+   "ref": "spinal_rotation",
+   "en": "Spinal Rotation",
+   "pose": "Lying twist, shoulders down.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/spinal_rotation.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/spinal_rotation_demo",
+   "type": "demo",
+   "ref": "spinal_rotation",
+   "en": "Spinal Rotation — motion demo",
+   "pose": "Lying twist, shoulders down.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/spinal_rotation_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/chest_opener",
+   "type": "exercise",
+   "ref": "chest_opener",
+   "en": "Chest Opener",
+   "pose": "Hands on wall, lean gently forward.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/chest_opener.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/chest_opener_demo",
+   "type": "demo",
+   "ref": "chest_opener",
+   "en": "Chest Opener — motion demo",
+   "pose": "Hands on wall, lean gently forward.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/chest_opener_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/quad_stretch",
+   "type": "exercise",
+   "ref": "quad_stretch",
+   "en": "Quad Stretch",
+   "pose": "Hold foot behind, knees together.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/quad_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/quad_stretch_demo",
+   "type": "demo",
+   "ref": "quad_stretch",
+   "en": "Quad Stretch — motion demo",
+   "pose": "Hold foot behind, knees together.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/quad_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/cobra_stretch",
+   "type": "exercise",
+   "ref": "cobra_stretch",
+   "en": "Cobra Stretch",
+   "pose": "Press chest up, hips stay down.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/cobra_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/cobra_stretch_demo",
+   "type": "demo",
+   "ref": "cobra_stretch",
+   "en": "Cobra Stretch — motion demo",
+   "pose": "Press chest up, hips stay down.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/cobra_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/downward_dog",
+   "type": "exercise",
+   "ref": "downward_dog",
+   "en": "Downward Dog",
+   "pose": "Hips high, heels press down.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/downward_dog.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/downward_dog_demo",
+   "type": "demo",
+   "ref": "downward_dog",
+   "en": "Downward Dog — motion demo",
+   "pose": "Hips high, heels press down.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/downward_dog_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/knee_to_chest",
+   "type": "exercise",
+   "ref": "knee_to_chest",
+   "en": "Knee to Chest",
+   "pose": "Hug one knee, keep back flat.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/knee_to_chest.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/knee_to_chest_demo",
+   "type": "demo",
+   "ref": "knee_to_chest",
+   "en": "Knee to Chest — motion demo",
+   "pose": "Hug one knee, keep back flat.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/knee_to_chest_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/torso_twist",
+   "type": "exercise",
+   "ref": "torso_twist",
+   "en": "Torso Twist",
+   "pose": "Rotate side to side with control.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/torso_twist.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/torso_twist_demo",
+   "type": "demo",
+   "ref": "torso_twist",
+   "en": "Torso Twist — motion demo",
+   "pose": "Rotate side to side with control.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/torso_twist_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/arm_circle",
+   "type": "exercise",
+   "ref": "arm_circle",
+   "en": "Arm Circles",
+   "pose": "Small to big circles both ways.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/arm_circle.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/arm_circle_demo",
+   "type": "demo",
+   "ref": "arm_circle",
+   "en": "Arm Circles — motion demo",
+   "pose": "Small to big circles both ways.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/arm_circle_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/leg_swing",
+   "type": "exercise",
+   "ref": "leg_swing",
+   "en": "Leg Swing",
+   "pose": "Swing leg forward and back.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/leg_swing.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/leg_swing_demo",
+   "type": "demo",
+   "ref": "leg_swing",
+   "en": "Leg Swing — motion demo",
+   "pose": "Swing leg forward and back.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/leg_swing_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/side_bend",
+   "type": "exercise",
+   "ref": "side_bend",
+   "en": "Side Bend",
+   "pose": "Reach overhead and lean side to side.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_bend.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/side_bend_demo",
+   "type": "demo",
+   "ref": "side_bend",
+   "en": "Side Bend — motion demo",
+   "pose": "Reach overhead and lean side to side.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/side_bend_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/neck_roll",
+   "type": "exercise",
+   "ref": "neck_roll",
+   "en": "Neck Roll",
+   "pose": "Slow gentle circles, both directions.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/neck_roll.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/neck_roll_demo",
+   "type": "demo",
+   "ref": "neck_roll",
+   "en": "Neck Roll — motion demo",
+   "pose": "Slow gentle circles, both directions.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/neck_roll_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/ankle_circle",
+   "type": "exercise",
+   "ref": "ankle_circle",
+   "en": "Ankle Circle",
+   "pose": "Lift foot and circle the ankle.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/ankle_circle.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/ankle_circle_demo",
+   "type": "demo",
+   "ref": "ankle_circle",
+   "en": "Ankle Circle — motion demo",
+   "pose": "Lift foot and circle the ankle.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/ankle_circle_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/seated_march",
+   "type": "exercise",
+   "ref": "seated_march",
+   "en": "Seated March",
+   "pose": "Sit tall, alternate knee lifts.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/seated_march.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/seated_march_demo",
+   "type": "demo",
+   "ref": "seated_march",
+   "en": "Seated March — motion demo",
+   "pose": "Sit tall, alternate knee lifts.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/seated_march_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/standing_side_crunch",
+   "type": "exercise",
+   "ref": "standing_side_crunch",
+   "en": "Standing Side Crunch",
+   "pose": "Knee up, elbow down to meet.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/standing_side_crunch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/standing_side_crunch_demo",
+   "type": "demo",
+   "ref": "standing_side_crunch",
+   "en": "Standing Side Crunch — motion demo",
+   "pose": "Knee up, elbow down to meet.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/standing_side_crunch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/chair_squat",
+   "type": "exercise",
+   "ref": "chair_squat",
+   "en": "Chair Squat",
+   "pose": "Sit back to touch, stand tall.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/chair_squat.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/chair_squat_demo",
+   "type": "demo",
+   "ref": "chair_squat",
+   "en": "Chair Squat — motion demo",
+   "pose": "Sit back to touch, stand tall.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/chair_squat_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/gentle_jack",
+   "type": "exercise",
+   "ref": "gentle_jack",
+   "en": "Gentle Jack",
+   "pose": "Low-impact side step with arm raise.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/gentle_jack.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/gentle_jack_demo",
+   "type": "demo",
+   "ref": "gentle_jack",
+   "en": "Gentle Jack — motion demo",
+   "pose": "Low-impact side step with arm raise.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/gentle_jack_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/water_break_march",
+   "type": "exercise",
+   "ref": "water_break_march",
+   "en": "Cool-Down March",
+   "pose": "Easy march, deep breaths.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/water_break_march.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/water_break_march_demo",
+   "type": "demo",
+   "ref": "water_break_march",
+   "en": "Cool-Down March — motion demo",
+   "pose": "Easy march, deep breaths.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/water_break_march_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/box_breathing",
+   "type": "exercise",
+   "ref": "box_breathing",
+   "en": "Box Breathing",
+   "pose": "Inhale 4, hold 4, exhale 4, hold 4.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/box_breathing.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/box_breathing_demo",
+   "type": "demo",
+   "ref": "box_breathing",
+   "en": "Box Breathing — motion demo",
+   "pose": "Inhale 4, hold 4, exhale 4, hold 4.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/box_breathing_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/plank_shoulder_stretch",
+   "type": "exercise",
+   "ref": "plank_shoulder_stretch",
+   "en": "Lats Stretch",
+   "pose": "Arms overhead, lean to each side.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_shoulder_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/plank_shoulder_stretch_demo",
+   "type": "demo",
+   "ref": "plank_shoulder_stretch",
+   "en": "Lats Stretch — motion demo",
+   "pose": "Arms overhead, lean to each side.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/plank_shoulder_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/glute_stretch",
+   "type": "exercise",
+   "ref": "glute_stretch",
+   "en": "Figure-4 Stretch",
+   "pose": "Ankle on knee, pull gently.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/glute_stretch.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/glute_stretch_demo",
+   "type": "demo",
+   "ref": "glute_stretch",
+   "en": "Figure-4 Stretch — motion demo",
+   "pose": "Ankle on knee, pull gently.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/glute_stretch_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  },
+  {
+   "id": "fitness/exercises/slow_climber",
+   "type": "exercise",
+   "ref": "slow_climber",
+   "en": "Slow Climber",
+   "pose": "Hands on chair, slow knee drives.",
+   "composition": "Side 3/4 view, full body visible, dark studio, blue-orange light",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/slow_climber.webp",
+   "usedIn": [
+    "builder",
+    "active",
+    "programs"
+   ],
+   "motion": false
+  },
+  {
+   "id": "fitness/exercises/slow_climber_demo",
+   "type": "demo",
+   "ref": "slow_climber",
+   "en": "Slow Climber — motion demo",
+   "pose": "Hands on chair, slow knee drives.",
+   "composition": "Loopable 3s neutral-background demonstration",
+   "aspect": "4:3",
+   "resolution": "800x600",
+   "path": "assets/fitness/exercises/slow_climber_demo.webp",
+   "usedIn": [
+    "active"
+   ],
+   "motion": true
+  }
+ ]
+}

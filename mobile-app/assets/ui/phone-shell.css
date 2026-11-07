@@ -1,0 +1,171 @@
+/* Phone chrome contract: the same 80px header, centered 96x44 wordmark and 44px actions. */
+html[data-app-appearance] body[data-approved-mobile]>header,
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .morph-phone-shell,
+.matches-screen-header{position:relative!important;box-sizing:border-box!important;height:80px!important;min-height:80px!important;padding:12px 16px!important;direction:ltr!important;background:transparent!important;border:0!important;box-shadow:none!important;}
+html[data-app-appearance] body[data-approved-mobile]>header .brand,
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .settings-shell-brand{position:absolute!important;left:50%!important;top:18px!important;transform:translateX(-50%)!important;width:96px!important;height:44px!important;min-width:96px!important;margin:0!important;padding:0!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .settings-shell-brand :is(.approved-brand-logo,img,.approved-logo-ink){width:96px!important;height:44px!important;object-fit:contain!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #m30-settings-close,
+.matches-screen-header #matches-back{position:absolute!important;left:16px!important;right:auto!important;top:16px!important;width:44px!important;height:48px!important;min-width:44px!important;min-height:48px!important;padding:10px!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;background:var(--morph-subtle,var(--read-soft,#eaf1ff))!important;color:var(--morph-text,var(--read-ink,#193352))!important;border:1px solid var(--morph-border,var(--read-line,#c8d8f0))!important;border-radius:12px!important;font-size:0!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #m30-settings-close svg{width:22px!important;height:22px!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #settings-shell-reconnect{position:absolute!important;right:68px!important;top:17px!important;width:44px!important;height:46px!important;min-width:44px!important;min-height:46px!important;padding:0!important;border:0!important;background:transparent!important;border-radius:12px!important;font-size:0!important;color:var(--read-ink)!important;box-shadow:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #settings-shell-reconnect:before{content:'↻';display:block;font:26px Arial;color:inherit;}
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .morph-phone-shell{position:sticky!important;top:0!important;z-index:5!important;background:var(--read-surface,#f4f7fb)!important;}
+html[data-app-appearance=light] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .morph-phone-shell{background:#f4f7fb!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .morph-phone-shell{background:#2c3b57!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-settings-v2 .s310-title{margin:10px 4px 18px!important;padding:0!important;font-size:24px!important;line-height:1.5!important;color:var(--read-ink)!important;}
+.matches-screen-header .matches-app-wordmark{position:absolute!important;left:50%!important;top:18px!important;transform:translateX(-50%);width:96px!important;height:44px!important;object-fit:contain;}
+html[data-app-appearance=dark] .matches-screen-header #matches-back{background:#243f62!important;color:#f2f7ff!important;border-color:#4c6c93!important;}
+
+/* Phone dark appearance: reference navy lighting and translucent raised glass.
+   Loaded last so all destinations use the same material. */
+html[data-app-appearance=dark]{background:#071b36!important;color-scheme:dark;}
+html[data-app-appearance=dark] body[data-approved-mobile]{
+ --ocean-glass:linear-gradient(145deg,rgba(152,192,241,.27),rgba(75,115,165,.17) 48%,rgba(14,36,62,.56));
+ --ocean-edge:rgba(187,216,255,.32);
+ --ocean-shadow:inset 0 1px 1px #e0efff40,inset 0 -1px 1px #8cbaff12,0 10px 24px #000e2455,0 3px 6px #000b2038;
+ --m-bg:#071b36;--m-card:rgba(90,135,190,.18);--m-border:var(--ocean-edge);--m-text:#fff;--m-muted:#d1def0;
+ --morph-text:#fff;--morph-subtle:#25476a;--morph-border:var(--ocean-edge);
+ --read-accent:#fff;--read-ink:#fff;--read-sub:#d1def0;--read-soft:#24466a;--read-line:var(--ocean-edge);--read-surface:#102c4e;
+ --remote-ink:#fff;--remote-muted:#d1def0;--remote-surface:#1c3a60;--remote-border:var(--ocean-edge);--remote-key:#294c76;
+ background:radial-gradient(ellipse at 100% 0%,#205cbd 0%,#15458470 36%,transparent 65%),radial-gradient(ellipse at 8% 78%,#103e754d,transparent 55%),linear-gradient(160deg,#0d294e,#061a33 72%,#0b294d)!important;
+ background-attachment:fixed!important;color:#fff!important;min-height:100vh;
+}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.page,#m30-gear-sheet,#mobile-service-map) :is(.panel,.connect-step,.manual,.install-card,.pm-remote-info,.pm-remote-showcase,.pm-iptv-feature,.iptv-source-card,.app-row,.approved-preview-card,.studio-personal-group>details,.customization-menu,.plus-entry-card,.operation-card,.operation-item,.s310-card,.s310-group,.reference-device-hero,.pm-page-intro,.remote-controller,.empty-state,.collection-empty){background:var(--ocean-glass)!important;border:1px solid var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;backdrop-filter:blur(16px) saturate(1.15)!important;-webkit-backdrop-filter:blur(16px) saturate(1.15)!important;color:#fff!important;border-radius:22px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.page,#m30-gear-sheet) :is(h1,h2,h3,h4,summary,label,strong,.eyebrow,.pm-overline){color:#fff!important;-webkit-text-fill-color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.page,#m30-gear-sheet) :is(p,.fine,small,.intro,.library-intro){color:#d1def0!important;-webkit-text-fill-color:#d1def0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.secondary,.device-chip,.remote-row button,.remote-pad,.remote-pad button,.studio-shortcuts span,.appearance-choice button,.theme-collections button){background:var(--ocean-glass)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(input:not([type=range]):not([type=checkbox]):not([type=color]),select,textarea){background:#051a3370!important;border-color:var(--ocean-edge)!important;color:#fff!important;box-shadow:inset 0 2px 6px #000c2428!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(input,textarea)::placeholder{color:#b8cce5!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] option{background:#102c4e;color:#fff;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.primary,#apply,#navy-connect-start){background:linear-gradient(135deg,#347cde,#2053a0)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #9bc9ff66!important;box-shadow:inset 0 1px #e7f2ff40,0 6px 18px #000f3344!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-iptv#page-iptv#page-iptv .iptv-destinations>button{background:var(--ocean-glass)!important;box-shadow:var(--ocean-shadow)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-iptv#page-iptv#page-iptv .iptv-destinations>button[aria-pressed=true]{border-color:#a1ceff!important;background:linear-gradient(145deg,#4283cc80,#1f4f8c70)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet{background:radial-gradient(ellipse at top right,#205cbd88,transparent 65%),#071b36!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet .morph-phone-shell{background:#0b284be8!important;backdrop-filter:blur(16px);}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav{background:#0b2545ed!important;border-color:var(--ocean-edge)!important;backdrop-filter:blur(18px);}
+html[data-app-appearance=dark] body[data-approved-mobile] button:focus-visible{outline:2px solid #b2d9ff!important;outline-offset:3px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] button:active:not(:disabled){filter:brightness(1.13);}
+
+html[data-app-appearance=dark] body[data-approved-mobile] #morph-first-run{background:radial-gradient(ellipse at top right,#205cbd99,transparent 65%),#071b36!important;color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(#phone-support-invitation>section,.morph-plus-dialog,.operation-card){background:linear-gradient(145deg,#31547af5,#102b4ef5)!important;border:1px solid var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #morph-first-run :is(.fr-service,.fr-language-options button){background:var(--ocean-glass)!important;border:1px solid var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(#morph-first-run,#phone-support-invitation) :is(h1,h2,h3,strong,p,span,small){color:#fff!important;-webkit-text-fill-color:#fff!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile]>header{background:transparent!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map#mobile-service-map>.reference-device-hero{background:var(--ocean-glass)!important;border-color:var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map#mobile-service-map #m30-status{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] .page>.pm-page-intro{padding:20px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #phone-home-shortcuts{background:transparent!important;box-shadow:none!important;border:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .appearance-choice button[aria-pressed=true]{border-color:#b3d9ff!important;background:linear-gradient(145deg,#568fd485,#24559380)!important;box-shadow:inset 0 1px #eff8ff55,0 0 0 1px #9acbff55!important;}
+
+/* Floating navigation: one glass capsule and illuminated interactive symbols. */
+html[data-app-appearance=dark] body[data-approved-mobile] #phone-home-shortcuts#phone-home-shortcuts{background:none!important;background-image:none!important;box-shadow:none!important;border:0!important;backdrop-filter:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav{
+ left:0!important;right:0!important;bottom:0!important;width:100%!important;
+ min-height:72px!important;padding:7px 5px calc(7px + env(safe-area-inset-bottom,0px))!important;border:1px solid #b8dcff55!important;border-bottom:0!important;border-radius:24px 24px 0 0!important;
+ background:linear-gradient(125deg,rgba(104,152,208,.48),rgba(26,60,101,.82) 48%,rgba(53,100,156,.62))!important;
+ backdrop-filter:blur(24px) saturate(1.35)!important;-webkit-backdrop-filter:blur(24px) saturate(1.35)!important;
+ box-shadow:inset 0 1px 1px #eef7ff55,inset 0 -1px #a6ccff18,0 12px 30px #000d285c!important;overflow:visible!important;
+}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav button{color:#d3e3f7!important;transition:color .2s ease!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav button .m30-nav-ic{background:transparent!important;box-shadow:none!important;transform:scale(1);transition:transform .2s ease,background .2s ease,box-shadow .2s ease,filter .2s ease!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav button:is(.active,:hover,:focus-visible,:active) .m30-nav-ic{transform:translateY(-2px) scale(1.12)!important;background:linear-gradient(145deg,#9ed5ff50,#4b92df28)!important;box-shadow:inset 0 1px #ecf8ff55,0 0 16px #63b9ff66!important;filter:drop-shadow(0 0 4px #7dcaff88);}
+html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav button:is(.active,:hover,:focus-visible,:active) :is(span,svg){color:#fff!important;-webkit-text-fill-color:#fff!important;}
+@media(prefers-reduced-motion:reduce){html[data-app-appearance=dark] body[data-approved-mobile] .bottom-nav.bottom-nav button .m30-nav-ic{transition:none!important;}}
+
+/* Compact phone rhythm: one padded surface per card, no inherited height floor. */
+html[data-app-appearance=dark] body[data-approved-mobile] .page :is(.panel,.connect-step,.manual,.install-card,.pm-remote-info,.pm-iptv-feature,.iptv-source-card,.app-row,.approved-preview-card,.studio-personal-group>details,.customization-menu){min-height:0!important;border-radius:17px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-flow{gap:10px!important;margin:12px 0 20px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step{padding:0!important;margin:0!important;min-height:0!important;border-radius:17px!important;box-shadow:inset 0 1px 1px #dceeff30,0 5px 14px #000d2433!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step>summary{min-height:62px!important;padding:14px!important;gap:11px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-number{width:30px!important;height:30px!important;flex:0 0 30px!important;border-radius:10px!important;font-size:14px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step-title{font-size:15px!important;line-height:1.4!important;font-weight:600!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-chevron{font-size:16px!important;color:#c7defa!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step-body{padding:0 14px 14px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step-note{font-size:13px!important;line-height:1.65!important;margin:0 0 12px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step :is(.panel,.connection-card,.manual,.install-card){padding:0!important;margin:10px 0 0!important;border:0!important;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connect-step :is(button.primary,button.secondary){min-height:44px!important;padding:10px 14px!important;font-size:14px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map#mobile-service-map>.reference-device-hero{padding:16px!important;border-radius:18px!important;margin-bottom:18px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #mobile-service-map#mobile-service-map .connect-intro-copy h1{font-size:24px!important;line-height:1.2!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .section-title{margin:16px 0 10px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect .connection-extras{margin:14px 0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-connect{padding-bottom:100px!important;}
+
+/* Home shortcuts live in a left drawer, leaving the content flush to the header. */
+html[data-app-appearance] body[data-approved-mobile] #phone-menu-toggle{position:absolute!important;left:16px!important;right:auto!important;top:18px!important;display:none!important;align-items:center;justify-content:center;width:44px!important;height:44px!important;min-width:44px!important;padding:10px!important;border:1px solid var(--read-line)!important;border-radius:14px!important;background:var(--read-soft)!important;color:var(--read-ink)!important;box-shadow:none!important;}
+html[data-app-appearance] body[data-approved-mobile][data-mobile-page=page-connect] #phone-menu-toggle{display:flex!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu{position:fixed!important;inset:0 auto 0 0!important;width:min(280px,82vw)!important;height:100dvh!important;max-height:100%!important;max-width:82vw!important;margin:0!important;padding:22px 18px!important;box-sizing:border-box;border:0!important;border-right:1px solid var(--read-line)!important;border-radius:0 24px 24px 0!important;background:#f4f7fbfa!important;color:#193352!important;box-shadow:12px 0 50px #000b254d!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu::backdrop{background:#000d2670;backdrop-filter:blur(6px);}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu .phone-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 24px;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu h2{font-size:20px!important;color:inherit!important;margin:0!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-menu-close{display:grid;place-items:center;width:40px;min-height:40px;padding:0;border-radius:12px;border:1px solid var(--read-line);background:var(--read-soft);color:inherit;font-size:26px;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:10px!important;margin:0!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button{justify-content:flex-start!important;width:100%!important;min-height:54px!important;gap:13px!important;padding:13px 15px!important;border-radius:15px!important;font-size:15px!important;text-align:start;}
+html[data-app-appearance=dark] body[data-approved-mobile] #phone-home-menu{background:linear-gradient(150deg,#254e7bf5,#0a2442fa 70%)!important;color:#fff!important;border-color:#b8dcff40!important;backdrop-filter:blur(24px);}
+html[data-app-appearance=dark] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button{background:var(--ocean-glass)!important;border-color:var(--ocean-edge)!important;color:#fff!important;box-shadow:inset 0 1px #e0efff30,0 4px 12px #000d2430!important;}
+
+/* Compact connection overview: text and artwork above a single action row. */
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map>.reference-device-hero{grid-template-columns:minmax(0,1fr) auto!important;gap:12px!important;padding:14px!important;border-radius:18px!important;margin:0 0 18px!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map .connect-intro-copy .pm-overline{display:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map .connect-intro-copy h1{font-size:20px!important;line-height:1.25!important;margin:0 0 5px!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map .connect-intro-copy p{font-size:12px!important;line-height:1.55!important;max-width:230px;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map .connect-tv-picture{grid-column:2!important;grid-row:1!important;width:68px!important;height:62px!important;margin:0!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map #m30-status{grid-column:1!important;grid-row:2!important;align-self:center!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map #m30-status-title{font-size:11px!important;gap:4px!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map .m30-connection-label{padding:4px 8px!important;font-size:11px!important;line-height:1.4!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map #m30-status-sub{font-size:11px!important;margin:3px 0 0!important;}
+html[data-app-appearance] body[data-approved-mobile] #mobile-service-map#mobile-service-map #navy-connect-start{grid-column:2!important;grid-row:2!important;align-self:center!important;min-height:36px!important;width:auto!important;max-width:140px!important;margin:0!important;padding:7px 11px!important;border-radius:10px!important;font-size:12px!important;line-height:1.4!important;}
+/* A small anchored menu, sized for its two destinations rather than the screen. */
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu{inset:72px auto auto 16px!important;width:min(228px,calc(100vw - 32px))!important;height:auto!important;max-height:calc(100dvh - 100px)!important;padding:7px!important;border:1px solid var(--read-line)!important;border-radius:18px!important;box-shadow:0 16px 40px #000d2850,inset 0 1px #e3f1ff44!important;overflow:auto!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu .phone-menu-heading{display:none!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu::backdrop{background:#000d262b;backdrop-filter:blur(3px);}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts{gap:0!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button{min-height:48px!important;padding:12px!important;gap:12px!important;border:0!important;border-radius:11px!important;box-shadow:none!important;background:transparent!important;font-size:14px!important;font-weight:500!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button+button{border-top:1px solid #8db8e523!important;border-radius:0 0 11px 11px!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button:is(:hover,:focus-visible){background:#85bdff20!important;}
+html[data-app-appearance] body[data-approved-mobile] #phone-home-menu #phone-home-shortcuts button svg{width:20px!important;height:20px!important;flex-shrink:0;color:#a9d6ff;}
+html[data-app-appearance=dark] body[data-approved-mobile] #phone-home-menu{background:linear-gradient(145deg,#345a81ee,#122d4cf5)!important;}
+
+/* Shared semantic roles for every phone destination and modal. */
+html[data-app-appearance=dark] body[data-approved-mobile]{--m-bg2:#102d4f;--m-card-solid:#173657;--m-muted:#d1def0;--m-accent:#b7daff;--m-border-strong:#9acbff88;--surface:#173657;--surface2:#24466a;--text:#fff;--muted:#d1def0;--border:#bbd8ff52;--morph-bg:#071b36;--morph-surface:#173657;--morph-surface-raised:#24466a;--morph-muted:#d1def0;--morph-text-muted:#d1def0;--morph-primary:#347cde;--morph-on-primary:#fff;--morph-nav-text:#d1def0;--morph-nav-active:#fff;--morph-nav-bg:#173657;--morph-nav-border:#bbd8ff52;}
+html[data-app-appearance] body[data-approved-mobile] #m30-page-back,
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #m30-settings-close,
+html[data-app-appearance] .matches-screen-header #matches-back{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:12px!important;background:transparent!important;border:0!important;box-shadow:none!important;border-radius:12px!important;}
+html[data-app-appearance] body[data-approved-mobile] #m30-page-back svg,
+html[data-app-appearance] body[data-approved-mobile] #m30-gear-sheet#m30-gear-sheet #m30-settings-close svg,
+html[data-app-appearance] .matches-screen-header #matches-back svg{width:18px!important;height:18px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] :is(.reference-remote-features,.manual-type,.connection-state,.compatibility,.troubleshoot,.setup-account-note,.wf-setting,.wf-settings-prayer,.mp-league,.mp-match,.mp-empty,.support-card,.morph-support,.appearance-choice,.studio-theme-line){background:var(--ocean-glass)!important;color:#fff!important;border-color:var(--ocean-edge)!important;box-shadow:inset 0 1px #e0efff20,0 5px 14px #000d2426!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-control-segment{background:#061a3370!important;border:1px solid var(--ocean-edge)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-control-segment button{color:#d1def0!important;-webkit-text-fill-color:#d1def0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #m30-control-segment button.active{background:linear-gradient(135deg,#347cde,#2053a0)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #9bc9ff66!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .page>.pm-page-intro{padding:16px!important;border-radius:18px!important;margin-bottom:14px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .page>.pm-page-intro h1{font-size:22px!important;line-height:1.3!important;margin:5px 0 7px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .page>.pm-page-intro p{font-size:13px!important;line-height:1.6!important;margin:0!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-remote .pm-remote-showcase{padding:18px!important;min-height:0!important;border-radius:18px!important;background:var(--ocean-glass)!important;gap:12px!important;justify-content:space-between!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-remote .pm-remote-copy strong{font-size:27px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-remote .pm-remote-copy small{font-size:12px!important;line-height:1.6!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-remote .reference-remote-device{width:48px!important;height:112px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-worship{--wf-ink:#fff;--wf-sub:#d1def0;--wf-surface:#173657;--wf-soft:#24466a;--wf-line:#bbd8ff52;--wf-blue:#b7daff;--wf-reader:#102b4c;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-matches{--mp-ink:#fff;--mp-sub:#d1def0;--mp-panel:#173657;--mp-soft:#24466a;--mp-line:#bbd8ff52;--mp-blue:#347cde;--mp-on-blue:#fff;}
+
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-remote .pm-remote-showcase{min-height:0!important;padding:16px!important;margin:0 0 16px!important;gap:16px!important;border-radius:18px!important;background:var(--ocean-glass)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-remote .reference-remote-device{width:58px!important;height:116px!important;flex:0 0 58px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-remote .pm-remote-copy strong{font-size:27px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-remote .pm-remote-copy small{font-size:12px!important;margin-top:8px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-remote #m30-control-segment,
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-cast #m30-control-segment{background:#061a3370!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #studio-design-hero#studio-design-hero,
+html[data-app-appearance=dark] body[data-approved-mobile] #page-worship .wf-hero,
+html[data-app-appearance=dark] body[data-approved-mobile] #page-matches .mp-hero{background:var(--ocean-glass)!important;border:1px solid var(--ocean-edge)!important;box-shadow:var(--ocean-shadow)!important;border-radius:18px!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-worship :is(.wf-card,.wf-prayer-entry,.wf-section,.wf-reader){background:var(--ocean-glass)!important;border-color:var(--ocean-edge)!important;color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile].morph-readable #page-iptv#page-iptv#page-iptv :is(.iptv-source-card,#iptv-tv-controls){background:var(--ocean-glass)!important;box-shadow:var(--ocean-shadow)!important;border-color:var(--ocean-edge)!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-iptv#page-iptv#page-iptv .iptv-source-card :is(button.primary,.iptv-source-actions button){background:linear-gradient(135deg,#347cde,#2053a0)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;border:1px solid #9bc9ff66!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-iptv#page-iptv#page-iptv .iptv-source-card button.secondary{background:var(--ocean-glass)!important;border-color:var(--ocean-edge)!important;}
+html[data-app-appearance] body[data-approved-mobile] main>footer{margin:20px 0 0!important;padding:12px 0 96px!important;font-size:10px!important;line-height:1.6!important;text-align:center!important;}
+
+html[data-app-appearance=dark] body[data-approved-mobile] .page .m30-segment{background:var(--ocean-glass)!important;border:1px solid var(--ocean-edge)!important;box-shadow:inset 0 1px #e0efff20!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] .page .m30-segment button[aria-selected=true]{background:linear-gradient(135deg,#347cde,#2053a0)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;}
+html[data-app-appearance=dark] body[data-approved-mobile] #page-worship .wf-tile,
+html[data-app-appearance=dark] body[data-approved-mobile] #page-studio .theme-library{background:var(--ocean-glass)!important;border-color:var(--ocean-edge)!important;box-shadow:inset 0 1px #e0efff20,0 5px 14px #000d2426!important;}

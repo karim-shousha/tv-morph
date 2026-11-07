@@ -1,0 +1,33 @@
+{
+  "source": "E:/HER/her",
+  "features": [
+    "Quran reading",
+    "Local tasbih",
+    "Offline adhkar",
+    "Offline duas",
+    "Offline prayer calculation",
+    "Egypt adhan bundled; six optional offline voice-pack recordings",
+    "Local background OS alarms",
+    "Day/night reading backgrounds",
+    "Optional local prayer reminders independent of full Adhan"
+  ],
+  "excluded": [
+    "accounts",
+    "remote content",
+    "groups",
+    "worship challenges",
+    "network audio"
+  ],
+  "surahs": 114,
+  "ayahs": 6236,
+  "adhkar": 61,
+  "duas": 32,
+  "quranSourceSha256": "fe8fd2e0ae4fd4c2d53975e7fce4da96480c7347d872adeaf71d2aac37d5e5a2",
+  "faithContentSourceSha256": "803ca4f007eca3bfce755b98430619775a8566062fc7d87b3802bd88eb291e4c",
+  "prayerMath": {
+    "library": "Batoul Apps Adhan Java",
+    "version": "1.2.1",
+    "commit": "5e633fd892493d28f1eab78b62872fc95b476225",
+    "license": "MIT"
+  }
+}

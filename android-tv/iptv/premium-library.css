@@ -1,0 +1,77 @@
+/* Shared catalog surfaces. Settings retain their current layout pending preview approval. */
+html#iptv-theme-root[data-tv-library][data-stream-ui] body:not(.cinema-home):before,
+html#iptv-theme-root[data-tv-library][data-stream-ui] body:not(.cinema-home) #stream-backdrop{display:none!important}
+html#iptv-theme-root[data-tv-library][data-stream-ui] body:not(.cinema-home)>main{
+ box-sizing:border-box!important;flex:0 0 100vh!important;height:100vh!important;max-height:100vh!important;min-height:0!important;
+ padding:calc(130 * var(--header-unit,1px)) calc(32 * var(--header-unit,1px)) calc(16 * var(--header-unit,1px))!important;
+ align-items:stretch!important;overflow:hidden!important;
+}
+html#iptv-theme-root[data-tv-library][data-stream-ui] body:not(.cinema-home) main>aside{
+ box-sizing:border-box!important;height:100%!important;max-height:none!important;min-height:0!important;
+ background:var(--premium-card-fill,linear-gradient(135deg,var(--iptv-surface-533),var(--iptv-surface-400)))!important;
+ border:1px solid var(--iptv-border-259)!important;border-radius:calc(24 * var(--header-unit,1px))!important;
+ padding:calc(16 * var(--header-unit,1px)) calc(10 * var(--header-unit,1px))!important;
+}
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main>section{min-height:0!important;max-height:100%!important}
+html#iptv-theme-root[data-tv-library] #categories button,
+html#iptv-theme-root[data-tv-library] #library-special button{
+ background:transparent!important;color:var(--iptv-text)!important;border:0!important;
+ border-radius:calc(14 * var(--header-unit,1px))!important;text-align:start!important;direction:inherit!important;
+}
+html#iptv-theme-root[data-tv-library] #categories button.active,
+html#iptv-theme-root[data-tv-library] #library-special button.active{
+ background:rgba(213,224,255,.16)!important;color:var(--iptv-text)!important;
+}
+html#iptv-theme-root[data-tv-library][data-stream-ui] body:not(.cinema-home)[data-kind] #items .item .tile,
+html#iptv-theme-root[data-tv-library] body[data-kind=live] .items .item .tile,
+html#iptv-theme-root[data-tv-library] .tv-live-favorite,
+html#iptv-theme-root[data-tv-library] .tv-preview-art,
+html#iptv-theme-root[data-tv-library] .tv-episode{
+ background:var(--premium-card-fill,linear-gradient(135deg,var(--iptv-surface-533),var(--iptv-surface-400)))!important;
+ color:var(--iptv-text)!important;border:1px solid var(--iptv-border-259)!important;
+ box-shadow:none!important;
+}
+html#iptv-theme-root[data-tv-library] body[data-kind=live] .items .item .tile{border-radius:calc(16 * var(--header-unit,1px))!important}
+html#iptv-theme-root[data-tv-library] body[data-kind=live] .items .item .tile img{background:transparent!important}
+html#iptv-theme-root[data-tv-library] .tv-rating{background:var(--iptv-surface-851)!important;color:var(--iptv-text)!important;box-shadow:none!important}
+html#iptv-theme-root[data-tv-library] .tv-episode small{color:var(--iptv-muted)!important}
+html#iptv-theme-root[data-tv-library] main input::placeholder{color:var(--iptv-text)!important;opacity:.8!important}
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main button{color:var(--iptv-text)!important}
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) #items .tile strong,
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) #items .tile .resume-tag{background:transparent!important;color:var(--iptv-text)!important}
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main .heading,
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main input,
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main select,
+html#iptv-theme-root[data-tv-library] body:not(.cinema-home) main .pagination button{background:var(--iptv-surface-400)!important;color:var(--iptv-text)!important;border-color:var(--iptv-border-259)!important;box-shadow:none!important}
+html#iptv-theme-root[data-tv-library] main button:focus,
+html#iptv-theme-root[data-tv-library] main input:focus{outline-color:var(--iptv-text)!important;box-shadow:none!important}
+
+/* A live logo and its fallback own exactly the same space. Source data never sizes a card. */
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items{align-items:start!important;grid-auto-rows:max-content!important}
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item{min-width:0!important;align-self:start!important}
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item .tile{
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;
+ height:calc(var(--stream-logo-image,110px) + var(--live-caption) + var(--live-caption-margin))!important;
+ min-height:0!important;max-height:none!important;padding:0!important;box-sizing:border-box!important;overflow:hidden!important;
+}
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item .tile>img,
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item .tile>.poster-unavailable{
+ display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;max-width:100%!important;
+ height:var(--stream-logo-image,110px)!important;min-height:var(--stream-logo-image,110px)!important;max-height:var(--stream-logo-image,110px)!important;
+ flex:0 0 var(--stream-logo-image,110px)!important;box-sizing:border-box!important;object-fit:contain!important;object-position:center!important;
+ margin:0!important;padding:calc(12 * var(--header-unit,1px))!important;line-height:1!important;border-radius:0!important;background:transparent!important;
+ font-size:calc(42 * var(--header-unit,1px))!important;color:var(--iptv-text)!important;
+}
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item .tile>strong{
+ display:-webkit-box!important;-webkit-line-clamp:2!important;-webkit-box-orient:vertical!important;
+ width:auto!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;
+ flex:0 0 var(--live-caption)!important;height:var(--live-caption)!important;min-height:var(--live-caption)!important;max-height:var(--live-caption)!important;
+ margin:calc(9 * var(--header-unit,1px)) calc(10 * var(--header-unit,1px))!important;padding:0!important;
+ font-size:calc(22 * var(--header-unit,1px))!important;line-height:1.35!important;text-align:center!important;overflow:hidden!important;white-space:normal!important;
+}
+html#iptv-theme-root[data-stream-ui][data-tv-library] body.channel-grid[data-kind=live] #items.items .item .tile>strong>span{white-space:normal!important;line-height:inherit!important}
+/* The compact list uses the same geometry for missing logos too. */
+html#iptv-theme-root[data-stream-ui][data-tv-library] body[data-kind=live]:not(.channel-grid) #items .tile>.poster-unavailable{display:flex!important;align-items:center!important;justify-content:center!important;font-size:20px!important;line-height:1!important;margin:0!important;box-sizing:border-box!important}
+
+/* Shared root metrics also resolve on TVs without scoped CSS variables. */
+html#iptv-theme-root[data-stream-ui][data-tv-library]{--live-caption:calc(60 * var(--header-unit,1px));--live-caption-margin:calc(18 * var(--header-unit,1px));}

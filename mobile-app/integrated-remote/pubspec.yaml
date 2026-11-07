@@ -1,0 +1,72 @@
+name: morph_remote
+description: "Morph Remote - Premium Universal Smart TV Remote"
+publish_to: 'none'
+version: 1.1.305+310
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.2
+  multicast_dns: ^0.3.2+1
+  web_socket_channel: ^3.0.2
+  http: ^1.2.2
+  network_info_plus: ^6.1.4
+  connectivity_plus: ^6.1.0
+  permission_handler: ^11.3.1
+  crypto: ^3.0.6
+  meta: ^1.12.0
+  basic_utils: 5.8.2
+  pointycastle: ^4.0.0
+  url_launcher: ^6.3.2
+  flutter_adb:
+    path: vendor/flutter_adb
+
+  google_fonts: ^6.2.1
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  hijri_date: ^1.1.0
+  share_plus: ^10.1.4
+  flutter_timezone: ^5.1.0
+  flutter_compass: ^0.8.1
+  adhan_dart: ^2.0.1
+  timezone: ^0.11.1
+  audioplayers: ^6.7.1
+  audio_service: ^0.18.15
+  rxdart: ^0.28.0
+  path_provider: ^2.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/quran-uthmani.txt
+    - assets/images/morph-header.webp
+    - assets/images/faith/
+    - assets/images/faith/prayer-moments/
+    - assets/sounds/bloom/button.wav
+    - assets/fonts/
+    - assets/morph-header-symbol.webp
+    - assets/morph-wordmark-hq.webp
+    - assets/connect-tv-premium.png
+    - assets/morph-logo.webp
+    - assets/premium-reference-background.png
+
+  fonts:
+    - family: MorphSans
+      fonts:
+        - asset: assets/fonts/morph-sans-400.ttf
+          weight: 400
+        - asset: assets/fonts/morph-sans-600.ttf
+          weight: 600

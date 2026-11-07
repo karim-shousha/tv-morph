@@ -1,0 +1,278 @@
+{
+  "source": "E:/AppBridgeTV/android-host/app/src/main",
+  "version": "0.7.0-embedded-helper",
+  "sourceWorkspaceModified": false,
+  "files": [
+    {
+      "file": "java/tv/appbridge/phase0/MainActivity.kt",
+      "sourceSha256": "26301869206f80d5cf62cc79f8fb06a7290ff305b2614761ad81f0b8245918cc"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/Ping2Activity.kt",
+      "sourceSha256": "5b42bccaa6fa8430a89db3ed14835d2b61b1ec24a8a8d7d0bbab211f2e7f1357"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/ProbeSession.kt",
+      "sourceSha256": "729b8d62fc33cfe5a8966fc44771849a06ebbfdd4c2ca8fdd8dafb290c290c3e"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/SecondaryPresentation.kt",
+      "sourceSha256": "b9c2fd44cb26b7e53fd8e3b317df6d47f2be067ba1adc32abb4a7a94863757a7"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/TestActivity.kt",
+      "sourceSha256": "90160b098c98b20a49802203e6907054a923cc1adde47bc2c845d5d202d10f64"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/EncodeProbe.kt",
+      "sourceSha256": "7d1ac57830512e4e082934094dfe3bc1dfe2a438a0f13c58da608cfab0099363"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/InputProbe.kt",
+      "sourceSha256": "da592f060637633f4ae5e9539b308bfbfc73ef7f181de34adea44b9e7e7f777c"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/LaunchProbe.kt",
+      "sourceSha256": "37a0ed1f3b4f0023b5b00e4a8cbe2a22aa4c9ac7cb78f5004c0e8979e8be09c2"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/MpShotService.kt",
+      "sourceSha256": "82812c62ae9bdbb5cf61f530a5093c336253d8bfec0d7b15e5eab8ef702e954a"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/ProbeLog.kt",
+      "sourceSha256": "5c3d81ef860da2fbd1c06cb00d41563bf85a602326d2adf15b8e851e2ff17521"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/ProjectionService.kt",
+      "sourceSha256": "5272b76364c3294893b53ce32ce831b1b2b582ee4345c6067e41744b96cfd056"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/SecondaryInputProbe.kt",
+      "sourceSha256": "f80337fc71570485426d378e8e020a69daab55421228dbfc8041c285e6607f36"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/probe/VirtualDisplaySession.kt",
+      "sourceSha256": "91b0d62c604348b38f90d72cf7965ecb8cc5401b31a7197e3353dadf738c8173"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/pure/ControlMessage.kt",
+      "sourceSha256": "6f93da042b8b94a8b3e0aa16fccbaa775e6d9c55aa7245109c4ccce3af17d376"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/pure/CoordinateMapper.kt",
+      "sourceSha256": "3cf8f9b260af27e23e69ac9fca0773c7ef76cab6756ca8ec48e1483dabd95b51"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/data/AppStore.kt",
+      "sourceSha256": "331dbb0285297e8b07bc6a1edee7c3d18d528fc236aff564218eb671630f210f"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/net/HttpVideoServer.kt",
+      "sourceSha256": "d32621034cca7d2f8c474364883fcfa945431fa5802b9924861c4be3bb3f1344"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/net/Protocol.kt",
+      "sourceSha256": "e089b458ce4856c3231aa8cb88b181bf4d58eea835ca62705ce95b4e13c60f57"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/net/WsServer.kt",
+      "sourceSha256": "6e312290e64a0a0b61ea8332905ce2aaa1639795c3bfebd108ff8a4fd6ce8034"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/pure/ExternalPagePolicy.kt",
+      "sourceSha256": "e4b53b7529b46290e1cd2ee849c90bdc1209eddd3a3394dec8a3d681a90418a0"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/pure/StreamPointer.kt",
+      "sourceSha256": "fa2256ecaf41c09e1c49e43aa0b1ac640d8f0e00d1bc6839f393407c11c69e79"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/pure/ThemeChoice.kt",
+      "sourceSha256": "6551422be096567da692b5e74a1631c2d39bad3661197b77af85fcf98f2a113a"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/EmbeddedAdb.kt",
+      "sourceSha256": "81c912615352bf9a31fcf4589f35fceaa9f7092c6e439d5c5e7d2ec89634d58f"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/EmbeddedShellProvider.kt",
+      "sourceSha256": "3cb46bdad19165086ddcf0a106efd66fcff2b9b4714441fad3fb63771dc1241d"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/NoopBackend.kt",
+      "sourceSha256": "4f6cca89c87154290d7a045464899498325c164b4b88ca4990d9a5d6896311f9"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/PhoneAdbDiscovery.kt",
+      "sourceSha256": "7139538eac1a710a35f21d9873c285995bb3c80f71a612e5b66a2116d13e15eb"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/RuntimeBackend.kt",
+      "sourceSha256": "d2a2d058a42d009df4777c0022e81699877b3b76e0e2a51bd2a7130219ac018a"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/SessionManager.kt",
+      "sourceSha256": "65bc06569dd5d8d95bf0e46c06d50856b666fb67ddf164e9c323e217ad8d975e"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/SessionService.kt",
+      "sourceSha256": "46f6c03d8c75b44907cb89f1dd98bb52abb5542d603c04349173ddde1df87f3f"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/ShellUserService.kt",
+      "sourceSha256": "a4c152f3310394b7592bbe060701ec4c1cca18ee81641509ef0b6f28733c2365"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/ShizukuBackend.kt",
+      "sourceSha256": "b3e1b463d80349de529b06672b4895e50ad12cdbb8bb9955935fb6e687ce836a"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/session/TvTaskRecents.kt",
+      "sourceSha256": "6d51e5235eb3c2dbf9c02a4abd9416330087dd5888fe4130aa8e2ae4fccbe8b8"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/AdbKeyCodec.kt",
+      "sourceSha256": "7e81b2e62e1297375a8821e21e746c7036fd1dabac628f44a207a828a51030f8"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/AndroidTvInstaller.kt",
+      "sourceSha256": "342aa5a3eb23abdf0845b31d1de8b2b66f870e1c6477a0336e4444b89bcc3936"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/LgTvInstaller.kt",
+      "sourceSha256": "1118c7d52fde36d5809a5853242618dfd1f808a997244564f77f56a168403ee5"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/SdbClient.java",
+      "sourceSha256": "ed93bdf4aea23351a93031dd135f7d1a1a9acaaf60d37e10b6395077aa2741b8"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/SendToTv.kt",
+      "sourceSha256": "c0cf663bc023d3413ee518bf38d7a74ab707e5e57b99bdee5efa79790e7c5109"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/TvDiscovery.kt",
+      "sourceSha256": "d20d9a1f9dc2effa64bb276f8819226f9c7c53ed38ac987e71f8b9727e998a94"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/tv/WgtPackage.kt",
+      "sourceSha256": "88693ae73b9c5230c14cc11d74489b81bdc607f99bd4fdcc95c26df775c95003"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/ui/HostActivity.kt",
+      "sourceSha256": "64fa259f6f3db39cd1a797ee2cc15227066158f677c0c447767f95bc429270dc"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/ui/HostPalette.kt",
+      "sourceSha256": "b4653ea584d2bb98d26c17201b12a19a2d8d25f16953aace3cbd4ce3c0ea89f8"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/ui/PhoneSetupActivity.kt",
+      "sourceSha256": "f4ebf469f566f6f4470f354f7d039dab67417d067726936b7e1cf1d83cb21b33"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/Fmp4Muxer.kt",
+      "sourceSha256": "661b4c877375d7c41b7ce189ca27952494835bfe8c94237e077b1f3dd558213b"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/MpStreamSource.kt",
+      "sourceSha256": "a94fd41bce0b69bc0a466f56d7a128674b1df67d6582b0856fbeafdaf2071ce0"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/RuntimeVideoSource.kt",
+      "sourceSha256": "3705b8f35b549e8af2d65e14befc903970cd1dbabfc8185cd4dca1d8ea38f274"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/ShellAudioSource.kt",
+      "sourceSha256": "83f877470592ca69d550badc21915edf2ea72d609f4b4fa67859f900dd4a6646"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/ShellStreamSource.kt",
+      "sourceSha256": "ef21b4fcfd00c96fba5def4f88c4b4018093ed49469b591af32f51d32698ef70"
+    },
+    {
+      "file": "java/tv/appbridge/phase0/rt/video/VideoSampleTimeline.kt",
+      "sourceSha256": "047f03d4387c53c405d06f2a62f380fb4609f6b50a1a42dc3bd853b8ccc85a87"
+    },
+    {
+      "file": "res/drawable-nodpi/morph_logo.png",
+      "sourceSha256": "b5b76a677d5d03f44dd201020cd0a9914efaeeea1e431326afd9ba18c24bd3f8"
+    },
+    {
+      "file": "assets/scrcpy-audio-appbridge.jar",
+      "sourceSha256": "5c03cb7192d7b7fb857f2a1e90ca74b56ae4f9260ab778cfcb5580f15170777c"
+    },
+    {
+      "file": "assets/scrcpy-server-v5.0.1",
+      "sourceSha256": "764eb6f79811d5211fe9df341120882ba9994c7a61b897d7bf3fb662e53bc536"
+    },
+    {
+      "file": "assets/test-tone.wav",
+      "sourceSha256": "816f3f9cffc53ee515baeb9322ad6ff9f496fbd14e6cceb4fb42c79386406b98"
+    },
+    {
+      "file": "assets/fonts/IBMPlexSansArabic-Medium.ttf",
+      "sourceSha256": "b8363ab9f733dfa4f8e96b8b2102c24b5cf4110fb96d1d3d9a9412f6fb49cf74"
+    },
+    {
+      "file": "assets/fonts/IBMPlexSansArabic-Regular.ttf",
+      "sourceSha256": "6f611412270a132bbac838da9259d4c68569b4175f3b3b8fa3fa36a30b56dab9"
+    },
+    {
+      "file": "assets/fonts/OFL.txt",
+      "sourceSha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "file": "assets/licenses/bouncycastle-LICENSE",
+      "sourceSha256": "edbbb10380b1271998b867a2e36b1cbee226e03d438726e1a91f80c5dde11849"
+    },
+    {
+      "file": "assets/licenses/conscrypt-LICENSE",
+      "sourceSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "assets/licenses/Embedded-helper-NOTICE.txt",
+      "sourceSha256": "2c2e29e2ee5a7b4dd7438b25262659bf6de403cd7297fdb97e823cb85a342a63"
+    },
+    {
+      "file": "assets/licenses/GPL-3.0.txt",
+      "sourceSha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "assets/licenses/JSCH-LICENSE.txt",
+      "sourceSha256": "9c3537ab0b485b391b887b95fdff761de3dd3273a6931e8a1942dde4d2093cc5"
+    },
+    {
+      "file": "assets/licenses/libadb-android-Apache-2.0",
+      "sourceSha256": "4557de501c3a82094c239a4d74e2e29993c188f6ebb28b668fedf942938e44f1"
+    },
+    {
+      "file": "assets/licenses/libadb-android-COPYING",
+      "sourceSha256": "dd5314a7504dc2c80aba35db43a8db2f9362bd5768af07e94539a3e2b6fc3275"
+    },
+    {
+      "file": "assets/licenses/spake2-java-LICENSE",
+      "sourceSha256": "a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b"
+    },
+    {
+      "file": "assets/tv/AppBridge-Samsung.wgt",
+      "sourceSha256": "5e6313a2357bb6eb5972cbf56b4abaf1d869a5744e6aff2484936bbb5c0e5f9a"
+    },
+    {
+      "file": "assets/tv/Morph-Bridge-Android-TV.apk",
+      "sourceSha256": "de6b67f1fbb3fe8f1271eb1aa85db9f96f2f36e9e95ba039f4ef989f69931abe"
+    },
+    {
+      "file": "assets/tv/Morph-Bridge-LG.ipk",
+      "sourceSha256": "ab52b128576f3cd008a49770a98631c658958a5d96a32cf7f031e9da9b697e17"
+    }
+  ],
+  "integrationChanges": [
+    "EmbeddedShellMain owner is local.cleartv.mobile; provider still enforces shell/root UID.",
+    "Internal activity declarations; no extra launcher icon.",
+    "Pairing does not install or launch a second Samsung app: open the built-in Launcher receiver, or use the explicit TV installation page.",
+    "HostActivity renders before asynchronous PackageManager discovery; BridgeAppCatalog owns bounded icon caching and lifecycle cleanup.",
+    "Shizuku availability checks are nonblocking; only explicit helper binding/setup uses awaitBinder."
+  ]
+}

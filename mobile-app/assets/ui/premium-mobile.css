@@ -1,0 +1,88 @@
+/* Warm premium presentation, shared by every phone destination and setup form. */
+html[data-app-appearance=light],html[data-app-appearance=dark]{font-size:16px;}
+
+html[data-app-appearance=light] body[data-premium-mobile]{background:#f7f4ef!important;}
+body[data-premium-mobile] .primary{color:#fff!important;background:var(--m-grad)!important;border:0!important;box-shadow:none!important;}body[data-premium-mobile] #apply{color:var(--morph-on-primary)!important;background:var(--m-grad)!important;border:0!important;box-shadow:none!important;}
+html[data-app-appearance=dark] body[data-premium-mobile] .primary{color:#23344b!important;}html[data-app-appearance=dark] body[data-premium-mobile] #apply{color:var(--morph-on-primary)!important;}
+
+
+body[data-premium-mobile]>header{border-bottom:0;height:78px;}
+body[data-premium-mobile] main{padding-top:12px;}
+body[data-premium-mobile] #page-connect>.mobile-welcome,body[data-premium-mobile] #page-connect>.mobile-shortcuts{display:none;}
+body[data-premium-mobile] #page-connect>.m30-status{padding:0;border-radius:17px;margin-bottom:18px;min-height:0;height:auto;margin:0;}
+body[data-premium-mobile] #page-connect>.m30-status h2{font-size:0.8125rem;}
+body[data-premium-mobile] #page-connect>.m30-status p{font-size:0.875rem;}
+body[data-premium-mobile] .pm-page-intro{margin-bottom:21px;min-height:0;}
+body[data-premium-mobile] .pm-overline{display:block;font-size:0.625rem;letter-spacing:.5px;color:var(--m-accent2);margin-bottom:6px;}
+body[data-premium-mobile] .pm-page-intro h1{font-size:1.625rem;line-height:1.5;letter-spacing:-.4px;margin:0 0 7px;color:var(--m-text);}
+body[data-premium-mobile] .pm-page-intro p{font-size:0.8125rem;line-height:1.9;color:var(--m-muted);margin:0;}
+body[data-premium-mobile] .pm-service-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 25px;}
+body[data-premium-mobile] .pm-service-cards button{display:flex;align-items:center;gap:9px;padding:15px 12px;min-width:0;min-height:85px;border:1px solid var(--m-border);border-radius:21px;background:var(--m-card);color:var(--m-text);text-align:start;}
+body[data-premium-mobile] .pm-service-cards button>svg:first-child{width:26px;flex-shrink:0;color:var(--m-accent);}
+body[data-premium-mobile] .pm-service-cards button>svg:last-child{display:none;}
+body[data-premium-mobile] .pm-service-cards strong{display:block;font-size:0.875rem;font-weight:600;}
+body[data-premium-mobile] .pm-service-cards small{display:block;font-size:0.875rem;line-height:1.7;color:var(--m-muted);margin-top:4px;}
+body[data-premium-mobile] .pm-setup-title{font-size:1.0rem;margin:0 0 14px;}
+body[data-premium-mobile] .connect-step{border-radius:16px;overflow:hidden;background:var(--m-card)!important;margin:12px 0;border-color:var(--m-border)!important;min-height:0!important;padding:0!important;box-shadow:none!important;}
+body[data-premium-mobile] .connect-step>summary{padding:12px 16px;font-size:0.8125rem;min-height:56px;}
+body[data-premium-mobile] .connect-number{background:var(--m-bg2)!important;color:var(--m-accent)!important;border-color:var(--m-border);}
+body[data-premium-mobile] .connect-step-body{padding:0 16px 16px;}
+body[data-premium-mobile] .connection-card{border:0;background:transparent;padding:0;margin:0;box-shadow:none;}
+body[data-premium-mobile] .connection-card .radar{width:54px;height:54px;margin:10px auto 22px;box-shadow:0 0 0 9px var(--m-bg);border-color:var(--m-border);color:var(--m-accent);font-size:25px;}
+body[data-premium-mobile] .connection-card h2{font-size:1.25rem;color:var(--m-text);}
+body[data-premium-mobile] .connection-card p,body[data-premium-mobile] .connect-step-note{font-size:0.875rem;color:var(--m-muted);}
+body[data-premium-mobile] .panel,body[data-premium-mobile] .manual,body[data-premium-mobile] .install-card,body[data-premium-mobile] .phone-ip,body[data-premium-mobile] .iptv-source-card,body[data-premium-mobile] .iptv-form,body[data-premium-mobile] .app-row{background:var(--m-card)!important;border-color:var(--m-border)!important;color:var(--m-text);box-shadow:none;}
+body[data-premium-mobile] .secondary{background:var(--m-bg2)!important;border:1px solid var(--m-border)!important;color:var(--m-text)!important;box-shadow:none;}
+body[data-premium-mobile] .pm-remote-showcase{position:relative;display:flex;align-items:center;justify-content:center;gap:35px;min-height:96px;margin:18px 0 20px;background:var(--m-card);border:1px solid var(--m-border);border-radius:16px;overflow:hidden;direction:ltr;padding:12px 16px;}
+body[data-premium-mobile] .pm-remote-device{height:195px;width:92px;border-radius:31px;background:var(--m-card);border:1px solid var(--m-border);padding:17px 8px;box-shadow:0 14px 22px #344d6417;transform:rotate(-13deg);}
+body[data-premium-mobile] .pm-remote-dot{width:9px;height:9px;background:#7cd6ff;margin:0 auto 17px;border-radius:50%;}
+body[data-premium-mobile] .pm-mini-pad{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,22px);height:72px;width:72px;margin:auto;border-radius:50%;background:var(--m-bg2);color:var(--m-accent);font-family:var(--morph-font);align-items:center;justify-items:center;}
+body[data-premium-mobile] .pm-mini-pad span:first-child{grid-column:2;grid-row:1;}body[data-premium-mobile] .pm-mini-pad span:nth-child(2){grid-column:1;grid-row:2;}body[data-premium-mobile] .pm-mini-pad b{grid-column:2;grid-row:2;font-size:0.5625rem;}body[data-premium-mobile] .pm-mini-pad span:nth-child(4){grid-column:3;grid-row:2;}body[data-premium-mobile] .pm-mini-pad span:last-child{grid-column:2;grid-row:3;}
+body[data-premium-mobile] .pm-mini-actions{display:flex;align-items:center;justify-content:space-around;margin:23px 1px 0;color:var(--m-accent);}body[data-premium-mobile] .pm-mini-actions svg{width:14px;height:14px;}
+body[data-premium-mobile] .pm-remote-copy>span{display:block;font:0.625rem Arial;letter-spacing:3px;color:var(--m-muted);}body[data-premium-mobile] .pm-remote-copy>strong{display:block;font:700 1.8125rem/1.4 Arial;color:var(--m-text);}body[data-premium-mobile] .pm-remote-copy>small{display:block;font:0.625rem/1.9 Arial;color:var(--m-muted);margin-top:13px;}
+body[data-premium-mobile] .pm-remote-info{padding:20px;border:1px solid var(--m-border);background:var(--m-card);border-radius:23px;}
+body[data-premium-mobile] .pm-remote-info h2{font-size:1.0625rem;margin:0 0 7px;}body[data-premium-mobile] .pm-remote-info p{font-size:0.875rem;line-height:1.9;color:var(--m-muted);margin:0;}
+body[data-premium-mobile] #integrated-remote-state:empty{display:none;}
+body[data-premium-mobile] #m30-control-segment{margin:0 0 18px;background:var(--m-bg2);padding:5px;border:1px solid var(--m-border);border-radius:17px;}
+body[data-premium-mobile] #m30-control-segment button{font-size:0.875rem;color:var(--m-muted);min-height:44px;background:none;box-shadow:none;border:0;border-radius:12px;}
+body[data-premium-mobile] #m30-control-segment button.m30-active{background:var(--m-card)!important;color:var(--m-text)!important;box-shadow:0 2px 7px #344d6410!important;}
+body[data-premium-mobile] #page-iptv>.eyebrow{font-size:0.6875rem;color:var(--m-accent2)!important;margin:0 0 5px;}
+body[data-premium-mobile] #page-iptv>h1{font:600 1.8125rem/1.4 Arial;direction:ltr;text-align:start;margin:0 0 16px;letter-spacing:-1px;}
+html[dir=rtl] body[data-premium-mobile] #page-iptv>h1{text-align:right;}
+body[data-premium-mobile] #page-iptv>h1>span{color:var(--m-accent);}
+body[data-premium-mobile] .pm-iptv-feature{position:relative;display:flex;align-items:center;gap:14px;padding:21px 16px;min-height:112px;margin:0 0 17px;border:1px solid var(--m-border);border-radius:24px;background:var(--m-bg2);overflow:hidden;}
+body[data-premium-mobile] .pm-iptv-icon{display:grid;place-items:center;flex-shrink:0;width:47px;height:52px;border-radius:16px;background:var(--m-card);color:var(--m-accent);}
+body[data-premium-mobile] .pm-iptv-icon svg{width:25px;height:25px;}
+body[data-premium-mobile] .pm-iptv-feature strong{position:relative;z-index:1;font-size:0.9375rem;}
+body[data-premium-mobile] .pm-iptv-feature p{position:relative;z-index:1;font-size:0.875rem;color:var(--m-muted);margin:4px 0 0;line-height:1.8;}
+body[data-premium-mobile] .pm-iptv-badge{position:absolute;inset-inline-end:-9px;bottom:-14px;font:700 3.6875rem Arial;color:var(--m-card);opacity:.7;letter-spacing:-3px;}
+body[data-premium-mobile] #iptv-destination-intro{font-size:0.8125rem;line-height:1.9;margin:0 0 17px;color:var(--m-muted)!important;}
+body[data-premium-mobile] .iptv-destinations{display:grid;grid-template-columns:1fr!important;gap:10px;background:none!important;border:0!important;padding:0!important;margin:0;}
+body[data-premium-mobile] .iptv-destinations button{width:100%;min-height:56px;margin:0;border-radius:17px;font-size:0.875rem;line-height:1.5;font-weight:600;}
+body[data-premium-mobile] #iptv-phone-open{background:var(--m-grad)!important;color:#fff!important;}
+html[data-app-appearance=dark] body[data-premium-mobile] #iptv-phone-open{color:#23344b!important;}
+body[data-premium-mobile] #iptv-tv-show{background:var(--m-card)!important;border:1px solid var(--m-border)!important;color:var(--m-text)!important;}
+body[data-premium-mobile] #iptv-phone-note{display:block!important;margin:12px 0;padding:0;font-size:0.875rem;line-height:1.9;color:var(--m-muted);background:transparent;border:0;}
+body[data-premium-mobile] .iptv-source-card{border-width:1px;border-radius:23px;padding:18px;margin:15px 0;}
+body[data-premium-mobile] .iptv-source-card h2{font-size:1.0625rem;line-height:1.6;color:var(--m-text)!important;margin-bottom:5px;}
+body[data-premium-mobile] .iptv-source-card>p{font-size:0.875rem;line-height:1.9;color:var(--m-muted)!important;}
+body[data-premium-mobile] .iptv-source-card.source-active{border-color:var(--m-border-strong)!important;box-shadow:none;}
+body[data-premium-mobile] .iptv-source-current{border-radius:14px;padding:12px 14px;background:var(--m-bg2);color:var(--m-text);font-size:0.875rem;line-height:1.8;margin:15px 0;}
+body[data-premium-mobile] #iptv-source-current:empty{display:none;}
+body[data-premium-mobile] #iptv-form-details>summary{font-size:0.8125rem;color:var(--m-accent);min-height:42px;padding:10px 0;}
+body[data-premium-mobile] .iptv-source-actions button{min-height:46px;font-size:0.875rem;}
+body[data-premium-mobile] #iptv-account-state{font-size:0.875rem;line-height:1.8;padding:0;border:1px solid var(--m-border);background:var(--m-card);color:var(--m-muted);border-radius:14px;margin:0 0 14px;}
+body[data-premium-mobile] .iptv-tabs{background:var(--m-bg2)!important;border-radius:15px;padding:4px;}
+body[data-premium-mobile] .iptv-tabs button.selected{background:var(--m-card)!important;color:var(--m-text)!important;}
+body[data-premium-mobile] #page-apps>h1,body[data-premium-mobile] #page-cast h1{font-size:1.5625rem;line-height:1.5;}
+body[data-premium-mobile] #page-cast .panel{padding:18px;border-radius:23px;}
+body[data-premium-mobile] #page-cast .panel p,body[data-premium-mobile] #page-cast li{font-size:0.875rem;line-height:1.9;color:var(--m-muted);}
+body[data-premium-mobile] .empty-state{background:var(--m-card)!important;color:var(--m-muted)!important;border:1px dashed var(--m-border-strong)!important;border-radius:22px;}
+body[data-premium-mobile] .operation-card{background:var(--m-card);color:var(--m-text);border-color:var(--m-border);}
+body[data-premium-mobile] .operation-card p{color:var(--m-muted);}
+@media(max-width:370px){body[data-premium-mobile] .pm-page-intro h1{font-size:1.4375rem;}body[data-premium-mobile] .pm-service-cards{grid-template-columns:1fr;gap:8px;}body[data-premium-mobile] .pm-service-cards button{min-height:67px;}body[data-premium-mobile] .pm-remote-showcase{gap:22px;min-height:96px;padding:12px 16px;border-radius:16px;background:var(--m-card);border:1px solid var(--m-border);}body[data-premium-mobile] .pm-iptv-feature{padding:16px 13px;gap:11px;}body[data-premium-mobile] .pm-iptv-feature strong{font-size:0.8125rem;}}
+
+/* Preserve the connection and keyboard sections after removing the old controller. */
+#legacy-companion-remote[hidden]{display:none!important;}
+
+#companion-text-panel #remote-text{display:block;width:100%;min-height:100px;box-sizing:border-box;}

@@ -1,0 +1,96 @@
+/* Approved Showcase layout; no blur, looping motion or changes to the Home dock. */
+html body #overlay.theme-studio-mode{padding:0!important;align-items:stretch!important;justify-content:stretch!important;background:var(--ui-bg,#1b253d)!important;z-index:11000}
+html body #overlay #modal.theme-studio-modal{--ts-unit:1px;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;padding:0!important;margin:0!important;transform:none!important;border:0!important;border-radius:0!important;background:linear-gradient(145deg,#15192e,#34415a 68%,#667084)!important;color:#fff!important;overflow:hidden!important;box-shadow:none!important}
+html body #overlay #modal.theme-studio-modal>.modal-heading{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;pointer-events:none!important}
+html body #overlay #modal-content.theme-studio-content{height:100%!important;max-height:none!important;overflow:hidden!important;padding:0!important}
+#theme-studio{height:100%;display:flex;flex-direction:column;isolation:isolate;position:relative;color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:calc(24 * var(--ts-unit));text-align:start}
+#theme-studio:before{content:"";position:absolute;inset:0;z-index:-1;background:#19263c;opacity:.8;clip-path:polygon(100% 48%,100% 100%,18% 100%,46% 73%);pointer-events:none}
+#theme-studio *{box-sizing:border-box}
+html body #overlay #theme-studio button{font:inherit;line-height:1.3;color:#fff;background:#47546bc9;border:1px solid #a4b1cd65;border-radius:calc(20 * var(--ts-unit));padding:calc(15 * var(--ts-unit)) calc(24 * var(--ts-unit));min-height:calc(58 * var(--ts-unit));margin:0;box-shadow:none;transform:none}
+html body #overlay #theme-studio button:focus,html body #overlay #theme-studio select:focus{outline:calc(4 * var(--ts-unit)) solid #f5f7ff!important;outline-offset:calc(5 * var(--ts-unit));box-shadow:none!important;transform:none!important}
+html body #overlay #theme-studio button:disabled{opacity:.55}
+#theme-studio .ts-header{display:flex;flex:0 0 auto;align-items:center;gap:calc(44 * var(--ts-unit));padding:calc(28 * var(--ts-unit)) calc(56 * var(--ts-unit));min-height:calc(118 * var(--ts-unit));border:0;background:transparent;position:relative;width:100%;height:auto}
+#theme-studio .ts-brand{width:calc(230 * var(--ts-unit));height:calc(70 * var(--ts-unit));object-fit:contain}
+#theme-studio .ts-header nav{display:flex;align-items:center;flex:1;gap:calc(20 * var(--ts-unit));background:none;border:0;padding:0;min-width:0}
+html body #overlay #theme-studio .ts-header nav button{background:none;border:0;padding:calc(16 * var(--ts-unit)) calc(18 * var(--ts-unit));white-space:nowrap}
+#theme-studio .ts-header-current{padding:calc(18 * var(--ts-unit)) calc(27 * var(--ts-unit));border-radius:calc(50 * var(--ts-unit));background:#a9b8d633;white-space:nowrap}
+#theme-studio .ts-clock{display:flex;flex-direction:column;align-items:center;white-space:nowrap;direction:ltr}
+#theme-studio .ts-time{font-size:calc(44 * var(--ts-unit));line-height:1.1;font-variant-numeric:tabular-nums}
+#theme-studio .ts-date{font-size:calc(19 * var(--ts-unit));color:#d6dff0;margin-top:calc(8 * var(--ts-unit))}
+#theme-studio .ts-main{display:flex;flex-direction:column;flex:1;min-height:0;padding:calc(12 * var(--ts-unit)) calc(56 * var(--ts-unit)) calc(24 * var(--ts-unit))}
+#theme-studio .ts-heading{display:flex;align-items:center;justify-content:space-between;gap:calc(24 * var(--ts-unit));margin-bottom:calc(30 * var(--ts-unit));flex:0 0 auto}
+#theme-studio .ts-eyebrow,#theme-studio .ts-kind{font-size:calc(18 * var(--ts-unit));letter-spacing:2px;color:#d5deed}
+#theme-studio h1{font-size:calc(52 * var(--ts-unit));font-weight:600;line-height:1.2;letter-spacing:-1px;margin:calc(10 * var(--ts-unit)) 0 calc(12 * var(--ts-unit))}
+#theme-studio p{margin:0;color:#d4deed;font-size:calc(24 * var(--ts-unit));line-height:1.5}
+#theme-studio .ts-active{color:#c5efdd;font-size:calc(21 * var(--ts-unit));white-space:nowrap}
+#theme-studio .ts-feature{display:flex;align-items:center;gap:calc(58 * var(--ts-unit));flex:0 0 auto;margin-bottom:calc(26 * var(--ts-unit))}
+#theme-studio .ts-preview{position:relative;isolation:isolate;width:60%;height:calc(340 * var(--ts-unit));border:1px solid #c1cbe17a;border-radius:calc(26 * var(--ts-unit));overflow:hidden;flex-shrink:0}
+#theme-studio .ts-mini{position:absolute;inset:0;padding:calc(32 * var(--ts-unit));background:linear-gradient(145deg,#16223c1a,#18243c4a);color:#fff}
+#theme-studio .ts-mini:before{content:"";position:absolute;inset:0;z-index:-1;background:#1628407a;clip-path:polygon(100% 42%,100% 100%,25% 100%)}
+#theme-studio .ts-mini-header{display:flex;align-items:center;gap:calc(32 * var(--ts-unit));font-size:calc(15 * var(--ts-unit))}
+#theme-studio .ts-mini-header b{font-size:calc(27 * var(--ts-unit));letter-spacing:-1px}
+#theme-studio .ts-mini-header b>span{color:#5ec9ff}
+#theme-studio .ts-mini-header>span:last-child{margin-inline-start:auto;font-size:calc(30 * var(--ts-unit));direction:ltr}
+#theme-studio .ts-mini-copy{display:flex;flex-direction:column;align-items:flex-start;gap:calc(12 * var(--ts-unit));margin-top:calc(26 * var(--ts-unit))}
+#theme-studio .ts-mini-copy small{font-size:calc(13 * var(--ts-unit));letter-spacing:2px}
+#theme-studio .ts-mini-copy strong{font-size:calc(40 * var(--ts-unit));font-weight:600;line-height:1.15;max-width:80%;letter-spacing:-1px}
+#theme-studio .ts-mini-copy>span{font-size:calc(18 * var(--ts-unit));color:#dce4f3}
+#theme-studio .ts-mini-apps{display:flex;gap:calc(13 * var(--ts-unit));margin-top:calc(18 * var(--ts-unit))}
+#theme-studio .ts-mini-apps>span{padding:calc(14 * var(--ts-unit)) calc(25 * var(--ts-unit));border:1px solid #b6c8e366;background:#31405ca8;border-radius:calc(12 * var(--ts-unit));font-size:calc(18 * var(--ts-unit))}
+#theme-studio .ts-preview-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#172236;opacity:0;pointer-events:none}
+#theme-studio .ts-preview-image.ready{opacity:1}
+#theme-studio .ts-preview-label{position:absolute;inset-inline-end:calc(18 * var(--ts-unit));bottom:calc(12 * var(--ts-unit));font-size:calc(16 * var(--ts-unit));background:#1b2b42c9;padding:calc(6 * var(--ts-unit)) calc(12 * var(--ts-unit));border-radius:calc(8 * var(--ts-unit))}
+#theme-studio .ts-detail{min-width:0;flex:1}
+#theme-studio h2{font-size:calc(47 * var(--ts-unit));line-height:1.2;font-weight:500;margin:calc(13 * var(--ts-unit)) 0 calc(16 * var(--ts-unit))}
+#theme-studio .ts-description{max-width:calc(510 * var(--ts-unit))}
+#theme-studio .ts-palette{display:flex;gap:calc(12 * var(--ts-unit));margin:calc(25 * var(--ts-unit)) 0 calc(28 * var(--ts-unit))}
+#theme-studio .ts-palette i{display:block;width:calc(28 * var(--ts-unit));height:calc(28 * var(--ts-unit));border-radius:50%;border:1px solid #d3deef6e}
+#theme-studio .ts-actions{display:flex;flex-wrap:wrap;gap:calc(15 * var(--ts-unit))}
+html body #overlay #theme-studio .ts-apply{background:#dce5f4;color:#1d2940;border-color:#dce5f4}
+html body #overlay #theme-studio .ts-remove{background:transparent;font-size:calc(21 * var(--ts-unit));padding-inline:calc(16 * var(--ts-unit))}
+#theme-studio .ts-availability{display:block;font-size:calc(19 * var(--ts-unit));color:#d1dbeb;line-height:1.4;margin-top:calc(18 * var(--ts-unit))}
+#theme-studio .ts-status{font-size:calc(20 * var(--ts-unit));color:#ceeedd;margin-top:calc(12 * var(--ts-unit));min-height:0}
+#theme-studio .ts-status:empty{display:none}
+#theme-studio .ts-status[role=alert]{color:#ffd5c9}
+#theme-studio .ts-collection{display:flex;align-items:center;gap:calc(18 * var(--ts-unit));flex:0 0 auto;margin-bottom:calc(18 * var(--ts-unit))}
+#theme-studio h3{font-size:calc(28 * var(--ts-unit));font-weight:500;margin:0;white-space:nowrap}
+#theme-studio .ts-count{font-size:calc(19 * var(--ts-unit));color:#d1dbeb;margin-inline-end:auto;white-space:nowrap}
+#theme-studio .ts-collections{max-width:calc(280 * var(--ts-unit));min-width:0;font-size:calc(20 * var(--ts-unit));border:1px solid #a8b8d166;border-radius:calc(14 * var(--ts-unit));padding:calc(12 * var(--ts-unit));color:#fff;background:#36445d}
+#theme-studio .ts-filters{display:flex;gap:calc(5 * var(--ts-unit))}
+html body #overlay #theme-studio .ts-filters button{background:transparent;border:0;border-radius:calc(35 * var(--ts-unit));padding:calc(10 * var(--ts-unit)) calc(20 * var(--ts-unit));font-size:calc(21 * var(--ts-unit));min-height:0;white-space:nowrap}
+html body #overlay #theme-studio .ts-filters button[aria-pressed=true]{background:#b4c7e331}
+#theme-studio .ts-catalog{flex:1;min-height:calc(160 * var(--ts-unit));position:relative;display:flex;flex-direction:column}
+#theme-studio .ts-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-gap:calc(25 * var(--ts-unit));align-content:start;overflow-y:auto;overflow-x:hidden;min-height:0;padding:calc(7 * var(--ts-unit));margin:calc(-7 * var(--ts-unit));scroll-padding:calc(12 * var(--ts-unit));flex:1}
+html body #overlay #theme-studio .ts-card{display:flex;flex-direction:column;align-items:stretch;min-width:0;min-height:0;padding:0;gap:0;text-align:start;overflow:hidden;background:#304059;border:1px solid #a6b8d05c;border-radius:calc(20 * var(--ts-unit))}
+html body #overlay #theme-studio .ts-card[aria-pressed=true]{outline:calc(3 * var(--ts-unit)) solid #eef3ff;outline-offset:calc(4 * var(--ts-unit))}
+#theme-studio .ts-thumb{height:calc(110 * var(--ts-unit));position:relative;display:block;overflow:hidden;flex-shrink:0}
+#theme-studio .ts-thumb>img{width:100%;height:100%;object-fit:cover}
+#theme-studio .ts-thumb-lines{position:absolute;inset-inline-start:8%;bottom:19%;width:66%;height:calc(6 * var(--ts-unit));border-radius:6px;background:#dce5f378;box-shadow:0 calc(-16 * var(--ts-unit)) #dce5f347;pointer-events:none}
+#theme-studio .ts-thumb>img[src]~.ts-thumb-lines{display:none}
+#theme-studio .ts-tag{position:absolute;top:calc(12 * var(--ts-unit));inset-inline-end:calc(12 * var(--ts-unit));font-size:calc(17 * var(--ts-unit));line-height:1.2;background:#172338e3;color:#f3f6ff;padding:calc(6 * var(--ts-unit)) calc(12 * var(--ts-unit));border-radius:calc(25 * var(--ts-unit))}
+#theme-studio .ts-card-copy{padding:calc(14 * var(--ts-unit)) calc(17 * var(--ts-unit));display:flex;flex-direction:column;gap:calc(8 * var(--ts-unit));min-width:0}
+#theme-studio .ts-card-copy strong{font-size:calc(23 * var(--ts-unit));font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#theme-studio .ts-card-copy small{font-size:calc(18 * var(--ts-unit));color:#d0daeb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#theme-studio .ts-empty{margin:auto;text-align:center;padding:calc(25 * var(--ts-unit))}
+#theme-studio .ts-footer{display:flex;align-items:center;gap:calc(25 * var(--ts-unit));padding-top:calc(22 * var(--ts-unit));margin-top:calc(24 * var(--ts-unit));border-top:1px solid #c5d4ee24;flex:0 0 auto;color:#d0dbea}
+#theme-studio .ts-footer>span{font-size:calc(20 * var(--ts-unit));margin-inline-end:auto}
+html body #overlay #theme-studio .ts-footer button{font-size:calc(21 * var(--ts-unit));padding:calc(8 * var(--ts-unit));min-height:0;background:transparent;border:0}
+html body #overlay #theme-studio .ts-plus{color:#f1dfa8}
+html body #overlay #theme-studio [hidden]{display:none!important}
+@media(max-width:900px){html body #overlay #theme-studio{font-size:15px}#theme-studio .ts-header{padding:16px 20px;gap:15px;min-height:65px}#theme-studio .ts-brand{width:125px;height:38px}#theme-studio .ts-header nav{gap:6px}html body #overlay #theme-studio .ts-header nav button{font-size:14px;padding:8px}#theme-studio .ts-header-current{font-size:14px;padding:9px}#theme-studio .ts-time{font-size:23px}#theme-studio .ts-date{font-size:11px}html body #overlay #theme-studio .ts-close{font-size:14px;padding:9px 13px;min-height:34px}#theme-studio .ts-main{padding:10px 20px 18px;overflow-y:auto;display:block}#theme-studio .ts-heading{margin-bottom:18px}#theme-studio h1{font-size:27px;margin:6px 0 7px}#theme-studio .ts-eyebrow,#theme-studio .ts-kind{font-size:11px}#theme-studio p{font-size:14px}#theme-studio .ts-active{font-size:12px}#theme-studio .ts-feature{gap:22px;margin-bottom:20px}#theme-studio .ts-preview{width:56%;height:230px}#theme-studio h2{font-size:26px}#theme-studio .ts-description{max-width:none}#theme-studio .ts-availability{font-size:12px}html body #overlay #theme-studio .ts-apply,html body #overlay #theme-studio .ts-remove{font-size:14px;min-height:36px;padding:9px 13px}#theme-studio .ts-palette i{width:18px;height:18px}#theme-studio .ts-palette{margin:14px 0}#theme-studio .ts-collection{flex-wrap:wrap;gap:10px;margin-bottom:14px}#theme-studio h3{font-size:18px}#theme-studio .ts-count{font-size:12px}#theme-studio .ts-collections{font-size:13px;max-width:200px;padding:9px}html body #overlay #theme-studio .ts-filters button{font-size:13px;padding:9px 12px}#theme-studio .ts-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:14px;overflow:visible}#theme-studio .ts-catalog{display:block;min-height:130px}#theme-studio .ts-thumb{height:110px}#theme-studio .ts-tag{font-size:11px;top:8px;inset-inline-end:8px;padding:4px 8px}#theme-studio .ts-card-copy{padding:12px;gap:6px}#theme-studio .ts-card-copy strong{font-size:15px}#theme-studio .ts-card-copy small{font-size:12px}#theme-studio .ts-footer>span{font-size:12px}html body #overlay #theme-studio .ts-footer button{font-size:13px;padding:8px}#theme-studio .ts-footer{flex-wrap:wrap;margin-top:20px;padding-top:16px}#theme-studio .ts-status{font-size:13px}}
+@media(max-width:560px){#theme-studio .ts-header{flex-wrap:wrap}#theme-studio .ts-header nav{order:3;flex-basis:100%}#theme-studio .ts-clock{margin-inline-start:auto}#theme-studio .ts-active{display:none}#theme-studio .ts-feature{display:block}#theme-studio .ts-preview{width:100%;height:230px}#theme-studio .ts-detail{margin-top:18px}#theme-studio .ts-mini-header{font-size:11px}#theme-studio .ts-mini-header b{font-size:19px}#theme-studio .ts-mini-header>span:last-child{font-size:20px}#theme-studio .ts-mini-copy{margin-top:27px}#theme-studio .ts-mini-copy strong{font-size:27px}#theme-studio .ts-mini-copy small{font-size:9px}#theme-studio .ts-mini-copy>span{font-size:12px}#theme-studio .ts-mini-apps>span{font-size:12px;padding:9px 17px}#theme-studio .ts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#theme-studio .ts-footer>span{flex-basis:100%}}
+
+html body #overlay #theme-studio .ts-footer{position:static!important;inset:auto!important;width:auto!important;height:auto!important;background:transparent!important}
+html body #overlay #theme-studio .ts-header nav button,html body #overlay #theme-studio .ts-footer button,html body #overlay #theme-studio .ts-filters button{background:transparent!important;border:0!important}
+html body #overlay #theme-studio .ts-filters button[aria-pressed=true]{background:#b4c7e331!important}
+html body #overlay #theme-studio .ts-apply{background:#dce5f4!important;color:#1d2940!important;border-color:#dce5f4!important}
+html body #overlay #theme-studio .ts-plus{color:#f1dfa8!important}
+html body #theme-packs-overlay{z-index:12000!important}
+
+html body[data-theme] #overlay #modal.theme-studio-modal{background:linear-gradient(145deg,#15192e,#34415a 68%,#667084)!important}
+@media(min-width:901px){#theme-studio .ts-preview{height:calc(310 * var(--ts-unit))}#theme-studio h1{font-size:calc(48 * var(--ts-unit))}#theme-studio .ts-heading{margin-bottom:calc(20 * var(--ts-unit))}#theme-studio .ts-description{font-size:calc(22 * var(--ts-unit))}#theme-studio .ts-palette{margin:calc(20 * var(--ts-unit)) 0 calc(18 * var(--ts-unit))}#theme-studio h2{margin:calc(10 * var(--ts-unit)) 0 calc(12 * var(--ts-unit))}#theme-studio .ts-availability{margin-top:calc(12 * var(--ts-unit))}}
+/* Flex layout remains usable on the old WebKit edition without CSS Grid. */
+#theme-studio .ts-grid{display:flex;flex-wrap:wrap;align-items:flex-start;align-content:flex-start}
+html body #overlay #theme-studio .ts-card{flex:0 0 calc(16.6667% - 25 * var(--ts-unit));margin:calc(12 * var(--ts-unit))}
+@supports(display:grid){#theme-studio .ts-grid{display:grid}html body #overlay #theme-studio .ts-card{margin:0;min-width:0}}
+@supports(display:grid){#theme-studio .ts-grid{grid-auto-rows:max-content}html body #overlay #theme-studio .ts-card{flex:initial}}

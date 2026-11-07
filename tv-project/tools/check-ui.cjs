@@ -1,0 +1,58 @@
+const assert=require('assert');
+const path=require('path');
+const {chromium}=require('C:/Users/Admin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(__dirname,'..');
+const app='file:///'+path.join(root,'app/index.html').replace(/\\/g,'/');
+const location={city:'Saint-Eustache',country_name:'Canada',latitude:45.565,longitude:-73.905,timezone:'America/Toronto'};
+const forecast={current:{temperature_2m:8.4,weather_code:2,is_day:1,wind_speed_10m:12},daily:{time:['2026-10-22','2026-10-23','2026-10-24'],weather_code:[2,3,61],temperature_2m_max:[11,12,9],temperature_2m_min:[5,7,3]}};
+(async()=>{
+ const browser=await chromium.launch({headless:true,channel:'msedge'});
+ const page=await browser.newPage({viewport:{width:1920,height:1080}});
+ const errors=[];let offline=false;
+ page.on('pageerror',error=>errors.push(error.message));
+ await page.route('https://api.ipapi.is/**',route=>route.fulfill({json:location}));
+ await page.route('https://ipwho.is/**',route=>route.fulfill({json:location}));
+ await page.route('https://api.open-meteo.com/**',route=>offline?route.abort():route.fulfill({json:forecast}));
+ await page.route('https://geocoding-api.open-meteo.com/**',route=>route.fulfill({json:{results:[{name:'Saint-Eustache',country:'Canada',admin1:'Quebec',latitude:45.565,longitude:-73.905,timezone:'America/Toronto'}]}}));
+ await page.goto(app);
+ await page.waitForFunction(()=>document.getElementById('weather-temp').textContent==='8°');
+ assert((await page.locator('#weather-location').textContent())==='Saint-Eustache');
+ assert(await page.locator('#weather-range').textContent().then(x=>x.includes('Approx. area')));
+ assert(await page.locator('#favourites .favourite').count()===3);
+ // The initial remote focus must be able to reach the navigation above it.
+ await page.keyboard.press('ArrowUp');
+ assert((await page.evaluate(()=>document.activeElement.closest('nav')!==null)),'Up did not reach navigation');
+ await page.locator('#nav-apps').focus();await page.keyboard.press('Enter');
+ assert(await page.locator('#view-apps').isVisible());
+ const netflixPin=page.locator('[data-pin-id="org.tizen.netflix-app"]');
+ await netflixPin.focus();await page.keyboard.press('Enter');
+ assert(await netflixPin.getAttribute('aria-pressed')==='true');
+ await page.reload();
+ await page.waitForFunction(()=>document.querySelectorAll('#favourites .favourite').length===4);
+ assert(await page.locator('[data-favourite-id="org.tizen.netflix-app"]').count()===1,'Pinned app not restored');
+ // Search only affects the installed-app list.
+ await page.locator('#nav-apps').click();await page.locator('#app-search').fill('netflix');await page.locator('#search-installed').click();
+ assert(await page.locator('#catalog .catalog-tile').count()===1);
+ await page.locator('#clear-search').click();
+ await page.locator('#nav-settings').click();
+ await page.locator('#setting-clock').click();assert(await page.locator('#clock-format').textContent()==='12 hour');
+ await page.locator('#setting-motion').click();assert(await page.locator('body').evaluate(e=>e.classList.contains('reduce-motion')));
+ await page.locator('#setting-theme').click();
+ await page.locator('.theme-option.emerald').click();assert(await page.locator('body').getAttribute('data-theme')==='emerald');
+ for(let i=0;i<5;i++){await page.keyboard.press('ArrowRight');assert(await page.evaluate(()=>document.activeElement.closest('#modal')!==null),'Focus escaped modal');}
+ await page.keyboard.press('Escape');assert(await page.locator('#overlay').isHidden());
+ await page.locator('#setting-location').click();await page.locator('#city-input').fill('Saint-Eustache, Canada');await page.locator('#city-search').click();await page.locator('.city-result').click();
+ assert(await page.locator('#location-mode').textContent()==='Saint-Eustache');
+ await page.waitForFunction(()=>ClearTV.Weather.state.data!==null);
+ offline=true;await page.evaluate(()=>ClearTV.Weather.load(true));
+ await page.waitForFunction(()=>ClearTV.Weather.state.error!==''&&!ClearTV.Weather.state.loading);
+ assert(await page.locator('#weather-range').textContent().then(x=>x.includes('Saved weather')),'Stale weather not labelled');
+ offline=false;
+ await page.evaluate(()=>{ClearTV.settings.locationMode='auto';ClearTV.settings.clock24=true;ClearTV.settings.theme='blue';ClearTV.settings.motion=true;ClearTV.saveSettings();});
+ await page.reload();await page.waitForFunction(()=>document.getElementById('weather-temp').textContent==='8°');
+ await page.screenshot({path:path.join(root,'tv-home-v2-preview.png')});
+ await page.locator('#nav-apps').click();await page.screenshot({path:path.join(root,'tv-apps-v2-preview.png')});
+ assert(errors.length===0,JSON.stringify(errors));
+ console.log('PASS: remote Up navigation, app pinning persistence, app search, settings persistence, modal focus, manual city, auto location, weather cache on network failure.');
+ await browser.close();
+})().catch(error=>{console.error(error);process.exitCode=1;});

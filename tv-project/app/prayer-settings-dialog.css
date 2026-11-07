@@ -1,0 +1,100 @@
+/* Focused settings surface; controls retain their existing save handlers. */
+html body #prayer-settings-overlay{position:fixed;top:0;right:0;bottom:0;left:0;inset:0;z-index:11000;background:rgba(0,8,18,.72);display:flex;align-items:center;justify-content:center;color:#f8f5ed;font-family:inherit;font-size:22px}
+html body #prayer-settings-dialog{box-sizing:border-box;width:94%;max-width:1800px;height:94%;max-height:1040px;border:1px solid var(--prayer-theme-accent,#8aaeff);border-radius:22px;background:#08192b;box-shadow:0 24px 80px #0009;display:flex;flex-direction:column;padding:2.2% 2.4%;overflow:hidden}
+#prayer-settings-overlay *{box-sizing:border-box}
+#prayer-settings-overlay [hidden]{display:none!important}
+#prayer-settings-overlay button,#prayer-settings-overlay input,#prayer-settings-overlay select{font:inherit;color:inherit;min-width:0;max-width:100%;border:1px solid #456076;border-radius:10px;background:#102940;box-shadow:none;text-transform:none;letter-spacing:normal;line-height:1.4;padding:.65em .85em;white-space:normal;overflow-wrap:break-word}
+#prayer-settings-overlay button{cursor:pointer;min-height:2.9em;transition:none}
+#prayer-settings-overlay button:focus,#prayer-settings-overlay input:focus,#prayer-settings-overlay select:focus{outline:3px solid var(--prayer-theme-accent,#8aaeff);outline-offset:3px;background:var(--prayer-theme-selected,#243751)}
+#prayer-settings-overlay svg{width:1.35em;height:1.35em;flex-shrink:0;vertical-align:middle;color:var(--prayer-theme-accent,#8aaeff)}
+html body #prayer-settings-overlay .prayer-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0;padding-bottom:1em;border-bottom:1px solid #294258}
+html body #prayer-settings-overlay h2{font-size:1.65em;margin:0;color:var(--prayer-theme-accent,#8aaeff);line-height:1.4}
+html body #prayer-settings-overlay .prayer-dialog-intro{margin:.3em 0 0;color:var(--prayer-theme-text,#f7f9ff);font-size:.9em;line-height:1.5}
+#prayer-settings-overlay .prayer-dialog-close{margin-inline-start:1em;width:2.9em;flex-shrink:0;padding:.5em}
+html body #prayer-settings-overlay .prayer-dialog-body{display:flex;flex:1;min-height:0;padding-top:1.3em}
+html body #prayer-settings-overlay .prayer-dialog-nav{width:320px;max-width:27%;flex-shrink:0;padding:.2em .3em;overflow:auto}
+#prayer-settings-overlay .prayer-dialog-tab{display:flex;align-items:center;text-align:start;width:100%;background:transparent;border-color:transparent;margin-bottom:.5em;padding:.8em;min-height:3.4em}
+html body #prayer-settings-overlay .prayer-dialog-tab span{margin-inline-start:.75em;line-height:1.3}
+#prayer-settings-overlay .prayer-dialog-tab[aria-selected=true]{background:var(--prayer-theme-selected,#243751);border-color:var(--prayer-theme-accent,#8aaeff);color:var(--prayer-theme-selected-text,#f7f9ff)}
+html body #prayer-settings-overlay .prayer-dialog-content{flex:1;min-width:0;overflow:auto;padding:.2em .5em .3em 1.6em;margin-inline-start:1.3em;border-inline-start:1px solid #294258}
+#prayer-settings-overlay[dir=rtl] .prayer-dialog-content{padding:.2em 1.6em .3em .5em}
+#prayer-settings-overlay .prayer-settings-tabpane>h3{font-size:1.25em;margin:0 0 .3em;line-height:1.4}
+html body #prayer-settings-overlay .prayer-pane-hint{color:var(--prayer-theme-text,#f7f9ff);font-size:.88em;margin:0 0 1em;line-height:1.5}
+#prayer-settings-overlay .prayer-settings-tabpane>button{display:block;width:100%;text-align:start;margin:.55em 0}
+#prayer-settings-overlay .prayer-settings-tabpane>p:not(.prayer-pane-hint){font-size:.86em;line-height:1.55;color:var(--prayer-theme-text,#f7f9ff)}
+html body #prayer-settings-overlay .prayer-dialog-footer{font-size:.8em;color:var(--prayer-theme-text,#f7f9ff);border-top:1px solid #294258;padding-top:.9em;margin:.8em 0 0;flex-shrink:0}
+#prayer-settings-overlay .prayer-local-form{padding:0;margin:0;border:0;background:transparent;max-height:none;overflow:visible}
+#prayer-settings-overlay .prayer-local-note{display:none}
+#prayer-settings-overlay .prayer-local-row{display:block;margin:0 0 .6em;padding:0;background:#0b2034;border:1px solid #29465e;border-radius:12px;overflow:hidden}
+#prayer-settings-overlay .prayer-local-row-toggle{display:flex;align-items:center;width:100%;border:0;border-radius:0;background:transparent;text-align:start;padding:.85em}
+html body #prayer-settings-overlay .prayer-local-row-toggle>span{margin-inline-start:.65em;font-weight:700;flex-shrink:0}
+html body #prayer-settings-overlay .prayer-local-row-toggle>small{font-size:.7em;color:var(--prayer-theme-text,#f7f9ff);margin:0 .9em;flex:1;line-height:1.5}
+html body #prayer-settings-overlay .prayer-local-row-toggle[aria-expanded=true]>svg:last-child{transform:rotate(90deg)}
+#prayer-settings-overlay .prayer-local-fields{display:flex;flex-wrap:wrap;padding:.3em .9em 1em;border-top:1px solid #29465e}
+#prayer-settings-overlay .prayer-local-fields>label{display:flex;flex-direction:column;width:50%;padding:.4em .4em 0 0;margin:0;min-width:0}
+#prayer-settings-overlay .prayer-local-fields>label>span{font-size:.8em;color:var(--prayer-theme-text,#f7f9ff);margin-bottom:.5em;line-height:1.4}
+#prayer-settings-overlay .prayer-local-fields input,#prayer-settings-overlay .prayer-local-fields select{width:100%;min-height:2.8em}
+html body #prayer-settings-overlay .prayer-value-stepper{display:flex;align-items:center;direction:ltr}
+#prayer-settings-overlay .prayer-value-stepper input{width:42%;flex:1;text-align:center;border-radius:0;padding:.5em .2em;appearance:textfield}
+#prayer-settings-overlay .prayer-value-stepper input::-webkit-inner-spin-button{appearance:none}
+#prayer-settings-overlay .prayer-value-step{padding:.5em;width:2.4em;min-height:2.8em;border-radius:8px 0 0 8px}
+#prayer-settings-overlay .prayer-value-step:last-child{border-radius:0 8px 8px 0}
+#prayer-settings-overlay .prayer-local-actions{display:flex;margin-top:.8em}
+#prayer-settings-overlay #prayer-local-save{background:var(--prayer-theme-button,#435f99);color:var(--prayer-theme-button-text,#fff);border-color:var(--prayer-theme-accent,#8aaeff);font-weight:700}
+#prayer-settings-overlay #prayer-local-reset{margin-inline-start:.6em}
+#prayer-settings-overlay .prayer-location-search{display:flex;margin-top:1em}
+#prayer-settings-overlay #prayer-city{flex:1;width:60%;margin-inline-end:.6em}
+#prayer-settings-overlay #prayer-city-results{display:flex;flex-direction:column}
+#prayer-settings-overlay #prayer-city-results>button{margin:.3em 0}
+#prayer-settings-overlay .prayer-method-choices{display:flex;flex-direction:column;padding:.5em;border:1px solid var(--prayer-theme-accent,#8aaeff);border-radius:10px;max-height:14em;overflow:auto}
+#prayer-settings-overlay .prayer-method-choices button{margin:.2em 0;text-align:start}
+#prayer-settings-overlay #prayer-volume{width:100%;padding:.5em 0;accent-color:#e6c47b}
+html body #prayer-settings-overlay[data-prayer-short=true] #prayer-settings-dialog{height:96%;padding:1.2% 2%}
+#prayer-settings-overlay[data-prayer-short=true] .prayer-dialog-header{padding-bottom:.5em}
+#prayer-settings-overlay[data-prayer-short=true] .prayer-dialog-intro{display:none}
+#prayer-settings-overlay[data-prayer-short=true] .prayer-dialog-body{padding-top:.7em}
+#prayer-settings-overlay[data-prayer-short=true] .prayer-dialog-footer{padding-top:.5em;margin-top:.5em}
+html body #prayer-settings-overlay[data-prayer-layout=compact]{font-size:18px}
+html body #prayer-settings-overlay[data-prayer-layout=compact] #prayer-settings-dialog{width:96%;height:96%;padding:16px}
+html body #prayer-settings-overlay[data-prayer-layout=compact] .prayer-dialog-body{flex-direction:column}
+html body #prayer-settings-overlay[data-prayer-layout=compact] .prayer-dialog-nav{width:100%;max-width:none;display:flex;overflow-x:auto;flex:0 0 auto}
+#prayer-settings-overlay[data-prayer-layout=compact] .prayer-dialog-tab{width:auto;flex:0 0 auto;min-height:48px;margin-inline-end:8px}
+html body #prayer-settings-overlay[data-prayer-layout=compact] .prayer-dialog-content{margin-inline-start:0;padding:.7em .2em;border-inline-start:0;border-top:1px solid #294258}
+#prayer-settings-overlay[data-prayer-layout=compact] .prayer-local-row-toggle>small{display:none}
+#prayer-settings-overlay[data-prayer-layout=compact] .prayer-local-fields>label{width:100%}
+
+
+html body #prayer-settings-overlay .prayer-dialog-nav{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;position:static!important;transform:none!important;background:transparent!important;border:0!important;box-shadow:none!important;border-radius:0!important;white-space:normal!important}
+html body #prayer-settings-overlay .prayer-dialog-tab{flex:none!important;transform:none!important;position:static!important;opacity:1!important}
+html body #prayer-settings-overlay .prayer-dialog-tab span{display:block!important;position:static!important;opacity:1!important;transform:none!important;max-width:none!important}
+html body #prayer-settings-overlay #prayer-settings-dialog{background:#08192b!important}
+html body #prayer-settings-overlay .prayer-local-row-toggle{background:#102940!important}
+
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay #prayer-settings-dialog{background:#08192b!important;border-color:var(--prayer-theme-accent,#8aaeff)!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay button{background:#102940!important;border-color:#456076!important;color:#f8f5ed!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay .prayer-dialog-tab{background:transparent!important;border-color:transparent!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay .prayer-dialog-tab[aria-selected=true]{background:var(--prayer-theme-selected,#243751)!important;border-color:var(--prayer-theme-accent,#8aaeff)!important;color:var(--prayer-theme-selected-text,#f7f9ff)!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay button:focus{outline:3px solid var(--prayer-theme-accent,#8aaeff)!important;outline-offset:2px!important;background:var(--prayer-theme-selected,#243751)!important;box-shadow:none!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay #prayer-local-save{background:var(--prayer-theme-button,#435f99)!important;color:var(--prayer-theme-button-text,#fff)!important;border-color:var(--prayer-theme-accent,#8aaeff)!important}
+
+/* Reuse the app's tonal surfaces; retain the approved gold accents. */
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay #prayer-settings-dialog{background:var(--prayer-theme-panel,#212a3e)!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay button,html body #prayer-settings-overlay input,html body #prayer-settings-overlay select{background:var(--prayer-theme-control,#384357)!important;color:var(--prayer-theme-text,#f7f9ff)!important}
+html body #prayer-settings-overlay .prayer-local-row{background:var(--prayer-theme-card,rgba(44,55,78,.86))!important}
+html body #prayer-settings-overlay .prayer-pane-hint,html body #prayer-settings-overlay .prayer-dialog-intro,html body #prayer-settings-overlay .prayer-local-row-toggle>small,html body #prayer-settings-overlay .prayer-local-fields>label>span{color:var(--prayer-theme-text,#f7f9ff)!important}
+
+/* Distinct, readable icon roles; selected controls still follow the active theme. */
+html body #prayer-settings-overlay #prayer-dialog-tab-location svg{color:var(--prayer-theme-accent,#8aaeff)}
+html body #prayer-settings-overlay #prayer-dialog-tab-method svg{color:var(--prayer-theme-secondary,#bcaaff)}
+html body #prayer-settings-overlay #prayer-dialog-tab-local svg{color:#8bd5be}
+html body #prayer-settings-overlay #prayer-dialog-tab-audio svg{color:#ffb4ab}
+html body #prayer-settings-overlay #prayer-dialog-tab-duas svg{color:#c5b3ff}
+html body #prayer-settings-overlay #prayer-dialog-tab-home svg{color:#8acff0}
+
+/* Two readable columns; no country name disappears into horizontal scrolling. */
+html body #prayer-settings-overlay #prayer-method-choices{display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;gap:0!important;grid-template-columns:none!important;min-width:0!important;width:100%!important;max-width:100%!important;max-height:15em!important;padding:6px!important;box-sizing:border-box!important;overflow-x:hidden!important;overflow-y:auto!important;scroll-padding:8px}
+html body #prayer-settings-overlay #prayer-method-choices>button{flex:0 0 calc(50% - 8px)!important;width:calc(50% - 8px)!important;min-width:0!important;max-width:calc(50% - 8px)!important;height:auto!important;min-height:3.2em!important;padding:12px 14px!important;margin:4px!important;font-size:1em!important;line-height:1.5!important;white-space:normal!important;word-break:normal!important;overflow-wrap:break-word!important;text-align:start!important;box-sizing:border-box!important}
+html body #prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay#prayer-settings-overlay #prayer-method-choices>button[aria-pressed=true]{background:var(--prayer-theme-selected,#243751)!important;border-color:var(--prayer-theme-accent,#8aaeff)!important;color:var(--prayer-theme-selected-text,#f7f9ff)!important}
+html body #prayer-settings-overlay #prayer-method-choices>button[aria-pressed=true]:before{content:'✓';display:inline-block;margin-inline-end:.5em;color:var(--prayer-theme-accent,#8aaeff)}
+
+html body #prayer-settings-overlay #prayer-method-choices[hidden]{display:none!important}

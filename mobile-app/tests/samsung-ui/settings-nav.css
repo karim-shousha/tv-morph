@@ -1,7 +1,0 @@
-#view-settings .settings-category-menu{display:flex;gap:26px;margin:40px 0;direction:ltr}
-#view-settings .settings-category-entry{flex:1;height:240px;border-radius:28px;border:1px solid var(--cinema-border);background:var(--cinema-glass);box-shadow:inset 0 1px #ffffff55,0 15px 35px #0002;display:flex;flex-direction:column;align-items:center;justify-content:center;color:inherit;transition:transform .2s}
-#view-settings .settings-category-entry svg{width:78px;height:78px;margin-bottom:25px;color:var(--cinema-glow)}#view-settings .settings-category-entry strong{font-size:30px}
-#view-settings .settings-category-entry:focus{outline:3px solid var(--cinema-glow);outline-offset:4px;transform:translateY(-5px);box-shadow:0 0 25px var(--cinema-glow)}
-#view-settings .settings-grid{display:block}#view-settings .settings-category-panel>.settings-panel{margin-top:20px;width:100%}#view-settings .settings-category-panel>button{font-size:23px;margin-bottom:18px}
-#view-settings #settings-category-general>.settings-panel,#view-settings #settings-category-time>.settings-panel{padding:28px 34px}
-#view-settings.prayer-settings-mode #settings-category-prayer>button{display:none}

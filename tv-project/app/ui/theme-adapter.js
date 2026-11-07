@@ -1,8 +1,8 @@
 /* Presentation only: never downloads assets, changes a license, or writes settings. */
 (function(w){'use strict';
- var C=w.ClearTV||{},base={blue:['#63caff','#14283e'],night:['#8aaeff','#101421'],emerald:['#68e8ba','#0d302e'],amber:['#ffc680','#302017'],violet:['#cda2ff','#241632'],ahly:['#ff4769','#300c1b']};
- var keys=['blue','night','emerald','amber','violet','ahly','zamalek','barcelona','madrid','egypt','basketball','baseball','montreal','toronto','argentina','portugal','ismaily','king-salman','crown-prince','nassr','hilal','ittihad','ahli-saudi','inter-miami','saudi-national','egypt-national','blue-cinema','gta6'];
- var scenes={'gta6':true,'blue-cinema':true,'saudi-national':true,'egypt-national':true};
+ var C=w.ClearTV||{},base={blue:['#63caff','#14283e'],night:['#8aaeff','#101421'],emerald:['#68e8ba','#0d302e'],amber:['#ffc680','#302017'],violet:['#cda2ff','#241632'],ahly:['#ff5470','#8c1831']};
+ var keys=['islamic-makkah','islamic-madinah','islamic-quds','ac-milan-legends','blue','night','emerald','amber','violet','ahly','zamalek','barcelona','madrid','egypt','basketball','baseball','montreal','toronto','argentina','portugal','ismaily','king-salman','crown-prince','nassr','hilal','ittihad','ahli-saudi','inter-miami','saudi-national','egypt-national','blue-cinema','gta6'];
+ var scenes={'islamic-makkah':true,'islamic-madinah':true,'islamic-quds':true,'ac-milan-legends':true,'night':true,'ahly':true,'gta6':true,'blue-cinema':true,'saudi-national':true,'egypt-national':true};
  function hex(v,fallback){return /^#[0-9a-f]{6}$/i.test(v||'')?v:fallback;}
  function rgb(s){return [parseInt(s.substr(1,2),16),parseInt(s.substr(3,2),16),parseInt(s.substr(5,2),16)];}
  function rgba(s,a){return 'rgba('+rgb(s).join(',')+','+a+')';}
@@ -10,19 +10,24 @@
  function luminance(s){return rgb(s).map(function(v){v/=255;return v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4);}).reduce(function(sum,v,i){return sum+v*[.2126,.7152,.0722][i];},0);}
  function readable(text,bg,minimum){var value=text;for(var i=0;i<12;i++){var a=luminance(value),b=luminance(bg);if((Math.max(a,b)+.05)/(Math.min(a,b)+.05)>=minimum)return value;value=mix(value,'#ffffff',.22);}return '#ffffff';}
  function resolve(settings){var s=settings||{},id=keys.indexOf(s.theme)>=0?s.theme:'blue',club=(C.ClubThemes||w.MorphThemeIdentities||{})[id]||{},p=base[id]||['#63caff','#14283e'];
-  var accent=hex(s.highlightColor,hex(s.accent,hex(club.primary,p[0]))),identity=hex(club.secondary,p[1]),bg=hex(s.backgroundStart,mix(identity,'#030610',.7)),raised=mix(hex(s.cardColor,identity),'#050916',.45);
+  var accent=hex(s.highlightColor,hex(s.accent,hex(club.primary,p[0]))),identity=hex(club.secondary,p[1]),bg=hex(s.backgroundStart,mix(identity,'#030610',id==='ahly'?.45:.7)),raised=mix(hex(s.cardColor,identity),'#050916',.45);
   /* Retain the user's hue as a safe tonal surface; never rewrite the saved color. */
   while(luminance(raised)>.075)raised=mix(raised,'#050916',.12);
+  var dockRaised=raised,dockFocus=readable(accent,dockRaised,4.5),dockSecondary=id==='blue'||id==='blue-cinema'?'#a88aff':readable(mix(accent,identity,.25),dockRaised,3);
+  if(id==='blue'||id==='night'){bg=hex(s.backgroundStart,'#171e32');raised=hex(s.cardColor,'#2c374e');}
   var focus=readable(accent,raised,4.5),text=readable(hex(s.textColor,'#f7f9ff'),raised,7),secondary=id==='blue'||id==='blue-cinema'?'#a88aff':readable(mix(accent,identity,.25),raised,3);
+  var buttonA=mix(accent,'#030610',.32),buttonB=mix(secondary,'#030610',.32);
+  while(Math.min((luminance('#ffffff')+.05)/(luminance(buttonA)+.05),(luminance('#ffffff')+.05)/(luminance(buttonB)+.05))<4.5){buttonA=mix(buttonA,'#030610',.06);buttonB=mix(buttonB,'#030610',.06);}
   var reference=['blue','blue-cinema','gta6'].indexOf(id)>=0&&!hex(s.highlightColor,hex(s.accent,'')),neonA=reference?'#36bfff':focus,neonB=reference?'#7045ff':secondary;
   var opacity=Math.max(.48,Math.min(.88,.42+(Number(s.glassOpacity)||18)/150)),custom=/^data:image\/(png|jpeg|webp);base64,/.test(s.artImage||''),slides=s.slideshowEnabled&&Array.isArray(s.backgroundImages)&&s.backgroundImages.length;
-  return {theme:id,art:{fit:'contain',position:club.portrait?'right center':'right top',width:custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',height:'100%',custom:custom,slideshow:!!slides,source:custom?s.artImage:club.art|| (id==='ahly'?'al-ahly-duel.webp':'')},tokens:{
-   '--ui-bg':bg,'--ui-bg-raised':raised,'--ui-glass-color':identity,'--ui-glass-opacity':String(opacity),
-   '--ui-card-bg':rgba(raised,.8),'--ui-card-border':rgba(focus,.28),'--ui-text':text,'--ui-text-muted':readable(mix(text,raised,.24),raised,4.5),
-   '--ui-accent':accent,'--ui-accent-secondary':secondary,'--ui-button-gradient':'linear-gradient(120deg,'+accent+','+secondary+')',
-   '--ui-neon-a':neonA,'--ui-neon-b':neonB,'--ui-neon-halo':rgba(neonA,.65),'--ui-neon-halo-secondary':rgba(neonB,.6),'--ui-focus-surface-a':rgba(neonB,.38),'--ui-focus-surface-b':rgba(neonA,.25),'--ui-focus-ring':focus,'--ui-focus-glow':rgba(focus,.38),'--ui-dock-bg':rgba(raised,opacity),'--ui-dock-border':rgba(focus,.3),
-   '--ui-art-scrim':'linear-gradient(90deg,'+rgba(mix(bg,'#030610',.7),.96)+','+rgba(mix(bg,'#030610',.7),.68)+' 33%,'+rgba(bg,.08)+' 73%)',
-   '--ui-overlay-bg':rgba(bg,.9),'--ui-art-width':custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',
+  return {theme:id,art:{fit:'contain',position:club.portrait?'right center':'right top',width:custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',height:'100%',custom:custom,slideshow:!!slides,source:custom?s.artImage:club.art|| (id==='ahly'?'ahly-team-cutout-v2.webp':'')},tokens:{
+   '--ui-dock-focus-ring':dockFocus,'--ui-dock-focus-glow':rgba(dockFocus,.38),'--ui-dock-card-border':rgba(dockFocus,.28),'--ui-dock-focused-surface':'radial-gradient(ellipse at 95% 100%,'+rgba(dockFocus,.48)+',transparent 65%),repeating-radial-gradient(ellipse at 120% -20%,transparent 0,transparent 13px,'+rgba(dockSecondary,.25)+' 14px,transparent 16px),linear-gradient('+dockRaised+','+dockRaised+')',
+   '--ui-idle-surface':'linear-gradient(135deg,'+rgba('#d5e0ff',.13)+','+rgba(raised,.52)+')','--ui-focused-surface':'linear-gradient(135deg,'+rgba('#d5e0ff',.22)+','+rgba(raised,.66)+')','--ui-bg':bg,'--ui-bg-raised':raised,'--ui-panel-bg':mix(raised,'#030610',.25),'--ui-control-bg':mix(raised,'#ffffff',.06),'--ui-selected-bg':mix(accent,'#030610',.78),'--ui-control-text':readable(text,mix(raised,'#ffffff',.06),4.5),'--ui-selected-text':readable(text,mix(accent,'#030610',.78),4.5),'--ui-glass-color':identity,'--ui-glass-opacity':String(opacity),
+   '--ui-card-bg':'linear-gradient(135deg,'+rgba('#d5e0ff',.13)+','+rgba(raised,.52)+')','--ui-card-border':rgba('#ffffff',.26),'--ui-text':text,'--ui-text-muted':readable(mix(text,raised,.24),raised,4.5),
+   '--ui-accent':accent,'--ui-accent-secondary':secondary,'--ui-button-text':'#ffffff','--ui-button-gradient':'linear-gradient(120deg,'+buttonA+','+buttonB+')','--ui-hero-button-gradient':'linear-gradient(145deg,'+mix(accent,'#ffffff',.12)+' 0%,'+buttonA+' 48%,'+buttonB+' 100%)','--ui-hero-button-glow':rgba(accent,.4),
+   '--ui-neon-a':neonA,'--ui-neon-b':neonB,'--ui-neon-halo':rgba(neonA,.65),'--ui-neon-halo-secondary':rgba(neonB,.6),'--ui-focus-surface-a':rgba(neonB,.38),'--ui-focus-surface-b':rgba(neonA,.25),'--ui-focus-ring':'#f7f9ff','--ui-focus-glow':'transparent','--ui-dock-bg':rgba(raised,.32),'--ui-dock-border':rgba('#ffffff',.22),
+   '--ui-art-scrim':id==='ac-milan-legends'?'linear-gradient(90deg,rgba(15,3,8,.58),rgba(24,4,10,.12) 45%,transparent 80%)':id==='ahly'?'linear-gradient(90deg,rgba(105,9,31,.62),rgba(151,17,46,.22) 48%,rgba(151,17,46,.06) 80%)':id==='night'?'linear-gradient(90deg,rgba(3,9,22,.5),rgba(3,9,22,.12) 55%,transparent)':'linear-gradient(90deg,'+rgba(mix(bg,'#030610',.7),.96)+','+rgba(mix(bg,'#030610',.7),.68)+' 33%,'+rgba(bg,.08)+' 73%)',
+   '--ui-summary-background':'linear-gradient(125deg,'+rgba(mix(bg,'#030610',.3),.96)+','+rgba(raised,.94)+')','--ui-overlay-bg':rgba(bg,.9),'--ui-art-width':custom||slides||scenes[id]?'100%':club.portrait?'66%':'78%',
    '--ui-art-position':club.portrait?'right center':'right top','--ui-art-fit':'contain'
   }};
  }

@@ -1,0 +1,127 @@
+/* A single logical TV header: viewport media queries never change these metrics.
+   Repeated header ID outranks the historical platform/theme header overrides. */
+
+body[data-launcher-chrome] main{padding-top:calc(104 * var(--launcher-header-unit,1px) + 26px)!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header{position:absolute!important;top:0!important;left:14px!important;right:24px!important;width:auto!important;height:calc(104 * var(--launcher-header-unit,1px))!important;min-height:calc(104 * var(--launcher-header-unit,1px))!important;max-height:none!important;margin:0!important;padding:0 12px!important;display:flex!important;align-items:center!important;gap:calc(18 * var(--launcher-header-unit,1px))!important;direction:ltr!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .brand{order:1;flex:0 0 calc(230 * var(--launcher-header-unit,1px))!important;min-width:0!important;max-width:calc(230 * var(--launcher-header-unit,1px))!important;width:calc(230 * var(--launcher-header-unit,1px))!important;height:calc(72 * var(--launcher-header-unit,1px))!important;padding:0!important;margin:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .brand img{width:100%!important;height:100%!important;object-fit:contain!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav{order:2;position:static!important;display:flex!important;flex:1 1 auto!important;align-items:center!important;justify-content:center!important;height:calc(60 * var(--launcher-header-unit,1px))!important;min-width:0!important;max-width:none!important;width:auto!important;gap:calc(6 * var(--launcher-header-unit,1px))!important;padding:4px 8px!important;margin:0!important;transform:none!important;overflow-x:auto!important;overflow-y:hidden!important;background:transparent!important;border:0!important;border-radius:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav button,body[data-launcher-chrome] #morph-header#morph-header#morph-header .launcher-settings-action{box-sizing:border-box!important;display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:center!important;min-width:0!important;width:auto!important;height:calc(48 * var(--launcher-header-unit,1px))!important;min-height:calc(48 * var(--launcher-header-unit,1px))!important;font-size:calc(22 * var(--launcher-header-unit,1px))!important;line-height:1.3!important;padding:6px calc(18 * var(--launcher-header-unit,1px))!important;margin:0!important;white-space:nowrap!important;border-radius:30px!important;border:1px solid transparent!important;background:transparent!important;box-shadow:none!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status{order:3;flex:0 0 auto!important;min-width:0!important;width:auto!important;margin:0!important;gap:16px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock{flex:0 0 calc(150 * var(--launcher-header-unit,1px))!important;width:calc(150 * var(--launcher-header-unit,1px))!important;min-width:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock time{font-size:calc(32 * var(--launcher-header-unit,1px))!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock>span{font-size:calc(14 * var(--launcher-header-unit,1px))!important;white-space:nowrap!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .launcher-settings-action{order:4;flex-shrink:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #viewer-button{order:0;flex:0 0 calc(54 * var(--launcher-header-unit,1px))!important;width:calc(54 * var(--launcher-header-unit,1px))!important;height:calc(54 * var(--launcher-header-unit,1px))!important;min-height:0!important;padding:12px!important;margin:0 40px 0 0!important;border-radius:50%!important;border:1px solid rgba(225,235,255,.18)!important;background:rgba(25,40,61,.7)!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #viewer-button svg{width:100%;height:100%;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header button:focus{outline:3px solid #f7f9ff!important;outline-offset:-3px!important;background:rgba(213,224,255,.2)!important;}
+.launcher-profiles-dialog{width:1120px;text-align:center;}.launcher-profiles-dialog h2{font-size:42px;margin:0 0 30px;}.launcher-viewer-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-bottom:30px;}.launcher-viewer-card{display:flex;flex-direction:column;align-items:center;gap:10px;width:190px;min-width:0;padding:15px;border:1px solid transparent;border-radius:18px;background:transparent;}.launcher-viewer-avatar{display:flex;align-items:center;justify-content:center;width:110px;height:110px;border-radius:20px;background:#274767;color:#fff;}.launcher-viewer-avatar svg{width:64px;height:64px;}.launcher-viewer-card.is-kids .launcher-viewer-avatar{background:#306357;}.launcher-viewer-card strong{font-size:25px;max-width:100%;overflow-wrap:break-word;}.launcher-viewer-card small{font-size:19px;}.launcher-viewer-card[aria-pressed=true]{border-color:#a4def5;background:#ffffff0d;}.launcher-profile-form{padding:22px;border:1px solid #ffffff26;border-radius:16px;text-align:start;margin-bottom:22px;}.launcher-profile-form label{display:block;font-size:24px;margin-bottom:12px;}.launcher-profile-form input{width:100%;min-width:0;}.launcher-profile-types{display:flex;gap:16px;}.launcher-profile-types [aria-pressed=true]{outline:3px solid #9eeaff;}.launcher-profile-form .primary{margin-top:18px;}.launcher-profiles-dialog button{white-space:normal;overflow-wrap:break-word;}.launcher-size-dialog{width:650px;}.launcher-size-dialog h2{font-size:32px;}.launcher-size-dialog [aria-pressed=true]{background:#354895;}
+body[data-launcher-chrome] #morph-header .launcher-nav-icon{display:inline-flex;align-items:center;justify-content:center;margin-right:10px;color:var(--ui-accent,#87d6ff);}
+body[data-launcher-chrome] #morph-header .launcher-nav-icon svg{width:calc(24 * var(--launcher-header-unit,1px));height:calc(24 * var(--launcher-header-unit,1px));}
+/* Weather used to be absolutely positioned over the nav at some resolutions. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-card{position:static!important;transform:none!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;flex:0 0 calc(120 * var(--launcher-header-unit,1px))!important;width:calc(120 * var(--launcher-header-unit,1px))!important;min-width:0!important;height:calc(72 * var(--launcher-header-unit,1px))!important;padding:4px!important;margin:0!important;overflow:hidden!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-temp{position:static!important;order:0;font-size:calc(22 * var(--launcher-header-unit,1px))!important;line-height:1.2!important;letter-spacing:0!important;margin:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .weather-top{position:static!important;order:1;display:block!important;max-width:100%!important;font-size:calc(14 * var(--launcher-header-unit,1px))!important;line-height:1.3!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-location{display:block!important;max-width:100%!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-icon,body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-condition,body[data-launcher-chrome] #morph-header#morph-header#morph-header .weather-bottom{display:none!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .wifi-symbol{width:calc(26 * var(--launcher-header-unit,1px))!important;height:calc(26 * var(--launcher-header-unit,1px))!important;}
+
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #nav-home,body[data-launcher-chrome] #morph-header#morph-header#morph-header #nav-matches{display:none!important;}
+
+/* Settings belongs immediately after Language; status stays beyond the menu. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header{left:0!important;padding-left:var(--launcher-logo-left,192px)!important;padding-right:16px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #viewer-button{position:absolute!important;left:var(--launcher-profile-left,51px)!important;top:50%!important;transform:translateY(-50%)!important;margin:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .launcher-settings-action{order:0!important;gap:8px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .launcher-settings-action svg{width:calc(24 * var(--launcher-header-unit,1px));height:calc(24 * var(--launcher-header-unit,1px));flex-shrink:0;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #nav-settings:focus{background:#315faa!important;color:white!important;border-color:#a8d5ff!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock time{font-size:32px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-card{flex:0 1 180px!important;width:180px!important;max-width:220px!important;height:auto!important;min-height:64px!important;overflow:visible!important;padding:0 18px 0 0!important;border:0!important;border-right:1px solid rgba(225,235,255,.35)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-location{font-size:16px!important;line-height:1.3!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:break-word!important;text-align:center!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .weather-top{height:auto!important;max-height:none!important;}
+
+.launcher-viewer-entry{width:190px;min-width:0;display:flex;flex-direction:column;align-items:stretch;gap:8px;}
+.launcher-avatar-edit{font-size:18px;padding:8px;border:1px solid #8da6c655;border-radius:10px;background:transparent;color:inherit;}
+.launcher-viewer-avatar{overflow:hidden;}.launcher-viewer-avatar img{width:100%;height:100%;object-fit:cover;}
+.launcher-avatar-choices{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0;}
+.launcher-avatar-choices .launcher-avatar-option{width:84px!important;height:84px!important;min-height:84px!important;padding:0!important;margin:0!important;overflow:hidden;border:3px solid transparent;border-radius:14px;background:#223c59;color:white;}
+.launcher-avatar-choices .launcher-avatar-option img{display:block;width:100%;height:100%;object-fit:cover;}
+.launcher-avatar-choices .launcher-avatar-option svg{width:54px;height:54px;}
+.launcher-avatar-choices .launcher-avatar-option[aria-pressed=true]{border-color:#9ee7ff;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #viewer-button{overflow:hidden!important;padding:0!important;}
+body[data-launcher-chrome] #morph-header #viewer-button img{width:100%;height:100%;object-fit:cover;}
+
+/* Keep weather and time together; remove inherited clock gutters. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status{gap:12px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock{flex:0 0 auto!important;width:auto!important;min-width:96px!important;max-width:none!important;padding:0!important;margin:0!important;border:0!important;text-align:center!important;align-items:center!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-card{flex:0 1 auto!important;width:auto!important;max-width:180px!important;padding:0 12px 0 0!important;}
+
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .weather-top{margin:0!important;padding:0!important;min-height:0!important;flex:0 0 auto!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-card{gap:4px!important;}
+
+body[data-launcher-chrome] #view-home #home-help{display:none!important;}
+
+/* Larger text may use a second menu row inside the chosen header height. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav{flex-wrap:wrap!important;height:auto!important;row-gap:0!important;overflow:visible!important;}
+
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status{gap:0!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status #weather-card{margin:0 12px 0 0!important;}
+
+/* Home shortcuts: Settings, Connect phone, Your apps, Language. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #nav-wifi{display:none!important}
+
+/* Profiles: a clear chooser with an optional, independently scrolling editor. */
+#launcher-profiles{padding:28px!important}
+#launcher-profiles .launcher-profiles-dialog{position:relative!important;display:flex!important;flex-direction:column!important;width:1520px!important;max-width:94%!important;max-height:92%!important;padding:32px!important;gap:20px!important;overflow:hidden!important;box-sizing:border-box!important;background:var(--ui-overlay-bg,#202c43)!important;border:1px solid var(--ui-border,#ffffff38)!important;border-radius:26px!important}
+#launcher-profiles .launcher-profiles-dialog>h2{flex:none!important;font-size:36px;line-height:1.3!important;margin:0 64px 4px!important;text-align:center!important}
+#launcher-profiles .launcher-profiles-layout{display:flex!important;align-items:stretch!important;gap:24px!important;flex:1 1 auto!important;min-height:0!important;overflow:hidden!important}
+#launcher-profiles .launcher-profiles-chooser{flex:1 1 0!important;min-width:0!important;min-height:0!important;overflow:auto!important;padding:12px!important}
+#launcher-profiles .launcher-viewer-grid{display:flex!important;flex-wrap:wrap!important;align-items:flex-start!important;justify-content:center!important;gap:0!important;margin:0!important}
+#launcher-profiles .launcher-viewer-entry,#launcher-profiles .launcher-profile-add{width:190px!important;min-width:0!important;flex:0 0 190px!important;box-sizing:border-box!important;margin:8px!important}
+#launcher-profiles .launcher-viewer-card{width:100%!important;padding:16px!important;gap:10px!important;box-sizing:border-box!important;border:1px solid var(--ui-border,#ffffff30)!important;background:var(--ui-control-bg,#ffffff08)!important;border-radius:20px!important;min-height:210px!important}
+#launcher-profiles .launcher-viewer-card[aria-pressed=true]{border:2px solid var(--ui-focus-ring,#accbff)!important;background:var(--ui-selected-bg,#354764)!important}
+#launcher-profiles .launcher-viewer-avatar{width:112px!important;height:112px!important;flex:none!important;border-radius:18px!important}
+#launcher-profiles .launcher-viewer-card strong{font-size:24px;line-height:1.3!important;max-width:100%!important}
+#launcher-profiles .launcher-viewer-card small{font-size:19px;line-height:1.4!important;color:var(--ui-text,#fff)!important}
+#launcher-profiles .launcher-avatar-edit{min-height:40px!important;padding:7px 10px!important;font-size:17px;background:transparent!important}
+#launcher-profiles .launcher-profile-add{min-height:210px!important;align-self:flex-start!important;background:transparent!important;border-style:dashed!important;justify-content:center!important}
+#launcher-profiles .launcher-profile-add-icon{display:flex;align-items:center;justify-content:center;width:112px;height:112px;border:1px dashed var(--ui-border,#ffffff66);border-radius:18px;font-size:54px;line-height:1;color:var(--ui-accent,#9abbff)}
+#launcher-profiles .launcher-profile-form{flex:0 0 580px!important;width:580px!important;min-width:0!important;min-height:0!important;max-height:100%!important;box-sizing:border-box!important;overflow-y:auto!important;overflow-x:hidden!important;padding:20px!important;margin:0!important;text-align:start!important;border:1px solid var(--ui-border,#ffffff30)!important;border-radius:20px!important;background:var(--ui-card-bg,#ffffff08)!important}
+#launcher-profiles .launcher-profile-form>h3{font-size:28px;line-height:1.3!important;margin:0 0 16px!important}
+#launcher-profiles .launcher-profile-form>label{font-size:20px;line-height:1.4!important;margin:0 0 8px!important}
+#launcher-profiles .launcher-profile-form>input{box-sizing:border-box!important;width:100%!important;min-height:56px!important;font-size:22px;padding:12px 16px!important}
+#launcher-profiles .launcher-profile-form>p{font-size:19px;line-height:1.45!important;margin:14px 0 8px!important;color:var(--ui-text,#fff)!important}
+#launcher-profiles .launcher-avatar-choices{margin:10px 0!important;gap:12px!important}
+#launcher-profiles .launcher-avatar-option{width:68px!important;height:68px!important;padding:0!important;min-width:68px!important;min-height:68px!important;border-radius:14px!important}
+#launcher-profiles .launcher-avatar-option img{width:100%!important;height:100%!important;object-fit:cover!important}
+#launcher-profiles .launcher-profile-types{gap:12px!important;display:flex!important}
+#launcher-profiles .launcher-profile-types>button{flex:1 1 0!important;min-width:0!important;font-size:21px;min-height:52px!important;padding:12px!important}
+#launcher-profiles .launcher-profile-form>.primary,#launcher-profiles .launcher-profile-cancel{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;vertical-align:top;width:calc(50% - 8px)!important;min-width:0!important;min-height:56px!important;margin:14px 4px 0!important;padding:12px!important;font-size:21px}
+#launcher-profiles .launcher-profiles-footer{display:flex!important;flex:none!important;justify-content:flex-start!important;border-top:1px solid var(--ui-border,#ffffff30)!important;padding-top:16px!important}
+#launcher-profiles .launcher-profiles-footer>button{font-size:20px;min-height:48px!important;padding:10px 20px!important}
+#launcher-profiles .launcher-profiles-close{position:absolute!important;top:24px!important;right:24px!important;width:48px!important;height:48px!important;min-height:48px!important;min-width:48px!important;padding:0!important;line-height:1!important;font-size:30px!important;border-radius:50%!important}
+#launcher-profiles [hidden]{display:none!important}
+
+#launcher-profiles .launcher-profiles-footer{position:static!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%!important;margin:0!important;box-sizing:border-box!important;text-align:start!important}
+#launcher-profiles .launcher-avatar-option[aria-pressed=true]{outline:3px solid var(--ui-focus-ring,#a8ccff)!important;outline-offset:2px!important;border-color:var(--ui-focus-ring,#a8ccff)!important}
+
+/* A restrained glow belongs to header glyphs, while captions stay neutral. */
+body[data-launcher-chrome] #morph-header nav .launcher-nav-icon svg,
+body[data-launcher-chrome] #morph-header nav #nav-settings>svg{color:var(--ui-accent,#87d6ff)!important;filter:drop-shadow(0 0 3px var(--ui-accent,#87d6ff))!important;opacity:1!important;}
+
+/* Navigation and weather use two lightweight theme glass capsules. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav{border:1px solid var(--ui-card-border)!important;border-radius:36px!important;background:var(--ui-card-bg)!important;box-shadow:inset 0 1px 0 var(--ui-card-border)!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav button{position:relative;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav button+button:before{content:"";position:absolute;left:-4px;top:14px;bottom:14px;width:1px;background:var(--ui-card-border);}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .brand{position:relative;padding-right:16px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .brand:after{content:"";position:absolute;right:-8px;top:22px;bottom:22px;width:1px;background:var(--ui-card-border);}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status{display:flex!important;align-items:center!important;padding:6px 14px!important;min-height:62px!important;border:1px solid var(--ui-card-border)!important;border-radius:36px!important;background:var(--ui-card-bg)!important;box-shadow:inset 0 1px 0 var(--ui-card-border)!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-clock{flex-basis:130px!important;width:130px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .header-status #weather-card{position:relative!important;padding-left:38px!important;min-height:48px!important;min-width:140px!important;max-width:170px!important;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-icon{display:flex!important;position:absolute!important;left:0!important;top:8px!important;width:30px!important;height:30px!important;color:var(--ui-accent)!important;align-items:center;justify-content:center;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-icon svg{width:30px;height:30px;}
+body[data-launcher-chrome] #morph-header#morph-header#morph-header #weather-location{font-size:12px!important;line-height:1.3!important;white-space:nowrap!important;text-overflow:ellipsis!important;overflow:hidden!important;max-width:112px!important;}
+
+body[data-launcher-chrome] #morph-header#morph-header#morph-header .brand.morph-symbol-brand{flex:0 0 300px!important;width:300px!important;max-width:300px!important;min-width:300px!important;}
+
+/* Capsule width follows its four actions, with no empty flexible ends. */
+body[data-launcher-chrome] #morph-header#morph-header#morph-header nav{flex:0 0 auto!important;width:max-content!important;max-width:100%!important;justify-content:flex-start!important;margin-left:auto!important;margin-right:auto!important;}

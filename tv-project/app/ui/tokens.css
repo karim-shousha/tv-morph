@@ -1,16 +1,9 @@
+/* Shared semantic design contract. CSS pixels on touch/desktop; TV keeps its logical canvas. */
+:root{--morph-font:Arial,MorphSans,Tahoma,sans-serif;--morph-canvas:#f6f8fc;--morph-surface:#fff;--morph-subtle:#eef3fb;--morph-text:#17253d;--morph-muted:#52627a;--morph-border:#d9e2f0;--morph-primary:#2563eb;--morph-secondary:#7c3aed;--morph-on-primary:#fff;--morph-success:#16734a;--morph-danger:#b42318;--morph-focus:#1d4ed8;--morph-radius-sm:8px;--morph-radius-md:12px;--morph-radius-lg:16px;--morph-radius-xl:20px;--morph-space-1:4px;--morph-space-2:8px;--morph-space-3:12px;--morph-space-4:16px;--morph-space-6:24px;--morph-shadow:0 4px 16px rgba(23,37,61,.07);--morph-nav-bg:var(--morph-surface);--morph-nav-text:var(--morph-muted);--morph-nav-active:var(--morph-primary);--morph-nav-border:var(--morph-border);--morph-nav-shadow:0 -2px 12px rgba(23,37,61,.04);--morph-target:48px;--morph-body:16px;--morph-caption:14px;--morph-heading:26px;--morph-icon:22px;--morph-motion:160ms;}
+html[lang=ar]{--morph-font:MorphSans,Tahoma,Arial,sans-serif}
+html[data-app-appearance=dark]{--morph-canvas:#111a2b;--morph-surface:#1c2940;--morph-subtle:#263650;--morph-text:#f3f6ff;--morph-muted:#bdcbe0;--morph-border:#485b77;--morph-primary:#a8caff;--morph-secondary:#c5b3ff;--morph-on-primary:#13233b;--morph-success:#8bdfb4;--morph-danger:#ffb4ab;--morph-focus:#a8caff;--morph-shadow:none;}
+/* Compatibility names have one owner; feature sheets consume semantic roles. */
+html[data-app-appearance]{--m-bg:var(--morph-canvas);--m-bg2:var(--morph-subtle);--m-card:var(--morph-surface);--m-card-solid:var(--morph-surface);--m-text:var(--morph-text);--m-muted:var(--morph-muted);--m-faint:var(--morph-muted);--m-border:var(--morph-border);--m-border-strong:var(--morph-focus);--m-accent:var(--morph-primary);--m-accent2:var(--morph-secondary);--m-grad:var(--morph-primary);--m-nav-bg:var(--morph-nav-bg);--m-shadow:var(--morph-shadow);--paper:var(--morph-canvas);--ink:var(--morph-text);--muted:var(--morph-muted);--purple:var(--morph-secondary);--line:var(--morph-border);}
 /* Opt-in tokens. Existing Classic selectors and variables are untouched. */
-body[data-ui-mode=modern]{
- --ui-bg:#080e1d;--ui-bg-raised:#142036;--ui-glass-color:#101a30;--ui-glass-opacity:.7;
- --ui-glass-blur:10px;--ui-card-bg:rgba(12,22,40,.78);--ui-card-border:rgba(255,255,255,.2);
- --ui-text:#f7f9ff;--ui-text-muted:#c8d2e3;--ui-accent:#66cfff;--ui-accent-secondary:#a88aff;
- --ui-button-gradient:linear-gradient(120deg,var(--ui-accent),var(--ui-accent-secondary));
- --ui-focus-ring:#9ddfff;--ui-focus-glow:rgba(102,207,255,.36);
- --ui-dock-bg:rgba(10,19,37,.74);--ui-dock-border:rgba(255,255,255,.22);
- --ui-art-scrim:linear-gradient(90deg,rgba(3,7,17,.92),rgba(3,7,17,.42) 35%,transparent 72%);
- --ui-overlay-bg:rgba(3,7,17,.88);--ui-shadow:0 12px 30px rgba(0,0,0,.3);
- --ui-radius-sm:14px;--ui-radius-md:22px;--ui-radius-lg:34px;--ui-space:16px;
- --ui-focus-duration:160ms;--ui-panel-duration:200ms;--ui-theme-duration:260ms;
- --ui-icon-sheen:rgba(255,255,255,.28);--ui-icon-shade:rgba(0,0,0,.24);--ui-icon-shadow:inset 0 2px 2px rgba(255,255,255,.32),inset 0 -3px 7px rgba(0,0,0,.25),0 8px 20px rgba(0,0,0,.24);
- --ui-ease:cubic-bezier(.2,.8,.2,1);
-}
-body[data-ui-mode=modern][data-ui-effects=light]{--ui-icon-shadow:inset 0 1px var(--ui-card-border);--ui-icon-sheen:rgba(255,255,255,.1);--ui-icon-shade:transparent}
+body[data-ui-mode=modern]{--ui-bg:#080e1d;--ui-bg-raised:#142036;--ui-glass-color:#101a30;--ui-glass-opacity:.7;--ui-glass-blur:0px;--ui-card-bg:rgba(12,22,40,.78);--ui-card-border:rgba(255,255,255,.2);--ui-text:#f7f9ff;--ui-text-muted:#c8d2e3;--ui-accent:#8ab4ff;--ui-accent-secondary:#b9a2ff;--ui-button-gradient:var(--ui-accent);--ui-focus-ring:#9ddfff;--ui-focus-glow:rgba(102,207,255,.36);--ui-dock-bg:rgba(10,19,37,.74);--ui-dock-border:rgba(255,255,255,.22);--ui-art-scrim:linear-gradient(90deg,rgba(3,7,17,.92),rgba(3,7,17,.42) 35%,transparent 72%);--ui-overlay-bg:rgba(3,7,17,.88);--ui-shadow:0 4px 16px rgba(0,0,0,.16);--ui-radius-sm:var(--morph-radius-md);--ui-radius-md:var(--morph-radius-lg);--ui-radius-lg:var(--morph-radius-xl);--ui-space:16px;--ui-focus-duration:160ms;--ui-panel-duration:200ms;--ui-theme-duration:260ms;--ui-icon-sheen:rgba(255,255,255,.28);--ui-icon-shade:rgba(0,0,0,.24);--ui-icon-shadow:inset 0 2px 2px rgba(255,255,255,.32),inset 0 -3px 7px rgba(0,0,0,.25),0 8px 20px rgba(0,0,0,.24);--ui-ease:cubic-bezier(.2,.8,.2,1);}
+body[data-ui-mode=modern][data-ui-effects=light]{--ui-icon-shadow:inset 0 1px var(--ui-card-border);--ui-icon-sheen:rgba(255,255,255,.1);--ui-icon-shade:transparent;}

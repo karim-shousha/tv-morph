@@ -1,0 +1,10 @@
+Morph Bridge embedded helper dependencies
+
+LibADB Android 3.1.1, Copyright 2021 Muntashir Al-Islam.
+https://github.com/MuntashirAkon/libadb-android — used under Apache-2.0 (dual licensed).
+Spake2 Android 2.2.1 (spake2-java), LGPL-3.0.
+https://github.com/MuntashirAkon/spake2-java
+Unmodified corresponding source: third-party/spake2-java-2.2.1-source.zip in the Morph Bridge source distribution. It is also available from https://github.com/MuntashirAkon/spake2-java/tree/2.2.1 .
+Conscrypt Android 2.5.3, Apache-2.0, https://github.com/google/conscrypt
+Bouncy Castle bcprov-jdk15to18 1.81, MIT-style Bouncy Castle license, https://www.bouncycastle.org
+License texts accompany this notice. All dependency versions are pinned in Gradle; rebuild using android-host/gradlew.bat -p android-host :app:assembleDebug. Dependencies may be replaced and the app rebuilt; no runtime integrity check prevents modified library builds. No dependency source was modified.

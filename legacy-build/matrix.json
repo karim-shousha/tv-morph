@@ -1,0 +1,121 @@
+{
+  "comment": "Authoritative routing: exactly one package per legacy platform. No Tizen 5 bundle may be packaged for 2/3/4. No full Android APK may target API 19.",
+  "guardVersion": "1.0.0-legacy-recovery",
+  "source": {
+    "tvAppZip": ".tools/final-tv-stage/assets/tv-app.zip",
+    "sourceVersion": "1.1.320",
+    "sourceRequiredVersion": "5.0",
+    "sourceAppId": "ClearMob01.Home"
+  },
+  "targets": {
+    "tizen2": {
+      "label": "Samsung Tizen 2.3 / 2.4 (2015-2016, old WebKit)",
+      "requiredVersion": "2.3",
+      "appId": "MorphT2001.Home",
+      "package": "MorphT2001",
+      "displayName": "Morph Launcher",
+      "jsTarget": "es5",
+      "cssTarget": "safari7",
+      "engine": "old WebKit (no Promise natively, no Grid, no CSS vars)",
+      "forbiddenTokens": [
+        "?.",
+        "??",
+        "async ",
+        "await ",
+        "=>"
+      ],
+      "supports": [
+        "M3U-ish via shared library",
+        "Xtream via shared library",
+        "single AVPlay",
+        "fixed wallpaper"
+      ],
+      "unsupported": [
+        "Orsay / Tizen 2.0",
+        "Portal / MAC",
+        "multiview",
+        "DRM-gated streams",
+        "HEVC/VP9 codecs (model dependent)"
+      ],
+      "buildDir": "samsung-legacy2",
+      "artifact": "Morph-Launcher-Samsung-Tizen2-1.1.320.wgt"
+    },
+    "tizen3": {
+      "label": "Samsung Tizen 3.0 (2017 MU, Chromium 47)",
+      "requiredVersion": "3.0",
+      "appId": "MorphT3001.Home",
+      "package": "MorphT3001",
+      "displayName": "Morph Launcher",
+      "jsTarget": "es5",
+      "cssTarget": "chrome47",
+      "engine": "Chromium 47 (no optional chaining, no nullish coalescing)",
+      "forbiddenTokens": [
+        "?.",
+        "??"
+      ],
+      "supports": [
+        "shared Home/library/accounts/themes",
+        "single AVPlay",
+        "fixed artwork"
+      ],
+      "unsupported": [
+        "Portal / MAC",
+        "multiview",
+        "DRM-gated streams"
+      ],
+      "buildDir": "samsung-legacy",
+      "artifact": "Morph-Launcher-Samsung-Tizen3-1.1.320.wgt"
+    },
+    "tizen4": {
+      "label": "Samsung Tizen 4.0 (2018 NU, Chromium ~56)",
+      "requiredVersion": "4.0",
+      "appId": "ClearMob01.Home",
+      "package": "ClearMob01",
+      "displayName": "Morph Launcher",
+      "jsTarget": "chrome56",
+      "cssTarget": "chrome56",
+      "engine": "Chromium 56 (no optional chaining, no nullish coalescing)",
+      "forbiddenTokens": [
+        "?.",
+        "??"
+      ],
+      "supports": [
+        "current feature set incl. worker sort + IDB cache"
+      ],
+      "unsupported": [
+        "Portal / MAC (as main build)"
+      ],
+      "buildDir": "samsung-tizen4",
+      "artifact": "Morph-Launcher-Samsung-Tizen4-1.1.320.wgt"
+    },
+    "android44": {
+      "label": "Android 4.4 / API 19 (native subset)",
+      "minSdk": 19,
+      "targetSdk": 19,
+      "package": "local.morphtv.legacy",
+      "displayName": "Morph Launcher",
+      "engine": "native VideoView, no WebView",
+      "forbiddenDeps": [
+        "WebView",
+        "Media3/ExoPlayer",
+        "Leanback",
+        "evaluateJavascript"
+      ],
+      "supports": [
+        "direct M3U playlists",
+        "native playback + controls",
+        "launcher + D-pad"
+      ],
+      "unsupported": [
+        "Xtream accounts",
+        "EPG",
+        "series metadata",
+        "DRM",
+        "redirected playlists (final URL required)",
+        "Android 4.0-4.3 (no build, unsupported)"
+      ],
+      "buildDir": "android-legacy",
+      "artifact": "Morph-TV-Legacy-0.1.7.apk"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "phoneVersion": "0.8.5",
+  "installedOnUserPhone": true,
+  "callback": "http://localhost:4794/signin/callback",
+  "localTestsPassed": [
+    "authorization query callback",
+    "exact callback path with query",
+    "loopback-only binding",
+    "explicit port-conflict failure"
+  ],
+  "samsungLoginCompleted": false,
+  "certificateIssued": false,
+  "TVInstalled": false
+}

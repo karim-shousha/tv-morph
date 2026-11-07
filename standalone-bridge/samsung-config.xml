@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://appbridge.tv/samsung" version="0.6.2" viewmodes="fullscreen">
+    <tizen:application id="AppBridge1.TV" package="AppBridge1" required_version="4.0"/>
+    <content src="index.html"/>
+    <name>Morph Bridge</name>
+    <icon src="icon.png"/>
+    <access origin="*" subdomains="true"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="internal-only" hwkey-event="enable"/>
+</widget>

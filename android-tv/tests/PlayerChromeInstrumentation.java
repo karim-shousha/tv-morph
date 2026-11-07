@@ -1,0 +1,55 @@
+package local.tvmorph.playercheck;
+import android.app.*;
+import android.content.*;
+import android.os.*;
+import android.view.*;
+import android.widget.*;
+import android.graphics.*;
+import java.lang.reflect.*;
+public class PlayerChromeInstrumentation extends Instrumentation {
+ Activity player;Bundle arguments;
+ private Object field(String name)throws Exception{Field f=player.getClass().getDeclaredField(name);f.setAccessible(true);return f.get(player);}
+ private void call(String name)throws Exception{Method m=player.getClass().getDeclaredMethod(name);m.setAccessible(true);m.invoke(player);}
+ private void main(Runnable action){runOnMainSync(action);waitForIdleSync();}
+ private void check(boolean ok,String message){if(!ok)throw new AssertionError(message);}
+ private void invoke(String name){main(()->{try{call(name);}catch(Exception e){throw new RuntimeException(e);}});}
+ private void click(View view){main(()->view.performClick());}
+ private int[] box(View view){int[] p=new int[2];view.getLocationOnScreen(p);return new int[]{p[0],p[1],view.getWidth(),view.getHeight()};}
+ private void sameBox(int[] a,int[] b){check(java.util.Arrays.equals(a,b),"Dock moved or resized when a side panel opened");}
+ private void launch(String path)throws Exception{Intent intent=new Intent().setClassName("local.tvmorph.tv","local.tvmorph.tv.PlayerActivity").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK).putExtra("url","http://10.0.2.2:8766/"+path).putExtra("name","Morph TV · Playback Test").putExtra("itemKind","vod").putExtra("itemId","chrome-test").putExtra("playerMetadata","{\"year\":\"2026\",\"genre\":\"Test video\",\"plot\":\"Generated local video · Native Android player verification\"}").putExtra("live",false);player=startActivitySync(intent);long deadline=SystemClock.uptimeMillis()+25000;while(SystemClock.uptimeMillis()<deadline&&!Boolean.TRUE.equals(field("prepared")))Thread.sleep(50);check(Boolean.TRUE.equals(field("prepared")),"Sample video must prepare");waitForIdleSync();}
+ private View header(String title)throws Exception{return ((LinearLayout)field("rightPanel")).findViewWithTag("section:"+title);}
+ private View options(String title)throws Exception{return ((LinearLayout)field("rightPanel")).findViewWithTag("choices:"+title);}
+ @Override public void onCreate(Bundle args){super.onCreate(args);arguments=args==null?new Bundle():args;start();}
+ @Override public void onStart(){Bundle result=new Bundle();try{setInTouchMode(false);
+  getTargetContext().getSharedPreferences("tvmorph-ui",0).edit().putBoolean("systemVodPlayer",false).putString("language","en").putString("scale","fit").commit();
+  if("benchmark".equals(arguments.getString("mode"))){long[] times=new long[3];for(int i=0;i<3;i++){long start=SystemClock.uptimeMillis();launch("sample.mp4?run="+i);times[i]=SystemClock.uptimeMillis()-start;main(()->player.finish());Thread.sleep(200);}java.util.Arrays.sort(times);result.putString("result",arguments.getString("label")+" ready median ms="+times[1]+" samples="+java.util.Arrays.toString(times));finish(Activity.RESULT_OK,result);return;}
+  getTargetContext().getSharedPreferences("tvmorph-ui",0).edit().putString("uiAccent","#36D19A").putString("uiSurface","#18382C").commit();
+  launch("layout.mp4");invoke("toggle");invoke("show");View controls=(View)field("controls");int[] initial=box(controls);View content=((LinearLayout)controls).getChildAt(0);
+  check(((LinearLayout)controls).getChildCount()==1,"Only compact dock remains, information card removed");check(controls.getHeight()<100*player.getResources().getDisplayMetrics().density,"Reduced dock height");check(content.getBackground() instanceof android.graphics.drawable.ColorDrawable&&android.graphics.Color.alpha(((android.graphics.drawable.ColorDrawable)content.getBackground()).getColor())==0,"Dock has no background");check(controls.getWidth()<controls.getRootView().getWidth()*.55f,"Compact centered dock");
+  check(((Button)field("pauseButton")).getClass().getSimpleName().equals("PlayerChromeButton"),"Vector controls installed");
+  LinearLayout actions=(LinearLayout)field("actionRow");for(int i=0;i<actions.getChildCount();i++)check(!((Button)actions.getChildAt(i)).getText().toString().equals("▤"),"No subtitle button pretending to be PiP");
+  invoke("toggleRightPanel");sameBox(initial,box(controls));ScrollView settings=(ScrollView)field("settingScroll");check(settings.getHeight()>controls.getRootView().getHeight()*.90f,"Settings panel uses screen height");for(String title:new String[]{"Video Quality","Audio Track","Subtitles","Aspect Ratio","Playback Speed","Stream Information"})check(options(title)!=null,"Default expanded: "+title);
+  View quality=header("Video Quality");click(quality);check(options("Video Quality")==null,"Click collapses quality dropdown");click(quality);check(options("Video Quality")!=null,"Click reopens quality dropdown");
+  click(header("Audio Track"));check(options("Audio Track")==null,"Audio dropdown closes");click(header("Audio Track"));check(options("Audio Track")!=null,"Audio dropdown reopens");
+  click(((LinearLayout)options("Aspect Ratio")).getChildAt(1));check(getTargetContext().getSharedPreferences("tvmorph-ui",0).getString("scale","").equals("fill"),"Aspect setting applied");
+  click(((LinearLayout)options("Playback Speed")).getChildAt(4));check(Math.abs(((Float)field("playbackRate"))-1.5f)<.02f,"Engine accepted 1.5x");
+  check(((LinearLayout)options("Stream Information")).getChildAt(0) instanceof TextView,"Stream information starts expanded inline");
+  for(int cycle=0;cycle<5;cycle++)for(String title:new String[]{"Video Quality","Audio Track","Subtitles","Aspect Ratio","Playback Speed","Stream Information"}){View h=header(title);if(options(title)!=null)click(h);check(options(title)==null,"Collapse removes only its own group: "+title);click(h);check(options(title)!=null,"Reopen restores its group: "+title);check(((View)field("settingScroll")).getVisibility()==View.VISIBLE,"Internal rebuild keeps settings visible");LinearLayout rows=(LinearLayout)field("rightPanel");int matches=0;for(int n=0;n<rows.getChildCount();n++)if(("choices:"+title).equals(rows.getChildAt(n).getTag()))matches++;check(matches==1,"Exactly one options group after repeated reopening");check(rows.indexOfChild(options(title))==rows.indexOfChild(h)+1,"Options stay below their own header");}
+  sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);check(settings.getVisibility()==View.GONE&&controls.getVisibility()==View.VISIBLE,"First Back closes panel and retains dock");sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);check(controls.getVisibility()==View.GONE&&!player.isFinishing(),"Second Back hides dock without exiting");invoke("show");
+  final Object browser=field("channelBrowser");main(()->{try{Method open=browser.getClass().getDeclaredMethod("open");open.setAccessible(true);open.invoke(browser);}catch(Exception e){throw new RuntimeException(e);}});sameBox(initial,box(controls));
+  Field panelField=browser.getClass().getDeclaredField("panel");panelField.setAccessible(true);LinearLayout panel=(LinearLayout)panelField.get(browser);LinearLayout browserHeader=(LinearLayout)panel.getChildAt(0);check(browserHeader.getChildCount()==2&&browserHeader.getChildAt(1).getVisibility()==View.GONE,"Category Back appears only inside a category");int[] left=box(panel);check(left[0]+left[2]<=initial[0],"Left panel does not overlap dock");
+  invoke("toggleRightPanel");int[] right=box(settings);check(initial[0]+initial[2]<=right[0],"Right panel does not overlap dock");check(left[1]==right[1]&&left[1]+left[3]==right[1]+right[3],"Side panels align at top and bottom");check(right[1]==0&&right[1]+right[3]==controls.getRootView().getHeight(),"Side panels reach both screen edges");sameBox(initial,box(controls));
+  main(()->{try{Field categoriesField=browser.getClass().getDeclaredField("categories");categoriesField.setAccessible(true);LinearLayout categories=(LinearLayout)categoriesField.get(browser);Method make=browser.getClass().getDeclaredMethod("button",String.class,Runnable.class);make.setAccessible(true);Button row=(Button)make.invoke(browser,"HQ Arabic Movies | أفلام عربية حديثة",(Runnable)()->{});categories.removeAllViews();categories.addView(row,new LinearLayout.LayoutParams(-1,Math.round(43*player.getResources().getDisplayMetrics().density)));}catch(Exception e){throw new RuntimeException(e);}});
+  Field categoriesField=browser.getClass().getDeclaredField("categories");categoriesField.setAccessible(true);Button row=(Button)((LinearLayout)categoriesField.get(browser)).getChildAt(0);check(row.getLineCount()==1,"Side list label uses one complete line");android.graphics.Paint.FontMetricsInt fm=row.getPaint().getFontMetricsInt();check(row.getHeight()>=fm.bottom-fm.top+row.getPaddingTop()+row.getPaddingBottom(),"Arabic label font fits without bottom clipping");
+  click(header("Video Quality"));click(header("Audio Track"));
+  main(()->{try{Method nested=browser.getClass().getDeclaredMethod("showContent");nested.setAccessible(true);nested.invoke(browser);browserHeader.getChildAt(1).requestFocus();}catch(Exception e){throw new RuntimeException(e);}});
+  check(browserHeader.getChildAt(1).getVisibility()==View.VISIBLE,"Parent Back visible inside category");sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);check(panel.getParent()!=null&&browserHeader.getChildAt(1).getVisibility()==View.GONE,"Remote Back returns to categories without closing panel");
+  main(()->row.requestFocus());sendKeyDownUpSync(KeyEvent.KEYCODE_DPAD_RIGHT);check(panel.getParent()==null&&controls.getVisibility()==View.VISIBLE,"Moving right to dock dismisses left panel");
+  main(()->{try{Method open=browser.getClass().getDeclaredMethod("open");open.setAccessible(true);open.invoke(browser);}catch(Exception e){throw new RuntimeException(e);}});
+
+  sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);check(settings.getVisibility()==View.GONE&&controls.getVisibility()==View.VISIBLE,"Back dismisses both side panels");sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);check(controls.getVisibility()==View.GONE,"Next Back hides dock");
+  main(()->player.finish());getTargetContext().getSharedPreferences("tvmorph-ui",0).edit().putString("uiAccent","#F6A53C").putString("uiSurface","#49311A").commit();launch("layout.mp4");invoke("toggle");invoke("show");invoke("toggleRightPanel");click(header("Video Quality"));
+  long tap=SystemClock.uptimeMillis();sendPointerSync(MotionEvent.obtain(tap,tap,MotionEvent.ACTION_DOWN,900,140,0));sendPointerSync(MotionEvent.obtain(tap,tap+50,MotionEvent.ACTION_UP,900,140,0));waitForIdleSync();check(((View)field("settingScroll")).getVisibility()==View.GONE&&((View)field("controls")).getVisibility()==View.GONE,"Video tap hides settings and dock together");
+  result.putString("result","PASS: fixed centered geometry, full-width card, full-height settings, accordion toggles, real settings, Back sequence, no misleading TV PiP, fixed blue palette");finish(Activity.RESULT_OK,result);
+ }catch(Throwable error){result.putString("error",android.util.Log.getStackTraceString(error));finish(Activity.RESULT_CANCELED,result);}}
+}

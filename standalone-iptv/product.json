@@ -1,0 +1,70 @@
+{
+  "name": "Morph IPTV",
+  "version": "1.1.320",
+  "versionCode": 347,
+  "canonicalFrontend": "android-tv/iptv",
+  "canonicalNativePlayer": "android-tv/src/local/tvmorph/tv",
+  "phonePresentation": [
+    "mobile-app/phone-iptv.css",
+    "mobile-app/phone-iptv.js"
+  ],
+  "android": {
+    "id": "local.morph.iptv",
+    "minSdk": 26,
+    "devices": [
+      "Android TV",
+      "Google TV",
+      "Fire TV"
+    ],
+    "targetSdk": 34
+  },
+  "webos": {
+    "id": "com.morphtv.iptv",
+    "minimumVerifiedBuildTarget": "5.0",
+    "buildTarget": "Chromium 53 / webOS 4.x compatibility candidate; physical TV unverified"
+  },
+  "samsung": {
+    "tizen2": {
+      "package": "MIptvTz2X1",
+      "required": "2.3",
+      "legacy": true
+    },
+    "tizen3": {
+      "package": "MIptvTz3X1",
+      "required": "3.0",
+      "legacy": true
+    },
+    "tizen4": {
+      "package": "MIptvTz4X1",
+      "required": "4.0",
+      "legacy": false
+    },
+    "tizen5": {
+      "package": "MorphIptv1",
+      "required": "5.0",
+      "legacy": false
+    }
+  },
+  "excluded": [
+    "VIDAA"
+  ],
+  "publication": "User authorized final publication on 2026-11-01 after validation",
+  "androidLegacy": {
+    "id": "local.morph.iptv.legacy",
+    "version": "1.1.317",
+    "versionCode": 347,
+    "minSdk": 19,
+    "sharedEngine": "android-legacy/src",
+    "build": "python android-legacy/build.py --product iptv",
+    "features": [
+      "M3U playlists",
+      "native playback",
+      "D-pad"
+    ],
+    "notIncluded": [
+      "Xtream account login",
+      "EPG",
+      "modern UI"
+    ]
+  }
+}
