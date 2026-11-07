@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.321",
+      "version": "1.1.322",
       "download": "/download/phone",
-      "noteAr": "صفحة الكلينر مهيأة للموبايل بالعربي والإنجليزي، ومساحة الملفات والأزرار محسّنة.",
-      "noteEn": "Mobile Cleaner uses phone theme, touch-sized controls and a scrollable file list. Physical phone layout/Close checked in Arabic and English.",
+      "noteAr": "مسارات التثبيت حسب نظام التلفزيون: APK لأندرويد وFire TV، وIPK مع شرح webOS لشاشات LG، وWGT لسامسونج فقط.",
+      "noteEn": "OS-specific setup: APK for Android/Fire TV, webOS Developer Mode and IPK for LG, WGT only for Samsung.",
       "channel": "preview",
-      "versionCode": 348
+      "versionCode": 349
     },
     {
       "id": "android",
@@ -225,15 +225,15 @@
       "versionCode": 348
     },
     {
-      "name": "Morph-TV-Phone-1.1.321",
-      "file": "Morph-TV-Phone-1.1.321.apk",
-      "version": "1.1.321",
+      "name": "Morph-TV-Phone-1.1.322",
+      "file": "Morph-TV-Phone-1.1.322.apk",
+      "version": "1.1.322",
       "product": "phone",
       "target": "android",
       "bytes": 169235788,
-      "sha256": "80cd5c436cbe23860b6476f6c21e1c6c0720032681105c7f9f3d6948ea48d394",
+      "sha256": "07c778b070007ec06c71cf2ac614147c2e5b69ebb8afc7ac3bbf651750dd731f",
       "download": "/download/phone",
-      "versionCode": 348
+      "versionCode": 349
     },
     {
       "name": "Morph-TV-Legacy-1.1.321",
@@ -1095,6 +1095,18 @@
       "version": "1.1.320",
       "bytes": 98571244,
       "sha256": "f86d72a69263699e9bf71cd806bfe51ded99dbfd9b7524d79df72c2d181225b0",
+      "archived": true
+    },
+    {
+      "name": "Morph-TV-Phone-1.1.321",
+      "file": "Morph-TV-Phone-1.1.321.apk",
+      "version": "1.1.321",
+      "product": "phone",
+      "target": "android",
+      "bytes": 169235788,
+      "sha256": "80cd5c436cbe23860b6476f6c21e1c6c0720032681105c7f9f3d6948ea48d394",
+      "download": "/Morph-TV-Phone-1.1.321.apk",
+      "versionCode": 348,
       "archived": true
     }
   ]

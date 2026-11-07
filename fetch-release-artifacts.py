@@ -5,7 +5,7 @@ for row in manifest['artifacts']:
  for attempt in range(4):
   try:
    digest=hashlib.sha256();size=0
-   with urllib.request.urlopen(manifest['baseUrl']+urllib.parse.quote(name),timeout=180) as response,(out/name).open('wb') as dest:
+   with urllib.request.urlopen(row.get('url') or manifest['baseUrl']+urllib.parse.quote(name),timeout=180) as response,(out/name).open('wb') as dest:
     while block:=response.read(1024*1024):dest.write(block);digest.update(block);size+=len(block)
    assert size==row['bytes'] and digest.hexdigest()==row['sha256'],name
    print('Verified',name,size,flush=True);break

@@ -46,3 +46,4 @@ ae97877455c725bf29eade230dc44b24213a9cbc365a6f978940a3f16f933fbe  Cleaner-Androi
 1fb45322f9b586beadcec6534e5aee2dbf6bfc954643175d92322033e6e41d30  Morph-TV-Install-Kit-1.1.321.zip
 a7b5e0cd428fe15afee1529277096c457d202a0c1f07f9c2ce4724250bb21d97  Morph-Launcher-Mac-1.1.321-universal.zip
 38e813db85f2bca251c338bb33149fd8bc777df80f85b64e023b17be477526b8  Morph-Launcher-Mac-1.1.321-universal.dmg
+07c778b070007ec06c71cf2ac614147c2e5b69ebb8afc7ac3bbf651750dd731f  Morph-TV-Phone-1.1.322.apk
