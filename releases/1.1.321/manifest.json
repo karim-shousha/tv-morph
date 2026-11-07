@@ -116,6 +116,16 @@
       "file": "Morph-TV-Install-Kit-1.1.321.zip",
       "bytes": 101620820,
       "sha256": "1fb45322f9b586beadcec6534e5aee2dbf6bfc954643175d92322033e6e41d30"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.321-universal.zip",
+      "bytes": 238054695,
+      "sha256": "a7b5e0cd428fe15afee1529277096c457d202a0c1f07f9c2ce4724250bb21d97"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.321-universal.dmg",
+      "bytes": 245696286,
+      "sha256": "38e813db85f2bca251c338bb33149fd8bc777df80f85b64e023b17be477526b8"
     }
   ],
   "validationLimits": [

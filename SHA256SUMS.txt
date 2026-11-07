@@ -44,3 +44,5 @@ ae97877455c725bf29eade230dc44b24213a9cbc365a6f978940a3f16f933fbe  Cleaner-Androi
 32d5a1f3fb0d332edfcfb2a761ffa5049831b1c4bb8e5e1d3197e91ca86ec1f2  Morph-IPTV-Legacy-1.1.321.apk
 8e2d0ef67a36ee7215aaacaefa07fbfc47a929415627ab7621bef38e1bb8ffa3  Morph-TV-Legacy-1.1.321.apk
 1fb45322f9b586beadcec6534e5aee2dbf6bfc954643175d92322033e6e41d30  Morph-TV-Install-Kit-1.1.321.zip
+a7b5e0cd428fe15afee1529277096c457d202a0c1f07f9c2ce4724250bb21d97  Morph-Launcher-Mac-1.1.321-universal.zip
+38e813db85f2bca251c338bb33149fd8bc777df80f85b64e023b17be477526b8  Morph-Launcher-Mac-1.1.321-universal.dmg
