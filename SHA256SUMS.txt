@@ -47,3 +47,26 @@ ae97877455c725bf29eade230dc44b24213a9cbc365a6f978940a3f16f933fbe  Cleaner-Androi
 a7b5e0cd428fe15afee1529277096c457d202a0c1f07f9c2ce4724250bb21d97  Morph-Launcher-Mac-1.1.321-universal.zip
 38e813db85f2bca251c338bb33149fd8bc777df80f85b64e023b17be477526b8  Morph-Launcher-Mac-1.1.321-universal.dmg
 07c778b070007ec06c71cf2ac614147c2e5b69ebb8afc7ac3bbf651750dd731f  Morph-TV-Phone-1.1.322.apk
+
+0af0da80b2c2a25afc31c1a23a1b42c6ec38c49d827a965afa29974a9135acb9  Cleaner-Android-1.1.324.apk
+3d0884d93ca4a5b148cb8c4d507d92a0dc07bafca5871d91b1a5864594ccad7c  Cleaner-LG-1.1.324.ipk
+753907f33d46e72767889111a3dacd06256e5f55ca04f385c3bac395a92f8935  Cleaner-Samsung-Tizen2-and-newer-1.1.324.wgt
+e4900c41a94a155d0295c012b9a54d9152edfce7ac1b2d357e05bdb2f8778d74  Morph-Bridge-Android-TV-1.1.324.apk
+de9c54a9bc9fb3a62af825de277c12eeb58dad282dd4d4f5267cb45a541ad4cf  Morph-Bridge-LG-1.1.324.ipk
+241af4959f9841a3b0c61bb7df5aed752484d93be36e2f96dc8e31706d53a902  Morph-Bridge-Samsung-1.1.324.wgt
+3c95ef77a431f1debc6c419df02de8b5696a90d2ac4d484b5dcf693df538e4d4  Morph-IPTV-Android-TV-1.1.324.apk
+3979e659f48a8410e38590b8a1406e852419e3ad1c31af9fac9f1df38714cdfb  Morph-IPTV-LG-1.1.324.ipk
+604decc5c3f7f14b9616d994725cbb7c306e40fa58e99a9ca99831f22f8cf18a  Morph-IPTV-tizen2-1.1.324.wgt
+3ad241006b2d39d81705c4d2366293ff566d445b3658c4f5d1a8df99f2bd4742  Morph-IPTV-tizen3-1.1.324.wgt
+ebdf9f76f3a01bb9b21de8117f8e423a2d9dc7861a2cbea8549b2376da635239  Morph-IPTV-tizen4-1.1.324.wgt
+82dcdfff9aba0a1ec0a29d5a8b82cb68f3e0e10e0a1b3d9c0fd076957813de62  Morph-IPTV-tizen5-1.1.324.wgt
+2a570ae1696f86f76b5373b47123a2eb0a87a5cf6cf4eba36ad6337f03f714fc  Morph-Launcher-Mac-1.1.324-universal.dmg
+db2fa9cad75ad2f6f70ee850a33ba90e9df5791ced4e129f310d9661c70022b4  Morph-Launcher-Mac-1.1.324-universal.zip
+e43a5cbaadda078814962b42e67415dfe2d59294efb32e318d348229ebbdacf1  Morph-Launcher-PC-1.1.324-Setup.exe
+f8f8e211a2124d9764f9a8fcd3654f99792adf3a37202be45f1b2b4ee9f7f8ee  Morph-TV-Android-TV-1.1.324.apk
+17eb41f80ba39b1ddf973e2bc2b8f81a1b4bb62f0fc9f249a24006a68e0fbd6f  Morph-TV-LG-1.1.324.ipk
+352fdfc11d96d55b552f082331904239c3a72428a9bf4fdcba63f20d75db0c9b  Morph-TV-Phone-1.1.324.apk
+dc373c90094df5eafb230161cdd1d0f1af23961bf367d2af9220827f61e157e9  Morph-TV-Samsung-Tizen2-1.1.324.wgt
+b3b294d15f0bbd36c70d5c867ed7e97d6c618d3d0d2b06e807b07f0693c4e085  Morph-TV-Samsung-Tizen3-1.1.324.wgt
+0dc99b50ed0678b548fbf1a0a4f574c89ef71f1364585f9b0058a4eb94709f69  Morph-TV-Samsung-Tizen4-1.1.324.wgt
+91aa892e01a3fc40c6b38b9dbbb2c1bd1690d5b632e6cb331f9156d0c5a55a2f  Morph-TV-Samsung-Tizen5-1.1.324.wgt
