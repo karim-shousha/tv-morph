@@ -13,8 +13,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - runner: macos-15
-            arch: arm64
           - runner: macos-15-intel
             arch: intel
     runs-on: ${{ matrix.runner }}
@@ -34,6 +32,7 @@ jobs:
         run: |
           python3 -c "import zipfile;zipfile.ZipFile('desktop-build/morph-desktop-runtime.zip').extractall('desktop')"
           cp desktop-qa/desktop.cjs desktop/tests/desktop.cjs
+          cp desktop-qa/prayer.cjs desktop/tests/prayer.cjs
           ditto -x -k downloads/Morph-Launcher-Mac-*-universal.zip mac-app
       - name: Install test dependencies
         working-directory: desktop
