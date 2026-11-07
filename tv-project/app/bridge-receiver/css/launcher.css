@@ -62,7 +62,7 @@ body[data-launcher-host],body[data-launcher-host].light{background:var(--bridge-
 .pair-copy>.muted{font-size:18px;line-height:1.5;margin:0 0 22px;}
 .pair-steps{list-style:none;counter-reset:bridge-step;display:flex;flex-direction:column;gap:12px;padding:0!important;margin:0;font-size:16px;line-height:1.5;}
 .pair-steps li{counter-increment:bridge-step;display:flex;align-items:center;gap:12px;padding:0!important;}
-.pair-steps li:before{content:counter(bridge-step);display:flex;align-items:center;justify-content:center;flex:0 0 27px;width:27px;height:27px;border:1px solid var(--bridge-accent-border,var(--bridge-border));border-radius:50%;font:500 13px/1 Arial,sans-serif;color:var(--bridge-accent);background:var(--bridge-accent-soft,var(--bridge-control));}
+.pair-steps li:before{content:counter(bridge-step);display:flex;align-items:center;justify-content:center;flex:0 0 27px;width:27px;height:27px;border:1px solid var(--bridge-accent-border,var(--bridge-border));border-radius:50%;font:500 13px/1 Arial,sans-serif;color:var(--ui-info-text,#fff);-webkit-text-fill-color:var(--ui-info-text,#fff);background:var(--ui-info-surface,var(--bridge-control));}
 .pair-card{flex:0 0 440px;min-width:0;padding:28px;border-radius:22px;background:var(--bridge-panel,var(--bridge-surface));border:1px solid var(--bridge-border);box-shadow:0 18px 48px var(--bridge-shadow,transparent);}
 .pair-card h2{font-size:27px;line-height:1.3;margin:0 0 10px;font-weight:600;}
 .pair-note{font-size:15px;line-height:1.6;margin:0 0 24px;}
@@ -104,11 +104,11 @@ html[lang="ar"] .pair-card h2{line-height:1.5;}
 .phone-setup-spinner[hidden]{display:none!important}
 @keyframes bridge-setup-spin{to{transform:rotate(360deg)}}
 #app .btn.focus,#app .btn:focus,#app .btn:hover{background:var(--bridge-control,#193550)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;outline:3px solid var(--bridge-focus,#f2d18f)!important;box-shadow:none!important}
-#app .btn.primary.focus,#app .btn.primary:focus,#app .btn.primary:hover{background:var(--bridge-primary,#efce8c)!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important}
+#app .btn.primary.focus,#app .btn.primary:focus,#app .btn.primary:hover{background:var(--bridge-primary,#efce8c)!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:var(--ui-button-text,#fff)!important}
 #app .btn.focus *,#app .btn:focus *,#app .btn:hover *{color:inherit!important;-webkit-text-fill-color:inherit!important}
 #screen-apps #appsError.connection-success{border-color:#72d5a1;background:#103b30;color:#f5fff8}
 
-#app #btnPhoneSetupSubmit,#app #btnPhoneSetupSubmit.focus,#app #btnPhoneSetupSubmit:focus,#app #btnPhoneSetupSubmit:hover{background:#f4d58c!important;border-color:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important}
+#app #btnPhoneSetupSubmit,#app #btnPhoneSetupSubmit.focus,#app #btnPhoneSetupSubmit:focus,#app #btnPhoneSetupSubmit:hover{background:#f4d58c!important;border-color:#f4d58c!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:var(--ui-button-text,#fff)!important}
 #phoneSetupEntry[hidden],#btnPhoneSetupSubmit[hidden],#btnDisconnect[hidden]{display:none!important}
 #screen-setup.connecting .phone-setup-spinner{display:block;width:54px;height:54px;margin:36px auto 20px}
 #screen-setup.connecting #phoneSetupStatus{text-align:center;font-size:24px}
@@ -124,8 +124,8 @@ html[lang="ar"] .pair-card h2{line-height:1.5;}
 #app #screen-diag strong{display:block!important;font-size:28px!important;color:#fff!important;line-height:1.5!important;overflow-wrap:break-word!important}
 #app #screen-diag .btnrow{display:flex!important;gap:18px!important;margin-top:26px!important;flex-wrap:wrap!important}
 #app #screen-diag .btn{flex:1 1 240px!important;min-height:66px!important;margin:0!important;padding:14px 20px!important;background:#193b5a!important;border:2px solid #6c87a1!important;border-radius:16px!important;color:#fff!important;-webkit-text-fill-color:#fff!important;font-size:22px!important}
-#app #screen-diag .btn.primary{background:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important;border-color:#f4d58c!important}
-#app #screen-diag .btn.focus,#app #screen-diag .btn:focus,#app #screen-diag .btn:hover{background:#f4d58c!important;color:#081a2d!important;-webkit-text-fill-color:#081a2d!important;outline:3px solid white!important;outline-offset:4px!important;border-color:#f4d58c!important}
+#app #screen-diag .btn.primary{background:#f4d58c!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:var(--ui-button-text,#fff)!important;border-color:#f4d58c!important}
+#app #screen-diag .btn.focus,#app #screen-diag .btn:focus,#app #screen-diag .btn:hover{background:#f4d58c!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:var(--ui-button-text,#fff)!important;outline:3px solid white!important;outline-offset:4px!important;border-color:#f4d58c!important}
 #app #screen-diag .btn:disabled{background:#193047!important;color:#a7bacb!important;-webkit-text-fill-color:#a7bacb!important;border-color:#41586e!important;opacity:1!important}
 #app #screen-diag #diagText{min-height:0!important;max-height:200px!important;margin:20px 0!important;padding:18px!important;background:#071726!important;border-color:#4b647d!important;color:#dce8f6!important;font:18px/1.5 monospace!important;overflow:auto!important;white-space:pre-wrap!important;overflow-wrap:break-word!important}
 #app #header #btnDisconnect{flex:0 0 auto!important;min-width:160px!important;min-height:48px!important;margin-inline-start:18px!important;padding:8px 18px!important;font-size:18px!important;background:#193b5a!important;color:white!important;-webkit-text-fill-color:white!important}

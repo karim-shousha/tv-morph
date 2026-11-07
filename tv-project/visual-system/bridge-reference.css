@@ -13,12 +13,12 @@ body,body.light{background:var(--reference-page-background,url('reference-assets
 #screen-pair h1{font-size:49px!important;line-height:1.12!important;font-weight:600!important;letter-spacing:-1px!important;margin:0 0 18px!important;color:#f3f5f8!important;}
 #screen-pair h1 em{font-style:normal!important;color:var(--reference-accent-light)!important;}
 .pair-copy>.muted{font-size:21px!important;line-height:1.4!important;margin:0!important;color:#d1d9e4!important;}
-.pair-steps{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;list-style:none!important;counter-reset:bridge-step!important;margin:27px 0 0!important;padding:0!important;font-size:16px!important;line-height:1.4!important;color:#cbd4e0!important;}
+.pair-steps{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important;list-style:none!important;counter-reset:bridge-step!important;margin:27px 0 0!important;padding:0!important;font-size:16px!important;line-height:1.4!important;color:var(--ui-info-text,#fff)!important;-webkit-text-fill-color:var(--ui-info-text,#fff)!important;}
 .pair-steps li{position:relative!important;counter-increment:bridge-step!important;margin:0!important;padding:91px 0 0 32px!important;}
-.pair-steps li::before{content:counter(bridge-step)!important;position:absolute!important;left:0!important;top:91px!important;width:23px!important;height:23px!important;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:50%!important;background:var(--reference-action-gradient)!important;color:#10151d!important;font-size:14px!important;}
-.reference-step-icon{position:absolute;top:0;left:32px;display:flex;align-items:center;justify-content:center;width:72px;height:72px;border:1px solid rgba(var(--reference-accent-rgb),.5);border-radius:18px;background:var(--reference-glass);color:var(--reference-accent-light);}
+.pair-steps li::before{content:counter(bridge-step)!important;position:absolute!important;left:0!important;top:91px!important;width:23px!important;height:23px!important;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:50%!important;background:var(--ui-info-surface,#142b45)!important;border:1px solid var(--ui-info-border,rgba(255,255,255,.36))!important;color:var(--ui-info-text,#fff)!important;-webkit-text-fill-color:var(--ui-info-text,#fff)!important;font-size:14px!important;opacity:1!important;}
+.reference-step-icon{position:absolute;top:0;left:32px;display:flex;align-items:center;justify-content:center;width:72px;height:72px;border:1px solid var(--ui-info-border,rgba(255,255,255,.36));border-radius:18px;background:var(--reference-glass);color:var(--ui-info-text,#fff);}
 .reference-step-icon svg{width:40px;height:40px;}
-.pair-steps li:not(:last-child)::after{content:'›';position:absolute;right:-13px;top:22px;font-size:32px;color:var(--reference-accent);}
+.pair-steps li:not(:last-child)::after{content:'›';position:absolute;right:-13px;top:22px;font-size:32px;color:var(--ui-info-text,#fff);}
 .pair-card{position:relative!important;width:100%!important;min-width:0!important;max-width:none!important;flex:none!important;padding:42px 36px 28px!important;border:1px solid rgba(var(--reference-rim-rgb),.3)!important;border-radius:34px!important;background:linear-gradient(135deg,rgba(var(--reference-surface-rgb),.66),rgba(var(--reference-surface-rgb),.32))!important;box-shadow:inset 0 1px 1px rgba(var(--reference-rim-rgb),.2),0 10px 30px rgba(0,0,0,.24)!important;}
 .pair-card::after{content:'';position:absolute;inset:0;padding:1px;border-radius:inherit;background:linear-gradient(135deg,#48cefa,rgba(166,190,220,.1) 25%,rgba(var(--reference-accent-rgb),.9) 53%,rgba(80,167,255,.7));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
 .reference-connect-symbol{position:absolute;top:40px;left:36px;width:96px;height:96px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--reference-glass);border:1px solid rgba(var(--reference-accent-rgb),.3);color:var(--reference-accent-light);}
@@ -33,9 +33,9 @@ body,body.light{background:var(--reference-page-background,url('reference-assets
 .row input:is(.focus,:focus){border-color:rgba(var(--reference-accent-rgb),.9)!important;outline:2px solid rgba(var(--reference-accent-rgb),.75)!important;outline-offset:1px!important;box-shadow:0 0 15px rgba(var(--reference-accent-rgb),.17)!important;}
 .btnrow{display:flex!important;gap:24px!important;margin:34px 0 0!important;flex-wrap:nowrap!important;}
 .btn{display:flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;flex:1!important;min-width:0!important;min-height:68px!important;font-size:21px!important;padding:15px 16px!important;margin:0!important;border:1px solid rgba(var(--reference-rim-rgb),.3)!important;border-radius:18px!important;background:var(--reference-glass)!important;color:#f0f2f6!important;transition:background 180ms ease,box-shadow 180ms ease!important;}
-.btn.primary{background:var(--reference-action-gradient)!important;color:#10151d!important;border-color:rgba(var(--reference-accent-rgb),.8)!important;font-weight:600!important;}
+.btn.primary{opacity:var(--ui-action-opacity,1)!important;background:var(--reference-action-gradient)!important;color:var(--ui-button-text,#fff)!important;border-color:rgba(var(--reference-accent-rgb),.8)!important;font-weight:600!important;}
 .reference-button-symbol{display:flex;width:26px;height:26px;flex:0 0 26px;}.reference-button-symbol svg{width:26px;height:26px;}
-.btn:is(.focus,:focus,:hover){outline:3px solid #fff!important;outline-offset:4px!important;box-shadow:none!important;border-color:#fff!important;background:linear-gradient(135deg,#e4f6ff,#96d8ff)!important;color:#071a2d!important;}
+.btn:is(.focus,:focus,:hover){outline:3px solid #fff!important;outline-offset:4px!important;box-shadow:none!important;border-color:#fff!important;background:var(--ui-focused-surface,var(--reference-action-gradient))!important;color:var(--ui-button-text,#fff)!important;}
 #pairError{font-size:16px!important;min-height:20px!important;margin:12px 0 0!important;}
 #brandFooter{position:absolute!important;left:70px!important;right:70px!important;bottom:22px!important;padding:14px 0 0!important;margin:0!important;border-top:1px solid rgba(var(--reference-accent-rgb),.3)!important;font-size:15px!important;}
 html[dir=rtl] .pair-copy{direction:rtl;text-align:right;}
@@ -86,7 +86,7 @@ html,body,#app,.screen{animation:none!important;transition:none!important}
 .bridge-diag-cards small{display:block;font-size:20px;color:#c4d2e3;margin-bottom:14px;}
 .bridge-diag-cards strong{display:block;font-size:27px;color:#fff;}
 #screen-diag #diagText{font-size:17px;max-height:220px;overflow:auto;padding:20px;white-space:pre-wrap;overflow-wrap:break-word;}
-.btn:is(.focus,:focus,:hover) span{color:#071a2d!important;}
+.btn:is(.focus,:focus,:hover) span{color:var(--ui-button-text,#fff)!important;}
 .btn:disabled{opacity:.55!important;}
 
 /* A separate, temporary phone setup form; normal TV connection stays read-only. */
@@ -115,8 +115,8 @@ html body #app #screen-diag .btnrow>.btn+.btn{margin-left:18px!important;}
 html[dir=rtl] body #app #screen-diag .btnrow>.btn+.btn{margin-left:0!important;margin-right:18px!important;}
 html body #app #screen-diag #diagText{direction:ltr!important;text-align:left!important;background:rgba(var(--reference-base-rgb),.8)!important;border-color:rgba(var(--reference-rim-rgb),.3)!important;}
 html body #app #screen-diag .btn,html body #app #header #btnDisconnect{background:var(--reference-glass)!important;border-color:rgba(var(--reference-rim-rgb),.4)!important;color:#f0f2f6!important;-webkit-text-fill-color:currentColor!important;}
-html body #app #screen-diag .btn.primary{background:var(--reference-action-gradient)!important;color:#10151d!important;-webkit-text-fill-color:currentColor!important;}
-html body #app .btn.focus,html body #app .btn:focus,html body #app .btn:hover,html body #app #screen-diag .btn.focus,html body #app #screen-diag .btn:focus,html body #app #screen-diag .btn:hover{outline:none!important;border-color:var(--reference-accent-light)!important;box-shadow:0 0 0 3px var(--reference-accent-light)!important;background:var(--reference-action-gradient)!important;color:#10151d!important;-webkit-text-fill-color:currentColor!important;}
+html body #app #screen-diag .btn.primary{opacity:var(--ui-action-opacity,1)!important;background:var(--reference-action-gradient)!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:currentColor!important;}
+html body #app .btn.focus,html body #app .btn:focus,html body #app .btn:hover,html body #app #screen-diag .btn.focus,html body #app #screen-diag .btn:focus,html body #app #screen-diag .btn:hover{outline:none!important;border-color:var(--reference-accent-light)!important;box-shadow:0 0 0 3px var(--reference-accent-light)!important;background:var(--reference-action-gradient)!important;color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:currentColor!important;}
 html body #app .btn span,html body #app .btn svg{color:inherit!important;-webkit-text-fill-color:currentColor!important;}
 html body #app #screen-diag .btn:disabled{background:var(--reference-glass)!important;color:#a7bacb!important;-webkit-text-fill-color:currentColor!important;border-color:rgba(var(--reference-rim-rgb),.2)!important;opacity:.55!important;box-shadow:none!important;}
 html body #app .reference-button-symbol{display:inline-flex!important;align-items:center!important;justify-content:center!important;flex:0 0 26px!important;width:26px!important;height:26px!important;margin-right:10px!important;}
@@ -126,3 +126,26 @@ html[dir=rtl] #btnDiagBack .reference-button-symbol{transform:scaleX(-1);}
 
 html[data-bridge-settling] #app{visibility:hidden!important}html[data-bridge-settling] #app *{transition:none!important;animation:none!important}
 #bridgePlayLoading{position:absolute;left:0;top:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--reference-bg,#07101e);color:white;font:28px/1.5 Arial,sans-serif;z-index:5}#bridgePlayLoading img{width:130px;height:130px;object-fit:contain}#bridgePlayLoading .phone-setup-spinner{margin:28px auto;width:48px;height:48px}#bridgePlayLoading p{font-size:23px}
+
+/* Informational ink is independent of action/accent colors, including generated counters. */
+html body #app .pair-steps li,
+html body #app .pair-steps li::before,
+html body #app .pair-steps li::after,
+html body #app .pair-steps .reference-step-icon,
+html body #app .pair-steps svg{color:var(--ui-info-text,#fff)!important;-webkit-text-fill-color:var(--ui-info-text,#fff)!important;}
+html body #app .btn:not(:disabled),
+html body #app .btn:not(:disabled) span,
+html body #app .btn:not(:disabled) svg{color:var(--ui-button-text,#fff)!important;-webkit-text-fill-color:var(--ui-button-text,#fff)!important;}
+/* Content-sized diagnostic glass panel. Keep the same controls and remote navigation. */
+html body #app #screen-diag{left:50%!important;right:auto!important;top:50%!important;bottom:auto!important;transform:translate(-50%,-50%)!important;width:800px!important;max-width:calc(100% - 140px)!important;height:auto!important;min-height:0!important;max-height:800px!important;padding:32px!important;background:var(--ui-glass-panel,linear-gradient(135deg,rgba(24,39,60,.64),rgba(7,16,30,.56)))!important;}
+html body #app #screen-diag h1{font-size:32px!important;line-height:1.25!important;margin:0 0 12px!important;}
+html body #app #screen-diag #diagSummary{font-size:21px!important;line-height:1.45!important;margin:0 0 22px!important;color:#fff!important;}
+html body #app #screen-diag .bridge-diag-cards{display:flex!important;flex-direction:column!important;gap:12px!important;margin:0!important;}
+html body #app #screen-diag .bridge-diag-cards>section{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:20px!important;flex:none!important;margin:0!important;padding:16px 20px!important;}
+html body #app #screen-diag .bridge-diag-cards>section+section{margin:0!important;}
+html body #app #screen-diag small{font-size:20px!important;color:#fff!important;margin:0!important;}
+html body #app #screen-diag strong{font-size:24px!important;line-height:1.35!important;}
+html body #app #screen-diag .btnrow{display:flex!important;flex-wrap:wrap!important;gap:14px!important;margin-top:24px!important;}
+html body #app #screen-diag .btnrow>.btn{flex:1 1 300px!important;min-height:58px!important;margin:0!important;padding:12px 16px!important;font-size:21px!important;}
+html body #app #screen-diag #btnDiagBack{flex-basis:100%!important;}
+html body #app #screen-diag #diagText{max-height:160px!important;min-height:0!important;font-size:17px!important;line-height:1.4!important;margin:16px 0 0!important;padding:14px!important;}
