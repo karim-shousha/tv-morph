@@ -16,6 +16,7 @@
     <application>
         <activity android:name="tv.appbridge.phase0.rt.ui.HostActivity"
             android:exported="false" android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.Material.NoActionBar" />
         <activity android:name="tv.appbridge.phase0.rt.ui.PhoneSetupActivity" android:exported="false"

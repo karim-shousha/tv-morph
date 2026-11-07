@@ -30,6 +30,7 @@ class HostActivity : Activity() {
     private var step = 2
     private var awaitingPhoneSetup = true
     private var setupAutoArmed = false
+    private var appsKeyboardVisible = false
     private val flowHandler = android.os.Handler(android.os.Looper.getMainLooper())
     private var flowTvConnected = false
     private var flowSetupState = ""
@@ -260,6 +261,7 @@ class HostActivity : Activity() {
         actionButton = button(label, action = action).also { root.addView(it) }
     }
     private fun updateTrialNotice() {
+        if (appsKeyboardVisible) { trialNotice?.visibility = View.GONE; return }
         val paid=mgr.tvPlusState=="active"
         trialNotice?.visibility=if(paid || step in 1..3)View.GONE else View.VISIBLE
         if(paid){trialWelcome?.dismiss();trialWelcome=null;return}
@@ -286,6 +288,7 @@ class HostActivity : Activity() {
         installSpinner?.visibility = if (busy) View.VISIBLE else View.GONE
     }
     private fun render() {
+        appsKeyboardVisible = false
         paintedLanguage = isArabic.toString()
         if (isFinishing || isDestroyed) return
         paintedAppearance = MorphHostShell.appearance(this)
@@ -333,9 +336,55 @@ class HostActivity : Activity() {
             awaitingPhoneSetup = false; setupAutoArmed = false
             work(tr("جاري قطع الاتصال…", "Disconnecting…"), after = { step = 2; note = ""; render() }) { mgr.disconnectTv() }
         })
-        root.addView(MorphHostShell.navigation(this))
+        val navigation = MorphHostShell.navigation(this)
+        root.addView(navigation)
         updateStatus()
+        if (step == 1) keepAppSearchVisible(body)
         root.post { if (!isFinishing && !isDestroyed) advancePhoneSetup() }
+    }
+
+    private fun keepAppSearchVisible(body: LinearLayout) {
+        val layoutRoot = root
+        val search = content.findViewWithTag<EditText>("bridge-app-search") ?: return
+        val chrome = ArrayList<View>()
+        trialNotice?.let { chrome.add(it) }
+        for (i in 0 until body.childCount) if (body.getChildAt(i) !== content) chrome.add(body.getChildAt(i))
+        val bodyIndex = root.indexOfChild(body)
+        for (i in bodyIndex + 1 until root.childCount) chrome.add(root.getChildAt(i))
+        val idleVisibility = chrome.associateWith { it.visibility }
+        fun applyKeyboard(visible: Boolean) {
+            if (root !== layoutRoot || appsKeyboardVisible == visible) return
+            appsKeyboardVisible = visible
+            chrome.forEach { it.visibility = if (visible) View.GONE else idleVisibility[it] ?: View.VISIBLE }
+            if (!visible) updateTrialNotice()
+        }
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            layoutRoot.setOnApplyWindowInsetsListener { _, insets ->
+                applyKeyboard(insets.isVisible(android.view.WindowInsets.Type.ime()))
+                insets
+            }
+            layoutRoot.requestApplyInsets()
+        }
+        // Some Samsung windows consume IME insets before they reach this child.
+        // Observe the window as well so the fixed footer never squeezes the search field.
+        layoutRoot.viewTreeObserver.addOnGlobalLayoutListener {
+            if (root === layoutRoot) {
+                val visible = android.graphics.Rect()
+                layoutRoot.getWindowVisibleDisplayFrame(visible)
+                val keyboardVisible = if (android.os.Build.VERSION.SDK_INT >= 30) {
+                    window.decorView.rootWindowInsets?.isVisible(android.view.WindowInsets.Type.ime()) == true
+                } else resources.displayMetrics.heightPixels - visible.bottom > dp(160)
+                applyKeyboard(keyboardVisible)
+            }
+        }
+        search.setOnEditorActionListener { _, action, _ ->
+            if (action != android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH) false else {
+                (getSystemService(INPUT_METHOD_SERVICE) as android.view.inputmethod.InputMethodManager)
+                    .hideSoftInputFromWindow(search.windowToken, 0)
+                search.clearFocus()
+                true
+            }
+        }
     }
 
     private fun appsPage() {
@@ -353,6 +402,7 @@ class HostActivity : Activity() {
         })
         content.addView(text(tr("اختار تطبيقاتك، وبعدها اضغط التالي.","Choose your apps, then tap Next."),13f,muted).apply {setPadding(0,dp(4),0,dp(10))})
         val search = EditText(this).apply {
+            tag = "bridge-app-search"
             hint = tr("ابحث عن تطبيق", "Search for an app"); setHintTextColor(muted); setTextColor(ink)
             setSingleLine(true); setText(query); textSize = 14f; typeface = arabicFont
             background = shape(); setPadding(dp(16), 0, dp(16), 0)
