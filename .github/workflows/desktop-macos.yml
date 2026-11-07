@@ -1,11 +1,11 @@
 name: Build and verify Morph Launcher for Mac
 on:
   push:
-    branches: [codex/desktop-macos]
+    branches: [codex/final-desktop-20261107]
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
   workflow_dispatch:
 concurrency:
-  group: morph-desktop-macos
+  group: morph-desktop-final-20261107
   cancel-in-progress: true
 permissions:
   contents: read
