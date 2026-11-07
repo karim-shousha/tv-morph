@@ -1,14 +1,2 @@
-نسخة Tizen 2 خفيفة — تجربة مستقلة 1.0.0
-
-تستهدف Tizen 2.3 و2.4 فقط؛ ليست Orsay أو Tizen 2.0.
-المعرّف MorphLt201.Home مختلف عن اللانشر الحالي MorphT2001.Home؛ لا تحذف النسخة الحالية.
-ملف WGT غير موقّع: يحتاج توقيع Samsung المعتاد بشهادة تشمل DUID الشاشة. يمكن اختياره من خيار رفع WGT في الموبايل أو توقيعه بأدوات Samsung على الكمبيوتر. التثبيت الفعلي لم يُختبر على شاشة Tizen 2 حتى الآن.
-
-ما تحتويه: قائمة التطبيقات المثبتة وتشغيلها، تحديد ثابت للريموت، رجوع، لغة عربي/إنجليزي، حجم خط عادي/كبير، ومعلومات النسخة.
-ما تم استبعاده: شاشات تحميل، محرر الثيمات، الثيمات، الكروت الكبيرة، الشفافية والبلور، الزوم والأنيميشن، الطقس والصلاة والمباريات، الخدمات السحابية والخلفية، IPTV وBridge المدمجان. يمكن فتح IPTV مستقل إذا كان مثبتًا أصلًا كتطبيق على التلفزيون.
-لا تُحمَّل صور التطبيقات لتقليل ذاكرة فك الصور؛ يوجد شعار ثابت واحد فقط.
-
-الحزمة 5 ملفات، منها ملف JavaScript واحد ES5 وملف CSS واحد. حجمها نحو 446 كيلوبايت مقابل 14.4 ميجابايت للحزمة السابقة. لا تعتمد على الإنترنت لفتح الواجهة.
-نجحت اختبارات ES5 و720p و1080p والريموت والرجوع والإعدادات والعربي/الإنجليزي وحالات خطأ/غياب/عدم استجابة خدمة قائمة التطبيقات. هذه اختبارات محاكاة في متصفح حديث وليست إثباتًا للعمل على WebKit القديم الفعلي.
-للتجربة: ثبّت الحزمة وافتح Morph Launcher Lite 2 Test، راجع ظهور الواجهة وقائمة التطبيقات، افتح تطبيقًا وارجع، ثم جرّب الإعدادات واللغة. لو فشلت، سجّل موديل التلفزيون ونسخة Tizen وأي نص خطأ ظاهر.
-لم تُنشر هذه التجربة على الموقع، ولم تتغير النسخ المعتمدة.
+Tizen 2 Lite 1.0.2
+Isolated classic Morph home, original compressed static background, header/sidebar/dock. No motion, blur, large service cards, network boot or embedded IPTV/Bridge. Dock launches real installed apps and supports five saved pins. Settings: language, text size, refresh and reversible system-service filter. Compatible syntax checked as ES5; physical Tizen 2 retest required. Unsigned WGT: use device-specific Samsung signing. Stable packages unchanged.
