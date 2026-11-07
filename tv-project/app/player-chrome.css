@@ -178,6 +178,5 @@ body.media-effect-motion-off #morph-player.morph3 .morph2-left,body.media-effect
 #morph-player.morph252.morph3 [data-player-tool=back10]:disabled,#morph-player.morph252.morph3 [data-player-tool=fwd10]:disabled{opacity:.35;pointer-events:none}
 
 /* Explicit list return for every shared IPTV/local-media player. */
-#morph-player.morph252.morph3 .morph3-top .morph3-back{display:flex;align-items:center;justify-content:center;gap:12px;flex:0 0 auto;width:auto;min-width:var(--player-back,180px);height:var(--player-header,88px);padding:0 12px;border-radius:18px;font:var(--player-time,21px) Arial,sans-serif;background:rgba(15,25,43,.65);color:#fff;border:1px solid rgba(255,255,255,.4)}
-#morph-player.morph252.morph3 .morph3-back svg{width:30px;height:30px;flex:none}
-#morph-player.morph252.morph3 .morph3-back:focus{outline:3px solid white;outline-offset:3px;background:rgba(40,65,95,.9)}
+#morph-player.morph252.morph3 .morph3-top .morph3-back{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:auto;min-width:0;height:var(--player-header,88px);padding:0 12px;border-radius:0;font:var(--player-time,21px) Arial,sans-serif;color:#fff;transition:color 120ms ease,text-decoration-color 120ms ease!important;background:transparent!important;border:0!important;box-shadow:none!important;outline:none!important}
+#morph-player.morph252.morph3 .morph3-top .morph3-back:is(:focus,:hover,:active){background:transparent!important;border:0!important;outline:none!important;box-shadow:none!important;text-decoration:underline;text-underline-offset:5px}

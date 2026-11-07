@@ -19,7 +19,7 @@ input:not([type=range]),textarea{cursor:text!important;user-select:text!importan
 .pc-track-selects{display:flex;align-items:center;justify-content:center;gap:12px;padding-top:12px;}
 .pc-track-selects select{font:20px Arial,Tahoma,sans-serif;border:1px solid #a7b9d766;border-radius:10px;background:#23314a;color:#f5f7ff;padding:8px;max-width:230px;}
 #pc-media-browser{z-index:2000;align-items:center;justify-content:center}
-#pc-media-browser .modal{box-sizing:border-box;width:1120px;max-width:calc(100% - 100px);max-height:86%;padding:28px;overflow:hidden;display:flex;flex-direction:column;gap:20px;background:var(--ui-glass-settings);color:var(--ui-navigation-text);border:1px solid var(--ui-card-border);border-radius:24px}
+#pc-media-browser .modal{box-sizing:border-box;width:1120px;max-width:calc(100% - 100px);max-height:86%;padding:28px;overflow:hidden;display:flex;flex-direction:column;gap:20px;background:var(--ui-glass-file-browser,var(--ui-glass-settings))!important;color:var(--ui-navigation-text);border:1px solid var(--ui-card-border);border-radius:24px}
 #pc-media-browser .pc-files-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:none}
 #pc-media-browser .pc-files-heading{min-width:0}#pc-media-browser h2{font-size:30px;margin:0 0 8px;overflow-wrap:anywhere}
 #pc-media-browser p{font-size:18px;margin:0;line-height:1.5}#pc-media-browser .actions{display:flex;gap:10px;flex:none}
