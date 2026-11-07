@@ -35,7 +35,7 @@ def stage_launcher_visual(destination, radio=None):
     p=radio/'index.html'
     # The radio ships its final DOM and one stylesheet. Never mount the old
     # cinematic/premium shells before the current presentation.
-    html=p.read_text(encoding='utf-8').replace('</head>',f'<script src="{radio_prefix}reference-theme.js"></script></head>')
+    html=p.read_text(encoding='utf-8').replace('</head>',f'<script src="{radio_prefix}club-themes.js"></script><script src="{radio_prefix}ui/theme-adapter.js"></script><script src="{radio_prefix}reference-theme.js"></script></head>')
     html=html.replace('../tv/',radio_prefix)
     p.write_text(html,encoding='utf-8')
     css=radio/'radio.css'
@@ -50,13 +50,13 @@ def stage_launcher_visual(destination, radio=None):
     html=re.sub(r'<link rel="stylesheet" href="premium-network\.css(?:\?[^"]*)?">','',html)
     html=html.replace('<html lang=', '<html id="reference-network" lang=')
     html=html.replace('</head>','<link rel="stylesheet" href="../network-reference.css"></head>')
-    html=html.replace('</body>','<script src="../reference-theme.js"></script><script src="../network-reference.js"></script></body>')
+    html=html.replace('</body>','<script src="../club-themes.js"></script><script src="../ui/theme-adapter.js"></script><script src="../reference-theme.js"></script><script src="../network-reference.js"></script></body>')
     p.write_text(html,encoding='utf-8')
     for name in ['premium-network.js','premium-network.css']:
         (DEST/'network'/name).unlink(missing_ok=True)
     # The receiver uses the same preview palette and artwork, isolated from production sources.
     p=DEST/'bridge-receiver/index.html'
-    html=p.read_text(encoding='utf-8').replace('src="bridge-connect-hero-v1.webp"','src="../reference-assets/bridge-devices-v2.webp"').replace('</head>','<link rel="stylesheet" href="../bridge-reference.css"></head>').replace('</body>','<script src="../reference-theme.js"></script><script src="../bridge-reference.js"></script></body>')
+    html=p.read_text(encoding='utf-8').replace('src="bridge-connect-hero-v1.webp"','src="../reference-assets/bridge-devices-v2.webp"').replace('</head>','<link rel="stylesheet" href="../bridge-reference.css"></head>').replace('</body>','<script src="../club-themes.js"></script><script src="../ui/theme-adapter.js"></script><script src="../reference-theme.js"></script><script src="../bridge-reference.js"></script></body>')
     p.write_text(html,encoding='utf-8')
     (DEST/'bridge-receiver/bridge-connect-hero-v1.webp').unlink(missing_ok=True)
     # Extend the shared focus candidates only in this preview, retaining the existing engine.
@@ -108,6 +108,10 @@ def stage_launcher_visual(destination, radio=None):
         prefix='' if entry.parent==DEST else radio_prefix if entry.parent==radio else '../'
         html=entry.read_text(encoding='utf-8').replace('</body>',f'<link rel="stylesheet" href="{prefix}focus-reference.css"><script defer src="{prefix}focus-reference.js"></script></body>')
         entry.write_text(html,encoding='utf-8')
+    # Every TV service consumes one control-motion implementation. Player DOM is excluded.
+    for entry,prefix in [(DEST/'index.html',''),(radio/'index.html',radio_prefix),(DEST/'network/index.html','../'),(DEST/'bridge-receiver/index.html','../')]:
+        content=entry.read_text(encoding='utf-8').replace('</body>',f'<script defer src="{prefix}ui/control-system.js"></script></body>')
+        entry.write_text(content,encoding='utf-8')
     # Refresh CSS image URLs too: the user edits shared backgrounds in place.
     for p in sorted({p for folder in [DEST,radio] for p in folder.rglob('*.css')}):
         def stamp_image(m):

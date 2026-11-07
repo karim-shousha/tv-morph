@@ -92,12 +92,12 @@ html#iptv-theme-root body .detail-actions button{min-height:46px!important;font-
 html#iptv-theme-root body .details-dialog.tv-series-detail{height:82vh!important;grid-template-rows:minmax(0,40%) minmax(0,1fr)!important}
 html#iptv-theme-root body .detail-rating{display:flex!important;align-items:center!important;gap:8px!important;margin:10px 0!important}
 html#iptv-theme-root body .detail-rating-stars,html#iptv-theme-root body .stream-rating-stars{color:rgba(247,249,255,.4)!important;position:relative;display:inline-block;white-space:nowrap;direction:ltr;line-height:1.3}
-html#iptv-theme-root body .detail-rating-fill,html#iptv-theme-root body .stream-rating-stars i{color:#ffda7a!important;position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;font-style:normal}
+html#iptv-theme-root body .detail-rating-fill,html#iptv-theme-root body .stream-rating-stars i{color:var(--ui-rating,#ffda7a)!important;position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;font-style:normal}
 html#iptv-theme-root body .stream-meta-rating{white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
 @media(max-height:650px){html#iptv-theme-root[data-stream-ui] body .stream-hero-copy{padding-top:12px!important;padding-bottom:12px!important}html#iptv-theme-root[data-stream-ui] body .stream-actions button{min-height:34px!important;padding:7px 16px!important}html#iptv-theme-root[data-stream-ui] body .stream-actions{padding-top:8px!important}}
 
 html#iptv-theme-root body .rating-five{position:relative;display:inline-block;direction:ltr;white-space:nowrap;color:rgba(247,249,255,.4)!important;font:28px/1.3 Arial;letter-spacing:3px}
-html#iptv-theme-root body .rating-five-fill{position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;color:#ffda7a!important;font:inherit;letter-spacing:inherit}
+html#iptv-theme-root body .rating-five-fill{position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;color:var(--ui-rating,#ffda7a)!important;font:inherit;letter-spacing:inherit}
 
 /* The active card already carries status and expiry in its compact summary. */
 html#iptv-theme-root #settings-panel #iptv-active-validity,html#iptv-theme-root #settings-panel #iptv-active-expiry{display:none!important}
@@ -183,7 +183,7 @@ html#iptv-theme-root body #details-panel #detail-start:before,html#iptv-theme-ro
 /* 258: one continuous backdrop, readable shelf panel and aligned account form. */
 html#iptv-theme-root[data-stream-ui] body .stream-hero-copy{padding-top:52px!important}
 html#iptv-theme-root[data-stream-ui] body #stream-rows{background:rgba(7,18,35,.86)!important;border:1px solid rgba(128,207,255,.22)!important;border-radius:22px!important;box-shadow:0 8px 28px rgba(2,7,16,.20)!important;padding:14px 18px 18px!important;box-sizing:border-box!important;scroll-padding-top:16px!important}
-html#iptv-theme-root[data-stream-ui] body .stream-rating-stars i,html#iptv-theme-root[data-stream-ui] body #stream-meta .stream-rating-stars i{color:#ffda7a!important;-webkit-text-fill-color:#ffda7a!important}
+html#iptv-theme-root[data-stream-ui] body .stream-rating-stars i,html#iptv-theme-root[data-stream-ui] body #stream-meta .stream-rating-stars i{color:var(--ui-rating,#ffda7a)!important;-webkit-text-fill-color:var(--ui-rating,#ffda7a)!important}
 html#iptv-theme-root[data-stream-ui] body .stream-hero-pager{right:22px!important;bottom:26px!important;padding:7px 10px!important;border-radius:24px;background:rgba(7,18,35,.65)!important;gap:12px!important}
 html#iptv-theme-root[data-stream-ui] body .stream-hero-pager i{width:10px!important;height:10px!important;background:rgba(255,255,255,.55)!important;box-shadow:0 1px 3px rgba(0,0,0,.65)}
 html#iptv-theme-root[data-stream-ui] body .stream-hero-pager i.active{background:#fff!important;box-shadow:0 0 7px rgba(255,255,255,.55)}
@@ -227,12 +227,12 @@ html#iptv-theme-root[data-stream-ui] body #stream-title,html#iptv-theme-root[dat
 html#iptv-theme-root[data-stream-ui] body #stream-description{height:2.9em!important;min-height:2.9em!important;max-height:2.9em!important}
 html#iptv-theme-root[data-stream-ui] body #stream-meta{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;height:1.6em!important;min-height:1.6em!important;color:#9de5dc!important;-webkit-text-fill-color:#9de5dc!important}
 html#iptv-theme-root[data-stream-ui] body #stream-meta>span:not(.stream-meta-rating){color:#9de5dc!important;-webkit-text-fill-color:#9de5dc!important}
-html#iptv-theme-root[data-stream-ui] body #stream-meta .stream-meta-rating{color:#ffd77a!important;-webkit-text-fill-color:#ffd77a!important}
+html#iptv-theme-root[data-stream-ui] body #stream-meta .stream-meta-rating{color:var(--ui-rating,#ffda7a)!important;-webkit-text-fill-color:var(--ui-rating,#ffda7a)!important}
 html#iptv-theme-root[data-stream-ui] body #stream-meta .stream-rating-stars{color:rgba(255,218,122,.4)!important;-webkit-text-fill-color:rgba(255,218,122,.4)!important}
 html#iptv-theme-root[data-stream-ui] body #stream-rows{width:100vw!important;max-width:none!important;align-self:center!important;margin:0!important;border-radius:0!important;border-left:0!important;border-right:0!important;padding-left:32px!important;padding-right:32px!important}
 html#iptv-theme-root[data-stream-ui] body .stream-hero-pager{bottom:18px!important}
 html#iptv-theme-root body #details-panel .tv-episode{position:relative!important;padding-inline-end:46px!important}
-html#iptv-theme-root body #details-panel .episode-favorite-star{position:absolute!important;right:14px!important;top:50%!important;transform:translateY(-50%);color:#ffda7a!important;-webkit-text-fill-color:#ffda7a!important;font-size:25px!important;line-height:1!important;min-width:26px!important;text-align:center!important;text-shadow:0 1px 2px #071223}
+html#iptv-theme-root body #details-panel .episode-favorite-star{position:absolute!important;right:14px!important;top:50%!important;transform:translateY(-50%);color:var(--ui-rating,#ffda7a)!important;-webkit-text-fill-color:var(--ui-rating,#ffda7a)!important;font-size:25px!important;line-height:1!important;min-width:26px!important;text-align:center!important;text-shadow:0 1px 2px #071223}
 html#iptv-theme-root[dir=rtl] body #details-panel .episode-favorite-star{right:auto!important;left:14px!important}
 html#iptv-theme-root body #details-panel .episode-favorite-star[hidden]{display:none!important}
 

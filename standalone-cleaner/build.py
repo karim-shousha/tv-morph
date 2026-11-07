@@ -16,7 +16,8 @@ def run(args):
 def stage(target):
     app=BUILD/target;app.mkdir(parents=True,exist_ok=True)
     for name in ['cleaner.js','cleaner.css','cleaner-tizen.js','cleaner-platform.js']:shutil.copy2(ROOT/'tv-project/app'/name,app/name)
-    (app/'index.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cleaner</title><link rel="stylesheet" href="cleaner.css"></head><body style="margin:0;background:#0b1a2c"><script src="cleaner.js"></script><script src="cleaner-tizen.js"></script><script src="cleaner-platform.js"></script><script>window.CleanerStandalone=true;MorphCleaner.open();</script></body></html>',encoding='utf-8')
+    shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',app/'control-system.js')
+    (app/'index.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cleaner</title><link rel="stylesheet" href="cleaner.css"></head><body style="margin:0;background:#0b1a2c"><script src="control-system.js"></script><script src="cleaner.js"></script><script src="cleaner-tizen.js"></script><script src="cleaner-platform.js"></script><script>window.CleanerStandalone=true;MorphCleaner.open();</script></body></html>',encoding='utf-8')
     image=Image.new('RGB',(512,512));pixels=image.load()
     for y in range(512):
         for x in range(512):
@@ -27,6 +28,7 @@ def stage(target):
 def android():
     build=stage('android');assets=build/'assets/cleaner';assets.mkdir(parents=True,exist_ok=True)
     for name in ['cleaner-native.html','cleaner.js','cleaner.css']:shutil.copy2(ROOT/'tv-project/app'/name,assets/name)
+    shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',assets/'control-system.js')
     res=build/'res/drawable-nodpi';res.mkdir(parents=True,exist_ok=True);shutil.copy2(build/'icon.png',res/'icon.png')
     manifest=build/'AndroidManifest.xml';manifest.write_text('''<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.tvmorph.cleaner" android:versionCode="347" android:versionName="1.1.320"><uses-sdk android:minSdkVersion="19" android:targetSdkVersion="34"/><uses-feature android:name="android.hardware.touchscreen" android:required="false"/><uses-feature android:name="android.software.leanback" android:required="false"/><application android:label="Cleaner" android:icon="@drawable/icon" android:theme="@android:style/Theme.Holo.NoActionBar" android:allowBackup="false"><activity android:name="local.tvmorph.tv.CleanerActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent-filter></activity></application></manifest>''')
     api=list((ROOT/'.tools/android/sdk/platform-19').rglob('android.jar'))[0];classes=build/'classes';classes.mkdir(exist_ok=True)

@@ -36,6 +36,7 @@ shutil.copytree(SOURCE/'assets',assets,dirs_exist_ok=True,ignore=shutil.ignore_p
 
 cleaner_assets=assets/'cleaner';cleaner_assets.mkdir(exist_ok=True)
 for name in ['cleaner-native.html','cleaner.js','cleaner.css']:shutil.copy2(ROOT/'tv-project/app'/name,cleaner_assets/name)
+shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',cleaner_assets/'control-system.js')
 (cleaner_assets/'assets').mkdir(exist_ok=True)
 shutil.copy2(ROOT/'tv-project/app/assets/morph-header-symbol.webp',cleaner_assets/'assets/morph-header-symbol.webp')
 
@@ -58,8 +59,9 @@ network_document.write_text(network_document.read_text(encoding='utf-8').replace
 # The shared TV network page retains phone branding when embedded on the phone.
 phone_network=network_assets/'network/premium-network.js'
 phone_network.write_text(phone_network.read_text(encoding='utf-8').replace('morph-launcher-wordmark.webp','morph-wordmark.webp').replace('Morph Launcher','Morph TV'),encoding='utf-8')
+shutil.copy2(shared/'club-themes.js',network_assets/'club-themes.js')
 (network_assets/'ui').mkdir(exist_ok=True)
-for filename in ['tokens.css','theme-adapter.js']:
+for filename in ['tokens.css','theme-adapter.js','control-system.js']:
  shutil.copy2(shared/'ui'/filename,network_assets/'ui'/filename)
 lg_version=json.loads((ROOT/'webos-app/validation.json').read_text())['version'];lg_ipk=ROOT/('webos-app/com.zainbot.morphtv.preview_'+lg_version+'_all.ipk')
 assert __import__('hashlib').sha256(lg_ipk.read_bytes()).hexdigest()==json.loads((ROOT/'webos-app/validation.json').read_text())['sha256']
@@ -108,7 +110,7 @@ for name in excluded:
  if stale.exists():stale.unlink()
 for f in (ROOT/'tv-project/app/assets').iterdir():
  if f.name not in excluded and f.suffix in ['.png','.svg','.jpg','.webp']:shutil.copy2(f,assets/'ui'/f.name)
-shutil.copy2(ROOT/'tv-project/app/assets/launcher-main-background-v1.webp',assets/'ui/launcher-main-background-v1.webp')
+shutil.copy2(ROOT/'tv-project/visual-system/assets/bridge-background-v2.webp',assets/'ui/morph-loading-background.webp')
 for name in ['welcome-support.css','theme-packs-manifest.js','theme-packs.js','theme-preview.js','theme-locale.js','theme-preview.css','contact.js','plus.js','plus.css','plus-themes.css']:shutil.copy2(ROOT/'tv-project/app'/name,assets/'ui'/name)
 for source,name in [('vd_tizen_dev_author_ca.cer','ca-author.cer'),('vd_tizen_dev_public2.crt','ca-distributor.crt'),('vd_tizen_dev_partner2.crt','ca-distributor-partner.crt')]:shutil.copy2(ROOT/'.tools/tv-signing/assets/samsung-tv-ca'/source,assets/name)
 with zipfile.ZipFile(assets/'tv-app.zip','w',zipfile.ZIP_DEFLATED) as z:

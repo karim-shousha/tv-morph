@@ -56,6 +56,7 @@ with (tv/'style.css').open('a',encoding='utf-8') as css:css.write((SOURCE/'home-
 
 cleaner_assets=assets/'cleaner';cleaner_assets.mkdir(exist_ok=True)
 for name in ['cleaner-native.html','cleaner.js','cleaner.css']:shutil.copy2(ROOT/'tv-project/app'/name,cleaner_assets/name)
+shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',cleaner_assets/'control-system.js')
 (cleaner_assets/'assets').mkdir(exist_ok=True)
 shutil.copy2(ROOT/'tv-project/app/assets/morph-header-symbol.webp',cleaner_assets/'assets/morph-header-symbol.webp')
 

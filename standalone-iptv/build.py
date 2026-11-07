@@ -22,7 +22,8 @@ def clean_stage(path):
 def shared_style(root):
     stage_brand_assets(root)
     stage_prayer_ui(root)
-    for name in ['header-shared.css','tokens.css','theme-adapter.js']:
+    shutil.copy2(ROOT/'tv-project/app/club-themes.js',root/'club-themes.js')
+    for name in ['header-shared.css','tokens.css','theme-adapter.js','control-system.js']:
         target=root/'ui'/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/'tv-project/app/ui'/name,target)
 
 def sign_android(build,unsigned,target):
