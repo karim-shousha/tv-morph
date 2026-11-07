@@ -1,31 +1,31 @@
 {
-  "version": "1.1.324",
-  "reviewBuild": 351,
+  "version": "1.1.325",
+  "reviewBuild": 352,
   "windowsVerified": true,
   "macAppleSiliconVerified": true,
   "macIntelVerified": true,
   "minimumMacOS": "13.0",
   "cleanerPackagedNativeVerified": true,
-  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42406661494",
-  "source": "d5ab76759f042fb4b0700bb6a40ed254545268c5",
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42415556552",
+  "source": "c809b037ff4f79e39e2f974b3d9715a09a6b13e9",
   "assets": [
     {
-      "file": "Morph-Launcher-Mac-1.1.324-universal.dmg",
-      "bytes": 245693975,
-      "sha256": "2a570ae1696f86f76b5373b47123a2eb0a87a5cf6cf4eba36ad6337f03f714fc",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.324/Morph-Launcher-Mac-1.1.324-universal.dmg"
+      "file": "Morph-Launcher-PC-1.1.325-Setup.exe",
+      "bytes": 139385917,
+      "sha256": "adcf9e96c752e38be0300232c2b7e27d701ef5e5ba8d2e171baa0edc2e983362",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-PC-1.1.325-Setup.exe"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.324-universal.zip",
-      "bytes": 238054267,
-      "sha256": "db2fa9cad75ad2f6f70ee850a33ba90e9df5791ced4e129f310d9661c70022b4",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.324/Morph-Launcher-Mac-1.1.324-universal.zip"
+      "file": "Morph-Launcher-Mac-1.1.325-universal.zip",
+      "bytes": 238055068,
+      "sha256": "53fe18b2a144735d9cfe645fddaae7c22903c68f4fde1001475fcb07e0169b15",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-Mac-1.1.325-universal.zip"
     },
     {
-      "file": "Morph-Launcher-PC-1.1.324-Setup.exe",
-      "bytes": 139384218,
-      "sha256": "e43a5cbaadda078814962b42e67415dfe2d59294efb32e318d348229ebbdacf1",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.324/Morph-Launcher-PC-1.1.324-Setup.exe"
+      "file": "Morph-Launcher-Mac-1.1.325-universal.dmg",
+      "bytes": 245694417,
+      "sha256": "ffc4d7e84e95c1bd1a5f57722a3e95038e1d32dfe3564dd8dd393f7f440ca507",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-Mac-1.1.325-universal.dmg"
     }
   ]
 }

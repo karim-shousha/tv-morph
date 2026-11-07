@@ -1,5 +1,5 @@
 {
-  "version": "1.1.324",
+  "version": "1.1.325",
   "baseUrl": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.321/",
   "artifacts": [
     {
@@ -259,6 +259,96 @@
       "bytes": 169960931,
       "sha256": "0a95814ce07bc637cedcfc021222defaf7a026ec0e9fb22369127cc84c55d6c6",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.325/Morph-TV-Phone-1.1.325.apk"
+    },
+    {
+      "file": "Morph-Bridge-Android-TV-1.1.325.apk",
+      "bytes": 1407073,
+      "sha256": "ff78586da8d244592203179469153af75b1aae4af021b0d11a5e9cd20f0f7bb9",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Bridge-Android-TV-1.1.325.apk"
+    },
+    {
+      "file": "Morph-Bridge-LG-1.1.325.ipk",
+      "bytes": 818422,
+      "sha256": "ca26f7bc38888e01cef8f79b6eb2f86c4a7d27615a36717a9275720636f76167",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Bridge-LG-1.1.325.ipk"
+    },
+    {
+      "file": "Morph-Bridge-Samsung-1.1.325.wgt",
+      "bytes": 818558,
+      "sha256": "7d72849f64a9910f2995a166f67d399a24d89b7482fe2dfe09a150db0fc23297",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Bridge-Samsung-1.1.325.wgt"
+    },
+    {
+      "file": "Morph-IPTV-Legacy-1.1.325.apk",
+      "bytes": 496658,
+      "sha256": "babeeca79b006a2ad64a85855afa2ca893df359832e044654d5c81ab5ad73b9c",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-IPTV-Legacy-1.1.325.apk"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.325-Setup.exe",
+      "bytes": 139385917,
+      "sha256": "adcf9e96c752e38be0300232c2b7e27d701ef5e5ba8d2e171baa0edc2e983362",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-PC-1.1.325-Setup.exe"
+    },
+    {
+      "file": "Morph-TV-Android-TV-1.1.325.apk",
+      "bytes": 25228063,
+      "sha256": "7de1b85f0a17d32fa0be26a8af40958e4137e6e8d88d43c2f9fc7501237e5f54",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Android-TV-1.1.325.apk"
+    },
+    {
+      "file": "Morph-TV-Legacy-1.1.325.apk",
+      "bytes": 472082,
+      "sha256": "74d654e35c74639fb885e4d5c1c2910ba31daa87cc854e1fc0dead4f885ba285",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Legacy-1.1.325.apk"
+    },
+    {
+      "file": "Morph-TV-LG-1.1.325.ipk",
+      "bytes": 13733054,
+      "sha256": "a4a90aff220ae09f856f67ce7cbe6cc0175014ca1c52a215675da39f725596ca",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-LG-1.1.325.ipk"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.326.apk",
+      "bytes": 169977315,
+      "sha256": "c29617ad566675964ca78b9595ee8b4cc70d342e61e3357a8387a9acc782bf84",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Phone-1.1.326.apk"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen2-1.1.325.wgt",
+      "bytes": 14413605,
+      "sha256": "0b9e1a7a67da90d647f792e62746a06cdb872c4bb82294a064b4bcbf42837fdd",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen2-1.1.325.wgt"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen3-1.1.325.wgt",
+      "bytes": 14410861,
+      "sha256": "ecece0ecae9ada5b87bfc37dd2a5fd97551bf0bf2e0da40e6bcb284c21787c96",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen3-1.1.325.wgt"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen4-1.1.325.wgt",
+      "bytes": 14380900,
+      "sha256": "098ad89062a58cab2f27690ec16b8ff0dff4c48e7d6de750df0d4078ac39b1c1",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen4-1.1.325.wgt"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen5-1.1.325.wgt",
+      "bytes": 14314044,
+      "sha256": "19bbeee10d3d12d413b53a28e5be3090a8c6d80a9ddca18862ccba5d16143696",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen5-1.1.325.wgt"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.325-universal.zip",
+      "bytes": 238055068,
+      "sha256": "53fe18b2a144735d9cfe645fddaae7c22903c68f4fde1001475fcb07e0169b15",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-Mac-1.1.325-universal.zip"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.325-universal.dmg",
+      "bytes": 245694417,
+      "sha256": "ffc4d7e84e95c1bd1a5f57722a3e95038e1d32dfe3564dd8dd393f7f440ca507",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Launcher-Mac-1.1.325-universal.dmg"
     }
   ]
 }
