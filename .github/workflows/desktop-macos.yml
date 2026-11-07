@@ -1,84 +1,168 @@
-name: Build and verify Morph Launcher for Mac
+name: Build and verify Morph Launcher 1.1.324 for Mac
+
 on:
+
   push:
-    branches: [codex/final-desktop-20261107]
+
+    branches: [codex/release324-mac-20261107]
+
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
+
   workflow_dispatch:
+
 concurrency:
-  group: morph-desktop-final-20261107-v2
+
+  group: morph-desktop-release324-20261107
+
   cancel-in-progress: true
+
 permissions:
+
   contents: read
+
 jobs:
+
   package:
+
     runs-on: macos-15
+
     timeout-minutes: 20
+
     steps:
+
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
+
         with:
+
           node-version: '22'
+
       - name: Verify and extract frozen runtime
+
         run: |
+
           python3 - <<'PY'
+
           import pathlib,json,hashlib,zipfile
+
           p=pathlib.Path('desktop-build');j=json.loads((p/'runtime.json').read_text());a=p/j['file'];assert hashlib.sha256(a.read_bytes()).hexdigest()==j['sha256'];zipfile.ZipFile(a).extractall('desktop')
+
           PY
+
       - name: Install packaging dependencies
+
         working-directory: desktop
+
         run: npm ci --no-audit --no-fund
+
       - name: Build universal Mac application
+
         working-directory: desktop
+
         run: npx electron-builder --mac dmg zip --universal --publish never
+
       - uses: actions/upload-artifact@v4
+
         with:
+
           name: morph-mac-universal
+
           path: |
+
             desktop/dist/Morph-Launcher-Mac-*.dmg
+
             desktop/dist/Morph-Launcher-Mac-*.zip
+
           if-no-files-found: error
+
           retention-days: 7
+
   verify:
+
     needs: package
+
     strategy:
+
       fail-fast: false
+
       matrix:
+
         include:
+
           - runner: macos-15
+
             arch: arm64
+
           - runner: macos-15-intel
+
             arch: intel
+
     runs-on: ${{ matrix.runner }}
+
     timeout-minutes: 30
+
     steps:
+
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
+
         with:
+
           node-version: '22'
+
       - uses: actions/download-artifact@v4
+
         with:
+
           name: morph-mac-universal
+
           path: downloads
+
       - name: Extract frozen runtime and packaged application
+
         run: |
+
           python3 -c "import zipfile;zipfile.ZipFile('desktop-build/morph-desktop-runtime.zip').extractall('desktop')"
+
           ditto -x -k downloads/Morph-Launcher-Mac-*-universal.zip mac-app
+
       - name: Install test dependencies
+
         working-directory: desktop
+
         run: |
+
           npm ci --no-audit --no-fund
+
           command -v ffmpeg || brew install ffmpeg
+
       - name: Bounded individual runtime checks
+
         working-directory: desktop
+
         env:
+
           MORPH_TEST_NO_SCREENSHOTS: "1"
+
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher
+
         run: python3 ../desktop-build/run-mac-checks.py
+
       - uses: actions/upload-artifact@v4
+
         if: always()
+
         with:
+
           name: morph-mac-${{ matrix.arch }}-qa
+
           path: |
+
             desktop/test-output/*.json
+
             desktop/test-output/ci-*.log
+
           retention-days: 7
+
