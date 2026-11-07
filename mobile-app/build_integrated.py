@@ -17,6 +17,15 @@ if '--preserve-tv-bundles' in sys.argv:
             target=PHONE/'build/assets'/name
             assert target.is_file(), 'Missing staged installer: '+name
             target.write_bytes(archive.read('assets/'+name))
+# Android-only patches can retain approved Samsung/LG installers while refreshing
+# the two Android payloads. Never ship an older Android installer accidentally.
+if '--refresh-android-installers' in sys.argv:
+    receiver_manifest=(ROOT/'android-tv/AndroidManifest.xml').read_text(encoding='utf-8')
+    receiver_version=re.search(r'android:versionName="([^"]+)"',receiver_manifest).group(1)
+    shutil.copy2(ROOT/'android-tv/TV-Morph-Android-TV-Preview.apk',PHONE/'build/assets/android-tv.apk')
+    from installer_payloads import stage as stage_install_products
+    stage_install_products(ROOT,PHONE/'build/assets',receiver_version)
+
 manifest=(PHONE/'AndroidManifest.xml').read_text(encoding='utf-8')
 version=re.search(r'android:versionName="([^"]+)"',manifest).group(1)
 if '--share' in sys.argv:version=version.replace('-preview','-tester')

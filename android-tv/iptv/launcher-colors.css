@@ -101,3 +101,16 @@ html#iptv-theme-root#iptv-theme-root#iptv-theme-root#iptv-theme-root#iptv-theme-
 
 /* Navigation ink is a shared semantic role, independent of glass and slideshow art. */
 html#iptv-theme-root body #morph-header[data-shared-header],html#iptv-theme-root body #morph-header[data-shared-header] .brand,html#iptv-theme-root body #morph-header[data-shared-header] .brand span,html#iptv-theme-root body #morph-header[data-shared-header] button,html#iptv-theme-root body #morph-header[data-shared-header] button span,html#iptv-theme-root body #morph-header[data-shared-header] .header-status,html#iptv-theme-root body #morph-header[data-shared-header] .header-status *{color:var(--ui-navigation-text,#ffffff)!important;-webkit-text-fill-color:var(--ui-navigation-text,#ffffff)!important;opacity:var(--ui-navigation-opacity,1)!important;}
+
+/* IPTV media cards use their native focus border; no masked overlay or focus zoom. */
+html#iptv-theme-root body #stream-rows .stream-card,
+html#iptv-theme-root body #items .item,
+html#iptv-theme-root body #items .tile,
+html#iptv-theme-root body #watch-hero .watch-card,
+html#iptv-theme-root body #dashboard .portal-grid button{transition:none!important;animation:none!important;filter:none!important}
+html#iptv-theme-root body #stream-rows .stream-card:focus,
+html#iptv-theme-root body #items .item:focus,
+html#iptv-theme-root body #items .item:focus .tile,
+html#iptv-theme-root body #items .tile:focus,
+html#iptv-theme-root body #watch-hero .watch-card:focus,
+html#iptv-theme-root body #dashboard .portal-grid button:focus{transform:none!important;box-shadow:none!important;filter:none!important;outline:2px solid var(--iptv-focus-ring,#dce8ff)!important;outline-offset:2px!important;border-color:var(--iptv-focus-ring,#dce8ff)!important}

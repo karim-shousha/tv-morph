@@ -1,5 +1,14 @@
 {
-  "version": "1.1.321",
-  "androidVersionCode": 348,
-  "reason": "Confirmed native menu focus; shared UI parity, phone Cleaner and current legacy runtime release."
+  "version": "1.1.324",
+  "androidVersionCode": 351,
+  "reason": "Android patch: actual APK install action and sequential phone setup; native static focus for settings and IPTV; avoid per-focus settings reorganisation.",
+  "platformVersions": {
+    "phone": "1.1.324",
+    "android": "1.1.324",
+    "iptvAndroid": "1.1.324",
+    "samsung": "1.1.324",
+    "webos": "1.1.324",
+    "desktop": "1.1.324"
+  },
+  "scope": "Shared performance correction; preserve player and approved design. Release artifacts require their own platform verification."
 }

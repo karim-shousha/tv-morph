@@ -3,7 +3,7 @@
   "guardVersion": "1.0.0-legacy-recovery",
   "source": {
     "tvAppZip": ".tools/tizen5-review-stage/assets/tv-app.zip",
-    "sourceVersion": "1.1.321",
+    "sourceVersion": "1.1.324",
     "sourceRequiredVersion": "5.0",
     "sourceAppId": "ClearMob01.Home"
   },
@@ -38,7 +38,7 @@
         "HEVC/VP9 codecs (model dependent)"
       ],
       "buildDir": "samsung-legacy2",
-      "artifact": "Morph-Launcher-Samsung-Tizen2-1.1.321.wgt"
+      "artifact": "Morph-Launcher-Samsung-Tizen2-1.1.324.wgt"
     },
     "tizen3": {
       "label": "Samsung Tizen 3.0 (2017 MU, Chromium 47)",
@@ -64,7 +64,7 @@
         "DRM-gated streams"
       ],
       "buildDir": "samsung-legacy",
-      "artifact": "Morph-Launcher-Samsung-Tizen3-1.1.321.wgt"
+      "artifact": "Morph-Launcher-Samsung-Tizen3-1.1.324.wgt"
     },
     "tizen4": {
       "label": "Samsung Tizen 4.0 (2018 NU, Chromium ~56)",
@@ -86,7 +86,7 @@
         "Portal / MAC (as main build)"
       ],
       "buildDir": "samsung-tizen4",
-      "artifact": "Morph-Launcher-Samsung-Tizen4-1.1.321.wgt"
+      "artifact": "Morph-Launcher-Samsung-Tizen4-1.1.324.wgt"
     },
     "android44": {
       "label": "Android 4.4 / API 19 (native subset)",

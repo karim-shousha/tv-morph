@@ -9,3 +9,8 @@ html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-doc
 html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button:focus,
 html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button:hover{transform:translateY(-11px) scale(1.14)!important;}
 @media(prefers-reduced-motion:reduce){html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=true] #view-home #favourites.app-dock>button{transition:none!important;transform:none!important}}
+
+/* Light mode keeps focus visible while the dock remains completely still. */
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=false] #view-home #favourites.app-dock>button,
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=false] #view-home #favourites.app-dock>button:focus,
+html body.dock-home[data-ui-mode=modern][data-ui-home=true][data-theme][data-dock-motion=false] #view-home #favourites.app-dock>button:hover{transition:none!important;animation:none!important;transform:none!important}

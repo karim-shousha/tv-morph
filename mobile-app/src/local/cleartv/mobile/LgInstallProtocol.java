@@ -6,7 +6,7 @@ final class LgInstallProtocol {
  // webOS uses two separate services: SSH installs/control on 9922,
  // and the Developer Mode HTTP key server on 9991.
  static final int SSH_PORT=9922, KEY_SERVER_PORT=9991;
- static final String APP="com.zainbot.morphtv.preview",VERSION="1.1.320",SHA="a0c4a53e999387da3b181e41fea5aa07b9fd4fae76020db37d783904bc3d7732";
+ static final String APP="com.zainbot.morphtv.preview",VERSION="1.1.324",SHA="728f423008e062c0d49ca9e16489c3ea31658abfab9d0f012640bff2cd59899b";
  interface Trust {boolean accept(String fingerprint);}
  interface Progress {void update(String text);}
  static boolean local(String ip){try{String[] parts=ip.split("\\.");if(parts.length!=4)return false;int[] n=new int[4];for(int i=0;i<4;i++){if(!parts[i].matches("[0-9]{1,3}"))return false;n[i]=Integer.parseInt(parts[i]);if(n[i]>255)return false;}return n[0]==10||n[0]==192&&n[1]==168||n[0]==172&&n[1]>=16&&n[1]<=31;}catch(Exception e){return false;}}
