@@ -1,8 +1,8 @@
 'use strict';
 (()=>{
  const key='morph.preview.theme';
- let theme='light';
- try{theme=localStorage.getItem(key)==='dark'?'dark':'light';}catch{}
+ let theme='dark';
+ try{theme=localStorage.getItem(key)==='light'?'light':'dark';}catch{}
  document.documentElement.dataset.theme=theme;
  function paint(){
   const button=document.getElementById('theme-toggle');
