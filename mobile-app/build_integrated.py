@@ -5,6 +5,13 @@ ROOT=Path(__file__).resolve().parents[1]
 PHONE=ROOT/'mobile-app';REMOTE=PHONE/'integrated-remote'
 from phone_design_system import sync as sync_phone_design_system
 sync_phone_design_system()
+
+# A successful Gradle build alone does not prove that the independent-display
+# runtime ships. This extensionless asset was absent from a source snapshot.
+runtime_asset=PHONE/'bridge-native/src/main/assets/scrcpy-server-v5.0.1'
+runtime_sha256='764eb6f79811d5211fe9df341120882ba9994c7a61b897d7bf3fb662e53bc536'
+assert runtime_asset.is_file(), 'Missing Bridge independent-display runtime'
+assert hashlib.sha256(runtime_asset.read_bytes()).hexdigest()==runtime_sha256, 'Unexpected Bridge runtime binary'
 def run(args,cwd=ROOT):
     subprocess.run([str(x) for x in args],cwd=cwd,check=True)
 if '--reuse-assets' not in sys.argv:
@@ -45,6 +52,8 @@ manifest=manifest.replace('</application>','''<activity android:name="local.clea
 run(['C:/flutter/src/Flutter/bin/flutter.bat','build','apk','--release','--target-platform','android-arm,android-arm64,android-x64','--dart-define=BUILD_ID=morph-tv-'+version],REMOTE)
 unsigned=REMOTE/'build/app/outputs/flutter-apk/app-release.apk'
 with zipfile.ZipFile(unsigned) as packaged:
+    assert hashlib.sha256(packaged.read('assets/scrcpy-server-v5.0.1')).hexdigest()==runtime_sha256, 'Bridge runtime missing or modified in APK'
+    assert packaged.read('assets/scrcpy-audio-appbridge.jar')==(PHONE/'bridge-native/src/main/assets/scrcpy-audio-appbridge.jar').read_bytes(), 'Bridge audio runtime missing or modified in APK'
     for required in ['assets/ui/setup-wizard.css','assets/ui/matches-screen.html','assets/ui/matches-phone.css','assets/ui/matches-screen.css','assets/ui/matches-navigation.js']:
         assert required in packaged.namelist(), 'Missing sports presentation asset: '+required
 

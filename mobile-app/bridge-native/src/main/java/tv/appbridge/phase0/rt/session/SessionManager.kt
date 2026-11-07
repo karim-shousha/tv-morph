@@ -297,7 +297,9 @@ class SessionManager(private val context: Context) {
         if (!appStore.isSelected(pkg)) return Protocol.error("launch", "App is not selected on the phone")
         // Pairing can complete before the independent-app helper is ready.
         // Reuse an available helper automatically on the first TV launch.
-        if (!streaming && backend.isAvailable()) startIndependent()
+        if (!streaming && backend.isAvailable() && !startIndependent()) {
+            return Protocol.error("launch", lastError ?: "Could not prepare the independent app display")
+        }
         val displayId = ensureSecondaryDisplay()
         if (displayId == Display.INVALID_DISPLAY) {
             lastError = "التلفزيون متصل. افتح Bridge على الموبايل واضغط تجهيز تشغيل التطبيقات."
