@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,os,signal,json,time,sys
 out=Path('test-output');out.mkdir(exist_ok=True);results=[]
-for name in ['local-media-response','updater','shared-ui-layout','prayer','settings-readable','matches','desktop','cleaner','review-parity','home-visibility']:
+for name in ['local-media-response','updater','shared-ui-layout','prayer','settings-readable','matches','desktop','cleaner','review-parity','home-visibility','theme-art-position']:
  print('START',name,flush=True);started=time.monotonic();log=out/('ci-'+name+'.log')
  with log.open('wb') as f:
   p=subprocess.Popen(['node','tests/'+name+'.cjs'],stdout=f,stderr=subprocess.STDOUT,start_new_session=True)
