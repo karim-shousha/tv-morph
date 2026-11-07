@@ -41,6 +41,7 @@ final class PlayerCinemaChrome {
     actions.removeAllViews();actions.setGravity(Gravity.CENTER_VERTICAL);int control=Math.max(44,size(c,78)),primary=Math.max(48,size(c,90)),browse=Math.max(width<600?44:118,size(c,width<600?78:214));
     int left=0,count=0;
     for(Button b:bottomButtons){
+      if(b==pause&&b instanceof PlayerChromeButton)((PlayerChromeButton)b).glyphOnly(true);
       String value=b.getText().toString();boolean category=value.contains("☷"),favorite=value.equals("♡")||value.equals("♥");
       if(width<600&&(value.contains("⏮")||value.contains("⏭")))b.setVisibility(View.GONE);
       if(!category&&!favorite&&count==0){actions.addView(new View(c),new LinearLayout.LayoutParams(0,1,1));count++;}
