@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://local.example/morph-lite2-test" version="1.0.0" viewmodes="maximized">
+<tizen:application id="MorphLt201.Home" package="MorphLt201" required_version="2.3"/>
+<content src="index.html"/><name>Morph Launcher Lite 2 Test</name><icon src="icon.png"/>
+<tizen:profile name="tv-samsung"/>
+<tizen:privilege name="http://tizen.org/privilege/application.info"/>
+<tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+<tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
