@@ -1,7 +1,7 @@
 """Cleaner: the same review/selection UI and real, permission-limited adapters on each platform."""
 from pathlib import Path
 import subprocess,shutil,sys,json,zipfile,hashlib
-from PIL import Image,ImageDraw
+from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
 HERE=Path(__file__).resolve().parent
 BUILD=ROOT/'output/release324/cleaner-build-verified';DIST=ROOT/'output/release324/cleaner';DIST.mkdir(parents=True,exist_ok=True)
@@ -14,7 +14,11 @@ def run(args):
     return r.stdout
 
 def stage(target):
-    app=BUILD/target;app.mkdir(parents=True,exist_ok=True)
+    app=BUILD/target
+    assert app.resolve().is_relative_to(BUILD.resolve()) and app.resolve()!=BUILD.resolve()
+    # Repeated packaging must not embed the previous signed WGT inside itself.
+    if app.exists():shutil.rmtree(app)
+    app.mkdir(parents=True,exist_ok=True)
     for name in ['cleaner.js','cleaner.css','cleaner-tizen.js','cleaner-platform.js']:shutil.copy2(ROOT/'tv-project/app'/name,app/name)
     shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',app/'control-system.js')
     (app/'assets').mkdir(exist_ok=True)
@@ -40,13 +44,14 @@ def android():
     for name in ['cleaner-theme.css','theme-adapter.js']:shutil.copy2(build/name,assets/name)
     page=assets/'cleaner-native.html';page.write_text(page.read_text(encoding='utf-8').replace('</head>','<link rel="stylesheet" href="cleaner-theme.css"><script src="theme-adapter.js"></script></head>').replace('<script src="cleaner.js">','<script>MorphThemeAdapter.apply();</script><script src="cleaner.js">'),encoding='utf-8')
     res=build/'res/drawable-nodpi';res.mkdir(parents=True,exist_ok=True);shutil.copy2(build/'icon.png',res/'icon.png')
-    manifest=build/'AndroidManifest.xml';manifest.write_text('''<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.tvmorph.cleaner" android:versionCode="351" android:versionName="1.1.324"><uses-sdk android:minSdkVersion="19" android:targetSdkVersion="34"/><uses-feature android:name="android.hardware.touchscreen" android:required="false"/><uses-feature android:name="android.software.leanback" android:required="false"/><application android:label="Morph Cleaner" android:icon="@drawable/icon" android:theme="@android:style/Theme.Holo.NoActionBar" android:allowBackup="false"><activity android:name="local.tvmorph.tv.CleanerActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent-filter></activity></application></manifest>''')
+    banner=Image.new('RGBA',(320,180),'#0b1a2c');symbol=Image.open(build/'icon.png').convert('RGBA').resize((96,96),Image.Resampling.LANCZOS);banner.alpha_composite(symbol,(112,12));draw=ImageDraw.Draw(banner);font=ImageFont.load_default(size=24);draw.text((160,136),'Morph Cleaner',anchor='mm',font=font,fill='white');banner.convert('RGB').save(res/'banner.png')
+    manifest=build/'AndroidManifest.xml';manifest.write_text('''<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.tvmorph.cleaner" android:versionCode="351" android:versionName="1.1.324"><uses-sdk android:minSdkVersion="19" android:targetSdkVersion="34"/><uses-feature android:name="android.hardware.touchscreen" android:required="false"/><uses-feature android:name="android.software.leanback" android:required="false"/><application android:label="Morph Cleaner" android:icon="@drawable/icon" android:banner="@drawable/banner" android:theme="@android:style/Theme.Holo.NoActionBar" android:allowBackup="false"><activity android:name="local.tvmorph.tv.CleanerActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent-filter></activity></application></manifest>''')
     api=list((ROOT/'.tools/android/sdk/platform-19').rglob('android.jar'))[0];classes=build/'classes';classes.mkdir(exist_ok=True)
     run([ROOT/'.tools/tizen/sdk/data/jdk/bin/javac.exe','-encoding','UTF-8','-source','7','-target','7','-bootclasspath',api,'-d',classes,*[ROOT/'android-tv/src/local/tvmorph/tv'/name for name in ['CleanerActivity.java','CleanerFiles.java']]])
     dex=build/'dex';dex.mkdir(exist_ok=True)
     run([JAVA/'java.exe','-cp',TOOLS/'lib/d8.jar','com.android.tools.r8.D8','--lib',api,'--min-api','19','--output',dex,*classes.rglob('*.class')])
     unsigned=build/'unsigned.apk';aligned=build/'aligned.apk';target=DIST/('Cleaner-Android-'+VERSION+'.apk')
-    run([TOOLS/'aapt.exe','package','-f','-M',manifest,'-I',api,'-S',build/'res','-A',build/'assets','-F',unsigned])
+    run([Path('C:/Users/Admin/AppData/Local/Android/Sdk/build-tools/35.0.0/aapt.exe'),'package','-f','-M',manifest,'-I',Path('C:/Users/Admin/AppData/Local/Android/Sdk/platforms/android-35/android.jar'),'-S',build/'res','-A',build/'assets','-F',unsigned])
     with zipfile.ZipFile(unsigned,'a',zipfile.ZIP_DEFLATED) as z:z.write(dex/'classes.dex','classes.dex')
     run([TOOLS/'zipalign.exe','-f','4',unsigned,aligned]);private=ROOT/'.tools/tizen/private';password=json.loads((private/'cleartv-mobile-signing.json').read_text())['password']
     run([JAVA/'java.exe','-jar',TOOLS/'lib/apksigner.jar','sign','--ks',private/'cleartv-mobile.jks','--ks-key-alias','cleartv-mobile','--ks-pass','pass:'+password,'--key-pass','pass:'+password,'--min-sdk-version','19','--v1-signing-enabled','true','--out',target,aligned]);run([JAVA/'java.exe','-jar',TOOLS/'lib/apksigner.jar','verify','--min-sdk-version','19',target]);return target
