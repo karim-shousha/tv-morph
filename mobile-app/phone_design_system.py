@@ -18,6 +18,7 @@ def sync():
     css+=':root[data-app-appearance=light]{\n'+''.join(f' --phone-{kebab(k)}:{v};\n' for k,v in light.items())+'}\n'
     mark=base64.b64encode((ROOT/'assets/ui/morph-wordmark.webp').read_bytes()).decode('ascii')
     css+=':root{--phone-wordmark-mask:url("data:image/webp;base64,'+mark+'")}\n'
+    css+=':root{--phone-navigation-gradient:'+spec['materials']['navigationGradient']+'}\n'
     outputs[ROOT/'assets/ui/phone-tokens.css']=css
     kt='// Generated from mobile-app/design-system.json.\npackage tv.appbridge.phase0.rt.ui\n\nobject PhoneDesignTokens {\n'
     kt+=''.join(f' val {k}=0x{argb(v)}.toInt()\n' for k,v in colors.items())

@@ -39,8 +39,9 @@
  d.getElementById('rebuild-connect').onclick=function(){M.show('devices');};
  var currentTV={ip:'',ready:false,busy:false,message:'',noSaved:false},currentTVButton=d.getElementById('rebuild-current-tv'),currentTVStatus=d.getElementById('rebuild-tv-status'),savedTVRequest=0;
  function paintCurrentTV(){
+  currentTVStatus.dataset.connected=currentTV.ready&&!currentTV.busy?'true':'false';
   currentTVButton.disabled=currentTV.busy;currentTVButton.setAttribute('aria-busy',currentTV.busy?'true':'false');
-  currentTVButton.textContent=currentTV.busy?tr('جارٍ الاتصال…','Connecting…'):currentTV.ready?tr('إعادة الاتصال بالتلفزيون الحالي','Reconnect to current TV'):tr('اتصل بالتلفزيون الحالي','Connect to current TV');
+  currentTVButton.textContent=currentTV.busy?tr('جارٍ الاتصال…','Connecting…'):currentTV.ready?tr('إعادة الاتصال','Reconnect'):tr('اتصال بالتلفزيون','Connect to TV');
   currentTVStatus.textContent=currentTV.busy?tr('جارٍ التحقق من التلفزيون المحفوظ…','Checking your saved TV…'):currentTV.ready?tr('متصل · ','Connected · ')+currentTV.ip:currentTV.message||(currentTV.ip?tr('آخر تلفزيون · ','Last TV · ')+currentTV.ip:tr('اربط تلفزيونك مرة واحدة من تثبيت نسخة التلفزيون.','Pair a TV once from Install TV version.'));
  }
  async function refreshCurrentTV(){
@@ -52,7 +53,7 @@
   try{
    if(!w.reconnectMorphTV)throw new Error(tr('الاتصال متاح من تطبيق الموبايل.','Connect from the mobile app.'));
    var state=await w.reconnectMorphTV();currentTV.ip=state.ip||'';currentTV.ready=!!state.ready;
-   if(!state.ready)currentTV.message=state.noSavedTV?tr('اربط تلفزيونك مرة واحدة من تثبيت نسخة التلفزيون، وبعدها اتصل من هنا.','Pair your TV once from Install TV version, then reconnect here.'):state.unsupported?tr('النظام المحفوظ لا يدعم الاتصال. اختار تلفزيونًا مدعومًا من الأجهزة.','The saved TV platform does not support this connection. Choose a supported TV in Devices.'):tr('تعذّر الاتصال. افتح Morph Launcher على التلفزيون وتأكد من نفس Wi-Fi، ثم أعد المحاولة.','Could not connect. Open Morph Launcher on the TV, use the same Wi-Fi, then retry.');
+   if(!state.ready)currentTV.message=state.noSavedTV?tr('اربط تلفزيونك مرة واحدة من تثبيت نسخة التلفزيون، وبعدها اتصل من هنا.','Pair your TV once from Install TV version, then reconnect here.'):state.unsupported?tr('النظام المحفوظ لا يدعم الاتصال. اختار تلفزيونًا مدعومًا من الأجهزة.','The saved TV platform does not support this connection. Choose a supported TV in Devices.'):(state.message||tr('تعذّر الاتصال بالتلفزيون المحفوظ.','Could not reach the saved TV.'));
   }catch(error){currentTV.ready=false;currentTV.message=tr('تعذّر الاتصال بالتلفزيون الحالي. أعد المحاولة.','Could not connect to the current TV. Please retry.');}
   finally{currentTV.busy=false;paintCurrentTV();}
  };

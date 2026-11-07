@@ -43,5 +43,8 @@
   "decorativeArtwork": false,
   "appearanceModes": [
     "dark"
-  ]
+  ],
+  "materials": {
+    "navigationGradient": "linear-gradient(180deg,rgba(44,66,94,.97),rgba(19,36,57,.96))"
+  }
 }

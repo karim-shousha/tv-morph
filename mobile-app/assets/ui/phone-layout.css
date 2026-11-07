@@ -148,7 +148,13 @@ html#morph-phone-ui .morph-plus-dialog .plus-purchase button{min-width:0;max-wid
 
 
 /* Saved-TV access stays inside the home hero and uses the shared button palette. */
-#page-start .rebuild-hero{max-height:none;height:auto;flex:0 0 auto;min-height:180px}
-.rebuild-hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+#page-start .rebuild-hero{max-height:none;height:auto;flex:0 0 auto;min-height:150px}
+.rebuild-hero-actions{display:flex;flex-direction:row;align-items:stretch;gap:6px;min-width:0;width:100%}
 #page-start .rebuild-hero-actions button{white-space:normal;text-align:center;line-height:1.45;max-width:100%;min-height:32px}
 #rebuild-tv-status{display:block;font-size:10px;line-height:1.5;color:var(--phone-text-secondary,#e1e4e9);margin-top:6px;overflow-wrap:anywhere}
+
+#page-start .rebuild-hero-copy{width:54%;position:static}#page-start .rebuild-hero{display:flex;align-items:center;padding-bottom:68px!important;min-height:210px}#page-start .rebuild-hero-copy>h1,#page-start .rebuild-hero-copy>p{width:auto;margin-inline-start:0;text-align:start}.rebuild-hero-actions{position:absolute;inset-inline:14px;bottom:28px;width:auto}#rebuild-tv-status{position:absolute;inset-inline:14px;bottom:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0}#rebuild-tv-status:empty{display:none}.rebuild-hero-actions button{flex:1;min-width:0}
+
+#page-start .rebuild-hero-copy>h1{font-size:25px;line-height:1.23;margin-bottom:8px;max-width:none}#page-start .rebuild-hero-copy>p{font-size:12px;line-height:1.6;max-width:none}
+
+.bottom-nav{position:fixed;inset:auto 0 0;max-width:600px;border-radius:16px 16px 0 0;padding-bottom:calc(5px + env(safe-area-inset-bottom,0px));transform:none}body{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
