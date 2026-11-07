@@ -70,3 +70,4 @@ dc373c90094df5eafb230161cdd1d0f1af23961bf367d2af9220827f61e157e9  Morph-TV-Samsu
 b3b294d15f0bbd36c70d5c867ed7e97d6c618d3d0d2b06e807b07f0693c4e085  Morph-TV-Samsung-Tizen3-1.1.324.wgt
 0dc99b50ed0678b548fbf1a0a4f574c89ef71f1364585f9b0058a4eb94709f69  Morph-TV-Samsung-Tizen4-1.1.324.wgt
 91aa892e01a3fc40c6b38b9dbbb2c1bd1690d5b632e6cb331f9156d0c5a55a2f  Morph-TV-Samsung-Tizen5-1.1.324.wgt
+0a95814ce07bc637cedcfc021222defaf7a026ec0e9fb22369127cc84c55d6c6  Morph-TV-Phone-1.1.325.apk

@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.324",
+      "version": "1.1.325",
       "download": "/download/phone",
-      "noteAr": "اختيار النسخة بخطوات واضحة، مع الاحتفاظ بطريقة الربط والتحديث المعتمدة وتجهيز ملفات APK وIPK وWGT حسب نظام التلفزيون.",
-      "noteEn": "Clear product selection and sequential setup, preserving approved pairing/update transport with OS-specific APK, IPK and WGT installers.",
+      "noteAr": "إصلاح تشغيل تطبيقات الموبايل عبر Bridge، وإبقاء خانة البحث ظاهرة عند فتح لوحة المفاتيح، مع الحفاظ على طرق ربط وتحديث التلفزيون.",
+      "noteEn": "Fixes Bridge app launch and keeps app search visible with the keyboard open; preserves TV pairing and update setup.",
       "channel": "preview",
-      "versionCode": 351
+      "versionCode": 352
     },
     {
       "id": "android",
@@ -226,15 +226,15 @@
       "versionCode": 351
     },
     {
-      "name": "Morph-TV-Phone-1.1.324",
-      "file": "Morph-TV-Phone-1.1.324.apk",
-      "version": "1.1.324",
+      "name": "Morph-TV-Phone-1.1.325",
+      "file": "Morph-TV-Phone-1.1.325.apk",
+      "version": "1.1.325",
       "product": "phone",
       "target": "android",
-      "bytes": 169231770,
-      "sha256": "352fdfc11d96d55b552f082331904239c3a72428a9bf4fdcba63f20d75db0c9b",
+      "bytes": 169960931,
+      "sha256": "0a95814ce07bc637cedcfc021222defaf7a026ec0e9fb22369127cc84c55d6c6",
       "download": "/download/phone",
-      "versionCode": 351
+      "versionCode": 352
     },
     {
       "name": "Morph-TV-Legacy-1.1.321",
@@ -1331,6 +1331,18 @@
       "bytes": 199612,
       "sha256": "457232589965cd1e44dae5258a98336785be1583dd24bd8f7a33c2a37666b1f7",
       "download": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.321/Cleaner-LG-1.1.321.ipk",
+      "archived": true
+    },
+    {
+      "name": "Morph-TV-Phone-1.1.324",
+      "file": "Morph-TV-Phone-1.1.324.apk",
+      "version": "1.1.324",
+      "product": "phone",
+      "target": "android",
+      "bytes": 169231770,
+      "sha256": "352fdfc11d96d55b552f082331904239c3a72428a9bf4fdcba63f20d75db0c9b",
+      "download": "/Morph-TV-Phone-1.1.324.apk",
+      "versionCode": 351,
       "archived": true
     }
   ]

@@ -251,6 +251,14 @@
       "bytes": 14313496,
       "sha256": "91aa892e01a3fc40c6b38b9dbbb2c1bd1690d5b632e6cb331f9156d0c5a55a2f",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.324/Morph-TV-Samsung-Tizen5-1.1.324.wgt"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.325.apk",
+      "version": "1.1.325",
+      "versionCode": 352,
+      "bytes": 169960931,
+      "sha256": "0a95814ce07bc637cedcfc021222defaf7a026ec0e9fb22369127cc84c55d6c6",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.325/Morph-TV-Phone-1.1.325.apk"
     }
   ]
 }
