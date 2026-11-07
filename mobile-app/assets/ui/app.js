@@ -73,7 +73,31 @@ const remoteController = window.MorphRemoteController.create({
 });
 let connectionCheckBusy=false;
 function needsReconnect(detail){platform(fireTVMode?'firetv':activePlatform,false);if(window.MorphInstallChoice)MorphInstallChoice.refresh();$('#smart-install').disabled=false;$('#smart-install').textContent=MorphLocale.t('اضغط للتثبيت على التلفزيون','Tap to install on your TV');installerFeedback(MorphLocale.t('الموبايل مش قادر يوصل للتلفزيون حاليًا. افتح Morph Launcher على الشاشة، وتأكد إن الجهازين على نفس Wi-Fi من غير Guest Wi-Fi أو عزل للأجهزة، ثم أعد الاتصال. لم يتم إرسال نسخة للتثبيت.','Your phone cannot reach the TV right now. Open Morph Launcher on the TV, keep both devices on the same Wi-Fi without guest/client isolation, then reconnect. No installation package has been sent.'));remoteController.disconnect();['apply','refresh-apps','save-pins','install'].forEach(id=>$('#'+id).disabled=true);$('#device-chip').classList.remove('connected');const ar=MorphLocale.get()==='ar';$('#reconnect-title').textContent=ar?'محتاج إعادة اتصال':'Reconnect to your TV';$('#reconnect-message').textContent=ar?'الاتصال بالتلفزيون غير متاح حاليًا. افتح Morph TV على التلفزيون، ثم اضغط إعادة الاتصال. لو طلب كود جديد هتلاقيه في ربط الموبايل.':'The TV connection is unavailable. Open Morph TV on your TV, then reconnect. If a new code is requested, open Connect phone on the TV.';$('#reconnect-action').textContent=ar?'إعادة الاتصال بالتلفزيون':'Reconnect to TV';if(detail)$('#reconnect-message').textContent+=' '+String(detail).slice(0,600);$('#reconnect-notice').hidden=false;$('#remote-status').textContent=$('#reconnect-title').textContent;MorphGuide.state('error',$('#reconnect-title').textContent,$('#reconnect-message').textContent);}
-window.checkMorphConnection=async()=>{if(!native||connectionCheckBusy||!$('#tv-ip').value.trim()||!['android','samsung','lg'].includes(activePlatform))return;const checkedIp=$('#tv-ip').value.trim(),checkedPlatform=activePlatform;const current=()=>checkedIp===$('#tv-ip').value.trim()&&checkedPlatform===activePlatform;connectionCheckBusy=true;try{const state=await call('connectionStatus');if(!current())return;if(state.selected&&state.ready===false&&!state.unsupported)needsReconnect(state.message);else if(state.ready){if(!connectionReady)platform(fireTVMode?'firetv':activePlatform,true);$('#reconnect-notice').hidden=true;$('#device-chip').classList.add('connected');MorphGuide.state('connected',MorphLocale.t('تم التحقق من الاتصال','Connection verified'),MorphLocale.t('Morph TV مفتوح على الشاشة والاتصال جاهز.','Morph TV is open on your TV and ready to connect.'));}}catch(e){if(current())needsReconnect(e.message);}finally{connectionCheckBusy=false;}};
+let connectionCheckTask=null;
+window.checkMorphConnection=()=>{
+ if(connectionCheckTask)return connectionCheckTask;
+ if(!native||!$('#tv-ip').value.trim()||!['android','samsung','lg'].includes(activePlatform))return Promise.resolve(null);
+ const checkedIp=$('#tv-ip').value.trim(),checkedPlatform=activePlatform;
+ const current=()=>checkedIp===$('#tv-ip').value.trim()&&checkedPlatform===activePlatform;
+ connectionCheckBusy=true;
+ connectionCheckTask=(async()=>{try{
+  const state=await call('connectionStatus');if(!current())return null;
+  if(state.selected&&state.ready===false&&!state.unsupported)needsReconnect(state.message);
+  else if(state.ready){if(!connectionReady)platform(fireTVMode?'firetv':activePlatform,true);$('#reconnect-notice').hidden=true;$('#device-chip').classList.add('connected');MorphGuide.state('connected',MorphLocale.t('تم التحقق من الاتصال','Connection verified'),MorphLocale.t('Morph TV مفتوح على الشاشة والاتصال جاهز.','Morph TV is open on your TV and ready to connect.'));}
+  window.dispatchEvent(new CustomEvent('morphConnectionStatus',{detail:Object.assign({ip:checkedIp},state)}));return state;
+ }catch(e){if(current()){needsReconnect(e.message);window.dispatchEvent(new CustomEvent('morphConnectionStatus',{detail:{ip:checkedIp,ready:false,message:e.message}}));}return {ready:false,message:e.message};}
+ finally{connectionCheckBusy=false;connectionCheckTask=null;}})();
+ return connectionCheckTask;
+};
+window.reconnectMorphTV=async()=>{
+ if(connectionCheckTask)await connectionCheckTask;
+ const info=await call('info'),address=String(info.tvIp||'').trim();
+ if(!address)return {ready:false,noSavedTV:true};
+ if(!['android','samsung','lg'].includes(info.brand))return {ready:false,unsupported:true,ip:address};
+ $('#tv-ip').value=address;platform(info.fireTV?'firetv':info.brand,false);
+ const state=await window.checkMorphConnection();
+ return Object.assign({ip:address,brand:info.brand,fireTV:!!info.fireTV},state||{ready:false});
+};
 $('#reconnect-action').onclick=()=>{show('connect');$('#reconnect-notice').hidden=true;$('#tv-ip').focus();};
 $('#app-language').onchange=async()=>{MorphLocale.set($('#app-language').value);if(native&&ClearNative.setLanguage)ClearNative.setLanguage(MorphLocale.get());if(connectionReady&&activePlatform==='android')try{await call('tvSettings',{language:MorphLocale.get()});}catch(e){toast(e.message);}};
 if(native){call('info').then(info=>{cfg=Object.assign(cfg,info.draft);platform(info.tvIp?(info.fireTV?'firetv':info.brand):'auto');$('#phone-ip').textContent=info.phoneIp||'اتصل بشبكة Wi-Fi';MorphGuide.setPhoneIP(info.phoneIp);$('#tv-ip').value=info.tvIp||'';if(info.tvIp)setTimeout(()=>window.checkMorphConnection&&window.checkMorphConnection(),0);if(info.tvIp)$('#device-chip span').textContent=info.tvIp;fields();if(page==='studio')requestAnimationFrame(resetPageTop);}).catch(()=>{});}else{platform('auto');try{cfg=Object.assign(cfg,JSON.parse(localStorage.getItem('cleartv.draft')||'{}'));}catch(e){}fields();}

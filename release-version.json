@@ -3,7 +3,7 @@
   "androidVersionCode": 352,
   "reason": "Preserve nested Samsung IPTV QR dependencies and update Bridge footer only; phone 1.1.326 refreshes verified installers without changing confirmed runtime/UI.",
   "platformVersions": {
-    "phone": "1.1.326",
+    "phone": "1.1.327",
     "android": "1.1.325",
     "iptvAndroid": "1.1.324",
     "samsung": "1.1.325",

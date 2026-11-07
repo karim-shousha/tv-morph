@@ -16,7 +16,7 @@
  function icon(key){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+(paths[key]||paths.more)+'"/></svg>';}
  function ar(){return w.MorphLocale&&MorphLocale.get()==='ar';}function tr(a,b){return ar()?a:b;}
  var start=d.createElement('section');start.id='page-start';start.className='page';start.dataset.noTranslate='';start.hidden=true;
- start.innerHTML='<section class="rebuild-hero"><div class="rebuild-hero-copy"><h1></h1><p></p><button class="primary" id="rebuild-connect"></button></div></section><div class="rebuild-grid"></div>';
+ start.innerHTML='<section class="rebuild-hero"><div class="rebuild-hero-copy"><h1></h1><p></p><div class="rebuild-hero-actions"><button type="button" class="primary" id="rebuild-current-tv"></button><button type="button" class="secondary" id="rebuild-connect"></button></div><small id="rebuild-tv-status" role="status" aria-live="polite"></small></div></section><div class="rebuild-grid"></div>';
  main.prepend(start);
  var more=d.createElement('section');more.id='page-more';more.className='page';more.hidden=true;more.dataset.noTranslate='';more.innerHTML='<div class="rebuild-page-title"><h1></h1><p></p></div><div class="rebuild-more"></div>';main.append(more);
  function native(action,fallback){if(w.ClearNative&&w.MorphNative){MorphNative.call(action,{}).catch(function(){if(fallback)fallback();});}else if(fallback)fallback();}
@@ -37,6 +37,28 @@
  var nav=d.querySelector('.bottom-nav');nav.innerHTML='';var navEntries=[['home','home','الرئيسية','Home'],['play','play','القنوات','IPTV'],['control','remote','الريموت','Remote'],['matches','matches','المباريات','Matches'],['more','more','المزيد','More']];
  navEntries.forEach(function(e){var b=d.createElement('button');b.dataset.page=e[0];b.innerHTML='<span class="m30-nav-ic">'+icon(e[1])+'</span><span class="m30-nav-lb"></span>';b.onclick=function(){if(e[0]==='matches')native('matchesOpen');else M.show(e[0]);};nav.append(b);e.push(b);});
  d.getElementById('rebuild-connect').onclick=function(){M.show('devices');};
+ var currentTV={ip:'',ready:false,busy:false,message:'',noSaved:false},currentTVButton=d.getElementById('rebuild-current-tv'),currentTVStatus=d.getElementById('rebuild-tv-status'),savedTVRequest=0;
+ function paintCurrentTV(){
+  currentTVButton.disabled=currentTV.busy;currentTVButton.setAttribute('aria-busy',currentTV.busy?'true':'false');
+  currentTVButton.textContent=currentTV.busy?tr('جارٍ الاتصال…','Connecting…'):currentTV.ready?tr('إعادة الاتصال بالتلفزيون الحالي','Reconnect to current TV'):tr('اتصل بالتلفزيون الحالي','Connect to current TV');
+  currentTVStatus.textContent=currentTV.busy?tr('جارٍ التحقق من التلفزيون المحفوظ…','Checking your saved TV…'):currentTV.ready?tr('متصل · ','Connected · ')+currentTV.ip:currentTV.message||(currentTV.ip?tr('آخر تلفزيون · ','Last TV · ')+currentTV.ip:tr('اربط تلفزيونك مرة واحدة من تثبيت نسخة التلفزيون.','Pair a TV once from Install TV version.'));
+ }
+ async function refreshCurrentTV(){
+  if(currentTV.busy||!w.MorphNative)return;var request=++savedTVRequest;
+  try{var info=await MorphNative.call('info',{});if(request!==savedTVRequest||currentTV.busy)return;var address=String(info.tvIp||'');if(address!==currentTV.ip){currentTV.ip=address;currentTV.message='';currentTV.ready=false;}currentTV.ready=!!address&&MorphNative.ready();paintCurrentTV();}catch(ignore){}
+ }
+ currentTVButton.onclick=async function(){
+  if(currentTV.busy)return;currentTV.busy=true;currentTV.message='';paintCurrentTV();
+  try{
+   if(!w.reconnectMorphTV)throw new Error(tr('الاتصال متاح من تطبيق الموبايل.','Connect from the mobile app.'));
+   var state=await w.reconnectMorphTV();currentTV.ip=state.ip||'';currentTV.ready=!!state.ready;
+   if(!state.ready)currentTV.message=state.noSavedTV?tr('اربط تلفزيونك مرة واحدة من تثبيت نسخة التلفزيون، وبعدها اتصل من هنا.','Pair your TV once from Install TV version, then reconnect here.'):state.unsupported?tr('النظام المحفوظ لا يدعم الاتصال. اختار تلفزيونًا مدعومًا من الأجهزة.','The saved TV platform does not support this connection. Choose a supported TV in Devices.'):tr('تعذّر الاتصال. افتح Morph Launcher على التلفزيون وتأكد من نفس Wi-Fi، ثم أعد المحاولة.','Could not connect. Open Morph Launcher on the TV, use the same Wi-Fi, then retry.');
+  }catch(error){currentTV.ready=false;currentTV.message=tr('تعذّر الاتصال بالتلفزيون الحالي. أعد المحاولة.','Could not connect to the current TV. Please retry.');}
+  finally{currentTV.busy=false;paintCurrentTV();}
+ };
+ w.addEventListener('morphConnectionStatus',function(e){var state=e.detail||{};if(currentTV.busy||state.ip!==currentTV.ip)return;currentTV.ready=!!state.ready;if(state.ready)currentTV.message='';paintCurrentTV();});
+ w.addEventListener('morphDeviceConnected',refreshCurrentTV);
+
 
  var settingsBasic=d.querySelector('#phone-settings-v2 .s310-group'),languageSelect=d.getElementById('app-language'),appearance=d.querySelector('.appearance-choice');
  var settingsLanguageLabel,settingsAppearanceLabel;
@@ -91,8 +113,8 @@
  w.addEventListener('morphPacks',studioLabels);w.addEventListener('morphDeviceConnected',studioLabels);var connection=d.getElementById('connection-state');if(connection)new MutationObserver(studioLabels).observe(connection,{attributes:true,attributeFilter:['data-status']});
  w.MorphStudio={open:function(name){M.show('design');openEditor(name==='personal'?'edit':name);},back:studioBack,view:function(){return view;}};
  setView('home',false);
- function label(){if(settingsLanguageLabel)settingsLanguageLabel.textContent=tr('اللغة','Language');if(settingsAppearanceLabel)settingsAppearanceLabel.textContent=tr('المظهر','Appearance');studioLabels();start.querySelector('.rebuild-hero').dir=ar()?'rtl':'ltr';start.querySelector('h1').innerHTML=tr('اربط موبايلك<br><em>بتلفزيونك</em>','Connect to<br><em>Your TV</em>');start.querySelector('.rebuild-hero p').textContent=tr('تحكّم وشاهد وصمّم شاشتك.','Control, watch and personalize your TV.');d.getElementById('rebuild-connect').textContent=tr('ثبّت نسخة التلفزيون ‹','Install TV version ›');entries.forEach(function(e){e[8].querySelector('strong').textContent=tr(e[1],e[2]);e[8].querySelector('small').textContent=tr(e[3],e[4]);});more.querySelector('h1').textContent=tr('المزيد','More');more.querySelector('.rebuild-page-title p').textContent=tr('إعداداتك وخدمات التطبيق','Your settings and app services');moreEntries.forEach(function(e){e[6].querySelector('strong').textContent=tr(e[1],e[2]);e[6].querySelector('small').textContent=tr(e[3],e[4]);});navEntries.forEach(function(e){e[4].querySelector('.m30-nav-lb').textContent=tr(e[2],e[3]);});}
- function route(){if(d.body.dataset.mobilePage==='page-studio'&&w.ThemePacks&&ThemePacks.loadLibrary)ThemePacks.loadLibrary();nav.hidden=false;var page=d.body.dataset.mobilePage;nav.querySelectorAll('button').forEach(function(b){var on=iptvOptions&&page==='page-iptv'?b.dataset.page==='more':({home:'page-start',play:'page-iptv',control:'page-remote',design:'page-studio',more:'page-more'})[b.dataset.page]===page;b.classList.toggle('active',on);b.setAttribute('aria-current',on?'page':'false');});var back=d.getElementById('m30-page-back');if(back)back.hidden=page==='page-start';label();}
+ function label(){paintCurrentTV();if(settingsLanguageLabel)settingsLanguageLabel.textContent=tr('اللغة','Language');if(settingsAppearanceLabel)settingsAppearanceLabel.textContent=tr('المظهر','Appearance');studioLabels();start.querySelector('.rebuild-hero').dir=ar()?'rtl':'ltr';start.querySelector('h1').innerHTML=tr('اربط موبايلك<br><em>بتلفزيونك</em>','Connect to<br><em>Your TV</em>');start.querySelector('.rebuild-hero p').textContent=tr('تحكّم وشاهد وصمّم شاشتك.','Control, watch and personalize your TV.');d.getElementById('rebuild-connect').textContent=tr('ثبّت نسخة التلفزيون ‹','Install TV version ›');entries.forEach(function(e){e[8].querySelector('strong').textContent=tr(e[1],e[2]);e[8].querySelector('small').textContent=tr(e[3],e[4]);});more.querySelector('h1').textContent=tr('المزيد','More');more.querySelector('.rebuild-page-title p').textContent=tr('إعداداتك وخدمات التطبيق','Your settings and app services');moreEntries.forEach(function(e){e[6].querySelector('strong').textContent=tr(e[1],e[2]);e[6].querySelector('small').textContent=tr(e[3],e[4]);});navEntries.forEach(function(e){e[4].querySelector('.m30-nav-lb').textContent=tr(e[2],e[3]);});}
+ function route(){if(d.body.dataset.mobilePage==='page-studio'&&w.ThemePacks&&ThemePacks.loadLibrary)ThemePacks.loadLibrary();nav.hidden=false;var page=d.body.dataset.mobilePage;if(page==='page-start')refreshCurrentTV();nav.querySelectorAll('button').forEach(function(b){var on=iptvOptions&&page==='page-iptv'?b.dataset.page==='more':({home:'page-start',play:'page-iptv',control:'page-remote',design:'page-studio',more:'page-more'})[b.dataset.page]===page;b.classList.toggle('active',on);b.setAttribute('aria-current',on?'page':'false');});var back=d.getElementById('m30-page-back');if(back)back.hidden=page==='page-start';label();}
  w.addEventListener('morphLanguage',label);w.addEventListener('morph30page',route);label();M.show('home',{replace:true});route();
  w.MorphPhoneShell={route:route,go:M.show,icon:icon,navigate:function(page){if(page==='iptv-options')showIptvOptions();else if(page==='matches')native('matchesOpen');else M.show(page);}};
 }if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',init);else init();})(window,document);

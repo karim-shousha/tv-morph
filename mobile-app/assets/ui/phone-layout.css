@@ -145,3 +145,10 @@ html#morph-phone-ui .morph-plus-overlay{padding:12px!important;}
 html#morph-phone-ui .morph-plus-overlay .morph-plus-dialog{width:100%!important;max-width:560px!important;height:calc(100vh - 24px)!important;height:calc(100dvh - 24px)!important;max-height:680px!important;margin:0!important;padding:18px!important;}
 html#morph-phone-ui .morph-plus-dialog input{box-sizing:border-box;width:100%;min-height:46px;padding:10px 12px;border:1px solid var(--phone-border);border-radius:12px;background:var(--phone-surface);}
 html#morph-phone-ui .morph-plus-dialog .plus-purchase button{min-width:0;max-width:100%;padding:10px;font-size:14px;white-space:normal;}
+
+
+/* Saved-TV access stays inside the home hero and uses the shared button palette. */
+#page-start .rebuild-hero{max-height:none;height:auto;flex:0 0 auto;min-height:180px}
+.rebuild-hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+#page-start .rebuild-hero-actions button{white-space:normal;text-align:center;line-height:1.45;max-width:100%;min-height:32px}
+#rebuild-tv-status{display:block;font-size:10px;line-height:1.5;color:var(--phone-text-secondary,#e1e4e9);margin-top:6px;overflow-wrap:anywhere}
