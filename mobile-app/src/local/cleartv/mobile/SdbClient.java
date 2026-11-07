@@ -52,10 +52,10 @@ public final class SdbClient implements Closeable {
         adb=true;
         try{
             socket=new Socket();socket.connect(new InetSocketAddress(ip,port),5000);socket.setSoTimeout(45000);in=socket.getInputStream();out=socket.getOutputStream();
-            send("CNXN",0x01000000,4096,bytes("host::tvmorph\0"));
+            send("CNXN",0x01000000,65536,bytes("host::tvmorph\0"));
             for(int attempt=0;attempt<4;attempt++){
                 Frame f=read();
-                if(f.cmd==code("CNXN")){max=Math.min(4096,f.b>0?f.b:4096);socket.setSoTimeout(20000);return;}
+                if(f.cmd==code("CNXN")){max=Math.min(65536,f.b>0?f.b:4096);socket.setSoTimeout(20000);return;}
                 if(f.cmd!=code("AUTH")||f.a!=1||f.data.length!=20)throw new IOException("Unsupported ADB handshake");
                 if(attempt==0)send("AUTH",2,0,auth.sign(f.data));
                 else if(attempt==1)send("AUTH",3,0,auth.publicKey());

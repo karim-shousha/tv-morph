@@ -8,6 +8,16 @@ import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 
+def lower_focus_mask(source):
+    """Keep the focus ring hollow on pre-double-position-gradient WebKit.
+
+    Those engines expose webkitMaskComposite but reject '#fff 0 0', leaving
+    the unmasked gradient painted across the entire focused control.
+    Identical-color endpoints preserve the original opaque mask geometry.
+    """
+    return source.replace('linear-gradient(#fff 0 0)',
+                          'linear-gradient(#fff,#fff)')
+
 def lower_inset(css):
     def expand(match):
         value=match[1].replace('!important','').strip().split()
@@ -117,9 +127,23 @@ def fallback(css, _nested=False):
     return ''.join(output)
 
 
+def stage_samsung_ime(root):
+    """Install before app key handlers, without changing Android/desktop input."""
+    root=Path(root)
+    (root/'samsung-plus-ime.js').write_bytes((Path(__file__).parent/'samsung-plus-ime.js').read_bytes())
+    for page in root.rglob('*.html'):
+        html=page.read_text(encoding='utf-8')
+        if 'samsung-plus-ime.js' in html:continue
+        prefix='../'*len(page.relative_to(root).parts[:-1])
+        page.write_text(html.replace('</head>','<script src="'+prefix+'samsung-plus-ime.js"></script></head>'),encoding='utf-8')
+
 def stage_samsung_layout(root):
     """Inject the same Samsung-only correction into every document, including nested surfaces."""
     root=Path(root)
+    for script in root.rglob('*.js'):
+        original=script.read_text(encoding='utf-8')
+        lowered=lower_focus_mask(original)
+        if lowered!=original:script.write_text(lowered,encoding='utf-8')
     (root/'samsung-layout-fixes.css').write_bytes((Path(__file__).parent/'samsung-layout-fixes.css').read_bytes())
     for page in root.rglob('*.html'):
         html=page.read_text(encoding='utf-8')

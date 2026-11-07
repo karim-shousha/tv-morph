@@ -2,6 +2,7 @@
 (function(w,d){'use strict';
  w.MorphTVLowMemory=true;
   var boot=w.MorphLegacyBoot||{missing:[],errors:[]};
+  if(typeof w.MutationObserver!=='function'&&boot.installMutationObserver)boot.installMutationObserver();
   function assign(t){t=Object(t);for(var i=1;i<arguments.length;i++){var s=arguments[i];if(s!=null){for(var k in s){if(Object.prototype.hasOwnProperty.call(s,k))t[k]=s[k];}}}return t;}
   var nativeAssign=Object.assign||assign;
  if(!w.CSS)w.CSS={};if(!w.CSS.supports)w.CSS.supports=function(){return false;};

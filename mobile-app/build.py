@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,secrets,shutil,subprocess,zipfile,sys
-from samsung_compat import fallback,lower_inset
+from samsung_compat import fallback,lower_inset,lower_focus_mask
 ROOT=Path(__file__).resolve().parents[1];SOURCE=ROOT/'mobile-app';BUILD=SOURCE/'build';PRIVATE=ROOT/'.tools/tizen/private'
 from phone_design_system import sync as sync_phone_design_system
 sync_phone_design_system()
@@ -40,7 +40,8 @@ shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',cleaner_assets/'control-
 (cleaner_assets/'assets').mkdir(exist_ok=True)
 shutil.copy2(ROOT/'tv-project/app/assets/morph-header-symbol.webp',cleaner_assets/'assets/morph-header-symbol.webp')
 shutil.copy2(SOURCE/'cleaner-mobile.css',cleaner_assets/'cleaner-mobile.css')
-p=cleaner_assets/'cleaner-native.html';p.write_text(p.read_text(encoding='utf-8').replace('</head>','<link rel="stylesheet" href="../ui/phone-tokens.css"><link rel="stylesheet" href="cleaner-mobile.css"></head>'),encoding='utf-8')
+shutil.copy2(SOURCE/'cleaner-mobile.js',cleaner_assets/'cleaner-mobile.js')
+p=cleaner_assets/'cleaner-native.html';p.write_text(p.read_text(encoding='utf-8').replace('</head>','<link rel="stylesheet" href="../ui/phone-tokens.css"><link rel="stylesheet" href="cleaner-mobile.css"></head>').replace('</body>','<script src="cleaner-mobile.js"></script></body>'),encoding='utf-8')
 
 # NetworkActivity uses the shared local-network browser on phone as well as TV.
 network_assets=assets/'tv';network_assets.mkdir(exist_ok=True)
@@ -184,7 +185,7 @@ for index,name in enumerate(samsung_files):
  source_js=BUILD/('samsung-source-'+str(index)+'.js')
  output_js=BUILD/('samsung-target-'+str(index)+'.js')
  # Old engines also ignore inset in dynamically-created inline CSS strings.
- source_js.write_bytes(__import__('re').sub(rb'\binset\s*:\s*0(?:px)?(?=[;\"\'])',b'top:0;right:0;bottom:0;left:0',samsung_files[name]))
+ source_js.write_bytes(__import__('re').sub(rb'\binset\s*:\s*0(?:px)?(?=[;\"\'])',b'top:0;right:0;bottom:0;left:0',lower_focus_mask(samsung_files[name].decode('utf-8')).encode('utf-8')))
  run([ROOT/'.tools/samsung-web/node_modules/@esbuild/win32-x64/esbuild.exe',source_js,'--target='+samsung_js_target,'--outfile='+str(output_js)])
  samsung_files[name]=output_js.read_bytes()
 for name in list(samsung_files):
@@ -199,10 +200,11 @@ for name in list(samsung_files):
    prefix='../' * name.count('/')
    html=html.replace('</head>','<script src="'+prefix+'tv-compat.js"></script></head>')
   samsung_files[name]=html.encode('utf-8')
-from samsung_compat import stage_samsung_layout
+from samsung_compat import stage_samsung_layout,stage_samsung_ime
 # The shared corrections are inserted after the ordinary transform and staged only for Samsung.
 for name,data in samsung_files.items():
  target=samsung_current/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
+stage_samsung_ime(samsung_current)
 if '--tizen5' not in sys.argv:
  stage_samsung_layout(samsung_current)
 else:

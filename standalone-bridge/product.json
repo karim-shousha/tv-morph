@@ -1,9 +1,9 @@
 {
   "name": "Morph Bridge",
-  "version": "1.1.321",
+  "version": "1.1.324",
   "android": {
     "id": "com.morphtv.bridge.receiver",
-    "versionCode": 348,
+    "versionCode": 351,
     "minSdk": 26
   },
   "frontend": "tv-project/app/bridge-receiver",

@@ -119,6 +119,8 @@ def compile_web(app,target,legacy=False):
 
 def samsung(target):
     settings=PRODUCT['samsung'][target];app=web_stage(target)
+    from samsung_compat import stage_samsung_ime
+    stage_samsung_ime(app)
     config=(ROOT/'tv-project/app/config.xml').read_text(encoding='utf-8')
     config=config.replace('ClearTV001',settings['package']).replace('.Home','.Main').replace('<name>Morph Launcher</name>','<name>Morph IPTV</name><icon src="icon.png"/>')
     config=re.sub(r'required_version="[^"]+"','required_version="'+settings['required']+'"',config)
