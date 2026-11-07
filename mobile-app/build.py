@@ -78,7 +78,7 @@ assert 'VERSION="'+lg_meta['version']+'",SHA="'+lg_meta['sha256']+'"' in lg_text
 if not tv_stage_only:lg_protocol.write_text(lg_text,encoding='utf-8')
 if not tv_stage_only:
  from installer_payloads import stage as stage_install_products
- stage_install_products(ROOT,assets,receiver_version)
+ stage_install_products(ROOT,assets,json.loads((ROOT/'standalone-iptv/dist/local-build.json').read_text(encoding='utf-8'))['product']['version'])
 
 
 dependency=SOURCE/'libs/jsch-0.2.26.jar'
@@ -152,7 +152,8 @@ with zipfile.ZipFile(assets/'tv-app.zip','w',zipfile.ZIP_DEFLATED) as z:
     output=BUILD/(media+'-samsung.js')
     run([ROOT/'.tools/samsung-web/node_modules/@esbuild/win32-x64/esbuild.exe',f,'--target='+samsung_js_target,'--outfile='+str(output)])
     data=output.read_bytes()
-   z.writestr(media+'/'+f.name,data)
+   relative=f.relative_to(ROOT/'android-tv'/media).as_posix()
+   z.writestr(media+'/'+relative,data)
   if media=='iptv':z.writestr('iptv/shared-source.json',json.dumps(source_receipt()))
  # IPTV's normalized stylesheet is already included by the source-tree loop.
   z.writestr(media+'/tv-compat.js',(ROOT/'tv-project/app/tv-compat.js').read_bytes())
@@ -180,6 +181,10 @@ for name,data in samsung_files.items():
  target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
 stage_launcher_visual(samsung_current)
 samsung_files={p.relative_to(samsung_current).as_posix():p.read_bytes() for p in samsung_current.rglob('*') if p.is_file()}
+# Fail the build if nested IPTV dependencies were flattened or omitted.
+for qr_dependency in ['vendor/nacl-fast.min.js','vendor/qrcode.js']:
+ assert 'iptv/'+qr_dependency in samsung_files, 'Missing IPTV QR qr_dependency: '+qr_dependency
+ assert ('src="'+qr_dependency) in samsung_files['iptv/index.html'].decode('utf-8'), 'QR qr_dependency path mismatch: '+qr_dependency
 for index,name in enumerate(samsung_files):
  if not name.endswith('.js'):continue
  source_js=BUILD/('samsung-source-'+str(index)+'.js')

@@ -6,9 +6,9 @@ HERE=Path(__file__).resolve().parent
 OUT=HERE/'build/mac-ci'
 OUT.mkdir(parents=True,exist_ok=True)
 package=json.loads((HERE/'package.json').read_text())
-package['scripts']={'start':'electron .','test':'node tests/local-media-response.cjs && node tests/updater.cjs && node tests/shared-ui-layout.cjs && node tests/prayer.cjs && node tests/settings-readable.cjs && node tests/matches.cjs && node tests/desktop.cjs && node tests/cleaner.cjs && node tests/review-parity.cjs'}
+package['scripts']={'start':'electron .','test':'node tests/local-media-response.cjs && node tests/updater.cjs && node tests/shared-ui-layout.cjs && node tests/prayer.cjs && node tests/settings-readable.cjs && node tests/matches.cjs && node tests/desktop.cjs && node tests/cleaner.cjs && node tests/review-parity.cjs && node tests/home-visibility.cjs && node tests/theme-art-position.cjs'}
 package['build']['mac'].update({'identity':'-','hardenedRuntime':False,'notarize':False})
-files=[HERE/name for name in ['main.cjs','preload.cjs','lan.cjs','matches.cjs','vpn.cjs','updater.cjs','cleaner-files.cjs','local-media-response.cjs','package-lock.json','tests/local-media-response.cjs','tests/desktop.cjs','tests/matches.cjs','tests/shared-ui-layout.cjs','tests/prayer.cjs','tests/settings-readable.cjs','tests/updater.cjs','tests/cleaner.cjs','tests/review-parity.cjs']]
+files=[HERE/name for name in ['main.cjs','preload.cjs','lan.cjs','matches.cjs','vpn.cjs','updater.cjs','cleaner-files.cjs','local-media-response.cjs','package-lock.json','tests/local-media-response.cjs','tests/desktop.cjs','tests/matches.cjs','tests/shared-ui-layout.cjs','tests/prayer.cjs','tests/settings-readable.cjs','tests/updater.cjs','tests/cleaner.cjs','tests/review-parity.cjs','tests/home-visibility.cjs','tests/theme-art-position.cjs']]
 files += [p for p in (HERE/'build/ui').rglob('*') if p.is_file()]
 files += [HERE/'build/icon.ico',HERE/'build/icon.icns']
 # Every explicit desktop runtime member must also ship in the isolated Mac snapshot.

@@ -1,14 +1,14 @@
 {
-  "version": "1.1.324",
-  "androidVersionCode": 351,
-  "reason": "Android patch: actual APK install action and sequential phone setup; native static focus for settings and IPTV; avoid per-focus settings reorganisation.",
+  "version": "1.1.325",
+  "androidVersionCode": 352,
+  "reason": "Preserve nested Samsung IPTV QR dependencies and update Bridge footer only; phone 1.1.326 refreshes verified installers without changing confirmed runtime/UI.",
   "platformVersions": {
-    "phone": "1.1.324",
-    "android": "1.1.324",
+    "phone": "1.1.326",
+    "android": "1.1.325",
     "iptvAndroid": "1.1.324",
-    "samsung": "1.1.324",
-    "webos": "1.1.324",
-    "desktop": "1.1.324"
+    "samsung": "1.1.325",
+    "webos": "1.1.325",
+    "desktop": "1.1.325"
   },
   "scope": "Shared performance correction; preserve player and approved design. Release artifacts require their own platform verification."
 }

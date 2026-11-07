@@ -52,12 +52,7 @@
   function pin() {
     var id = 'local.tvmorph.tv.bridge';
     if (!C.Catalog.get(id)) C.Catalog.apps.push({id:id,name:'Morph Bridge',installed:true,launchable:true,platform:'builtin'});
-    var viewer=C.Profiles&&C.Profiles.active?C.Profiles.active():'default',key='bridge-home-pin-v1.'+viewer;
-    if(!C.read(key,false)){
-      var pins=C.getRemoteState().pins.slice();
-      if(pins.indexOf(id)<0)pins.push(id);
-      C.setRemotePins(pins);C.write(key,true);
-    }
+
   }
   window.addEventListener('load', function () {pin();window.addEventListener('morphViewer',pin);});
 })(window.ClearTV);

@@ -114,3 +114,34 @@ body[data-mobile-page="page-studio"] #toast{pointer-events:none;bottom:calc(150p
 #page-start .rebuild-tile strong{white-space:normal;overflow-wrap:anywhere;font-size:13px;line-height:1.35}
 #page-start .rebuild-tile small{white-space:normal;font-size:10px;line-height:1.5}
 @media(max-width:350px){#page-start .rebuild-tile svg{width:25px;height:25px}#page-start .rebuild-tile{padding:10px!important;gap:6px}#page-start .rebuild-tile strong{font-size:12px}}
+
+/* Plus uses a bounded row, so percentage heights cannot expand to content size. */
+.morph-plus-overlay{box-sizing:border-box;grid-template-rows:minmax(0,1fr);min-height:0;}
+.morph-plus-dialog{min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.morph-plus-dialog .plus-dialog-body{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;}
+.morph-plus-dialog .plus-actions{flex:0 0 auto;}
+
+/* Phone Plus stays in the shared phone palette; the TV activation UI is separate. */
+html#morph-phone-ui .morph-plus-overlay .morph-plus-dialog{box-sizing:border-box!important;min-width:0!important;max-height:100%!important;font-size:16px!important;line-height:1.6!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-dialog-body{min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;}
+html#morph-phone-ui .morph-plus-dialog h2{font-size:23px!important;line-height:1.4!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-feature-list{padding-inline-start:20px;font-size:15px;line-height:1.65;}
+html#morph-phone-ui .morph-plus-dialog .plus-plans{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-plans article{min-width:0;padding:12px!important;margin:0!important;background:var(--phone-surface)!important;border:1px solid var(--phone-border)!important;color:var(--phone-foreground)!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-plans span{font-size:14px!important;overflow-wrap:anywhere;}
+html#morph-phone-ui .morph-plus-dialog .plus-purchase{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;align-items:start;margin-top:16px;}
+html#morph-phone-ui .morph-plus-dialog .plus-purchase-qr{width:88px!important;height:88px!important;object-fit:contain;background:white;border-radius:8px;}
+html#morph-phone-ui .morph-plus-dialog .plus-purchase-hint,html#morph-phone-ui .morph-plus-dialog .plus-note{font-size:14px!important;line-height:1.6!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-address{font-size:14px;overflow-wrap:anywhere;}
+html#morph-phone-ui .morph-plus-dialog input{min-width:0;font-size:17px!important;color:var(--phone-foreground)!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-actions{display:flex!important;flex:0 0 auto!important;gap:10px!important;padding:12px 0 0!important;margin-top:12px!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-actions button{flex:1 1 0!important;min-width:0!important;min-height:46px!important;padding:10px!important;white-space:normal!important;font-size:16px!important;line-height:1.5!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-activate{background:linear-gradient(120deg,var(--phone-accent),var(--phone-accent-end))!important;color:var(--phone-on-accent)!important;-webkit-text-fill-color:var(--phone-on-accent)!important;}
+html#morph-phone-ui .morph-plus-dialog .plus-close{background:var(--phone-surface)!important;color:var(--phone-foreground)!important;-webkit-text-fill-color:var(--phone-foreground)!important;border-color:var(--phone-border)!important;}
+html#morph-phone-ui .morph-plus-dialog small:first-child{color:var(--phone-link)!important;-webkit-text-fill-color:var(--phone-link)!important;}
+@media(max-width:360px){html#morph-phone-ui .morph-plus-dialog .plus-plans{grid-template-columns:minmax(0,1fr);}}
+
+html#morph-phone-ui .morph-plus-overlay{padding:12px!important;}
+html#morph-phone-ui .morph-plus-overlay .morph-plus-dialog{width:100%!important;max-width:560px!important;height:calc(100vh - 24px)!important;height:calc(100dvh - 24px)!important;max-height:680px!important;margin:0!important;padding:18px!important;}
+html#morph-phone-ui .morph-plus-dialog input{box-sizing:border-box;width:100%;min-height:46px;padding:10px 12px;border:1px solid var(--phone-border);border-radius:12px;background:var(--phone-surface);}
+html#morph-phone-ui .morph-plus-dialog .plus-purchase button{min-width:0;max-width:100%;padding:10px;font-size:14px;white-space:normal;}
