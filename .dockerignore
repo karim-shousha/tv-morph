@@ -246,3 +246,9 @@ releases/**
 !Cleaner-Android-1.1.320.apk
 !Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt
 !Cleaner-LG-1.1.320.ipk
+
+!release-artifacts.json
+!fetch-release-artifacts.py
+!release-notes-1.1.321.json
+!releases/1.1.321/
+!releases/1.1.321/**

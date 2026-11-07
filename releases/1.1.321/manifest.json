@@ -1,0 +1,127 @@
+{
+  "version": "1.1.321",
+  "versionCode": 348,
+  "artifacts": [
+    {
+      "file": "Morph-TV-Android-TV-1.1.321.apk",
+      "bytes": 25228063,
+      "sha256": "102bf28b1c8a13fddfada7e9001ea20467a6d380d916c3c6c3bfb7a306687d2e"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.321.apk",
+      "bytes": 169235788,
+      "sha256": "80cd5c436cbe23860b6476f6c21e1c6c0720032681105c7f9f3d6948ea48d394"
+    },
+    {
+      "file": "Morph-TV-LG-1.1.321.ipk",
+      "bytes": 13732530,
+      "sha256": "39b31b66f85a9799e32fd778954c17ad91f99de0c8c4e39fe71487ac3b59865d"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen5-1.1.321.wgt",
+      "bytes": 14312308,
+      "sha256": "e876596da68a7675f78d1e3e36a60dbcbc18f245dbdbc080e252d6794d225f6b"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.321-Setup.exe",
+      "bytes": 139384346,
+      "sha256": "2781af981a6119256b334dacb8da106bf194e8322e207fa502a982d9b0f90d6f"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen2-1.1.321.wgt",
+      "bytes": 14411231,
+      "sha256": "4a0f89010b0af52d8afe29336718b1d7762d2d8bb778b79126c81854cf8c51b9"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen3-1.1.321.wgt",
+      "bytes": 14409286,
+      "sha256": "1c8498a190eb74aab16a72a3edfc354ea6335d6c6761cbe4f3ada0e62ae0e1bc"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen4-1.1.321.wgt",
+      "bytes": 14379169,
+      "sha256": "80abadc1f15266d0b6ed8a5b67504f07f8c8037334fe25b0400848aa97e8e850"
+    },
+    {
+      "file": "Morph-IPTV-Android-TV-1.1.321.apk",
+      "bytes": 16763795,
+      "sha256": "4abcb58a6c92b31db2539c8240e77160952ad4597f293b76c770f0d55d6faded"
+    },
+    {
+      "file": "Morph-IPTV-tizen2-1.1.321.wgt",
+      "bytes": 5741679,
+      "sha256": "5bbae742d315f1dcfce3e97aa0004d7a81515117a4078963c2f072571083e663"
+    },
+    {
+      "file": "Morph-IPTV-tizen3-1.1.321.wgt",
+      "bytes": 5740862,
+      "sha256": "92c321eb1655988df14f8fb624c159b870f30fe8488b1d1cb4bc7dd638c599a8"
+    },
+    {
+      "file": "Morph-IPTV-tizen4-1.1.321.wgt",
+      "bytes": 5668600,
+      "sha256": "2988f4cbe2fef9cda6cf8682cc9ade731579fa17d0a8a57ef7bc7618eaf18c7a"
+    },
+    {
+      "file": "Morph-IPTV-tizen5-1.1.321.wgt",
+      "bytes": 5668603,
+      "sha256": "2c10f6ed915b51aacee9392880a31363d49a1a23c30968e0e11b1b26c5020413"
+    },
+    {
+      "file": "Morph-IPTV-LG-1.1.321.ipk",
+      "bytes": 5641436,
+      "sha256": "f98d3ec382e08df14e6864a7ed6f969a2445810da723cfbff0d5bf9036f69588"
+    },
+    {
+      "file": "Morph-Bridge-Android-TV-1.1.321.apk",
+      "bytes": 1407089,
+      "sha256": "cb099bb8ef64cc0b51ac9914fff96c88a44d1fb94a8c7b9c32631877a9e6535d"
+    },
+    {
+      "file": "Morph-Bridge-LG-1.1.321.ipk",
+      "bytes": 818342,
+      "sha256": "2d501ddb2963b36e761492a9d6ddf2dacf5df5d54a1163fd3ba809cf0567075a"
+    },
+    {
+      "file": "Morph-Bridge-Samsung-1.1.321.wgt",
+      "bytes": 818494,
+      "sha256": "d003d06afa5f9a2741b1f3f7deec1b05234c8d7ccf748f430cd72ef4daf6f258"
+    },
+    {
+      "file": "Cleaner-Android-1.1.321.apk",
+      "bytes": 365815,
+      "sha256": "ae97877455c725bf29eade230dc44b24213a9cbc365a6f978940a3f16f933fbe"
+    },
+    {
+      "file": "Cleaner-LG-1.1.321.ipk",
+      "bytes": 199612,
+      "sha256": "457232589965cd1e44dae5258a98336785be1583dd24bd8f7a33c2a37666b1f7"
+    },
+    {
+      "file": "Cleaner-Samsung-Tizen2-and-newer-1.1.321.wgt",
+      "bytes": 192492,
+      "sha256": "6512764d212a5fa3d321e9f524c6ca3d74f9296755df676a31278088879eae63"
+    },
+    {
+      "file": "Morph-IPTV-Legacy-1.1.321.apk",
+      "bytes": 496658,
+      "sha256": "32d5a1f3fb0d332edfcfb2a761ffa5049831b1c4bb8e5e1d3197e91ca86ec1f2"
+    },
+    {
+      "file": "Morph-TV-Legacy-1.1.321.apk",
+      "bytes": 472082,
+      "sha256": "8e2d0ef67a36ee7215aaacaefa07fbfc47a929415627ab7621bef38e1bb8ffa3"
+    },
+    {
+      "file": "Morph-TV-Install-Kit-1.1.321.zip",
+      "bytes": 101620820,
+      "sha256": "1fb45322f9b586beadcec6534e5aee2dbf6bfc954643175d92322033e6e41d30"
+    }
+  ],
+  "validationLimits": [
+    "No physical Tizen 2/3/4 or LG device certification; engine/package checks only.",
+    "Android 4.4 editions remain reduced native M3U players; no modern UI/Xtream/EPG.",
+    "Samsung WGT installation requires device certificate signing through the mobile installer."
+  ],
+  "sourceCommit": "9c1385d749762f18a89c80c9ad35a1776b8e968c"
+}

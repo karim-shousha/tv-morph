@@ -1,3 +1,7 @@
+FROM python:3.13-alpine AS verified-release
+COPY release-artifacts.json fetch-release-artifacts.py /
+RUN python /fetch-release-artifacts.py
+
 FROM alpine:3.22 AS phone-artifact
 WORKDIR /parts
 COPY artifact-parts/Morph-TV-Phone-1.1.320.apk.part-* ./
@@ -38,3 +42,7 @@ COPY releases/1.1.320/ /usr/share/nginx/html/releases/1.1.320/
 COPY site-bridge-downloads.js /usr/share/nginx/html/
 
 COPY product-pages.js product-pages.css /usr/share/nginx/html/
+
+COPY --from=verified-release /artifacts/ /usr/share/nginx/html/
+COPY release-notes-1.1.321.json /usr/share/nginx/html/
+COPY releases/1.1.321/ /usr/share/nginx/html/releases/1.1.321/
