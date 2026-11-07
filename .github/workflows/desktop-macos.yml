@@ -4,6 +4,9 @@ on:
     branches: [codex/desktop-macos]
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
   workflow_dispatch:
+concurrency:
+  group: morph-desktop-macos
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -29,6 +32,7 @@ jobs:
         working-directory: desktop
         run: |
           npm ci --no-audit --no-fund
+          npx playwright install chromium
           command -v ffmpeg || brew install ffmpeg
       - name: Build one Mac application for Apple Silicon and Intel
         working-directory: desktop
@@ -36,6 +40,7 @@ jobs:
       - name: Run application and mouse/playback regression on Apple Silicon
         working-directory: desktop
         env:
+          MORPH_TEST_NO_SCREENSHOTS: "1"
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/desktop/dist/mac-universal/Morph Launcher.app/Contents/MacOS/Morph Launcher
         run: npm test
       - uses: actions/upload-artifact@v4
@@ -74,10 +79,12 @@ jobs:
         working-directory: desktop
         run: |
           npm ci --no-audit --no-fund
+          npx playwright install chromium
           command -v ffmpeg || brew install ffmpeg
       - name: Verify the same application on Intel
         working-directory: desktop
         env:
+          MORPH_TEST_NO_SCREENSHOTS: "1"
           MORPH_PC_TEST_EXECUTABLE: ${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher
         run: npm test
       - uses: actions/upload-artifact@v4
