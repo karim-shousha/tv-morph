@@ -84,7 +84,7 @@
    audio.onclick=function(){try{if(video)video.muted=!video.muted;else if(nativeAudio&&nativeAudio.setMute)nativeAudio.setMute(!isMuted());paintAudio();}catch(ignore){}if(activity)activity();};if(video)video.addEventListener('volumechange',paintAudio);paintAudio();tools.appendChild(audio);}
   if(w.tizen&&!tools.querySelector('[data-player-tool=cast]')){var cast=document.createElement('button');cast.className='morph2-btn';cast.setAttribute('data-player-tool','cast');cast.setAttribute('aria-label',t('إرسال البث','Cast'));cast.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8V4h18v14h-7M3 12a8 8 0 0 1 8 8M3 16a4 4 0 0 1 4 4"/><circle cx="3" cy="20" r="1"/></svg>';cast.onclick=function(){castToReceiver(overlay,item,activity);};tools.appendChild(cast);}
   if(gear)tools.appendChild(gear);
-  overlay.appendChild(top);
+  Array.prototype.forEach.call(tools.querySelectorAll('button'),function(button){button.classList.add('morph-player-top-tool');});overlay.appendChild(top);
   var shade=document.createElement('div');shade.className='morph3-shades morph2-chrome';overlay.insertBefore(shade,overlay.firstChild);
  }
  function key(overlay,e){var code=e.keyCode,current=document.activeElement,top=overlay.querySelector('.morph3-top'),timeline=overlay.querySelector('[role=slider],input[type=range]'),target=null,handled=false;
