@@ -13,7 +13,7 @@ final class PhoneUiLaunch {
         host.runOnUiThread(()->{
             try{
                 JSONObject result=new JSONObject().put("opened",true);
-                if(action.equals("cleanerOpen")){host.startActivity(new Intent(host,local.tvmorph.tv.CleanerActivity.class));
+                if(action.equals("cleanerOpen")){host.startActivity(new Intent(host,local.tvmorph.tv.CleanerActivity.class).putExtra("cleanerTheme",new JSONObject().put("language",host.getSharedPreferences("cleartv",Activity.MODE_PRIVATE).getString("language","ar")).toString()));
                 }else if(action.equals("bridgeOpen")){
                     BridgeLaunch.open(host);result.put("embedded",true);
                 }else if(action.equals("matchesOpen")){

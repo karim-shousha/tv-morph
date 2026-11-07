@@ -1,5 +1,5 @@
 {
-  "version": "1.1.315",
-  "androidVersionCode": 320,
-  "reason": "Gold mosque prayer screen in Arabic/English/French, Tunisia method, independent Adhan/Iqama settings and Home cards; remote/keyboard/ratings/seek fixes, OLED and verified updates."
+  "version": "1.1.321",
+  "androidVersionCode": 348,
+  "reason": "Confirmed native menu focus; shared UI parity, phone Cleaner and current legacy runtime release."
 }

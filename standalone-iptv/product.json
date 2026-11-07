@@ -1,7 +1,7 @@
 {
   "name": "Morph IPTV",
-  "version": "1.1.320",
-  "versionCode": 347,
+  "version": "1.1.321",
+  "versionCode": 348,
   "canonicalFrontend": "android-tv/iptv",
   "canonicalNativePlayer": "android-tv/src/local/tvmorph/tv",
   "phonePresentation": [

@@ -1,0 +1,35 @@
+/* Phone-only presentation, sharing the mobile application's generated tokens. */
+@font-face{font-family:MorphSans;src:url('../ui/fonts/morph-sans-400.ttf');font-weight:400;font-display:swap}
+@font-face{font-family:MorphSans;src:url('../ui/fonts/morph-sans-600.ttf');font-weight:600;font-display:swap}
+body{--cleaner-system-background:radial-gradient(ellipse at right top,var(--phone-background-top),var(--phone-background-middle) 48%,var(--phone-background-bottom))!important;--ui-bg:var(--phone-background-base);--ui-bg-raised:var(--phone-soft);--ui-text:var(--phone-text);--ui-text-muted:var(--phone-muted);--ui-card-border:var(--phone-border);--ui-card-bg:linear-gradient(180deg,var(--phone-glass-top),var(--phone-glass-bottom));--ui-control-bg:var(--phone-soft);--ui-selected-bg:var(--phone-soft);--ui-selected-text:var(--phone-text);--ui-button-text:var(--phone-text);--ui-button-gradient:linear-gradient(135deg,#39434f,#18232f);--ui-metadata-text:#64bcff;--ui-data-fill:#64bcff;--ui-focus-ring:var(--phone-accent);--ui-glass-dialog:linear-gradient(180deg,var(--phone-glass-top),var(--phone-glass-bottom));--ui-overlay-bg:rgba(2,9,18,.8);--ui-danger:#ffb9b9;--ui-danger-bg:#9c2440;--ui-danger-text:#fff;font-family:MorphSans,Arial,sans-serif}
+html body #morph-cleaner{box-sizing:border-box!important;padding:14px!important;font:400 14px/1.55 MorphSans,Arial,sans-serif!important;background:radial-gradient(ellipse at right top,var(--phone-background-top),var(--phone-background-middle) 48%,var(--phone-background-bottom))!important;overflow-y:auto!important;overflow-x:hidden!important;max-height:none!important;gap:10px!important}
+html body #morph-cleaner>header{position:static!important;flex:0 0 auto!important;min-height:54px!important;padding:0 0 10px!important;gap:8px!important}
+html body #morph-cleaner h1{font:600 22px/1.25 MorphSans,Arial,sans-serif!important;min-width:0!important}
+html body #morph-cleaner .cleaner-logo{width:40px!important;height:40px!important;flex-basis:40px!important}
+html body #morph-cleaner button{font:600 13px/1.4 MorphSans,Arial,sans-serif!important;min-height:44px!important;min-width:44px!important;padding:9px 11px!important;border-radius:12px!important;color:var(--phone-text)!important;white-space:normal!important}
+html body #morph-cleaner .cleaner-intro{flex:0 0 auto!important;font-size:13px!important;line-height:1.55!important;margin:0!important}
+html body #morph-cleaner .cleaner-storage{display:grid!important;grid-template-columns:54px minmax(0,1fr)!important;align-items:center!important;gap:8px 12px!important;flex:0 0 auto!important;padding:12px!important;margin:0!important;border-radius:15px!important}
+html body #morph-cleaner .cleaner-storage>svg{width:54px!important;height:54px!important;margin:0!important}
+html body #morph-cleaner .cleaner-storage>div{min-width:0!important}
+html body #morph-cleaner .cleaner-storage strong{font-size:18px!important}
+html body #morph-cleaner .cleaner-storage p{font-size:12px!important;line-height:1.5!important;margin:3px 0!important;overflow-wrap:anywhere!important}
+html body #morph-cleaner .cleaner-storage>button{grid-column:1/-1!important;width:100%!important;margin:0!important}
+html body #morph-cleaner .cleaner-toolbar{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;flex:0 0 auto!important;margin:0!important}
+html body #morph-cleaner .cleaner-toolbar button{width:100%!important;margin:0!important}
+html body #morph-cleaner .cleaner-summary{flex:0 0 auto!important;gap:8px!important;padding:10px 12px!important;margin:0!important;border-radius:15px!important;min-width:0!important}
+html body #morph-cleaner .cleaner-summary strong{font-size:22px!important}
+html body #morph-cleaner .cleaner-summary small{font-size:12px!important}
+html body #morph-cleaner .cleaner-status{font-size:12px!important;flex:0 0 auto!important;margin:0!important}
+html body #morph-cleaner .cleaner-list{flex:1 0 190px!important;min-height:190px!important;max-height:none!important;overflow:auto!important;padding:0!important;margin:0!important}
+html body #morph-cleaner .cleaner-file{padding:10px!important;min-height:76px!important;border-radius:13px!important;gap:8px!important}
+html body #morph-cleaner .cleaner-copy{min-width:0!important;flex:1 1 auto!important}
+html body #morph-cleaner .cleaner-copy strong{font-size:14px!important;overflow-wrap:anywhere!important;white-space:normal!important}
+html body #morph-cleaner .cleaner-copy small{font-size:11px!important;overflow-wrap:anywhere!important}
+html body #morph-cleaner .cleaner-size{font-size:12px!important;margin:0!important;flex:0 0 auto!important}
+html body #morph-cleaner .cleaner-check{width:22px!important;height:22px!important;flex:0 0 22px!important;margin:0!important}
+html body #morph-cleaner>footer{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;flex:0 0 auto!important;gap:8px!important;padding:10px 0 0!important;margin:0!important}
+html body #morph-cleaner footer button{width:100%!important;margin:0!important}
+html body #morph-cleaner footer .cleaner-delete{grid-column:1/-1!important;margin:0!important}
+html body #morph-cleaner .cleaner-confirm{width:auto!important;left:14px!important;right:14px!important;top:8%!important;max-height:84%!important;padding:18px!important;border-radius:18px!important;font-family:MorphSans,Arial,sans-serif!important}
+html body #morph-cleaner .cleaner-confirm h2{font-size:20px!important}
+html body #morph-cleaner .cleaner-confirm p,html body #morph-cleaner .cleaner-confirm li{font-size:14px!important;line-height:1.6!important}

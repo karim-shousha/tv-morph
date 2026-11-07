@@ -13,7 +13,7 @@ try{
   await app.evaluate(({BrowserWindow},size)=>{const win=BrowserWindow.getAllWindows()[0];win.unmaximize();win.setContentSize(...size);},[width,height]);await p.waitForTimeout(150);
   for(const lang of ['en','ar']){
    await p.evaluate(lang=>MorphLocale.set(lang),lang);
-   const bad=await p.locator('#view-home .home-tools').evaluate(e=>Array.from(e.querySelectorAll('.ui-sidebar-icon,svg,.reference-side-label')).filter(n=>n.getBoundingClientRect().width&&!n.closest('.morph-feature-lock')&&getComputedStyle(n).color!=='rgb(244, 245, 248)').map(n=>n.className.baseVal||n.className));assert.deepEqual(bad,[]);
+   const bad=await p.locator('#view-home .home-tools').evaluate(e=>Array.from(e.querySelectorAll('.ui-sidebar-icon,svg,.reference-side-label')).filter(n=>n.getBoundingClientRect().width&&!n.closest('.morph-feature-lock')&&getComputedStyle(n).color!==getComputedStyle(document.body).getPropertyValue('--ui-navigation-text').trim()&&getComputedStyle(n).color!=='rgb(255, 255, 255)').map(n=>n.className.baseVal||n.className));assert.deepEqual(bad,[]);
    await p.evaluate(()=>MorphCleaner.open());
    await p.waitForFunction(()=>document.querySelector('.storage-values').textContent.includes('GB'));
    const layout=await p.locator('#morph-cleaner').evaluate(e=>{const list=e.querySelector('.cleaner-list'),r=e.getBoundingClientRect(),b=getComputedStyle(document.querySelector('#view-settings .settings-shell')).backgroundImage;return {inside:r.left>=-1&&r.top>=63&&r.right<=innerWidth+1&&r.bottom<=innerHeight+1,list:list.clientHeight,theme:getComputedStyle(e).backgroundImage===b,title:e.querySelector('h1').textContent};});

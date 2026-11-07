@@ -40,7 +40,7 @@ def android():
     native=module/'src/main/java/local/tvmorph/tv/BridgeTrial.java';native.parent.mkdir(parents=True,exist_ok=True)
     shutil.copy2(ROOT/'android-tv/src/local/tvmorph/tv/BridgeTrial.java',native)
     Image.open(ROOT/'tv-project/app/assets/morph-launcher-icon.png').convert('RGBA').resize((512,512)).save(module/'src/main/res/drawable-nodpi/morph_logo.webp','WEBP',lossless=True)
-    gradle=module/'build.gradle.kts';text=gradle.read_text();text=re.sub(r'versionName = "[^"]+"','versionName = "'+VERSION+'"',text);gradle.write_text(text)
+    gradle=module/'build.gradle.kts';text=gradle.read_text();text=re.sub(r'versionName = "[^"]+"','versionName = "'+VERSION+'"',text);text=re.sub(r'versionCode = \d+','versionCode = '+str(PRODUCT['android']['versionCode']),text);gradle.write_text(text)
     run([ROOT/'mobile-app/integrated-remote/android/gradlew.bat',':morph-bridge-receiver:assembleRelease','--console=plain'],ROOT/'mobile-app/integrated-remote/android')
     source=ROOT/'mobile-app/integrated-remote/build/morph-bridge-receiver/outputs/apk/release/morph-bridge-receiver-release.apk'
     assert source.is_file(),source

@@ -39,6 +39,8 @@ for name in ['cleaner-native.html','cleaner.js','cleaner.css']:shutil.copy2(ROOT
 shutil.copy2(ROOT/'tv-project/app/ui/control-system.js',cleaner_assets/'control-system.js')
 (cleaner_assets/'assets').mkdir(exist_ok=True)
 shutil.copy2(ROOT/'tv-project/app/assets/morph-header-symbol.webp',cleaner_assets/'assets/morph-header-symbol.webp')
+shutil.copy2(SOURCE/'cleaner-mobile.css',cleaner_assets/'cleaner-mobile.css')
+p=cleaner_assets/'cleaner-native.html';p.write_text(p.read_text(encoding='utf-8').replace('</head>','<link rel="stylesheet" href="../ui/phone-tokens.css"><link rel="stylesheet" href="cleaner-mobile.css"></head>'),encoding='utf-8')
 
 # NetworkActivity uses the shared local-network browser on phone as well as TV.
 network_assets=assets/'tv';network_assets.mkdir(exist_ok=True)

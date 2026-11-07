@@ -4,7 +4,10 @@
    focus sweeps + re-renders on 512MB TVs and read as "frozen remote". */
 (function(w,d){'use strict';
   w.MorphTVLowMemory=true;
-  try{if(!localStorage.getItem('cleartv.tizen-light-default-v1')){localStorage.setItem('cleartv.performanceMode','"performance"');localStorage.setItem('cleartv.visualEffects','{"blur":false,"glow":false,"motion":false}');localStorage.setItem('cleartv.launcher-balanced-navigation-v1','true');localStorage.setItem('cleartv.tizen-light-default-v1','true');}}catch(ignore){}
+  // Seed the active viewer before shared Performance migration runs.
+  // The marker is per viewer, so a newly selected profile also gets a light first boot.
+  try{var profile=localStorage.getItem('cleartv.activeViewer')||'default',prefix='cleartv.'+(profile==='default'?'':'viewer.'+profile+'.');if(!localStorage.getItem(prefix+'tizen-light-default-v2')){localStorage.setItem(prefix+'performanceMode','"performance"');localStorage.setItem(prefix+'visualEffects','{"blur":false,"glow":false,"motion":false}');localStorage.setItem(prefix+'launcher-balanced-navigation-v1','true');localStorage.setItem(prefix+'tizen-light-default-v2','true');}}catch(ignore){}
+
   var lastCode=0,lastAt=0;var FLOOR_MS=70;
   function stamp(){return (new Date()).getTime();}
   d.addEventListener('keydown',function(e){
