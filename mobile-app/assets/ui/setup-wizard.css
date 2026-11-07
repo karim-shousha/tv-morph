@@ -51,20 +51,20 @@ html body #page-connect#page-connect#page-connect[data-setup-wizard] #setup-clea
 
 html body #page-connect#page-connect#page-connect[data-setup-wizard] #mobile-service-map{display:none!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .connect-step-body{display:block!important;opacity:1!important}
-html body #page-connect#page-connect#page-connect[data-setup-wizard] #setup-samsung-wgt{display:block!important}
+html body #page-connect#page-connect#page-connect[data-setup-wizard] #setup-samsung-wgt:not([hidden]){display:block!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .wizard-manual{margin-top:20px;border-top:1px solid #36516e;padding-top:16px}
 .wizard-manual>summary{font-size:15px;line-height:1.8;color:#f5d58f;cursor:pointer;padding:8px 0}
 
 html body #page-connect#page-connect#page-connect[data-setup-wizard]:not([data-wizard-step="1"])>#setting-update-alerts,html body #page-connect#page-connect#page-connect[data-setup-wizard]:not([data-wizard-step="1"])>#check-phone-update,html body #page-connect#page-connect#page-connect[data-setup-wizard]:not([data-wizard-step="1"])>#phone-update-status{display:none!important}
 
 /* Keep the phone address independent from the older horizontal IP-card rules. */
-html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip{display:grid!important;grid-template-columns:38px minmax(0,1fr)!important;align-items:center!important;gap:10px 12px!important;height:auto!important;min-height:0!important;text-align:start!important;overflow:hidden!important}
+html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip:not([hidden]){display:grid!important;grid-template-columns:38px minmax(0,1fr)!important;align-items:center!important;gap:10px 12px!important;height:auto!important;min-height:0!important;text-align:start!important;overflow:hidden!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip>*{position:static!important;inset:auto!important;transform:none!important;margin:0!important;min-width:0!important;width:auto!important;max-width:100%!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip>.m30-ip-icon{grid-column:1!important;grid-row:1!important;display:grid!important;place-items:center!important;width:38px!important;height:38px!important;border-radius:12px!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip>#setup-phone-label{grid-column:2!important;grid-row:1!important;line-height:1.7!important;white-space:normal!important;overflow-wrap:anywhere!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip>#phone-ip{grid-column:1/-1!important;grid-row:2!important;display:block!important;direction:ltr!important;unicode-bidi:isolate!important;text-align:center!important;font:700 28px/1.5 Arial,sans-serif!important;padding:8px 0!important;white-space:normal!important;overflow-wrap:anywhere!important;letter-spacing:1px!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .setup-phone-ip>p{grid-column:1/-1!important;line-height:1.8!important}
-html body #page-connect#page-connect#page-connect[data-setup-wizard] #devices{margin-top:18px!important;display:grid!important;gap:12px!important}
+html body #page-connect#page-connect#page-connect[data-setup-wizard] #devices:not([hidden]){margin-top:18px!important;display:grid!important;gap:12px!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] #devices>button{margin:0!important;padding:16px!important;min-height:76px!important}
 html body #page-connect#page-connect#page-connect[data-setup-wizard] .connection-card #scan{margin:0!important;min-height:48px!important}
 
