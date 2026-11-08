@@ -1,4 +1,4 @@
-name: Build and verify Morph Launcher 1.1.351 for Mac
+name: Build and verify Morph Launcher 1.1.352 for Mac
 
 on:
 
@@ -20,62 +20,25 @@ permissions:
 
   contents: read
 
+  actions: read
+
 jobs:
 
   package:
-
-    runs-on: macos-15
-
-    timeout-minutes: 20
-
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-
+      - name: Reuse the unchanged final universal application
+        uses: actions/download-artifact@v4
         with:
-
-          node-version: '22'
-
-      - name: Verify and extract frozen runtime
-
-        run: |
-
-          python3 - <<'PY'
-
-          import pathlib,json,hashlib,zipfile
-
-          p=pathlib.Path('desktop-build');j=json.loads((p/'runtime.json').read_text());a=p/j['file'];assert hashlib.sha256(a.read_bytes()).hexdigest()==j['sha256'];zipfile.ZipFile(a).extractall('desktop')
-
-          PY
-
-      - name: Install packaging dependencies
-
-        working-directory: desktop
-
-        run: npm ci --no-audit --no-fund
-
-      - name: Build universal Mac application
-
-        working-directory: desktop
-
-        run: npx electron-builder --mac dmg zip --universal --publish never
-
-      - uses: actions/upload-artifact@v4
-
-        with:
-
           name: morph-mac-universal
-
-          path: |
-
-            desktop/dist/Morph-Launcher-Mac-*.dmg
-
-            desktop/dist/Morph-Launcher-Mac-*.zip
-
-          if-no-files-found: error
-
+          run-id: 42525402513
+          github-token: ${{ github.token }}
+          path: downloads
+      - uses: actions/upload-artifact@v4
+        with:
+          name: morph-mac-universal
+          path: downloads/*
           retention-days: 7
 
   verify:
