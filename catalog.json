@@ -1,47 +1,47 @@
 {
   "schema": 1,
-  "latest": "1.1.351",
+  "latest": "1.1.352",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.351",
+      "version": "1.1.352",
       "download": "/download/phone",
       "noteAr": "تنزيل نسخ التلفزيون من الموقع عند الطلب؛ واجهة الموبايل المعتمدة محفوظة بدون ملفات تثبيت مدمجة.",
       "noteEn": "TV installers download on demand from the website with integrity verification; phone APK approximately half its previous size.",
       "channel": "preview",
-      "versionCode": 378,
+      "versionCode": 379,
       "physicalDeviceVerified": false,
-      "validation": "Release 351 QA: packaged layouts and remote navigation checked; physical LG/Tizen device validation pending."
+      "validation": "Release 352 QA: settings/themes, Light scaling, dock navigation, shared IPTV and desktop checked; official LG simulator and Android emulator reviewed. Physical casting remains unverified."
     },
     {
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "1.1.351",
+      "version": "1.1.352",
       "download": "/download/android",
       "noteAr": "إصلاح الثيمات وتنقّل الإعدادات وProfile، وتوحيد الواجهة وألوان IPTV، مع تحسينات خفة العرض.",
       "noteEn": "Shared menus, settings and typography, preserving platform compatibility.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false,
-      "versionCode": 378,
-      "validation": "Release 351 QA: packaged layouts and remote navigation checked; physical LG/Tizen device validation pending."
+      "versionCode": 379,
+      "validation": "Release 352 QA: settings/themes, Light scaling, dock navigation, shared IPTV and desktop checked; official LG simulator and Android emulator reviewed. Physical casting remains unverified."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "1.1.351",
+      "version": "1.1.352",
       "download": "/download/firetv",
       "noteAr": "إصلاح الثيمات وتنقّل الإعدادات وProfile، وتوحيد الواجهة وألوان IPTV، مع تحسينات خفة العرض.",
       "noteEn": "Shared menus, settings and typography, preserving platform compatibility.",
       "channel": "preview",
-      "versionCode": 378,
+      "versionCode": 379,
       "physicalDeviceVerified": false,
-      "validation": "Release 351 QA: packaged layouts and remote navigation checked; physical LG/Tizen device validation pending."
+      "validation": "Release 352 QA: settings/themes, Light scaling, dock navigation, shared IPTV and desktop checked; official LG simulator and Android emulator reviewed. Physical casting remains unverified."
     },
     {
       "id": "samsung",
@@ -50,12 +50,12 @@
       "noteAr": "إصلاح الثيمات وتنقّل الإعدادات وProfile، وتوحيد الواجهة وألوان IPTV، مع تحسينات خفة العرض.",
       "noteEn": "Tizen 5 launcher refreshed. Tizen 2, 3 and 4 packages remain unchanged as requested.",
       "webPreview": "/web-tv.html",
-      "version": "1.1.351",
+      "version": "1.1.352",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
       "physicalDeviceVerified": false,
-      "computerPackage": "/Morph-TV-Samsung-Tizen5-1.1.351.wgt",
+      "computerPackage": "/Morph-TV-Samsung-Tizen5-1.1.352.wgt",
       "installGuide": "/install.html",
       "usbInstallerAvailable": false,
       "computerCompatibilityMinTizen": "4.0",
@@ -75,7 +75,7 @@
       "computerLite3Version": "1.1.347",
       "computerBundle": "/Morph-TV-Install-Kit-1.1.321.zip",
       "computerCompatibilityBundle": "/Morph-TV-Install-Kit-1.1.321.zip",
-      "validation": "Release 351 QA: packaged layouts and remote navigation checked; physical LG/Tizen device validation pending."
+      "validation": "Release 352 QA: settings/themes, Light scaling, dock navigation, shared IPTV and desktop checked; official LG simulator and Android emulator reviewed. Physical casting remains unverified."
     },
     {
       "id": "lg",
@@ -83,14 +83,14 @@
       "available": true,
       "noteAr": "إصلاح الثيمات وتنقّل الإعدادات وProfile، وتوحيد الواجهة وألوان IPTV، مع تحسينات خفة العرض.",
       "noteEn": "Updated reviewed frontend, lightweight default, IPTV provider transport and remote controls. Developer Mode required; physical LG review pending.",
-      "version": "1.1.351",
+      "version": "1.1.352",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
       "installMode": "developer-mode",
       "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/",
       "channel": "preview",
-      "validation": "Release 351 QA: packaged layouts and remote navigation checked; physical LG/Tizen device validation pending."
+      "validation": "Release 352 QA: settings/themes, Light scaling, dock navigation, shared IPTV and desktop checked; official LG simulator and Android emulator reviewed. Physical casting remains unverified."
     },
     {
       "id": "android44",
@@ -106,24 +106,24 @@
   ],
   "releases": [
     {
-      "name": "Morph-TV-Android-TV-1.1.351",
-      "file": "Morph-TV-Android-TV-1.1.351.apk",
-      "version": "1.1.351",
+      "name": "Morph-TV-Android-TV-1.1.352",
+      "file": "Morph-TV-Android-TV-1.1.352.apk",
+      "version": "1.1.352",
       "product": "launcher",
       "target": "android",
-      "bytes": 24785939,
-      "sha256": "88fd07f974978fb3ccadf29a4f7fdd94e6522e526a8553da3a0b8187d3e2cb2e",
+      "bytes": 25296279,
+      "sha256": "33f9569dcc79731951f366198564dbf638a9b2b66c140c5df1da677612546f85",
       "download": "/download/android",
-      "versionCode": 378
+      "versionCode": 379
     },
     {
-      "name": "Morph-TV-LG-1.1.351",
-      "file": "Morph-TV-LG-1.1.351.ipk",
-      "version": "1.1.351",
+      "name": "com.zainbot.morphtv.preview_1.1.352_all",
+      "file": "com.zainbot.morphtv.preview_1.1.352_all.ipk",
+      "version": "1.1.352",
       "product": "launcher",
       "target": "webos",
-      "bytes": 13324286,
-      "sha256": "a5262c02475cfeefa0c85921284030bb7c36c0cf664a5b256d6e4605291dfb17",
+      "bytes": 13830964,
+      "sha256": "8bc8d38ed41a8b0e37293c175185589351b118b5dda90448a9f081300007c398",
       "download": "/download/lg"
     },
     {
@@ -157,23 +157,23 @@
       "download": "/download/samsung-tizen4"
     },
     {
-      "name": "Morph-TV-Samsung-Tizen5-1.1.351",
-      "file": "Morph-TV-Samsung-Tizen5-1.1.351.wgt",
-      "version": "1.1.351",
+      "name": "Morph-TV-Samsung-Tizen5-1.1.352",
+      "file": "Morph-TV-Samsung-Tizen5-1.1.352.wgt",
+      "version": "1.1.352",
       "product": "launcher",
       "target": "tizen5",
-      "bytes": 14005856,
-      "sha256": "629098ed333a248f475d77877a564f460cf603328082f7c921d1875f1b67d5bd",
+      "bytes": 14515876,
+      "sha256": "81f0bd47d57212e53621c82ca8fc20a8abb04d9c0d0c749bc34840e2d373b762",
       "download": "/download/samsung-tizen5"
     },
     {
-      "name": "Morph-IPTV-LG-1.1.351",
-      "file": "Morph-IPTV-LG-1.1.351.ipk",
-      "version": "1.1.351",
+      "name": "com.morphtv.iptv_1.1.352_all",
+      "file": "com.morphtv.iptv_1.1.352_all.ipk",
+      "version": "1.1.352",
       "product": "iptv",
       "target": "webos",
-      "bytes": 5657008,
-      "sha256": "e0b51ac865ef826203520851380a92963bf0e0feb1c3d5baff7937806f333a73",
+      "bytes": 5657188,
+      "sha256": "24e515e922a9856dc3d9eef04fc4a6982ec84f52d925193caae62739e559d750",
       "download": "/download/iptv/lg"
     },
     {
@@ -187,13 +187,13 @@
       "download": "/download/iptv/tizen4"
     },
     {
-      "name": "Morph-IPTV-tizen5-1.1.351",
-      "file": "Morph-IPTV-tizen5-1.1.351.wgt",
-      "version": "1.1.351",
+      "name": "Morph-IPTV-tizen5-1.1.352",
+      "file": "Morph-IPTV-tizen5-1.1.352.wgt",
+      "version": "1.1.352",
       "product": "iptv",
       "target": "tizen5",
-      "bytes": 5678737,
-      "sha256": "ed1ec7010dd7bce6931fd4484316e6c93aa318f85b181d1cc15b0d834e21b37f",
+      "bytes": 5678861,
+      "sha256": "cc2415be3facdea4c02c03acd8e7c4e4819fa3538136496c7cc181d063ba8dd1",
       "download": "/download/iptv/tizen5"
     },
     {
@@ -217,25 +217,25 @@
       "download": "/download/iptv/tizen3"
     },
     {
-      "name": "Morph-IPTV-Android-TV-1.1.351",
-      "file": "Morph-IPTV-Android-TV-1.1.351.apk",
-      "version": "1.1.351",
+      "name": "Morph-IPTV-Android-TV-1.1.352",
+      "file": "Morph-IPTV-Android-TV-1.1.352.apk",
+      "version": "1.1.352",
       "product": "iptv",
       "target": "android",
       "bytes": 16772136,
-      "sha256": "72bb2fd528a1dcd5424a1951426665a864897b252fe45963d5f5d668921c2974",
+      "sha256": "6f213efdab8028f230a127327b8e3b0c1d892e3914efc47967795368a8c85fb6",
       "download": "/download/iptv/android",
-      "versionCode": 378
+      "versionCode": 379
     },
     {
-      "file": "Morph-TV-Phone-1.1.351.apk",
-      "version": "1.1.351",
-      "versionCode": 378,
-      "bytes": 86549426,
-      "sha256": "0032a7a4bd4b7a3aa166086636acb8f69bb347d9a5c50db9ad39de825561a921",
+      "file": "Morph-TV-Mobile-1.1.352-Integrated.apk",
+      "version": "1.1.352",
+      "versionCode": 379,
+      "bytes": 86553522,
+      "sha256": "e858fa72733fe80b355cb958b8264fe8ad2b4c3a591384270b6657d2d04de244",
       "product": "phone",
-      "name": "Morph-TV-Phone-1.1.351",
-      "download": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.349/Morph-TV-Phone-1.1.351.apk"
+      "name": "Morph-TV-Mobile-1.1.352-Integrated",
+      "download": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.349/Morph-TV-Mobile-1.1.352-Integrated.apk"
     },
     {
       "name": "Morph-TV-Legacy-1.1.347",
@@ -282,15 +282,15 @@
       ]
     },
     {
-      "name": "Morph-Bridge-Android-TV-1.1.351",
-      "file": "Morph-Bridge-Android-TV-1.1.351.apk",
-      "version": "1.1.351",
+      "name": "Morph-Bridge-Android-TV-1.1.352",
+      "file": "Morph-Bridge-Android-TV-1.1.352.apk",
+      "version": "1.1.352",
       "product": "bridge",
       "target": "android",
-      "bytes": 1408057,
-      "sha256": "2fb7a8cdb71e2aca89ad970f8d245072b6cb6363ef27d02559ce649021b9e0c0",
+      "bytes": 1408493,
+      "sha256": "756852d5335ce0d6d811e71a8edfaf3d98e3b8dda765cf0956623390f11c5f7b",
       "download": "/download/bridge/android",
-      "versionCode": 378,
+      "versionCode": 379,
       "trialHours": 72,
       "plusScope": "tv",
       "phoneRequiresPlus": false
@@ -309,13 +309,13 @@
       "phoneRequiresPlus": false
     },
     {
-      "name": "Morph-Bridge-LG-1.1.351",
-      "file": "Morph-Bridge-LG-1.1.351.ipk",
-      "version": "1.1.351",
+      "name": "Morph-Bridge-LG-1.1.352",
+      "file": "Morph-Bridge-LG-1.1.352.ipk",
+      "version": "1.1.352",
       "product": "bridge",
       "target": "webos",
-      "bytes": 819482,
-      "sha256": "eebe35501df03d750ea589c09f6064cddc5294b6ddcf6fca7dfe543bb05c7a53",
+      "bytes": 819922,
+      "sha256": "b637d5ae96df4059dc5c1beef8590891154c23ac82b5350627715acc475430c1",
       "download": "/download/bridge/lg",
       "trialHours": 72,
       "plusScope": "tv",
@@ -422,50 +422,50 @@
     "versionMetadataOnly": true
   },
   "downloads": {
-    "android": "Morph-TV-Android-TV-1.1.351.apk",
-    "lg": "Morph-TV-LG-1.1.351.ipk",
+    "android": "Morph-TV-Android-TV-1.1.352.apk",
+    "lg": "com.zainbot.morphtv.preview_1.1.352_all.ipk",
     "samsung-tizen2": "Morph-TV-Samsung-Tizen2-1.1.347.wgt",
     "samsung-tizen3": "Morph-TV-Samsung-Tizen3-1.1.347.wgt",
     "samsung-tizen4": "Morph-TV-Samsung-Tizen4-1.1.348.wgt",
-    "samsung-tizen5": "Morph-TV-Samsung-Tizen5-1.1.351.wgt",
-    "iptv/lg": "Morph-IPTV-LG-1.1.351.ipk",
+    "samsung-tizen5": "Morph-TV-Samsung-Tizen5-1.1.352.wgt",
+    "iptv/lg": "com.morphtv.iptv_1.1.352_all.ipk",
     "iptv/tizen4": "Morph-IPTV-tizen4-1.1.348.wgt",
-    "iptv/tizen5": "Morph-IPTV-tizen5-1.1.351.wgt",
+    "iptv/tizen5": "Morph-IPTV-tizen5-1.1.352.wgt",
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
     "iptv/tizen3": "Morph-IPTV-tizen3-1.1.347.wgt",
-    "iptv/android": "Morph-IPTV-Android-TV-1.1.351.apk",
-    "phone": "Morph-TV-Phone-1.1.351.apk",
+    "iptv/android": "Morph-IPTV-Android-TV-1.1.352.apk",
+    "phone": "Morph-TV-Mobile-1.1.352-Integrated.apk",
     "legacy": "Morph-TV-Legacy-1.1.347.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-1.1.347.apk",
-    "bridge/android": "Morph-Bridge-Android-TV-1.1.351.apk",
+    "bridge/android": "Morph-Bridge-Android-TV-1.1.352.apk",
     "bridge/samsung": "Morph-Bridge-Samsung-1.1.326.wgt",
-    "bridge/lg": "Morph-Bridge-LG-1.1.351.ipk",
+    "bridge/lg": "Morph-Bridge-LG-1.1.352.ipk",
     "cleaner/android": "Cleaner-Android-1.1.324.apk",
     "cleaner/samsung": "Cleaner-Samsung-Tizen2-and-newer-1.1.324.wgt",
     "cleaner/lg": "Cleaner-LG-1.1.324.ipk",
     "remote": "Morph-Remote-1.1.305.apk",
-    "firetv": "Morph-TV-Android-TV-1.1.351.apk",
-    "lg-preview": "Morph-TV-LG-1.1.351.ipk",
-    "iptv/firetv": "Morph-IPTV-Android-TV-1.1.351.apk",
+    "firetv": "Morph-TV-Android-TV-1.1.352.apk",
+    "lg-preview": "com.zainbot.morphtv.preview_1.1.352_all.ipk",
+    "iptv/firetv": "Morph-IPTV-Android-TV-1.1.352.apk",
     "samsung-tizen2-lite": "Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt"
   },
   "iptv": {
     "name": "Morph IPTV",
-    "version": "1.1.351",
-    "versionCode": 378,
+    "version": "1.1.352",
+    "versionCode": 379,
     "available": true,
     "excluded": [
       "VIDAA"
     ],
     "releases": [
       {
-        "name": "Morph-IPTV-LG-1.1.351",
-        "file": "Morph-IPTV-LG-1.1.351.ipk",
-        "version": "1.1.351",
+        "name": "com.morphtv.iptv_1.1.352_all",
+        "file": "com.morphtv.iptv_1.1.352_all.ipk",
+        "version": "1.1.352",
         "product": "iptv",
         "target": "webos",
-        "bytes": 5657008,
-        "sha256": "e0b51ac865ef826203520851380a92963bf0e0feb1c3d5baff7937806f333a73",
+        "bytes": 5657188,
+        "sha256": "24e515e922a9856dc3d9eef04fc4a6982ec84f52d925193caae62739e559d750",
         "download": "/download/iptv/lg"
       },
       {
@@ -479,13 +479,13 @@
         "download": "/download/iptv/tizen4"
       },
       {
-        "name": "Morph-IPTV-tizen5-1.1.351",
-        "file": "Morph-IPTV-tizen5-1.1.351.wgt",
-        "version": "1.1.351",
+        "name": "Morph-IPTV-tizen5-1.1.352",
+        "file": "Morph-IPTV-tizen5-1.1.352.wgt",
+        "version": "1.1.352",
         "product": "iptv",
         "target": "tizen5",
-        "bytes": 5678737,
-        "sha256": "ed1ec7010dd7bce6931fd4484316e6c93aa318f85b181d1cc15b0d834e21b37f",
+        "bytes": 5678861,
+        "sha256": "cc2415be3facdea4c02c03acd8e7c4e4819fa3538136496c7cc181d063ba8dd1",
         "download": "/download/iptv/tizen5"
       },
       {
@@ -509,15 +509,15 @@
         "download": "/download/iptv/tizen3"
       },
       {
-        "name": "Morph-IPTV-Android-TV-1.1.351",
-        "file": "Morph-IPTV-Android-TV-1.1.351.apk",
-        "version": "1.1.351",
+        "name": "Morph-IPTV-Android-TV-1.1.352",
+        "file": "Morph-IPTV-Android-TV-1.1.352.apk",
+        "version": "1.1.352",
         "product": "iptv",
         "target": "android",
         "bytes": 16772136,
-        "sha256": "72bb2fd528a1dcd5424a1951426665a864897b252fe45963d5f5d668921c2974",
+        "sha256": "6f213efdab8028f230a127327b8e3b0c1d892e3914efc47967795368a8c85fb6",
         "download": "/download/iptv/android",
-        "versionCode": 378
+        "versionCode": 379
       }
     ],
     "downloads": {
@@ -565,7 +565,7 @@
     }
   },
   "desktop": {
-    "version": "1.1.351",
+    "version": "1.1.352",
     "windows": "/download/windows",
     "mac": "/download/mac",
     "releaseManifest": "/desktop-release.json",
@@ -573,25 +573,25 @@
       "x64",
       "arm64"
     ],
-    "windowsVersion": "1.1.351",
-    "macVersion": "1.1.351"
+    "windowsVersion": "1.1.352",
+    "macVersion": "1.1.352"
   },
   "bridge": {
-    "version": "1.1.351",
+    "version": "1.1.352",
     "trialHours": 72,
     "plusScope": "tv",
     "phoneRequiresPlus": false,
     "releases": [
       {
-        "name": "Morph-Bridge-Android-TV-1.1.351",
-        "file": "Morph-Bridge-Android-TV-1.1.351.apk",
-        "version": "1.1.351",
+        "name": "Morph-Bridge-Android-TV-1.1.352",
+        "file": "Morph-Bridge-Android-TV-1.1.352.apk",
+        "version": "1.1.352",
         "product": "bridge",
         "target": "android",
-        "bytes": 1408057,
-        "sha256": "2fb7a8cdb71e2aca89ad970f8d245072b6cb6363ef27d02559ce649021b9e0c0",
+        "bytes": 1408493,
+        "sha256": "756852d5335ce0d6d811e71a8edfaf3d98e3b8dda765cf0956623390f11c5f7b",
         "download": "/download/bridge/android",
-        "versionCode": 378,
+        "versionCode": 379,
         "trialHours": 72,
         "plusScope": "tv",
         "phoneRequiresPlus": false
@@ -610,13 +610,13 @@
         "phoneRequiresPlus": false
       },
       {
-        "name": "Morph-Bridge-LG-1.1.351",
-        "file": "Morph-Bridge-LG-1.1.351.ipk",
-        "version": "1.1.351",
+        "name": "Morph-Bridge-LG-1.1.352",
+        "file": "Morph-Bridge-LG-1.1.352.ipk",
+        "version": "1.1.352",
         "product": "bridge",
         "target": "webos",
-        "bytes": 819482,
-        "sha256": "eebe35501df03d750ea589c09f6064cddc5294b6ddcf6fca7dfe543bb05c7a53",
+        "bytes": 819922,
+        "sha256": "b637d5ae96df4059dc5c1beef8590891154c23ac82b5350627715acc475430c1",
         "download": "/download/bridge/lg",
         "trialHours": 72,
         "plusScope": "tv",

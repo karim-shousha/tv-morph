@@ -1,0 +1,2029 @@
+{
+  "version": "1.1.352",
+  "scope": [
+    "Android TV / Google TV / Fire OS",
+    "Samsung Tizen 5",
+    "LG webOS",
+    "Windows",
+    "macOS Intel and Apple Silicon",
+    "Android phone"
+  ],
+  "tizen234Unchanged": true,
+  "experimentalSelectionRemoved": true,
+  "profileDownFixed": true,
+  "qaReport": {
+    "version": "1.1.352",
+    "sourceCommit": "7ea28439f2802fe68dfce1b249d59e8977a2495a",
+    "tasks": {
+      "settingsAndThemes": "PASS: 32 themes, 27 bundled public thumbnails; preview does not recolour the launcher or preload every full theme pack",
+      "navigation": "PASS: Profile Down, settings sections, long dock in both directions; previous/Back and embedded IPTV tested",
+      "lightAndBalanced": "PASS: Light keeps layout scale and static controls; Balanced keeps shaped icon/menu effects",
+      "goldenHourAndBridgePalette": "PASS: gold canvas restored; Bridge IP panel uses theme tokens",
+      "samsungInstaller": "PASS: same publisher author certificate, 417+418 signature payload digests, distributor-only retry, no uninstall",
+      "plusIdentity": "PASS on Android emulator: encrypted roundtrip, atomic rollback, same-TV restore without new activation, different-TV isolation",
+      "bridge": "PASS pending-license UI yielding and bounded wait, open/close; seven-day fresh trial",
+      "desktop": "PASS Electron layouts, settings, file player, local HTTP Range seeks, Cleaner, Back and shared IPTV",
+      "lg": "PASS packaged provider, category arrows, player Up/Down, Back, Plus QR; official LG simulator Home/settings/themes observed",
+      "topBarController": "Fixed legacy load/language handler overriding the reference header; six actions retain order and Wi-Fi"
+    },
+    "physicalDevices": {
+      "samsung": false,
+      "lg": false,
+      "bridgeCastingEndToEnd": false
+    },
+    "limitations": [
+      "Physical LG/Samsung streaming, DRM and phone-to-TV casting are not fully reproduced by simulators.",
+      "Tizen 2, 3 and 4 packages are preserved; legacy native Android edition is unchanged."
+    ],
+    "settingsMatrix": [
+      {
+        "engine": "current",
+        "variant": "android",
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "android",
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "android",
+        "width": 1280,
+        "height": 720,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "android",
+        "width": 1280,
+        "height": 720,
+        "lang": "en",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "samsung",
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 9
+      },
+      {
+        "engine": "current",
+        "variant": "samsung",
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "themes": 32,
+        "sections": 9
+      },
+      {
+        "engine": "current",
+        "variant": "samsung",
+        "width": 1280,
+        "height": 720,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 9
+      },
+      {
+        "engine": "current",
+        "variant": "samsung",
+        "width": 1280,
+        "height": 720,
+        "lang": "en",
+        "themes": 32,
+        "sections": 9
+      },
+      {
+        "engine": "current",
+        "variant": "lg",
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "lg",
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "lg",
+        "width": 1280,
+        "height": 720,
+        "lang": "ar",
+        "themes": 32,
+        "sections": 8
+      },
+      {
+        "engine": "current",
+        "variant": "lg",
+        "width": 1280,
+        "height": 720,
+        "lang": "en",
+        "themes": 32,
+        "sections": 8
+      }
+    ],
+    "uiTests": [
+      {
+        "test": "dock-overflow-check",
+        "passed": true
+      },
+      {
+        "test": "release-bounds-check",
+        "passed": true
+      },
+      {
+        "test": "light-scale-check",
+        "passed": true
+      },
+      {
+        "test": "profile-down-check",
+        "passed": true
+      },
+      {
+        "test": "theme-colour-audit",
+        "passed": true
+      },
+      {
+        "test": "check",
+        "passed": true
+      },
+      {
+        "test": "balanced-menu-check",
+        "passed": true
+      },
+      {
+        "test": "chrome-bridge-check",
+        "passed": true
+      }
+    ],
+    "packaging": {
+      "author-signature.xml": {
+        "referencesVerified": 417
+      },
+      "signature1.xml": {
+        "referencesVerified": 418
+      },
+      "sameSamsungAuthor": true,
+      "phone": {
+        "bytes": 86553522,
+        "missingFrontend": false,
+        "bundledTvInstallers": false
+      }
+    },
+    "androidNativeNavigation": {
+      "settingsOpen": true,
+      "themeGridVisible": true,
+      "downFocus": [
+        "Coastal green"
+      ],
+      "backReturnsHome": true,
+      "apk": "output\\recovery-review-352\\Morph-TV-Android-TV-1.1.352.apk"
+    },
+    "dockArabicOverflowCases": 16,
+    "dockEnglishOverflowCases": 16,
+    "macOS": {
+      "ci": {
+        "branch": "codex/release352-mac-20261108",
+        "commit": "04e86469ffc9cbf04692bbf50fc692c7f27445e2",
+        "status": "completed",
+        "runtime": {
+          "file": "morph-desktop-runtime.zip",
+          "bytes": 14934296,
+          "sha256": "f90dc3504169b6056f2b9c425e64124a6b8cedb3576c23a62e0904d93a1bb4b6",
+          "version": "1.1.352",
+          "canonicalLauncher": "tv-project/app",
+          "embeddedIptv": "android-tv/iptv",
+          "separateIptvProduct": false
+        },
+        "runs": [
+          {
+            "id": 42526539145,
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ],
+        "retryReason": "One Intel prayer-method selected-visibility timeout; retry once on identical binaries to determine reproducibility",
+        "artifactFile": "D:\\Codex-QA\\mac352-final-ci.zip"
+      },
+      "universalArchitectures": [
+        "Intel x64",
+        "Apple Silicon arm64"
+      ],
+      "uiMatchesWindows": true
+    }
+  },
+  "bridgeTrialDays": 7,
+  "settingsThemeTests": [
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    }
+  ],
+  "windowsMacRuntime": {
+    "windowsMacIdentical": true,
+    "profileFixed": true,
+    "experimentalSelectionRemoved": true,
+    "files": [
+      {
+        "file": "about.js",
+        "sha256": "b04fc2880cb41145d61ff590338925096b8c78f79caaa3beadec3eddf2008bd9"
+      },
+      {
+        "file": "app-actions.js",
+        "sha256": "f7c6546706fcd4dc78b1e6bbe6e07eb66994f69611a20ec572bd95af628d2eca"
+      },
+      {
+        "file": "app-catalog.js",
+        "sha256": "20e5ff6a0bf26704904be1403aab6e6b552ff5b4e5fbbf448ca54ef052d00410"
+      },
+      {
+        "file": "app-polish.css",
+        "sha256": "a0cb13ff6e13144b92ae8f2cb0495193e18341a16547053d8510bdb77eb81f84"
+      },
+      {
+        "file": "app-polish.js",
+        "sha256": "bbc3c380d4060bb7f1b48d710dbbefd9dbf5f6bef2ac071f07ff1a8d5ce60eb4"
+      },
+      {
+        "file": "app-update.js",
+        "sha256": "cb43c1a97b45c04c903d6b1e5dc3dfa1bae276e36552da7bc3a199afbc11f1b3"
+      },
+      {
+        "file": "app.js",
+        "sha256": "b613fcf7bd08eb0538e54fb12d21440b473da4edf9875af875a8abbc399bf421"
+      },
+      {
+        "file": "artwork.js",
+        "sha256": "65fd92871c100f8fa513c40bbfe939cf14249b7f36cbfabf6a75905364830d2d"
+      },
+      {
+        "file": "assets/ac-milan-legends-v1.webp",
+        "sha256": "4a9a54109c653b7ca95100d893dc9279d92f789cfca5f5a5dade0eb16cf9db79"
+      },
+      {
+        "file": "assets/ahly-team-cutout-v2.webp",
+        "sha256": "ac8014962020909a0335f0c154af67390fd261051aa6439ac4f3dd3f9f7d76e8"
+      },
+      {
+        "file": "assets/art-credits.js",
+        "sha256": "e7899df446f4a00942c86f0eb28f31923a29abc661836ff819d0ca4cad511cf4"
+      },
+      {
+        "file": "assets/artwork-notices.txt",
+        "sha256": "53773742d6c4589cb7d61d332f0f8ef79ae084cb78e0c5a45b2d2e095cee4e61"
+      },
+      {
+        "file": "assets/crown-prince-mark.svg",
+        "sha256": "d09df4814473547f2eac141194b0971e6281d7b06c8be2f7c2a9d1b85deab23d"
+      },
+      {
+        "file": "assets/dock-tile-v1.webp",
+        "sha256": "69f30e138c6cad6cd1aa519f971059b0f6577a7083e992ab276c2a61061bf080"
+      },
+      {
+        "file": "assets/dock-wave-lines.svg",
+        "sha256": "0c70a928f757885e8616a9ba3c2207d4f0382ab9c9686bd2d06dc8f00c94f690"
+      },
+      {
+        "file": "assets/fitness/categories/cardio.webp",
+        "sha256": "8146c1ff5f37dcf29e83bf5dcf4cb803f337f9c19ba2adb4d16fc38ba7414ea2"
+      },
+      {
+        "file": "assets/fitness/categories/core.webp",
+        "sha256": "7efd786cedd9e762a455f281ea1aa764748aa8f183acd42c28c501305d2daf43"
+      },
+      {
+        "file": "assets/fitness/categories/full_body.webp",
+        "sha256": "59df6e05407f1c37cda4534fe1a3d985ba7ce2a3efc2dd19488f598d66efef71"
+      },
+      {
+        "file": "assets/fitness/categories/lower_body.webp",
+        "sha256": "a3a17f6acbe8f54fe117af5a7955745c3a8cfb6aba7a6583ada6caab5392290c"
+      },
+      {
+        "file": "assets/fitness/categories/stretching.webp",
+        "sha256": "056efae52daa1a47cc860747ba76ea23c59f72ba90e2deae303ecc79fd154e74"
+      },
+      {
+        "file": "assets/fitness/categories/upper_body.webp",
+        "sha256": "aeab0b4d4a1fee9dd6fa845a7b427581575d8068bf2d8ca2d655c0d8eeaa7d12"
+      },
+      {
+        "file": "assets/fitness/hero/home-wide-v2.webp",
+        "sha256": "aee219b581e9f8fd96777f7c8d53f6b9858f04d8ab87f3722eb42996edb7a024"
+      },
+      {
+        "file": "assets/fitness/hero/home.webp",
+        "sha256": "2faad7295b78793c73fa9440e843d76b2fa69d122743f5355bc0e878efa2e34a"
+      },
+      {
+        "file": "assets/islamic-madinah.webp",
+        "sha256": "fe016eca8b5441da48f19e2d43341d1a6748a52ffe63daa2f74f7a4151eb011a"
+      },
+      {
+        "file": "assets/islamic-makkah.webp",
+        "sha256": "4a5ad785766f4c427e55ba54557fbdd5aaf1752b0966b47f0ded18725ece5418"
+      },
+      {
+        "file": "assets/islamic-quds.webp",
+        "sha256": "9afc111528b9337d3fc14fe33f14c431356243b542b3ae99f158c0644b41f250"
+      },
+      {
+        "file": "assets/king-salman-mark.svg",
+        "sha256": "d09df4814473547f2eac141194b0971e6281d7b06c8be2f7c2a9d1b85deab23d"
+      },
+      {
+        "file": "assets/ll.webp",
+        "sha256": "1ba697efe97ade03036049eb7bbe86b0505038ce46051a579a7cab3e5140d4f6"
+      },
+      {
+        "file": "assets/logo.webp",
+        "sha256": "6f57f9c23a298b366d6590e409ba9908bd49101efaff0ad7b447cb4136b601b5"
+      },
+      {
+        "file": "assets/main-mountains-wave-v1.webp",
+        "sha256": "78bcaba94c580a2b201bc53727b69c163a123a3b5f962873e49427ef0e7723e3"
+      },
+      {
+        "file": "assets/matches-stadium-v1.webp",
+        "sha256": "7ddff374ed550707c7a38d227f214a8bf8ab32bfbff4a253cc7d8c19b436fcdf"
+      },
+      {
+        "file": "assets/midnight-space-slide-1.webp",
+        "sha256": "11d2ca8651f3522f3144e1bf6d328ebb7177964915668440f496a9885ac864b6"
+      },
+      {
+        "file": "assets/midnight-space-slide-2.webp",
+        "sha256": "09aad0f64d54a355a58a2a4eb22c869e2d3817baba937e471f7861535d36c0da"
+      },
+      {
+        "file": "assets/midnight-space-slide-3.webp",
+        "sha256": "f96edf29d3af0fee2258a31d4ae44c6f7e29c00eee51a821a5bbda7a7dc723d2"
+      },
+      {
+        "file": "assets/midnight-space-slide-4.webp",
+        "sha256": "80e2872e77523f7fb72f82bf2e3d14e942b39aa249b3f33255cb6e996a2c249b"
+      },
+      {
+        "file": "assets/morph-header-symbol.webp",
+        "sha256": "1b4a90b6d58de4490037732e1b98f4dd5d06c7afa05f4c5c0775d4269f9f204a"
+      },
+      {
+        "file": "assets/morph-iptv-wordmark.webp",
+        "sha256": "5925d142487d000ac3a94ee042d390c2edb5195aaa36637e52535184c1d37a27"
+      },
+      {
+        "file": "assets/morph-launcher-wordmark.webp",
+        "sha256": "17c2b7184530527c37fc7bd934f1756d6544ded543e37611292ea4f624692749"
+      },
+      {
+        "file": "assets/morph-loading-background.webp",
+        "sha256": "fb8edf75ab8d881d8840059093d07ab7a195b857f63f4f81caa4fc9db7f5ee98"
+      },
+      {
+        "file": "assets/morph-loading-symbol.webp",
+        "sha256": "a68f27207a765e72beef3210596ddf3a508752d279f61916e2f0c82f6566992d"
+      },
+      {
+        "file": "assets/morph-remote.webp",
+        "sha256": "c416af0d7553839a94488069309acb2e03fab2f0e728ff184894b7ce0faeaca4"
+      },
+      {
+        "file": "assets/morph-wordmark.webp",
+        "sha256": "66b3eaf3edd93dd7e66e61d4d90c1cbd0d0f6326719ca880ee999e4819eb79e3"
+      },
+      {
+        "file": "assets/morphiptv.webp",
+        "sha256": "aa2dae912d9f57c5518cb392cf7d4c682d6eebc52e68c36147149835d72b3064"
+      },
+      {
+        "file": "assets/plus-purchase.webp",
+        "sha256": "978d61d710cefc0aad72c275da8eb62b864398bbcf835d1f6e700d1aa34120b2"
+      },
+      {
+        "file": "assets/prayer-courtyard-dusk-v2.webp",
+        "sha256": "794aa29ac9c9f001defab1358b4ea23a8232e37d6d4d53ca926daff0c08bf671"
+      },
+      {
+        "file": "assets/prayer-egypt.mp3",
+        "sha256": "3a0f7d215c100c31b34fad891ee4f30aebda965e1636f77c9b232d5bbc9fdad0"
+      },
+      {
+        "file": "assets/prayer-glass-overview.svg",
+        "sha256": "c5ae974f13eb577203834a4d089e2acff52a76ef7b28dac3397c723237bed346"
+      },
+      {
+        "file": "assets/prayer-gold-dua-frame.svg",
+        "sha256": "a0a8e5e77c7b248489dac7fe8121413c1ff196d83e5fcd5353333993d731bb24"
+      },
+      {
+        "file": "assets/prayer-gold-ornament.svg",
+        "sha256": "8b682d725eebc4ac342319717496b239d08f22291dabf3d01d498467a23a0dc5"
+      },
+      {
+        "file": "assets/prayer-makka.mp3",
+        "sha256": "d2aad7b357c0b83c968ceb450c02624febb6c1a7272ce681aa22d88de497d3f4"
+      },
+      {
+        "file": "assets/prayer-mosque-gold-v1.webp",
+        "sha256": "8017c9132bd1b2aff8c7456e0b6af539f36122fdae717427266803156339d962"
+      },
+      {
+        "file": "assets/prayer-page-user-v1.webp",
+        "sha256": "bd01d656603a3bbf10bb9b95e3c85c7f31736fb38f21ab845ac69affcd0f1276"
+      },
+      {
+        "file": "assets/prayer-pause-v1.webp",
+        "sha256": "3606f36baaf2f9ab96a2a15c9b1cbea7590467b9d5535655ae33da26e3fc4f6c"
+      },
+      {
+        "file": "assets/premium-reference-background.svg",
+        "sha256": "73b405690765770e40a598b15ead06a08c4a0f073978414b36f850fae72f0c17"
+      },
+      {
+        "file": "assets/profile-avatar-cat-v1.webp",
+        "sha256": "e30e2a5a6ee3f920a5b0e7ae3a2751f0651ba94b5a694e53f7e73698936cf163"
+      },
+      {
+        "file": "assets/profile-avatar-fox-v1.webp",
+        "sha256": "7779780714af9258c9c2d0f00929fc4450c277819e93e1b0ce8ba212b7cc6b3e"
+      },
+      {
+        "file": "assets/profile-avatar-robot-v1.webp",
+        "sha256": "09d64e3f1bddbd91f838c62b3519cca0d0b13adca88ec890ef91d532d17bea90"
+      },
+      {
+        "file": "assets/remote.webp",
+        "sha256": "7babfc546cd6a4d33f3c01048c40bc7bb1735bd77b80c4a9f186fb852656d346"
+      },
+      {
+        "file": "assets/support-instapay.webp",
+        "sha256": "8b126b9546322301887c0b45551d4707b6ea133368527a49c9b8fffb0d21ae54"
+      },
+      {
+        "file": "assets/support-paypal.webp",
+        "sha256": "139aac59eb4ddf63160cb00575be52ae5d2de1f583ddba6530659524f00aaaec"
+      },
+      {
+        "file": "assets/support-stripe.webp",
+        "sha256": "bc8ccb0376048ec366dbcda84024da4426c235d22e18f38b18611729bb30ecbb"
+      },
+      {
+        "file": "assets/theme-thumbs/ac-milan-legends.webp",
+        "sha256": "1691e6c5ae5590182ce10f7ccf3a841c3aa08589d963bfdccfcb00ec94efa478"
+      },
+      {
+        "file": "assets/theme-thumbs/ahli-saudi.webp",
+        "sha256": "81f793bf6cbd633a7fce036f1a9fc1cb81d85d075ef6cd4cfacd5e58039f69c6"
+      },
+      {
+        "file": "assets/theme-thumbs/ahly.webp",
+        "sha256": "79e6b84a685ba6eadb0e4ad55ddc8638b6d673b8fa22b4071c11707cc3c9a803"
+      },
+      {
+        "file": "assets/theme-thumbs/argentina.webp",
+        "sha256": "f07a784c29885386c28c6512e459c0a0b21e51dfdb32d956a54a72c3dcb2f2b0"
+      },
+      {
+        "file": "assets/theme-thumbs/barcelona.webp",
+        "sha256": "e15427cf5db1527b929501faee3cadd72059e9745f65d713816a928b6c2ed051"
+      },
+      {
+        "file": "assets/theme-thumbs/baseball.webp",
+        "sha256": "74e2e270d0e494ee74be1d4ce403aab9e8ce55e827ee3f328764b06600887da4"
+      },
+      {
+        "file": "assets/theme-thumbs/basketball.webp",
+        "sha256": "450be46941ef872e3c0c3e16e31c5d4ece1e72d348e16b240b7566b0e2fe48cd"
+      },
+      {
+        "file": "assets/theme-thumbs/blue-cinema.webp",
+        "sha256": "8a8fff5af0ad15ec1df7b51713838e980b65b130e9d439308d55ee2832f50b47"
+      },
+      {
+        "file": "assets/theme-thumbs/crown-prince.webp",
+        "sha256": "5fe650aaba8eba2b9f0e878620f38840ffa1b6ef5b97eca9efdf085a99868b28"
+      },
+      {
+        "file": "assets/theme-thumbs/egypt-national.webp",
+        "sha256": "fbb3934b685ce92a1ed2f30dddde0a566832994f3ce3fee8030066c217e94292"
+      },
+      {
+        "file": "assets/theme-thumbs/egypt.webp",
+        "sha256": "561396329187320735a9cef8f2d614ac899d2a4e206c24d8c0f6ea11673d566f"
+      },
+      {
+        "file": "assets/theme-thumbs/gta6.webp",
+        "sha256": "9c9758118c66ea9cddce1b05072d2935bcf5273869080a4d9fa69dea7141ae11"
+      },
+      {
+        "file": "assets/theme-thumbs/hilal.webp",
+        "sha256": "aeea0558efbde33a53b075a99f70b688770800019106d4e6d636d40eb12253ef"
+      },
+      {
+        "file": "assets/theme-thumbs/inter-miami.webp",
+        "sha256": "410d46a78b68b14faff8d2cf38e2ea551dc5f42c095675c95408fe08ee727d31"
+      },
+      {
+        "file": "assets/theme-thumbs/islamic-madinah.webp",
+        "sha256": "d1cd5a10af7fa24da71fb1299c049a2944ace4b047a71b28a4b57b309cbae8f0"
+      },
+      {
+        "file": "assets/theme-thumbs/islamic-makkah.webp",
+        "sha256": "f70452f9be60a969ad13e006e96b45124e0d400e440671cc985ab0194a8c05d4"
+      },
+      {
+        "file": "assets/theme-thumbs/islamic-quds.webp",
+        "sha256": "d4561a648fa3288450667e021bc0163f4d6b427f638e35d61791dfd114a2fd2d"
+      },
+      {
+        "file": "assets/theme-thumbs/ismaily.webp",
+        "sha256": "fde25bb1f001c67e87adfeb91a77436584cb6d8d7c17c8d35b4aa7c2f1107bbd"
+      },
+      {
+        "file": "assets/theme-thumbs/ittihad.webp",
+        "sha256": "a2ca7976961bc53fab289e4c61946d131bd9924cd914eafaa7cde77b3a099510"
+      },
+      {
+        "file": "assets/theme-thumbs/king-salman.webp",
+        "sha256": "e1342b718e7785735f8866e473aa7869863a152c00568f5340ba7423c553dbaf"
+      },
+      {
+        "file": "assets/theme-thumbs/madrid.webp",
+        "sha256": "6ab7de2b58ff4b150606613cc6199b011c4f20a42ff9e9ecab062ea12473e2e1"
+      },
+      {
+        "file": "assets/theme-thumbs/montreal.webp",
+        "sha256": "1692eab6c0036d2c47552817a9a8198783ad6c5bbfa43373742be6ab1aa89824"
+      },
+      {
+        "file": "assets/theme-thumbs/nassr.webp",
+        "sha256": "a50c307c2734b3cb313a994eafb4d327d80864dd76e405ed9a786d3f6d64ec8d"
+      },
+      {
+        "file": "assets/theme-thumbs/portugal.webp",
+        "sha256": "4339efbc57000dc41b518c92f4472f91c64f8767bcb070e525a6c15d93c64471"
+      },
+      {
+        "file": "assets/theme-thumbs/saudi-national.webp",
+        "sha256": "afdd67e5a9b5bff6db9a449ebb33c41d0cc0ba2f08b020d3df727d58c46710fc"
+      },
+      {
+        "file": "assets/theme-thumbs/toronto.webp",
+        "sha256": "42866a823ef538ee723698b6174a6673210ac3034d1de7475aca092a52eb280a"
+      },
+      {
+        "file": "assets/theme-thumbs/zamalek.webp",
+        "sha256": "e66739577e13d29e130facf9d6f1a5152c7bc1310cb69386b300f796db8ed405"
+      },
+      {
+        "file": "assets/tvm-appearance.svg",
+        "sha256": "50dd433591e7f8165ce0cea8a81165307cd25028b76318ddd9f22e95a66acb52"
+      },
+      {
+        "file": "assets/tvm-fitness.svg",
+        "sha256": "8d6ecfa361283a95f132a9015ea9fd7767212d275158ada65de7563a89ca4346"
+      },
+      {
+        "file": "assets/tvm-hdmi.svg",
+        "sha256": "58f9b26a530085fa4fcefaea65ac864fe8980f1f982f7c3a67ef0831d1f06bc7"
+      },
+      {
+        "file": "assets/tvm-help.svg",
+        "sha256": "4c1c16b25df94c6b3d9b2bb6e87b91a68b64f5507a2270f225cc08dfe607c4b8"
+      },
+      {
+        "file": "assets/tvm-internet.svg",
+        "sha256": "0306f8b05a5ed0988bdc4b1554401fa2b9a25b2ffba1d68dc4e1ceb3b333f120"
+      },
+      {
+        "file": "assets/tvm-iptv.svg",
+        "sha256": "c732d0aa16949fc23c9a1ffd9247e83ba5c6db328f8fb93e27428f35f38d8d07"
+      },
+      {
+        "file": "assets/tvm-kids.svg",
+        "sha256": "73fbca80a0c207f78bcc483a9f960c1cf9aad7dc12bed44e1b8c7fcf9ee67041"
+      },
+      {
+        "file": "assets/tvm-prayer.svg",
+        "sha256": "dbf2010702a2ff81836dbb60bbf7ce5cba5c99e7548c691cc22a334c7748b8ee"
+      },
+      {
+        "file": "assets/tvm-radio.svg",
+        "sha256": "81c93f83c17fab98d275e67aa684c34535d6268889bfb114c209d339c9b7e663"
+      },
+      {
+        "file": "assets/tvm-store.svg",
+        "sha256": "d6bee737bb095b82b40e6a67a17e91a9b7de546c959e5cfb109897c25e016011"
+      },
+      {
+        "file": "boot-theme.js",
+        "sha256": "05791ceb70fd48c2b6ab42689f4b26f5604499f7d90914f09a5b12243f0d46a4"
+      },
+      {
+        "file": "brand-loader.css",
+        "sha256": "d23ae073d795e1e913a225590a744d68b807279cfa568d7c95f504e35c5d7d75"
+      },
+      {
+        "file": "brand-loader.js",
+        "sha256": "75c807fe808c018ed28af3da13041d374e00ce35147926ae3a3c5247eb2852c8"
+      },
+      {
+        "file": "bridge-access.js",
+        "sha256": "7cc163ceaa47a38948c09062dc1e438f03252eb67b9a98252174d8c9acc2b978"
+      },
+      {
+        "file": "bridge-launcher.js",
+        "sha256": "47b29bab99b5f3a9af027c381402a47e037ead70af0565b3b8dc5c5e0f40ece3"
+      },
+      {
+        "file": "bridge-receiver/css/launcher.css",
+        "sha256": "f25f04288fa5bad406caaf181ecfe73257603c98908c8c54bc00f11e8107034b"
+      },
+      {
+        "file": "bridge-receiver/css/style.css",
+        "sha256": "7c1231183ee4732e555ea2f12a119f8cb618eac8d137090c826486ac98f8b650"
+      },
+      {
+        "file": "bridge-receiver/fonts/IBMPlexSansArabic-Medium.ttf",
+        "sha256": "b8363ab9f733dfa4f8e96b8b2102c24b5cf4110fb96d1d3d9a9412f6fb49cf74"
+      },
+      {
+        "file": "bridge-receiver/fonts/IBMPlexSansArabic-Regular.ttf",
+        "sha256": "6f611412270a132bbac838da9259d4c68569b4175f3b3b8fa3fa36a30b56dab9"
+      },
+      {
+        "file": "bridge-receiver/fonts/OFL.txt",
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      },
+      {
+        "file": "bridge-receiver/host.js",
+        "sha256": "4bd440331853bfd9a72debd6344e2d04e6830c7e98586425b6329ba9679c5f8a"
+      },
+      {
+        "file": "bridge-receiver/icon.webp",
+        "sha256": "a09be3e0e1aa6e220400eeb08947033d3665eb7f4df9be4e31b474c0b7ff10dd"
+      },
+      {
+        "file": "bridge-receiver/index.html",
+        "sha256": "99174a09dada888009fbdd3fb1a0e7f6e95b1855c16996a1fba2a9283fffd7a2"
+      },
+      {
+        "file": "bridge-receiver/js/app.js",
+        "sha256": "d7d00db53e2f2171413c0409206becd8fd978a4e3d628c0b39084d7941a388ac"
+      },
+      {
+        "file": "bridge-receiver/js/platform.js",
+        "sha256": "814528c305d59b8c23490fe88d0005b2647bcc4640c9ca768bb81a0c6330ec12"
+      },
+      {
+        "file": "bridge-receiver/js/pointer-motion.js",
+        "sha256": "ae0723c57834ee6cd3cfd800236ce94103e0c355a9884a9711ae9c7007b60972"
+      },
+      {
+        "file": "bridge-receiver/locale.js",
+        "sha256": "0908c517f581ccf69a2d0f379fa9420f447488d226f129c8b95c6271c80ddeb0"
+      },
+      {
+        "file": "bridge-reference.css",
+        "sha256": "63d0eb10b46278cfe09712338da17e72cd31a588cdbb9fea0460384a15e05cc3"
+      },
+      {
+        "file": "bridge-reference.js",
+        "sha256": "4177b2c4a80335f9a6fee6f6421100b3f7de9e828b7636a8ee62e86a72b26b04"
+      },
+      {
+        "file": "catalog.js",
+        "sha256": "2d93c8f461ffbc29d8edb8a1fee9eb341e12daa4a9610310765dfab3985af469"
+      },
+      {
+        "file": "cleaner-launcher.js",
+        "sha256": "2f354e280bcafcd9879effe90e40d04ac03d198db2c1d20795368bc83e23ac2b"
+      },
+      {
+        "file": "cleaner-native.html",
+        "sha256": "ca6668223da6019897a8c5eca9b3479cb175c569632e4a2237998c1ba691fc77"
+      },
+      {
+        "file": "cleaner-platform.js",
+        "sha256": "cefdad26ae1bb2907d4b64c00376b00d7ab77be8e53d64e5b4ac46762d4286dd"
+      },
+      {
+        "file": "cleaner-tizen.js",
+        "sha256": "51a4d247a40fa65f1798356b1c4475023c710abde4476d557ba0bdc45a411e08"
+      },
+      {
+        "file": "cleaner.css",
+        "sha256": "3645fc3a6677dfd4a3037e874e75a9ead1db78f90b497001146e836d26ab07e1"
+      },
+      {
+        "file": "cleaner.js",
+        "sha256": "0797bb6ead5769dc13d02b4b48c6ef0d896599693b2388e2607c0ef2876883d1"
+      },
+      {
+        "file": "clock-adjust.js",
+        "sha256": "508997fddba9b716d37dd7b12ff8194e466d265f38632475fb459229ad62becb"
+      },
+      {
+        "file": "club-themes.js",
+        "sha256": "c8442914a94a0198d359541ded0e6473d4f7a418ed4d9874ddb088f8330d33eb"
+      },
+      {
+        "file": "contact.js",
+        "sha256": "8de022951c4e91b807cbf42db583e7fc9a7aa4f8e4d29f22b571fc173026974a"
+      },
+      {
+        "file": "core.js",
+        "sha256": "2e018c05a7f2313d5cabde79880aa57f0df542b57b6272ee4945b7a3314f044d"
+      },
+      {
+        "file": "desktop-catalog.js",
+        "sha256": "7449e80f325451ce3b18137421dd7cc35785109b12c9d756ac67d0351c51292c"
+      },
+      {
+        "file": "desktop-frame.js",
+        "sha256": "e852bdca6bf917fa4f27836fce7b5acbc8ebc2d8e8a5185abfd6ab42dfe8b58c"
+      },
+      {
+        "file": "desktop-media.js",
+        "sha256": "fb525faa3098bbb92a7af172038e7b6eba1fd1f8d9ca0e8eb2eec11f01428612"
+      },
+      {
+        "file": "desktop-support.js",
+        "sha256": "b3f9b2859316d1341cb470ffdfa14f48f1cf522992f539f6fdebd96c5719836f"
+      },
+      {
+        "file": "desktop.css",
+        "sha256": "819a1176913ff4c08fe2595ae42a1039df2231a8ecb543cab19ea199928c1b8b"
+      },
+      {
+        "file": "desktop.js",
+        "sha256": "6d086864bccdfe41c3f39133bd18839b4800c77eac2d988e9585e0100d17df90"
+      },
+      {
+        "file": "developer-credit.js",
+        "sha256": "66a21362262f76a7938748aadc8503db878aaa3e9618d6134b6f5c8ebc250274"
+      },
+      {
+        "file": "device-settings.js",
+        "sha256": "7b4642bda40a866b4280e02775a6ca6323a4e06d684c252c64bc83010fd938b7"
+      },
+      {
+        "file": "dock-colors.js",
+        "sha256": "88b160b45cd26d2de7c16471d621255c705f7fbc70f9c2c813e562b5a38e97d0"
+      },
+      {
+        "file": "dock-folders.css",
+        "sha256": "da7e83b48832978d67d31a9d58ba5ed3f785587291db7a0aca76f2d70dd85709"
+      },
+      {
+        "file": "dock-folders.js",
+        "sha256": "e0a622b2de60f472f6024ab13a304cf4e0ab1a0b7041f346e2c133a3bf03e7d3"
+      },
+      {
+        "file": "dock.css",
+        "sha256": "ccbdb0def926e441523af81911d1152e40564bfd1fd43a6112a3177f2fc2ac52"
+      },
+      {
+        "file": "dock.js",
+        "sha256": "30fb8d8996523bb287f08bd2da3afc940f642b5c04b9499a6a05ed7b42dd0957"
+      },
+      {
+        "file": "family-ui.css",
+        "sha256": "c479d5e987c91e5ba47d170859e8601ef6f85090214791f7d5e301551c69519e"
+      },
+      {
+        "file": "family-ui.js",
+        "sha256": "b7cb875437c6e879ecccb84bb76f74b9ead77dcc564022b6657c641981e78290"
+      },
+      {
+        "file": "fitness/fitness-audio.js",
+        "sha256": "6f086b46da33d688f1c010875962333bc9a01d60d76a10f625f0f937faf7baea"
+      },
+      {
+        "file": "fitness/fitness-data.js",
+        "sha256": "6d1cede7647c40b92580d0fa528edd75cc14a3a7c46d7088f0d817bd25016c3a"
+      },
+      {
+        "file": "fitness/fitness-engine.js",
+        "sha256": "150dd748b1578ff159823cba891cd9b2497c57d9983d52d9b6dd9154076610c5"
+      },
+      {
+        "file": "fitness/fitness-i18n.js",
+        "sha256": "a4a91cc9d89162730359bb44fb585b1fc4ef4570c1ef0b0fcc5bdee793e34b7d"
+      },
+      {
+        "file": "fitness/fitness-store.js",
+        "sha256": "9cf5db6e315cef50ac8c2aefa6b71427c3415e87666e1bdf0635936129997ef2"
+      },
+      {
+        "file": "fitness/fitness-ui.js",
+        "sha256": "8bd89c68ca269dc35aef7863aeb90ecb8b79fe2b97cc0fee53d7fd929eefa3f4"
+      },
+      {
+        "file": "fitness/fitness.css",
+        "sha256": "5a42bab941fd03016c3a6362e3fa7f9f8fe1d357c29a0f4b6509210564e2f618"
+      },
+      {
+        "file": "fitness/fitness_assets_manifest.json",
+        "sha256": "5d603681b8983fb89b8745239b8d51f3acfe27a285722fa8bdbfecf42d6112d7"
+      },
+      {
+        "file": "fitness/tests/fitness-tests.js",
+        "sha256": "2320e1b66910e0f5e57e5ccf16ed5c5b33f359d5b18660bcac1a964a6fd6577d"
+      },
+      {
+        "file": "focus-reference.css",
+        "sha256": "fdf931e40ddd4508cbb80406c59e37eb3d8e4a4499d092c10bac8411f2af3796"
+      },
+      {
+        "file": "focus-reference.js",
+        "sha256": "6c83e1e14d3ce13f8c3066bfacd1d6fbd4d8e56e813ab4511e916f609da3729c"
+      },
+      {
+        "file": "focus.js",
+        "sha256": "4a356fbd64cf7c2e84aeb2525c946e72a4ee32ea605c25d81c8eaa2bc0871757"
+      },
+      {
+        "file": "home-reference.css",
+        "sha256": "b503cc3a1904996ee9570c36223804aba4dbffd51b922ae38abbaa4e7c82d090"
+      },
+      {
+        "file": "home-reference.js",
+        "sha256": "590f5b9c29ba5d1e2e2fe57a4019f22f49fa2a0b0e0e2d00d2e94a4c99cccbf7"
+      },
+      {
+        "file": "home-refinements.css",
+        "sha256": "12f54f2dc5d1855d19cc8377b8a1afbc60efbfc266cbf528ff495c4ff4f150d5"
+      },
+      {
+        "file": "home-refinements.js",
+        "sha256": "ff76daf23c83b5b430aca81b55aea8eed427255fef2a22aea817f39f150b7555"
+      },
+      {
+        "file": "home-summary.css",
+        "sha256": "b782b00bcd023dff6f33cc21d47c54068fa97f5ecd8fc4c38bdcbe6f759a32a5"
+      },
+      {
+        "file": "home-summary.js",
+        "sha256": "93a4b8dc0ab2ab11de9ff7a83cf32b52d6a2c45d455fb75cd28d46f3d36dd790"
+      },
+      {
+        "file": "index.html",
+        "sha256": "b59dd8785a2504fdfecac00e4a63aa8d53e6ad1f29db6300c1cf4b31ba415307"
+      },
+      {
+        "file": "inline-menu.css",
+        "sha256": "579e1da67c5cfa7df9f564c826f00492e660dc0ce842783238920f226e9e5f6f"
+      },
+      {
+        "file": "inline-menu.js",
+        "sha256": "6f2308838bc1faa9dcdfeaaca53ab2215d279f49888b72a598217ae51136d72c"
+      },
+      {
+        "file": "input-names.js",
+        "sha256": "e425ace86f628a5895629a11e001c065cccdc7050ca89edd9553f9c300ab95f3"
+      },
+      {
+        "file": "inputs.js",
+        "sha256": "0a63b6e996f58f69922ef82f7e7b03e4c176bbd8efbf4813d6001240e74e509d"
+      },
+      {
+        "file": "iptv/account-details.js",
+        "sha256": "45e052cb1b9e9084702886a8586b0538321134cc1fbadf550ec0cbb9bf6400e1"
+      },
+      {
+        "file": "iptv/account-keyboard.css",
+        "sha256": "46b500077d76ef378f1bb4c9a65a3205f6694360243fe14f2de72ad9c83f31eb"
+      },
+      {
+        "file": "iptv/account-keyboard.js",
+        "sha256": "d56504550ca240ba5939d6bf2d43a31ce34ec899ff2db83a026683a666219f9c"
+      },
+      {
+        "file": "iptv/app.js",
+        "sha256": "24505ba534383bde0c308d88be7007dd01ab9c0a294f70478125f39bc271cd7e"
+      },
+      {
+        "file": "iptv/assets/launcher-background.webp",
+        "sha256": "fb8edf75ab8d881d8840059093d07ab7a195b857f63f4f81caa4fc9db7f5ee98"
+      },
+      {
+        "file": "iptv/assets/main-mountains-wave-v1.webp",
+        "sha256": "78bcaba94c580a2b201bc53727b69c163a123a3b5f962873e49427ef0e7723e3"
+      },
+      {
+        "file": "iptv/assets/matches-stadium-v1.webp",
+        "sha256": "7ddff374ed550707c7a38d227f214a8bf8ab32bfbff4a253cc7d8c19b436fcdf"
+      },
+      {
+        "file": "iptv/brand-loader.css",
+        "sha256": "d23ae073d795e1e913a225590a744d68b807279cfa568d7c95f504e35c5d7d75"
+      },
+      {
+        "file": "iptv/brand-loader.js",
+        "sha256": "75c807fe808c018ed28af3da13041d374e00ce35147926ae3a3c5247eb2852c8"
+      },
+      {
+        "file": "iptv/card-alignment.js",
+        "sha256": "a13d37f72951af577b7353a6e6fb45a2f5be8d405a019ec8cf93e05d6928dfa3"
+      },
+      {
+        "file": "iptv/card-favorites-v1.webp",
+        "sha256": "dc18e1ed7b09fc67c6170c414458c0bfffcafcf57d294fe02f5f1791d215d25d"
+      },
+      {
+        "file": "iptv/card-live-v1.webp",
+        "sha256": "904907b06c089af882ddd5f6502b342255388d65ca4843feaa7c27737a924c50"
+      },
+      {
+        "file": "iptv/card-music-v1.webp",
+        "sha256": "5f8a466c7cce5bd9c7f64b672de20ca64a33c7ce01986472ad9d19eb442ab58a"
+      },
+      {
+        "file": "iptv/card-series-v1.webp",
+        "sha256": "bc514112948021416cf8e032d952353d6306cb4d363e25d2c32630b274bbb879"
+      },
+      {
+        "file": "iptv/card-vod-v1.webp",
+        "sha256": "11f172812a5de31d4b4fcfca9fac1efdcdd51b54736eaea5b8dcfd7df9d4278e"
+      },
+      {
+        "file": "iptv/category-menu.css",
+        "sha256": "e630b1f4efebd7b69fc5f0b77f640f92952e4dcb0b640a66175a3348b27a4318"
+      },
+      {
+        "file": "iptv/category-order.js",
+        "sha256": "7fd8ab5bf292f96654999d953754608e15546a96efd07b8b21247203a3999e76"
+      },
+      {
+        "file": "iptv/cinema-shell.css",
+        "sha256": "23cbebae1507dea25a9460a2ddd4f018fbd4cd9b9715f6aac83ec684105f9b16"
+      },
+      {
+        "file": "iptv/cinema-shell.js",
+        "sha256": "733d01793775e42bde15e81aaf5ba9a8109ae1a0a64ace6b9e0e3c9bb3b7cd43"
+      },
+      {
+        "file": "iptv/cinematic-theme.js",
+        "sha256": "2f81c4ffb9a79a42f5ce2d6886c9ed4ee5cb9eb9c111319f979638360c329768"
+      },
+      {
+        "file": "iptv/cinematic.css",
+        "sha256": "c5fd8cdf11d8dee26a02f4475f746d85255a407329e111fbbc6cb66d53f2a68f"
+      },
+      {
+        "file": "iptv/cinematic.js",
+        "sha256": "9d07d95970ae37fdc6f796f377a0b81849be2993420438c6901368c923580bb6"
+      },
+      {
+        "file": "iptv/clock-adjust.js",
+        "sha256": "f1e4ed33bdabb408abaea876b71b8a4e22101c1094e9e50a396fc1da69480642"
+      },
+      {
+        "file": "iptv/connection-help.js",
+        "sha256": "93abd194b2f05d5149ff1c4cdbf9ad07f59cd437287cbd83c528ea64ed79954d"
+      },
+      {
+        "file": "iptv/desktop-bridge.js",
+        "sha256": "b664b9266a75e2e69734e16d2ca0a43135d8f0166e0736326ae8c0f2f91de0c6"
+      },
+      {
+        "file": "iptv/desktop-input.js",
+        "sha256": "907bcf65eb16ce3f45b0290dc9d7a358967b7181cea21c4e506b17a2d0bbe02f"
+      },
+      {
+        "file": "iptv/details-tv.css",
+        "sha256": "15578969ab0f03b45572f094472d4050d329598e82389ff0b9070bd8868c2386"
+      },
+      {
+        "file": "iptv/developer-credit.js",
+        "sha256": "c27979ea184c647919f97ded31a1c447d9f3cf0e82d347839c317d26c647f0c5"
+      },
+      {
+        "file": "iptv/display-mode.css",
+        "sha256": "cbb5364631f688ad3f803846918dc821bb7a3871907b73272e6cee25d32de85d"
+      },
+      {
+        "file": "iptv/display-mode.js",
+        "sha256": "13bbf1543d48ebec402f6a0865e6d6d5590df05cecc2c71a49944be97308dda9"
+      },
+      {
+        "file": "iptv/first-source.js",
+        "sha256": "870ab74df2bd39c1f5b8ee527805a57d64655f5cfb96f77cfb06d70041fda22a"
+      },
+      {
+        "file": "iptv/header-weather.js",
+        "sha256": "700787f580fa2b8cc7f2d9640f7fa2b70b35b5e757edcce28a56136edcab72be"
+      },
+      {
+        "file": "iptv/hero-calm-v1.webp",
+        "sha256": "e09769ffcccd347e07f189447bab2abf750ada0abd0e435daaae8efe922485eb"
+      },
+      {
+        "file": "iptv/hero-cinema-v1.webp",
+        "sha256": "3af1b62ffa6e467969a127e37f05c82de32e9be2545bb3772f304ed0e86a8d4f"
+      },
+      {
+        "file": "iptv/hero-live-v1.webp",
+        "sha256": "448ff2aca2cd81fda6092fd82fa32331db94d09c24638093e4f1d720a7ef222a"
+      },
+      {
+        "file": "iptv/hero-series-v1.webp",
+        "sha256": "6c5d05ae61348f98998b8a717873d5d0de2f37864686078b7d7142307f241273"
+      },
+      {
+        "file": "iptv/icon-favorites.svg",
+        "sha256": "6e0fa68d5058f93f9255eb600fde16eedb9fd50f3566ddabb2136003bba57d17"
+      },
+      {
+        "file": "iptv/icon-live.svg",
+        "sha256": "a2a2b25b98d2dcedd66c19b1619a9f4e8b68fed426eba14c3f13be273bbe7b77"
+      },
+      {
+        "file": "iptv/icon-series.svg",
+        "sha256": "8172dbe05d0d2d760ff11e9009f5ca9a5a01d723028e80355d1f2e8976ff677a"
+      },
+      {
+        "file": "iptv/icon-vod.svg",
+        "sha256": "0ae89e7a23978e815ae000fabc96d696857071516cca92489edf00a0b4640466"
+      },
+      {
+        "file": "iptv/index.html",
+        "sha256": "e6f737c62ece0d84b60096cd159f00be84490da6245eec309db44aa916108630"
+      },
+      {
+        "file": "iptv/iptv-text-size.css",
+        "sha256": "23602d32aa689d0a7e4e8d25e6088bde9f0a313ac6480211ce7bdb11a89e428d"
+      },
+      {
+        "file": "iptv/iptv-text-size.js",
+        "sha256": "109ade95347b4873e82d565f57cd19b83003e9d032f1c9c09964f619fe957a74"
+      },
+      {
+        "file": "iptv/kidsy.js",
+        "sha256": "c83b79052ca19683946bfbcd33226f582c2bf9096d594c4e7e18df972c4424b4"
+      },
+      {
+        "file": "iptv/latest-library.js",
+        "sha256": "f4e5502c8ca4be88232dba91f098d201f2230583b21ed9ff5d01528a4dd44bd9"
+      },
+      {
+        "file": "iptv/launcher-colors.css",
+        "sha256": "684ad306c210d8433d080e612fedeb7c50fea9b41a75c2c719d192c5a49de0a8"
+      },
+      {
+        "file": "iptv/library-layout.css",
+        "sha256": "b72be6338697d9123e790713987e64dadff4dbe26134b461b7a9b47791f76bcf"
+      },
+      {
+        "file": "iptv/ll.webp",
+        "sha256": "1ba697efe97ade03036049eb7bbe86b0505038ce46051a579a7cab3e5140d4f6"
+      },
+      {
+        "file": "iptv/locale.js",
+        "sha256": "c2128d49a296a740aa7d4af208eef2477e922fffd1028235c851e88edd7e3280"
+      },
+      {
+        "file": "iptv/matches-iptv.css",
+        "sha256": "2df04df6296283ad24daf53b7aea2ef09b6830dd5e8122045d584d7b9aa93420"
+      },
+      {
+        "file": "iptv/matches-iptv.js",
+        "sha256": "e7b996b5104278a327207a3b0b3355f6437cd6a850461a0558036f12513991fe"
+      },
+      {
+        "file": "iptv/matches-shared.css",
+        "sha256": "95858a350f2bb9575c4a0974ab0093472661c20057a941517841285d73e60b10"
+      },
+      {
+        "file": "iptv/matches-shared.js",
+        "sha256": "2392f94343cceeaf2a2ac3f70c5615dbdc9e6291a7718e2608109b8f8b2e8a53"
+      },
+      {
+        "file": "iptv/media-performance.js",
+        "sha256": "f6ce6a37d985dfb58e835b5711515416042f94c52d3378f2154ab16821848f96"
+      },
+      {
+        "file": "iptv/media-theme.js",
+        "sha256": "b38c7cec7099942e6f1eb8741d1a89ae361d85d737ec7117f81a1f3f56288be5"
+      },
+      {
+        "file": "iptv/morph-header-symbol.webp",
+        "sha256": "a68f27207a765e72beef3210596ddf3a508752d279f61916e2f0c82f6566992d"
+      },
+      {
+        "file": "iptv/morph-iptv-wordmark.webp",
+        "sha256": "5925d142487d000ac3a94ee042d390c2edb5195aaa36637e52535184c1d37a27"
+      },
+      {
+        "file": "iptv/morph-loading-background.webp",
+        "sha256": "fb8edf75ab8d881d8840059093d07ab7a195b857f63f4f81caa4fc9db7f5ee98"
+      },
+      {
+        "file": "iptv/morph-loading-symbol.webp",
+        "sha256": "a68f27207a765e72beef3210596ddf3a508752d279f61916e2f0c82f6566992d"
+      },
+      {
+        "file": "iptv/morph-wordmark.webp",
+        "sha256": "66b3eaf3edd93dd7e66e61d4d90c1cbd0d0f6326719ca880ee999e4819eb79e3"
+      },
+      {
+        "file": "iptv/multiview.js",
+        "sha256": "4514aef6bfe73680c9a4f314b8db34ce52b1454491a5f2f996311c651c340a79"
+      },
+      {
+        "file": "iptv/nav-latest.webp",
+        "sha256": "3616a0653fbc6a3eb67dcea7591f10b51225b8e77a097a350ec80ec711d044e4"
+      },
+      {
+        "file": "iptv/nav-live.webp",
+        "sha256": "a30a107b718bfa8316e3ed93297a28771ad9f9be883b657c658891fefadf9837"
+      },
+      {
+        "file": "iptv/nav-series.webp",
+        "sha256": "baca0677e5f248ce295e6855ac7c8086a736d660a14aedd73e653c0a863b843a"
+      },
+      {
+        "file": "iptv/nav-system.css",
+        "sha256": "28260982518795ec6025f756bb83049ce069a98e8f697f890a96fda17f10d430"
+      },
+      {
+        "file": "iptv/nav-vod.webp",
+        "sha256": "e211754fbe1e4baed25d4dc33e18122a7668a3e8d0fbb97864e8e8e91bc9e5e7"
+      },
+      {
+        "file": "iptv/network-tools.js",
+        "sha256": "ff2505c5c50a64d865378c4640ad063760937fe774ca71011e2214472329aae0"
+      },
+      {
+        "file": "iptv/parental-control.css",
+        "sha256": "7f53ad42e0657c36d0000f54851ce3811b2ac1a44ae67deb553a0b330a05fcd0"
+      },
+      {
+        "file": "iptv/parental-control.js",
+        "sha256": "ccba39d4e87da60fb94402ae72e30503c53aca8039a41fdf45d644493818541c"
+      },
+      {
+        "file": "iptv/playlist-file.js",
+        "sha256": "d5f33f729a39ecf3a4bf7e66863eba55a34a38073d6144e91c64c51c40da36bd"
+      },
+      {
+        "file": "iptv/plus-feature-labels.js",
+        "sha256": "dd2e3d0c8cf6e5cb9efd5b22d79b6266d414f6845a972203df3a1caaea618326"
+      },
+      {
+        "file": "iptv/prayer-entry.css",
+        "sha256": "53ca97737ebeacddb18ea72f68c9c7fca754765b0b211ab69e231cdf8ca4108c"
+      },
+      {
+        "file": "iptv/prayer-entry.js",
+        "sha256": "21713e046c329aeb260fe2bf01088dc669fb4533cef78c33e3065fd1ea391bf4"
+      },
+      {
+        "file": "iptv/premium-library.css",
+        "sha256": "c199fcf65c06bcbedb5c5c60f4bef55737e6c9ecaa6ae9cdf51c263ecc40f342"
+      },
+      {
+        "file": "iptv/premium-shell.css",
+        "sha256": "1c7ec3ce8887b95f4ea7d0dade8671767e6b4e2d848489d280e02ba5ca51f963"
+      },
+      {
+        "file": "iptv/premium-surfaces.css",
+        "sha256": "624698b1036c546fec814597dc02a70bd746424412024bf1c304bb578e169526"
+      },
+      {
+        "file": "iptv/product-update.js",
+        "sha256": "944c98a1a628bfa9a16298af84afd701e75fed6d3354682aebaf29a24b1c05cb"
+      },
+      {
+        "file": "iptv/protocol-help.js",
+        "sha256": "dd96ada260ad46d75637a3808eddcdb6fa3e37e814b2268b0897cca468230866"
+      },
+      {
+        "file": "iptv/settings-pages.css",
+        "sha256": "bdfb7defa4db22ba7c364c46f17711e16967ef82ccc7d1549cfa07ab95ec1205"
+      },
+      {
+        "file": "iptv/settings-pages.js",
+        "sha256": "5494d3482a34c3d2f7c641b905b74fd9828620681c9ae70394fe75fbcb987852"
+      },
+      {
+        "file": "iptv/settings-readable.css",
+        "sha256": "9e33d704b6ca7b1814e7812ee228dc741fa6d1c241b4fc21dd0d6dd371b2f4a9"
+      },
+      {
+        "file": "iptv/settings-readable.js",
+        "sha256": "dbeb9cde4d2dee98fbd469d067fd5177af11f8a0bf3cfbed1b017daf529dc566"
+      },
+      {
+        "file": "iptv/shared-source.json",
+        "sha256": "5c9a7d5468f77a09fa0ccf4b871b80b321e4524cb3ff4146b931cf0382051402"
+      },
+      {
+        "file": "iptv/source-form.css",
+        "sha256": "90c60a3f8a3501f146cd4c9b679051e3356788ea8b4063a1593422d3712d3d9e"
+      },
+      {
+        "file": "iptv/source-form.js",
+        "sha256": "d2ca7d9261a090d9a236affb7d768ecb63bc84b187c8292156819ee58f80b45c"
+      },
+      {
+        "file": "iptv/startup-refresh.js",
+        "sha256": "ac2c109ac65cdc26d62f940fe4e5f542363095b7b798e93d687c10bf85568804"
+      },
+      {
+        "file": "iptv/stream-city-v1.webp",
+        "sha256": "f595fc0069756e0e54f9844f12ae0e9d5e7312e4e4d70200a3db19d6de216685"
+      },
+      {
+        "file": "iptv/stream-ui.css",
+        "sha256": "eac5acc8af12a3993d4a3277949171547fa9ae12e93210d038d4224a44429af5"
+      },
+      {
+        "file": "iptv/stream-ui.js",
+        "sha256": "e3fd461574c7dd3b6d704956f2c6ab20e6d09936ddccda6e79cc791d52345aeb"
+      },
+      {
+        "file": "iptv/style.css",
+        "sha256": "01c933a997aebc4d414aeb5a724088f41c606a4bbbcc00418d06f4ac7ab2d030"
+      },
+      {
+        "file": "iptv/subscription-qr.js",
+        "sha256": "b65b0ff0cdbcc9665f537204b6f0a21b2774195aa45776daa0e5025d60deb59c"
+      },
+      {
+        "file": "iptv/subscription-setup.html",
+        "sha256": "467bc6bf1c162750ba6e6a6be8a084e238f40afe01d1f0df1620b23decc38a3e"
+      },
+      {
+        "file": "iptv/text-size.js",
+        "sha256": "930938187e4396bde19912913d9be782a9805db07185fbcfb042a36554d906ef"
+      },
+      {
+        "file": "iptv/theme-contract.css",
+        "sha256": "e003229043523b778efda1aaf4552efeaa60b4cad6ca8bf9811d5429d84c6024"
+      },
+      {
+        "file": "iptv/theme-identities.js",
+        "sha256": "2ea008630a8a89313bab6cbe651a9ac2aad8bd1e355c722c6a176b4c0e54bfe1"
+      },
+      {
+        "file": "iptv/theme-presets.css",
+        "sha256": "d5a983b9f72a17ab84a4cc76eeff253c1d366987c881ad1a4d07dd9140a95f5f"
+      },
+      {
+        "file": "iptv/theme-presets.js",
+        "sha256": "127f77f37660769111bfdb34b43e254cd2f4e5910cec6ae7d25490e3e7ad4420"
+      },
+      {
+        "file": "iptv/theme-token-map.js",
+        "sha256": "612e1e599526730f696c3fee64d549489d5c64c488eaa70b7cb84c0a75494144"
+      },
+      {
+        "file": "iptv/tv-compat.js",
+        "sha256": "8defbbfb32bbefe807b74947a54e290b67ba7142c34639f2915d8b6f797a6c91"
+      },
+      {
+        "file": "iptv/tv-library.css",
+        "sha256": "df15f2fd38c54cef18eea154c2572fbade632e9fbfb3af7c9f05e1e8f846b760"
+      },
+      {
+        "file": "iptv/tv-library.js",
+        "sha256": "d1b3f85975f113c47124633f9f503d95783027991c7ec7fae5481f0185d8c188"
+      },
+      {
+        "file": "iptv/tv-readable.css",
+        "sha256": "4ea752f3b7eccb60deb8e3ba13b3dfb219b7fe89427fa3e0818b9e6ff7ab3e16"
+      },
+      {
+        "file": "iptv/vendor/nacl-fast.min.js",
+        "sha256": "3ec535c004aeeb225785d8e93fb33bf99f52e399bd7dfc01969b5629baea5131"
+      },
+      {
+        "file": "iptv/vendor/qrcode.js",
+        "sha256": "4b6133cbb5a13ecdc26cfa897d0daf7bb9b08232032cdd381e82f2baf3653b5f"
+      },
+      {
+        "file": "iptv/youtube-trailer.svg",
+        "sha256": "9eda27bee06de8a7858686fbf3ab2ad6030f9597fa15495afae501ac0517f0e2"
+      },
+      {
+        "file": "kids.css",
+        "sha256": "842d7fbffa2922e401b30094583ee6937d1ebbec13b50fa265f1ee13c03ea58e"
+      },
+      {
+        "file": "kids.js",
+        "sha256": "c6b14061132629e8f53b1b60fa75d5ce99d930ad91abb892e279507e81bd5c20"
+      },
+      {
+        "file": "launcher-chrome.css",
+        "sha256": "e4f51f6caf49dd0160cdb6345ba0ee22f59e0a1c4af033c29dca737c40328077"
+      },
+      {
+        "file": "launcher-chrome.js",
+        "sha256": "47a0caaada70b7baf63dedcabdf6c289441af6336a87f2478ff81622b2321cef"
+      },
+      {
+        "file": "locale.js",
+        "sha256": "a246019566cbfbcba4739d5994cb22923ff5b307b8245b9accb204ba32910857"
+      },
+      {
+        "file": "m3u-source.js",
+        "sha256": "04f6cb0e2c265c00e7eb11590474cfb57e041e1253cc0795e00cfbee3dc703f0"
+      },
+      {
+        "file": "matches.css",
+        "sha256": "e43c86583e2101c1f07344717d83160bafaec580bed89b201f91325635107ea4"
+      },
+      {
+        "file": "matches.js",
+        "sha256": "216f03c255bfc5489ac4d3ff22271b2fb73a694420b680e96931a2607d7a6b99"
+      },
+      {
+        "file": "media-app.js",
+        "sha256": "2fb1cc7f47fa8cbcdbc10a40fcb827b040e100f5e7cc3f2bfe4bd3586519bc40"
+      },
+      {
+        "file": "media-engine.js",
+        "sha256": "3eba25da16e36d7eff72847798f90ca19aaa37bf0660b2923bb0ca1289f972df"
+      },
+      {
+        "file": "navigation-performance.css",
+        "sha256": "2104e0dbfc8141468cf6e9f0577f06865b1c2507993ec73e956fcdd5d3db662e"
+      },
+      {
+        "file": "network-reference.css",
+        "sha256": "7a81d3867ac71dc9b72a2f09500cd182142dc73d2804936c3b4aaaacb14334f4"
+      },
+      {
+        "file": "network-reference.js",
+        "sha256": "e2d8dd8293f1cdd43dc1013de24183ca3c3952344c1c16e03f6d8aa7a77fe9c5"
+      },
+      {
+        "file": "network.js",
+        "sha256": "2e6864fff4995cc60ee1dc5c4989428a7def2e01209bfc2da9f31dfea5b67741"
+      },
+      {
+        "file": "network/adapter.js",
+        "sha256": "ed94328c03728166f4916f461e54845308bf09fe6a0995c3f36f5351f22921d2"
+      },
+      {
+        "file": "network/desktop-network.js",
+        "sha256": "78e7fc95789fbec801221177be55121a5dfddb352f5a3f047d5b98b7ae911c44"
+      },
+      {
+        "file": "network/entry.css",
+        "sha256": "124fbf7ad512d683a10fc79947ffbc7ed79a0fc2985d7dc017c0f829335ae4d1"
+      },
+      {
+        "file": "network/entry.js",
+        "sha256": "43d82f0d7eefaf2ba51537674dbc363ffb729f221ed90ebb9a98b9a5304bff00"
+      },
+      {
+        "file": "network/index.html",
+        "sha256": "a54eef60a7faab551517b9e99c65988ec2d4d31d676ff5b63039854753c680f3"
+      },
+      {
+        "file": "network/network.css",
+        "sha256": "f4c940e655296fc50ae2c491158052309bf1f3b4a0784274894bbcb240cc7f12"
+      },
+      {
+        "file": "network/protocol.js",
+        "sha256": "71e31d8576be2a9130a283baf80e3032392e0c20154110bf4ee581760f2cde3d"
+      },
+      {
+        "file": "network/samsung.js",
+        "sha256": "b8199f30d34891711d339e48ed5d99d4366fb320196b01cd5149cd14986227a9"
+      },
+      {
+        "file": "network/ui.js",
+        "sha256": "5d7b7a7957e30cf1b36553d2f152f8ccd2c52bd9d748ba9a36fbadbb035d2ddf"
+      },
+      {
+        "file": "packs-tv.js",
+        "sha256": "efb3149e937e18623d3384f6eac79abad4a3d5824c6ddb311f4ca940b24277ef"
+      },
+      {
+        "file": "page-loading.js",
+        "sha256": "c5557926020a9fb335657b6633f6cc13dcce364305fc28016041ff7cc5a7861d"
+      },
+      {
+        "file": "parental-pause.html",
+        "sha256": "ad4b20cc09426ae30ba255f8ed6142cef3e9fc4d31e79a93f194be39c8c0f280"
+      },
+      {
+        "file": "patriotic-credits.json",
+        "sha256": "7d71b2b0f8b37feef2adcc74f92cc9e2bbf195eb6d419850e775695791dbf6c0"
+      },
+      {
+        "file": "performance.js",
+        "sha256": "72071e05421e8ac58e47f7245d4e2a5e4474e83167896b9b4413ba13c8ea45d9"
+      },
+      {
+        "file": "playback-rate.js",
+        "sha256": "1b147929f351af48ca3689e5f078d3af1e132be660f1e771cf20170aa917eb92"
+      },
+      {
+        "file": "player-chrome.css",
+        "sha256": "43c49b84880a74d332a43083daa027020fb718f73636a912a8a652033334b488"
+      },
+      {
+        "file": "player-chrome.js",
+        "sha256": "1dabf2e0fbad693a64a08e9566b0b77b7b5af02dacc5f25011e7070ac6e65e82"
+      },
+      {
+        "file": "plus-feature-cards.js",
+        "sha256": "299fe7eddc49458ee6419a5d9a3d32e4fd2a68ef7c4bb1389aa85f9d665ae04e"
+      },
+      {
+        "file": "plus-feature-labels.js",
+        "sha256": "c429acee775ddc9ec26ea24dccc227c0cfdadf7efae88f6e424e394692410bac"
+      },
+      {
+        "file": "plus-themes.css",
+        "sha256": "211c594d98f2464887f9f3ad5ea50a0bcc7b0e2068a055bddf937be63047eee2"
+      },
+      {
+        "file": "plus-tv.js",
+        "sha256": "a846bebce07c1e362459f29983d90a4aeb4d96c7b093c05aa016a3ebb17bbab3"
+      },
+      {
+        "file": "plus.css",
+        "sha256": "c10ad6d9b52d486360f80f389889c55b4919fd5aa0284deaddb86cfa1b121359"
+      },
+      {
+        "file": "plus.js",
+        "sha256": "65eec044015cbfe4e1de184b3a332f9fa7e05c7fc5be7bc363e336aefdfe1126"
+      },
+      {
+        "file": "prayer-duas-data.js",
+        "sha256": "31d00bb55c7853563fba0522bc149b1e171c3c11e27f65ae576cae3f19a6ecb7"
+      },
+      {
+        "file": "prayer-duas.js",
+        "sha256": "9c5a9dfa61120721cbe95626ff7b43e3af2d4b090e286e2bc957756a15b16a80"
+      },
+      {
+        "file": "prayer-gold.css",
+        "sha256": "8b47aed6f8c4dbf0aad67c284ea52bf1359a19408c797cb8a800d782110d3c63"
+      },
+      {
+        "file": "prayer-gold.js",
+        "sha256": "c8aa9345492f2c0b71a1f3e83ef27ed5508d7408686f0d1e25e37d5b376c5549"
+      },
+      {
+        "file": "prayer-local-times.js",
+        "sha256": "614533cd004f9f08b4c80b522428116023ec5e5ed17aebeb8b296ecffae469f8"
+      },
+      {
+        "file": "prayer-premium.css",
+        "sha256": "290a1aec925ebb0ebf8409cd594e60c4cc3b845f1d86d813f72b4dd35913dfab"
+      },
+      {
+        "file": "prayer-settings-dialog.css",
+        "sha256": "0818554289e3d4112536809c52e899a5be7ac0fe2a79a0fe65ca45d5ee1a43cf"
+      },
+      {
+        "file": "prayer-settings-dialog.js",
+        "sha256": "2649e1ba2c21799f53d1033a03592edeb6b617f58ad23239e5f3e85747e2c71e"
+      },
+      {
+        "file": "prayer.css",
+        "sha256": "16a447abac115c048ef011d3f96f7f604eacda8797abd02efe355ff8d84937af"
+      },
+      {
+        "file": "prayer.js",
+        "sha256": "b1d7d3a014928acf77f241d9a8662c3451bae49bd6b1f9fa626fd2a45c450d10"
+      },
+      {
+        "file": "product-update.js",
+        "sha256": "2880bb74d8ebe59222df690bc6292340d75387b1c55f2748082ddd0addb63bce"
+      },
+      {
+        "file": "progress.css",
+        "sha256": "214f07771618578d5488ca706b8fd72a0d199d06ceca12972083b2cd9131a528"
+      },
+      {
+        "file": "progress.js",
+        "sha256": "bec9446afec0c5d3f957e5bfc4a3630f667c9e84664bfbfbc9b9b26b345bc4e3"
+      },
+      {
+        "file": "radio-background.css",
+        "sha256": "35ee741dd4a482d199e5de491a4428abf3550b5552df3485fcc0e9f9b9038dc5"
+      },
+      {
+        "file": "radio-background.js",
+        "sha256": "f31c6f6c5d08c56974f15667f7f4cf0e283a447079b123f74785e01e9325847b"
+      },
+      {
+        "file": "radio/app.js",
+        "sha256": "2ddae134bdad8d43062c5a7de95a86ef4fae7b74dd074525d47bbd190bd0bc94"
+      },
+      {
+        "file": "radio/desktop-bridge.js",
+        "sha256": "ff21f26567efb6ec0ebd142c9bda6aba93a2c7aec94a2c7718eea7a54f8f3c28"
+      },
+      {
+        "file": "radio/index.html",
+        "sha256": "36c1ea7cd15ec762b3bcba32fa4be0b7ee88da30daaf1d7baa585c07d9655172"
+      },
+      {
+        "file": "radio/locale.js",
+        "sha256": "a246019566cbfbcba4739d5994cb22923ff5b307b8245b9accb204ba32910857"
+      },
+      {
+        "file": "radio/media-performance.js",
+        "sha256": "a9b74ff89ad8f58990ba51a698d3f3483e8707f25c62879228d2de8f4fb59687"
+      },
+      {
+        "file": "radio/navigation.js",
+        "sha256": "5b875730114f0ca9dfbcf6f80ddcbe7f34566f2aef557c53e069d646132c2293"
+      },
+      {
+        "file": "radio/radio-mark.svg",
+        "sha256": "0cdbcae89634f8bb615da2c81220c202bbcc739a27301f6ff9a1a79fceff0f2e"
+      },
+      {
+        "file": "radio/radio-player.js",
+        "sha256": "15d88f55c849b4bc3ca0552b28c76c4f41ad6bc099fa84c596b726e1129626ee"
+      },
+      {
+        "file": "radio/radio.css",
+        "sha256": "f7cdb3173a26dc511e12308499759398aa17bd5c5541924519ad3caaa3baef5b"
+      },
+      {
+        "file": "radio/screen-off.css",
+        "sha256": "4a54c15b7d2eed700730e8218dac89d9e4b9155f9823b964f64e4e2f7a40bc48"
+      },
+      {
+        "file": "radio/screen-off.js",
+        "sha256": "9d7a668b3f2d90c02fea70bbbc88e3a1ff499de4298db765e64a5e6c71b47926"
+      },
+      {
+        "file": "radio/stations.json",
+        "sha256": "a4adc4b9847da858557c81258ed6d3c25839d7d4e8104ec9f443f64aa167697d"
+      },
+      {
+        "file": "radio/text-size.js",
+        "sha256": "20750178031f98cd6b8c4bf0f8998e83a1cf4732d2595682153477d2524a31ff"
+      },
+      {
+        "file": "rails.js",
+        "sha256": "218039a1faa12b59587d1615801c4151faf70d95d160406187bf55056586cbe2"
+      },
+      {
+        "file": "reference-assets/bridge-background-v2.webp",
+        "sha256": "fb8edf75ab8d881d8840059093d07ab7a195b857f63f4f81caa4fc9db7f5ee98"
+      },
+      {
+        "file": "reference-assets/bridge-devices-v2.webp",
+        "sha256": "8118f8e354e4d50737b0e6d2f2318e9249283ea9cf0871f36870b9b65b358aa5"
+      },
+      {
+        "file": "reference-assets/home-matches-card-v1.webp",
+        "sha256": "036232e608ee64210344287a37d70275257c11ef8baa503da62221b944efcf7f"
+      },
+      {
+        "file": "reference-assets/home-prayer-card-v1.webp",
+        "sha256": "797a58cf5445051ea737233aa8a5c86c7f25cfccea123fe0869d4b9860982031"
+      },
+      {
+        "file": "reference-assets/main-mountains-wave-v1.webp",
+        "sha256": "78bcaba94c580a2b201bc53727b69c163a123a3b5f962873e49427ef0e7723e3"
+      },
+      {
+        "file": "reference-assets/program-card-bridge-v4.webp",
+        "sha256": "d2254e40cfd8fb18c1ce403ea7388038fdc0aa88770af21a3197fc03e19d73f6"
+      },
+      {
+        "file": "reference-assets/program-card-iptv-v4.webp",
+        "sha256": "2a320ce62f3ef45b1a076ee991b4cdfc389b340028d9cf7e26b07d701dbef9ca"
+      },
+      {
+        "file": "reference-assets/program-card-media-v4.webp",
+        "sha256": "11ccf21da11aab27e5698982af1ca957741cb718869c3c3959e6861632aeac87"
+      },
+      {
+        "file": "reference-assets/program-card-prayer-v4.webp",
+        "sha256": "a00bc6b7a5aacf4067f631cba04e4fa4f20e3b26d9374d431039891ca50fa038"
+      },
+      {
+        "file": "reference-assets/program-card-radio-v4.webp",
+        "sha256": "936bc6412ea31e8daf673bf957655a12bf6ea113a0e9a5a61d1da8b53e41926d"
+      },
+      {
+        "file": "reference-theme.js",
+        "sha256": "665b4782fb5511a6159e0b39c14b78560026b1d5e5ab9d096e49096eacabdca9"
+      },
+      {
+        "file": "reference.css",
+        "sha256": "3d76461c801de0c04a23d4f5f92c4b7d1ac60bbcba9e156ec55f136fd324545d"
+      },
+      {
+        "file": "reference.js",
+        "sha256": "5b6d944d243bd0ef640211933915ad6e34ecbd3f2ee9686972774e717f3b6285"
+      },
+      {
+        "file": "remote.js",
+        "sha256": "b05b87a59db7de261be8a9437a4059eef92653c3033a4da2f99b42d45480ce3a"
+      },
+      {
+        "file": "reorder.js",
+        "sha256": "f5c33de0c6271b766788a641d05b8cece3def2a51bcac6f22b175b277b813383"
+      },
+      {
+        "file": "samsung-cast-worker.js",
+        "sha256": "b66c12368ed48b599774812660cb6beef966bb2c8e3d8971355631b4632b3afa"
+      },
+      {
+        "file": "samsung-locks.js",
+        "sha256": "d8dc3927820bbc1d64509e1c0521312b9cdab83ea4c0beb1ff59ca914d7ad552"
+      },
+      {
+        "file": "screen-fit.css",
+        "sha256": "608f1757e39b6f36af82b0c598cb672629fece53a11534e4def135ad389fe348"
+      },
+      {
+        "file": "screen-fit.js",
+        "sha256": "67622db4daba1b14b51015120c573a3c5f447845e33812d56e35731c3769cfca"
+      },
+      {
+        "file": "settings-catalog.js",
+        "sha256": "d905f528264c48b32e17dbf0237555430e79e85e874d75c929c4e166f8afa009"
+      },
+      {
+        "file": "settings-expand.js",
+        "sha256": "2723098ff50ea517d62d034a7469d9faa36db49c6573de4d33354b09b5e1cf94"
+      },
+      {
+        "file": "settings-fit.css",
+        "sha256": "73ab566619be3462f2415cf8b5e63fbbca0e04940e983bf90a0a2255ce9a8944"
+      },
+      {
+        "file": "settings-fit.js",
+        "sha256": "a0e7c3e24d39a7c1b517abfcfbc3a0c09f830996ad23c98f6241a12f9a638932"
+      },
+      {
+        "file": "settings-nav.css",
+        "sha256": "399f7814ff1175720d8a48aeebe99d43f47aa4bc416a2e6cf20d58af1d9f01e3"
+      },
+      {
+        "file": "settings-nav.js",
+        "sha256": "e419fae9dfd63a8184b88827b63e8879f9c437f3189fefbb56fe3166f0637f22"
+      },
+      {
+        "file": "settings-readable.css",
+        "sha256": "e7a3324ee901d666bab7fd123bf186a72ed197e10448b042a5ec61a1cd09444f"
+      },
+      {
+        "file": "settings-readable.js",
+        "sha256": "00f7441748fdb5dfb285627aed39f658c88acbf57ee102b381fc3ace3846924d"
+      },
+      {
+        "file": "settings-reference.css",
+        "sha256": "ece0866bce6aeafdf0134983ba36b5b8d9f868d20e0ef1378d374347679ce2cf"
+      },
+      {
+        "file": "settings-reference.js",
+        "sha256": "2068731a72f523616cc746c65da6d570b411592b4caaea900f6697a0ee64a877"
+      },
+      {
+        "file": "sidebar-icons.css",
+        "sha256": "f104e350f8b898c9dbf9ac08e52cb31a24ad1077d79ea7f2e1a351860a7dcb83"
+      },
+      {
+        "file": "startup.css",
+        "sha256": "3c2ec90a1d012a6c247e6185dc8fb4f99ea56c55b7ca51bed3fb76908dff36c5"
+      },
+      {
+        "file": "style.css",
+        "sha256": "1e370b234566483cd1477795a8c3096c429f83b76950d099ada2db5035beb285"
+      },
+      {
+        "file": "support.css",
+        "sha256": "5d16a71645c6a2e8010467b68d8aaa84be67e550b0be7b8a15a62ea3767c4f15"
+      },
+      {
+        "file": "support.js",
+        "sha256": "04f3b761ac296a4cc49230f607519d9ef5a5ee3c06197bd64c1de8dd073c9e4a"
+      },
+      {
+        "file": "surfaces-reference.css",
+        "sha256": "acbf7320d1d7cffe2a109c860c89e378747843cfd6bfc9637abf8401ccee62a8"
+      },
+      {
+        "file": "text-size.js",
+        "sha256": "b0e881f2ab3a703d05c7d243b290d81ad11ffae6e566c63afded6e8f5eeeb685"
+      },
+      {
+        "file": "theme-locale.js",
+        "sha256": "6662288348219faee4a066bbd633e459ebba134d1620916349e898e8b264d4e2"
+      },
+      {
+        "file": "theme-packs-manifest.js",
+        "sha256": "51335a8aa30885080b7bb5342630808861c7e1948f1a7baee755e6d72088fa85"
+      },
+      {
+        "file": "theme-packs.js",
+        "sha256": "158c5853715407a8b487e5810b5957cdaeef13a214b593a06871dbc6e70299ce"
+      },
+      {
+        "file": "theme-preview.css",
+        "sha256": "800d8b18dc42a104659974d1e2c7850401dd8754a3d08343bc1e7dc4e8162ca2"
+      },
+      {
+        "file": "theme-preview.js",
+        "sha256": "c14f6647fe4c4d4408670d5745821191de0488d3cab075bcedfc244c6474e912"
+      },
+      {
+        "file": "theme-studio.css",
+        "sha256": "4e90ac6a9ef70ef59bf9bd0f5726842e4b70a87434aeb528d2206df17e3d8402"
+      },
+      {
+        "file": "theme-studio.js",
+        "sha256": "425fabdd2900f7f05dabdac00d3db2d59b2418534e3eeaf22a0222c7fdb27a58"
+      },
+      {
+        "file": "themes-reference.css",
+        "sha256": "11085cc5d55253d43cdbaa18e49286adecc04455e6f92a0a8d0c09b601a14681"
+      },
+      {
+        "file": "themes-reference.js",
+        "sha256": "70b92ad5f37602ba1b3fd850df6936756eec05fd95173db41e2abc84994365fe"
+      },
+      {
+        "file": "tv-compat.js",
+        "sha256": "3172e485be624ba3b1de56bf5237108f591df6e4517591142b1aefdc9814718a"
+      },
+      {
+        "file": "tv-readable.css",
+        "sha256": "d12dc2ec66370171c2d03cc7fcababc69cd52cf79186ea7c36453b6be2adcbe4"
+      },
+      {
+        "file": "tvmorph.webp",
+        "sha256": "466c166ff98a5d6e20954a52886d9be5a929cc17b204a40615ccd7dc1a37ed52"
+      },
+      {
+        "file": "ui/components.css",
+        "sha256": "baf5ffdb27738f00bbf7aa618ef935dd82d4c9fe673cc0d3c8319f5c5bfa5650"
+      },
+      {
+        "file": "ui/control-system.js",
+        "sha256": "3c07b4c9b8d500376bfa0a0552fe912929b421727ccd78c58b9e2750247e9c2f"
+      },
+      {
+        "file": "ui/header-shared.css",
+        "sha256": "9427b1ee7a730afccbbc37b1145294b8d1ef4de75bf7ab0842b1f579ebf32021"
+      },
+      {
+        "file": "ui/icons.js",
+        "sha256": "74901b662f434b1186b15716f084644759be966af072231fb1aac1224a8eca71"
+      },
+      {
+        "file": "ui/internal-pages.css",
+        "sha256": "b73915a048a5a492f7730a87c866b618e13f864364e602f1c772bf291704d2ed"
+      },
+      {
+        "file": "ui/internal-pages.js",
+        "sha256": "41215867fb1ee4ed973c835289b6a0eb5e1ce5e25f9e0740aa7aefc2a4558fc7"
+      },
+      {
+        "file": "ui/media-theme.js",
+        "sha256": "7bdeef4101ae8c0ce4425e9371bcf40b21184a4ed315f397e0527f9b88aae51d"
+      },
+      {
+        "file": "ui/modern-shell.css",
+        "sha256": "eaad16ddbaa4fbeb7b5a50019be708fd6ee1594b2d609ae650ddc75f8edcf5a8"
+      },
+      {
+        "file": "ui/motion.css",
+        "sha256": "60210e5c57263e3430a223eb0328e90faf55ef5c240f161cb480725358b6369b"
+      },
+      {
+        "file": "ui/nav-system.css",
+        "sha256": "52d2ca782cfc115aa0f2f1ab15efd47e66e8e92d54a4a49ac37842d0d545e66b"
+      },
+      {
+        "file": "ui/premium-theme.css",
+        "sha256": "e7bef92833865765e58ae46a3b7b3534914dc1305923d25f03bc2b0dae0cb184"
+      },
+      {
+        "file": "ui/theme-adapter.js",
+        "sha256": "badb1b87c49530e7726f1fec9aa93af5346538a7231b8e35baaa3840f5b0becc"
+      },
+      {
+        "file": "ui/tokens.css",
+        "sha256": "690549eeb48859f53c7c37952a255ea14804a841622dbbb51e40383ae26a9ce8"
+      },
+      {
+        "file": "ui/ui-mode.js",
+        "sha256": "d7244fa2feed0116437e918beb1ddfd583f97e638a5e2b77f81b0dd988dfc25a"
+      },
+      {
+        "file": "update-alert.js",
+        "sha256": "2ff856962199a874865c68cb223c57b7090652d60667d766639bdd254b11ffc2"
+      },
+      {
+        "file": "usb-media.js",
+        "sha256": "899b9fe9736713a1bfe55723409995b5f5db85407fc6159baa1f96bafbf7ac34"
+      },
+      {
+        "file": "usb.css",
+        "sha256": "7a368c559919995598822adf219085c3a187c749799df4201c460447d05a5fe9"
+      },
+      {
+        "file": "usb.js",
+        "sha256": "87fff91b6f81ce3baaea5185abfaa7e50203d0f783c03f19f118aa85aea24439"
+      },
+      {
+        "file": "vendor/hls-1.5.18.LICENSE.js",
+        "sha256": "c552ab208540d82fe5a38559dca4e31abc690e507c4712263d2ad8c816b0a922"
+      },
+      {
+        "file": "vendor/hls-1.5.18.light.min.js",
+        "sha256": "d50759ca38458decbe6c5641efa7bc3042b4a4d984cfc29e60ab99f86e93fee6"
+      },
+      {
+        "file": "vendor/hls.js-LICENSE.txt",
+        "sha256": "ca8773cf798c7ed997d4dd7c8e23c348699f8d5b7462636694cc14de6cda12db"
+      },
+      {
+        "file": "vendor/hls.min.js",
+        "sha256": "442f599c34f103c3355b375a23bdff560592d7117d09a8c847242ea3de2d40e0"
+      },
+      {
+        "file": "vendor/licenses.js",
+        "sha256": "d52382fbf4fdb04d0ff6a7108f6c40d3d64ba04c5d84d5f32b22e8d55a6ced31"
+      },
+      {
+        "file": "vendor/moment-timezone.min.js",
+        "sha256": "67c0c0b244862a193c8bf5e935c23d480ec6efad7afeb8a55ff7ddf710e87fd7"
+      },
+      {
+        "file": "vendor/moment.min.js",
+        "sha256": "0c1cc072bd99389f7949dd1489fac0f78ffc70ec23fc08fbddb8c190352e92a1"
+      },
+      {
+        "file": "vendor/mpegts.js",
+        "sha256": "e998f7a6cec5fcab56ac14e8c22d61a42565c1ebf7174b3fda078343eda6cab0"
+      },
+      {
+        "file": "vendor/mpegts.js-LICENSE.txt",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+      },
+      {
+        "file": "weather.js",
+        "sha256": "fa03419c470a24588377fb7df002f3fa5ed518e21404afbc9a0d11138a149752"
+      },
+      {
+        "file": "welcome-support.css",
+        "sha256": "ec255d6d1038d0493bc701417ad2c2e48383577cced10b28818538ac75fb3c35"
+      },
+      {
+        "file": "welcome-support.js",
+        "sha256": "aeef9308f788d7711029eaa14cd44cfbd17d80f8a2e3cdc8420d78a81190e4e2"
+      },
+      {
+        "file": "wifi.css",
+        "sha256": "fa21d5936d57711f1d6b64167cb10148e08c4393ffd2b6c0c18f24f40350c4ae"
+      },
+      {
+        "file": "wifi.js",
+        "sha256": "2a5c6d08a0882365f428bae8977b8b1b9a2fd08e5c8020368da3ebd770b72963"
+      }
+    ]
+  },
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42526539145",
+  "physicalLGVerified": false,
+  "physicalTizenVerified": false,
+  "phoneTvInstallersBundled": false,
+  "phoneBytes": 86553522
+}
