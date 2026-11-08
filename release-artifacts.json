@@ -273,11 +273,10 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Bridge-LG-1.1.325.ipk"
     },
     {
-      "file": "Morph-Bridge-Samsung-1.1.326.wgt",
-      "bytes": 818786,
-      "sha256": "2bf423ed5ae5c7b0b095d6ec5294f24fb77423e597e7703207f7f0f621466c37",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-Bridge-Samsung-1.1.326.wgt",
-      "version": "1.1.326"
+      "file": "Morph-Bridge-Samsung-1.1.325.wgt",
+      "bytes": 818558,
+      "sha256": "7d72849f64a9910f2995a166f67d399a24d89b7482fe2dfe09a150db0fc23297",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-Bridge-Samsung-1.1.325.wgt"
     },
     {
       "file": "Morph-IPTV-Legacy-1.1.325.apk",
@@ -316,32 +315,28 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Phone-1.1.326.apk"
     },
     {
-      "file": "Morph-TV-Samsung-Tizen2-1.1.326.wgt",
-      "bytes": 14414752,
-      "sha256": "eaea7115ca08f674e3f393bb3a03b945e5906300303024f93fd66a999c897285",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-TV-Samsung-Tizen2-1.1.326.wgt",
-      "version": "1.1.326"
+      "file": "Morph-TV-Samsung-Tizen2-1.1.325.wgt",
+      "bytes": 14413605,
+      "sha256": "0b9e1a7a67da90d647f792e62746a06cdb872c4bb82294a064b4bcbf42837fdd",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen2-1.1.325.wgt"
     },
     {
-      "file": "Morph-TV-Samsung-Tizen3-1.1.326.wgt",
-      "bytes": 14412001,
-      "sha256": "57560a6ad7ff0be64bd88ef519127032faf3782ffa46450d2dfb0e4b4063bb39",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-TV-Samsung-Tizen3-1.1.326.wgt",
-      "version": "1.1.326"
+      "file": "Morph-TV-Samsung-Tizen3-1.1.325.wgt",
+      "bytes": 14410861,
+      "sha256": "ecece0ecae9ada5b87bfc37dd2a5fd97551bf0bf2e0da40e6bcb284c21787c96",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen3-1.1.325.wgt"
     },
     {
-      "file": "Morph-TV-Samsung-Tizen4-1.1.326.wgt",
-      "bytes": 14379704,
-      "sha256": "008f188c2235e8f8bc8dc87353b827680dd117983d833712d19b5376427b3dcb",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-TV-Samsung-Tizen4-1.1.326.wgt",
-      "version": "1.1.326"
+      "file": "Morph-TV-Samsung-Tizen4-1.1.325.wgt",
+      "bytes": 14380900,
+      "sha256": "098ad89062a58cab2f27690ec16b8ff0dff4c48e7d6de750df0d4078ac39b1c1",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen4-1.1.325.wgt"
     },
     {
-      "file": "Morph-TV-Samsung-Tizen5-1.1.326.wgt",
-      "bytes": 14314335,
-      "sha256": "9848830a8306cb5087db494307679d30e167e4b511390278cba4999774df76eb",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-TV-Samsung-Tizen5-1.1.326.wgt",
-      "version": "1.1.326"
+      "file": "Morph-TV-Samsung-Tizen5-1.1.325.wgt",
+      "bytes": 14314044,
+      "sha256": "19bbeee10d3d12d413b53a28e5be3090a8c6d80a9ddca18862ccba5d16143696",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.325/Morph-TV-Samsung-Tizen5-1.1.325.wgt"
     },
     {
       "file": "Morph-Launcher-Mac-1.1.325-universal.zip",
@@ -370,6 +365,14 @@
       "bytes": 169981411,
       "sha256": "609d48fcb7e4e2196d1e9bf82e88914aed5d86fe5ad54261af6be9bcaa850d99",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.331/Morph-TV-Phone-1.1.331.apk"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.332.apk",
+      "version": "1.1.332",
+      "versionCode": 359,
+      "bytes": 72705119,
+      "sha256": "d053765c527ca73b5b0f348516c04c58dc3ecab60377d8d8489e890aaa854e8f",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.332/Morph-TV-Phone-1.1.332.apk"
     }
   ]
 }
