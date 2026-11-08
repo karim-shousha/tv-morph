@@ -811,6 +811,24 @@
       "bytes": 86549426,
       "sha256": "6c2db57dc95be7fdc475a1f94f16376105bd4bcedf7eb7dc4b2d0ccf83ce5e73",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.349/Morph-TV-Phone-1.1.349.apk"
+    },
+    {
+      "file": "Morph-TV-LG-1.1.350.ipk",
+      "product": "launcher",
+      "target": "webos",
+      "version": "1.1.350",
+      "bytes": 13319970,
+      "sha256": "1671ee199b7504dff8b85c6def685b2e9486745458060d8a492d77466eb86694",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.350/Morph-TV-LG-1.1.350.ipk"
+    },
+    {
+      "file": "Morph-IPTV-LG-1.1.350.ipk",
+      "product": "iptv",
+      "target": "webos",
+      "version": "1.1.350",
+      "bytes": 5657106,
+      "sha256": "9d59c5a80beb0fc2325155d84474c1f32c16cfa55aeba0c34d3882fea42c8e2f",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.350/Morph-IPTV-LG-1.1.350.ipk"
     }
   ]
 }

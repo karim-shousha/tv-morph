@@ -81,14 +81,14 @@
       "available": true,
       "noteAr": "نسخة محدثة بالواجهة النهائية والتخفيف وإصلاح بيانات IPTV والريموت. تتطلب Developer Mode؛ الاختبار على شاشة LG فعلية ما زال مطلوبًا.",
       "noteEn": "Updated reviewed frontend, lightweight default, IPTV provider transport and remote controls. Developer Mode required; physical LG review pending.",
-      "version": "1.1.347",
+      "version": "1.1.350",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
       "installMode": "developer-mode",
       "installVideo": "https://www.facebook.com/share/v/19tjgqXsNZ/",
       "channel": "preview",
-      "validation": "Packaged UI/catalog/remote/Plus regression and private service transport passed; physical LG review pending."
+      "validation": "Packaged Home 1080p/720p/540p bounds checked; settings/theme scrolling, provider catalog, category arrows, shared player Up/Down, Plus QR and series grouping passed. Physical TV review pending."
     },
     {
       "id": "android44",
@@ -115,13 +115,13 @@
       "versionCode": 375
     },
     {
-      "name": "Morph-TV-LG-1.1.347",
-      "file": "Morph-TV-LG-1.1.347.ipk",
-      "version": "1.1.347",
+      "name": "Morph-TV-LG-1.1.350",
+      "file": "Morph-TV-LG-1.1.350.ipk",
+      "version": "1.1.350",
       "product": "launcher",
       "target": "webos",
-      "bytes": 13318540,
-      "sha256": "9bf28771e3eaf3086fb28cf7b4095a1fa0c033deef9ab793d1e1893483b061bc",
+      "bytes": 13319970,
+      "sha256": "1671ee199b7504dff8b85c6def685b2e9486745458060d8a492d77466eb86694",
       "download": "/download/lg"
     },
     {
@@ -165,13 +165,13 @@
       "download": "/download/samsung-tizen5"
     },
     {
-      "name": "Morph-IPTV-LG-1.1.347",
-      "file": "Morph-IPTV-LG-1.1.347.ipk",
-      "version": "1.1.347",
+      "name": "Morph-IPTV-LG-1.1.350",
+      "file": "Morph-IPTV-LG-1.1.350.ipk",
+      "version": "1.1.350",
       "product": "iptv",
       "target": "webos",
-      "bytes": 5656254,
-      "sha256": "b516689e652e8b3a5ff2a2c796ea552b89aad90e993b154a2e1a7d4a5931460c",
+      "bytes": 5657106,
+      "sha256": "9d59c5a80beb0fc2325155d84474c1f32c16cfa55aeba0c34d3882fea42c8e2f",
       "download": "/download/iptv/lg"
     },
     {
@@ -417,12 +417,12 @@
   },
   "downloads": {
     "android": "Morph-TV-Android-TV-1.1.348.apk",
-    "lg": "Morph-TV-LG-1.1.347.ipk",
+    "lg": "Morph-TV-LG-1.1.350.ipk",
     "samsung-tizen2": "Morph-TV-Samsung-Tizen2-1.1.347.wgt",
     "samsung-tizen3": "Morph-TV-Samsung-Tizen3-1.1.347.wgt",
     "samsung-tizen4": "Morph-TV-Samsung-Tizen4-1.1.348.wgt",
     "samsung-tizen5": "Morph-TV-Samsung-Tizen5-1.1.348.wgt",
-    "iptv/lg": "Morph-IPTV-LG-1.1.347.ipk",
+    "iptv/lg": "Morph-IPTV-LG-1.1.350.ipk",
     "iptv/tizen4": "Morph-IPTV-tizen4-1.1.348.wgt",
     "iptv/tizen5": "Morph-IPTV-tizen5-1.1.348.wgt",
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
@@ -439,7 +439,7 @@
     "cleaner/lg": "Cleaner-LG-1.1.324.ipk",
     "remote": "Morph-Remote-1.1.305.apk",
     "firetv": "Morph-TV-Android-TV-1.1.348.apk",
-    "lg-preview": "Morph-TV-LG-1.1.347.ipk",
+    "lg-preview": "Morph-TV-LG-1.1.350.ipk",
     "iptv/firetv": "Morph-IPTV-Android-TV-1.1.348.apk",
     "samsung-tizen2-lite": "Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt"
   },
@@ -453,13 +453,13 @@
     ],
     "releases": [
       {
-        "name": "Morph-IPTV-LG-1.1.347",
-        "file": "Morph-IPTV-LG-1.1.347.ipk",
-        "version": "1.1.347",
+        "name": "Morph-IPTV-LG-1.1.350",
+        "file": "Morph-IPTV-LG-1.1.350.ipk",
+        "version": "1.1.350",
         "product": "iptv",
         "target": "webos",
-        "bytes": 5656254,
-        "sha256": "b516689e652e8b3a5ff2a2c796ea552b89aad90e993b154a2e1a7d4a5931460c",
+        "bytes": 5657106,
+        "sha256": "9d59c5a80beb0fc2325155d84474c1f32c16cfa55aeba0c34d3882fea42c8e2f",
         "download": "/download/iptv/lg"
       },
       {

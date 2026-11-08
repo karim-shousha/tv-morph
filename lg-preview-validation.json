@@ -1,9 +1,15 @@
 {
-  "package": "com.zainbot.morphtv.preview",
-  "version": "1.1.321",
+  "version": "1.1.350",
   "physicalTVVerified": false,
-  "target": "webOS 4.x / Chromium 53 compatibility candidate; physical device unverified",
-  "sha256": "39b31b66f85a9799e32fd778954c17ad91f99de0c8c4e39fe71487ac3b59865d",
-  "bytes": 13732530,
-  "productionFilesUnchanged": true
+  "tests": [
+    "Packaged shared frontend",
+    "Home viewport bounds 1920/1280/960",
+    "AR/EN settings and 32 themes",
+    "IPTV categories and remote arrows",
+    "Shared player and channel switching",
+    "Plus QR",
+    "Series grouped progress and resume",
+    "2200-row provider transport"
+  ],
+  "screenshotInstalledVersionUnknown": true
 }
