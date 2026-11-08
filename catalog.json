@@ -235,7 +235,7 @@
       "sha256": "e858fa72733fe80b355cb958b8264fe8ad2b4c3a591384270b6657d2d04de244",
       "product": "phone",
       "name": "Morph-TV-Mobile-1.1.352-Integrated",
-      "download": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.349/Morph-TV-Mobile-1.1.352-Integrated.apk"
+      "download": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.352/Morph-TV-Mobile-1.1.352-Integrated.apk"
     },
     {
       "name": "Morph-TV-Legacy-1.1.347",
@@ -386,6 +386,16 @@
       "download": "/download/samsung-tizen2-lite",
       "channel": "preview",
       "noteEn": "Separate simple ES5 shell for Tizen 2; launches installed apps."
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.352.apk",
+      "version": "1.1.352",
+      "versionCode": 379,
+      "bytes": 86553522,
+      "sha256": "e858fa72733fe80b355cb958b8264fe8ad2b4c3a591384270b6657d2d04de244",
+      "product": "phone",
+      "name": "Morph-TV-Phone-1.1.352",
+      "download": "https://morph-tv.com/Morph-TV-Phone-1.1.352.apk"
     }
   ],
   "legacy": {
