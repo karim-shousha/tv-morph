@@ -103,3 +103,4 @@ cf760797e30f68d8991da163fc2d41d7db27df34c6723facada66cf96372746f  Morph-TV-Samsu
 3f32a79d5bcf69c5f57df0f33babd242d8656a6fe5db12a70d3fd5a1d7c5dbd0  Morph-TV-Samsung-Tizen3-1.1.337.wgt
 5964742730c21637852a0ec7ee8f06d783b0114903a8c54a8ebc111ea37cfa7e  Morph-TV-Samsung-Tizen4-1.1.337.wgt
 2de1c2c22e2fdd3f891568346f59bfdf2afa774d83177353af0efa4244177c76  Morph-TV-Samsung-Tizen5-1.1.337.wgt
+2bf423ed5ae5c7b0b095d6ec5294f24fb77423e597e7703207f7f0f621466c37  Morph-Bridge-Samsung-1.1.326.wgt

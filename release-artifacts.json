@@ -445,6 +445,13 @@
       "bytes": 14314492,
       "sha256": "2de1c2c22e2fdd3f891568346f59bfdf2afa774d83177353af0efa4244177c76",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-fixes-v1.1.337/Morph-TV-Samsung-Tizen5-1.1.337.wgt"
+    },
+    {
+      "file": "Morph-Bridge-Samsung-1.1.326.wgt",
+      "version": "1.1.326",
+      "bytes": 818786,
+      "sha256": "2bf423ed5ae5c7b0b095d6ec5294f24fb77423e597e7703207f7f0f621466c37",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-Bridge-Samsung-1.1.326.wgt"
     }
   ]
 }
