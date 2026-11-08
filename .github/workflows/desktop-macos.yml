@@ -1,10 +1,10 @@
-name: Build and verify Morph Launcher 1.1.347 for Mac
+name: Build and verify Morph Launcher 1.1.351 for Mac
 
 on:
 
   push:
 
-    branches: [codex/release347-mac-20261108]
+    branches: [codex/release351-mac-20261108]
 
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
 
@@ -12,7 +12,7 @@ on:
 
 concurrency:
 
-  group: morph-desktop-release347-20261108
+  group: morph-desktop-release351-20261108
 
   cancel-in-progress: true
 
