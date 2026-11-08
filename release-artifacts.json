@@ -1,5 +1,5 @@
 {
-  "version": "1.1.349",
+  "version": "1.1.351",
   "baseUrl": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.321/",
   "artifacts": [
     {
@@ -829,6 +829,114 @@
       "bytes": 5657106,
       "sha256": "9d59c5a80beb0fc2325155d84474c1f32c16cfa55aeba0c34d3882fea42c8e2f",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.350/Morph-IPTV-LG-1.1.350.ipk"
+    },
+    {
+      "file": "Morph-TV-Android-TV-1.1.351.apk",
+      "bytes": 24785939,
+      "sha256": "88fd07f974978fb3ccadf29a4f7fdd94e6522e526a8553da3a0b8187d3e2cb2e",
+      "target": "android",
+      "product": "launcher",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-TV-Android-TV-1.1.351.apk"
+    },
+    {
+      "file": "Morph-TV-Samsung-Tizen5-1.1.351.wgt",
+      "bytes": 14005856,
+      "sha256": "629098ed333a248f475d77877a564f460cf603328082f7c921d1875f1b67d5bd",
+      "target": "tizen5",
+      "product": "launcher",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-TV-Samsung-Tizen5-1.1.351.wgt"
+    },
+    {
+      "file": "Morph-TV-LG-1.1.351.ipk",
+      "bytes": 13324286,
+      "sha256": "a5262c02475cfeefa0c85921284030bb7c36c0cf664a5b256d6e4605291dfb17",
+      "target": "webos",
+      "product": "launcher",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-TV-LG-1.1.351.ipk"
+    },
+    {
+      "file": "Morph-IPTV-Android-TV-1.1.351.apk",
+      "bytes": 16772136,
+      "sha256": "72bb2fd528a1dcd5424a1951426665a864897b252fe45963d5f5d668921c2974",
+      "target": "android",
+      "product": "iptv",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-IPTV-Android-TV-1.1.351.apk"
+    },
+    {
+      "file": "Morph-IPTV-tizen5-1.1.351.wgt",
+      "bytes": 5678737,
+      "sha256": "ed1ec7010dd7bce6931fd4484316e6c93aa318f85b181d1cc15b0d834e21b37f",
+      "target": "tizen5",
+      "product": "iptv",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-IPTV-tizen5-1.1.351.wgt"
+    },
+    {
+      "file": "Morph-IPTV-LG-1.1.351.ipk",
+      "bytes": 5657008,
+      "sha256": "e0b51ac865ef826203520851380a92963bf0e0feb1c3d5baff7937806f333a73",
+      "target": "webos",
+      "product": "iptv",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-IPTV-LG-1.1.351.ipk"
+    },
+    {
+      "file": "Morph-Bridge-Android-TV-1.1.351.apk",
+      "bytes": 1408057,
+      "sha256": "2fb7a8cdb71e2aca89ad970f8d245072b6cb6363ef27d02559ce649021b9e0c0",
+      "target": "android",
+      "product": "bridge",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-Bridge-Android-TV-1.1.351.apk"
+    },
+    {
+      "file": "Morph-Bridge-LG-1.1.351.ipk",
+      "bytes": 819482,
+      "sha256": "eebe35501df03d750ea589c09f6064cddc5294b6ddcf6fca7dfe543bb05c7a53",
+      "target": "webos",
+      "product": "bridge",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-Bridge-LG-1.1.351.ipk"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.351.apk",
+      "bytes": 86549426,
+      "sha256": "0032a7a4bd4b7a3aa166086636acb8f69bb347d9a5c50db9ad39de825561a921",
+      "target": "android",
+      "product": "phone",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-TV-Phone-1.1.351.apk"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.351-Setup.exe",
+      "bytes": 139023150,
+      "sha256": "b1f742b655379207b5264efed3d1f00b4097cd62707d1e5603b5f25361f92225",
+      "target": "windows",
+      "product": "desktop",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-Launcher-PC-1.1.351-Setup.exe"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.351-universal.dmg",
+      "bytes": 245328675,
+      "sha256": "fd8434f76852129687b078f96d7aa58a455325841e7f923b26568605348600b7",
+      "target": "mac",
+      "product": "desktop",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-Launcher-Mac-1.1.351-universal.dmg"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.351-universal.zip",
+      "bytes": 237669153,
+      "sha256": "50eb507c4f3b497568647a9b62ff47826417f47de138d957c9fe0cf93fae2e7e",
+      "target": "mac",
+      "product": "desktop",
+      "version": "1.1.351",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.351/Morph-Launcher-Mac-1.1.351-universal.zip"
     }
   ]
 }

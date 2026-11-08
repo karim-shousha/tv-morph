@@ -1,0 +1,180 @@
+{
+  "version": "1.1.351",
+  "scope": [
+    "Android TV / Google TV / Fire OS",
+    "Samsung Tizen 5",
+    "LG webOS",
+    "Windows",
+    "macOS Intel and Apple Silicon",
+    "Android phone"
+  ],
+  "tizen234Unchanged": true,
+  "experimentalSelectionRemoved": true,
+  "profileDownFixed": true,
+  "settingsThemeTests": [
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "android",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "samsung",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 9
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1920,
+      "height": 1080,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1280,
+      "height": 720,
+      "lang": "ar",
+      "themes": 32,
+      "sections": 8
+    },
+    {
+      "engine": "current",
+      "variant": "lg",
+      "width": 1280,
+      "height": 720,
+      "lang": "en",
+      "themes": 32,
+      "sections": 8
+    }
+  ],
+  "windowsMacRuntime": {
+    "windowsMacIdentical": true,
+    "profileFixed": true,
+    "experimentalSelectionRemoved": true,
+    "files": [
+      {
+        "file": "focus.js",
+        "sha256": "4a356fbd64cf7c2e84aeb2525c946e72a4ee32ea605c25d81c8eaa2bc0871757"
+      },
+      {
+        "file": "settings-nav.js",
+        "sha256": "e419fae9dfd63a8184b88827b63e8879f9c437f3189fefbb56fe3166f0637f22"
+      },
+      {
+        "file": "settings-catalog.js",
+        "sha256": "8f3136ee7911f3d74ee01bec1b3cb85177d20c4618e29b45e1141de8d76ccaa3"
+      },
+      {
+        "file": "theme-packs.js",
+        "sha256": "122cb29332cc2ac70c39ee36d3a492db7da8a6b7b0e2943392113899b296588d"
+      },
+      {
+        "file": "packs-tv.js",
+        "sha256": "5b8e5c963c8f379bdb3fd08b0b0956440903223a99f7b5ff2917f737f9e38ec1"
+      },
+      {
+        "file": "performance.js",
+        "sha256": "72071e05421e8ac58e47f7245d4e2a5e4474e83167896b9b4413ba13c8ea45d9"
+      },
+      {
+        "file": "reference.js",
+        "sha256": "d59195d5b7a9905d06a2b568b9ffc0d99bd2129946b69928f2bd9809688a2183"
+      },
+      {
+        "file": "reference.css",
+        "sha256": "569abbf902f5ec13ce79282e671b087bb69b66c3449a089c6a22b9aa8034384c"
+      },
+      {
+        "file": "iptv/app.js",
+        "sha256": "24505ba534383bde0c308d88be7007dd01ab9c0a294f70478125f39bc271cd7e"
+      },
+      {
+        "file": "iptv/media-theme.js",
+        "sha256": "b38c7cec7099942e6f1eb8741d1a89ae361d85d737ec7117f81a1f3f56288be5"
+      },
+      {
+        "file": "iptv/cinematic-theme.js",
+        "sha256": "2f81c4ffb9a79a42f5ce2d6886c9ed4ee5cb9eb9c111319f979638360c329768"
+      }
+    ]
+  },
+  "macCI": "https://github.com/karim-shousha/tv-morph/actions/runs/42511978536",
+  "physicalLGVerified": false,
+  "physicalTizenVerified": false,
+  "phoneTvInstallersBundled": false,
+  "phoneBytes": 86549426
+}
