@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.337",
+      "version": "1.1.338",
       "download": "/download/phone",
-      "noteAr": "إصلاح فتح IPTV وشهادات تثبيت سامسونج وتحسين تجهيز Bridge.",
-      "noteEn": "Restores IPTV and Samsung installation assets and improves Bridge setup guidance.",
+      "noteAr": "إصلاح التثبيت من جديد على Android TV وتحديد ملف Samsung الصحيح وتحسين تشغيل مساعد Bridge.",
+      "noteEn": "Fixes Android TV reinstallation, Samsung WGT selection and Bridge helper startup.",
       "channel": "preview",
-      "versionCode": 364
+      "versionCode": 365
     },
     {
       "id": "android",
@@ -226,14 +226,14 @@
       "versionCode": 351
     },
     {
-      "file": "Morph-TV-Phone-1.1.337.apk",
-      "version": "1.1.337",
-      "versionCode": 364,
+      "file": "Morph-TV-Phone-1.1.338.apk",
+      "version": "1.1.338",
+      "versionCode": 365,
       "bytes": 169981411,
-      "sha256": "25b067e029d14e79c91d6ad605e790b1ab3266fe266257325e0fd0a301552f13",
+      "sha256": "4328b7a76bac549591f2e28695619d57d2605ea6915871eaa6293d78b39e53c5",
       "product": "phone",
-      "name": "Morph-TV-Phone-1.1.337",
-      "download": "https://github.com/karim-shousha/tv-morph/releases/download/morph-fixes-v1.1.337/Morph-TV-Phone-1.1.337.apk"
+      "name": "Morph-TV-Phone-1.1.338",
+      "download": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.338/Morph-TV-Phone-1.1.338.apk"
     },
     {
       "name": "Morph-TV-Legacy-1.1.325",

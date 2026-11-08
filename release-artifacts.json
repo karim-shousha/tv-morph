@@ -452,6 +452,14 @@
       "bytes": 818786,
       "sha256": "2bf423ed5ae5c7b0b095d6ec5294f24fb77423e597e7703207f7f0f621466c37",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.326/Morph-Bridge-Samsung-1.1.326.wgt"
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.338.apk",
+      "version": "1.1.338",
+      "versionCode": 365,
+      "bytes": 169981411,
+      "sha256": "4328b7a76bac549591f2e28695619d57d2605ea6915871eaa6293d78b39e53c5",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.338/Morph-TV-Phone-1.1.338.apk"
     }
   ]
 }
