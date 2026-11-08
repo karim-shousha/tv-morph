@@ -93,3 +93,4 @@ ffc4d7e84e95c1bd1a5f57722a3e95038e1d32dfe3564dd8dd393f7f440ca507  Morph-Launcher
 609d48fcb7e4e2196d1e9bf82e88914aed5d86fe5ad54261af6be9bcaa850d99  Morph-TV-Phone-1.1.331.apk
 
 d053765c527ca73b5b0f348516c04c58dc3ecab60377d8d8489e890aaa854e8f  Morph-TV-Phone-1.1.332.apk
+8d0b1fe61ecfd95edaf6dbaf018b7ba0079d3552c7b8b9cbdf719ae950e3d9af  Morph-TV-Phone-1.1.333.apk

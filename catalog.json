@@ -7,12 +7,12 @@
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.332",
+      "version": "1.1.333",
       "download": "/download/phone",
-      "noteAr": "Bridge يفتح تجهيز المساعد من إشعار مباشر عند تشغيل تطبيق على التلفزيون، بدل اللودينج أو الرسالة غير الواضحة.",
-      "noteEn": "Bridge opens the exact helper setup from a direct notification when a TV app is selected.",
+      "noteAr": "إصلاح عاجل: واجهة الموبايل تُضم الآن كاملة بعد التحديث؛ لا تظهر شاشة ملف غير موجود.",
+      "noteEn": "Urgent packaging repair: the full mobile interface is present after updating.",
       "channel": "preview",
-      "versionCode": 359
+      "versionCode": 360
     },
     {
       "id": "android",
@@ -226,14 +226,14 @@
       "versionCode": 351
     },
     {
-      "file": "Morph-TV-Phone-1.1.332.apk",
-      "version": "1.1.332",
-      "versionCode": 359,
-      "bytes": 72705119,
-      "sha256": "d053765c527ca73b5b0f348516c04c58dc3ecab60377d8d8489e890aaa854e8f",
+      "file": "Morph-TV-Phone-1.1.333.apk",
+      "version": "1.1.333",
+      "versionCode": 360,
+      "bytes": 115709916,
+      "sha256": "8d0b1fe61ecfd95edaf6dbaf018b7ba0079d3552c7b8b9cbdf719ae950e3d9af",
       "product": "phone",
-      "name": "Morph-TV-Phone-1.1.332",
-      "download": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.332/Morph-TV-Phone-1.1.332.apk"
+      "name": "Morph-TV-Phone-1.1.333",
+      "download": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.333/Morph-TV-Phone-1.1.333.apk"
     },
     {
       "name": "Morph-TV-Legacy-1.1.325",
@@ -1534,6 +1534,17 @@
       "sha256": "609d48fcb7e4e2196d1e9bf82e88914aed5d86fe5ad54261af6be9bcaa850d99",
       "download": "/Morph-TV-Phone-1.1.331.apk",
       "versionCode": 358,
+      "archived": true
+    },
+    {
+      "file": "Morph-TV-Phone-1.1.332.apk",
+      "version": "1.1.332",
+      "versionCode": 359,
+      "bytes": 72705119,
+      "sha256": "d053765c527ca73b5b0f348516c04c58dc3ecab60377d8d8489e890aaa854e8f",
+      "product": "phone",
+      "name": "Morph-TV-Phone-1.1.332",
+      "download": "/Morph-TV-Phone-1.1.332.apk",
       "archived": true
     }
   ]
