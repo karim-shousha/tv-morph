@@ -48,3 +48,19 @@ html body[data-product] .mobile-installer-note p,html body[data-product] .mobile
 html[data-theme=light] body[data-product] .feature,html[data-theme=light] body[data-product] .faq details,html[data-theme=light] body[data-product] .contact-form,html[data-theme=light] body[data-product] .support-card{background:var(--help-panel);color:var(--help-text);border-color:var(--help-line)}
 
 .november-plus-offer{margin-top:28px;margin-bottom:24px;padding:24px 28px;border:1px solid var(--help-line);border-radius:20px;background:var(--help-panel);color:var(--help-text)}.november-plus-offer[hidden]{display:none}.november-plus-offer h2{font-size:clamp(22px,3vw,30px);line-height:1.5;margin:10px 0}.november-plus-offer p{color:var(--help-muted);line-height:1.8}.november-plus-offer small{display:block;color:var(--help-accent);line-height:1.8}.november-plus-offer .btn{margin-top:16px}@media(max-width:680px){.november-plus-offer{padding:20px}}
+
+/* Expanded mobile navigation stays inside an auto-height header, never over the hero. */
+@media(max-width:1000px){
+ html body[data-product] .header{height:auto;min-height:76px;overflow:visible}
+ html body[data-product] .header .nav{height:auto;flex-wrap:wrap;align-items:center}
+ html body[data-product] .header .header-navigation{display:none!important;position:static!important;inset:auto;width:100%;max-width:100%;flex:0 0 100%;order:3;margin:12px 0 0;padding:14px 0 18px;max-height:70vh;overflow-y:auto;overflow-x:hidden;align-items:stretch;gap:14px;float:none;transform:none}
+ html body[data-product] .header.navigation-open .header-navigation{display:flex!important}
+ html body[data-product] .header .product-switcher{position:static;width:100%;min-width:0}
+ html body[data-product] .header .nav-products,html body[data-product] .header .products-open .nav-products{display:grid!important;position:static!important;inset:auto!important;width:100%;min-width:0;max-width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:0;padding:8px;border:1px solid var(--help-line);border-radius:14px;background:var(--help-panel);box-shadow:none;transform:none}
+ html body[data-product] .header .nav-products a{min-width:0;width:100%;margin:0;padding:12px 8px;min-height:48px;white-space:normal;overflow-wrap:anywhere;justify-content:flex-start;gap:8px;color:var(--help-text);background:transparent;font-size:13px}
+ html body[data-product] .header .nav-products a svg{width:21px;height:21px;flex:0 0 21px;color:var(--help-accent)}
+ html body[data-product] .header .nav-utilities{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:4px;padding:8px;margin:0;border:1px solid var(--help-line);border-radius:14px;background:var(--help-panel)}
+ html body[data-product] .header .nav-utilities a{min-width:0;white-space:normal;min-height:46px;padding:10px 8px;color:var(--help-text);gap:8px;background:transparent}
+ html body[data-product] .header .nav-utilities a svg{width:18px;height:18px;flex:0 0 18px;color:var(--help-accent)}
+ html body[data-product] .header .nav-products a.active,html body[data-product] .header .nav-products a:hover{background:var(--help-soft);color:var(--help-accent)}
+}
