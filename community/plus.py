@@ -7,10 +7,21 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode, urlsplit
 from urllib.error import URLError
 
-PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}}
+PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}, 'nov26_single': {'usd': 100, 'devices': 1}, 'nov26_duo': {'usd': 200, 'devices': 2}}
+PROMO_PLANS = frozenset({'nov26_single', 'nov26_duo'})
+PROMO_START = 1794186000  # November 9, 2026
+PROMO_END = 1796101200  # December 1, 2026 00:00 America/New_York
+def promo_active(now=None):
+    now=time.time() if now is None else now
+    return PROMO_START <= now < PROMO_END
+
+def public_plans(now=None):
+    ids={'single':'nov26_single','family':'nov26_duo'} if promo_active(now) else {'single':'single','family':'family'}
+    return {key:dict(PLANS[value], id=value, egp=(50 if key=='single' else 100) if promo_active(now) else (120 if key=='single' else 250)) for key,value in ids.items()}
+
 # Fixed launch window, decided by server time. Existing licenses stay lifetime.
 OFFER_START = 1793046384  # 2026-10-26 20:26:24 UTC
-OFFER_END = 1795724784    # 2026-11-26 20:26:24 UTC
+OFFER_END = 1796101200    # 2026-11-26 20:26:24 UTC
 ANNUAL_SECONDS = 365 * 24 * 60 * 60
 GRANT_PLANS = dict(PLANS, owner={'devices': None})
 FREE = ['islamic-makkah', 'islamic-madinah', 'islamic-quds', 'ac-milan-legends', 'gta6', 'blue-cinema', 'blue', 'night', 'emerald', 'violet', 'ahly', 'zamalek', 'ismaily', 'saudi-national', 'egypt-national', 'madrid', 'barcelona']
@@ -117,18 +128,26 @@ class Plus:
     def checkout(self, plan, expected=None):
         if not self.enabled():raise ValueError('sales_not_enabled')
         if plan not in PLANS:raise ValueError('unknown_plan')
+        if plan in PROMO_PLANS and not promo_active():raise ValueError('offer_changed')
         oid=secrets.token_urlsafe(24);proof=secrets.token_urlsafe(32)
         now=int(time.time());entitlement='lifetime' if now < OFFER_END else 'annual'
         if expected is not None and expected != entitlement:raise ValueError('offer_changed')
         with self.db() as db:db.execute('INSERT INTO orders(id,proof,plan,license_hash,created,mode,entitlement) VALUES (?,?,?,?,?,?,?)',(oid,self.digest(proof),plan,self.digest(self.code(oid)),now,os.environ.get('MORPH_PLUS_MODE','test'),entitlement))
-        price=os.environ['MORPH_STRIPE_'+plan.upper()+'_PRICE']
-        info=self.stripe('prices/'+price)
-        if info.get('unit_amount')!=PLANS[plan]['usd'] or info.get('currency')!='usd' or info.get('type')!='one_time' or not info.get('active'):raise ValueError('price_configuration_mismatch')
-        session=self.stripe('checkout/sessions',{'mode':'payment','line_items[0][price]':price,'line_items[0][quantity]':1,
-          'client_reference_id':oid,'metadata[morph_order]':oid,'metadata[morph_entitlement]':entitlement,'payment_intent_data[metadata][morph_order]':oid,
-          'custom_text[submit][message]':('Morph TV Plus: lifetime activation. One payment, no annual renewal. Launch offer terms are fixed when this checkout opens.' if entitlement=='lifetime' else 'Morph TV Plus: 365 days of activation from confirmed payment. Manual annual renewal; no automatic recurring charge.'),
+        values={'mode':'payment','line_items[0][quantity]':1,
+          'client_reference_id':oid,'metadata[morph_order]':oid,'metadata[morph_entitlement]':entitlement,'metadata[morph_plan]':plan,'payment_intent_data[metadata][morph_order]':oid,
+          'custom_text[submit][message]':('Morph TV Plus: lifetime activation. One payment, no annual renewal.' if entitlement=='lifetime' else 'Morph TV Plus: 365 days. Manual renewal; no automatic charge.'),
           'success_url':self.origin+'/plus.html#order='+oid+'&proof='+proof,
-          'cancel_url':self.origin+'/plus.html','billing_address_collection':'auto'},'morph-plus-'+oid)
+          'cancel_url':self.origin+'/plus.html','billing_address_collection':'auto'}
+        if plan in PROMO_PLANS:
+            values.update({'line_items[0][price_data][currency]':'usd','line_items[0][price_data][unit_amount]':PLANS[plan]['usd'],
+              'line_items[0][price_data][product_data][name]':'Morph TV Plus November offer - '+str(PLANS[plan]['devices'])+' TV',
+              'expires_at':now+1800})
+        else:
+            price=os.environ['MORPH_STRIPE_'+plan.upper()+'_PRICE']
+            info=self.stripe('prices/'+price)
+            if info.get('unit_amount')!=PLANS[plan]['usd'] or info.get('currency')!='usd' or info.get('type')!='one_time' or not info.get('active'):raise ValueError('price_configuration_mismatch')
+            values['line_items[0][price]']=price
+        session=self.stripe('checkout/sessions',values,'morph-plus-'+oid)
         if not str(session.get('url','')).startswith('https://checkout.stripe.com/'):raise ValueError('invalid_checkout_url')
         with self.db() as db:db.execute('UPDATE orders SET session=? WHERE id=?',(session['id'],oid))
         return {'checkout':session['url'],'order':oid,'proof':proof,'entitlement':entitlement}
@@ -141,7 +160,7 @@ class Plus:
             if not row or row['session']!=session_id or row['source']!='stripe':raise ValueError('order_mismatch')
             plan=PLANS[row['plan']];items=session.get('line_items',{}).get('data',[])
             if session.get('payment_status')!='paid':return
-            if session.get('mode')!='payment' or session.get('currency')!='usd' or session.get('amount_total')!=plan['usd'] or len(items)!=1 or items[0].get('quantity')!=1 or items[0].get('price',{}).get('id')!=os.environ['MORPH_STRIPE_'+row['plan'].upper()+'_PRICE']:raise ValueError('payment_mismatch')
+            if session.get('mode')!='payment' or session.get('currency')!='usd' or session.get('amount_total')!=plan['usd'] or len(items)!=1 or items[0].get('quantity')!=1 or (row['plan'] not in PROMO_PLANS and items[0].get('price',{}).get('id')!=os.environ['MORPH_STRIPE_'+row['plan'].upper()+'_PRICE']) or (row['plan'] in PROMO_PLANS and (session.get('metadata',{}).get('morph_plan')!=row['plan'] or items[0].get('price',{}).get('unit_amount')!=plan['usd'])):raise ValueError('payment_mismatch')
             if session.get('livemode') != (os.environ.get('MORPH_PLUS_MODE','test')=='live'):raise ValueError('payment_mode_mismatch')
             if row['mode'] != os.environ.get('MORPH_PLUS_MODE','test'):raise ValueError('payment_mode_mismatch')
             # Replay must not extend an annual license. Sessions opened during
@@ -324,7 +343,7 @@ class Plus:
             if not any(f['file']==filename for p in manifest['packs'] for f in p['files']) and not any(f['file']==filename for f in manifest.get('legacyFiles',[])):handler.send_json(404,{'error':'not_found'});return True
             handler.send_response(200);handler.send_header('Content-Type','image/webp');handler.send_header('Cache-Control','no-store');handler.send_header('X-Accel-Redirect','/_artifacts/theme-packs/'+filename);handler.end_headers();return True
         if handler.command=='GET' and path=='/api/plus/plans':
-            handler.send_json(200,{'enabled':self.enabled(),'plans':PLANS,'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test'),'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True}});return True
+            handler.send_json(200,{'enabled':self.enabled(),'plans':public_plans(),'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test'),'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True,'promotion':promo_active(),'promotionEndsAt':PROMO_END,'timeZone':'America/New_York'}});return True
         if handler.command!='POST':handler.send_json(405,{'error':'method_not_allowed'});return True
         try:
             n=int(handler.headers.get('Content-Length','0'))
