@@ -6,9 +6,150 @@
     "tizen5 passed",
     "webos passed"
   ],
-  "settingsQA": [],
-  "published": false,
+  "settingsQA": [
+    {
+      "variant": "android",
+      "theme": "night",
+      "selected": "rgb(33, 43, 69)",
+      "expected": "rgb(33, 43, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "android",
+      "theme": "amber",
+      "selected": "rgb(58, 48, 41)",
+      "expected": "rgb(58, 48, 41)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "android",
+      "theme": "emerald",
+      "selected": "rgb(25, 56, 53)",
+      "expected": "rgb(25, 56, 53)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "android",
+      "theme": "violet",
+      "selected": "rgb(47, 40, 69)",
+      "expected": "rgb(47, 40, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "android",
+      "theme": "ahly",
+      "selected": "rgb(58, 23, 37)",
+      "expected": "rgb(58, 23, 37)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "samsung",
+      "theme": "night",
+      "selected": "rgb(33, 43, 69)",
+      "expected": "rgb(33, 43, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "samsung",
+      "theme": "amber",
+      "selected": "rgb(58, 48, 41)",
+      "expected": "rgb(58, 48, 41)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "samsung",
+      "theme": "emerald",
+      "selected": "rgb(25, 56, 53)",
+      "expected": "rgb(25, 56, 53)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "samsung",
+      "theme": "violet",
+      "selected": "rgb(47, 40, 69)",
+      "expected": "rgb(47, 40, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "samsung",
+      "theme": "ahly",
+      "selected": "rgb(58, 23, 37)",
+      "expected": "rgb(58, 23, 37)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "lg",
+      "theme": "night",
+      "selected": "rgb(33, 43, 69)",
+      "expected": "rgb(33, 43, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "lg",
+      "theme": "amber",
+      "selected": "rgb(58, 48, 41)",
+      "expected": "rgb(58, 48, 41)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "lg",
+      "theme": "emerald",
+      "selected": "rgb(25, 56, 53)",
+      "expected": "rgb(25, 56, 53)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "lg",
+      "theme": "violet",
+      "selected": "rgb(47, 40, 69)",
+      "expected": "rgb(47, 40, 69)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    },
+    {
+      "variant": "lg",
+      "theme": "ahly",
+      "selected": "rgb(58, 23, 37)",
+      "expected": "rgb(58, 23, 37)",
+      "prayer": "Shown",
+      "matches": "Shown"
+    }
+  ],
+  "published": true,
   "phoneVersion": "1.1.364",
   "tizenVersion": "1.1.404",
-  "oldPackagesExcludedFromImage": true
+  "oldPackagesExcludedFromImage": true,
+  "bridgeCodeQA": [
+    {
+      "variant": "android",
+      "upToCode": true,
+      "downToConnect": true,
+      "upAfterSixDigits": true
+    },
+    {
+      "variant": "samsung",
+      "upToCode": true,
+      "downToConnect": true,
+      "upAfterSixDigits": true
+    },
+    {
+      "variant": "lg",
+      "upToCode": true,
+      "downToConnect": true,
+      "upAfterSixDigits": true
+    }
+  ]
 }
