@@ -569,7 +569,7 @@
     }
   },
   "desktop": {
-    "version": "1.1.352",
+    "version": "1.1.366",
     "windows": "/download/windows",
     "mac": "/download/mac",
     "releaseManifest": "/desktop-release.json",
@@ -577,8 +577,8 @@
       "x64",
       "arm64"
     ],
-    "windowsVersion": "1.1.352",
-    "macVersion": "1.1.352"
+    "windowsVersion": "1.1.366",
+    "macVersion": "1.1.366"
   },
   "bridge": {
     "version": "1.1.352",
