@@ -1,7 +1,7 @@
 name: Build and verify Morph Launcher for Mac
 on:
   push:
-    branches: [codex/release364-desktop-review]
+    branches: [codex/desktop-macos]
     paths: [desktop-build/**, .github/workflows/desktop-macos.yml]
   workflow_dispatch:
 concurrency:
@@ -9,6 +9,7 @@ concurrency:
   cancel-in-progress: true
 permissions:
   contents: read
+  actions: read
 jobs:
   build:
     runs-on: macos-15
@@ -34,9 +35,29 @@ jobs:
           npm ci --no-audit --no-fund
           npx playwright install chromium
           command -v ffmpeg || brew install ffmpeg
-      - name: Build one Mac application for Apple Silicon and Intel
+      - uses: actions/download-artifact@v4
+        with:
+          name: morph-mac-universal
+          run-id: 42577811803
+          github-token: ${{ github.token }}
+          path: desktop/dist
+      - name: Extract unchanged packaged application
+        run: ditto -x -k desktop/dist/Morph-Launcher-Mac-1.1.366-universal.zip desktop/dist/mac-universal
+      - name: Verify packaged runtime matches the final source snapshot byte for byte
         working-directory: desktop
-        run: npx electron-builder --mac dmg zip --universal --publish never
+        run: |
+          node - <<'JS'
+          const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert'),asar=require('@electron/asar');
+          const target=fs.mkdtempSync(path.join(os.tmpdir(),'morph-asar-verify-'));
+          asar.extractAll('dist/mac-universal/Morph Launcher.app/Contents/Resources/app.asar',target);
+          let count=0;
+          function walk(dir){for(const n of fs.readdirSync(dir)){const p=path.join(dir,n);if(fs.statSync(p).isDirectory())walk(p);else{assert(fs.readFileSync(p).equals(fs.readFileSync(path.join(target,p))),'Packaged frontend differs: '+p);count++;}}}
+          walk('build/ui');
+          for(const n of ['main.cjs','preload.cjs','lan.cjs','matches.cjs','vpn.cjs','updater.cjs','cleaner-files.cjs','local-media-response.cjs'])assert(fs.readFileSync(n).equals(fs.readFileSync(path.join(target,n))),n);
+          assert.equal(JSON.parse(fs.readFileSync(path.join(target,'package.json'))).version,'1.1.366');
+          console.log('Verified '+count+' packaged UI files and all native modules against final source');
+          fs.rmSync(target,{recursive:true,force:true});
+          JS
       - name: Run application and mouse/playback regression on Apple Silicon
         working-directory: desktop
         env:
