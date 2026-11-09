@@ -80,7 +80,6 @@ jobs:
           path: desktop/test-output/*.json
           retention-days: 7
   verify-intel:
-    needs: build
     runs-on: macos-15-intel
     timeout-minutes: 20
     steps:
@@ -91,6 +90,8 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: morph-mac-universal
+          run-id: 42577811803
+          github-token: ${{ github.token }}
           path: downloads
       - name: Extract runtime tests and universal Mac application
         run: |
