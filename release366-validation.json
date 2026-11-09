@@ -1,0 +1,14 @@
+{
+  "version": "1.1.366",
+  "scope": "Settings colours, Shown/Hidden labels, program-card arrow placement/colour; LG movement included",
+  "bridgeCodeNavigation": [
+    "android passed",
+    "tizen5 passed",
+    "webos passed"
+  ],
+  "settingsQA": [],
+  "published": false,
+  "phoneVersion": "1.1.364",
+  "tizenVersion": "1.1.404",
+  "oldPackagesExcludedFromImage": true
+}

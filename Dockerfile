@@ -6,16 +6,6 @@ RUN python /fetch-release-artifacts.py
 
 
 
-FROM alpine:3.22 AS phone-artifact
-
-WORKDIR /parts
-
-COPY artifact-parts/Morph-TV-Phone-1.1.320.apk.part-* ./
-
-RUN cat ./* > /Morph-TV-Phone-1.1.320.apk && echo "910d4a8e3408cacebc2fb860da6637128bed5e64db3c39ccdbd6a9866be28c0e  /Morph-TV-Phone-1.1.320.apk" | sha256sum -c -
-
-
-
 FROM nginx:stable-alpine
 
 RUN apk add --no-cache python3
@@ -44,7 +34,6 @@ COPY landing-assets/ /usr/share/nginx/html/landing-assets/
 
 COPY q/ /usr/share/nginx/html/q/
 
-COPY Morph-TV-Adhan-Voices-v1.zip Morph-Remote-1.1.305.apk /usr/share/nginx/html/
 
 COPY release-notes-1.1.308.json /usr/share/nginx/html/
 
@@ -54,7 +43,6 @@ COPY release-notes-1.1.310.json /usr/share/nginx/html/
 
 COPY release-notes-1.1.312.json /usr/share/nginx/html/
 
-COPY --from=phone-artifact /Morph-TV-Phone-1.1.320.apk /usr/share/nginx/html/
 
 RUN nginx -t
 
@@ -72,11 +60,9 @@ COPY release-notes-1.1.313.json /usr/share/nginx/html/
 
 
 
-COPY Morph-TV-Android-TV-1.1.320.apk Morph-TV-LG-1.1.320.ipk Morph-TV-Samsung-Tizen2-1.1.320.wgt Morph-TV-Samsung-Tizen3-1.1.320.wgt Morph-TV-Samsung-Tizen4-1.1.320.wgt Morph-TV-Samsung-Tizen5-1.1.320.wgt Morph-IPTV-LG-1.1.320.ipk Morph-IPTV-tizen4-1.1.320.wgt Morph-IPTV-tizen5-1.1.320.wgt Morph-IPTV-tizen2-1.1.320.wgt Morph-IPTV-tizen3-1.1.320.wgt Morph-IPTV-Android-TV-1.1.320.apk Morph-TV-Legacy-1.1.320.apk Morph-IPTV-Legacy-1.1.320.apk Morph-Bridge-Android-TV-1.1.320.apk Morph-Bridge-Samsung-1.1.320.wgt Morph-Bridge-LG-1.1.320.ipk Cleaner-Android-1.1.320.apk Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt Cleaner-LG-1.1.320.ipk Morph-TV-Install-Kit-1.1.320.zip /usr/share/nginx/html/
 
 COPY release-notes-1.1.320.json /usr/share/nginx/html/
 
-COPY releases/1.1.320/ /usr/share/nginx/html/releases/1.1.320/
 
 
 
@@ -88,11 +74,14 @@ COPY product-pages.js product-pages.css /usr/share/nginx/html/
 
 
 
+COPY Morph-TV-Adhan-Voices-v1.zip Morph-Remote-1.1.305.apk /usr/share/nginx/html/
+
 COPY --from=verified-release /artifacts/ /usr/share/nginx/html/
 
 COPY release-notes-1.1.321.json /usr/share/nginx/html/
 
-COPY releases/1.1.321/ /usr/share/nginx/html/releases/1.1.321/
 
 
 COPY release352-validation.json /usr/share/nginx/html/
+
+COPY release366-validation.json /usr/share/nginx/html/

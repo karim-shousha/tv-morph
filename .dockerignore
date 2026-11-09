@@ -52,22 +52,6 @@
 !site-navigation.js
 !site-themes.css
 !site-studio.css
-!Morph-TV-Phone-1.1.307.apk
-!Morph-TV-Legacy-1.1.305.apk
-!Morph-TV-Android-TV-1.1.307.apk
-!Morph-TV-LG-1.1.307.ipk
-!Morph-TV-Samsung-Tizen2-1.1.307.wgt
-!Morph-TV-Samsung-Tizen3-1.1.307.wgt
-!Morph-TV-Samsung-Tizen4-1.1.307.wgt
-!Morph-TV-Samsung-Tizen5-1.1.307.wgt
-!Morph-IPTV-LG-1.1.307.ipk
-!Morph-IPTV-tizen4-1.1.307.wgt
-!Morph-IPTV-tizen5-1.1.307.wgt
-!Morph-IPTV-tizen2-1.1.307.wgt
-!Morph-IPTV-tizen3-1.1.307.wgt
-!Morph-IPTV-Android-TV-1.1.307.apk
-!Morph-Remote-1.1.305.apk
-!Morph-IPTV-Legacy-1.1.305.apk
 !Morph-TV-Install-Kit-1.1.307.zip
 !community/
 !community/**
@@ -114,19 +98,6 @@ releases/*
 !release-notes-1.1.306.json
 
 # Current verified release; retain previous published packages above.
-!Morph-TV-Phone-1.1.308.apk
-!Morph-TV-Android-TV-1.1.308.apk
-!Morph-TV-LG-1.1.308.ipk
-!Morph-TV-Samsung-Tizen2-1.1.308.wgt
-!Morph-TV-Samsung-Tizen3-1.1.308.wgt
-!Morph-TV-Samsung-Tizen4-1.1.308.wgt
-!Morph-TV-Samsung-Tizen5-1.1.308.wgt
-!Morph-IPTV-LG-1.1.308.ipk
-!Morph-IPTV-tizen4-1.1.308.wgt
-!Morph-IPTV-tizen5-1.1.308.wgt
-!Morph-IPTV-tizen2-1.1.308.wgt
-!Morph-IPTV-tizen3-1.1.308.wgt
-!Morph-IPTV-Android-TV-1.1.308.apk
 !Morph-TV-Install-Kit-1.1.308.zip
 !release-notes-1.1.308.json
 !releases/1.1.308/
@@ -134,79 +105,19 @@ releases/*
 
 !plus-manual-payments.js
 !release-notes-phone-1.1.309.json
-!Morph-TV-Phone-1.1.309.apk
 
-!Morph-TV-Android-TV-1.1.310.apk
-!Morph-TV-LG-1.1.310.ipk
-!Morph-TV-Samsung-Tizen2-1.1.310.wgt
-!Morph-TV-Samsung-Tizen3-1.1.310.wgt
-!Morph-TV-Samsung-Tizen4-1.1.310.wgt
-!Morph-TV-Samsung-Tizen5-1.1.310.wgt
-!Morph-IPTV-LG-1.1.310.ipk
-!Morph-IPTV-tizen2-1.1.310.wgt
-!Morph-IPTV-tizen3-1.1.310.wgt
-!Morph-IPTV-tizen4-1.1.310.wgt
-!Morph-IPTV-tizen5-1.1.310.wgt
-!Morph-IPTV-Android-TV-1.1.310.apk
 !Morph-TV-Install-Kit-1.1.310.zip
-!Morph-TV-Phone-1.1.310.apk
 !release-notes-1.1.310.json
 !releases/1.1.310/**
 
-!Morph-IPTV-Android-TV-1.1.312.apk
-!Morph-IPTV-LG-1.1.312.ipk
-!Morph-IPTV-tizen2-1.1.312.wgt
-!Morph-IPTV-tizen3-1.1.312.wgt
-!Morph-IPTV-tizen4-1.1.312.wgt
-!Morph-IPTV-tizen5-1.1.312.wgt
-!Morph-TV-Android-TV-1.1.312.apk
 !Morph-TV-Install-Kit-1.1.312.zip
-!Morph-TV-LG-1.1.312.ipk
-!Morph-TV-Samsung-Tizen2-1.1.312.wgt
-!Morph-TV-Samsung-Tizen3-1.1.312.wgt
-!Morph-TV-Samsung-Tizen4-1.1.312.wgt
-!Morph-TV-Samsung-Tizen5-1.1.312.wgt
-!Morph-TV-Phone-1.1.312.apk
 !release-notes-1.1.312.json
 !releases/1.1.312/**
 
-!Morph-TV-Android-TV-1.1.313.apk
-!Morph-TV-LG-1.1.313.ipk
-!Morph-TV-Samsung-Tizen2-1.1.313.wgt
-!Morph-TV-Samsung-Tizen3-1.1.313.wgt
-!Morph-TV-Samsung-Tizen4-1.1.313.wgt
-!Morph-TV-Samsung-Tizen5-1.1.313.wgt
-!Morph-IPTV-LG-1.1.313.ipk
-!Morph-IPTV-tizen4-1.1.313.wgt
-!Morph-IPTV-tizen5-1.1.313.wgt
-!Morph-IPTV-tizen2-1.1.313.wgt
-!Morph-IPTV-tizen3-1.1.313.wgt
-!Morph-IPTV-Android-TV-1.1.313.apk
-!Morph-TV-Phone-1.1.313.apk
-!Morph-TV-Legacy-1.1.313.apk
-!Morph-IPTV-Legacy-1.1.313.apk
 !Morph-TV-Install-Kit-1.1.313.zip
 !release-notes-1.1.313.json
 !releases/1.1.313/**
 
-!Morph-TV-Android-TV-1.1.318.apk
-!Morph-TV-LG-1.1.318.ipk
-!Morph-TV-Samsung-Tizen2-1.1.318.wgt
-!Morph-TV-Samsung-Tizen3-1.1.318.wgt
-!Morph-TV-Samsung-Tizen4-1.1.318.wgt
-!Morph-TV-Samsung-Tizen5-1.1.318.wgt
-!Morph-IPTV-LG-1.1.318.ipk
-!Morph-IPTV-tizen4-1.1.318.wgt
-!Morph-IPTV-tizen5-1.1.318.wgt
-!Morph-IPTV-tizen2-1.1.318.wgt
-!Morph-IPTV-tizen3-1.1.318.wgt
-!Morph-IPTV-Android-TV-1.1.318.apk
-!Morph-TV-Phone-1.1.318.apk
-!Morph-TV-Legacy-1.1.318.apk
-!Morph-IPTV-Legacy-1.1.318.apk
-!Morph-Bridge-Android-TV-1.1.318.apk
-!Morph-Bridge-Samsung-1.1.318.wgt
-!Morph-Bridge-LG-1.1.318.ipk
 !Morph-TV-Install-Kit-1.1.318.zip
 !release-notes-1.1.318.json
 !releases/1.1.320/**
@@ -220,11 +131,7 @@ Morph-*-1.1.*.ipk
 Morph-*-1.1.*.zip
 artifact-parts/**
 releases/**
-!Morph-*-1.1.320.apk
-!Morph-*-1.1.320.wgt
-!Morph-*-1.1.320.ipk
 !Morph-*-1.1.320.zip
-!Morph-Remote-1.1.305.apk
 !artifact-parts/Morph-TV-Phone-1.1.320.apk.part-*
 !releases/1.1.320/
 !releases/1.1.320/**
@@ -233,19 +140,10 @@ releases/**
 !product-pages.css
 
 !release-notes-1.1.319.json
-!Cleaner-Android-1.1.319.apk
-!Cleaner-Samsung-Tizen2-and-newer-1.1.319.wgt
-!Cleaner-LG-1.1.319.ipk
 
 !release-notes-1.1.320.json
-!Cleaner-Android-1.1.320.apk
-!Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt
-!Cleaner-LG-1.1.320.ipk
 
 !release-notes-1.1.320.json
-!Cleaner-Android-1.1.320.apk
-!Cleaner-Samsung-Tizen2-and-newer-1.1.320.wgt
-!Cleaner-LG-1.1.320.ipk
 
 !release-artifacts.json
 !fetch-release-artifacts.py
@@ -256,3 +154,7 @@ releases/**
 !release351-validation.json
 
 !release352-validation.json
+
+!release366-validation.json
+
+!Morph-Remote-1.1.305.apk
