@@ -1,0 +1,18 @@
+{
+  "version": "1.1.367",
+  "android": "1.1.367",
+  "firetv": "same signed APK as Android",
+  "lg": "1.1.367",
+  "tizen5": "1.1.405",
+  "phone": "1.1.365",
+  "standaloneIptv": "1.1.353",
+  "checks": {
+    "themeCacheAnd18Scenes": true,
+    "nativeChannelCursor": true,
+    "standaloneNativeChannelCursor": true,
+    "phoneActivationReloadAndNoTvSeat": true,
+    "stableLicenseBackend": true
+  },
+  "physicalDevicesVerified": false,
+  "legacyUnchanged": true
+}

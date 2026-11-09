@@ -85,3 +85,5 @@ COPY release-notes-1.1.321.json /usr/share/nginx/html/
 COPY release352-validation.json /usr/share/nginx/html/
 
 COPY release366-validation.json /usr/share/nginx/html/
+
+COPY release367-validation.json /usr/share/nginx/html/
