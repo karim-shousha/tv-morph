@@ -7,8 +7,8 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode, urlsplit
 from urllib.error import URLError
 
-PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}, 'nov26_single': {'usd': 100, 'devices': 1}, 'nov26_duo': {'usd': 200, 'devices': 2}}
-PROMO_PLANS = frozenset({'nov26_single', 'nov26_duo'})
+PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}, 'nov26_single': {'usd': 100, 'devices': 1}, 'nov26_duo': {'usd': 200, 'devices': 2}, 'nov26_family': {'usd': 200, 'devices': 5}}
+PROMO_PLANS = frozenset({'nov26_single', 'nov26_duo', 'nov26_family'})
 PROMO_START = 1794186000  # November 9, 2026
 PROMO_END = 1796101200  # December 1, 2026 00:00 America/New_York
 def promo_active(now=None):
@@ -16,7 +16,7 @@ def promo_active(now=None):
     return PROMO_START <= now < PROMO_END
 
 def public_plans(now=None):
-    ids={'single':'nov26_single','family':'nov26_duo'} if promo_active(now) else {'single':'single','family':'family'}
+    ids={'single':'nov26_single','family':'nov26_family'} if promo_active(now) else {'single':'single','family':'family'}
     return {key:dict(PLANS[value], id=value, egp=(50 if key=='single' else 100) if promo_active(now) else (120 if key=='single' else 250)) for key,value in ids.items()}
 
 # Fixed launch window, decided by server time. Existing licenses stay lifetime.
