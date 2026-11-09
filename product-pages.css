@@ -22,3 +22,27 @@ html[data-theme=dark] body[data-product] .contact-form,html[data-theme=dark] bod
 /* Phone and desktop are the first two choices, on their own row. */
 @media(min-width:1001px){.hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hub-card>.product-visual{height:270px;padding-inline:40px}.hub-card .visual-mobile .visual-device{width:140px;transform:rotate(-8deg) translateY(55px)}}
 .collection-copy .collection-downloads{gap:12px}.collection-downloads .btn{padding-inline:18px;min-height:48px}.collection-explore{display:inline-block;margin-top:20px}.collection-copy .collection-platforms{margin-top:24px}
+
+/* Installation links and controls share the selected site palette. */
+html[data-theme=dark]{--help-panel:#10233b;--help-soft:#172f4b;--help-text:#f1f6ff;--help-muted:#b9cee5;--help-line:#426385;--help-accent:#87caff;--help-action:#2463eb}
+html[data-theme=light]{--help-panel:#fff;--help-soft:#eaf0fb;--help-text:#193352;--help-muted:#4e6381;--help-line:#ccd9ef;--help-accent:#174eaa;--help-action:#245ff1}
+html body[data-product] #main,html body[data-product] .product-page{color:var(--help-text);background:transparent}
+.platform-help{display:flex;flex-direction:column;gap:12px;margin-top:18px;padding-top:18px;border-top:1px solid var(--help-line);text-align:start}
+.guide-link{display:block;color:var(--help-accent);text-decoration:underline;text-underline-offset:4px;line-height:1.7;font-weight:600;overflow-wrap:anywhere}
+.platform-help .installation-video{padding:14px;margin:0;background:var(--help-soft);border:1px solid var(--help-line);color:var(--help-text);gap:10px;transform:none}
+.platform-help .installation-video-icon{width:34px;height:34px;flex-basis:34px}.platform-help .installation-video strong{font-size:15px}
+html body[data-product] .installation-video,html body[data-product] .guide,html body[data-product] .download-card,html body[data-product] .mobile-installer-note,html body[data-product] .mobile-download-summary,html body[data-product] .download-note{background:var(--help-panel);color:var(--help-text);border-color:var(--help-line)}
+html body[data-product] .installation-video small,html body[data-product] .guide-intro,html body[data-product] .download-card p,html body[data-product] .download-card small,html body[data-product] .format,html body[data-product] .guide-note,html body[data-product] .steps li,html body[data-product] .steps li strong{color:var(--help-muted)}
+html body[data-product] .btn:not(.primary),html body[data-product] .install-tab:not(.active),html body[data-product] .method-tabs button:not(.active){background:var(--help-soft);border-color:var(--help-line);color:var(--help-text)}
+html body[data-product] .btn.primary,html body[data-product] .install-tab.active,html body[data-product] .method-tabs button.active{background:var(--help-action);border-color:var(--help-action);color:#fff}
+html body[data-product] .text-button,html body[data-product] .guide-note a,html body[data-product] .download-note a{color:var(--help-accent)}
+html body[data-product] .android-release,html body[data-product] .code-box{background:var(--help-soft);color:var(--help-text);border-color:var(--help-line)}
+html body[data-product] .installation-video-arrow{color:var(--help-accent)}
+.platform-help a:focus-visible,.platform-help button:focus-visible{outline:3px solid var(--help-accent);outline-offset:4px}
+.product-download-group{min-width:0}.product-download-group .product-download{height:auto;min-height:120px}.product-download-group .platform-help{padding:16px;margin:0;border:1px solid var(--help-line);border-top:0;border-radius:0 0 16px 16px;background:var(--help-panel)}
+.product-download-group .product-download{border-radius:16px 16px 0 0}.download-card{min-width:0}.platform-help .installation-video>span:nth-child(2){min-width:0}
+@media(max-width:680px){.platform-help{gap:14px}.guide-link{min-height:32px}.platform-help .installation-video{flex-wrap:wrap}.platform-help .installation-video-arrow{display:none}}
+
+html body[data-product] .mobile-installer-note strong,html body[data-product] .mobile-download-summary h3,html body[data-product] .guide h3,html body[data-product] .steps li strong{color:var(--help-text)}
+html body[data-product] .mobile-installer-note p,html body[data-product] .mobile-download-summary>div{color:var(--help-muted)}
+html[data-theme=light] body[data-product] .feature,html[data-theme=light] body[data-product] .faq details,html[data-theme=light] body[data-product] .contact-form,html[data-theme=light] body[data-product] .support-card{background:var(--help-panel);color:var(--help-text);border-color:var(--help-line)}
