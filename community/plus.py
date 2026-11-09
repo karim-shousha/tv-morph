@@ -43,6 +43,12 @@ class Plus:
               session TEXT UNIQUE, payment TEXT UNIQUE, paid INTEGER NOT NULL DEFAULT 0, revoked INTEGER NOT NULL DEFAULT 0, created INTEGER NOT NULL);
              CREATE TABLE IF NOT EXISTS devices(license TEXT NOT NULL, device TEXT NOT NULL, name TEXT NOT NULL,
               token TEXT UNIQUE NOT NULL, created INTEGER NOT NULL, PRIMARY KEY(license,device));
+             CREATE TABLE IF NOT EXISTS device_bindings(license TEXT NOT NULL, binding TEXT NOT NULL, device TEXT NOT NULL, PRIMARY KEY(license,binding));
+             CREATE TABLE IF NOT EXISTS device_tokens(token TEXT PRIMARY KEY, license TEXT NOT NULL, device TEXT NOT NULL, created INTEGER NOT NULL);
+             CREATE TRIGGER IF NOT EXISTS remove_device_identity AFTER DELETE ON devices BEGIN
+              DELETE FROM device_tokens WHERE license=OLD.license AND device=OLD.device;
+              DELETE FROM device_bindings WHERE license=OLD.license AND device=OLD.device;
+             END;
              CREATE TABLE IF NOT EXISTS events(id TEXT PRIMARY KEY, created INTEGER NOT NULL);
              CREATE TABLE IF NOT EXISTS studios(token TEXT PRIMARY KEY, license TEXT NOT NULL, device TEXT NOT NULL,
               created INTEGER NOT NULL, UNIQUE(license,device));
@@ -88,7 +94,7 @@ class Plus:
         if value.scheme=='http' and value.hostname in ['localhost','127.0.0.1'] and not value.username and not value.password:return True
         # Packaged TV runtimes serialize file origins differently. Only the
         # code/token authenticated client endpoints accept these app origins.
-        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/devices','/api/plus/remove-device','/api/plus/deactivate','/api/plus/parent-reset']:return False
+        if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/bind-device','/api/plus/devices','/api/plus/remove-device','/api/plus/deactivate','/api/plus/parent-reset']:return False
         if value.username or value.password or value.query or value.fragment:return False
         if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview', 'com.morphtv.iptv']:return True
         return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview','app://com.morphtv.iptv','http://com.morphtv.iptv','morph://app']
@@ -225,15 +231,49 @@ class Plus:
         if row and (row['entitlement']=='lifetime' or row['expires'] is not None and row['expires']>int(time.time())):return row
         raise ValueError('invalid_license')
 
-    def activate(self, code, device, name):
+    def tv_device(self, db, token):
+        if not isinstance(token,str) or not re.fullmatch(r'[A-Za-z0-9_-]{32,128}',token):return None
+        digest=self.digest(token)
+        return db.execute("SELECT o.id,o.plan,o.source,d.device FROM devices d JOIN orders o ON o.id=d.license WHERE (d.token=? OR EXISTS(SELECT 1 FROM device_tokens t WHERE t.token=? AND t.license=d.license AND t.device=d.device)) AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0 AND (o.entitlement='lifetime' OR o.expires>?)",(digest,digest,os.environ.get('MORPH_PLUS_MODE','test'),int(time.time()))).fetchone()
+
+    def binding_hash(self, binding):
+        if not isinstance(binding,str) or not re.fullmatch(r'(?:android|tizen|lg|pc)_[a-f0-9]{64}',binding):raise ValueError('invalid_device_binding')
+        return self.digest('device-binding:'+binding)
+
+    def activate(self, code, device, name, binding=None):
         if not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',str(device)):raise ValueError('invalid_device')
-        token=secrets.token_urlsafe(32)
+        anchor=self.binding_hash(binding) if binding else None
+        token=secrets.token_urlsafe(32);now=int(time.time())
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE');row=self.lookup(db,code);oid=row['id']
-            old=db.execute('SELECT 1 FROM devices WHERE license=? AND device=?',(oid,device)).fetchone()
+            bound=db.execute('SELECT b.device FROM device_bindings b JOIN devices d ON d.license=b.license AND d.device=b.device WHERE b.license=? AND b.binding=?',(oid,anchor)).fetchone() if anchor else None
+            if bound:device=bound['device']
+            old=db.execute('SELECT token FROM devices WHERE license=? AND device=?',(oid,device)).fetchone()
             if not old and self.capacity(row) is not None and db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(oid,)).fetchone()[0]>=self.capacity(row):raise ValueError('device_limit')
-            db.execute('INSERT INTO devices VALUES (?,?,?,?,?) ON CONFLICT(license,device) DO UPDATE SET token=excluded.token,name=excluded.name',(oid,device,str(name)[:60],self.digest(token),int(time.time())))
-        return {'token':token,'active':True,'scope':'tv','plan':row['plan'],'maxDevices':self.capacity(row)}
+            # A reinstall/session refresh must not sign out another app on this TV.
+            if old:db.execute('INSERT OR IGNORE INTO device_tokens VALUES (?,?,?,?)',(old['token'],oid,device,now))
+            db.execute('INSERT INTO devices VALUES (?,?,?,?,?) ON CONFLICT(license,device) DO UPDATE SET token=excluded.token,name=excluded.name',(oid,device,str(name)[:60],self.digest(token),now))
+            db.execute('INSERT INTO device_tokens VALUES (?,?,?,?)',(self.digest(token),oid,device,now))
+            if anchor:db.execute('INSERT INTO device_bindings VALUES (?,?,?) ON CONFLICT(license,binding) DO UPDATE SET device=excluded.device',(oid,anchor,device))
+        return {'token':token,'device':device,'active':True,'scope':'tv','plan':row['plan'],'maxDevices':self.capacity(row)}
+
+    def bind_device(self, token, binding):
+        anchor=self.binding_hash(binding)
+        with self.db() as db:
+            db.execute('BEGIN IMMEDIATE');row=self.tv_device(db,token)
+            if not row:raise ValueError('invalid_license')
+            oid=row['id'];device=row['device']
+            bound=db.execute('SELECT b.device FROM device_bindings b JOIN devices d ON d.license=b.license AND d.device=b.device WHERE b.license=? AND b.binding=?',(oid,anchor)).fetchone()
+            canonical=bound['device'] if bound else device
+            if canonical!=device:
+                # Merge only records authenticated on the same physical binding.
+                old=db.execute('SELECT token,created FROM devices WHERE license=? AND device=?',(oid,device)).fetchone()
+                db.execute('INSERT OR IGNORE INTO device_tokens VALUES (?,?,?,?)',(old['token'],oid,canonical,old['created']))
+                db.execute('UPDATE device_tokens SET device=? WHERE license=? AND device=?',(canonical,oid,device))
+                db.execute('UPDATE device_bindings SET device=? WHERE license=? AND device=?',(canonical,oid,device))
+                db.execute('DELETE FROM devices WHERE license=? AND device=?',(oid,device))
+            db.execute('INSERT INTO device_bindings VALUES (?,?,?) ON CONFLICT(license,binding) DO UPDATE SET device=excluded.device',(oid,anchor,canonical))
+        return {'active':True,'scope':'tv','device':canonical}
 
     def studio(self, code, device):
         if not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',str(device)):raise ValueError('invalid_device')
@@ -249,7 +289,7 @@ class Plus:
         if not isinstance(code,str) or not re.fullmatch(r'(?:MORPH-[A-Z2-7]{32}|MT-[A-Z2-7]{12})',code):raise ValueError('recovery_rejected')
         if not isinstance(token,str) or not re.fullmatch(r'[A-Za-z0-9_-]{32,128}',token):raise ValueError('recovery_rejected')
         with self.db() as db:
-            row=db.execute("SELECT 1 FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND (o.license_hash=? OR o.id=(SELECT license FROM short_codes WHERE hash=?))",(self.digest(token),self.digest(code),self.digest(code))).fetchone()
+            row=db.execute("SELECT 1 FROM devices d JOIN orders o ON o.id=d.license WHERE (d.token=? OR EXISTS(SELECT 1 FROM device_tokens t WHERE t.token=? AND t.license=d.license AND t.device=d.device)) AND (o.license_hash=? OR o.id=(SELECT license FROM short_codes WHERE hash=?))",(self.digest(token),self.digest(token),self.digest(code),self.digest(code))).fetchone()
         if not row:raise ValueError('recovery_rejected')
         return {'allowed':True}
 
@@ -257,13 +297,15 @@ class Plus:
         with self.db() as db:
             valid=" AND (o.entitlement='lifetime' OR o.expires>?)"
             params=(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'),int(time.time()))
-            row=db.execute("SELECT o.id,o.plan,o.source,'tv' AS scope FROM devices d JOIN orders o ON o.id=d.license WHERE d.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
+            tv=self.tv_device(db,token)
+            row=dict(tv,scope='tv') if tv else None
             if not row:row=db.execute("SELECT o.id,o.plan,o.source,'studio' AS scope FROM studios s JOIN orders o ON o.id=s.license WHERE s.token=? AND ((o.paid=1 AND o.mode=?) OR o.source='complimentary') AND o.revoked=0"+valid,params).fetchone()
             if row:
                 used=db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(row['id'],)).fetchone()[0]
                 maximum=self.capacity(row)
         result={'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
         if row:result.update(maxDevices=maximum,usedDevices=used,remainingDevices=None if maximum is None else max(0,maximum-used))
+        if row and row['scope']=='tv':result['device']=row['device']
         return result
 
     def deactivate(self, token, device):
@@ -271,7 +313,8 @@ class Plus:
         if not isinstance(device,str) or not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',device):raise ValueError('invalid_device')
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE')
-            removed=db.execute('DELETE FROM devices WHERE token=? AND device=?',(self.digest(token),device)).rowcount
+            tv=self.tv_device(db,token)
+            removed=db.execute('DELETE FROM devices WHERE license=? AND device=?',(tv['id'],tv['device'])).rowcount if tv else 0
             if not removed:removed=db.execute('DELETE FROM studios WHERE token=? AND device=?',(self.digest(token),device)).rowcount
             if not removed:raise ValueError('invalid_license')
         return {'removed':True}
@@ -343,7 +386,7 @@ class Plus:
             if not any(f['file']==filename for p in manifest['packs'] for f in p['files']) and not any(f['file']==filename for f in manifest.get('legacyFiles',[])):handler.send_json(404,{'error':'not_found'});return True
             handler.send_response(200);handler.send_header('Content-Type','image/webp');handler.send_header('Cache-Control','no-store');handler.send_header('X-Accel-Redirect','/_artifacts/theme-packs/'+filename);handler.end_headers();return True
         if handler.command=='GET' and path=='/api/plus/plans':
-            handler.send_json(200,{'enabled':self.enabled(),'plans':public_plans(),'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test'),'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True,'promotion':promo_active(),'promotionEndsAt':PROMO_END,'timeZone':'America/New_York'}});return True
+            handler.send_json(200,{'deviceIdentityVersion':2,'enabled':self.enabled(),'plans':public_plans(),'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test'),'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True,'promotion':promo_active(),'promotionEndsAt':PROMO_END,'timeZone':'America/New_York'}});return True
         if handler.command!='POST':handler.send_json(405,{'error':'method_not_allowed'});return True
         try:
             n=int(handler.headers.get('Content-Length','0'))
@@ -356,7 +399,8 @@ class Plus:
                 self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
                 if path=='/api/plus/checkout':result=self.checkout(data.get('plan'),data.get('expectedEntitlement'))
                 elif path=='/api/plus/order':result=self.order_status(data.get('order'),data.get('proof'))
-                elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'))
+                elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'),data.get('binding'))
+                elif path=='/api/plus/bind-device':result=self.bind_device(data.get('token'),data.get('binding'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
                 elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
                 elif path=='/api/plus/deactivate':result=self.deactivate(data.get('token'),data.get('device'))
@@ -374,6 +418,6 @@ class Plus:
         except (ValueError,KeyError,TypeError) as error:
             reason=str(error)
             visible={'invalid_license','device_limit','invalid_device','rate_limited','origin_rejected'}
-            handler.send_json(400,{'error':reason if path in ['/api/plus/activate','/api/plus/studio','/api/plus/status'] and reason in visible else 'invalid_or_unavailable_request'})
+            handler.send_json(400,{'error':reason if path in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/bind-device'] and reason in visible else 'invalid_or_unavailable_request'})
         except (URLError,TimeoutError):handler.send_json(503,{'error':'payment_service_unavailable'})
         return True
