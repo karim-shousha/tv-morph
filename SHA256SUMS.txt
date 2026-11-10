@@ -18,9 +18,9 @@ b637d5ae96df4059dc5c1beef8590891154c23ac82b5350627715acc475430c1  Morph-Bridge-L
 fc4d9959fd1da09e04daa5f70d60848563989270c3cd85a04912ec8fea0ad14b  Morph-Launcher-Mac-1.1.352-universal.dmg
 4d7a05f74cf584279b90ba785f384ee0b60b80a9351a27b8560f63fb4e27b17c  Morph-Launcher-Mac-1.1.352-universal.zip
 e367070841abc7fa4a00452cf70420e952c9390ab9ef52bd1d29d7fc6e8480f9  Morph-TV-Android-TV-1.1.367.apk
-8c70075dd48f25f73f64b66fafad33dd745d86f33ce3d27cf649451f72daa803  Morph-Launcher-Samsung-Tizen5-1.1.405.wgt
-506054b786160f922c3479f167950d1b5a77fc4860f3278f65055012f3dcaad2  com.zainbot.morphtv.preview_1.1.367_all.ipk
-c210b02e2aedabda7710583f098e01438a4e7b11f07eb9a9ca897602b702b7f2  Morph-TV-Mobile-1.1.365-Integrated.apk
 de5cf32001650399fe81ff495fa58918d4b7be4aff793cc9ea81b0f923e0615e  Morph-IPTV-Android-TV-1.1.353.apk
 a5ec9817a2f5d27409ca397cb38b2886d1ec4501cc7b200689078e4a4e75afbe  Morph-IPTV-tizen5-1.1.353.wgt
 ffa259cec02824054642be09af072661503e21a654201e22f6a6065ac60ff9c1  com.morphtv.iptv_1.1.353_all.ipk
+f884f529d474834248184490aacc41d3e37eeca10dc88ed5e1f57fedaf8dd070  Morph-TV-Mobile-1.1.366-Bridge-Fix.apk
+5916f9941500c2946e029a2967fb3061232b41b967ebb505695631cd6f4dafd1  Morph-Launcher-Samsung-Tizen5-1.1.406.wgt
+7f9e62ca2e6bec10dc04055a2ca001908a9cb0cd477a39acd5d51ea29e4af7dc  com.zainbot.morphtv.preview_1.1.368_all.ipk
