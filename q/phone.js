@@ -6,6 +6,14 @@ function decode(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='
 function encode(bytes){var s='';for(var i=0;i<bytes.length;i++)s+=String.fromCharCode(bytes[i]);return btoa(s).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
 function utf8(s){s=unescape(encodeURIComponent(s));var a=new Uint8Array(s.length);for(var i=0;i<a.length;i++)a[i]=s.charCodeAt(i);return a;}
 function request(data){data.id=id;data.token=token;return fetch('/api/iptv-link',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'omit',body:JSON.stringify(data)}).then(function(response){if(!response.ok)throw Error(response.status===401?'انتهى QR. افتح كودًا جديدًا من التلفزيون.':'تعذر إرسال البيانات. حاول مرة أخرى.');return response.json();});}
+if(cap==='plus'){
+ $('title').textContent='تفعيل Morph Plus';$('hint').textContent='اكتب الكود لإرساله إلى جهازك. أكمل التفعيل من إعدادات التلفزيون.';
+ $('form').innerHTML='<label>كود التفعيل<input id="plus-code" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="80" dir="ltr" required></label><button id="submit" type="submit">إرسال الكود للتلفزيون</button>';$('form').hidden=false;
+ document.querySelector('h1').textContent='Morph Plus على جهازك';document.querySelector('.intro ol').textContent='اكتب الكود، أرسله إلى التلفزيون، ثم اختر Activate Morph Plus داخل الإعدادات.';
+ $('form').onsubmit=function(e){e.preventDefault();var code=$('plus-code').value.trim().toUpperCase();if(!/^[A-Z0-9-]{6,80}$/.test(code)){message('راجع كود التفعيل.');return;}$('submit').disabled=true;var nonce=nacl.randomBytes(24),box=nacl.secretbox(utf8(JSON.stringify({method:'plus',code:code})),nonce,decode(keyText));request({action:'send',nonce:encode(nonce),box:encode(box)}).then(function(){message('تم الإرسال. في انتظار التلفزيون…');pollPlus();},function(e){message(e.message);$('submit').disabled=false;});};
+ function pollPlus(){timer=setTimeout(function(){request({action:'status'}).then(function(r){if(r.status==='connected'){$('plus-code').value='';$('form').hidden=true;message('وصل الكود. اختر Activate Morph Plus من إعدادات التلفزيون.');return;}if(r.status==='failed'){message('لم يقبل التلفزيون الكود. افتح QR جديدًا.');return;}pollPlus();},function(e){message(e.message);});},1800);}
+ window.addEventListener('pagehide',function(){clearTimeout(timer);});return;
+}
 function paintMode(){$('title').textContent={xtream:'إضافة حساب Xtream',m3u:'إضافة رابط M3U',portal:'إضافة بوابة Stalker · MAC',file:'إضافة ملف M3U'}[mode];$('hint').textContent='بعد الحفظ، التلفزيون يتحقق من الاشتراك ويفتح المكتبة تلقائيًا.';$('credentials').hidden=mode!=='xtream';$('mac-row').hidden=mode!=='portal';$('file-row').hidden=mode!=='file';$('url-fields').hidden=mode==='file';$('port-row').hidden=mode!=='xtream'&&mode!=='portal';$('form').hidden=false;
 }
 paintMode();
