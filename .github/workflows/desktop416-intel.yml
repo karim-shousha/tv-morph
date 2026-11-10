@@ -1,0 +1,60 @@
+name: Verify built Morph 416 universal products on Intel
+on:
+  push:
+    branches: [codex/desktop416]
+    paths: [.github/workflows/desktop416-intel.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        product: [launcher, iptv]
+    runs-on: macos-15-intel
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: mac416-${{ matrix.product }}
+          run-id: 42926348003
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: downloads
+      - name: Extract verified candidate and tests
+        run: |
+          python3 - <<'PY'
+          import pathlib,json,hashlib,zipfile
+          r=pathlib.Path('desktop-build');m=json.loads((r/'runtime.json').read_text());p=r/m['file'];assert hashlib.sha256(p.read_bytes()).hexdigest()==m['sha256'];zipfile.ZipFile(p).extractall('desktop')
+          PY
+          candidate="$(find downloads -name '*-universal.zip' -type f -print -quit)"
+          test -n "$candidate"
+          ditto -x -k "$candidate" mac-app
+      - name: Test dependencies
+        working-directory: desktop
+        run: npm ci --no-audit --no-fund
+      - name: Verify native playback, minimize and stable identity
+        working-directory: desktop
+        run: |
+          if [ '${{ matrix.product }}' = 'iptv' ]; then
+            export MORPH_PC_TEST_EXECUTABLE="${{ github.workspace }}/mac-app/Morph IPTV.app/Contents/MacOS/Morph IPTV"
+          else
+            export MORPH_PC_TEST_EXECUTABLE="${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher"
+          fi
+          lipo -verify_arch x86_64 arm64 "$MORPH_PC_TEST_EXECUTABLE"
+          export MORPH_PC_TEST_PRODUCT='${{ matrix.product }}'
+          node tests/mini-player.cjs
+          node tests/plus-device-binding.cjs
+          node tests/updater.cjs
+          node tests/local-media-response.cjs
+          if [ '${{ matrix.product }}' = 'launcher' ]; then node tests/cleaner.cjs; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mac416-${{ matrix.product }}-intel-qa
+          path: desktop/test-output/*.json
