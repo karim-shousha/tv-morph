@@ -337,7 +337,22 @@ class Plus:
         action=data.get('action');now=int(time.time())
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE')
-            if action=='save':
+            if action=='reset-devices':
+                if data.get('confirmReset') is not True:raise ValueError('reset_confirmation_required')
+                if data.get('code'):
+                    row=self.lookup(db,str(data['code']).strip().upper())
+                else:
+                    row=db.execute("SELECT o.* FROM orders o JOIN grants g ON g.license=o.id WHERE o.id=? AND o.source='complimentary'",(data.get('id'),)).fetchone()
+                    if not row:raise ValueError('unknown_grant')
+                    if row['revoked']:raise ValueError('grant_disabled')
+                oid=row['id']
+                removed=db.execute('DELETE FROM devices WHERE license=?',(oid,)).rowcount
+                # Clear aliases too, including any orphan left by an older server.
+                db.execute('DELETE FROM device_tokens WHERE license=?',(oid,))
+                db.execute('DELETE FROM device_bindings WHERE license=?',(oid,))
+                db.execute('UPDATE grants SET updated=? WHERE license=?',(now,oid))
+                result={'ok':True,'id':oid,'removedDevices':removed,'usedDevices':0,'maxDevices':self.capacity(row)}
+            elif action=='save':
                 email=self.email(data.get('email'));plan=data.get('plan');name=data.get('name','')
                 if plan not in GRANT_PLANS or not isinstance(name,str) or len(name)>80 or any(ord(c)<32 for c in name):raise ValueError('invalid_grant')
                 row=db.execute('SELECT o.* FROM grants g JOIN orders o ON o.id=g.license WHERE g.email=?',(email,)).fetchone()
@@ -372,7 +387,7 @@ class Plus:
                     db.execute('DELETE FROM devices WHERE license=? AND device=?',(oid,device))
             else:raise ValueError('invalid_action')
             db.execute('INSERT INTO grant_audit(license,action,actor,created) VALUES (?,?,?,?)',(oid,action,actor,now))
-        return result if action in ['code','devices'] else {'ok':True,'id':oid}
+        return result if action in ['code','devices','reset-devices'] else {'ok':True,'id':oid}
 
     def handle(self, handler, path):
         if not path.startswith('/api/plus/'):return False
