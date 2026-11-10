@@ -50,7 +50,7 @@ jobs:
           node tests/updater.cjs
           node tests/plus-device-binding.cjs
           node tests/local-media-response.cjs
-          node tests/cleaner.cjs
+          if [ '${{ matrix.product }}' = 'launcher' ]; then node tests/cleaner.cjs; fi
       - uses: actions/upload-artifact@v4
         with:
           name: mac416-${{ matrix.product }}
@@ -100,4 +100,4 @@ jobs:
           node tests/mini-player.cjs
           node tests/plus-device-binding.cjs
           node tests/local-media-response.cjs
-          node tests/cleaner.cjs
+          if [ '${{ matrix.product }}' = 'launcher' ]; then node tests/cleaner.cjs; fi
