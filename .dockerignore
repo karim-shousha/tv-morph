@@ -160,3 +160,9 @@ releases/**
 !Morph-Remote-1.1.305.apk
 
 !release367-validation.json
+
+# Current release metadata and HTTPS trailer wrapper.
+!desktop-iptv-release.json
+!release416-validation.json
+!trailer/
+!trailer/**
