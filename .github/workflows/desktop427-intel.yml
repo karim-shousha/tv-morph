@@ -30,6 +30,7 @@ jobs:
           python3 -c "import zipfile;zipfile.ZipFile('desktop-build/morph-desktop-runtime.zip').extractall('desktop')"
           archive=$(find downloads -name "*-universal.zip" -type f -print -quit)
           test -n "$archive"
+          cp desktop-build/plus-binding427.cjs desktop/tests/plus-device-binding.cjs
           ditto -x -k "$archive" mac-app
       - name: Dependencies
         working-directory: desktop
