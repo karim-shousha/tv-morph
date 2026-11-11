@@ -1,0 +1,49 @@
+name: Verify exact Morph427 Mac packages on Intel
+on:
+  push:
+    branches: [codex/desktop427]
+    paths: [.github/workflows/desktop427-intel.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        product: [launcher, iptv]
+    runs-on: macos-15-intel
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          name: mac427-${{ matrix.product }}
+          path: downloads
+          run-id: 43109001860
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extract
+        run: |
+          python3 -c "import zipfile;zipfile.ZipFile('desktop-build/morph-desktop-runtime.zip').extractall('desktop')"
+          archive=$(find downloads -name "*-universal.zip" -type f -print -quit)
+          test -n "$archive"
+          ditto -x -k "$archive" mac-app
+      - name: Dependencies
+        working-directory: desktop
+        run: npm ci --no-audit --no-fund
+      - name: Verify packaged product on Intel
+        working-directory: desktop
+        run: |
+          if [ '${{ matrix.product }}' = 'iptv' ]; then
+            export MORPH_PC_TEST_EXECUTABLE="${{ github.workspace }}/mac-app/Morph IPTV.app/Contents/MacOS/Morph IPTV"
+          else
+            export MORPH_PC_TEST_EXECUTABLE="${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher"
+          fi
+          export MORPH_PC_TEST_PRODUCT='${{ matrix.product }}'
+          node tests/mini-player.cjs
+          node tests/plus-device-binding.cjs
+          node tests/local-media-response.cjs
+          if [ '${{ matrix.product }}' = 'launcher' ]; then node tests/cleaner.cjs; fi
