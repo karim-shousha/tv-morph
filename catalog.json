@@ -330,7 +330,7 @@
     },
     {
       "name": "com.morphtv.iptv_1.1.417_all",
-      "file": "com.morphtv.iptv_1.1.417_all.ipk",
+      "file": "Morph-IPTV-LG-1.1.417.ipk",
       "version": "1.1.417",
       "product": "iptv",
       "target": "webos",
@@ -341,7 +341,7 @@
     },
     {
       "name": "com.zainbot.morphtv.preview_1.1.417_all",
-      "file": "com.zainbot.morphtv.preview_1.1.417_all.ipk",
+      "file": "Morph-TV-LG-1.1.417.ipk",
       "version": "1.1.417",
       "product": "launcher",
       "target": "webos",
@@ -375,7 +375,7 @@
     },
     {
       "name": "Morph-Launcher-Android-TV-1.1.417",
-      "file": "Morph-Launcher-Android-TV-1.1.417.apk",
+      "file": "Morph-TV-Android-TV-1.1.417.apk",
       "version": "1.1.417",
       "product": "launcher",
       "target": "android",
@@ -387,7 +387,7 @@
     },
     {
       "name": "Morph-Launcher-Tizen5-1.1.417",
-      "file": "Morph-Launcher-Tizen5-1.1.417.wgt",
+      "file": "Morph-TV-Tizen5-1.1.417.wgt",
       "version": "1.1.417",
       "product": "launcher",
       "target": "tizen5",
@@ -536,7 +536,7 @@
       },
       {
         "name": "com.morphtv.iptv_1.1.417_all",
-        "file": "com.morphtv.iptv_1.1.417_all.ipk",
+        "file": "Morph-IPTV-LG-1.1.417.ipk",
         "version": "1.1.417",
         "product": "iptv",
         "target": "webos",
