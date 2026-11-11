@@ -9,6 +9,7 @@ permissions:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         product: [launcher, iptv]
     runs-on: macos-15
@@ -68,6 +69,7 @@ jobs:
   intel:
     needs: build
     strategy:
+      fail-fast: false
       matrix:
         product: [launcher, iptv]
     runs-on: macos-15-intel
