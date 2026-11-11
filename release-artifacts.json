@@ -151,26 +151,26 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.416/Cleaner-LG-1.1.416.ipk"
     },
     {
-      "name": "com.morphtv.iptv_1.1.418_all",
-      "file": "com.morphtv.iptv_1.1.418_all.ipk",
-      "version": "1.1.418",
+      "name": "com.morphtv.iptv_1.1.419_all",
+      "file": "com.morphtv.iptv_1.1.419_all.ipk",
+      "version": "1.1.419",
       "product": "iptv",
       "target": "webos",
-      "bytes": 4306936,
-      "sha256": "b2825d5d0b488131f49edcd881f989914641b3a75cc1a876201785f2b0f733dd",
+      "bytes": 4306942,
+      "sha256": "8ff7654c22369c5a4849abb920d43fe0c689791aaf9c6b3a9703459bba140f1a",
       "download": "/download/iptv/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.418/com.morphtv.iptv_1.1.418_all.ipk"
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.419/com.morphtv.iptv_1.1.419_all.ipk"
     },
     {
-      "name": "com.zainbot.morphtv.preview_1.1.418_all",
-      "file": "com.zainbot.morphtv.preview_1.1.418_all.ipk",
-      "version": "1.1.418",
+      "name": "com.zainbot.morphtv.preview_1.1.419_all",
+      "file": "com.zainbot.morphtv.preview_1.1.419_all.ipk",
+      "version": "1.1.419",
       "product": "launcher",
       "target": "webos",
-      "bytes": 13290128,
-      "sha256": "ba6454f2d783c1f3cf007387fcc7c35b3c3602bde8dd987feeb3a5bb4f950bbb",
+      "bytes": 13290106,
+      "sha256": "fee5689a6b90f96daab6e70f6e726266f6fe13dd1155e9fed99cb24e480b50b7",
       "download": "/download/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.418/com.zainbot.morphtv.preview_1.1.418_all.ipk"
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.419/com.zainbot.morphtv.preview_1.1.419_all.ipk"
     },
     {
       "name": "Morph-IPTV-Android-TV-1.1.417",

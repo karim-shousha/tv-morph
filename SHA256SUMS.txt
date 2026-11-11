@@ -32,5 +32,5 @@ f03710d498cf72b37cee51bb311171978f6c21a35dcb73221847220271ab6c89  com.morphtv.ip
 c0768d56ebdc9f62046f3e9ec5b1908512bceb1bde9c48f421d78cd7b1cbcc52  Morph-IPTV-Tizen5-1.1.417.wgt
 1ff293b6a94c35377211d898eb73055543b968a97e7875b8d2ff8cea5e32b12a  Morph-Launcher-Android-TV-1.1.417.apk
 f550f8fd8a323f9031ada5e0bcdc4678615dfac6c75784a848b08240da9065f4  Morph-Launcher-Tizen5-1.1.417.wgt
-ba6454f2d783c1f3cf007387fcc7c35b3c3602bde8dd987feeb3a5bb4f950bbb  com.zainbot.morphtv.preview_1.1.418_all.ipk
-b2825d5d0b488131f49edcd881f989914641b3a75cc1a876201785f2b0f733dd  com.morphtv.iptv_1.1.418_all.ipk
+fee5689a6b90f96daab6e70f6e726266f6fe13dd1155e9fed99cb24e480b50b7  com.zainbot.morphtv.preview_1.1.419_all.ipk
+8ff7654c22369c5a4849abb920d43fe0c689791aaf9c6b3a9703459bba140f1a  com.morphtv.iptv_1.1.419_all.ipk
