@@ -83,7 +83,7 @@
       "available": true,
       "noteAr": "تحسين تنقل IPTV وإصلاح تعافي صوت الأذان والبريدج. لانشر أندرويد يدعم الأذان في الخلفية مع شاشة حسب الإذن.",
       "noteEn": "Tested IPTV navigation update; Adhan recovery and LG Bridge audio recovery. Android Launcher adds background Adhan with permission-aware screen.",
-      "version": "1.1.417",
+      "version": "1.1.418",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -329,26 +329,26 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.416/Cleaner-LG-1.1.416.ipk"
     },
     {
-      "name": "com.morphtv.iptv_1.1.417_all",
-      "file": "Morph-IPTV-LG-1.1.417.ipk",
-      "version": "1.1.417",
+      "name": "com.morphtv.iptv_1.1.418_all",
+      "file": "Morph-IPTV-LG-1.1.418.ipk",
+      "version": "1.1.418",
       "product": "iptv",
       "target": "webos",
-      "bytes": 4305580,
-      "sha256": "eadb63f377ccd7c7ac09304becf8a634ba79fd83c67425952077b64c60acb275",
+      "bytes": 4306936,
+      "sha256": "b2825d5d0b488131f49edcd881f989914641b3a75cc1a876201785f2b0f733dd",
       "download": "/download/iptv/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/com.morphtv.iptv_1.1.417_all.ipk"
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.418/com.morphtv.iptv_1.1.418_all.ipk"
     },
     {
-      "name": "com.zainbot.morphtv.preview_1.1.417_all",
-      "file": "Morph-TV-LG-1.1.417.ipk",
-      "version": "1.1.417",
+      "name": "com.zainbot.morphtv.preview_1.1.418_all",
+      "file": "Morph-TV-LG-1.1.418.ipk",
+      "version": "1.1.418",
       "product": "launcher",
       "target": "webos",
-      "bytes": 13289882,
-      "sha256": "a6460c71f41c101d553fda52da827b89f775188d6467aef8a37d1d205a825759",
+      "bytes": 13290128,
+      "sha256": "ba6454f2d783c1f3cf007387fcc7c35b3c3602bde8dd987feeb3a5bb4f950bbb",
       "download": "/download/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/com.zainbot.morphtv.preview_1.1.417_all.ipk"
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.418/com.zainbot.morphtv.preview_1.1.418_all.ipk"
     },
     {
       "name": "Morph-IPTV-Android-TV-1.1.417",
@@ -535,15 +535,15 @@
         "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.416/Morph-IPTV-Mac-1.1.416-universal.dmg"
       },
       {
-        "name": "com.morphtv.iptv_1.1.417_all",
-        "file": "Morph-IPTV-LG-1.1.417.ipk",
-        "version": "1.1.417",
+        "name": "com.morphtv.iptv_1.1.418_all",
+        "file": "Morph-IPTV-LG-1.1.418.ipk",
+        "version": "1.1.418",
         "product": "iptv",
         "target": "webos",
-        "bytes": 4305580,
-        "sha256": "eadb63f377ccd7c7ac09304becf8a634ba79fd83c67425952077b64c60acb275",
+        "bytes": 4306936,
+        "sha256": "b2825d5d0b488131f49edcd881f989914641b3a75cc1a876201785f2b0f733dd",
         "download": "/download/iptv/lg",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/com.morphtv.iptv_1.1.417_all.ipk"
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.418/com.morphtv.iptv_1.1.418_all.ipk"
       },
       {
         "name": "Morph-IPTV-Android-TV-1.1.417",

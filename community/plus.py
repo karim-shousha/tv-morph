@@ -96,7 +96,9 @@ class Plus:
         # code/token authenticated client endpoints accept these app origins.
         if path not in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/bind-device','/api/plus/devices','/api/plus/remove-device','/api/plus/deactivate','/api/plus/parent-reset']:return False
         if value.username or value.password or value.query or value.fragment:return False
-        if value.scheme=='file' and value.netloc in ['', 'localhost', 'com.zainbot.morphtv.preview', 'com.morphtv.iptv']:return True
+        # LG webOS packaged apps may serialize /media/cryptofs as file://media.
+        # Keep this native-only allowance limited to code/token endpoints above.
+        if value.scheme=='file' and value.netloc in ['', 'localhost', 'media', 'com.zainbot.morphtv.preview', 'com.morphtv.iptv']:return True
         return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview','app://com.morphtv.iptv','http://com.morphtv.iptv','morph://app']
 
     def register_short(self, db, order):
