@@ -46,7 +46,7 @@ jobs:
           else
             export MORPH_PC_TEST_EXECUTABLE="${{ github.workspace }}/mac-app/Morph Launcher.app/Contents/MacOS/Morph Launcher"
           fi
-          lipo -verify_arch x86_64 arm64 "$MORPH_PC_TEST_EXECUTABLE"
+          lipo "$MORPH_PC_TEST_EXECUTABLE" -verify_arch x86_64 arm64
           export MORPH_PC_TEST_PRODUCT='${{ matrix.product }}'
           node tests/mini-player.cjs
           node tests/plus-device-binding.cjs
