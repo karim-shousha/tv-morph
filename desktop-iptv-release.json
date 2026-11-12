@@ -1,33 +1,33 @@
 {
-  "version": "1.1.434",
-  "windowsVersion": "1.1.434",
-  "macVersion": "1.1.434",
+  "version": "1.1.435",
+  "windowsVersion": "1.1.435",
+  "macVersion": "1.1.435",
   "product": "iptv",
   "minimumMacOS": "13.0",
   "assets": [
     {
-      "file": "Morph-IPTV-PC-1.1.434-Setup.exe",
-      "bytes": 140355333,
-      "sha256": "9ce17afe923426fee3c3d2538b183ecabf4cdbf802c0b185496d9aeba7ea4b27",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.434/Morph-IPTV-PC-1.1.434-Setup.exe"
+      "file": "Morph-IPTV-PC-1.1.435-Setup.exe",
+      "bytes": 140471010,
+      "sha256": "eba7e54075ed00753911ea58e9a45616a841d1f3c587d3f45f0b814a6f24b138",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-PC-1.1.435-Setup.exe"
     },
     {
-      "file": "Morph-IPTV-PC-1.1.434-32bit-Setup.exe",
-      "bytes": 118489514,
-      "sha256": "45ef3c1df54157d66c859f12505217fc0f0e4f673bfa6b8621a22b2b56234dad",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.434/Morph-IPTV-PC-1.1.434-32bit-Setup.exe"
+      "file": "Morph-IPTV-PC-1.1.435-32bit-Setup.exe",
+      "bytes": 118605237,
+      "sha256": "a6931f58d12362af63c6470d371aeddef5fbdfd7b6f9f05fc373d3c8b6213675",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-PC-1.1.435-32bit-Setup.exe"
     },
     {
-      "file": "Morph-IPTV-Mac-1.1.434-universal.dmg",
-      "bytes": 244851788,
-      "sha256": "33a811fe5227a2da9d947135757586a2b57f17693b05623a6682b73ef1d42eb1",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.434/Morph-IPTV-Mac-1.1.434-universal.dmg"
+      "file": "Morph-IPTV-Mac-1.1.435-universal.dmg",
+      "bytes": 244857537,
+      "sha256": "1c9967326f24d879745784aee0927e94910617c31b5791c64b9233be96e52b96",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-Mac-1.1.435-universal.dmg"
     },
     {
-      "file": "Morph-IPTV-Mac-1.1.434-universal.zip",
-      "bytes": 237204532,
-      "sha256": "9ed3d6f48f08ea4647bdec3515ae1da1f7cce725f071aabb58ee16430acaed37",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.434/Morph-IPTV-Mac-1.1.434-universal.zip"
+      "file": "Morph-IPTV-Mac-1.1.435-universal.zip",
+      "bytes": 237206560,
+      "sha256": "86298175f85183a4958f1e6e07111ff54eef2934f5d2c9f9d7f478a736f4cb0d",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-Mac-1.1.435-universal.zip"
     }
   ],
   "windowsVerified": true,
