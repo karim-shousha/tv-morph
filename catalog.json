@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "latest": "1.1.427",
+  "latest": "1.1.432",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.427",
+      "version": "1.1.432",
       "download": "/download/phone",
       "noteAr": "الإصدار الموحد مع إصلاح إدخال PIN والرجوع من القوائم. حافظنا على البريدج والتثبيت المعتمدين.",
       "noteEn": "Unified release with shared parental PIN and password navigation repair. Approved Bridge and installer behavior retained.",
       "channel": "preview",
-      "versionCode": 519,
+      "versionCode": 523,
       "physicalDeviceVerified": false,
       "validation": "Automated packaged/UI checks; not every physical TV model has been tested."
     },
@@ -20,26 +20,26 @@
       "id": "android",
       "name": "Android TV / Google TV",
       "available": true,
-      "version": "1.1.427",
+      "version": "1.1.432",
       "download": "/download/android",
       "noteAr": "تحسين تنقل IPTV وإصلاح تعافي صوت الأذان والبريدج. لانشر أندرويد يدعم الأذان في الخلفية مع شاشة حسب الإذن.",
       "noteEn": "Tested IPTV navigation update; Adhan recovery and LG Bridge audio recovery. Android Launcher adds background Adhan with permission-aware screen.",
       "installVideo": "https://www.facebook.com/share/v/1LzjCCRPCf",
       "channel": "preview",
       "physicalDeviceVerified": false,
-      "versionCode": 520,
+      "versionCode": 523,
       "validation": "Automated packaged/UI checks; not every physical TV model has been tested."
     },
     {
       "id": "firetv",
       "name": "Amazon Fire TV · Fire OS",
       "available": true,
-      "version": "1.1.427",
+      "version": "1.1.432",
       "download": "/download/firetv",
       "noteAr": "تحسين تنقل IPTV وإصلاح تعافي صوت الأذان والبريدج. لانشر أندرويد يدعم الأذان في الخلفية مع شاشة حسب الإذن.",
       "noteEn": "Tested IPTV navigation update; Adhan recovery and LG Bridge audio recovery. Android Launcher adds background Adhan with permission-aware screen.",
       "channel": "preview",
-      "versionCode": 520,
+      "versionCode": 523,
       "physicalDeviceVerified": false,
       "validation": "Automated packaged/UI checks; not every physical TV model has been tested."
     },
@@ -50,7 +50,7 @@
       "noteAr": "تحسين تنقل IPTV وإصلاح تعافي صوت الأذان والبريدج. لانشر أندرويد يدعم الأذان في الخلفية مع شاشة حسب الإذن.",
       "noteEn": "Tested IPTV navigation update; Adhan recovery and LG Bridge audio recovery. Android Launcher adds background Adhan with permission-aware screen.",
       "webPreview": "/web-tv.html",
-      "version": "1.1.417",
+      "version": "1.1.432",
       "minTizen": "5.0",
       "targetEngine": "Chromium 56",
       "installMode": "phone-device-signed",
@@ -83,7 +83,7 @@
       "available": true,
       "noteAr": "تحسين تنقل IPTV وإصلاح تعافي صوت الأذان والبريدج. لانشر أندرويد يدعم الأذان في الخلفية مع شاشة حسب الإذن.",
       "noteEn": "Tested IPTV navigation update; Adhan recovery and LG Bridge audio recovery. Android Launcher adds background Adhan with permission-aware screen.",
-      "version": "1.1.419",
+      "version": "1.1.432",
       "installGuide": "/lg-install.html",
       "physicalDeviceVerified": false,
       "download": "/download/lg",
@@ -317,84 +317,154 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.416/Cleaner-LG-1.1.416.ipk"
     },
     {
-      "name": "com.morphtv.iptv_1.1.419_all",
-      "file": "Morph-IPTV-LG-1.1.419.ipk",
-      "version": "1.1.419",
-      "product": "iptv",
-      "target": "webos",
-      "bytes": 4306942,
-      "sha256": "8ff7654c22369c5a4849abb920d43fe0c689791aaf9c6b3a9703459bba140f1a",
-      "download": "/download/iptv/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.419/com.morphtv.iptv_1.1.419_all.ipk"
-    },
-    {
-      "name": "com.zainbot.morphtv.preview_1.1.419_all",
-      "file": "Morph-TV-LG-1.1.419.ipk",
-      "version": "1.1.419",
-      "product": "launcher",
-      "target": "webos",
-      "bytes": 13290106,
-      "sha256": "fee5689a6b90f96daab6e70f6e726266f6fe13dd1155e9fed99cb24e480b50b7",
-      "download": "/download/lg",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.419/com.zainbot.morphtv.preview_1.1.419_all.ipk"
-    },
-    {
-      "name": "Morph-IPTV-Tizen5-1.1.417",
-      "file": "Morph-IPTV-Tizen5-1.1.417.wgt",
-      "version": "1.1.417",
-      "product": "iptv",
-      "target": "tizen5",
-      "bytes": 4330947,
-      "sha256": "c0768d56ebdc9f62046f3e9ec5b1908512bceb1bde9c48f421d78cd7b1cbcc52",
-      "download": "/download/iptv/tizen5",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/Morph-IPTV-Tizen5-1.1.417.wgt"
-    },
-    {
-      "name": "Morph-Launcher-Tizen5-1.1.417",
-      "file": "Morph-TV-Tizen5-1.1.417.wgt",
-      "version": "1.1.417",
-      "product": "launcher",
-      "target": "tizen5",
-      "bytes": 13751919,
-      "sha256": "f550f8fd8a323f9031ada5e0bcdc4678615dfac6c75784a848b08240da9065f4",
-      "download": "/download/samsung-tizen5",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/Morph-Launcher-Tizen5-1.1.417.wgt"
-    },
-    {
-      "name": "Morph-Launcher-Android-TV-1.1.427",
-      "file": "Morph-TV-Android-TV-1.1.427.apk",
-      "version": "1.1.427",
+      "file": "Morph-TV-Android-TV-1.1.432.apk",
+      "version": "1.1.432",
       "product": "launcher",
       "target": "android",
-      "bytes": 26351889,
-      "sha256": "bd214ef31e305bf2c09225df4d170e88e28f36aae62088b34c3338f0ec26c7f3",
       "download": "/download/android",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.427-android/Morph-Launcher-Android-TV-1.1.427.apk",
-      "versionCode": 520
+      "name": "Morph-Launcher-Android-TV-1.1.432",
+      "bytes": 26360233,
+      "sha256": "fcb943bd7a475fb04c08d2d5b7c1464c37bb8192c02ab8b446432fbb77462ab6",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-Android-TV-1.1.432.apk",
+      "versionCode": 523
     },
     {
-      "name": "Morph-TV-Mobile-1.1.427",
-      "file": "Morph-TV-Mobile-1.1.427.apk",
-      "version": "1.1.427",
+      "file": "Morph-TV-Mobile-1.1.432.apk",
+      "version": "1.1.432",
       "product": "phone",
       "target": "android",
-      "bytes": 92439190,
-      "sha256": "e75f0e3823f03d80c584dbabace7946bf1da003c9aa1fdbda66a7735a697131b",
       "download": "/download/phone",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.427-android/Morph-TV-Mobile-1.1.427.apk",
-      "versionCode": 519
+      "name": "Morph-TV-Mobile-1.1.432",
+      "bytes": 92439190,
+      "sha256": "a6215d5ea4c3d759a54b2d5cff2fb178fff9ee47732918d537049fbf2a942d83",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-TV-Mobile-1.1.432.apk",
+      "versionCode": 523
     },
     {
-      "name": "Morph-IPTV-Android-TV-1.1.427",
-      "file": "Morph-IPTV-Android-TV-1.1.427.apk",
-      "version": "1.1.427",
+      "file": "Morph-IPTV-Android-TV-1.1.432.apk",
+      "version": "1.1.432",
       "product": "iptv",
       "target": "android",
-      "bytes": 17117741,
-      "sha256": "5fd353c1dcd887f78a848c8cdf9f0495eee5aa8f70fc4dd2df3fb651c8a1578e",
       "download": "/download/iptv/android",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.427-android/Morph-IPTV-Android-TV-1.1.427.apk",
-      "versionCode": 520
+      "name": "Morph-IPTV-Android-TV-1.1.432",
+      "bytes": 17121913,
+      "sha256": "d34106c4eb8a53919fc3ca86fc19c033fbfda1db9dbd65a75dd8c12a7bb364c9",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Android-TV-1.1.432.apk",
+      "versionCode": 523
+    },
+    {
+      "file": "Morph-TV-Tizen5-1.1.432.wgt",
+      "version": "1.1.432",
+      "product": "launcher",
+      "target": "tizen5",
+      "download": "/download/samsung-tizen5",
+      "name": "Morph-Launcher-Tizen5-1.1.432",
+      "bytes": 15365628,
+      "sha256": "9444b7654f6971247fb1d65e82a7b788a09c3e86b1c740414f94da0cd2ab2c77",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-Tizen5-1.1.432.wgt"
+    },
+    {
+      "file": "Morph-IPTV-Tizen5-1.1.432.wgt",
+      "version": "1.1.432",
+      "product": "iptv",
+      "target": "tizen5",
+      "download": "/download/iptv/tizen5",
+      "name": "Morph-IPTV-Tizen5-1.1.432",
+      "bytes": 5935934,
+      "sha256": "688318481dc7eac7d3081f556cf39f0d215c09f8e45cfd79a76fb15b29bc3b5e",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Tizen5-1.1.432.wgt"
+    },
+    {
+      "file": "Morph-TV-LG-1.1.432.ipk",
+      "version": "1.1.432",
+      "product": "launcher",
+      "target": "webos",
+      "download": "/download/lg",
+      "name": "Morph-Launcher-LG-1.1.432",
+      "bytes": 21435692,
+      "sha256": "761a9114f303a19040cd95ca43ce75acbdc31357e8f3f0501a6a320f9b54f9a5",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-LG-1.1.432.ipk"
+    },
+    {
+      "file": "Morph-IPTV-LG-1.1.432.ipk",
+      "version": "1.1.432",
+      "product": "iptv",
+      "target": "webos",
+      "download": "/download/iptv/lg",
+      "name": "Morph-IPTV-LG-1.1.432",
+      "bytes": 6114524,
+      "sha256": "b1f2770ef6753488f2e7f72e3c44620f5ddf9490d457e59acb557dfae4239f48",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-LG-1.1.432.ipk"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.432-Setup.exe",
+      "version": "1.1.432",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows",
+      "name": "Morph-Launcher-PC-1.1.432-Setup",
+      "bytes": 140351672,
+      "sha256": "4fd293c79b422002350efb453d53e54a3d543af40c902751449f2b3e3015c469",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-PC-1.1.432-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.432-32bit-Setup.exe",
+      "version": "1.1.432",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows32",
+      "name": "Morph-Launcher-PC-1.1.432-32bit-Setup",
+      "bytes": 118485797,
+      "sha256": "f19e9a89f8c6add31593dd4cffc78330df6d93278e10b8ddd7c682bea93230e8",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-PC-1.1.432-32bit-Setup.exe",
+      "arch": "ia32"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.432-Setup.exe",
+      "version": "1.1.432",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows",
+      "name": "Morph-IPTV-PC-1.1.432-Setup",
+      "bytes": 140351642,
+      "sha256": "98edb8a0fabe7c302e3dd9ca738fe9107f0ca04b22a5c346bfcb3daea4611646",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-PC-1.1.432-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.432-32bit-Setup.exe",
+      "version": "1.1.432",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows32",
+      "name": "Morph-IPTV-PC-1.1.432-32bit-Setup",
+      "bytes": 118485680,
+      "sha256": "1bbed2d5f6b04bf7ea3662ef039a0a53fe7414fe03acb322079cb06d0ab71f76",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-PC-1.1.432-32bit-Setup.exe",
+      "arch": "ia32"
+    },
+    {
+      "file": "Morph-IPTV-Mac-1.1.432-universal.dmg",
+      "version": "1.1.432",
+      "product": "iptv",
+      "target": "mac",
+      "download": "/download/iptv/mac",
+      "name": "Morph-IPTV-Mac-1.1.432-universal",
+      "bytes": 244854343,
+      "sha256": "766c864657c0acdfe83ea09ff40c6c0c1271aeac6b77ba4e831c95457bee7197",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Mac-1.1.432-universal.dmg"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.432-universal.dmg",
+      "version": "1.1.432",
+      "product": "launcher",
+      "target": "mac",
+      "download": "/download/mac",
+      "name": "Morph-Launcher-Mac-1.1.432-universal",
+      "bytes": 244840864,
+      "sha256": "4bf0592bc0d298af12c027299bc9be8f025878d65a7a12bc9bb2bda0386283e1",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-Launcher-Mac-1.1.432-universal.dmg"
     }
   ],
   "legacy": {
@@ -431,19 +501,19 @@
     "versionMetadataOnly": true
   },
   "downloads": {
-    "android": "Morph-Launcher-Android-TV-1.1.427.apk",
-    "lg": "com.zainbot.morphtv.preview_1.1.419_all.ipk",
+    "android": "Morph-Launcher-Android-TV-1.1.432.apk",
+    "lg": "Morph-Launcher-LG-1.1.432.ipk",
     "samsung-tizen2": "Morph-TV-Samsung-Tizen2-1.1.347.wgt",
     "samsung-tizen3": "Morph-TV-Samsung-Tizen3-1.1.347.wgt",
     "samsung-tizen4": "Morph-TV-Samsung-Tizen4-1.1.348.wgt",
-    "samsung-tizen5": "Morph-Launcher-Tizen5-1.1.417.wgt",
-    "iptv/lg": "com.morphtv.iptv_1.1.419_all.ipk",
+    "samsung-tizen5": "Morph-Launcher-Tizen5-1.1.432.wgt",
+    "iptv/lg": "Morph-IPTV-LG-1.1.432.ipk",
     "iptv/tizen4": "Morph-IPTV-tizen4-1.1.348.wgt",
-    "iptv/tizen5": "Morph-IPTV-Tizen5-1.1.417.wgt",
+    "iptv/tizen5": "Morph-IPTV-Tizen5-1.1.432.wgt",
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
     "iptv/tizen3": "Morph-IPTV-tizen3-1.1.347.wgt",
-    "iptv/android": "Morph-IPTV-Android-TV-1.1.427.apk",
-    "phone": "Morph-TV-Mobile-1.1.427.apk",
+    "iptv/android": "Morph-IPTV-Android-TV-1.1.432.apk",
+    "phone": "Morph-TV-Mobile-1.1.432.apk",
     "legacy": "Morph-TV-Legacy-1.1.347.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-1.1.347.apk",
     "bridge/android": "Morph-Bridge-Android-TV-1.1.352.apk",
@@ -453,18 +523,20 @@
     "cleaner/samsung": "Cleaner-Samsung-Tizen2-and-newer-1.1.324.wgt",
     "cleaner/lg": "Cleaner-LG-1.1.416.ipk",
     "remote": "Morph-Remote-1.1.305.apk",
-    "firetv": "Morph-Launcher-Android-TV-1.1.427.apk",
-    "lg-preview": "com.zainbot.morphtv.preview_1.1.419_all.ipk",
-    "iptv/firetv": "Morph-IPTV-Android-TV-1.1.427.apk",
+    "firetv": "Morph-Launcher-Android-TV-1.1.432.apk",
+    "lg-preview": "Morph-Launcher-LG-1.1.432.ipk",
+    "iptv/firetv": "Morph-IPTV-Android-TV-1.1.432.apk",
     "samsung-tizen2-lite": "Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt",
-    "windows": "Morph-Launcher-PC-1.1.416-Setup.exe",
-    "iptv/windows": "Morph-IPTV-PC-1.1.416-Setup.exe",
-    "iptv/mac": "Morph-IPTV-Mac-1.1.416-universal.dmg",
-    "mac": "Morph-Launcher-Mac-1.1.416-universal.dmg"
+    "windows": "Morph-Launcher-PC-1.1.432-Setup.exe",
+    "iptv/windows": "Morph-IPTV-PC-1.1.432-Setup.exe",
+    "iptv/mac": "Morph-IPTV-Mac-1.1.432-universal.dmg",
+    "mac": "Morph-Launcher-Mac-1.1.432-universal.dmg",
+    "windows32": "Morph-Launcher-PC-1.1.432-32bit-Setup.exe",
+    "iptv/windows32": "Morph-IPTV-PC-1.1.432-32bit-Setup.exe"
   },
   "iptv": {
     "name": "Morph IPTV",
-    "version": "1.1.417",
+    "version": "1.1.432",
     "versionCode": 507,
     "available": true,
     "excluded": [
@@ -502,71 +574,73 @@
         "download": "/download/iptv/tizen3"
       },
       {
-        "name": "Morph-IPTV-PC-1.1.416-Setup",
-        "file": "Morph-IPTV-PC-1.1.416-Setup.exe",
-        "version": "1.1.416",
-        "product": "iptv",
-        "target": "windows",
-        "bytes": 138796987,
-        "sha256": "b0c58e9f24e93968b8f855c2a95e686bcdd14868ca517aca7a5b29c2e054acd7",
-        "download": "/download/iptv/windows",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.416/Morph-IPTV-PC-1.1.416-Setup.exe"
-      },
-      {
-        "name": "Morph-IPTV-Mac-1.1.416-universal",
-        "file": "Morph-IPTV-Mac-1.1.416-universal.zip",
-        "version": "1.1.416",
-        "product": "iptv",
-        "target": "mac",
-        "bytes": 235607974,
-        "sha256": "84fbb75c26f3efde75d091ca24877395e81d76c53ab53ab88899a1f6ec61ce66",
-        "download": "/download/iptv/mac",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.416/Morph-IPTV-Mac-1.1.416-universal.zip"
-      },
-      {
-        "name": "Morph-IPTV-Mac-1.1.416-universal",
-        "file": "Morph-IPTV-Mac-1.1.416-universal.dmg",
-        "version": "1.1.416",
-        "product": "iptv",
-        "target": "mac",
-        "bytes": 243242804,
-        "sha256": "9e4f94e261016ac59c16887330d98ef48a27f2dab667c7a400e3bedcbaeba7ec",
-        "download": "/download/iptv/mac",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/desktop-v1.1.416/Morph-IPTV-Mac-1.1.416-universal.dmg"
-      },
-      {
-        "name": "com.morphtv.iptv_1.1.419_all",
-        "file": "Morph-IPTV-LG-1.1.419.ipk",
-        "version": "1.1.419",
-        "product": "iptv",
-        "target": "webos",
-        "bytes": 4306942,
-        "sha256": "8ff7654c22369c5a4849abb920d43fe0c689791aaf9c6b3a9703459bba140f1a",
-        "download": "/download/iptv/lg",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.419/com.morphtv.iptv_1.1.419_all.ipk"
-      },
-      {
-        "name": "Morph-IPTV-Tizen5-1.1.417",
-        "file": "Morph-IPTV-Tizen5-1.1.417.wgt",
-        "version": "1.1.417",
-        "product": "iptv",
-        "target": "tizen5",
-        "bytes": 4330947,
-        "sha256": "c0768d56ebdc9f62046f3e9ec5b1908512bceb1bde9c48f421d78cd7b1cbcc52",
-        "download": "/download/iptv/tizen5",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.417/Morph-IPTV-Tizen5-1.1.417.wgt"
-      },
-      {
-        "name": "Morph-IPTV-Android-TV-1.1.427",
-        "file": "Morph-IPTV-Android-TV-1.1.427.apk",
-        "version": "1.1.427",
+        "file": "Morph-IPTV-Android-TV-1.1.432.apk",
+        "version": "1.1.432",
         "product": "iptv",
         "target": "android",
-        "bytes": 17117741,
-        "sha256": "5fd353c1dcd887f78a848c8cdf9f0495eee5aa8f70fc4dd2df3fb651c8a1578e",
         "download": "/download/iptv/android",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.427-android/Morph-IPTV-Android-TV-1.1.427.apk",
-        "versionCode": 520
+        "name": "Morph-IPTV-Android-TV-1.1.432",
+        "bytes": 17121913,
+        "sha256": "d34106c4eb8a53919fc3ca86fc19c033fbfda1db9dbd65a75dd8c12a7bb364c9",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Android-TV-1.1.432.apk",
+        "versionCode": 523
+      },
+      {
+        "file": "Morph-IPTV-Tizen5-1.1.432.wgt",
+        "version": "1.1.432",
+        "product": "iptv",
+        "target": "tizen5",
+        "download": "/download/iptv/tizen5",
+        "name": "Morph-IPTV-Tizen5-1.1.432",
+        "bytes": 5935934,
+        "sha256": "688318481dc7eac7d3081f556cf39f0d215c09f8e45cfd79a76fb15b29bc3b5e",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Tizen5-1.1.432.wgt"
+      },
+      {
+        "file": "Morph-IPTV-LG-1.1.432.ipk",
+        "version": "1.1.432",
+        "product": "iptv",
+        "target": "webos",
+        "download": "/download/iptv/lg",
+        "name": "Morph-IPTV-LG-1.1.432",
+        "bytes": 6114524,
+        "sha256": "b1f2770ef6753488f2e7f72e3c44620f5ddf9490d457e59acb557dfae4239f48",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-LG-1.1.432.ipk"
+      },
+      {
+        "file": "Morph-IPTV-PC-1.1.432-Setup.exe",
+        "version": "1.1.432",
+        "product": "iptv",
+        "target": "windows",
+        "download": "/download/iptv/windows",
+        "name": "Morph-IPTV-PC-1.1.432-Setup",
+        "bytes": 140351642,
+        "sha256": "98edb8a0fabe7c302e3dd9ca738fe9107f0ca04b22a5c346bfcb3daea4611646",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-PC-1.1.432-Setup.exe",
+        "arch": "x64"
+      },
+      {
+        "file": "Morph-IPTV-PC-1.1.432-32bit-Setup.exe",
+        "version": "1.1.432",
+        "product": "iptv",
+        "target": "windows",
+        "download": "/download/iptv/windows32",
+        "name": "Morph-IPTV-PC-1.1.432-32bit-Setup",
+        "bytes": 118485680,
+        "sha256": "1bbed2d5f6b04bf7ea3662ef039a0a53fe7414fe03acb322079cb06d0ab71f76",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-PC-1.1.432-32bit-Setup.exe",
+        "arch": "ia32"
+      },
+      {
+        "file": "Morph-IPTV-Mac-1.1.432-universal.dmg",
+        "version": "1.1.432",
+        "product": "iptv",
+        "target": "mac",
+        "download": "/download/iptv/mac",
+        "name": "Morph-IPTV-Mac-1.1.432-universal",
+        "bytes": 244854343,
+        "sha256": "766c864657c0acdfe83ea09ff40c6c0c1271aeac6b77ba4e831c95457bee7197",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.432/Morph-IPTV-Mac-1.1.432-universal.dmg"
       }
     ],
     "downloads": {
@@ -578,7 +652,8 @@
       "android": "/download/iptv/android",
       "android44": "/download/iptv/legacy",
       "windows": "/download/iptv/windows",
-      "mac": "/download/iptv/mac"
+      "mac": "/download/iptv/mac",
+      "windows32": "/download/iptv/windows32"
     },
     "androidMinSdk": 26,
     "physicalDeviceVerified": false,
@@ -605,10 +680,17 @@
       ]
     },
     "desktop": {
-      "version": "1.1.416",
+      "version": "1.1.432",
       "windows": "/download/iptv/windows",
       "mac": "/download/iptv/mac",
-      "releaseManifest": "/desktop-iptv-release.json"
+      "releaseManifest": "/desktop-iptv-release.json",
+      "windowsVersion": "1.1.432",
+      "macVersion": "1.1.432",
+      "windows32": "/download/iptv/windows32",
+      "windowsArchitectures": [
+        "x64",
+        "ia32"
+      ]
     }
   },
   "optionalPacks": {
@@ -622,7 +704,7 @@
     }
   },
   "desktop": {
-    "version": "1.1.416",
+    "version": "1.1.432",
     "windows": "/download/windows",
     "mac": "/download/mac",
     "releaseManifest": "/desktop-release.json",
@@ -630,8 +712,13 @@
       "x64",
       "arm64"
     ],
-    "windowsVersion": "1.1.416",
-    "macVersion": "1.1.416"
+    "windowsVersion": "1.1.432",
+    "macVersion": "1.1.432",
+    "windows32": "/download/windows32",
+    "windowsArchitectures": [
+      "x64",
+      "ia32"
+    ]
   },
   "bridge": {
     "version": "1.1.352",
