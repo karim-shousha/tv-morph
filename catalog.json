@@ -353,26 +353,26 @@
       "versionCode": 526
     },
     {
-      "file": "Morph-TV-Tizen5-1.1.435.wgt",
-      "version": "1.1.435",
+      "file": "Morph-TV-Tizen5-1.1.443.wgt",
+      "version": "1.1.443",
       "product": "launcher",
       "target": "tizen5",
       "download": "/download/samsung-tizen5",
-      "name": "Morph-Launcher-Tizen5-1.1.435",
-      "bytes": 15396042,
-      "sha256": "f8c315b7f6d7b8f996272b64e9d7ac1c18f13e23927d1d74f2ab396e47c7f191",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-Launcher-Tizen5-1.1.435.wgt"
+      "name": "Morph-Launcher-Tizen5-1.1.443",
+      "bytes": 15397057,
+      "sha256": "715a648b4dcb43b1e27d2d3d4c927c04dc4b2f4d4668f3f95e0ec9118cf7a0f1",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.443/Morph-Launcher-Tizen5-1.1.443.wgt"
     },
     {
-      "file": "Morph-IPTV-Tizen5-1.1.435.wgt",
-      "version": "1.1.435",
+      "file": "Morph-IPTV-Tizen5-1.1.443.wgt",
+      "version": "1.1.443",
       "product": "iptv",
       "target": "tizen5",
       "download": "/download/iptv/tizen5",
-      "name": "Morph-IPTV-Tizen5-1.1.435",
-      "bytes": 5988245,
-      "sha256": "fc4debbe37ad82848900e7157dace1f5fab7e4606266d7990a427c8e7d0076b9",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-Tizen5-1.1.435.wgt"
+      "name": "Morph-IPTV-Tizen5-1.1.443",
+      "bytes": 5989265,
+      "sha256": "a863bd403a3090e8541d0c037828a52a8f35b87894dfc161ed23c06f3be8eabd",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.443/Morph-IPTV-Tizen5-1.1.443.wgt"
     },
     {
       "file": "Morph-TV-LG-1.1.435.ipk",
@@ -506,10 +506,10 @@
     "samsung-tizen2": "Morph-TV-Samsung-Tizen2-1.1.347.wgt",
     "samsung-tizen3": "Morph-TV-Samsung-Tizen3-1.1.347.wgt",
     "samsung-tizen4": "Morph-TV-Samsung-Tizen4-1.1.348.wgt",
-    "samsung-tizen5": "Morph-Launcher-Tizen5-1.1.435.wgt",
+    "samsung-tizen5": "Morph-Launcher-Tizen5-1.1.443.wgt",
     "iptv/lg": "Morph-IPTV-LG-1.1.435.ipk",
     "iptv/tizen4": "Morph-IPTV-tizen4-1.1.348.wgt",
-    "iptv/tizen5": "Morph-IPTV-Tizen5-1.1.435.wgt",
+    "iptv/tizen5": "Morph-IPTV-Tizen5-1.1.443.wgt",
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
     "iptv/tizen3": "Morph-IPTV-tizen3-1.1.347.wgt",
     "iptv/android": "Morph-IPTV-Android-TV-1.1.435.apk",
@@ -586,15 +586,15 @@
         "versionCode": 526
       },
       {
-        "file": "Morph-IPTV-Tizen5-1.1.435.wgt",
-        "version": "1.1.435",
+        "file": "Morph-IPTV-Tizen5-1.1.443.wgt",
+        "version": "1.1.443",
         "product": "iptv",
         "target": "tizen5",
         "download": "/download/iptv/tizen5",
-        "name": "Morph-IPTV-Tizen5-1.1.435",
-        "bytes": 5988245,
-        "sha256": "fc4debbe37ad82848900e7157dace1f5fab7e4606266d7990a427c8e7d0076b9",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-Tizen5-1.1.435.wgt"
+        "name": "Morph-IPTV-Tizen5-1.1.443",
+        "bytes": 5989265,
+        "sha256": "a863bd403a3090e8541d0c037828a52a8f35b87894dfc161ed23c06f3be8eabd",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.443/Morph-IPTV-Tizen5-1.1.443.wgt"
       },
       {
         "file": "Morph-IPTV-LG-1.1.435.ipk",
