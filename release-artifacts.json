@@ -217,6 +217,54 @@
       "bytes": 6162882,
       "sha256": "a9470da7e9680f608368081dd3337586e01eae64016017cb8995e28dc980b613",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-LG-1.1.435.ipk"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.439-Setup.exe",
+      "version": "1.1.439",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows",
+      "name": "Morph-IPTV-PC-1.1.439-Setup",
+      "bytes": 140357786,
+      "sha256": "817e2de0fc88ead2a8a232aa3e484a685e111f5e5509eb055bc17260bfdc87d6",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/windows-v1.1.439/Morph-IPTV-PC-1.1.439-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.439-Setup.exe",
+      "version": "1.1.439",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows",
+      "name": "Morph-Launcher-PC-1.1.439-Setup",
+      "bytes": 140357925,
+      "sha256": "8c33d6aabdd06dec1ac78626ad49c376403300d1daf20fd21f59a55c3a54369f",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/windows-v1.1.439/Morph-Launcher-PC-1.1.439-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.439-32bit-Setup.exe",
+      "version": "1.1.439",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows32",
+      "name": "Morph-IPTV-PC-1.1.439-32bit-Setup",
+      "bytes": 118491672,
+      "sha256": "ebcffa8a1d29ae7084bfcddc9efbbee6e50c10a503f9fbe13eb589a527b501f7",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/windows-v1.1.439/Morph-IPTV-PC-1.1.439-32bit-Setup.exe",
+      "arch": "ia32"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.439-32bit-Setup.exe",
+      "version": "1.1.439",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows32",
+      "name": "Morph-Launcher-PC-1.1.439-32bit-Setup",
+      "bytes": 118491890,
+      "sha256": "c07f2f2d3e79bbd79af0a25dfd5404a78f3f9e9b6b6499016bfcf21c69cdbb20",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/windows-v1.1.439/Morph-Launcher-PC-1.1.439-32bit-Setup.exe",
+      "arch": "ia32"
     }
   ]
 }

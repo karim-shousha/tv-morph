@@ -29,3 +29,7 @@ d4fee3f3e294ccd98e451e908b5fdd67d9f37e68c650d0f917c2ef3ece218bfb  Morph-TV-Samsu
 15e462980308f6da74f47e946da0513d079cb2f587b9ec15f89dcf4413a6d070  Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt
 01b1dd4ab4b992ae0fc3d0463f0b8a1cc3166524f11edae25c37916e8405493a  Morph-TV-Samsung-Tizen3-1.1.347.wgt
 594060cac992b3e18e0fc740a398d417996f530a0a59c44365cb8d6574598df0  Morph-TV-Samsung-Tizen4-1.1.348.wgt
+817e2de0fc88ead2a8a232aa3e484a685e111f5e5509eb055bc17260bfdc87d6  Morph-IPTV-PC-1.1.439-Setup.exe
+8c33d6aabdd06dec1ac78626ad49c376403300d1daf20fd21f59a55c3a54369f  Morph-Launcher-PC-1.1.439-Setup.exe
+ebcffa8a1d29ae7084bfcddc9efbbee6e50c10a503f9fbe13eb589a527b501f7  Morph-IPTV-PC-1.1.439-32bit-Setup.exe
+c07f2f2d3e79bbd79af0a25dfd5404a78f3f9e9b6b6499016bfcf21c69cdbb20  Morph-Launcher-PC-1.1.439-32bit-Setup.exe
