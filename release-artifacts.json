@@ -1,5 +1,5 @@
 {
-  "version": "1.1.435",
+  "version": "1.1.436",
   "baseUrl": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.321/",
   "artifacts": [
     {
@@ -151,16 +151,16 @@
       "versionCode": 526
     },
     {
-      "file": "Morph-TV-Mobile-1.1.435.apk",
-      "version": "1.1.435",
+      "file": "Morph-TV-Mobile-1.1.436.apk",
+      "version": "1.1.436",
       "product": "phone",
       "target": "android",
       "download": "/download/phone",
-      "name": "Morph-TV-Mobile-1.1.435",
+      "name": "Morph-TV-Mobile-1.1.436",
       "bytes": 92756912,
-      "sha256": "55b54b3205ae7d9fb6ed47497b4667f45be2430d41a31036f5c97e1625b61b76",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-TV-Mobile-1.1.435.apk",
-      "versionCode": 526
+      "sha256": "7644c07600338af488e7278d70ac88a1988715291588b2ad1b55962531c58e73",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.436/Morph-TV-Mobile-1.1.436.apk",
+      "versionCode": 527
     },
     {
       "file": "Morph-IPTV-Android-TV-1.1.435.apk",

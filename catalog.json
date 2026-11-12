@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "latest": "1.1.435",
+  "latest": "1.1.436",
   "channel": "preview",
   "platforms": [
     {
       "id": "phone",
       "name": "Android Phone",
       "available": true,
-      "version": "1.1.435",
+      "version": "1.1.436",
       "download": "/download/phone",
-      "noteAr": "الإصدار الموحد مع إصلاح إدخال PIN والرجوع من القوائم. حافظنا على البريدج والتثبيت المعتمدين.",
-      "noteEn": "Unified release with shared parental PIN and password navigation repair. Approved Bridge and installer behavior retained.",
+      "noteAr": "رجعت أيقونة المشاهدة المتعددة جنب زر الرجوع، وبقى تبديل الحساب متاح من قائمة مستقلة في إعدادات IPTV.",
+      "noteEn": "Multi-view is next to Back, and IPTV settings now has a dedicated Switch account page.",
       "channel": "preview",
-      "versionCode": 526,
+      "versionCode": 527,
       "physicalDeviceVerified": false,
-      "validation": "Automated packaged/UI checks; not every physical TV model has been tested."
+      "validation": "Android emulator launch and Back verified. Account switching verified with test accounts."
     },
     {
       "id": "android",
@@ -329,16 +329,16 @@
       "versionCode": 526
     },
     {
-      "file": "Morph-TV-Mobile-1.1.435.apk",
-      "version": "1.1.435",
+      "file": "Morph-TV-Mobile-1.1.436.apk",
+      "version": "1.1.436",
       "product": "phone",
       "target": "android",
       "download": "/download/phone",
-      "name": "Morph-TV-Mobile-1.1.435",
+      "name": "Morph-TV-Mobile-1.1.436",
       "bytes": 92756912,
-      "sha256": "55b54b3205ae7d9fb6ed47497b4667f45be2430d41a31036f5c97e1625b61b76",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-TV-Mobile-1.1.435.apk",
-      "versionCode": 526
+      "sha256": "7644c07600338af488e7278d70ac88a1988715291588b2ad1b55962531c58e73",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.436/Morph-TV-Mobile-1.1.436.apk",
+      "versionCode": 527
     },
     {
       "file": "Morph-IPTV-Android-TV-1.1.435.apk",
@@ -513,7 +513,7 @@
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
     "iptv/tizen3": "Morph-IPTV-tizen3-1.1.347.wgt",
     "iptv/android": "Morph-IPTV-Android-TV-1.1.435.apk",
-    "phone": "Morph-TV-Mobile-1.1.435.apk",
+    "phone": "Morph-TV-Mobile-1.1.436.apk",
     "legacy": "Morph-TV-Legacy-1.1.347.apk",
     "iptv/legacy": "Morph-IPTV-Legacy-1.1.347.apk",
     "bridge/android": "Morph-Bridge-Android-TV-1.1.352.apk",
