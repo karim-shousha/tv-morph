@@ -6,6 +6,19 @@ function decode(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='
 function encode(bytes){var s='';for(var i=0;i<bytes.length;i++)s+=String.fromCharCode(bytes[i]);return btoa(s).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
 function utf8(s){s=unescape(encodeURIComponent(s));var a=new Uint8Array(s.length);for(var i=0;i<a.length;i++)a[i]=s.charCodeAt(i);return a;}
 function request(data){data.id=id;data.token=token;return fetch('/api/iptv-link',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'omit',body:JSON.stringify(data)}).then(function(response){if(!response.ok)throw Error(response.status===401?'انتهى QR. افتح كودًا جديدًا من التلفزيون.':'تعذر إرسال البيانات. حاول مرة أخرى.');return response.json();});}
+/* morphTmdbPhoneKey: TMDB is a key-only link, never an IPTV account form. */
+if(cap==='tmdb'){
+ $('title').textContent='إضافة مفتاح TMDB';$('hint').textContent='اكتب مفتاح TMDB API v3. اترك صفحة TMDB على التلفزيون مفتوحة حتى يتم الحفظ.';
+ $('form').innerHTML='<label>TMDB API v3 key<input id="tmdb-key" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="32" dir="ltr" required pattern="[a-fA-F0-9]{32}"></label><button id="submit" type="submit">حفظ مفتاح TMDB على التلفزيون</button>';$('form').hidden=false;
+ document.querySelector('h1').textContent='TMDB · Morph IPTV';document.querySelector('.intro ol').textContent='المفتاح يربط الصور والمعلومات فقط. لا تضف بيانات اشتراك IPTV هنا.';
+ $('form').onsubmit=function(e){e.preventDefault();var key=$('tmdb-key').value.trim();if(!/^[a-fA-F0-9]{32}$/.test(key)){message('أدخل مفتاح TMDB API v3 المكوّن من 32 حرفًا.');return;}$('submit').disabled=true;
+  var nonce=nacl.randomBytes(24),box=nacl.secretbox(utf8(JSON.stringify({method:'tmdb',key:key})),nonce,decode(keyText));
+  request({action:'send',nonce:encode(nonce),box:encode(box)}).then(function(){message('تم الإرسال. التلفزيون يتحقق من المفتاح…');pollTmdb();},function(e){message(e.message);$('submit').disabled=false;});
+ };
+ function pollTmdb(){timer=setTimeout(function(){request({action:'status'}).then(function(r){if(r.status==='connected'){$('tmdb-key').value='';$('form').hidden=true;message('تم حفظ مفتاح TMDB على التلفزيون.');return;}if(r.status==='failed'){message('تعذّر حفظ المفتاح. راجع مفتاح TMDB وجدّد QR من التلفزيون.');$('submit').disabled=false;return;}pollTmdb();},function(e){message(e.message);$('submit').disabled=false;});},1800);}
+ return;
+}
+
 /* morphPlusPhoneActivate: explicit phone submission requests activation on the paired screen. */
 if(cap==='plus'){
  $('title').textContent='تفعيل Morph Plus';$('hint').textContent='اكتب الكود واضغط تفعيل. سيظهر الاشتراك على التلفزيون بعد التحقق.';
