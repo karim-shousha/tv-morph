@@ -89,3 +89,5 @@ COPY release366-validation.json /usr/share/nginx/html/
 COPY release367-validation.json /usr/share/nginx/html/
 
 COPY trailer/ /usr/share/nginx/html/trailer/
+
+COPY games/ /usr/share/nginx/html/games/
