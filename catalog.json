@@ -237,17 +237,18 @@
       "phoneRequiresPlus": false
     },
     {
-      "name": "Morph-Bridge-LG-1.1.352",
-      "file": "Morph-Bridge-LG-1.1.352.ipk",
-      "version": "1.1.352",
+      "name": "Morph-Bridge-LG-1.1.455",
+      "file": "Morph-Bridge-LG-1.1.455.ipk",
+      "version": "1.1.455",
       "product": "bridge",
       "target": "webos",
-      "bytes": 819922,
-      "sha256": "b637d5ae96df4059dc5c1beef8590891154c23ac82b5350627715acc475430c1",
+      "bytes": 850030,
+      "sha256": "8de67fff3225187c6b13b01567ebb9bbde0ad810ffe64e4d6f469052797e3fd8",
       "download": "/download/bridge/lg",
       "trialHours": 72,
       "plusScope": "tv",
-      "phoneRequiresPlus": false
+      "phoneRequiresPlus": false,
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-Bridge-LG-1.1.455.ipk"
     },
     {
       "name": "Cleaner-Android-1.1.324",
@@ -375,26 +376,26 @@
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.443/Morph-IPTV-Tizen5-1.1.443.wgt"
     },
     {
-      "file": "Morph-TV-LG-1.1.449.ipk",
-      "version": "1.1.449",
+      "file": "Morph-TV-LG-1.1.455.ipk",
+      "version": "1.1.455",
       "product": "launcher",
       "target": "webos",
       "download": "/download/lg",
-      "name": "Morph-Launcher-LG-1.1.449",
-      "bytes": 21494196,
-      "sha256": "c41fd97f66a1e62e6d66bb79d31cb7ae75fbd728a3c3a0d3dc1f2195bc69cc77",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-windows-v1.1.449/Morph-Launcher-LG-1.1.449.ipk"
+      "name": "Morph-Launcher-LG-1.1.455",
+      "bytes": 21496094,
+      "sha256": "6990009a64a425db2dcbc2d0a3b23e60a4284f310b06faa3d1e31fa4470d0d66",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-Launcher-LG-1.1.455.ipk"
     },
     {
-      "file": "Morph-IPTV-LG-1.1.449.ipk",
-      "version": "1.1.449",
+      "file": "Morph-IPTV-LG-1.1.455.ipk",
+      "version": "1.1.455",
       "product": "iptv",
       "target": "webos",
       "download": "/download/iptv/lg",
-      "name": "Morph-IPTV-LG-1.1.449",
-      "bytes": 6168128,
-      "sha256": "c52b61b1ce9f5175257eb3bef55c9f2fa7c5e7207f649210553447a07bdc693a",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-windows-v1.1.449/Morph-IPTV-LG-1.1.449.ipk"
+      "name": "Morph-IPTV-LG-1.1.455",
+      "bytes": 6176862,
+      "sha256": "b837e667ee575b962ed1c82060a77d6319d3dfd5be651192f0225b2db051266b",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-IPTV-LG-1.1.455.ipk"
     },
     {
       "file": "Morph-Launcher-PC-1.1.449-Setup.exe",
@@ -502,12 +503,12 @@
   },
   "downloads": {
     "android": "Morph-Launcher-Android-TV-1.1.448.apk",
-    "lg": "Morph-Launcher-LG-1.1.449.ipk",
+    "lg": "Morph-Bridge-LG-1.1.455.ipk",
     "samsung-tizen2": "Morph-TV-Samsung-Tizen2-1.1.347.wgt",
     "samsung-tizen3": "Morph-TV-Samsung-Tizen3-1.1.347.wgt",
     "samsung-tizen4": "Morph-TV-Samsung-Tizen4-1.1.348.wgt",
     "samsung-tizen5": "Morph-Launcher-Tizen5-1.1.443.wgt",
-    "iptv/lg": "Morph-IPTV-LG-1.1.449.ipk",
+    "iptv/lg": "Morph-IPTV-LG-1.1.455.ipk",
     "iptv/tizen4": "Morph-IPTV-tizen4-1.1.348.wgt",
     "iptv/tizen5": "Morph-IPTV-Tizen5-1.1.443.wgt",
     "iptv/tizen2": "Morph-IPTV-tizen2-1.1.347.wgt",
@@ -518,13 +519,13 @@
     "iptv/legacy": "Morph-IPTV-Legacy-1.1.347.apk",
     "bridge/android": "Morph-Bridge-Android-TV-1.1.352.apk",
     "bridge/samsung": "Morph-Bridge-Samsung-1.1.326.wgt",
-    "bridge/lg": "Morph-Bridge-LG-1.1.352.ipk",
+    "bridge/lg": "Morph-Bridge-LG-1.1.455.ipk",
     "cleaner/android": "Cleaner-Android-1.1.324.apk",
     "cleaner/samsung": "Cleaner-Samsung-Tizen2-and-newer-1.1.324.wgt",
     "cleaner/lg": "Cleaner-LG-1.1.416.ipk",
     "remote": "Morph-Remote-1.1.305.apk",
     "firetv": "Morph-Launcher-Android-TV-1.1.435.apk",
-    "lg-preview": "Morph-Launcher-LG-1.1.449.ipk",
+    "lg-preview": "Morph-Launcher-LG-1.1.455.ipk",
     "iptv/firetv": "Morph-IPTV-Android-TV-1.1.435.apk",
     "samsung-tizen2-lite": "Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt",
     "windows": "Morph-Launcher-PC-1.1.449-Setup.exe",
@@ -597,15 +598,15 @@
         "url": "https://github.com/karim-shousha/tv-morph/releases/download/samsung-v1.1.443/Morph-IPTV-Tizen5-1.1.443.wgt"
       },
       {
-        "file": "Morph-IPTV-LG-1.1.449.ipk",
-        "version": "1.1.449",
+        "file": "Morph-IPTV-LG-1.1.455.ipk",
+        "version": "1.1.455",
         "product": "iptv",
         "target": "webos",
         "download": "/download/iptv/lg",
-        "name": "Morph-IPTV-LG-1.1.449",
-        "bytes": 6168128,
-        "sha256": "c52b61b1ce9f5175257eb3bef55c9f2fa7c5e7207f649210553447a07bdc693a",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-windows-v1.1.449/Morph-IPTV-LG-1.1.449.ipk"
+        "name": "Morph-IPTV-LG-1.1.455",
+        "bytes": 6176862,
+        "sha256": "b837e667ee575b962ed1c82060a77d6319d3dfd5be651192f0225b2db051266b",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-IPTV-LG-1.1.455.ipk"
       },
       {
         "file": "Morph-IPTV-PC-1.1.449-Setup.exe",
@@ -754,17 +755,18 @@
         "phoneRequiresPlus": false
       },
       {
-        "name": "Morph-Bridge-LG-1.1.352",
-        "file": "Morph-Bridge-LG-1.1.352.ipk",
-        "version": "1.1.352",
+        "name": "Morph-Bridge-LG-1.1.455",
+        "file": "Morph-Bridge-LG-1.1.455.ipk",
+        "version": "1.1.455",
         "product": "bridge",
         "target": "webos",
-        "bytes": 819922,
-        "sha256": "b637d5ae96df4059dc5c1beef8590891154c23ac82b5350627715acc475430c1",
+        "bytes": 850030,
+        "sha256": "8de67fff3225187c6b13b01567ebb9bbde0ad810ffe64e4d6f469052797e3fd8",
         "download": "/download/bridge/lg",
         "trialHours": 72,
         "plusScope": "tv",
-        "phoneRequiresPlus": false
+        "phoneRequiresPlus": false,
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-Bridge-LG-1.1.455.ipk"
       }
     ]
   },

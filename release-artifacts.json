@@ -265,6 +265,39 @@
       "sha256": "1cf1c310dda0d47011ba95cda7f50885bf026aff64117f139583c52572be7ab1",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-windows-v1.1.449/Morph-Launcher-PC-1.1.449-32bit-Setup.exe",
       "arch": "ia32"
+    },
+    {
+      "file": "Morph-Launcher-LG-1.1.455.ipk",
+      "name": "Morph-Launcher-LG-1.1.455",
+      "product": "launcher",
+      "target": "webos",
+      "version": "1.1.455",
+      "download": "/download/lg",
+      "bytes": 21496094,
+      "sha256": "6990009a64a425db2dcbc2d0a3b23e60a4284f310b06faa3d1e31fa4470d0d66",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-Launcher-LG-1.1.455.ipk"
+    },
+    {
+      "file": "Morph-IPTV-LG-1.1.455.ipk",
+      "name": "Morph-IPTV-LG-1.1.455",
+      "product": "iptv",
+      "target": "webos",
+      "version": "1.1.455",
+      "download": "/download/iptv/lg",
+      "bytes": 6176862,
+      "sha256": "b837e667ee575b962ed1c82060a77d6319d3dfd5be651192f0225b2db051266b",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-IPTV-LG-1.1.455.ipk"
+    },
+    {
+      "file": "Morph-Bridge-LG-1.1.455.ipk",
+      "name": "Morph-Bridge-LG-1.1.455",
+      "product": "bridge",
+      "target": "webos",
+      "version": "1.1.455",
+      "download": "/download/bridge/lg",
+      "bytes": 850030,
+      "sha256": "8de67fff3225187c6b13b01567ebb9bbde0ad810ffe64e4d6f469052797e3fd8",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/lg-v1.1.455/Morph-Bridge-LG-1.1.455.ipk"
     }
   ]
 }

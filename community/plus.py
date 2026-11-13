@@ -99,6 +99,7 @@ class Plus:
         # LG webOS packaged apps may serialize /media/cryptofs as file://media.
         # Keep this native-only allowance limited to code/token endpoints above.
         if value.scheme=='file' and value.netloc in ['', 'localhost', 'media', 'com.zainbot.morphtv.preview', 'com.morphtv.iptv']:return True
+        if value.netloc=='tv.appbridge.webos' and value.scheme in ('file','app','http') and value.path in ('','/'):return True
         return origin in ['app://com.zainbot.morphtv.preview','http://com.zainbot.morphtv.preview','app://com.morphtv.iptv','http://com.morphtv.iptv','morph://app']
 
     def register_short(self, db, order):
