@@ -378,6 +378,54 @@
       "sha256": "558a4da616687146e4c1fb2772dae0da88471af22d90eaadad88c923234755f4",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-TV-Mobile-1.1.492.apk",
       "versionCode": 578
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.492-Setup.exe",
+      "version": "1.1.492",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows",
+      "name": "Morph-Launcher-PC-1.1.492-Setup",
+      "bytes": 140374120,
+      "sha256": "28ea1647f2b150d1be205a20da75baab51790fcbe80d480c5aafd68575cd4b4b",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-Launcher-PC-1.1.492-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-Launcher-PC-1.1.492-32bit-Setup.exe",
+      "version": "1.1.492",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows32",
+      "name": "Morph-Launcher-PC-1.1.492-32bit-Setup",
+      "bytes": 111656165,
+      "sha256": "24a4650fa235974fd6eef183f96ba565d06982229d9ef721d0e5a06600fb4744",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-Launcher-PC-1.1.492-32bit-Setup.exe",
+      "arch": "ia32"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.492-Setup.exe",
+      "version": "1.1.492",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows",
+      "name": "Morph-IPTV-PC-1.1.492-Setup",
+      "bytes": 140374026,
+      "sha256": "782de7eec5cfe6fded04f1b60e172dd20e05cf506e55830adbb0739b32808d1d",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-IPTV-PC-1.1.492-Setup.exe",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.492-32bit-Setup.exe",
+      "version": "1.1.492",
+      "product": "iptv",
+      "target": "windows",
+      "download": "/download/iptv/windows32",
+      "name": "Morph-IPTV-PC-1.1.492-32bit-Setup",
+      "bytes": 111656005,
+      "sha256": "3397e65d1c8ad14bf8f786d564ba9cbe3e9c42e64f51cc2a5cb2d3560a6b2454",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-IPTV-PC-1.1.492-32bit-Setup.exe",
+      "arch": "ia32"
     }
   ]
 }

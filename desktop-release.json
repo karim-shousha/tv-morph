@@ -1,21 +1,33 @@
 {
   "version": "1.1.435",
-  "windowsVersion": "1.1.435",
+  "windowsVersion": "1.1.492",
   "macVersion": "1.1.435",
   "product": "launcher",
   "minimumMacOS": "13.0",
   "assets": [
     {
-      "file": "Morph-Launcher-PC-1.1.435-Setup.exe",
-      "bytes": 140471299,
-      "sha256": "35979b9d5bca79bff6df42c8f1e85ebead578d6e5d199df6ef6cd5bb09fc657e",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-Launcher-PC-1.1.435-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.492-Setup.exe",
+      "version": "1.1.492",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows",
+      "name": "Morph-Launcher-PC-1.1.492-Setup",
+      "bytes": 140374120,
+      "sha256": "28ea1647f2b150d1be205a20da75baab51790fcbe80d480c5aafd68575cd4b4b",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-Launcher-PC-1.1.492-Setup.exe",
+      "arch": "x64"
     },
     {
-      "file": "Morph-Launcher-PC-1.1.435-32bit-Setup.exe",
-      "bytes": 118605420,
-      "sha256": "54901732a3de0a76ad1b06b3bc1d9cd0df7d3f26faf8e196cfd55762b66c7c35",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-Launcher-PC-1.1.435-32bit-Setup.exe"
+      "file": "Morph-Launcher-PC-1.1.492-32bit-Setup.exe",
+      "version": "1.1.492",
+      "product": "launcher",
+      "target": "windows",
+      "download": "/download/windows32",
+      "name": "Morph-Launcher-PC-1.1.492-32bit-Setup",
+      "bytes": 111656165,
+      "sha256": "24a4650fa235974fd6eef183f96ba565d06982229d9ef721d0e5a06600fb4744",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-Launcher-PC-1.1.492-32bit-Setup.exe",
+      "arch": "ia32"
     },
     {
       "file": "Morph-Launcher-Mac-1.1.435-universal.dmg",
