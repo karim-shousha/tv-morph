@@ -308,15 +308,15 @@
       "name": "Morph-IPTV-Mac-1.1.515-universal"
     },
     {
-      "file": "Morph-TV-Mobile-1.1.516-Integrated.apk",
+      "file": "Morph-TV-Mobile-1.1.517-Integrated.apk",
       "bytes": 87572081,
-      "sha256": "7b6657ea99055763ac65f6dbad55e650b8b0a91ae64b1f2d27d93c9d274e8e14",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-fed96ff429964694dfda/Morph-TV-Mobile-1.1.516-Integrated.apk",
-      "version": "1.1.516",
-      "versionCode": 602,
+      "sha256": "be91c2f26118fc558fa70d7a2c9442dddeba6e0a2b3bdcf422793f3a49540ad7",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/phone-v1.1.517/Morph-TV-Mobile-1.1.517-Integrated.apk",
+      "version": "1.1.517",
+      "versionCode": 603,
       "product": "phone",
       "target": "android",
-      "name": "Morph-TV-Mobile-1.1.516-Integrated",
+      "name": "Morph-TV-Mobile-1.1.517-Integrated",
       "download": "/download/phone"
     },
     {
