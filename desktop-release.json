@@ -1,27 +1,15 @@
 {
-  "version": "1.1.435",
+  "version": "1.1.514",
   "windowsVersion": "1.1.514",
-  "macVersion": "1.1.435",
+  "macVersion": "1.1.514",
   "product": "launcher",
   "minimumMacOS": "13.0",
   "assets": [
     {
-      "file": "Morph-Launcher-Mac-1.1.435-universal.dmg",
-      "bytes": 244853524,
-      "sha256": "2e0c6e0979a02ab7a9dcc672ae53281290c3890fa9a3940914639d5de4f00ebd",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-Launcher-Mac-1.1.435-universal.dmg"
-    },
-    {
-      "file": "Morph-Launcher-Mac-1.1.435-universal.zip",
-      "bytes": 237211471,
-      "sha256": "c0ff9545fdbd229b655ed8bfdacaa3431560a63eb8bc35ef76ea789a864b9771",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-Launcher-Mac-1.1.435-universal.zip"
-    },
-    {
       "file": "Morph-Launcher-PC-1.1.514-Setup.exe",
       "bytes": 140381024,
       "sha256": "ff4f18bb5594f1597178424d5f7c85afec956a657315a1c1b2c65f4bb80cf855",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-be9ff8fc44a5b336dbf9/Morph-Launcher-PC-1.1.514-Setup.exe",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-PC-1.1.514-Setup.exe",
       "product": "launcher",
       "target": "windows",
       "version": "1.1.514",
@@ -33,13 +21,34 @@
       "file": "Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
       "bytes": 118515062,
       "sha256": "011e0ba37bac08de9969739d1e1938180771c810dba378d2adb368d1c1c6be35",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-be9ff8fc44a5b336dbf9/Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
       "product": "launcher",
       "target": "windows",
       "version": "1.1.514",
       "name": "Morph-Launcher-PC-1.1.514-32bit-Setup",
       "download": "/download/windows32",
       "arch": "ia32"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.514-universal.dmg",
+      "bytes": 246770764,
+      "sha256": "86e492833b7c873717da9594f03733ac2d02b6dad620ce27c0036434d6840e38",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-Mac-1.1.514-universal.dmg",
+      "product": "launcher",
+      "target": "mac",
+      "version": "1.1.514",
+      "name": "Morph-Launcher-Mac-1.1.514-universal",
+      "download": "/download/mac"
+    },
+    {
+      "file": "Morph-Launcher-Mac-1.1.514-universal.zip",
+      "bytes": 239087689,
+      "sha256": "8ced62c842365e97b71f45629c9c1b0d1cf4cb5c20e47baf3bd042dfbcaad310",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-Mac-1.1.514-universal.zip",
+      "product": "launcher",
+      "target": "mac",
+      "version": "1.1.514",
+      "name": "Morph-Launcher-Mac-1.1.514-universal"
     }
   ],
   "windowsVerified": true,
