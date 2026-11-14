@@ -1,6 +1,1 @@
-{
-  "version": "1.1.435",
-  "file": "morph-desktop-runtime.zip",
-  "bytes": 20044364,
-  "sha256": "265321fff44dd9a75af6cfdff47b17bf9916bf41cba1ec5befc3ae18a7468833"
-}
+{"launcher": {"file": "Morph-Launcher-Mac-1.1.514-build-input.zip", "sha256": "b8628c93f20b4caebb2c6b347b792341a9ac47e396eb0def5d1bc8b5356d3f56"}, "iptv": {"file": "Morph-IPTV-Mac-1.1.514-build-input.zip", "sha256": "e3391198508951da9e9e936f916d0224f92f3647c9dc0ab6b2ff2cac57a8524f"}}

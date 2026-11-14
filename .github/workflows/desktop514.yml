@@ -1,0 +1,59 @@
+name: Morph desktop 514 shared IPTV
+on:
+  push:
+    branches: [codex/desktop514]
+    paths: [desktop-build/**, .github/workflows/desktop514.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        product: [launcher, iptv]
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify runtime
+        run: |
+          python3 - <<'PY'
+          import json,hashlib,zipfile,pathlib
+          root=pathlib.Path('desktop-build')
+          product='${{ matrix.product }}'
+          receipt=json.loads((root/'runtime.json').read_text())[product]
+          archive=root/receipt['file']
+          assert hashlib.sha256(archive.read_bytes()).hexdigest()==receipt['sha256']
+          zipfile.ZipFile(archive).extractall('desktop')
+          PY
+      - name: Dependencies
+        working-directory: desktop
+        run: |
+          npm ci --no-audit --no-fund
+          python3 -m pip install --break-system-packages pillow
+      - name: Build universal Mac product
+        working-directory: desktop
+        run: npx electron-builder --mac dmg zip --universal --publish never
+      - name: Verify packaged architectures and runtime
+        working-directory: desktop
+        run: |
+          app=$(find dist dist-iptv -name '*.app' -maxdepth 3 -print 2>/dev/null | head -1)
+          test -n "$app"
+          executable=$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$app/Contents/Info.plist")
+          lipo -verify_arch x86_64 arm64 "$app/Contents/MacOS/$executable"
+          test -f "$app/Contents/Resources/app.asar"
+          node tests/local-media-response.cjs
+          node tests/updater.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mac514-${{ matrix.product }}
+          path: |
+            desktop/dist/*.dmg
+            desktop/dist/*.zip
+            desktop/dist-iptv/*.dmg
+            desktop/dist-iptv/*.zip
+          if-no-files-found: error
