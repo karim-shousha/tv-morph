@@ -40,3 +40,4 @@ d040a1bd757d504c350307d6a297444cf8040abce9a4ec0691b7ad9e540baba3  Morph-IPTV-Mac
 5481eab19eae4466d0961dd0ee4bfedf231f84ea61270a4ae8bc3c3ddfb2b9dc  Morph-IPTV-Mac-1.1.515-universal.zip
 7b6657ea99055763ac65f6dbad55e650b8b0a91ae64b1f2d27d93c9d274e8e14  Morph-TV-Mobile-1.1.516-Integrated.apk
 be91c2f26118fc558fa70d7a2c9442dddeba6e0a2b3bdcf422793f3a49540ad7  Morph-TV-Mobile-1.1.517-Integrated.apk
+de7989c97064e480ee22e9562522affc5d4021d735cf4ffe0e84b080b09acd15  Morph-TV-Mobile-1.1.518-Integrated.apk
