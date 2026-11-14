@@ -398,94 +398,94 @@
       "versionCode": 600
     },
     {
-      "file": "Morph-Launcher-PC-1.1.514-Setup.exe",
-      "bytes": 140381024,
-      "sha256": "ff4f18bb5594f1597178424d5f7c85afec956a657315a1c1b2c65f4bb80cf855",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-PC-1.1.514-Setup.exe",
+      "file": "Morph-Launcher-PC-1.1.515-Setup.exe",
+      "bytes": 140381126,
+      "sha256": "8b96e709ed30b0b32831fdaec883ee3e73377ea6b266751a44d45154c50b4c3c",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-Launcher-PC-1.1.515-Setup.exe",
       "product": "launcher",
       "target": "windows",
-      "version": "1.1.514",
-      "name": "Morph-Launcher-PC-1.1.514-Setup",
+      "version": "1.1.515",
+      "name": "Morph-Launcher-PC-1.1.515-Setup",
       "download": "/download/windows",
       "arch": "x64"
     },
     {
-      "file": "Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
-      "bytes": 118515062,
-      "sha256": "011e0ba37bac08de9969739d1e1938180771c810dba378d2adb368d1c1c6be35",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
+      "file": "Morph-Launcher-PC-1.1.515-32bit-Setup.exe",
+      "bytes": 118515447,
+      "sha256": "959ab9b0daadf63942aba2a96f4c4b826bb7498e28f8a35c215a35eaae0df62b",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-Launcher-PC-1.1.515-32bit-Setup.exe",
       "product": "launcher",
       "target": "windows",
-      "version": "1.1.514",
-      "name": "Morph-Launcher-PC-1.1.514-32bit-Setup",
+      "version": "1.1.515",
+      "name": "Morph-Launcher-PC-1.1.515-32bit-Setup",
       "download": "/download/windows32",
       "arch": "ia32"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.514-universal.dmg",
-      "bytes": 246770764,
-      "sha256": "86e492833b7c873717da9594f03733ac2d02b6dad620ce27c0036434d6840e38",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-Mac-1.1.514-universal.dmg",
+      "file": "Morph-Launcher-Mac-1.1.515-universal.dmg",
+      "bytes": 246761846,
+      "sha256": "b37062b074f2f11c96a46ce4cd0e7834a77156be8e2005e338a5bccf053b7b2f",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-Launcher-Mac-1.1.515-universal.dmg",
       "product": "launcher",
       "target": "mac",
-      "version": "1.1.514",
-      "name": "Morph-Launcher-Mac-1.1.514-universal",
+      "version": "1.1.515",
+      "name": "Morph-Launcher-Mac-1.1.515-universal",
       "download": "/download/mac"
     },
     {
-      "file": "Morph-Launcher-Mac-1.1.514-universal.zip",
-      "bytes": 239087689,
-      "sha256": "8ced62c842365e97b71f45629c9c1b0d1cf4cb5c20e47baf3bd042dfbcaad310",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-Launcher-Mac-1.1.514-universal.zip",
+      "file": "Morph-Launcher-Mac-1.1.515-universal.zip",
+      "bytes": 239087778,
+      "sha256": "8f326c1b95dbacf23fcc96bb2e24962da0fea81f61adcb756f4795e9c5a4e8ab",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-Launcher-Mac-1.1.515-universal.zip",
       "product": "launcher",
       "target": "mac",
-      "version": "1.1.514",
-      "name": "Morph-Launcher-Mac-1.1.514-universal"
+      "version": "1.1.515",
+      "name": "Morph-Launcher-Mac-1.1.515-universal"
     },
     {
-      "file": "Morph-IPTV-PC-1.1.514-Setup.exe",
-      "bytes": 140380787,
-      "sha256": "46b7d6b1fb21c9997b3e0eb88869eb92a1c79b0f8d3493a5fe39af10ef5817ea",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-PC-1.1.514-Setup.exe",
+      "file": "Morph-IPTV-PC-1.1.515-Setup.exe",
+      "bytes": 140381091,
+      "sha256": "4502e4e07f84316504f64643b344855a1c61022f99799ac96344e8275b5147ee",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-PC-1.1.515-Setup.exe",
       "product": "iptv",
       "target": "windows",
-      "version": "1.1.514",
-      "name": "Morph-IPTV-PC-1.1.514-Setup",
+      "version": "1.1.515",
+      "name": "Morph-IPTV-PC-1.1.515-Setup",
       "download": "/download/iptv/windows",
       "arch": "x64"
     },
     {
-      "file": "Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
-      "bytes": 118514763,
-      "sha256": "c71929f38ade1d56a7c38f27719abe66ff9d6a068ec691b4a22ff0418e97b376",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
+      "file": "Morph-IPTV-PC-1.1.515-32bit-Setup.exe",
+      "bytes": 118515199,
+      "sha256": "75c2672b6dfce6cc1622a481d4dbce5f1bf1fe25c5468a8182115d851f724595",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-PC-1.1.515-32bit-Setup.exe",
       "product": "iptv",
       "target": "windows",
-      "version": "1.1.514",
-      "name": "Morph-IPTV-PC-1.1.514-32bit-Setup",
+      "version": "1.1.515",
+      "name": "Morph-IPTV-PC-1.1.515-32bit-Setup",
       "download": "/download/iptv/windows32",
       "arch": "ia32"
     },
     {
-      "file": "Morph-IPTV-Mac-1.1.514-universal.dmg",
-      "bytes": 244873805,
-      "sha256": "790121daaef51be2c0eba549be50dfbf86f044d97fa2c9a5a2380620d077df30",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-Mac-1.1.514-universal.dmg",
+      "file": "Morph-IPTV-Mac-1.1.515-universal.dmg",
+      "bytes": 244875645,
+      "sha256": "d040a1bd757d504c350307d6a297444cf8040abce9a4ec0691b7ad9e540baba3",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-Mac-1.1.515-universal.dmg",
       "product": "iptv",
       "target": "mac",
-      "version": "1.1.514",
-      "name": "Morph-IPTV-Mac-1.1.514-universal",
+      "version": "1.1.515",
+      "name": "Morph-IPTV-Mac-1.1.515-universal",
       "download": "/download/iptv/mac"
     },
     {
-      "file": "Morph-IPTV-Mac-1.1.514-universal.zip",
-      "bytes": 237228847,
-      "sha256": "ff1bbec2ccaeac3847fb20aa9dfa7fdaac880ac709dc845e6e517d05e43fe1df",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-Mac-1.1.514-universal.zip",
+      "file": "Morph-IPTV-Mac-1.1.515-universal.zip",
+      "bytes": 237228929,
+      "sha256": "5481eab19eae4466d0961dd0ee4bfedf231f84ea61270a4ae8bc3c3ddfb2b9dc",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-Mac-1.1.515-universal.zip",
       "product": "iptv",
       "target": "mac",
-      "version": "1.1.514",
-      "name": "Morph-IPTV-Mac-1.1.514-universal"
+      "version": "1.1.515",
+      "name": "Morph-IPTV-Mac-1.1.515-universal"
     }
   ],
   "legacy": {
@@ -548,12 +548,12 @@
     "lg-preview": "Morph-Launcher-LG-1.1.514.ipk",
     "iptv/firetv": "Morph-IPTV-Android-TV-1.1.514.apk",
     "samsung-tizen2-lite": "Morph-TV-Samsung-Tizen2-Lite-1.1.347.wgt",
-    "windows": "Morph-Launcher-PC-1.1.514-Setup.exe",
-    "iptv/windows": "Morph-IPTV-PC-1.1.514-Setup.exe",
-    "iptv/mac": "Morph-IPTV-Mac-1.1.514-universal.dmg",
-    "mac": "Morph-Launcher-Mac-1.1.514-universal.dmg",
-    "windows32": "Morph-Launcher-PC-1.1.514-32bit-Setup.exe",
-    "iptv/windows32": "Morph-IPTV-PC-1.1.514-32bit-Setup.exe"
+    "windows": "Morph-Launcher-PC-1.1.515-Setup.exe",
+    "iptv/windows": "Morph-IPTV-PC-1.1.515-Setup.exe",
+    "iptv/mac": "Morph-IPTV-Mac-1.1.515-universal.dmg",
+    "mac": "Morph-Launcher-Mac-1.1.515-universal.dmg",
+    "windows32": "Morph-Launcher-PC-1.1.515-32bit-Setup.exe",
+    "iptv/windows32": "Morph-IPTV-PC-1.1.515-32bit-Setup.exe"
   },
   "iptv": {
     "name": "Morph IPTV",
@@ -629,49 +629,49 @@
         "download": "/download/iptv/lg"
       },
       {
-        "file": "Morph-IPTV-PC-1.1.514-Setup.exe",
-        "bytes": 140380787,
-        "sha256": "46b7d6b1fb21c9997b3e0eb88869eb92a1c79b0f8d3493a5fe39af10ef5817ea",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-PC-1.1.514-Setup.exe",
+        "file": "Morph-IPTV-PC-1.1.515-Setup.exe",
+        "bytes": 140381091,
+        "sha256": "4502e4e07f84316504f64643b344855a1c61022f99799ac96344e8275b5147ee",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-PC-1.1.515-Setup.exe",
         "product": "iptv",
         "target": "windows",
-        "version": "1.1.514",
-        "name": "Morph-IPTV-PC-1.1.514-Setup",
+        "version": "1.1.515",
+        "name": "Morph-IPTV-PC-1.1.515-Setup",
         "download": "/download/iptv/windows",
         "arch": "x64"
       },
       {
-        "file": "Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
-        "bytes": 118514763,
-        "sha256": "c71929f38ade1d56a7c38f27719abe66ff9d6a068ec691b4a22ff0418e97b376",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
+        "file": "Morph-IPTV-PC-1.1.515-32bit-Setup.exe",
+        "bytes": 118515199,
+        "sha256": "75c2672b6dfce6cc1622a481d4dbce5f1bf1fe25c5468a8182115d851f724595",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-PC-1.1.515-32bit-Setup.exe",
         "product": "iptv",
         "target": "windows",
-        "version": "1.1.514",
-        "name": "Morph-IPTV-PC-1.1.514-32bit-Setup",
+        "version": "1.1.515",
+        "name": "Morph-IPTV-PC-1.1.515-32bit-Setup",
         "download": "/download/iptv/windows32",
         "arch": "ia32"
       },
       {
-        "file": "Morph-IPTV-Mac-1.1.514-universal.dmg",
-        "bytes": 244873805,
-        "sha256": "790121daaef51be2c0eba549be50dfbf86f044d97fa2c9a5a2380620d077df30",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-Mac-1.1.514-universal.dmg",
+        "file": "Morph-IPTV-Mac-1.1.515-universal.dmg",
+        "bytes": 244875645,
+        "sha256": "d040a1bd757d504c350307d6a297444cf8040abce9a4ec0691b7ad9e540baba3",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-Mac-1.1.515-universal.dmg",
         "product": "iptv",
         "target": "mac",
-        "version": "1.1.514",
-        "name": "Morph-IPTV-Mac-1.1.514-universal",
+        "version": "1.1.515",
+        "name": "Morph-IPTV-Mac-1.1.515-universal",
         "download": "/download/iptv/mac"
       },
       {
-        "file": "Morph-IPTV-Mac-1.1.514-universal.zip",
-        "bytes": 237228847,
-        "sha256": "ff1bbec2ccaeac3847fb20aa9dfa7fdaac880ac709dc845e6e517d05e43fe1df",
-        "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.514/Morph-IPTV-Mac-1.1.514-universal.zip",
+        "file": "Morph-IPTV-Mac-1.1.515-universal.zip",
+        "bytes": 237228929,
+        "sha256": "5481eab19eae4466d0961dd0ee4bfedf231f84ea61270a4ae8bc3c3ddfb2b9dc",
+        "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-d42ec5251759bfc5ddae/Morph-IPTV-Mac-1.1.515-universal.zip",
         "product": "iptv",
         "target": "mac",
-        "version": "1.1.514",
-        "name": "Morph-IPTV-Mac-1.1.514-universal"
+        "version": "1.1.515",
+        "name": "Morph-IPTV-Mac-1.1.515-universal"
       }
     ],
     "downloads": {
@@ -711,17 +711,18 @@
       ]
     },
     "desktop": {
-      "version": "1.1.514",
+      "version": "1.1.515",
       "windows": "/download/iptv/windows",
       "mac": "/download/iptv/mac",
       "releaseManifest": "/desktop-iptv-release.json",
-      "windowsVersion": "1.1.514",
-      "macVersion": "1.1.514",
+      "windowsVersion": "1.1.515",
+      "macVersion": "1.1.515",
       "windows32": "/download/iptv/windows32",
       "windowsArchitectures": [
         "x64",
         "ia32"
-      ]
+      ],
+      "windows32Version": "1.1.515"
     }
   },
   "optionalPacks": {
@@ -735,7 +736,7 @@
     }
   },
   "desktop": {
-    "version": "1.1.514",
+    "version": "1.1.515",
     "windows": "/download/windows",
     "mac": "/download/mac",
     "releaseManifest": "/desktop-release.json",
@@ -743,13 +744,14 @@
       "x64",
       "arm64"
     ],
-    "windowsVersion": "1.1.514",
-    "macVersion": "1.1.514",
+    "windowsVersion": "1.1.515",
+    "macVersion": "1.1.515",
     "windows32": "/download/windows32",
     "windowsArchitectures": [
       "x64",
       "ia32"
-    ]
+    ],
+    "windows32Version": "1.1.515"
   },
   "bridge": {
     "version": "1.1.352",
