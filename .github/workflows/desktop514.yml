@@ -44,7 +44,7 @@ jobs:
           app=$(find dist dist-iptv -name '*.app' -maxdepth 3 -print 2>/dev/null | head -1)
           test -n "$app"
           executable=$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$app/Contents/Info.plist")
-          lipo -verify_arch x86_64 arm64 "$app/Contents/MacOS/$executable"
+          lipo "$app/Contents/MacOS/$executable" -verify_arch x86_64 arm64
           test -f "$app/Contents/Resources/app.asar"
           node tests/local-media-response.cjs
           node tests/updater.cjs
