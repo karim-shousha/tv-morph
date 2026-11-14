@@ -268,6 +268,21 @@ class Handler(BaseHTTPRequestHandler):
             return self.send_json(200, {'reviews': [dict(row) for row in rows[:50]], 'stats': stats,
                                        'pending': pending, 'next': rows[49]['id'] if len(rows) > 50 else None,
                                        'csrf': digest('admin-csrf:' + token)})
+        if path.startswith('/api/admin/plus/receipt/'):
+            if not self.admin():
+                return self.send_json(401, {'error': 'authentication_required'})
+            image = PLUS.receipt_image(path.rsplit('/',1)[-1])
+            if image is None:
+                return self.send_json(404, {'error': 'not_found'})
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/jpeg')
+            self.send_header('Cache-Control', 'private, no-store')
+            self.send_header('X-Content-Type-Options', 'nosniff')
+            self.send_header('Content-Length', str(len(image)))
+            self.end_headers()
+            if self.command != 'HEAD':
+                self.wfile.write(image)
+            return
         if path == '/api/admin/plus':
             token = self.admin()
             if not token:
@@ -423,6 +438,7 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     threading.Thread(target=backup_loop, daemon=True).start()
+    threading.Thread(target=PLUS.commerce_worker, daemon=True).start()
     server = ThreadingHTTPServer(('127.0.0.1', int(os.environ.get('MORPH_API_PORT', '8081'))), Handler)
     server.daemon_threads = True
     print('Morph community API ready', flush=True)

@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode, urlsplit
 from urllib.error import URLError
+from plus_commerce import PlusCommerce
 
 PLANS = {'single': {'usd': 500, 'devices': 1}, 'family': {'usd': 1000, 'devices': 5}, 'nov26_single': {'usd': 100, 'devices': 1}, 'nov26_duo': {'usd': 200, 'devices': 2}, 'nov26_family': {'usd': 200, 'devices': 5}}
 PROMO_PLANS = frozenset({'nov26_single', 'nov26_duo', 'nov26_family'})
@@ -33,7 +34,7 @@ WEBSITE_ORIGINS = frozenset({
     'https://morphtv.herroshetta.com',
 })
 
-class Plus:
+class Plus(PlusCommerce):
     def __init__(self, data, secret, origin):
         self.path, self.secret, self.origin = Path(data)/'plus.sqlite3', secret, origin
         with self.db() as db:
@@ -70,6 +71,7 @@ class Plus:
                 db.execute("ALTER TABLE orders ADD COLUMN expires INTEGER")
             for row in db.execute('SELECT id FROM orders').fetchall():
                 self.register_short(db,row['id'])
+            self.init_commerce(db)
         os.chmod(self.path, 0o600)
 
     @contextlib.contextmanager
@@ -134,14 +136,28 @@ class Plus:
         if row['plan']=='owner' and row['source']=='complimentary': return None
         return PLANS[row['plan']]['devices']
 
-    def checkout(self, plan, expected=None):
-        if not self.enabled():raise ValueError('sales_not_enabled')
+    @staticmethod
+    def plan_cents(plan):
+        return PLANS[plan]['usd']
+
+    def purchase_terms(self, plan, expected):
         if plan not in PLANS:raise ValueError('unknown_plan')
         if plan in PROMO_PLANS and not promo_active():raise ValueError('offer_changed')
-        oid=secrets.token_urlsafe(24);proof=secrets.token_urlsafe(32)
         now=int(time.time());entitlement='lifetime' if now < OFFER_END else 'annual'
         if expected is not None and expected != entitlement:raise ValueError('offer_changed')
-        with self.db() as db:db.execute('INSERT INTO orders(id,proof,plan,license_hash,created,mode,entitlement) VALUES (?,?,?,?,?,?,?)',(oid,self.digest(proof),plan,self.digest(self.code(oid)),now,os.environ.get('MORPH_PLUS_MODE','test'),entitlement))
+        return now,entitlement
+
+    def checkout(self, plan, expected=None, method='stripe'):
+        if method not in ('stripe','paypal'):raise ValueError('unknown_payment_method')
+        if not (self.enabled() if method=='stripe' else self.paypal_enabled()):raise ValueError('sales_not_enabled')
+        now,entitlement=self.purchase_terms(plan,expected)
+        oid=secrets.token_urlsafe(24);proof=secrets.token_urlsafe(32)
+        with self.db() as db:
+            db.execute('INSERT INTO orders(id,proof,plan,license_hash,created,mode,entitlement,source) VALUES (?,?,?,?,?,?,?,?)',(oid,self.digest(proof),plan,self.digest(self.code(oid)),now,os.environ.get('MORPH_PLUS_MODE','test'),entitlement,method))
+        if method=='paypal':
+            session,url=self.paypal_checkout(oid,proof,self.plan_cents(plan))
+            with self.db() as db:db.execute('UPDATE orders SET session=? WHERE id=?',(session,oid))
+            return {'checkout':url,'order':oid,'proof':proof,'entitlement':entitlement}
         values={'mode':'payment','line_items[0][quantity]':1,
           'client_reference_id':oid,'metadata[morph_order]':oid,'metadata[morph_entitlement]':entitlement,'metadata[morph_plan]':plan,'payment_intent_data[metadata][morph_order]':oid,
           'custom_text[submit][message]':('Morph TV Plus: lifetime activation. One payment, no annual renewal.' if entitlement=='lifetime' else 'Morph TV Plus: 365 days. Manual renewal; no automatic charge.'),
@@ -165,6 +181,7 @@ class Plus:
         session=self.stripe('checkout/sessions/'+session_id+'?expand[]=line_items')
         oid=session.get('client_reference_id')
         with self.db() as db:
+            db.execute('BEGIN IMMEDIATE')
             row=db.execute('SELECT * FROM orders WHERE id=?',(oid,)).fetchone()
             if not row or row['session']!=session_id or row['source']!='stripe':raise ValueError('order_mismatch')
             plan=PLANS[row['plan']];items=session.get('line_items',{}).get('data',[])
@@ -172,12 +189,18 @@ class Plus:
             if session.get('mode')!='payment' or session.get('currency')!='usd' or session.get('amount_total')!=plan['usd'] or len(items)!=1 or items[0].get('quantity')!=1 or (row['plan'] not in PROMO_PLANS and items[0].get('price',{}).get('id')!=os.environ['MORPH_STRIPE_'+row['plan'].upper()+'_PRICE']) or (row['plan'] in PROMO_PLANS and (session.get('metadata',{}).get('morph_plan')!=row['plan'] or items[0].get('price',{}).get('unit_amount')!=plan['usd'])):raise ValueError('payment_mismatch')
             if session.get('livemode') != (os.environ.get('MORPH_PLUS_MODE','test')=='live'):raise ValueError('payment_mode_mismatch')
             if row['mode'] != os.environ.get('MORPH_PLUS_MODE','test'):raise ValueError('payment_mode_mismatch')
-            # Replay must not extend an annual license. Sessions opened during
-            # the offer retain the lifetime terms shown at checkout creation.
-            expires=row['expires']
-            if row['entitlement']=='annual' and not row['paid']:
-                expires=int(time.time())+ANNUAL_SECONDS
-            db.execute('UPDATE orders SET paid=1,payment=?,expires=? WHERE id=?',(session['payment_intent'],expires,oid))
+            payment=session.get('payment_intent')
+            if not isinstance(payment,str) or not payment.startswith('pi_'):raise ValueError('payment_mismatch')
+            email=(session.get('customer_details') or {}).get('email') or session.get('customer_email')
+            self.mark_paid(db,row,payment,email)
+
+    def mark_paid(self, db, row, payment, email):
+        if row['revoked']:return
+        if row['paid'] and row['payment']!=payment:raise ValueError('payment_mismatch')
+        if not row['paid']:
+            expires=int(time.time())+ANNUAL_SECONDS if row['entitlement']=='annual' else None
+            db.execute('UPDATE orders SET paid=1,payment=?,expires=? WHERE id=?',(payment,expires,row['id']))
+        if row['mode']=='live':self.queue_delivery(db,row['id'],email)
 
     def order_status(self, order, proof):
         with self.db() as db:
@@ -186,7 +209,8 @@ class Plus:
         # Only the authenticated purchase owner may request Stripe reconciliation.
         # Claim a short DB-backed cooldown before network I/O, across workers.
         reconcile=False
-        if not row['paid'] and not row['revoked'] and row['source']=='stripe' and row['session'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test') and self.enabled():
+        provider_ready=(row['source']=='stripe' and self.enabled()) or (row['source']=='paypal' and self.paypal_enabled())
+        if not row['paid'] and not row['revoked'] and row['session'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test') and provider_ready:
             now=int(time.time());key=self.digest('reconcile:'+row['id'])
             with self.db() as db:
                 db.execute('BEGIN IMMEDIATE')
@@ -194,14 +218,20 @@ class Plus:
                 if not prior or prior['expires']<=now:
                     db.execute('INSERT INTO rate VALUES (?,1,?) ON CONFLICT(key) DO UPDATE SET expires=excluded.expires',(key,now+30))
                     reconcile=True
-            if reconcile:self.fulfill(row['session'])
+            if reconcile:
+                if row['source']=='paypal':self.paypal_capture(row['session'])
+                else:self.fulfill(row['session'])
         # Re-read after Stripe or a concurrent webhook; never trust browser flags.
         with self.db() as db:
             row=db.execute('SELECT * FROM orders WHERE id=?',(row['id'],)).fetchone()
             paid=bool(row['paid'] and not row['revoked'] and row['mode']==os.environ.get('MORPH_PLUS_MODE','test'))
             result={'paid':paid}
+            receipt=db.execute('SELECT state FROM plus_receipts WHERE license=?',(row['id'],)).fetchone()
+            if receipt:result['receiptState']=receipt['state']
             if paid:
                 result.update(code=self.register_short(db,row['id']),plan=row['plan'],maxDevices=self.capacity(row),entitlement=row['entitlement'],expiresAt=row['expires'])
+                delivery=db.execute('SELECT sent FROM plus_delivery WHERE license=?',(row['id'],)).fetchone()
+                result['emailDelivery']='sent' if delivery and delivery['sent'] else 'pending' if delivery and self.mail_enabled() else 'unavailable'
         return result
 
     def webhook(self, body, header):
@@ -243,7 +273,7 @@ class Plus:
         if not isinstance(binding,str) or not re.fullmatch(r'(?:android|tizen|lg|pc)_[a-f0-9]{64}',binding):raise ValueError('invalid_device_binding')
         return self.digest('device-binding:'+binding)
 
-    def activate(self, code, device, name, binding=None):
+    def activate(self, code, device, name, binding=None, address=''):
         if not re.fullmatch(r'[A-Za-z0-9_-]{20,80}',str(device)):raise ValueError('invalid_device')
         anchor=self.binding_hash(binding) if binding else None
         token=secrets.token_urlsafe(32);now=int(time.time())
@@ -258,6 +288,7 @@ class Plus:
             db.execute('INSERT INTO devices VALUES (?,?,?,?,?) ON CONFLICT(license,device) DO UPDATE SET token=excluded.token,name=excluded.name',(oid,device,str(name)[:60],self.digest(token),now))
             db.execute('INSERT INTO device_tokens VALUES (?,?,?,?)',(self.digest(token),oid,device,now))
             if anchor:db.execute('INSERT INTO device_bindings VALUES (?,?,?) ON CONFLICT(license,binding) DO UPDATE SET device=excluded.device',(oid,anchor,device))
+            self.observe_network(db,oid,device,address)
         return {'token':token,'device':device,'active':True,'scope':'tv','plan':row['plan'],'maxDevices':self.capacity(row)}
 
     def bind_device(self, token, binding):
@@ -296,7 +327,7 @@ class Plus:
         if not row:raise ValueError('recovery_rejected')
         return {'allowed':True}
 
-    def check(self, token):
+    def check(self, token, address=''):
         with self.db() as db:
             valid=" AND (o.entitlement='lifetime' OR o.expires>?)"
             params=(self.digest(token),os.environ.get('MORPH_PLUS_MODE','test'),int(time.time()))
@@ -306,6 +337,7 @@ class Plus:
             if row:
                 used=db.execute('SELECT COUNT(*) FROM devices WHERE license=?',(row['id'],)).fetchone()[0]
                 maximum=self.capacity(row)
+                if tv and address:self.observe_network(db,row['id'],row['device'],address)
         result={'active':bool(row),'scope':row['scope'] if row else None,'plan':row['plan'] if row else None}
         if row:result.update(maxDevices=maximum,usedDevices=used,remainingDevices=None if maximum is None else max(0,maximum-used))
         if row and row['scope']=='tv':result['device']=row['device']
@@ -334,10 +366,28 @@ class Plus:
     def grants(self):
         with self.db() as db:
             rows=db.execute("SELECT g.email,g.name,g.created,g.updated,o.id,o.plan,o.source,o.revoked,(SELECT COUNT(*) FROM devices d WHERE d.license=o.id) AS used FROM grants g JOIN orders o ON o.id=g.license WHERE o.source='complimentary' ORDER BY g.updated DESC,g.email LIMIT 1001").fetchall()
-        return {'grants':[dict(r,maxDevices=self.capacity(r)) for r in rows[:1000]],'truncated':len(rows)>1000}
+            purchases=db.execute("""SELECT o.id,COALESCE(d.email,'') AS email,'' AS name,o.plan,o.source,o.revoked,o.created,
+                d.sent AS emailSent,(SELECT COUNT(*) FROM devices WHERE license=o.id) AS used
+                FROM orders o LEFT JOIN plus_delivery d ON d.license=o.id
+                WHERE o.paid=1 AND o.mode='live' ORDER BY o.created DESC LIMIT 250""").fetchall()
+            receipts=db.execute("""SELECT r.license AS id,r.email,r.reference,r.amount,r.state,r.created,o.plan
+                FROM plus_receipts r JOIN orders o ON o.id=r.license WHERE r.state='pending' ORDER BY r.created LIMIT 250""").fetchall()
+            paid=[dict(r,maxDevices=self.capacity(r)) for r in purchases]
+            pending=[dict(r) for r in receipts]
+        return {'grants':[dict(r,maxDevices=self.capacity(r)) for r in rows[:1000]],'purchases':paid,'receipts':pending,'truncated':len(rows)>1000}
 
     def grant_action(self, data, actor):
         action=data.get('action');now=int(time.time())
+        if action in ('approve-receipt','reject-receipt'):
+            return self.review_receipt(data,actor)
+        if action=='network-usage':
+            with self.db() as db:
+                if data.get('code'):
+                    row=self.lookup(db,str(data['code']).strip().upper())
+                else:
+                    row=db.execute("SELECT * FROM orders WHERE id=? AND (source='complimentary' OR (paid=1 AND mode='live'))",(data.get('id'),)).fetchone()
+                    if not row:raise ValueError('unknown_grant')
+                return self.network_summary(db,row['id'])
         with self.db() as db:
             db.execute('BEGIN IMMEDIATE')
             if action=='reset-devices':
@@ -404,23 +454,34 @@ class Plus:
             if not any(f['file']==filename for p in manifest['packs'] for f in p['files']) and not any(f['file']==filename for f in manifest.get('legacyFiles',[])):handler.send_json(404,{'error':'not_found'});return True
             handler.send_response(200);handler.send_header('Content-Type','image/webp');handler.send_header('Cache-Control','no-store');handler.send_header('X-Accel-Redirect','/_artifacts/theme-packs/'+filename);handler.end_headers();return True
         if handler.command=='GET' and path=='/api/plus/plans':
-            handler.send_json(200,{'deviceIdentityVersion':2,'enabled':self.enabled(),'plans':public_plans(),'freeThemes':FREE,'mode':os.environ.get('MORPH_PLUS_MODE','test'),'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True,'promotion':promo_active(),'promotionEndsAt':PROMO_END,'timeZone':'America/New_York'}});return True
+            mode=os.environ.get('MORPH_PLUS_MODE','test')
+            handler.send_json(200,{'deviceIdentityVersion':2,'enabled':self.enabled(),'paymentMethods':{'paypal':self.paypal_enabled() and mode=='live','instapay':mode=='live' and os.environ.get('MORPH_INSTAPAY_RECEIPTS')=='true','email':self.mail_enabled()},'plans':public_plans(),'freeThemes':FREE,'mode':mode,'offer':{'startsAt':OFFER_START,'endsAt':OFFER_END,'serverNow':int(time.time()),'active':time.time()<OFFER_END,'during':'lifetime','after':'annual','annualDays':365,'autoRenew':False,'existingLifetimePreserved':True,'promotion':promo_active(),'promotionEndsAt':PROMO_END,'timeZone':'America/New_York'}});return True
         if handler.command!='POST':handler.send_json(405,{'error':'method_not_allowed'});return True
         try:
             n=int(handler.headers.get('Content-Length','0'))
-            if n<1 or n>(262144 if path.endswith('/webhook') else 4096):raise ValueError('invalid_size')
+            limit=3*1024*1024 if path=='/api/plus/receipt' else 262144 if path.endswith('/webhook') else 4096
+            if not 0<n<=limit:raise ValueError('invalid_size')
             body=handler.rfile.read(n)
             if path=='/api/plus/webhook':self.webhook(body,handler.headers.get('Stripe-Signature',''));result={'ok':True}
+            elif path=='/api/plus/paypal/webhook':self.paypal_webhook(body,handler.headers);result={'ok':True}
             else:
                 origin=handler.headers.get('Origin','')
                 if not self.client_origin_allowed(origin,path):raise ValueError('origin_rejected')
-                self.limit(handler.headers.get('X-Client-IP',handler.client_address[0]),'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
-                if path=='/api/plus/checkout':result=self.checkout(data.get('plan'),data.get('expectedEntitlement'))
+                address=handler.headers.get('X-Client-IP',handler.client_address[0])
+                self.limit(address,'read' if path in ['/api/plus/order','/api/plus/status'] else 'write');data=json.loads(body)
+                if not isinstance(data,dict):raise ValueError('invalid_request')
+                if path=='/api/plus/checkout':result=self.checkout(data.get('plan'),data.get('expectedEntitlement'),data.get('method','stripe'))
+                elif path=='/api/plus/receipt':
+                    if os.environ.get('MORPH_PLUS_MODE')!='live' or os.environ.get('MORPH_INSTAPAY_RECEIPTS')!='true':raise ValueError('sales_not_enabled')
+                    plan=public_plans().get(data.get('plan'))
+                    if not plan or plan['id']!=data.get('planId'):raise ValueError('offer_changed')
+                    _,entitlement=self.purchase_terms(plan['id'],data.get('expectedEntitlement'))
+                    result=self.submit_receipt(plan['id'],plan['egp'],entitlement,data.get('email'),data.get('reference'),data.get('image'))
                 elif path=='/api/plus/order':result=self.order_status(data.get('order'),data.get('proof'))
-                elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'),data.get('binding'))
+                elif path=='/api/plus/activate':result=self.activate(data.get('code'),data.get('device'),data.get('name','TV'),data.get('binding'),address)
                 elif path=='/api/plus/bind-device':result=self.bind_device(data.get('token'),data.get('binding'))
                 elif path=='/api/plus/studio':result=self.studio(data.get('code'),data.get('device'))
-                elif path=='/api/plus/status':result=self.check(str(data.get('token','')))
+                elif path=='/api/plus/status':result=self.check(str(data.get('token','')),address)
                 elif path=='/api/plus/deactivate':result=self.deactivate(data.get('token'),data.get('device'))
                 elif path=='/api/plus/parent-reset':result=self.verify_parent_reset(data.get('code'),data.get('token'))
                 elif path=='/api/plus/devices':
@@ -436,6 +497,8 @@ class Plus:
         except (ValueError,KeyError,TypeError) as error:
             reason=str(error)
             visible={'invalid_license','device_limit','invalid_device','rate_limited','origin_rejected'}
-            handler.send_json(400,{'error':reason if path in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/bind-device'] and reason in visible else 'invalid_or_unavailable_request'})
+            public_error=reason in visible and path in ['/api/plus/activate','/api/plus/studio','/api/plus/status','/api/plus/bind-device']
+            public_error=public_error or reason=='offer_changed' or (path=='/api/plus/receipt' and reason in ('invalid_transfer_reference','invalid_image','invalid_email','receipt_queue_full'))
+            handler.send_json(400,{'error':reason if public_error else 'invalid_or_unavailable_request'})
         except (URLError,TimeoutError):handler.send_json(503,{'error':'payment_service_unavailable'})
         return True

@@ -8,9 +8,9 @@ RUN python /fetch-release-artifacts.py
 
 FROM nginx:stable-alpine
 
-RUN apk add --no-cache python3
+RUN apk add --no-cache python3 py3-pillow
 
-COPY community/server.py community/plus.py community/qr_link.py community/matches_free.py community/start.sh /opt/morph-community/
+COPY community/server.py community/plus.py community/plus_commerce.py community/qr_link.py community/matches_free.py community/start.sh /opt/morph-community/
 
 RUN chmod 755 /opt/morph-community/start.sh
 

@@ -72,6 +72,7 @@
 community/*
 !community/server.py
 !community/plus.py
+!community/plus_commerce.py
 !community/qr_link.py
 !community/matches_free.py
 !community/start.sh

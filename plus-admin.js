@@ -1,10 +1,52 @@
 (function(){'use strict';
  const $=id=>document.getElementById(id);let csrf='',rows=[],busy=false;
- const errors={invalid_license:'الكود غير صالح أو موقوف أو انتهت مدته.',reset_confirmation_required:'أكّد إعادة ضبط الأجهزة أولًا.',invalid_email:'راجع الإيميل المكتوب.',invalid_grant:'راجع الاسم والباقة.',remove_devices_first:'أزل الأجهزة الزائدة أولًا قبل التحويل إلى تلفزيون واحد.',grant_disabled:'التفعيل موقوف؛ أعد تفعيله أولًا.',too_many_requests:'محاولات كثيرة. انتظر قليلًا.',login_failed:'كلمة المرور غير صحيحة.',admin_not_configured:'دخول الإدارة لم يُضبط على الخادم بعد.'};
+ const errors={transfer_already_used:'رقم العملية اتستخدم قبل كده.',receipt_not_pending:'الإيصال اتراجع بالفعل.',transfer_not_verified:'أكّد مطابقة التحويل أولًا.',invalid_license:'الكود غير صالح أو موقوف أو انتهت مدته.',reset_confirmation_required:'أكّد إعادة ضبط الأجهزة أولًا.',invalid_email:'راجع الإيميل المكتوب.',invalid_grant:'راجع الاسم والباقة.',remove_devices_first:'أزل الأجهزة الزائدة أولًا قبل التحويل إلى تلفزيون واحد.',grant_disabled:'التفعيل موقوف؛ أعد تفعيله أولًا.',too_many_requests:'محاولات كثيرة. انتظر قليلًا.',login_failed:'كلمة المرور غير صحيحة.',admin_not_configured:'دخول الإدارة لم يُضبط على الخادم بعد.'};
  function node(tag,text,cls){const e=document.createElement(tag);e.textContent=text;if(cls)e.className=cls;return e;}
  async function api(path,body){const r=await fetch(path,{method:body?'POST':'GET',credentials:'same-origin',cache:'no-store',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined});const v=await r.json();if(!r.ok){const e=new Error(errors[v.error]||'تعذّر إتمام الطلب. راجع الاتصال أو سجّل الدخول مجددًا.');e.status=r.status;throw e;}return v;}
- function auth(show){$('login').hidden=!show;$('dashboard').hidden=show;$('logout').hidden=show;if(show){rows=[];csrf='';$('grants').textContent='';$('detail').close();$('detail-content').textContent='';$('reset-code-form').reset();$('reset-status').textContent='';}}
- async function load(){try{const v=await api('/api/admin/plus');csrf=v.csrf;rows=v.grants;auth(false);$('total').textContent=rows.length;$('active').textContent=rows.filter(r=>!r.revoked).length;$('used').textContent=rows.reduce((s,r)=>s+r.used,0);$('truncated').hidden=!v.truncated;render();}catch(e){if(e.status===401||e.status===403)auth(true);else $('status').textContent=e.message;}}
+ function auth(show){$('login').hidden=!show;$('dashboard').hidden=show;$('logout').hidden=show;if(show){rows=[];csrf='';purchases.textContent='';receipts.textContent='';lookup.reset();$('grants').textContent='';$('detail').close();$('detail-content').textContent='';$('reset-code-form').reset();$('reset-status').textContent='';}}
+
+ const commerce=node('section','','panel');
+ commerce.append(node('h2','المدفوعات واستخدام الأكواد'));
+ const purchases=node('div','','grants'),receipts=node('div','','grants');
+ commerce.append(node('h3','إيصالات InstaPay للمراجعة'),receipts,node('h3','آخر المشتريات المؤكدة'),purchases);
+ $('grants').before(commerce);
+ const lookup=node('form','','actions'),lookupCode=node('input',''),lookupButton=node('button','فحص الشبكات بالكود');
+ lookupCode.required=true;lookupCode.placeholder='MT-…';lookupCode.setAttribute('aria-label','كود Plus');
+ lookup.append(lookupCode,lookupButton);purchases.before(lookup);
+ lookup.onsubmit=async event=>{event.preventDefault();try{await showNetworks({code:lookupCode.value.trim().toUpperCase()},lookupButton);}catch(error){}};
+ async function showNetworks(query,button){
+  const v=await perform(Object.assign({action:'network-usage'},query),button);
+  if(!v)return;
+  detail('استخدام الشبكة خلال آخر ٣٠ يوم');
+  $('detail-content').append(node('p',v.possibleSharing?'أكثر من جهاز ظهر على شبكات مختلفة':v.differentNetwork?'ظهر استخدام عبر شبكات مختلفة':'عدد الشبكات المرصودة: '+v.networks),node('p',v.networks+' شبكة · '+v.devices+' جهاز'),node('p','تغيير عنوان الإنترنت أو استخدام VPN ممكن يظهر كشبكة مختلفة.'));
+ }
+ function renderCommerce(data){
+  purchases.textContent='';receipts.textContent='';
+  for(const order of data.purchases||[]){
+   const row=node('article','','grant');
+   row.append(node('strong',order.email||order.id),node('p',order.source+' · '+order.plan+' · '+(order.emailSent?'تم إرسال الكود':'الإرسال غير مؤكد')));
+   action(row,'فحص استخدام الشبكات',button=>showNetworks({id:order.id},button));
+   purchases.append(row);
+  }
+  if(!purchases.children.length)purchases.append(node('p','لا توجد مشتريات مسجلة.'));
+  for(const receipt of data.receipts||[]){
+   const row=node('article','','grant');
+   row.append(node('strong',receipt.email),node('p',receipt.plan+' · '+receipt.amount+' EGP · '+receipt.reference));
+   action(row,'عرض الإيصال',()=>{
+    detail('إيصال InstaPay · '+receipt.reference);
+    const image=document.createElement('img');image.alt='صورة إيصال التحويل';image.src='/api/admin/plus/receipt/'+encodeURIComponent(receipt.id);image.style.maxWidth='100%';
+    $('detail-content').append(image,node('p','طابق رقم العملية والمبلغ مع التحويل الوارد لحسابك قبل الاعتماد.'));
+    for(const approve of [true,false])action($('detail-content'),approve?'تأكيد استلام التحويل':'رفض الإيصال',async button=>{
+     if(!confirm(approve?'هل طابقت رقم العملية والمبلغ مع التحويل الوارد؟':'رفض الإيصال وحذف الصورة؟'))return;
+     const result=await perform({action:approve?'approve-receipt':'reject-receipt',id:receipt.id,confirmed:approve},button);
+     if(!result)return;$('detail').close();await load();
+    });
+   });
+   receipts.append(row);
+  }
+  if(!receipts.children.length)receipts.append(node('p','لا توجد إيصالات في الانتظار.'));
+ }
+ async function load(){try{const v=await api('/api/admin/plus');csrf=v.csrf;rows=v.grants;auth(false);$('total').textContent=rows.length;$('active').textContent=rows.filter(r=>!r.revoked).length;$('used').textContent=rows.reduce((s,r)=>s+r.used,0);$('truncated').hidden=!v.truncated;render();renderCommerce(v);}catch(e){if(e.status===401||e.status===403)auth(true);else $('status').textContent=e.message;}}
  async function perform(data,button){if(busy)return;busy=true;if(button)button.disabled=true;try{return await api('/api/admin/plus',Object.assign({csrf},data));}catch(e){if(e.status===401||e.status===403)auth(true);$('status').textContent=e.message;$('detail-status').textContent=e.message;throw e;}finally{busy=false;if(button)button.disabled=false;}}
  function detail(title){$('detail-title').textContent=title;$('detail-content').textContent='';$('detail-status').textContent='';if(!$('detail').open)$('detail').showModal();}
  function action(parent,label,fn,cls){const b=node('button',label,cls);b.type='button';b.onclick=()=>Promise.resolve(fn(b)).catch(()=>{});parent.appendChild(b);return b;}
@@ -12,6 +54,7 @@
  if(!r.revoked)action(actions,'عرض الكود',async b=>{const v=await perform({action:'code',id:r.id},b);if(!v)return;detail(r.email);$('detail-content').append(node('p','ابعث الكود بشكل خاص. المستفيد لا يحصل على صلاحيات الإدارة.'),node('p',v.code,'license-code'));action($('detail-content'),'نسخ الكود',async()=>{try{await navigator.clipboard.writeText(v.code);$('detail-status').textContent='تم نسخ الكود.';}catch(_){$('detail-status').textContent='حدّد الكود وانسخه يدويًا.';}});});
  action(actions,'الأجهزة ونقل التفعيل',async b=>{const v=await perform({action:'devices',id:r.id},b);if(!v)return;detail('أجهزة '+r.email);if(!v.devices.length)$('detail-content').append(node('p','لا توجد تلفزيونات مرتبطة بعد.'));v.devices.forEach(d=>{const item=node('div','','device');item.append(node('strong',d.name||'TV'),node('p','معرّف الجهاز: …'+d.device.slice(-8)));action(item,'إزالة الجهاز',async btn=>{if(!confirm('إلغاء تفعيل هذا التلفزيون وإتاحة مكان لجهاز آخر؟'))return;await perform({action:'remove-device',id:r.id,device:d.device},btn);item.remove();$('detail-status').textContent='تمت إزالة الجهاز. يسري عند التحقق التالي.';await load();},'danger');$('detail-content').append(item);});});
  if(!r.revoked)action(actions,'إعادة ضبط كل الأجهزة',async b=>{if(!confirm('إزالة جميع تلفزيونات هذا الكود؟ سيحتاج المستخدم إلى إدخال نفس الكود مجددًا. الباقة ومدة الاشتراك لا تتغيران.'))return;const v=await perform({action:'reset-devices',id:r.id,confirmReset:true},b);if(!v)return;$('status').textContent='تمت إعادة ضبط الأجهزة ('+v.removedDevices+'). أرسل للمستخدم نفس الكود لتفعيله مجددًا.';await load();},'danger');
+ action(actions,'فحص استخدام الشبكات',button=>showNetworks({id:r.id},button));
  action(actions,'تعديل',()=>{$('email').value=r.email;$('name').value=r.name;$('plan').value=r.plan;$('email').focus();$('grant-form').scrollIntoView({behavior:'smooth',block:'center'});});
  action(actions,r.revoked?'إعادة التفعيل':'إيقاف التفعيل',async b=>{if(!confirm(r.revoked?'إعادة إتاحة الكود؟ يلزم إدخاله مجددًا في الأجهزة.':'إيقاف Plus لهذا المستفيد وإلغاء رموز أجهزته؟'))return;await perform({action:r.revoked?'restore':'revoke',id:r.id},b);$('status').textContent=r.revoked?'تمت إعادة التفعيل. أرسل الكود لإدخاله مجددًا.':'تم الإيقاف. يظهر أثره عند التحقق التالي.';await load();},r.revoked?'':'danger');a.append(actions);$('grants').append(a);});}
  $('login').onsubmit=async e=>{e.preventDefault();if(busy)return;busy=true;const b=e.submitter;b.disabled=true;try{await api('/api/admin/login',{password:$('password').value});$('password').value='';$('status').textContent='';await load();}catch(err){$('status').textContent=err.message;}finally{busy=false;b.disabled=false;}};

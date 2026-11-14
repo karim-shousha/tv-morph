@@ -6,3 +6,7 @@
 
 /* Plus checkout uses the same blue identity as the download site. */
 .plus-price{color:#2463eb}.plus-main button{background:#2463eb;border-color:#2463eb}.launch-offer{background:linear-gradient(135deg,#10263e,#174777);border-color:#426385}.launch-offer>span{color:#b3d8ff}.plus-video-panel{background:#eaf0fb}.plus-video-link{background:#2463eb}.manual-actions a{background:#2463eb}.plus-grid .plus-panel{display:flex;flex-direction:column}.plus-grid .plus-panel>button{margin-top:auto}.plus-grid .manual-plan-buttons{margin-top:12px}.plus-main .plus-languages button{background:#eaf0fb;color:#193352;border-color:#ccd9ef}
+.manual-receipt-form{display:grid;gap:.8rem;margin-block:1rem}
+.manual-receipt-form label{display:grid;gap:.3rem}
+.manual-receipt-form input{max-width:100%;padding:.65rem;color:inherit;background:var(--card,#202b3e);border:1px solid #64748b;border-radius:.5rem}
+.manual-plan-buttons [hidden]{display:none}
