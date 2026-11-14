@@ -1,34 +1,10 @@
 {
   "version": "1.1.435",
-  "windowsVersion": "1.1.492",
+  "windowsVersion": "1.1.514",
   "macVersion": "1.1.435",
   "product": "iptv",
   "minimumMacOS": "13.0",
   "assets": [
-    {
-      "file": "Morph-IPTV-PC-1.1.492-Setup.exe",
-      "version": "1.1.492",
-      "product": "iptv",
-      "target": "windows",
-      "download": "/download/iptv/windows",
-      "name": "Morph-IPTV-PC-1.1.492-Setup",
-      "bytes": 140374026,
-      "sha256": "782de7eec5cfe6fded04f1b60e172dd20e05cf506e55830adbb0739b32808d1d",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-IPTV-PC-1.1.492-Setup.exe",
-      "arch": "x64"
-    },
-    {
-      "file": "Morph-IPTV-PC-1.1.492-32bit-Setup.exe",
-      "version": "1.1.492",
-      "product": "iptv",
-      "target": "windows",
-      "download": "/download/iptv/windows32",
-      "name": "Morph-IPTV-PC-1.1.492-32bit-Setup",
-      "bytes": 111656005,
-      "sha256": "3397e65d1c8ad14bf8f786d564ba9cbe3e9c42e64f51cc2a5cb2d3560a6b2454",
-      "url": "https://github.com/karim-shousha/tv-morph/releases/download/morph-stability-493-492/Morph-IPTV-PC-1.1.492-32bit-Setup.exe",
-      "arch": "ia32"
-    },
     {
       "file": "Morph-IPTV-Mac-1.1.435-universal.dmg",
       "bytes": 244857537,
@@ -40,6 +16,30 @@
       "bytes": 237206560,
       "sha256": "86298175f85183a4958f1e6e07111ff54eef2934f5d2c9f9d7f478a736f4cb0d",
       "url": "https://github.com/karim-shousha/tv-morph/releases/download/v1.1.435/Morph-IPTV-Mac-1.1.435-universal.zip"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.514-Setup.exe",
+      "bytes": 140380787,
+      "sha256": "46b7d6b1fb21c9997b3e0eb88869eb92a1c79b0f8d3493a5fe39af10ef5817ea",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-be9ff8fc44a5b336dbf9/Morph-IPTV-PC-1.1.514-Setup.exe",
+      "product": "iptv",
+      "target": "windows",
+      "version": "1.1.514",
+      "name": "Morph-IPTV-PC-1.1.514-Setup",
+      "download": "/download/iptv/windows",
+      "arch": "x64"
+    },
+    {
+      "file": "Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
+      "bytes": 118514763,
+      "sha256": "c71929f38ade1d56a7c38f27719abe66ff9d6a068ec691b4a22ff0418e97b376",
+      "url": "https://github.com/karim-shousha/tv-morph/releases/download/untagged-be9ff8fc44a5b336dbf9/Morph-IPTV-PC-1.1.514-32bit-Setup.exe",
+      "product": "iptv",
+      "target": "windows",
+      "version": "1.1.514",
+      "name": "Morph-IPTV-PC-1.1.514-32bit-Setup",
+      "download": "/download/iptv/windows32",
+      "arch": "ia32"
     }
   ],
   "windowsVerified": true,
